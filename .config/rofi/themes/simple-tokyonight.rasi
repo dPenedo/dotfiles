@@ -1,0 +1,118 @@
+* {
+  font:   "Noto Sans 12";
+
+  bg0     : #363646;
+  bg20     :#363646;
+  bg1     : #1F1F28;
+  bg2     : #2D4F67;
+  bg3     : #223249;
+  fg0     : #C8C093;
+  fg1     : #9CABCA;
+  fg2     : #658594;
+  red     : #f7768e;
+  kana    : #DCD7BA;
+  green   : #9ece6a;
+  yellow  : #e0af68;
+  blue    : #7aa2f7;
+  magenta : #9a7ecc;
+  cyan    : #E6C384;
+
+  accent: @bg0;
+  urgent: @green;
+
+  background-color : transparent;
+  text-color       : @kana;
+
+  margin  : 0;
+  padding : 0;
+  spacing : 0;
+}
+
+element-icon, element-text, scrollbar {
+  cursor: pointer;
+}
+
+window {
+  location : center;
+  width    : 800px;
+  x-offset : 4px;
+  y-offset : -16px;
+
+  background-color: @bg1;
+  border: 1px;
+  border-color: @kana;
+  border-radius: 2px;
+}
+
+inputbar {
+  spacing  : 8px;
+  padding  : 4px 8px;
+  children : [ icon-search, entry ];
+  border: 1px;
+  border-color: @kana;
+  border-radius: 2px;
+
+  background-color: @bg1;
+}
+
+icon-search, entry, element-icon, element-text {
+  vertical-align: 0.5;
+}
+
+icon-search {
+  expand   : false;
+  filename : "search-symbolic";
+  size     : 14px;
+}
+
+textbox {
+  padding          : 40px 8px;
+  background-color : @bg1;
+  text-color : @yellow;
+  horizontal-align: 0.5;
+}
+
+listview {
+  padding      : 4px 0px;
+  lines        : 12;
+  columns      : 1;
+  scrollbar    : true;
+  fixed-height : false;
+  dynamic      : true;
+}
+
+element {
+  padding : 4px 8px;
+  spacing : 8px;
+}
+
+element normal urgent {
+  text-color: @red;
+}
+
+element normal active {
+  text-color: @bg1;
+}
+
+element selected {
+  text-color       : @cyan;
+  background-color : @accent;
+}
+
+element selected urgent {
+  background-color: @bg0;
+}
+
+element-icon {
+  size: 0.8em;
+}
+
+element-text {
+  text-color: @kana;
+}
+
+scrollbar {
+  handle-width : 4px;
+  handle-color : @cyan;
+  padding      : 0 4px;
+}
