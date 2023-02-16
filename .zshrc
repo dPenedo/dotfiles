@@ -54,7 +54,8 @@ source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
 #source zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 
-
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
