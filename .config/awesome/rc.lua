@@ -21,7 +21,7 @@ local lain          = require("lain")
 --local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup")
-                      -- require("awful.hotkeys_popup.keys")
+
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 -- }}}
@@ -100,7 +100,7 @@ local themes = {
 local chosen_theme = themes[6]
 local modkey       = "Mod4"
 -- local altkey       = "Mod1"
-local terminal     = "kitty"
+local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "nvim"
@@ -300,7 +300,7 @@ globalkeys = mytable.join(
         {description = "programas" , group = "Mis programas" }),
     awful.key({ modkey }, "a", function () awful.util.spawn("rofi -show window -show-icons") end,
         {description = "activos" , group = "Mis programas" }),
-    awful.key({ modkey, "Shift" }, "Escape", function () awful.util.spawn("rofi -show powermenu -modi powermenu:~/.scripts/rofi-power-menu") end,
+    awful.key({ modkey, "Shift" }, "Escape", function () awful.util.spawn("rofi -show powermenu -modi powermenu:~/scripts/rofi-power-menu") end,
         {description = "Powermenu" , group = "Mis programas" }),
     awful.key({ modkey, "Shift"}, "e", function () awful.util.spawn("rofimoji") end,
         {description = "rofimoji" , group = "Mis programas" }),

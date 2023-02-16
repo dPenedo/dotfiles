@@ -15,7 +15,7 @@ google() {
     for term in $@; do
         search="$search%20$term"
     done
-    xdg-open "http://www.google.com/search?q=$search"
+    nohup xdg-open "http://www.google.com/search?q=$search" &
 }
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=10000
@@ -50,8 +50,8 @@ fi
 
 
 
-source scripts/zsh/history-substring/zsh-history-substring-search.zsh
-source scripts/zsh/highlight/zsh-syntax-highlighting.zsh
+source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
+source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
 #source zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 
 
