@@ -100,7 +100,8 @@ local themes = {
 local chosen_theme = themes[6]
 local modkey       = "Mod4"
 -- local altkey       = "Mod1"
-local terminal     = "alacritty"
+-- local terminal     = "alacritty"
+local terminal     = "wezterm"
 local vi_focus     = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true  -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "nvim"
@@ -109,7 +110,7 @@ local browser      = "firefox"
 awful.util.terminal = terminal
 -- awful.util.tagnames = { "☰", "☱", "☲", "☳", "☴", "☵", "☶", "☷" }
 --  ls
-awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
+awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9" , "0"}
 awful.layout.layouts = {
     
     awful.layout.suit.tile,
@@ -701,7 +702,7 @@ clientkeys = mytable.join(
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it work on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
-for i = 1, 9 do
+for i = 1, 10 do
     globalkeys = mytable.join(globalkeys,
         -- View tag only.
         awful.key({ modkey }, "#" .. i + 9,
@@ -829,6 +830,8 @@ awful.rules.rules = {
       properties = { screen = 1, tag = "1" } },
     { rule_any = { class = {"Spotify", "spotify"}, name = {"spotify", "Spotify"} },
       properties = { screen = 1, tag = "8" } },
+    { rule_any = { class = {"obsidian", "Obsidian"} },
+      properties = { screen = 1, tag = "0" } },
 }
 
 -- }}}

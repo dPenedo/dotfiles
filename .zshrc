@@ -9,6 +9,9 @@ fi
 source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+
+# Búsqueda en google
 google() {
     search=""
     echo "Buscando: $@"
@@ -17,8 +20,12 @@ google() {
     done
     nohup xdg-open "http://www.google.com/search?q=$search" &
 }
+
+
+# Historia
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=10000
+
 
 
 autoload -U up-line-or-beginning-search
@@ -54,6 +61,16 @@ source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
 #source zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 
+
+
+
+
+
+# nohup zathura "$1" > /dev/null 2>&1 &
+alias pdf="nohup zathura"
+#alias pdf="nohup zathura &"
+
+# Control + flechas
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
