@@ -553,10 +553,10 @@ globalkeys = mytable.join(
     awful.key({ modkey }, "v", function () awful.spawn.with_shell("xsel -b | xsel") end,
               {description = "copy gtk to terminal", group = "hotkeys"}),
 
-    -- User programs
-    awful.key({ modkey }, "q", function () awful.spawn(browser) end,
-              {description = "run browser", group = "launcher"}),
-
+    -- -- User programs
+    -- awful.key({ modkey }, "q", function () awful.spawn(browser) end,
+    --           {description = "run browser", group = "launcher"}),
+    --
     -- Default
     --[[ Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
@@ -786,7 +786,13 @@ awful.rules.rules = {
                      size_hints_honor = false
      }
     },
-
+    -- Intento de solución al dropdown menu
+-- { rule = {class = "Brave-browser" },
+--   properties = {
+--     focus = false,
+--     placement = function() return false end
+--   }
+-- },
     -- Floating clients.
     { rule_any = {
         instance = {

@@ -1,41 +1,4 @@
 local wezterm = require 'wezterm';
-
-
--- wezterm.on(
---   "update-right-status",
---   function(window)
---     local date = wezterm.strftime("%Y-%m-%d %H:%M:%S ")
---     window:set_right_status(
---       wezterm.format(
---         {
---           { Text = date }
---         }
---       )
---     )
---   end
--- )
-
--- change the title of tab to current working directory.
--- ref:
--- https://wezfurlong.org/wezterm/config/lua/window-events/format-tab-title.html#format-tab-title
--- https://wezfurlong.org/wezterm/config/lua/PaneInformation.html
--- https://wezfurlong.org/wezterm/config/lua/pane/get_current_working_dir.html
--- wezterm.on(
---   'format-tab-title',
---   function(tab, tabs, panes, config, hover, max_width)
---     local pane = tab.active_pane
---     -- cwd is a URI with file:// as beginning
---     local cwd = pane.current_working_dir
---
---     local home_dir = os.getenv('HOME')
---     -- remove the prefix from directory
---     local res = string.sub(cwd, 8)
---     -- shorten the path by using ~ as $HOME.
---     return string.gsub(res, home_dir, '~')
---   end
--- )
-
-
 return {
   font = wezterm.font_with_fallback({
     "FiraCode",
@@ -43,7 +6,7 @@ return {
     -- "Iosevka Nerd Font",
     -- "Noto Sans SC",
   }),
-  font_size = 12,
+  font_size = 11.5,
   line_height = 1.1,
   cell_width = 1,
   -- color scheme can be found here: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/wezterm
@@ -54,15 +17,15 @@ return {
   default_cursor_style = "BlinkingBar",
   cursor_blink_rate = 400,
   force_reverse_video_cursor = false,
-  enable_tab_bar = true,
-  use_fancy_tab_bar = true,
+  -- enable_tab_bar = true,
+  use_fancy_tab_bar = false,
   hide_tab_bar_if_only_one_tab = true,
   tab_bar_at_bottom = false,
   window_padding = {
-    left = 0,
-    right = 0,
-    top = 0,
-    bottom = 0,
+    left = 8,
+    right = 2,
+    top = 8,
+    bottom = 8,
   },
   window_decorations = "TITLE | RESIZE",
   native_macos_fullscreen_mode = false,
@@ -78,24 +41,84 @@ return {
 
   keys = {
     -- This will create a new split and run your default program inside it
-    {
-      key = 'Enter',
-      mods = 'CTRL|SHIFT',
-      action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
-    },
+    {  key = 'Enter', mods = 'CTRL|SHIFT',  action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' }, },
+    {  key = 'p', mods = 'CTRL|SHIFT',  action = wezterm.action.SplitVertical { domain = 'DefaultDomain' }, },
+    {key="Ñ", mods="CTRL|SHIFT", action=wezterm.action{SpawnTab="CurrentPaneDomain"}},
+        -- Create a new tab in the default domain
+    {key="t", mods="CTRL|SHIFT", action=wezterm.action{SpawnTab="DefaultDomain"}},
+    { key = "k", mods = "ALT", action = wezterm.action({ ActivatePaneDirection = "Up" }) },
+	{ key = "j", mods = "ALT", action = wezterm.action({ ActivatePaneDirection = "Down" }) },
+	{ key = "h", mods = "ALT", action = wezterm.action({ ActivatePaneDirection = "Left" }) },
+	{ key = "l", mods = "ALT", action = wezterm.action({ ActivatePaneDirection = "Right" }) },
+    { key = "h", mods = "ALT|SHIFT", action = wezterm.action({ AdjustPaneSize = { "Left", 1 } })},
+	{ key = "l", mods = "ALT|SHIFT", action = wezterm.action({ AdjustPaneSize = { "Right", 1 } }) },
+	{ key = "k", mods = "ALT|SHIFT", action = wezterm.action({ AdjustPaneSize = { "Up", 1 } }) },
+	{ key = "j", mods = "ALT|SHIFT", action = wezterm.action({ AdjustPaneSize = { "Down", 1 } }) },
 
+    { key = "1", mods = "ALT", action = wezterm.action({ ActivateTab = 0 }) },
+	{ key = "2", mods = "ALT", action = wezterm.action({ ActivateTab = 1 }) },
+	{ key = "3", mods = "ALT", action = wezterm.action({ ActivateTab = 2 }) },
+	{ key = "4", mods = "ALT", action = wezterm.action({ ActivateTab = 3 }) },
+	{ key = "5", mods = "ALT", action = wezterm.action({ ActivateTab = 4 }) },
+	{ key = "6", mods = "ALT", action = wezterm.action({ ActivateTab = 5 }) },
+	{ key = "7", mods = "ALT", action = wezterm.action({ ActivateTab = 6 }) },
+	{ key = "8", mods = "ALT", action = wezterm.action({ ActivateTab = 7 }) },
+	{ key = "9", mods = "ALT", action = wezterm.action({ ActivateTab = 8 }) },
+     {key="LeftArrow", mods="ALT|CTRL", action=wezterm.action{MoveTabRelative=-1}},
+        {key="RightArrow", mods="ALT|CTRL", action=wezterm.action{MoveTabRelative=1}},
+	{ key = "w", mods = "CTRL", action = wezterm.action.CloseCurrentPane { confirm = true },},
   },
+  tab_bar = {
+
+            -- The color of the strip that goes along the top of the window
+            background = "#16161D",
+
+            -- The active tab is the one that has focus in the window
+            active_tab = {
+                -- The color of the background area for the tab
+                bg_color = "#1f1f28",
+                -- The color of the text for the tab
+                fg_color = "#9cabca",
+
+                -- Specify whether you want "Half", "Normal" or "Bold" intensity for the
+                -- label shown for this tab.
+                -- The default is "Normal"
+                intensity = "Bold",
+
+                -- Specify whether you want "None", "Single" or "Double" underline for
+                -- label shown for this tab.
+                -- The default is "None"
+                underline = "None",
+
+                -- Specify whether you want the text to be italic (true) or not (false)
+                -- for this tab.  The default is false.
+                italic = false,
+
+                -- Specify whether you want the text to be rendered with strikethrough (true)
+                -- or not for this tab.  The default is false.
+                strikethrough = false,
+            },
+
+            -- Inactive tabs are the tabs that do not have focus
+            inactive_tab = {
+                bg_color = "#202020",
+                fg_color = "#808080",
+
+                -- The same options that were listed under the `active_tab` section above
+                -- can also be used for `inactive_tab`.
+            },
+
+            -- You can configure some alternate styling when the mouse pointer
+            -- moves over inactive tabs
+            inactive_tab_hover = {
+                bg_color = "#363636",
+                fg_color = "#909090",
+                italic = false,
+
+                -- The same options that were listed under the `active_tab` section above
+                -- can also be used for `inactive_tab_hover`.
+            }
+        }
 }
 
 
-
-
-
---
---
--- return {
---   font = wezterm.font("Fira Code"),
---   -- You can specify some parameters to influence the font selection;
---   -- for example, this selects a Bold, Italic font variant.
---   font = wezterm.font("JetBrains Mono", {weight="Bold", italic=true})
--- }
