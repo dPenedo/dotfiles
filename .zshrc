@@ -102,7 +102,7 @@ izena () {
 izensua () {
     echo -ne "\033]0;🔥\007"
 }
-izenlive-server () {
+izenserver () {
     echo -ne "\033]0;\007"
 }
 izensass () {
