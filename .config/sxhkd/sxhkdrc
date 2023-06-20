@@ -1,0 +1,202 @@
+
+# make sxhkd reload/restart its configuration files:
+super + shift + Escape
+	pkill -USR1 -x sxhkd
+
+
+# BSPWM HOTKEYS
+# quit/restart bspwm
+super + shift + ctrl + {q,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + shift + q
+	bspc node -c
+alt + F4
+	bspc node -c
+
+# alternate between the tiled and monocle layout
+super + f
+	bspc desktop -l next
+# super + shift
+# 	bspc desktop -l next
+
+
+# Go full mode
+super + shift + f
+    bspc node -t \~fullscreen
+
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
+
+# STATE/FLAGS
+
+# set the window state
+super + shift + {i,o,p}
+	bspc node -t {tiled,pseudo_tiled,floating}
+
+
+# floating roggle
+super + z
+  bspc node focused -t \~floating
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+
+# FOCUS/SWAP
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + alt + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous node in the current desktop
+super + {_,shift + }n
+	bspc node -f {next,prev}.local
+
+# focus the next/previous desktop in the current monitor
+super + {m,comma}
+	bspc desktop -f {prev,next}.local
+super + shift + {m,comma}
+	bspc node -d {prev,next}.local --follow;
+
+
+# focus left or right monitor
+super + {Left,Right}
+    bspc monitor {west,east} -f
+
+# # Enviar a otro monitor
+super + alt + {Left,Right}
+	bspc node -m {prev,next} 
+
+
+
+
+# focus the last node/desktop
+super + Tab
+	bspc desktop -f last
+alt + Tab
+	bspc node -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} focused:'^{1-9,10}'
+
+# PRESELECT
+
+# preselect the direction
+super + ctrl + {Left,Down,Up,Right}
+
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + x
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+
+# MOVE/RESIZE
+
+# expand a window by moving one of its side outward
+ctrl + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+super + ctrl + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+# contract a window by moving one of its side inward
+super + ctrl + alt + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
+
+# APLICACIONES 
+
+# terminal emulator
+super + Return
+	alacritty
+
+super + e
+	thunar
+
+#super + l
+#	/usr/bin/xflock4
+
+super + w 
+	firefox
+
+super + b
+	brave-browser
+
+
+super + r
+ /home/daniel/.scripts/.ranger.sh
+# /home/daniel/.scripts/.tab-esc.sh
+
+super + d
+ rofi -combi-modi -show-icons -show drun 
+super + Escape
+ rofi -show powermenu -modi powermenu:~/scripts/rofi-power-menu  
+
+super + s
+ rofi -show window -show-icons
+
+super + space
+  dmenu_run -fn 'Hack'
+
+super + alt + space
+ xfce4-popup-whiskermenu
+
+super + shift + e
+  rofimoji
+
+
+
+
+
+# Funciones xfce
+
+Print
+  xfce4-screenshooter
+shift + Print
+  xfce4-screenshooter -r
+ctrl + Print
+  xfce4-screenshooter -w
+
+ctrl + alt + Delete
+  xkill
+
+alt + F4
+  xfce4-session-logout
+
+super + v
+  xfce4-popup-clipman 
