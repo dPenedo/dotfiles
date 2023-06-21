@@ -1,3 +1,0 @@
-return {
-  "jifm/vifm.vim",
-}
