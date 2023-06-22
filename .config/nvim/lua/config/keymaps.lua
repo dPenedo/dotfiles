@@ -10,7 +10,7 @@ map("n", "<leader>L", "<cmd>:Lazy<cr>")
 map("i", "<C-E>", "<ESC>A")
 map("i", "<C-A>", "<ESC>I")
 -- Quickly save the current buffer or all buffers
-map("n", "<leader>w", "<CMD>update<CR>")
+map("n", "<A-s>", "<CMD>update<CR>")
 map("n", "<leader>W", "<CMD>wall<CR>")
 
 -- Quit neovim
@@ -48,6 +48,7 @@ map("o", "A", ":<C-U>normal! mzggVG<CR>`z")
 map("n", "<A-e>", ":Lf<CR>")
 map("n", "<A-v>", ":EditVifm<CR>")
 map("n", "<A-o>", ":Oil<CR>")
+map("n", "-", ":Oil<CR>")
 
 -- FZF
 map("n", "<leader>~", ":Files ~/<CR>")
@@ -56,6 +57,10 @@ map("n", "<leader>hh", ":History<CR>")
 
 -- Colors
 map("n", "<leader>cc", ':lua require("nvim-highlight-colors").toggle()<CR>')
+
+-- Zen
+
+map("n", "<A-z>", ":ZenMode<CR>")
 
 -- Telescope
 

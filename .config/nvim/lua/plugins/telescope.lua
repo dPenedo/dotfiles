@@ -11,6 +11,7 @@ return {
       "nvim-telescope/telescope-ui-select.nvim",
       "debugloop/telescope-undo.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
+      "jvgrootveld/telescope-zoxide",
     },
     config = function()
       local telescope = require("telescope")
@@ -168,6 +169,8 @@ return {
       telescope.load_extension("ui-select")
       telescope.load_extension("undo")
       telescope.load_extension("file_browser")
+      telescope.load_extension("zoxide")
+
       -- telescope.load_extension("scope")
     end,
   },
