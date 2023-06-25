@@ -44,11 +44,11 @@ map("n", "<A-->", "<CMD>split<CR>")
 -- e.g. dA = delete buffer ALL, yA = copy whole buffer ALL
 map("o", "A", ":<C-U>normal! mzggVG<CR>`z")
 
--- File explorers
+-- File explorerskey
 map("n", "<A-e>", ":Lf<CR>")
 map("n", "<A-v>", ":EditVifm<CR>")
 map("n", "<A-o>", ":Oil<CR>")
-map("n", "-", ":Oil<CR>")
+map("n", "-", ":Lf<CR>")
 
 -- FZF
 map("n", "<leader>~", ":Files ~/<CR>")
@@ -62,6 +62,10 @@ map("n", "<leader>cc", ':lua require("nvim-highlight-colors").toggle()<CR>')
 
 map("n", "<A-z>", ":ZenMode<CR>")
 
+-- Colorscheme
+map("n", "<leader>¡", ":colorscheme kanagawa<CR>")
+map("n", "<leader>¿", ":colorscheme gruvbox-material<CR>")
+
 -- Telescope
 
 -- map("n", "<leader>L", ":BLines<CR>")
@@ -72,6 +76,7 @@ map("n", "ñ", ":Telescope buffers<CR>")
 map("n", "<leader>g", ":Telescope live_grep<CR>")
 map("n", "<leader>r", ":Telescope registers<CR>")
 map("n", "<leader>H", ":Telescope help_tags<CR>")
+map("n", ",", ":Telescope find_files<CR>")
 
 map("n", "<leader>u", ":Telescope undo<CR>")
 

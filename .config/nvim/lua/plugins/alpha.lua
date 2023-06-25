@@ -26,7 +26,6 @@ return {
       dashboard.button("f", "󱝩" .. " Find file", ":Telescope find_files <CR>"),
       dashboard.button("e", "󰩡 " .. " LF", ":Lf <CR>"),
       dashboard.button("o", "" .. " Oil", ":Oil <CR>"),
-      dashboard.button("v", "" .. " Vifm", ":Vifm <CR>"),
       dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
       dashboard.button("g", " " .. " Find text", ":Telescope live_grep <CR>"),
       dashboard.button("s", " " .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
