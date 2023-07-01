@@ -97,6 +97,7 @@ alias pym='python manage.py'
 alias vim='nvim'
 alias nv='nvim'
 alias n='nvim .'
+alias lv='lvim'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
 alias ls='lsd --group-dirs=first'
@@ -189,3 +190,4 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source /home/daniel/.config/broot/launcher/bash/br
+export PATH="$HOME/.local/bin/":$PATH

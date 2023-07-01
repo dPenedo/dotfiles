@@ -8,168 +8,59 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-      "nvim-telescope/telescope-ui-select.nvim",
       "debugloop/telescope-undo.nvim",
       "nvim-telescope/telescope-file-browser.nvim",
-      "jvgrootveld/telescope-zoxide",
     },
+
     config = function()
       local telescope = require("telescope")
       telescope.setup({
         defaults = {
+          theme = "ivy",
           mappings = {
             i = {
               ["<C-s>"] = "select_horizontal",
+              ["<C-h>"] = "which_key",
+              ["<C-j>"] = "move_selection_next",
+              ["<C-k>"] = "move_selection_previous",
             },
             n = {
               ["<C-s>"] = "select_horizontal",
             },
           },
-          theme = "dropdown",
-          previewer = true,
-          file_ignore_patterns = { "node_modules", "package-lock.json" },
-          initial_mode = "insert",
-          select_strategy = "reset",
-          sorting_strategy = "ascending",
-          layout_strategy = "horizontal",
-          layout_config = {
-            width = 0.75,
-            height = 0.75,
-            prompt_position = "top",
-            preview_cutoff = 120,
-          },
-          path_display = { "smart" },
-          winblend = 0,
-          border = {},
-          borderchars = nil,
-          color_devicons = true,
-          set_env = { ["COLORTERM"] = "truecolor" },
-          vimgrep_arguments = {
-            "rg",
-            "--color=never",
-            "--no-heading",
-            "--with-filename",
-            "--line-number",
-            "--column",
-            "--smart-case",
-            "--hidden",
-            "--glob=!.git/",
+          extensions = {
+            fzf = {
+              fuzzy = true, -- false will only do exact matching
+              override_generic_sorter = true, -- override the generic sorter
+              override_file_sorter = true, -- override the file sorter
+              case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+            },
           },
         },
         pickers = {
           find_files = {
-            hidden = true,
-            previewer = true,
-            layout_config = {
-              horizontal = {
-                preview_width = 0.6,
-              },
-            },
-          },
-          git_files = {
-            hidden = true,
-            previewer = false,
-            layout_config = {
-              horizontal = {
-                preview_width = 0.6,
-              },
-            },
-          },
-          live_grep = {
-            --@usage don't include the filename in the search results
-            only_sort_text = true,
-            previewer = true,
-            layout_config = {
-              horizontal = {
-                preview_width = 0.6,
-              },
-            },
-          },
-          grep_string = {
-            --@usage don't include the filename in the search results
-            only_sort_text = true,
-            previewer = true,
-            layout_config = {
-              horizontal = {
-                preview_width = 0.6,
-              },
-            },
+            theme = "ivy",
           },
           buffers = {
-            -- initial_mode = "normal",
-            previewer = true,
-            layout_config = {
-              horizontal = {
-                preview_width = 0.6,
-              },
-            },
+            theme = "ivy",
           },
-          lsp_references = {
-            show_line = false,
-            layout_config = {
-              horizontal = {
-                width = 0.9,
-                height = 0.75,
-                preview_width = 0.6,
-              },
-            },
+          help_tags = {
+            theme = "ivy",
           },
-          treesitter = {
-            show_line = false,
-            sorting_strategy = nil,
-            layout_config = {
-              horizontal = {
-                width = 0.9,
-                height = 0.75,
-                preview_width = 0.6,
-              },
-            },
-            symbols = {
-              "class",
-              "function",
-              "method",
-              "interace",
-              "type",
-              "const",
-              "variable",
-              "property",
-              "constructor",
-              "module",
-              "struct",
-              "trait",
-              "field",
-            },
+          current_buffer_fuzzy_find = {
+            theme = "ivy",
           },
-        },
-        extensions = {
-          fzf = {
-            fuzzy = true, -- false will only do exact matching
-            override_generic_sorter = true, -- override the generic sorter
-            override_file_sorter = true, -- override the file sorter
-            case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+          registers = {
+            theme = "ivy",
           },
-          ["ui-select"] = {
-            require("telescope.themes").get_dropdown({
-              previewer = false,
-              initial_mode = "normal",
-              sorting_strategy = "ascending",
-              layout_strategy = "horizontal",
-              layout_config = {
-                horizontal = {
-                  width = 0.5,
-                  height = 0.4,
-                  preview_width = 0.6,
-                },
-              },
-            }),
+          undo = {
+            theme = "current_buffer_fuzzy_find",
           },
         },
       })
       telescope.load_extension("fzf")
-      telescope.load_extension("ui-select")
       telescope.load_extension("undo")
       telescope.load_extension("file_browser")
-      telescope.load_extension("zoxide")
 
       -- telescope.load_extension("scope")
     end,

@@ -359,5 +359,7 @@ Vagrantfile             
 *.pdf   󰈦
 
 
+
 # Propios
 *.astro   
+.org    

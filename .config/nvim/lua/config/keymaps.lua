@@ -17,8 +17,8 @@ map("n", "<leader>W", "<CMD>wall<CR>")
 map("n", "<C-Q>", "<CMD>q<CR>")
 
 -- leader-o/O inserts blank line below/above
-map("n", "<leader>o", "o<ESC>")
-map("n", "<leader>O", "O<ESC>")
+-- map("n", "<leader>o", "o<ESC>")
+-- map("n", "<leader>O", "O<ESC>")
 
 -- Move to the next/previous buffer
 map("n", "<leader>m", "<CMD>bp<CR>")
@@ -76,7 +76,8 @@ map("n", "ñ", ":Telescope buffers<CR>")
 map("n", "<leader>g", ":Telescope live_grep<CR>")
 map("n", "<leader>r", ":Telescope registers<CR>")
 map("n", "<leader>H", ":Telescope help_tags<CR>")
-map("n", ",", ":Telescope find_files<CR>")
+map("n", ",", ":Telescope current_buffer_fuzzy_find<CR>")
+map("n", ";", ":Telescope find_files<CR>")
 
 map("n", "<leader>u", ":Telescope undo<CR>")
 
