@@ -65,13 +65,15 @@ export KEYTIMEOUT=1
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
+source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source ~/.fzf/shell/completion.zsh
 source ~/.fzf/shell/key-bindings.zsh
 
 
-autoload -Uz compinit
-compinit
-_comp_options+=(globdots)
+# autoload -Uz compinit
+# compinit
+# _comp_options+=(globdots)
 
 
 # nohup zathura "$1" > /dev/null 2>&1 &
@@ -130,10 +132,28 @@ alias zotero="flatpak run org.zotero.Zotero"
 
 
 
+# Abrir programas
 bindkey -s '\ee' 'lfcd^M'
 bindkey -s '\er' 'ranger^M'
 bindkey -s '\et' 'thunar .^M'
 bindkey -s '\ev' 'vifm .^M'
+
+
+# Autocomplete
+# bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+# bindkey '^j' menu-select
+# bindkey '^j' up-line-or-search
+# bindkey '^k' down-line-or-select
+bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
+bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
+# TODO: asignar Contrl j y control k a coursorup coursor down
+
+
+
+
+
 
 
 lfcd () {

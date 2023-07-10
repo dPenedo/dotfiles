@@ -13,6 +13,10 @@ map("i", "<C-A>", "<ESC>I")
 map("n", "<A-s>", "<CMD>update<CR>")
 map("n", "<leader>W", "<CMD>wall<CR>")
 
+-- Notas
+map("n", "<leader>nn", ":NuevaNota<CR>")
+map("n", "<leader>nf", ":Telescope find_files cwd=" .. "/home/daniel/Documentos/Dropbox/Notas/" .. "<CR>")
+
 -- Quit neovim
 map("n", "<C-Q>", "<CMD>q<CR>")
 
