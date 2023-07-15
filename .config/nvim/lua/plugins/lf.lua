@@ -10,10 +10,19 @@ return {
       ["<C-v>"] = "vsplit",
       ["<C-o>"] = "tab drop",
     },
-    border = "single",
-    winblend = 0,
+    escape_quit = true,
+    border = "curved",
+    winblend = 10,
     highlights = { -- highlights passed to toggleterm
-      Normal = { guibg = "#181820" },
+      Normal = { guibg = "#181820", guifg = "#f00" },
     },
+    -- highlights = { -- highlights passed to toggleterm
+    --   Normal = { guibg = "#333333" },
+    --   NormalFloat = { link = "Normal" },
+    --   FloatBorder = {
+    --     guifg = "#D0C9C2",
+    --     guibg = "#333333",
+    --   },
+    -- },
   },
 }

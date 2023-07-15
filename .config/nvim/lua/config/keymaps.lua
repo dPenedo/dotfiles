@@ -13,6 +13,16 @@ map("i", "<C-A>", "<ESC>I")
 map("n", "<A-s>", "<CMD>update<CR>")
 map("n", "<leader>W", "<CMD>wall<CR>")
 
+-- Movimientos
+map("n", "L", "$")
+map("v", "L", "$")
+map("n", "H", "^")
+map("v", "H", "^")
+map("n", "J", "6j")
+map("v", "J", "6j")
+map("n", "<leader>k", "6k")
+map("v", "K", "6k")
+
 -- Notas
 map("n", "<leader>nn", ":NuevaNota<CR>")
 map("n", "<leader>nf", ":Telescope find_files cwd=" .. "/home/daniel/Documentos/Dropbox/Notas/" .. "<CR>")

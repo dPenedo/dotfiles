@@ -1,6 +1,11 @@
 return {
-  { "akinsho/toggleterm.nvim", version = "*", opts = {
-    direction = "vertical",
-    size = 80,
-  } },
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    config = true,
+    -- , opts = {
+    --   direction = "vertical",
+    --   size = 80,
+    -- }
+  },
 }
