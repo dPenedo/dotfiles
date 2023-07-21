@@ -7,16 +7,16 @@ sleep 2
 # sleep
 brave-browser &
 
-sleep 5
-thunderbird &
-
-sleep 9
+sleep 7
+# thunderbird &
+#
+# sleep 9
 # flatpak run md.obsidian.Obsidian &
 #
 # sleep 12
 
 wmctrl -r brave-browser -t 2 &
-wmctrl -r thunderbird -t 10 &
+# wmctrl -r thunderbird -t 10 &
 wmctrl -r alacritty -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &

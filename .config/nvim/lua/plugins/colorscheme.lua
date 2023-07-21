@@ -61,8 +61,7 @@ return {
     end,
   },
   { "kartikp10/noctis.nvim", dependencies = { "rktjmp/lush.nvim" } },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  -- colorscheme
+
   {
     "LazyVim/LazyVim",
     opts = {

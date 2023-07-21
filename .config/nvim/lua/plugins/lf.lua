@@ -12,7 +12,7 @@ return {
     },
     escape_quit = true,
     border = "curved",
-    winblend = 10,
+    winblend = 6,
     highlights = { -- highlights passed to toggleterm
       Normal = { guibg = "#181820", guifg = "#f00" },
     },

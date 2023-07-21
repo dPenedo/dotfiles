@@ -11,6 +11,8 @@ map("i", "<C-E>", "<ESC>A")
 map("i", "<C-A>", "<ESC>I")
 -- Quickly save the current buffer or all buffers
 map("n", "<A-s>", "<CMD>update<CR>")
+map("i", "<A-s>", "<CMD>update<CR>")
+map("v", "<A-s>", "<CMD>update<CR>")
 map("n", "<leader>W", "<CMD>wall<CR>")
 
 -- Movimientos
@@ -21,7 +23,15 @@ map("v", "H", "^")
 map("n", "J", "6j")
 map("v", "J", "6j")
 map("n", "<leader>k", "6k")
+map("n", "<leader>j", "6j")
 map("v", "K", "6k")
+map("n", "<A-right>", "w")
+map("n", "<A-left>", "b")
+map("n", "<A-up>", "{")
+map("n", "<A-down>", "}")
+
+-- Cambiar palabra
+map("n", "<CR>", "ciw")
 
 -- Notas
 map("n", "<leader>nn", ":NuevaNota<CR>")
@@ -94,6 +104,9 @@ map("n", ",", ":Telescope current_buffer_fuzzy_find<CR>")
 map("n", ";", ":Telescope find_files<CR>")
 
 map("n", "<leader>u", ":Telescope undo<CR>")
+
+-- Marks
+map("n", "?", ":Telescope marks<CR>")
 
 -- ToggleTerm
 map("n", "<leader>t", ":ToggleTerm<CR>")
