@@ -54,7 +54,7 @@ return {
             theme = "ivy",
           },
           undo = {
-            theme = "current_buffer_fuzzy_find",
+            theme = "ivy",
           },
         },
       })

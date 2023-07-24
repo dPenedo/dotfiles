@@ -60,8 +60,6 @@ return {
       require("bamboo").load()
     end,
   },
-  { "kartikp10/noctis.nvim", dependencies = { "rktjmp/lush.nvim" } },
-
   {
     "LazyVim/LazyVim",
     opts = {
