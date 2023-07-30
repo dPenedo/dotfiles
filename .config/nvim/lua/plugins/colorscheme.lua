@@ -42,6 +42,12 @@ return {
       vim.g.gruvbox_material_statusline_style = "default"
     end,
   },
+  --  Everblush
+  { "Everblush/nvim", name = "everblush" },
+  -- Nordic
+  {
+    "AlexvZyl/nordic.nvim",
+  },
   -- Bamboo
   {
     "ribru17/bamboo.nvim",

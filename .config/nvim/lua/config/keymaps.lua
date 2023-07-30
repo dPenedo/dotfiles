@@ -15,6 +15,9 @@ map("i", "<A-s>", "<CMD>update<CR>")
 map("v", "<A-s>", "<CMD>update<CR>")
 map("n", "<leader>W", "<CMD>wall<CR>")
 
+-- Mapeando el jj como Escape
+map("i", "jk", "<ESC>")
+
 -- Movimientos
 map("n", "L", "$")
 map("v", "L", "$")
@@ -102,6 +105,7 @@ map("n", "<leader>r", ":Telescope registers<CR>")
 map("n", "<leader>H", ":Telescope help_tags<CR>")
 map("n", ",", ":Telescope current_buffer_fuzzy_find<CR>")
 map("n", ";", ":Telescope find_files<CR>")
+map("n", "<C-p>", ":Telescope find_files<CR>")
 
 map("n", "<leader>u", ":Telescope undo<CR>")
 
