@@ -6,12 +6,12 @@ if vim.g.neovide then
   -- vim.opt.guifont = { "FiraCode", "h6" }
   -- vim.o.guifont = "JetBrains Mono:h11" -- text below applies for VimScript
   -- vim.o.guifont = "JetBrains Mono:h11" -- text below applies for VimScript
-  vim.o.guifont = "Fira Code:h11" -- text below applies for VimScript
+  vim.o.guifont = "Fira Code:h11.5" -- text below applies for VimScript
   -- vim.g.neovide_scale_factor = 0.7
-  vim.g.neovide_cursor_animation_length = 0.02
-  vim.g.neovide_cursor_trail_length = 0.02
-  vim.g.neovide_cursor_animate_command_line = true
-  vim.g.neovide_cursor_vfx_mode = "ripple"
+  -- vim.g.neovide_cursor_animation_length = 0.02
+  -- vim.g.neovide_cursor_trail_length = 0.02
+  -- vim.g.neovide_cursor_animate_command_line = true
+  -- vim.g.neovide_cursor_vfx_mode = "ripple"
   -- vim.g.neovide_fullscreen = true
   -- vim.g.neovide_remember_window_size = true
 end

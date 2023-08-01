@@ -2,7 +2,7 @@
 
 # xdg-open https://www.tutanota.com &
 sleep 5
-alacritty -e tmux new-session -A -D -s Inicio &
+alacritty -e tmux new-session -A -D -s Hasiera &
 sleep 2
 # sleep
 brave-browser &

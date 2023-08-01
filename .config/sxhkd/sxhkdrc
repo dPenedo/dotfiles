@@ -146,6 +146,9 @@ super + {Left,Down,Up,Right}
 super + Return
 	alacritty
 
+super + shift + Return
+	kitty
+
 super + e
 	thunar
 
