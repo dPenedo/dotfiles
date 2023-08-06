@@ -11,7 +11,7 @@
 #import:
 #  - /path/to/alacritty.yml
 import:
-  # - ~/.config/alacritty/themes/themes/{rose-pine}.yaml
+  - ~/.config/alacritty/themes/themes/{rose-pine}.yaml
   # - ~/.config/alacritty/themes/themes/{moonlight_ii_vscode}.yaml
   - ~/.config/alacritty/themes/themes/{inferno}.yaml
 

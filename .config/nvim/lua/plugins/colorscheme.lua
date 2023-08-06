@@ -43,7 +43,16 @@ return {
     end,
   },
   --  Everblush
-  { "Everblush/nvim", name = "everblush" },
+  {
+    "Everblush/nvim",
+    name = "everblush",
+    opts = {
+      override = {
+        Comment = { fg = "#ffffff" },
+        Function = { bold = true },
+      },
+    },
+  },
   -- Nordic
   {
     "AlexvZyl/nordic.nvim",

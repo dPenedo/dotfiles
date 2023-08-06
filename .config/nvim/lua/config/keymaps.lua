@@ -17,6 +17,7 @@ map("n", "<leader>W", "<CMD>wall<CR>")
 
 -- Mapeando el jj como Escape
 map("i", "jk", "<ESC>")
+map("i", "jj", "<ESC>la")
 
 -- Movimientos
 map("n", "L", "$")
