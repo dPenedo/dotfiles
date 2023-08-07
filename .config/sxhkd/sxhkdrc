@@ -144,7 +144,7 @@ super + {Left,Down,Up,Right}
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 super + shift + Return
 	kitty

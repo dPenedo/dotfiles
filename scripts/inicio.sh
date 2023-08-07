@@ -2,7 +2,7 @@
 
 # xdg-open https://www.tutanota.com &
 sleep 5
-alacritty -e tmux new-session -A -D -s Hasiera &
+kitty -e tmux new-session -A -D -s Hasiera &
 sleep 2
 # sleep
 brave-browser &
@@ -17,7 +17,7 @@ sleep 7
 
 wmctrl -r brave-browser -t 2 &
 # wmctrl -r thunderbird -t 10 &
-wmctrl -r alacritty -t 3 &
+wmctrl -r kitty -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &
 # rofi -e "⚡¡Bienvenido🎷 Se han abierto: 🦊Firefox, 🦁Brave, 📭 el mail y un par de sesiones de la terminal 🐈kitty"
