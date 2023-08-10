@@ -12,17 +12,6 @@ source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# Búsqueda en google
-google() {
-    search=""
-    echo "Buscando: $@"
-    for term in $@; do
-        search="$search%20$term"
-    done
-    nohup xdg-open "http://www.google.com/search?q=$search" &
-}
-
-
 
 # Historia
 HISTFILE=~/.zsh_history
@@ -37,10 +26,6 @@ bindkey -e
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
-# zle -N up-line-or-beginning-search
-# zle -N down-line-or-beginning-search
-# bindkey "^[[A" up-line-or-beginning-search
-# bindkey "^[[B" down-line-or-beginning-search
 
 # Command not found
 # Debian and derivatives: https://launchpad.net/ubuntu/+source/command-not-found
@@ -98,7 +83,7 @@ alias icat="kitty +kitten icat"
 alias pym='python manage.py'
 alias vim='nvim'
 alias nv='nvim'
-alias n='nvim -c Lf'
+# alias n='nvim -c Lf'
 alias lv='lvim'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
@@ -139,11 +124,6 @@ bindkey -s '\et' 'thunar .^M'
 bindkey -s '\ev' 'vifm .^M'
 
 
-# Autocomplete
-# bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
-# bindkey '^j' menu-select
-# bindkey '^j' up-line-or-search
-# bindkey '^k' down-line-or-select
 bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
 bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
@@ -151,8 +131,44 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
 # TODO: asignar Contrl j y control k a coursorup coursor down
 
 
+##############
+#### NNN #####
+##############
+# export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
+n ()
+{
+    # Block nesting of nnn in subshells
+    [ "${NNNLVL:-0}" -eq 0 ] || {
+        echo "nnn is already running"
+        return
+    }
 
-# nnn
+    # The behaviour is set to cd on quit (nnn checks if NNN_TMPFILE is set)
+    # If NNN_TMPFILE is set to a custom path, it must be exported for nnn to
+    # see. To cd on quit only on ^G, remove the "export" and make sure not to
+    # use a custom path, i.e. set NNN_TMPFILE *exactly* as follows:
+    #      NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+
+    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
+    # stty start undef
+    # stty stop undef
+    # stty lwrap undef
+    # stty lnext undef
+
+    # The command builtin allows one to alias nnn to n, if desired, without
+    # making an infinitely recursive alias
+    command nnn "$@" -Pp
+
+    [ ! -f "$NNN_TMPFILE" ] || {
+        . "$NNN_TMPFILE"
+        rm -f "$NNN_TMPFILE" > /dev/null
+    }
+}
+export NNN_PLUG='p:preview-tui;z:autojump'
+export NNN_FIFO='/tmp/nnn.fifo'
+export PAGER="less -R"
+
 if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
     source /usr/share/nnn/quitcd/quitcd.bash_zsh
 fi
