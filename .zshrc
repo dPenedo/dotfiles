@@ -152,8 +152,22 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
 
 
 
+# nnn
+if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
+    source /usr/share/nnn/quitcd/quitcd.bash_zsh
+fi
 
 
+rangercd () {
+tmp="$(mktemp)"
+ranger --choosedir="$tmp" "$@"
+if [ -f "$tmp" ]; then
+dir="$(cat "$tmp")"
+rm -f "$tmp"
+[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+fi
+}
+alias ranger="rangercd"
 
 
 lfcd () {

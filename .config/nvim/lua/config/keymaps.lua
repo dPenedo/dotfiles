@@ -16,8 +16,8 @@ map("v", "<A-s>", "<CMD>update<CR>")
 map("n", "<leader>W", "<CMD>wall<CR>")
 
 -- Mapeando el jj como Escape
-map("i", "jk", "<ESC>")
-map("i", "jj", "<ESC>la")
+map("i", "jj", "<ESC>")
+map("i", "jk", "<ESC>la")
 
 -- Movimientos
 map("n", "L", "$")
@@ -74,6 +74,7 @@ map("o", "A", ":<C-U>normal! mzggVG<CR>`z")
 
 -- File explorerskey
 map("n", "<A-e>", ":Lf<CR>")
+map("n", "<A-r>", ":Ranger<CR>")
 map("n", "<A-v>", ":EditVifm<CR>")
 map("n", "<A-o>", ":Oil<CR>")
 map("n", "-", ":Lf<CR>")

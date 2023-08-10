@@ -7,7 +7,13 @@ IFS="$(printf '%b_' '\n')"
 IFS="${IFS%_}"
 
 image() {
-	kitten icat --stdin no --place 41x22@39x1 file.png </dev/null >/dev/tty
+	file=$1
+	w=$2
+	h=$3
+	x=$4
+	y=$5
+	kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$file" </dev/null >/dev/tty
+	exit 1
 }
 
 ifub() {

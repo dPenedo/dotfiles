@@ -35,7 +35,7 @@ def find_and_open_code_session(directory_name):
     ##NPM    
         
         package_json_path = os.path.join(directory_path, "package.json")
-        # Check if package.json exists in the directory
+        # Comprueba que haya package_json
         if os.path.isfile(package_json_path):
             with open(package_json_path, "r") as f:
                 try:
@@ -63,21 +63,21 @@ def nombre_del_proyecto():
     nombre = os.path.basename(os.path.normpath(directorio))
     return nombre
 
-def can_run_npm_dev(directory_path):
-    package_json_path = os.path.join(directory_path, "package.json")
-
-    # Check if package.json exists in the directory
-    if os.path.isfile(package_json_path):
-        with open(package_json_path, "r") as f:
-            try:
-                package_data = f.read()
-                # Check if "scripts" and "dev" text exist in package.json
-                if "scripts" in package_data and "dev" in package_data:
-                    return True
-            except Exception as e:
-                print("Error reading package.json:", e)
-
-    return False
+# def can_run_npm_dev(directory_path):
+#     package_json_path = os.path.join(directory_path, "package.json")
+#
+#     # Comprueba que haya package_json
+#     if os.path.isfile(package_json_path):
+#         with open(package_json_path, "r") as f:
+#             try:
+#                 package_data = f.read()
+#                 # Check if "scripts" and "dev" text exist in package.json
+#                 if "scripts" in package_data and "dev" in package_data:
+#                     return True
+#             except Exception as e:
+#                 print("Error reading package.json:", e)
+#
+#     return False
 
 if __name__ == "__main__":
     # Pide al usuario que ingrese el nombre del directorio si no se ha dado como argumento

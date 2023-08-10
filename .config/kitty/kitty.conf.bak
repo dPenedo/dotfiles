@@ -121,6 +121,10 @@ cursor_shape beam
 
 #: Scrollback {{{
 
+scrollback_pager nvim --noplugin -u ~/.config/kitty/scrollback-pager/nvim/init.vim -c "silent write! /tmp/kitty_scrollback_buffer | te cat /tmp/kitty_scrollback_buffer - "
+
+
+
 # scrollback_lines 2000
 
 #: Number of lines of history to keep in memory for scrolling back.
@@ -1158,6 +1162,10 @@ map ctrl+shift+up resize_window taller
 map ctrl+shift+down resize_window shorter 3
 map alt+i set_tab_title
 
+map kitty_mod+space show_scrollback
+
+
+
 map ctrl+shift+1 goto_tab 1
 map ctrl+shift+2 goto_tab 2
 map ctrl+shift+3 goto_tab 3
@@ -1172,6 +1180,6 @@ map ctrl+shift+9 goto_tab 9
 
 
 # BEGIN_KITTY_THEME
-# srcery
+# Dot Gov
 include current-theme.conf
 # END_KITTY_THEME
