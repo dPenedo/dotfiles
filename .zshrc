@@ -13,6 +13,14 @@ source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 
+##############
+#### FZF #####
+##############
+
+
+alias fzft="fzf --reverse --preview 'tree -C {} | head -n 100'"
+
+
 # Historia
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -122,6 +130,7 @@ bindkey -s '\ee' 'lfcd^M'
 bindkey -s '\er' 'ranger^M'
 bindkey -s '\et' 'thunar .^M'
 bindkey -s '\ev' 'vifm .^M'
+bindkey -s '\en' 'n .^M'
 
 
 bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
@@ -201,6 +210,7 @@ alias lf="lfcd"
 
 export VISUAL=nvim;
 export EDITOR=nvim;
+export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
 
 
 
