@@ -2,7 +2,7 @@
 
 # xdg-open https://www.tutanota.com &
 sleep 5
-kitty -e tmux new-session -A -D -s Hasiera &
+wezterm -e tmux new-session -A -D -s Hasiera &
 sleep 2
 sleep 2
 Zotero &

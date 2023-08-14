@@ -6,8 +6,8 @@ return {
   { "SmiteshP/nvim-navic", enabled = false },
   -- { "goolord/alpha-nvim", enable = false },
   -- { "folke/trouble.nvim", enabled = false },
-  -- { "nvim-neo-tree/neo-tree.nvim", opts = {
-  --   open_on_setup = false,
-  -- } },
+  { "nvim-neo-tree/neo-tree.nvim", opts = {
+    open_on_setup = false,
+  } },
   --
 }

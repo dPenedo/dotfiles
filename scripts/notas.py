@@ -10,7 +10,7 @@ def find_and_open_code_session():
 
     # Crear una nueva sesión de tmux
     try:
-        session_name = "Notas"
+        session_name = "✍ Notas"
         subprocess.run(['tmux', 'new-session', '-d', '-s', session_name])
         print(f"Sesión de tmux creada con el nombre '{session_name}'.")
     except subprocess.CalledProcessError as e:

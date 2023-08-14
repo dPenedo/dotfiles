@@ -137,6 +137,22 @@ super + ctrl + alt + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# add to tabbed container
+ctrl + alt + {Left,Down,Up,Right}
+    tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
+
+# create/remove from tabbed container
+super + x 
+    id=$(bspc query -N -n); \
+    [[ "$(tabc printclass $id)" == "tabbed" ]] \
+    && tabc detach $id \
+    || tabc create $id 
+
+# toggle autoattach in tabbed container
+super + shift + x 
+    tabc autoattach $(bspc query -N -n) 
+
+
 
 
 
@@ -144,7 +160,7 @@ super + {Left,Down,Up,Right}
 
 # terminal emulator
 super + Return
-	kitty
+	wezterm
 
 super + shift + Return
 	kitty

@@ -26,6 +26,14 @@ return {
       },
     },
   },
+  -- Zenbones
+  {
+    "mcchrish/zenbones.nvim",
+    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+    dependencies = "rktjmp/lush.nvim",
+  },
   -- gruvbox-material
   {
     "sainnhe/gruvbox-material",
@@ -61,7 +69,7 @@ return {
   {
     "ribru17/bamboo.nvim",
     lazy = false,
-    priority = 1000,
+    -- priority = 1000,
     config = function()
       require("bamboo").setup({
         style = "vulgaris", -- Choose between 'vulgaris' (regular) and 'multiplex' (greener)
@@ -72,13 +80,13 @@ return {
           variables = "none",
         },
       })
-      require("bamboo").load()
+      --   require("bamboo").load()
     end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "bamboo",
+      colorscheme = "zenburned",
       styles = {
         keyword = {
           bold = true,
