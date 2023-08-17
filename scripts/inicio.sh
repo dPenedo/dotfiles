@@ -4,11 +4,11 @@
 sleep 5
 wezterm -e tmux new-session -A -D -s Hasiera &
 sleep 2
+brave-browser &
 sleep 2
 Zotero &
 sleep 2
 # sleep
-brave-browser &
 
 sleep 7
 # thunderbird &
