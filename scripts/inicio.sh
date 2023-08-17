@@ -21,7 +21,6 @@ sleep 7
 wmctrl -r brave-browser -t 2 &
 # wmctrl -r thunderbird -t 10 &
 wmctrl -r tmux -t 3 &
-wmctrl -r Zotero -t 8 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &
 # rofi -e "⚡¡Bienvenido🎷 Se han abierto: 🦊Firefox, 🦁Brave, 📭 el mail y un par de sesiones de la terminal 🐈kitty"

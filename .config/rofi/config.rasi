@@ -4,13 +4,14 @@
 //@theme "/home/daniel/.config/rofi/themes/gruvbox.rasi"
 //@theme "/home/daniel/.config/rofi/themes/simple-tokyonight.rasi"
 /* @theme "/home/daniel/.config/rofi/themes/light.rasi" */
+//@theme "/home/daniel/.config/rofi/themes/gruvbox-material.rasi"
+//@theme "/home/daniel/.config/rofi/themes/graphite.rasi"
 //@theme "/home/daniel/.config/rofi/themes/kanagawa-simple.rasi"
+@theme "/home/daniel/.config/rofi/themes/kanagawa-simple.rasi"
 
 
 
 configuration {
-    show-icons: true;
-    icon-theme: "Gruvbox-Material-Dark";
 
     display-ssh:    "     ssh:";
     display-run:    "     run:";
@@ -19,4 +20,3 @@ configuration {
     display-combi:  "     combi:";
     display-filebrowser: "    filebrowser:";
 }
-@theme "/home/daniel/.config/rofi/themes/gruvbox-material.rasi"

@@ -1,5 +1,5 @@
 /**
- * Gruvbox rofi theme
+ * Graphite
  *
  * Color palette imported from https://github.com/sainnhe/gruvbox-material
  *
@@ -7,7 +7,7 @@
 
 
 * {
-	gruv0: #282828;
+	gruv0: #16161D;
 	gruv1: #32302f;
 	gruv2: #45403d;
 	gruv3: #5a524c;
@@ -89,7 +89,7 @@ listview {
     border-color: @gruv10;
     border: 0px 1px 1px 1px;
     background-color: #282828;
-    dynamic: false;
+    dynamic: true;
 }
 
 element {

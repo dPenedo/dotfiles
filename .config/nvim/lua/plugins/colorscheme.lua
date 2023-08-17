@@ -86,7 +86,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "zenburned",
+      colorscheme = "kanagawabones",
       styles = {
         keyword = {
           bold = true,

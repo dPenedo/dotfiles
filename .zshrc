@@ -7,6 +7,7 @@ fi
 
 # source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
@@ -16,7 +17,6 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 ##############
 #### FZF #####
 ##############
-
 
 alias fzft="fzf --reverse --preview 'tree -C {} | head -n 100'"
 
@@ -64,10 +64,6 @@ source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.fzf/shell/key-bindings.zsh
 
 
-# autoload -Uz compinit
-# compinit
-# _comp_options+=(globdots)
-
 
 # nohup zathura "$1" > /dev/null 2>&1 &
 #alias pdf="nohup zathura &"
@@ -111,6 +107,7 @@ alias mm="cat ~/mm.txt | xclip -selection clipboard"
 alias ..="cd .."
 alias lg="lazygit"
 alias nrd="npm run dev"
+alias idea="intellijidea-ce . &"
 
 alias fu="fu | head -c 4 | xclip -selection clipboard"
 
