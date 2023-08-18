@@ -1,10 +1,11 @@
+###################
+## BSPWM HOTKEYS ##
+###################
 
 # make sxhkd reload/restart its configuration files:
 super + shift + Escape
 	pkill -USR1 -x sxhkd
 
-
-# BSPWM HOTKEYS
 # quit/restart bspwm
 super + shift + ctrl + {q,r}
 	bspc {quit,wm -r}
@@ -44,7 +45,7 @@ super + shift + {i,o,p}
 	bspc node -t {tiled,pseudo_tiled,floating}
 
 
-# floating roggle
+# floating toggle
 super + z
   bspc node focused -t \~floating
 
@@ -67,8 +68,11 @@ super + alt + {p,b,comma,period}
 super + {_,shift + }n
 	bspc node -f {next,prev}.local
 
+
+# MONITORES
+
 # focus the next/previous desktop in the current monitor
-super + {m,comma}
+super + {m,tomma}
 	bspc desktop -f {prev,next}.local
 super + shift + {m,comma}
 	bspc node -d {prev,next}.local --follow;
@@ -101,6 +105,8 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} focused:'^{1-9,10}'
 
+
+
 # PRESELECT
 
 # preselect the direction
@@ -116,16 +122,10 @@ super + ctrl + {1-9}
 super + ctrl + space
 	bspc node -p cancel
 
-# cancel the preselection for the focused desktop
-super + ctrl + x
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
 
 # MOVE/RESIZE
 
 # expand a window by moving one of its side outward
-ctrl + alt + {h,j,k,l}
-	bspc node -z {left -60 0,bottom 0 60,top 0 -60,right 60 0}
 
 super + ctrl + {h,j,k,l}
 	bspc node -z {left -60 0,bottom 0 60,top 0 -60,right 60 0}
@@ -152,11 +152,14 @@ super + x
 super + shift + x 
     tabc autoattach $(bspc query -N -n) 
 
+super + r
+   bspc node @/ -R 90
 
 
 
-
-# APLICACIONES 
+#################
+## APLICACIONES##
+#################
 
 # terminal emulator
 super + Return
@@ -168,8 +171,6 @@ super + shift + Return
 super + e
 	thunar
 
-#super + l
-#	/usr/bin/xflock4
 
 super + w 
 	firefox
@@ -179,8 +180,6 @@ super + b
 
 super + g 
   gpick
-super + r
- /home/daniel/.scripts/.ranger.sh
 # /home/daniel/.scripts/.tab-esc.sh
 
 super + d
@@ -192,7 +191,9 @@ super + s
  rofi -show window -show-icons
 
 super + space
-  dmenu_run -fn 'Hack'
+  # dmenu_run -fn 'Hack'
+   dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"
+
 
 super + alt + space
  xfce4-popup-whiskermenu
@@ -203,8 +204,10 @@ super + shift + e
 
 
 
+###################
+## FUNCIONES XFCE##
+###################
 
-# Funciones xfce
 
 Print
   xfce4-screenshooter

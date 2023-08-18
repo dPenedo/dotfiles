@@ -83,6 +83,11 @@ bindkey '^[[B' history-substring-search-down
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+
+###############
+## Mis alias##
+#############
+
 alias icat="kitty +kitten icat"
 alias pym='python manage.py'
 alias vim='nvim'
@@ -108,21 +113,19 @@ alias ..="cd .."
 alias lg="lazygit"
 alias nrd="npm run dev"
 alias idea="intellijidea-ce . &"
+alias ta="tmux a"
 
 alias fu="fu | head -c 4 | xclip -selection clipboard"
 
 
-# flatpak programs
+# Programas flatpak
 
 alias obsidian="flatpak run md.obsidian.Obsidian"
 alias musescore="flatpak run org.musescore.MuseScore"
 alias spotify="flatpak run com.spotify.Client"
 alias zotero="flatpak run org.zotero.Zotero"
 
-
-
-
-# Abrir programas
+# Abrir programas desde terminal
 bindkey -s '\ee' 'lfcd^M'
 bindkey -s '\er' 'ranger^M'
 bindkey -s '\et' 'thunar .^M'
@@ -179,6 +182,7 @@ if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
     source /usr/share/nnn/quitcd/quitcd.bash_zsh
 fi
 
+# Ranger
 
 rangercd () {
 tmp="$(mktemp)"
@@ -191,6 +195,7 @@ fi
 }
 alias ranger="rangercd"
 
+# Lf
 
 lfcd () {
     tmp="$(mktemp -uq)"
@@ -210,6 +215,7 @@ export EDITOR=nvim;
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
 
 
+# Cambiar nombres de ventanas
 
 izena () {
     echo -ne "\033]0;$1\007"

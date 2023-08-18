@@ -2,9 +2,9 @@
 
 # xdg-open https://www.tutanota.com &
 sleep 5
-wezterm -e tmux new-session -A -D -s Hasiera &
-sleep 2
 brave-browser &
+sleep 4
+wezterm -e tmux new-session -A -D -s Hasiera &
 sleep 2
 Zotero &
 sleep 2
@@ -18,7 +18,7 @@ sleep 7
 #
 # sleep 12
 
-wmctrl -r brave-browser -t 2 &
+wmctrl -r "Nueva pestaña - Brave" -t 2 &
 # wmctrl -r thunderbird -t 10 &
 wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4
