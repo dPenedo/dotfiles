@@ -86,7 +86,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawabones",
+      colorscheme = "kanagawa",
       styles = {
         keyword = {
           bold = true,

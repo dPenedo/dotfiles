@@ -171,6 +171,8 @@ super + shift + Return
 super + e
 	thunar
 
+super + c
+  gnome-calendar
 
 super + w 
 	firefox
@@ -192,7 +194,8 @@ super + s
 
 super + space
   # dmenu_run -fn 'Hack'
-   dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"
+   # dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"
+   dmenu_run -nb "#16161D" -nf "#AFB8C6" -sb "#16161D" -sf "#5294E2" -fn "Hack"
 
 
 super + alt + space
@@ -222,5 +225,5 @@ ctrl + alt + Delete
 alt + F4
   xfce4-session-logout
 
-super + v
-  xfce4-popup-clipman 
+# super + v
+#   xfce4-popup-clipman 

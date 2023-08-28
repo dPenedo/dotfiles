@@ -133,8 +133,13 @@ bindkey -s '\ev' 'vifm .^M'
 bindkey -s '\en' 'n .^M'
 
 
-bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
-bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+# bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
+# bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
 # TODO: asignar Contrl j y control k a coursorup coursor down
@@ -254,3 +259,5 @@ eval "$(zoxide init zsh)"
 
 source /home/daniel/.config/broot/launcher/bash/br
 export PATH="$HOME/.local/bin/":$PATH
+export PATH=/bin/java/bin:$PATH
+
