@@ -6,13 +6,13 @@ set -C -f
 IFS="$(printf '%b_' '\n')"
 IFS="${IFS%_}"
 
-image() {
-	kitten icat --stdin no --place 41x22@39x1 file.png </dev/null >/dev/tty
-}
+# image() {
+# 	kitten icat --stdin no --place 41x22@39x1 file.png </dev/null >/dev/tty
+# }
 
-ifub() {
-	[ -n "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ] && command -V ueberzug >/dev/null 2>&1
-}
+# ifub() {
+# 	[ -n "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ] && command -V ueberzug >/dev/null 2>&1
+# }
 
 # Note that the cache file name is a function of file information, meaning if
 # an image appears in multiple places across the machine, it will not have to
@@ -24,7 +24,7 @@ image/avif)
 	[ ! -f "$CACHE" ] && convert "$1" "$CACHE.jpg"
 	image "$CACHE.jpg" "$2" "$3" "$4" "$5" "$1"
 	;;
-image/*) image "$1" "$2" "$3" "$4" "$5" "$1" ;;
+# image/*) image "$1" "$2" "$3" "$4" "$5" "$1" ;;
 text/html) lynx -width="$4" -display_charset=utf-8 -dump "$1" ;;
 text/troff) man ./ "$1" | col -b ;;
 text/* | */xml | application/json) bat --terminal-width "$(($4 - 2))" -f "$1" ;;

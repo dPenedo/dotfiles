@@ -6,16 +6,16 @@ set -C -f
 IFS="$(printf '%b_' '\n')"
 IFS="${IFS%_}"
 
-image() {
-	file=$1
-	w=$2
-	h=$3
-	x=$4
-	y=$5
-	kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$file" </dev/null >/dev/tty
-	exit 1
-}
-
+# image() {
+# 	file=$1
+# 	w=$2
+# 	h=$3
+# 	x=$4
+# 	y=$5
+# 	kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$file" </dev/null >/dev/tty
+# 	exit 1
+# }
+#
 ifub() {
 	[ -n "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ] && command -V ueberzug >/dev/null 2>&1
 }

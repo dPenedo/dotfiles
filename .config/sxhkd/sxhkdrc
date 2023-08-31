@@ -193,9 +193,9 @@ super + s
  rofi -show window -show-icons
 
 super + space
+   dmenu_run -nb "#16161D" -nf "#AFB8C6" -sb "#16161D" -sf "#5294E2" -fn "Hack"
   # dmenu_run -fn 'Hack'
    # dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"
-   dmenu_run -nb "#16161D" -nf "#AFB8C6" -sb "#16161D" -sf "#5294E2" -fn "Hack"
 
 
 super + alt + space

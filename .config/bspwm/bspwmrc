@@ -7,24 +7,27 @@ xfce4-panel -d &
 ~/scripts/inicio.sh &
 # ~/.screenlayout/compu-con-pantalla.sh &
 xfce4-display.settings &
+picom --config ~/.config/picom/picom.conf &
 # nm-applet &
 #xfdesktop -D &
 sxhkd &
-picom --config $HOME/.config/picom/picom.conf &
+~/.config/polybar/launch.sh &
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
 # Más o menos funciona
 # bspc monitor HDMI-0 -d 1 2 3 4 5
 # bspc monitor eDP -d 6 7 8 9 0
-amddp=$(xrandr --query | grep 'HDMI-0')
 
-if [[ $amddp = *\ connected* ]]; then
-	bspc wm -O eDP HDMI-0
+monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
+if [[ $monitor_externo = *connected* ]]; then
+	xrandr --output HDMI-0 --auto --primary --right-of eDP
+	# bspc wm -O eDP HDMI-0
 	bspc monitor eDP -d - -
-	bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 0
+	bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
 else
-	bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+	xrandr --output eDP --auto --primary
+	bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 fi
 
 # polybar -r &
