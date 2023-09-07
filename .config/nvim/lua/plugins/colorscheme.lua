@@ -51,6 +51,7 @@ return {
     end,
   },
   --  Everblush
+  --
   {
     "Everblush/nvim",
     name = "everblush",

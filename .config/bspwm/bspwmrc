@@ -7,11 +7,11 @@ xfce4-panel -d &
 ~/scripts/inicio.sh &
 # ~/.screenlayout/compu-con-pantalla.sh &
 xfce4-display.settings &
-picom --config ~/.config/picom/picom.conf &
 # nm-applet &
 #xfdesktop -D &
 sxhkd &
 ~/.config/polybar/launch.sh &
+picom --config ~/.config/picom/picom.conf &
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
@@ -29,6 +29,8 @@ else
 	xrandr --output eDP --auto --primary
 	bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 fi
+
+picom &
 
 # polybar -r &
 
@@ -70,4 +72,5 @@ bspc rule -a Xfce4-panel state=floating border=off
 bspc rule -a xfce4-popup-whiskermenu state=floating border=off
 bspc rule -a Whisker\ Menu state=floating border=off
 bspc rule -a Wrapper-2.0 state=floating border=off focus=on
+bspc rule -a Zathura state=tiled
 sleep 5 && xprop -name "Whisker Menu"

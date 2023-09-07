@@ -10,7 +10,7 @@
     bg0:     #16161d;
     bg1:     #16161d;
     /* bg1:     #363646; */
-    fg0:     #ECECEC;
+    fg0:     #C0C5CE;
 
     accent-color:     #3B4252 ;
     urgent-color:     #ffcb6b;

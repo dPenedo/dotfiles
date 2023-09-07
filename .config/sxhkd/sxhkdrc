@@ -92,8 +92,10 @@ super + alt + {Left,Right}
 # focus the last node/desktop
 super + Tab
 	bspc desktop -f last
-alt + Tab
-	bspc node -f last
+alt +  Tab
+  bspc node --focus next.local
+
+
 
 # focus the older or newer node in the focus history
 super + {o,i}

@@ -5,11 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
@@ -59,7 +54,7 @@ export KEYTIMEOUT=1
 source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
 source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-# source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source ~/.fzf/shell/completion.zsh
 source ~/.fzf/shell/key-bindings.zsh
 
@@ -83,6 +78,9 @@ bindkey '^[[B' history-substring-search-down
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
+
+
+bindkey '^ ' autosuggest-accept
 
 ###############
 ## Mis alias##
@@ -114,8 +112,10 @@ alias lg="lazygit"
 alias nrd="npm run dev"
 alias idea="intellijidea-ce . &"
 alias ta="tmux a"
+alias ccd="zi"
 
 alias fu="fu | head -c 4 | xclip -selection clipboard"
+alias za="zathura --fork"
 
 
 # Programas flatpak
@@ -157,21 +157,7 @@ n ()
         return
     }
 
-    # The behaviour is set to cd on quit (nnn checks if NNN_TMPFILE is set)
-    # If NNN_TMPFILE is set to a custom path, it must be exported for nnn to
-    # see. To cd on quit only on ^G, remove the "export" and make sure not to
-    # use a custom path, i.e. set NNN_TMPFILE *exactly* as follows:
-    #      NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
     export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-
-    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
-    # stty start undef
-    # stty stop undef
-    # stty lwrap undef
-    # stty lnext undef
-
-    # The command builtin allows one to alias nnn to n, if desired, without
-    # making an infinitely recursive alias
     command nnn "$@" -Pp
 
     [ ! -f "$NNN_TMPFILE" ] || {
@@ -215,8 +201,6 @@ alias lf="lfcd"
 # bindkey -s '^o' '^ulfcd\n'
 
 
-export VISUAL=nvim;
-export EDITOR=nvim;
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
 
 
@@ -251,9 +235,6 @@ bindkey -s '^o' 'lfcd\n'  # zsh
 
 eval "$(zoxide init zsh)"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -261,3 +242,7 @@ source /home/daniel/.config/broot/launcher/bash/br
 export PATH="$HOME/.local/bin/":$PATH
 export PATH=/bin/java/bin:$PATH
 
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
