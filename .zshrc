@@ -80,7 +80,6 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 
 
-bindkey '^ ' autosuggest-accept
 
 ###############
 ## Mis alias##
@@ -141,7 +140,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
 # TODO: asignar Contrl j y control k a coursorup coursor down
 
 
