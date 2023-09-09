@@ -110,6 +110,8 @@ alias zotero="flatpak run org.zotero.Zotero"
 
 # Abrir programas
 bind '"\et":"thunar . &\n"'
+bind '"\ee":"lfcd\n"'
+bind -x '"\C- ": __fzf_history__'
 
 # Ranger
 

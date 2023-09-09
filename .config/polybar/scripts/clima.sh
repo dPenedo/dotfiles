@@ -66,7 +66,7 @@ DECIMALS=0
 # measurement unit you have set: knots, m/s or mph). Set to 0 if you always
 # want to display wind info. It's ignored if DISPLAY_WIND is false.
 
-MIN_WIND=50
+MIN_WIND=40
 
 # Display the numeric wind force or not. If not, only the wind icon will
 # appear. yes/no

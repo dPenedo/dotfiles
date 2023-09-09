@@ -22,7 +22,7 @@ set ratios 1:2
 set icons
 set period 1
 set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
-# set cleaner '~/.config/lf/lf_kitty_clean'
+set cleaner '~/.config/lf/lf_kitty_clean'
 set previewer '~/.config/lf/2preview'
 # set previewer '~/.config/lf/preview3'
 # set previewer ~/.config/lf/lf_kitty_preview
