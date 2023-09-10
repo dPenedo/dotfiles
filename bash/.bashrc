@@ -67,7 +67,7 @@ rama_git() {
 	fi
 }
 
-PS1="${LIGHT_BLUE}\w${GRAY}\$(rama_git)${YELLOW}> ${RESET}"
+PS1="${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW}> ${RESET}"
 
 ###############
 ## Mis alias##
