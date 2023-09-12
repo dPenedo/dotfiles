@@ -46,6 +46,8 @@ export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 
 ### PROMPT
 LIGHT_BLUE="\[\033[94m\]"
 MID_BLUE="\[\033[34m\]"
+ROYAL_BLUE="\[\033[38;5;12m\]"
+GRAY_BLUE="\[\033[38;5;69m\]"
 YELLOW="\[\033[33m\]"
 GRAY="\[\033[37m\]"
 RESET="\[\033[0m\]"
@@ -67,7 +69,8 @@ rama_git() {
 	fi
 }
 
-PS1="${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW}> ${RESET}"
+PS1="${GRAY_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
+# PS1="\[\e[34;45m\]\w\[\e[m\]\[\e[35m\]▶\[\e[m\] "
 
 ###############
 ## Mis alias##

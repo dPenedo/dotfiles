@@ -7,8 +7,9 @@
 //@theme "/home/daniel/.config/rofi/themes/gruvbox-material.rasi"
 //@theme "/home/daniel/.config/rofi/themes/graphite.rasi"
 //@theme "/home/daniel/.config/rofi/themes/kanagawa-simple.rasi"
-//@theme "/home/daniel/.config/rofi/themes/kanagawa-simple.rasi"
-@theme "/home/daniel/.config/rofi/themes/arc.rasi"
+@theme "/home/daniel/.config/rofi/themes/kanagawa2.rasi"
+//@theme "/home/daniel/.config/rofi/themes/kanagawabox.rasi"
+//@theme "/home/daniel/.config/rofi/themes/arc.rasi"
 
 
 

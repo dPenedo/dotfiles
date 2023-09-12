@@ -11,9 +11,16 @@
 #import:
 #  - /path/to/alacritty.yml
 import:
-  - ~/.config/alacritty/themes/themes/{rose-pine}.yaml
-  # - ~/.config/alacritty/themes/themes/{moonlight_ii_vscode}.yaml
-  - ~/.config/alacritty/themes/themes/{inferno}.yaml
+  # - ~/.config/alacritty/themes/themes/remedy_dark.yaml
+  # - ~/.config/alacritty/themes/themes/tender.yaml
+  # - ~/.config/alacritty/themes/themes/dark_pastels.yaml
+  # - ~/.config/alacritty/themes/themes/kanagawa_dragon.yaml
+  - ~/.config/alacritty/themes/themes/kanagawa_wave.yaml
+# - ~/.config/alacritty/themes/themes/nord.yaml
+# - ~/.config/alacritty/themes/themes/taerminal.yaml
+# - ~/.config/alacritty/themes/themes/pencil_dark.yaml
+# - ~/.config/alacritty/themes/themes/moonlight_ii_vscode.yaml
+# - ~/.config/alacritty/themes/themes/one_dark.yaml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -44,17 +51,17 @@ window:
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
+  # position:
+  #  x: 3
+  #  y: 3
 
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 6
+    y: 6
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -74,7 +81,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.92
+  opacity: 0.94
 
   # Startup Mode (changes require restart)
   #
@@ -137,8 +144,8 @@ font:
     # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack
-    family: NotoMono
+    family: Hack
+    # family: NotoMono
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -157,8 +164,8 @@ font:
     # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack
-    family: NotoMono
+    family: Hack
+    # family: NotoMono
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
@@ -177,9 +184,9 @@ font:
     # family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
-    # family: Hack
+    family: Hack
     # family: Atkinson Hiperlegible
-    family: JetBrains Mono
+    # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -330,32 +337,32 @@ font:
 # Colors (Japanesque)
 # colors:
 #   bright:
-#     black: '#595b59'
-#     blue: '#7e9caa'
-#     cyan: '#6A9589'
-#     green: '#b7d0ae'
-#     magenta: '#604291'
-#     red: '#d18fa6'
-#     white: '#b2b5ae'
-#     yellow: '#78592f'
+#     black: "#595b59"
+#     blue: "#7e9caa"
+#     cyan: "#6A9589"
+#     green: "#b7d0ae"
+#     magenta: "#604291"
+#     red: "#d18fa6"
+#     white: "#b2b5ae"
+#     yellow: "#78592f"
 #   cursor:
-#     cursor: '#DCA561'
-#     text: '#343935'
+#     cursor: "#DCA561"
+#     text: "#343935"
 #   normal:
-#     black: '#343935'
-#     blue: '#7E9CD8'
-#     cyan: '#389aad'
-#     green: '#98BB6C'
-#     magenta: '#a57fc4'
-#     red: '#cf3f61'
-#     white: '#fafaf6'
-#     yellow: '#C8C096'
+#     black: "#343935"
+#     blue: "#7E9CD8"
+#     cyan: "#389aad"
+#     green: "#98BB6C"
+#     magenta: "#a57fc4"
+#     red: "#cf3f61"
+#     white: "#fafaf6"
+#     yellow: "#C8C096"
 #   primary:
-#     background: '#16161D'
-#     foreground: '#eaeaea'
+#     background: "#16161D"
+#     foreground: "#eaeaea"
 #   selection:
-#     background: '#175877'
-#     text: '#f7f6ec'
+#     background: "#175877"
+#     text: "#f7f6ec"
 # Colors (Gruvbox dark)
 # colors:
 #   # Default colors
