@@ -188,7 +188,7 @@ super + g
 super + i
   intellijide-ce
 
-super + d
+super + space
  rofi -combi-modi -show-icons -show drun 
 super + Escape
  rofi -show powermenu -modi powermenu:~/scripts/rofi-power-menu  
@@ -196,8 +196,8 @@ super + Escape
 super + s
  rofi -show window -show-icons
 
-super + space
-   dmenu_run -nb "#16161D" -nf "#AFB8C6" -sb "#16161D" -sf "#5294E2" -fn "Hack"
+super + d
+   dmenu_run -nb "#16161D" -nf "#ECE1C0" -sb "#16161D" -sf "#7E9CD8" -fn "Hack"
   # dmenu_run -fn 'Hack'
    # dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"
 
