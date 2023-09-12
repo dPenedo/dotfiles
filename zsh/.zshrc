@@ -14,6 +14,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 ##############
 
 alias fzft="fzf --reverse --preview 'tree -C {} | head -n 100'"
+export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
+bindkey '^ ' fzf-history-widget
 
 
 # Historia
@@ -27,10 +29,7 @@ setopt share_history
 # Hace que funcionen combinacionjes como el control a control e
 bindkey -e
 
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
 
-# Command not found
 # Debian and derivatives: https://launchpad.net/ubuntu/+source/command-not-found
 if [[ -x /usr/lib/command-not-found || -x /usr/share/command-not-found/command-not-found ]]; then
   command_not_found_handler() {
@@ -51,17 +50,16 @@ export KEYTIMEOUT=1
 
 
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
-source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
+# source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
+# source ~/.fzf/shell/completion.zsh
+source ~/.fzf/shell/key-bindings.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
+
 source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#source ~/.fzf/shell/completion.zsh
-source ~/.fzf/shell/key-bindings.zsh
 
 
 
-# nohup zathura "$1" > /dev/null 2>&1 &
-#alias pdf="nohup zathura &"
 
 # Control + flechas
 bindkey "^[[1;5C" forward-word
@@ -200,27 +198,6 @@ alias lf="lfcd"
 # bindkey -s '^o' '^ulfcd\n'
 
 
-export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
-
-
-# Cambiar nombres de ventanas
-
-izena () {
-    echo -ne "\033]0;$1\007"
-}
-izensua () {
-    echo -ne "\033]0;🔥\007"
-}
-izenserver () {
-    echo -ne "\033]0;\007"
-}
-izensass () {
-    echo -ne "\033]0;ﳪ\007"
-}
-izenconfig () {
-    echo -ne "\033]0;🚧\007"
-}
-alias live-server="izenserver && live-server"
 
 
 
