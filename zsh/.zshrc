@@ -6,16 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 
-##############
-#### FZF #####
-##############
-
-alias fzft="fzf --reverse --preview 'tree -C {} | head -n 100'"
-export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
-bindkey '^ ' fzf-history-widget
 
 
 # Historia
@@ -49,14 +41,22 @@ fi
 export KEYTIMEOUT=1
 
 
+# Importados
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 # source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 # source ~/.fzf/shell/completion.zsh
+# source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
 source ~/.fzf/shell/key-bindings.zsh
-source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
-
+source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+source ~/.filemanagers.sh
+source ~/.aliases.sh
+
+# Completado
+# source ~/.completion.zsh
 
 
 
@@ -71,56 +71,16 @@ bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 
 
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
+# Tab normal
+bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 
 
-
-###############
-## Mis alias##
-#############
-
-alias icat="kitty +kitten icat"
-alias pym='python manage.py'
-alias vim='nvim'
-alias nv='nvim'
-# alias n='nvim -c Lf'
-alias lv='lvim'
-alias ts='tmux new-session -A -D -s'
-alias python='python3'
-alias ls='lsd --group-dirs=first'
-# alias bat='batcat'
-alias l='exa -s type --icons -lah'
-alias pdf="nohup zathura"
-alias h="cd ~"
-alias history='history 0'
-alias hist="history | fzf"
-alias t2="tre -l 2"
-alias t3="tre -l 3"
-alias t4="tre -l 4"
-alias git push="cat ~/mm.txt&& git push"
-alias neo="neovide"
-alias mm="cat ~/mm.txt | xclip -selection clipboard"
-alias ..="cd .."
-alias lg="lazygit"
-alias nrd="npm run dev"
-alias idea="intellijidea-ce . &"
-alias ta="tmux a"
-alias ccd="zi"
-
-alias fu="fu | head -c 4 | xclip -selection clipboard"
-alias za="zathura --fork"
+# Desactiva la flecha para arriba de l autocompletado
+bindkey '^[[A' up-line-or-history
+bindkey '^[[B' down-line-or-history
 
 
-# Programas flatpak
-
-alias obsidian="flatpak run md.obsidian.Obsidian"
-alias musescore="flatpak run org.musescore.MuseScore"
-alias spotify="flatpak run com.spotify.Client"
-alias zotero="flatpak run org.zotero.Zotero"
 
 # Abrir programas desde terminal
 bindkey -s '\ee' 'lfcd^M'
@@ -129,85 +89,23 @@ bindkey -s '\et' 'thunar .^M'
 bindkey -s '\ev' 'vifm .^M'
 bindkey -s '\en' 'n .^M'
 
+# USE LF TO SWITCH DIRECTORIES AND BIND IT TO CTRL-O
+LFCD="~/.config/lf/lfcd.sh"
+if [ -f "$LFCD" ]; then
+	source "$LFCD"
+fi
+bindkey -s '^o' 'lfcd\n' # zsh
 
-# bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
-# bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
 
+##############
+#### FZF #####
+##############
+
+export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
+bindkey '^ ' fzf-history-widget
 
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
 # TODO: asignar Contrl j y control k a coursorup coursor down
-
-
-##############
-#### NNN #####
-##############
-# export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
-n ()
-{
-    # Block nesting of nnn in subshells
-    [ "${NNNLVL:-0}" -eq 0 ] || {
-        echo "nnn is already running"
-        return
-    }
-
-    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-    command nnn "$@" -Pp
-
-    [ ! -f "$NNN_TMPFILE" ] || {
-        . "$NNN_TMPFILE"
-        rm -f "$NNN_TMPFILE" > /dev/null
-    }
-}
-export NNN_PLUG='p:preview-tui;z:autojump'
-export NNN_FIFO='/tmp/nnn.fifo'
-export PAGER="less -R"
-
-if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
-    source /usr/share/nnn/quitcd/quitcd.bash_zsh
-fi
-
-# Ranger
-
-rangercd () {
-tmp="$(mktemp)"
-ranger --choosedir="$tmp" "$@"
-if [ -f "$tmp" ]; then
-dir="$(cat "$tmp")"
-rm -f "$tmp"
-[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-fi
-}
-alias ranger="rangercd"
-
-# Lf
-
-lfcd () {
-    tmp="$(mktemp -uq)"
-    trap 'rm -f $tmp >/dev/null 2>&1 && trap - HUP INT QUIT TERM PWR EXIT' HUP INT QUIT TERM PWR EXIT
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-alias lf="lfcd"
-# bindkey -s '^o' '^ulfcd\n'
-
-
-
-
-
-# USE LF TO SWITCH DIRECTORIES AND BIND IT TO CTRL-O
-LFCD="~/.config/lf/lfcd.sh"
-    if [ -f "$LFCD" ]; then
-        source "$LFCD"
-    fi
-bindkey -s '^o' 'lfcd\n'  # zsh
-
 
 eval "$(zoxide init zsh)"
 
