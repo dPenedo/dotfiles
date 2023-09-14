@@ -28,4 +28,10 @@ current_windows=$(wmctrl -lx | awk -v current_display="$current_display" -v acti
 
 	}')
 
-echo $current_windows
+if [[ $current_windows = *crx_hnpfj* ]]; then
+	echo " 	WhatsApp"
+elif [[ $current_windows = *crx_jckaldk* ]]; then
+	echo " 	ChatGPT"
+else
+	echo $current_windows
+fi
