@@ -11,5 +11,12 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch the bar
-polybar -q main -c "$DIR"/config.ini &
-polybar -q second -c "$DIR"/config.ini &
+
+monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
+if [[ $monitor_externo = *connected* ]]; then
+	polybar -q main -c "$DIR"/config.ini &
+	polybar -q second -c "$DIR"/config.ini &
+
+else
+	polybar -q main -c "$DIR"/config.ini &
+fi
