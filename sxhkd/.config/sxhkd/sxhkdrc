@@ -23,6 +23,9 @@ super + f
 # 	bspc desktop -l next
 
 
+# Hide polybar
+super + alt + f
+  polybar-msg cmd toggle
 
 # Go full mode
 super + shift + f
