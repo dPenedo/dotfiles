@@ -39,7 +39,7 @@ COLOR_HOT="#f43753"
 COLOR_NORMAL_TEMP="#7e9cd8"
 
 # Leave "" if you want the default polybar color
-COLOR_TEXT="#7e9cd8"
+COLOR_TEXT="#AEA69D"
 # Polybar settings ____________________________________________________________
 
 # Font for the weather icons
