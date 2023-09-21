@@ -18,10 +18,16 @@ sleep 7
 #
 # sleep 12
 
-wmctrl -r "Nueva pestaña - Brave" -t 2 &
+monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
+if [[ $monitor_externo = *connected* ]]; then
+	wmctrl -r "Nueva pestaña - Brave" -t 2 &
+	wmctrl -r Alacritty -t 3 &
+else
+	wmctrl -r "Nueva pestaña - Brave" -t 0 &
+	wmctrl -r Alacritty -t 1 &
+fi
 # wmctrl -r thunderbird -t 10 &
 # wmctrl -r tmux -t 3 &
-wmctrl -r Alacritty -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &
 # rofi -e "⚡¡Bienvenido🎷 Se han abierto: 🦊Firefox, 🦁Brave, 📭 el mail y un par de sesiones de la terminal 🐈kitty"

@@ -73,7 +73,7 @@ bspc rule -a Whisker\ Menu state=floating border=off
 bspc rule -a Wrapper-2.0 state=floating border=off focus=on
 bspc rule -a Zathura state=tiled
 bspc rule -a Geary desktop=^9
-bspc rule -a jetbrains-idea-ce desktop=^4
+# bspc rule -a jetbrains-idea-ce desktop=^4
 bspc rule -a gnome-calendar desktop=^7
 
 sleep 5 && xprop -name "Whisker Menu"
