@@ -45,11 +45,11 @@ export KEYTIMEOUT=1
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 # source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 # source ~/.fzf/shell/completion.zsh
-# source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
+source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
 source ~/.fzf/shell/key-bindings.zsh
-source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+# source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-# source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 source ~/.filemanagers.sh
@@ -86,7 +86,9 @@ bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 # Desactiva la flecha para arriba de l autocompletado
 bindkey '^[[A' up-line-or-history
-bindkey '^[[B' down-line-or-history
+# bindkey '^[[B' down-line-or-history
+# ctrl abajo
+bindkey '^[[1;5B' down-line-or-history
 
 
 
@@ -111,6 +113,9 @@ bindkey -s '^o' 'lfcd\n' # zsh
 
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
 bindkey '^ ' fzf-history-widget
+bindkey '^[[B' fzf-history-widget
+
+
 
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
 # TODO: asignar Contrl j y control k a coursorup coursor down

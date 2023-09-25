@@ -22,6 +22,7 @@ if [[ $monitor_externo = *connected* ]]; then
 	xrandr --output HDMI-0 --auto --primary --right-of eDP
 	# bspc wm -O eDP HDMI-0
 	bspc monitor eDP -d - -
+	sleep 5 &
 	bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
 else
 	xrandr --output eDP --auto --primary
@@ -73,7 +74,8 @@ bspc rule -a Whisker\ Menu state=floating border=off
 bspc rule -a Wrapper-2.0 state=floating border=off focus=on
 bspc rule -a Zathura state=tiled
 bspc rule -a Geary desktop=^9
-# bspc rule -a jetbrains-idea-ce desktop=^4
+bspc rule -a jetbrains-idea-ce desktop=^4
+bspc rule -a jetbrains-idea desktop=^4
 bspc rule -a gnome-calendar desktop=^7
 
 sleep 5 && xprop -name "Whisker Menu"

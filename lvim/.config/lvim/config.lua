@@ -13,6 +13,6 @@ reload("daniel.prueba")
 -- NvimTree
 lvim.builtin.nvimtree.setup.view.side = "right"
 
-lvim.colorscheme = "bamboo"
+lvim.colorscheme = "kanagawa"
 
 lvim.format_on_save = true

@@ -6,8 +6,8 @@ brave-browser &
 sleep 4
 alacritty -e tmux new-session -A -D -s Hasiera &
 sleep 2
-Zotero &
-sleep 2
+# Zotero &
+# sleep 2
 # sleep
 
 sleep 7
