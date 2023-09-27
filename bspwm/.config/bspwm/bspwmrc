@@ -48,7 +48,15 @@ bspc rule -a xfce4-popup-whiskermenu state=floating border=off
 bspc rule -a Whisker\ Menu state=floating border=off
 bspc rule -a Wrapper-2.0 state=floating border=off focus=on
 bspc rule -a Zathura state=tiled
-bspc rule -a Geary desktop=^9
-bspc rule -a jetbrains-idea-ce desktop=^4
-bspc rule -a jetbrains-idea desktop=^4
-bspc rule -a gnome-calendar desktop=^7
+
+if [[ $monitor_externo = *connected* ]]; then
+	bspc rule -a jetbrains-idea-ce desktop=^4
+	bspc rule -a jetbrains-idea desktop=^4
+	bspc rule -a Geary desktop=^9
+	bspc rule -a gnome-calendar desktop=^7
+else
+	bspc rule -a jetbrains-idea-ce desktop=^2
+	bspc rule -a jetbrains-idea desktop=^2
+	bspc rule -a Geary desktop=^7
+	bspc rule -a gnome-calendar desktop=^5
+fi
