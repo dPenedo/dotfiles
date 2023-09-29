@@ -200,6 +200,9 @@ super + Escape
 super + s
  rofi -show window -show-icons
 
+ctrl + alt + w
+  rofi-wifi-menu
+
 super + space
    dmenu_run -nb "#16161D" -nf "#ECE1C0" -sb "#16161D" -sf "#7E9CD8" -fn "Hack"
   # dmenu_run -fn 'Hack'
