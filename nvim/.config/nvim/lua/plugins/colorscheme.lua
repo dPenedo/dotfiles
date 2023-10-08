@@ -34,7 +34,12 @@ return {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
   },
-  -- gruvbox-material
+  {
+    "maxmx03/solarized.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  { "neanias/everforest-nvim", version = false, lazy = false },
   {
     "sainnhe/gruvbox-material",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -62,6 +67,9 @@ return {
       },
     },
   },
+  { "rose-pine/neovim", name = "rose-pine" },
+  --catppuccin
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   -- Nordic
   {
     "AlexvZyl/nordic.nvim",
@@ -87,7 +95,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "catppuccin",
       styles = {
         keyword = {
           bold = true,

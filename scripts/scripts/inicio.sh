@@ -5,13 +5,13 @@ sleep 5
 brave-browser &
 sleep 4
 alacritty -e tmux new-session -A -D -s Hasiera &
-sleep 2
+# sleep 2
 # Zotero &
 # sleep 2
 # sleep
 
-sleep 7
 # thunderbird &
+sleep 7
 #
 # sleep 9
 # flatpak run md.obsidian.Obsidian &
@@ -22,11 +22,12 @@ monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "Nueva pestaña - Brave" -t 2 &
 	wmctrl -r Alacritty -t 3 &
+	wmctrl -r thunderbird -t 11 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	wmctrl -r Alacritty -t 1 &
+	# wmctrl -r thunderbird -t 9 &
 fi
-# wmctrl -r thunderbird -t 10 &
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &
