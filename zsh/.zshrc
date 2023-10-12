@@ -5,11 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
-
-
-
-
 # Historia
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -42,32 +37,23 @@ export KEYTIMEOUT=1
 
 
 # Importados
+source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
+source ~/.fzf/shell/key-bindings.zsh
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 # source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 # source ~/.fzf/shell/completion.zsh
-source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
-source ~/.fzf/shell/key-bindings.zsh
 # source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+#Cambio color zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#A89984"
 
 source ~/.filemanagers.sh
 source ~/.aliases.sh
 
 # Completado
 # source ~/.completion.zsh
-
-
-
-##############
-#### PROMPT #####
-##############
-
-
-
-
-
 
 # Control + flechas
 bindkey "^[[1;5C" forward-word
@@ -84,11 +70,14 @@ bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 
 
-# Desactiva la flecha para arriba de l autocompletado
-bindkey '^[[A' up-line-or-history
-# bindkey '^[[B' down-line-or-history
+bindkey '^[[A' fzf-history-widget
+bindkey '^[[B' fzf-history-widget
+
+
+
+
 # ctrl abajo
-bindkey '^[[1;5B' down-line-or-history
+# bindkey '^[[1;5B' down-line-or-history
 
 
 

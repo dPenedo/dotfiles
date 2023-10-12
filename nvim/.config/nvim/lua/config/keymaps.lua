@@ -73,7 +73,7 @@ map("n", "<A-->", "<CMD>split<CR>")
 map("o", "A", ":<C-U>normal! mzggVG<CR>`z")
 
 -- File explorerskey
-map("n", "<A-e>", ":NnnExplorer<CR>")
+map("n", "<A-e>", ":Lf<CR>")
 map("n", "<A-n>", ":NnnPicker<CR>")
 map("n", "<A-r>", ":Ranger<CR>")
 map("n", "<A-v>", ":EditVifm<CR>")

@@ -74,6 +74,12 @@ return {
   {
     "AlexvZyl/nordic.nvim",
   },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    opts = { contrast = "hard", palette_overrides = { bright_red = "#7E9CD8" } },
+  },
   -- Bamboo
   {
     "ribru17/bamboo.nvim",
@@ -95,7 +101,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox",
       styles = {
         keyword = {
           bold = true,

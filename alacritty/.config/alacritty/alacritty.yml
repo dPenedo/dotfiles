@@ -15,7 +15,9 @@ import:
   # - ~/.config/alacritty/themes/themes/tender.yaml
   # - ~/.config/alacritty/themes/themes/dark_pastels.yaml
   # - ~/.config/alacritty/themes/themes/kanagawa_dragon.yaml
-  - ~/.config/alacritty/themes/themes/kanagawa_wave.yaml
+  # - ~/.config/alacritty/themes/themes/kanagawa_wave.yaml
+  - ~/.config/alacritty/themes/themes/gruvbox_material_hard.yaml
+  # - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
 # - ~/.config/alacritty/themes/themes/nord.yaml
 # - ~/.config/alacritty/themes/themes/taerminal.yaml
 # - ~/.config/alacritty/themes/themes/pencil_dark.yaml
