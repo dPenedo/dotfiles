@@ -12,7 +12,7 @@
     /* bg1:     #363646; */
     fg0:     #DDC7A1;
 
-    accent-color:     #45707A ;
+    accent-color:     #424A3E ;
     urgent-color:     #ffcb6b;
 
     background-color:   transparent;
