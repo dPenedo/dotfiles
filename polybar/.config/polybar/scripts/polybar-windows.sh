@@ -6,7 +6,7 @@ current_display=$(wmctrl -d | grep "*" | awk '{print $1}')
 
 # Color
 # color1="729cd8" # Blue
-color1="A9B665" # green gruvbox
+color1="A7C080" # green everforest
 color2="e6c384" # Yellow
 
 active_window_decoration_style_left_side="     %{F#$color1}%{+u}%{u#$color1}"

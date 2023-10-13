@@ -39,7 +39,26 @@ return {
     lazy = false,
     priority = 1000,
   },
-  { "neanias/everforest-nvim", version = false, lazy = false },
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    config = function()
+      require("everforest").setup({
+        background = "hard",
+        ui_contrast = "high",
+        dim_inactive_windows = true,
+        diagnostic_text_highlight = true,
+        ---Some plugins support highlighting error/warning/info/hint lines, but this
+        ---feature is disabled by default in this colour scheme.
+        diagnostic_line_highlight = true,
+        -- Dark background, same as gruvbox dark hard
+        colours_override = function(palette)
+          palette.bg0 = "#282828"
+        end,
+      })
+    end,
+  },
   {
     "sainnhe/gruvbox-material",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -101,7 +120,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "everforest",
       styles = {
         keyword = {
           bold = true,
