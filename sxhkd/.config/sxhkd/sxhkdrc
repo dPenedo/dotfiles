@@ -82,11 +82,11 @@ super + shift + {m,comma}
 
 
 # focus left or right monitor
-super + {Left,Right}
+super + {Up,Down}
     bspc monitor {west,east} -f
 
 # # Enviar a otro monitor
-super + alt + {Left,Right}
+super + alt + {Up,Down}
 	bspc node -m {prev,next} 
 
 
