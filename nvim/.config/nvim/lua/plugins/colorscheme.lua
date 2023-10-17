@@ -34,6 +34,7 @@ return {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
   },
+  { "dotsilas/darcubox-nvim" },
   {
     "maxmx03/solarized.nvim",
     lazy = false,

@@ -20,8 +20,8 @@ sleep 7
 
 monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
-	wmctrl -r "Nueva pestaña - Brave" -t 2 &
-	wmctrl -r Alacritty -t 3 &
+	wmctrl -r "Nueva pestaña - Brave" -t 0 &
+	wmctrl -r Alacritty -t 1 &
 	wmctrl -r thunderbird -t 11 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
