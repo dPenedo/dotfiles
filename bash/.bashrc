@@ -71,7 +71,7 @@ rama_git() {
 	fi
 }
 
-PS1="\n${GRAY_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
+PS1="\n${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
 
 # Abrir programas
 bind '"\et":"thunar . &\n"'

@@ -121,7 +121,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "gruvbox",
       styles = {
         keyword = {
           bold = true,

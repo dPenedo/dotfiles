@@ -47,7 +47,7 @@ source ~/.fzf/shell/key-bindings.zsh
 # source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 #Cambio color zsh-autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#BF784C"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#727169"
 
 source ~/.filemanagers.sh
 source ~/.aliases.sh

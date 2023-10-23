@@ -75,7 +75,7 @@ super + {_,shift + }n
 # MONITORES
 
 # focus the next/previous desktop in the current monitor
-super + {m,tomma}
+super + {m,comma}
 	bspc desktop -f {prev,next}.local
 super + shift + {m,comma}
 	bspc node -d {prev,next}.local --follow;
@@ -83,7 +83,7 @@ super + shift + {m,comma}
 
 # focus left or right monitor
 super + {Up,Down}
-    bspc monitor {west,east} -f
+    bspc monitor {prev,next} -f
 
 # # Enviar a otro monitor
 super + alt + {Up,Down}
