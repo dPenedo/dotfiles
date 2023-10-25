@@ -70,10 +70,16 @@ bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 
 
-bindkey '^[[A' fzf-history-widget
-bindkey '^[[B' fzf-history-widget
+# bindkey '^[[A' fzf-history-widget
+# bindkey '^[[B' fzf-history-widget
+# bindkey "^[[A" history-beginning-search-backward
+# bindkey "^[[B" history-beginning-search-forward
 
+bindkey '^[[A' up-line-or-history
+bindkey '^[[B' down-line-or-history
 
+bindkey '^k' up-line-or-history
+bindkey '^j' down-line-or-history
 
 
 # ctrl abajo

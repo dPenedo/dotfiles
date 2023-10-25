@@ -139,3 +139,6 @@ map("n", "<leader>tl", ":+tabmove<CR>")
 map("n", "<A-d>", '"_dd')
 map("v", "<A-d>", '"_dd')
 map("v", "<A-c>", '"+y')
+
+map("v", "<leader>y", '"+y')
+map("n", "<leader>y", '"+y')
