@@ -16,6 +16,7 @@
   "fern.vim": { "branch": "main", "commit": "e295f0df5735a042f63b05218118646809ba9d27" },
   "flash.nvim": { "branch": "main", "commit": "cc8c7e03987134997d74ee87e55a5717279f2d05" },
   "flatten.nvim": { "branch": "main", "commit": "9d0fa9964f88de09990e661d1014487f9ad028fd" },
+  "flexoki-nvim": { "branch": "main", "commit": "5298c24a84fa62366d1d0ff86950cd05d6f4e3d9" },
   "friendly-snippets": { "branch": "main", "commit": "ebf6d6e83494cdd88a54a429340256f4dbb6a052" },
   "gitsigns.nvim": { "branch": "main", "commit": "bce4576a9047085a528c479a7fe1e2f6b787b6c1" },
   "gruvbox-material": { "branch": "master", "commit": "b5f8c6a6c1cda630c53b061b765068a0898d47a3" },

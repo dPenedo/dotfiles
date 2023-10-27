@@ -88,18 +88,22 @@ return {
     },
   },
   { "rose-pine/neovim", name = "rose-pine" },
-  --catppuccin
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
   -- Nordic
   {
     "AlexvZyl/nordic.nvim",
   },
+  -- Gruvbox
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
     config = true,
-    opts = { contrast = "hard", palette_overrides = { bright_red = "#7E9CD8" } },
+    opts = {
+      contrast = "hard",
+      palette_overrides = { bright_red = "#7E9CD8", bright_orange = "#DA702C", bright_green = "#9FC443" },
+    },
   },
+  { "stevedylandev/flexoki-nvim" },
   -- Bamboo
   {
     "ribru17/bamboo.nvim",
