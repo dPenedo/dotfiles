@@ -16,6 +16,7 @@ Los que pueden temer más interés, porque están actualizados y los he ido elab
   - Hasi: "empezar" en euskera, es un script en python con algunos similares notas.py, en algún momento les haré un repositorio propio y explicaré como usarlos. Básicamente al escribir "hasi" permite seleccionar una carpeta Documentos y de ella hace una sesión de tmux, con una ventana en neovim y otra sin nada. Si tiene posibilidad de hacer correr "npm run dev" lo ejecuta y si se le añade un parámetro, como "hasi nvim" lo busca en zoxide y lo crea desde ahí. Codear hace algo parecido pero abriendo el vs code y notas va a la carpeta que tengo asignada para notas.
   - Rofi-power-menu: un pequeño menú configurado en sxhkd con el atajo ctrl + esc, que da opciones de apagado, reinicio, etc. Con iconos y demás.
   - xmodmap: modifica el teclado para reubicar el bloq. mayús a esc y Alt gr + - a "/", muy cómodo para teclados en español.
+  - switch_workspace_mode.sh: cambia los iconos del polybar entre dos modos que están en la misma carpeta de polybar.
 
 ### Colorschemes
 

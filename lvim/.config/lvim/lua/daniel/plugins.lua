@@ -14,7 +14,7 @@ lvim.plugins = {
       escape_quit = true,
       border = "curved",
       layout_mapping = "<M-f>", -- resize window with this key
-      views = {                 -- window dimensions to rotate through
+      views = {              -- window dimensions to rotate through
         { width = 0.990, height = 0.990 },
         { width = 0.750, height = 0.750 },
       },
@@ -78,7 +78,7 @@ lvim.plugins = {
       })
     end,
   },
-  { "debugloop/telescope-undo.nvim", },
+  { "debugloop/telescope-undo.nvim" },
   -- {
   --   "Pocco81/auto-save.nvim",
   --   config = function()
@@ -86,7 +86,7 @@ lvim.plugins = {
   --   end,
   -- },
   -- JAVA
-  { "mfussenegger/nvim-jdtls",       ft = { "java" } },
+  { "mfussenegger/nvim-jdtls",      ft = { "java" } },
 
   -- colorschemes
   {
@@ -111,7 +111,7 @@ lvim.plugins = {
   },
   {
     "sainnhe/gruvbox-material",
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+    lazy = false,  -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       vim.g.gruvbox_material_background = "hard"
@@ -124,21 +124,22 @@ lvim.plugins = {
       vim.g.gruvbox_material_statusline_style = "default"
     end,
   },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
-    'ribru17/bamboo.nvim',
+    "ribru17/bamboo.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require('bamboo').setup {
-        style = 'vulgaris', -- Choose between 'vulgaris' (regular) and 'multiplex' (greener)
+      require("bamboo").setup({
+        style = "vulgaris", -- Choose between 'vulgaris' (regular) and 'multiplex' (greener)
         code_style = {
-          keywords = 'bold',
-          functions = 'bold',
-          strings = 'italic',
-          variables = 'none'
+          keywords = "bold",
+          functions = "bold",
+          strings = "italic",
+          variables = "none",
         },
-      }
-      require('bamboo').load()
+      })
+      require("bamboo").load()
     end,
   },
 }
