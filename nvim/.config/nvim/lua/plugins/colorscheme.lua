@@ -100,10 +100,18 @@ return {
     config = true,
     opts = {
       contrast = "hard",
-      palette_overrides = { bright_red = "#7E9CD8", bright_orange = "#DA702C", bright_green = "#9FC443" },
+      palette_overrides = {
+        bright_red = "#7E9CD8",
+        bright_orange = "#DA702C",
+        bright_green = "#9FC443",
+        faded_blue = "#22578C",
+        faded_green = "#177245",
+      },
     },
   },
   { "stevedylandev/flexoki-nvim" },
+  { "tobi-wan-kenobi/zengarden" },
+
   -- Bamboo
   {
     "ribru17/bamboo.nvim",
@@ -125,7 +133,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "bamboo",
+      colorscheme = "gruvbox",
       styles = {
         keyword = {
           bold = true,

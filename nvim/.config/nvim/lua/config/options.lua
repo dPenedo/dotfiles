@@ -3,6 +3,7 @@
 
 local opt = vim.opt
 opt.clipboard = ""
+opt.background = "light"
 opt.wrap = true -- Disable line wrap
 opt.formatoptions:remove({ "c", "r", "o" })
 

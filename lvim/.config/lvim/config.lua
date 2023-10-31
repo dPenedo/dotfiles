@@ -13,6 +13,6 @@ reload("daniel.prueba")
 -- NvimTree
 lvim.builtin.nvimtree.setup.view.side = "right"
 
-lvim.colorscheme = "kanagawa"
+lvim.colorscheme = "tairiki"
 
 lvim.format_on_save = true
