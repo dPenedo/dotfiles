@@ -93,6 +93,7 @@ return {
   {
     "AlexvZyl/nordic.nvim",
   },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   -- Gruvbox
   {
     "ellisonleao/gruvbox.nvim",
@@ -133,7 +134,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "kanagawa",
       styles = {
         keyword = {
           bold = true,

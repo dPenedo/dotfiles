@@ -5,8 +5,8 @@ active_window=$(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5 | sed -e 's/../
 current_display=$(wmctrl -d | grep "*" | awk '{print $1}')
 
 # Color
-# color1="729cd8" # Blue
-color1="A7C080" # green everforest
+color1="729cd8" # Blue
+# color1="A7C080" # green everforest
 color2="e6c384" # Yellow
 
 active_window_decoration_style_left_side="     %{F#$color1}%{+u}%{u#$color1}"

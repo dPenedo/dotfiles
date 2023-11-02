@@ -48,7 +48,11 @@ lvim.keys.normal_mode["''"] = ":b#<CR>"
 lvim.keys.normal_mode["<leader>o"] = "o<ESC>"
 lvim.keys.normal_mode["<leader>O"] = "O<ESC>"
 
+
 -- Copiar-pegar
 lvim.keys.normal_mode["<A-d>"] = "_dd"
 lvim.keys.visual_mode["<A-d>"] = "_dd"
 lvim.keys.visual_mode["<A-c>"] = '"+y'
+
+lvim.keys.normal_mode["<leader>y"] = "+y"
+lvim.keys.visual_mode["<leader>y"] = "+y"

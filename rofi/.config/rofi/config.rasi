@@ -12,7 +12,8 @@
 //@theme "/home/daniel/.config/rofi/themes/arc.rasi"
 //@theme "/home/daniel/.config/rofi/themes/gruvbox2.rasi"
 
-@theme "/home/daniel/.config/rofi/themes/gruvbox-light.rasi"
+//@theme "/home/daniel/.config/rofi/themes/gruvbox-light.rasi"
+@theme "/home/daniel/.config/rofi/themes/kanagawa2col.rasi"
 
 configuration {
 
