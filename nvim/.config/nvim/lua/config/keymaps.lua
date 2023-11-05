@@ -79,6 +79,7 @@ map("n", "<A-r>", ":Ranger<CR>")
 map("n", "<A-v>", ":EditVifm<CR>")
 map("n", "<A-o>", ":Oil<CR>")
 map("n", "-", ":Lf<CR>")
+map("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- FZF
 map("n", "<leader>~", ":Files ~/<CR>")
