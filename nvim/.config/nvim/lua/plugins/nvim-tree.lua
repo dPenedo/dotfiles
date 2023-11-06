@@ -6,9 +6,10 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
-    require("nvim-tree").setup()
-    view = {
-      side = "right",
-    }
+    require("nvim-tree").setup({
+      view = {
+        side = "right",
+      },
+    })
   end,
 }
