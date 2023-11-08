@@ -92,6 +92,7 @@ bindkey -s '\ee' 'lfcd^M'
 bindkey -s '\er' 'ranger^M'
 bindkey -s '\et' 'thunar .^M'
 bindkey -s '\ev' 'vifm .^M'
+bindkey -s '\ey' 'ya .^M'
 bindkey -s '\en' 'n .^M'
 
 # USE LF TO SWITCH DIRECTORIES AND BIND IT TO CTRL-O

@@ -1181,6 +1181,6 @@ map ctrl+shift+9 goto_tab 9
 
 
 # BEGIN_KITTY_THEME
-# Japanesque
+# kanagawabones
 include current-theme.conf
 # END_KITTY_THEME

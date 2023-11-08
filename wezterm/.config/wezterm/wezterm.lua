@@ -2,21 +2,22 @@ local wezterm = require("wezterm")
 
 return {
 	font = wezterm.font_with_fallback({
-		"FiraCode",
+		-- "FiraCode",
+		"Hack",
 		-- "Azeret Mono",
 		-- "Iosevka Nerd Font",
 		-- "Noto Sans SC",
 	}),
-	font_size = 11.5,
+	font_size = 11.6,
 	line_height = 1.1,
 	cell_width = 1,
 	-- color scheme can be found here: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/wezterm
 	-- color_scheme = "kanagawabones",
-	color_scheme = "zenbones_dark",
+	-- color_scheme = "zenbones_dark",
 	-- color_scheme = "Catppuccin Frappe", -- or Macchiato, Frappe, Latte
 	-- color_scheme = "jmbi (terminal.sexy)",
 	-- color_scheme = "jubi",
-	-- color_scheme = "iceberg-dark",
+	color_scheme = "iceberg-dark",
 	-- color_scheme = "FishTank",
 
 	-- color_scheme = "carbonfox",
@@ -127,6 +128,15 @@ return {
 	-- set term to wezterm will break the nvim titlestring option, see https://github.com/wez/wezterm/issues/2112
 	term = "xterm-256color",
 	automatically_reload_config = false,
+	mouse_bindings = {
+		-- Change the default click behavior so that it populates
+		-- the Clipboard rather the PrimarySelection.
+		{
+			event = { Up = { streak = 1, button = "Left" } },
+			mods = "NONE",
+			action = wezterm.action.CompleteSelectionOrOpenLinkAtMouseCursor("Clipboard"),
+		},
+	},
 
 	keys = {
 		-- This will create a new split and run your default program inside it
@@ -159,6 +169,6 @@ return {
 		{ key = "9", mods = "ALT|SHIFT", action = wezterm.action({ ActivateTab = 8 }) },
 		{ key = "LeftArrow", mods = "ALT|CTRL", action = wezterm.action({ MoveTabRelative = -1 }) },
 		{ key = "RightArrow", mods = "ALT|CTRL", action = wezterm.action({ MoveTabRelative = 1 }) },
-		{ key = "w", mods = "ALT|CTRL", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
+		{ key = "q", mods = "CTRL|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
 	},
 }
