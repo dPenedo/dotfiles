@@ -118,6 +118,7 @@ map("n", "?", ":Telescope marks<CR>")
 
 -- ToggleTerm
 map("n", "<leader>t", ":ToggleTerm<CR>")
+map("n", "<C-t>", ':ToggleTerm direction="float"<CR>')
 
 -- Gestión de tabs/pestañas
 map("n", "<leader>1", ":tabn 1<CR>")

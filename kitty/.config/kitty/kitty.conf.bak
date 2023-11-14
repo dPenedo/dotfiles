@@ -6,11 +6,11 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family       Fira Code
+# font_family       Fira Code
 # font_family       Iosevka
 # font_family       Atkinson Hyperlegible
 # font_family       JetBrains Mono
-# font_family         hack
+font_family         hack
 italic_font      JetBrains Mono Italic
 # italic_font      Victor Mono Italic
 # italic_font         hack
@@ -325,6 +325,9 @@ enable_audio_bell no
 #: as number of cells instead of pixels.
 
 # enabled_layouts *
+enabled_layouts tall, fat, stack
+
+
 
 #: The enabled window layouts. A comma separated list of layout names.
 #: The special value all means all layouts. The first listed layout
@@ -377,14 +380,14 @@ enable_audio_bell no
 #: this option. Using a value of center means the cell area will be
 #: placed centrally. A value of top-left means the padding will be on
 #: only the bottom and right edges.
-# active_border_color #7e9cd8
+active_border_color #7e9cd8
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
-# inactive_border_color #232831
+inactive_border_color #232831
 
 #: The color for the border of inactive windows
-# bell_border_color #ff5a00
+bell_border_color #ff5a00
 
 #: The color for the border of inactive windows in which a bell has
 #: occurred
@@ -485,7 +488,7 @@ inactive_tab_font_style normal
 
 #: The foreground and background colors
 
-background_opacity 0.94
+background_opacity 0.96
 # background_opacity 1
 # background_opacity 0.90
 
@@ -505,7 +508,7 @@ background_opacity 0.94
 #: change transparency of windows set dynamic_background_opacity to
 #: yes (this is off by default as it has a performance cost)
 
-# dynamic_background_opacity no
+dynamic_background_opacity yes
 
 #: Allow changing of the background_opacity dynamically, using either
 #: keyboard shortcuts (increase_background_opacity and
@@ -526,114 +529,6 @@ background_opacity 0.94
 #: The background for text selected with the mouse.
 
 
-#: The 16 terminal colors. There are 8 basic colors, each color has a
-#: dull and bright version. You can also set the remaining colors from
-#: the 256 color table as color16 to color255.
-# Japanesque
-# background            #0e0c15
-# foreground            #dbd0b9
-# cursor                #bbbbbb
-# selection_background  #f3e0b8
-# color0                #08002e
-# color8                #331d4c
-# color1                #64002c
-# color9                #cf2062
-# color2                #5d731a
-# color10               #b3ce58
-# color3                #cd751c
-# color11               #fac357
-# color4                #1d6da1
-# color12               #40a4cf
-# color5                #b7077e
-# color13               #f02aae
-# color6                #42a38c
-# color14               #62caa8
-# color7                #f3e0b8
-# color15               #fff5db
-# selection_foreground #0e0c15
-# foreground                      #DDD8BB
-# background                      #1F1F28
-# selection_foreground            #DDD8BB
-# selection_background            #49473E
-# Cursor colors
-# cursor                          #E6E0C2
-# cursor_text_color               #1F1F28
-# URL underline color when hovering with mouse
-# kitty window border colors
-# OS Window titlebar colors
-# Tab bar colors
-# active_tab_foreground           #232831
-# active_tab_background           #81A1C1
-# inactive_tab_foreground         #81A1C1
-# inactive_tab_background         #232831
-# Colors for marks (marked text in the terminal)
-# The basic 16 colors
-# black
-# color0 #1F1F28
-# color8 #3C3C51
-# red
-# color1 #E46A78
-# color9 #EC818C
-# green
-# color2  #98BC6D
-# color10 #9EC967
-# yellow
-# color3  #E5C283
-# color11 #F1C982
-# blue
-# color4  #7EB3C9
-# color12 #7BC2DF
-# magenta
-# color5  #957FB8
-# color13 #A98FD2
-# cyan
-# color6  #7EB3C9
-# color14 #7BC2DF
-# white
-# color7  #DDD8BB
-# color15 #A8A48D
-
-# color0 #000000
-# color8 #767676
-
-#: black
-
-# color1 #cc0403
-# color9 #f2201f
-
-#: red
-
-# color2  #19cb00
-# color10 #23fd00
-
-#: green
-
-# color3  #cecb00
-# color11 #fffd00
-
-#: yellow
-
-# color4  #0d73cc
-# color12 #1a8fff
-
-#: blue
-
-# color5  #cb1ed1
-# color13 #fd28ff
-
-#: magenta
-
-# color6  #0dcdcd
-# color14 #14ffff
-
-#: cyan
-
-# color7  #dddddd
-# color15 #ffffff
-
-#: white
-
-#: }}}
 
 #: Advanced {{{
 
@@ -861,7 +756,7 @@ listen_on unix:/tmp/kitty_remote_control
 
 #:     map ctrl+f>2 set_font_size 20
 
-# kitty_mod ctrl+shift
+kitty_mod ctrl+shift
 
 #: The value of kitty_mod is used as the modifier for all default
 #: shortcuts, you can change it in your kitty.conf to change the
@@ -1016,7 +911,6 @@ map f1 launch --stdin-source=@screen_scrollback --stdin-add-formatting --type=ov
 
 #: Layout management {{{
 
-map kitty_mod+- next_layout
 
 #: You can also create shortcuts to switch to specific layouts::
 
@@ -1099,8 +993,8 @@ map kitty_mod+F5     change_font_size all -2.0
 #: Open the kitty shell in a new window/tab/overlay/os_window to
 #: control kitty using commands.
 
-# map kitty_mod+a>m    set_background_opacity +0.1
-# map kitty_mod+a>l    set_background_opacity -0.1
+map kitty_mod+¡    set_background_opacity +0.1
+map kitty_mod+ç    set_background_opacity -0.1
 # map kitty_mod+a>1    set_background_opacity 1
 # map kitty_mod+a>d    set_background_opacity default
 # map kitty_mod+delete clear_terminal reset active
@@ -1151,31 +1045,35 @@ map kitty_mod+F5     change_font_size all -2.0
 
 #: }}}
 
-map ctrl+shift+j next_window
-map ctrl+shift+l next_window
-map ctrl+shift+ñ new_window_with_cwd
-map ctrl+shift+p new_tab_with_cwd
-map ctrl+shift+h previous_window
-map alt+j previous_window
-map ctrl+shift+right resize_window narrower
-map ctrl+shift+left resize_window wider
-map ctrl+shift+up resize_window taller
-map ctrl+shift+down resize_window shorter 3
+map alt+j next_window
+map alt+l next_window
+# map alt+ñ new_window_with_cwd
+map alt+ñ launch --location=neighbor
+
+# map alt+p new_tab_with_cwd
+map alt+h previous_window
+map alt+k previous_window
+map kitty_mod+right resize_window narrower
+map kitty_mod+left resize_window wider
+map kitty_mod+up resize_window taller 3
+map kitty_mod+down resize_window shorter 3
 map alt+i set_tab_title
+#
+# map kitty_mod+space show_scrollback
+#
+#
+#
+map alt+1 goto_tab 1
+map alt+2 goto_tab 2
+map alt+3 goto_tab 3
+map alt+4 goto_tab 4
+map alt+5 goto_tab 5
+map alt+6 goto_tab 6
+map alt+7 goto_tab 7
+map alt+8 goto_tab 8
+map alt+9 goto_tab 9
 
-map kitty_mod+space show_scrollback
-
-
-
-map ctrl+shift+1 goto_tab 1
-map ctrl+shift+2 goto_tab 2
-map ctrl+shift+3 goto_tab 3
-map ctrl+shift+4 goto_tab 4
-map ctrl+shift+5 goto_tab 5
-map ctrl+shift+6 goto_tab 6
-map ctrl+shift+7 goto_tab 7
-map ctrl+shift+8 goto_tab 8
-map ctrl+shift+9 goto_tab 9
+map alt+f next_layout
 
 # }}}
 

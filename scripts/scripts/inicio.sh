@@ -4,7 +4,8 @@
 sleep 5
 brave-browser &
 sleep 4
-wezterm -e tmux new-session -A -D -s Hasiera &
+# wezterm -e tmux new-session -A -D -s Hasiera &
+kitty -T "kitty" &
 # sleep 2
 # Zotero &
 # sleep 2
@@ -21,11 +22,10 @@ sleep 7
 monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
-	wmctrl -r tmux -t 1 &
-	wmctrl -r thunderbird -t 11 &
+	wmctrl -r kitty -t 1 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
-	wmctrl -r tmux -t 1 &
+	wmctrl -r kitty -t 1 &
 	# wmctrl -r thunderbird -t 9 &
 fi
 # wmctrl -r tmux -t 3 &

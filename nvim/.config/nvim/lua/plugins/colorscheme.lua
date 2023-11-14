@@ -3,10 +3,11 @@ return {
   {
     "rebelot/kanagawa.nvim",
     opts = {
-      transparent = true, -- do not set background color
-      compile = true,
+      -- transparent = true, -- do not set background color
+      compile = false,
+      transparent = true,
       functionStyle = { bold = true },
-      dimInactive = true,
+      dimInactive = false,
       typeStyle = { bold = true },
       keywordStyle = { bold = true },
       colors = {
@@ -26,6 +27,7 @@ return {
       },
     },
   },
+  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
   -- Zenbones
   {
     "mcchrish/zenbones.nvim",
@@ -35,6 +37,12 @@ return {
     dependencies = "rktjmp/lush.nvim",
   },
   { "dotsilas/darcubox-nvim" },
+  {
+    "tiagovla/tokyodark.nvim",
+    opts = {
+      -- custom options here
+    },
+  },
   {
     "maxmx03/solarized.nvim",
     lazy = false,

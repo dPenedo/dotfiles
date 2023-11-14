@@ -168,7 +168,7 @@ super + r
 
 # terminal emulator
 super + Return
-  wezterm
+  kitty
 
 super + shift + Return
 	kitty

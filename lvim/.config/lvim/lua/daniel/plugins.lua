@@ -61,9 +61,9 @@ lvim.plugins = {
       window = { height = 0.9 },
     },
   },
-  {
-    "xiyaowong/transparent.nvim",
-  },
+  -- {
+  -- 	"xiyaowong/transparent.nvim",
+  -- },
   {
     "stevearc/oil.nvim",
     opts = {},
@@ -90,13 +90,14 @@ lvim.plugins = {
 
   -- colorschemes
   {
-    'deparr/tairiki.nvim',
-    lazy = false
+    "deparr/tairiki.nvim",
+    lazy = false,
   },
   { "tobi-wan-kenobi/zengarden" },
   {
     "rebelot/kanagawa.nvim",
     opts = {
+      transparent = false,
       functionStyle = { bold = true },
       dimInactive = true,
       typeStyle = { bold = true },
