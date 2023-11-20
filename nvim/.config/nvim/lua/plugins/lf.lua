@@ -18,9 +18,9 @@ return {
       { width = 0.750, height = 0.750 },
     },
     winblend = 6,
-    highlights = { -- highlights passed to toggleterm
-      Normal = { guibg = "#181820", guifg = "#f00" },
-    },
+    -- highlights = { -- highlights passed to toggleterm
+    --   Normal = { guibg = "#181820", guifg = "#f00" },
+    -- },
     -- highlights = { -- highlights passed to toggleterm
     --   Normal = { guibg = "#333333" },
     --   NormalFloat = { link = "Normal" },
