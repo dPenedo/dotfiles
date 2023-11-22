@@ -78,7 +78,7 @@ map("n", "<A-n>", ":NnnPicker<CR>")
 map("n", "<A-r>", ":Ranger<CR>")
 map("n", "<A-v>", ":EditVifm<CR>")
 map("n", "<A-o>", ":Oil<CR>")
-map("n", "-", ":Lf<CR>")
+map("n", "-", ":Oil<CR>")
 map("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- FZF
@@ -93,14 +93,9 @@ map("n", "<leader>cc", ':lua require("nvim-highlight-colors").toggle()<CR>')
 
 map("n", "<A-z>", ":ZenMode<CR>")
 
--- Colorscheme
-map("n", "<leader>¡", ":colorscheme kanagawa<CR>")
-map("n", "<leader>¿", ":colorscheme gruvbox-material<CR>")
-
 -- Telescope
 
 -- map("n", "<leader>L", ":BLines<CR>")
-map("n", "<leader>l", ":Telescope current_buffer_fuzzy_find<CR>")
 -- map("n", "<leader>f", ":Telescope find_files<CR>")
 map("n", "<leader>b", ":Telescope buffers<CR>")
 map("n", "ñ", ":Telescope buffers<CR>")
@@ -108,6 +103,7 @@ map("n", "<leader>g", ":Telescope live_grep<CR>")
 map("n", "<leader>r", ":Telescope registers<CR>")
 map("n", "<leader>H", ":Telescope help_tags<CR>")
 map("n", ",", ":Telescope current_buffer_fuzzy_find<CR>")
+map("n", "<leader>l", ":Telescope current_buffer_fuzzy_find<CR>")
 map("n", ";", ":Telescope find_files<CR>")
 map("n", "<C-p>", ":Telescope find_files<CR>")
 

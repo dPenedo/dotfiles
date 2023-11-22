@@ -20,8 +20,9 @@ lvim.keys.insert_mode["jk"] = "<ESC>la"
 lvim.keys.normal_mode["<A-z>"] = ":ZenMode<CR>"
 
 -- Exploradores
-lvim.keys.normal_mode["-"] = ":Lf<CR>"
+lvim.keys.normal_mode["-"] = ":Oil<CR>"
 lvim.keys.normal_mode["<A-o>"] = ":Oil<CR>"
+lvim.keys.normal_mode["<A-e>"] = ":Lf<CR>"
 
 -- Splits
 lvim.keys.normal_mode["<A-_>"] = ":vsplit<CR>"

@@ -22,23 +22,19 @@ lvim.plugins = {
       highlights = { -- highlights passed to toggleterm
         Normal = { guibg = "#181820", guifg = "#f00" },
       },
-      -- highlights = { -- highlights passed to toggleterm
-      --   Normal = { guibg = "#333333" },
-      --   NormalFloat = { link = "Normal" },
-      --   FloatBorder = {
-      --     guifg = "#D0C9C2",
-      --     guibg = "#333333",
-      --   },
-      -- },
     },
   },
   {
-    "ggandor/leap.nvim",
-    name = "leap",
+    'crispgm/nvim-tabline',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }, -- optional
     config = function()
-      require("leap").add_default_mappings()
+      require("tabline").setup {
+        show_icon = true,        -- show file extension icon
+        brackets = { ' ', ' ' }, -- file name brackets surrounding
+      }
     end,
   },
+
   -- Probando a comentar
   {
     "folke/todo-comments.nvim",
