@@ -9,6 +9,8 @@ lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>u"] = ":Telescope undo<CR>"
 lvim.keys.normal_mode["<leader>G"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>r"] = ":Telescope registers<CR>"
+lvim.keys.normal_mode['<leader>t'] = ":ToggleTerm<CR>"
+
 
 
 -- Mapeando el jj como Escape
@@ -25,8 +27,8 @@ lvim.keys.normal_mode["<A-o>"] = ":Oil<CR>"
 lvim.keys.normal_mode["<A-e>"] = ":Lf<CR>"
 
 -- Splits
-lvim.keys.normal_mode["<A-_>"] = ":vsplit<CR>"
-lvim.keys.normal_mode["<A-->"] = ":split<CR>"
+lvim.keys.normal_mode["<A-h>"] = ":vsplit<CR>"
+lvim.keys.normal_mode["<A-v>"] = ":split<CR>"
 
 -- Nohighlsearch
 lvim.keys.normal_mode["<ESC>"] = ":nohlsearch<CR>"
@@ -51,9 +53,9 @@ lvim.keys.normal_mode["<leader>O"] = "O<ESC>"
 
 
 -- Copiar-pegar
-lvim.keys.normal_mode["<A-d>"] = "_dd"
-lvim.keys.visual_mode["<A-d>"] = "_dd"
+lvim.keys.normal_mode["<A-d>"] = '"_dd"'
+lvim.keys.visual_mode["<A-d>"] = '"_dd"'
 lvim.keys.visual_mode["<A-c>"] = '"+y'
 
-lvim.keys.normal_mode["<leader>y"] = "+y"
-lvim.keys.visual_mode["<leader>y"] = "+y"
+lvim.keys.normal_mode["<leader>y"] = '"+y'
+lvim.keys.visual_mode["<leader>y"] = '"+y'

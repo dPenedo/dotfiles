@@ -12,9 +12,9 @@ return {
       keywordStyle = { bold = true },
       colors = {
         palette = {
-          fujiWhite = "#DCD7Bb",
+          -- fujiWhite = "#DCD7Bb",
           oldWhite = "#C8C093",
-          -- fujiWhite = "#F1eed7",
+          fujiWhite = "#F6F1d3",
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",
           autumnGreen = "#037971",

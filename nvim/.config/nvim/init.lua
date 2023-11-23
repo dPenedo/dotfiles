@@ -15,4 +15,3 @@ if vim.g.neovide then
   -- vim.g.neovide_fullscreen = true
   -- vim.g.neovide_remember_window_size = true
 end
--- Restore cursor shape on exit
