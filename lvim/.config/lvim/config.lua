@@ -3,12 +3,12 @@
 
 reload("daniel.options")
 reload("daniel.disable")
-reload("daniel.keymaps")
 reload("daniel.alpha")
 reload("daniel.plugins")
 reload("daniel.telescope")
 reload("daniel.notas")
 reload("daniel.prueba")
+reload("daniel.keymaps")
 
 -- NvimTree
 lvim.builtin.nvimtree.setup.view.side = "right"

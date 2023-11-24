@@ -20,19 +20,8 @@ map("i", "jj", "<ESC>")
 map("i", "jk", "<ESC>la")
 
 -- Movimientos
-map("n", "L", "$")
-map("v", "L", "$")
-map("n", "H", "^")
-map("v", "H", "^")
-map("n", "J", "6j")
-map("v", "J", "6j")
-map("n", "<leader>k", "6k")
-map("n", "<leader>j", "6j")
-map("v", "K", "6k")
-map("n", "<A-right>", "w")
-map("n", "<A-left>", "b")
-map("n", "<A-up>", "{")
-map("n", "<A-down>", "}")
+map("n", "\\", "$")
+map("v", "\\", "$")
 
 -- Cambiar palabra
 map("n", "<CR>", "ciw")
@@ -65,8 +54,9 @@ map("n", "<a-w>", ":set wrap!<CR>")
 map("n", "0", ":nohlsearch<CR>")
 
 -- Copying the vscode behaviour of making tab splits
-map("n", "<A-_>", "<CMD>vsplit<CR>")
-map("n", "<A-->", "<CMD>split<CR>")
+map("n", "<leader>\\", "<CMD>vsplit<CR>")
+map("n", "<leader>|", "<CMD>split<CR>")
+-- map("n", "<A-->", "<CMD>split<CR>")
 
 -- Use operator pending mode to visually select the whole buffer
 -- e.g. dA = delete buffer ALL, yA = copy whole buffer ALL
@@ -98,7 +88,7 @@ map("n", "<A-z>", ":ZenMode<CR>")
 -- map("n", "<leader>L", ":BLines<CR>")
 -- map("n", "<leader>f", ":Telescope find_files<CR>")
 map("n", "<leader>b", ":Telescope buffers<CR>")
-map("n", "ñ", ":Telescope buffers<CR>")
+map("n", "<Tab>", ":Telescope buffers<CR>")
 map("n", "<leader>g", ":Telescope live_grep<CR>")
 map("n", "<leader>r", ":Telescope registers<CR>")
 map("n", "<leader>H", ":Telescope help_tags<CR>")

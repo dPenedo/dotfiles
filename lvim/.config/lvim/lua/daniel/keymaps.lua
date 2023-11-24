@@ -3,9 +3,9 @@ lvim.keys.normal_mode["<A-s>"] = ":update<CR>"
 -- Telescope
 lvim.keys.normal_mode[","] = ":Telescope current_buffer_fuzzy_find<CR>"
 lvim.keys.normal_mode[";"] = ":Telescope find_files<CR>"
-lvim.keys.normal_mode["ñ"] = ":Telescope buffers<CR>"
+lvim.keys.normal_mode["<Tab>"] = ":Telescope buffers<CR>"
+
 lvim.keys.normal_mode["<leader>H"] = ":Telescope help_tags<CR>"
-lvim.keys.normal_mode["<leader>fg"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>u"] = ":Telescope undo<CR>"
 lvim.keys.normal_mode["<leader>G"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>r"] = ":Telescope registers<CR>"
@@ -27,8 +27,8 @@ lvim.keys.normal_mode["<A-o>"] = ":Oil<CR>"
 lvim.keys.normal_mode["<A-e>"] = ":Lf<CR>"
 
 -- Splits
-lvim.keys.normal_mode["<A-h>"] = ":vsplit<CR>"
-lvim.keys.normal_mode["<A-v>"] = ":split<CR>"
+lvim.keys.normal_mode["<leader>\\"] = ":vsplit<CR>"
+lvim.keys.normal_mode["<leader>|"] = ":split<CR>"
 
 -- Nohighlsearch
 lvim.keys.normal_mode["<ESC>"] = ":nohlsearch<CR>"

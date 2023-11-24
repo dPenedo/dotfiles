@@ -4,16 +4,23 @@ return {
     "rebelot/kanagawa.nvim",
     opts = {
       -- transparent = true, -- do not set background color
-      compile = false,
-      transparent = true,
+      compile = true,
+      transparent = false,
       functionStyle = { bold = true },
       dimInactive = false,
       typeStyle = { bold = true },
       keywordStyle = { bold = true },
       colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "#252535",
+            },
+          },
+        },
         palette = {
           -- fujiWhite = "#DCD7Bb",
-          oldWhite = "#C8C093",
+          oldWhite = "#DCD7Bb",
           fujiWhite = "#F6F1d3",
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",
