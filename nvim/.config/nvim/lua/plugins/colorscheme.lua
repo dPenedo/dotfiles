@@ -24,7 +24,7 @@ return {
           fujiWhite = "#F6F1d3",
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",
-          autumnGreen = "#037971",
+          -- autumnGreen = "#037971",
           -- springGreen = "#9EBC9F",
         },
       },

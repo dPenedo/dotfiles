@@ -12,3 +12,4 @@ opt.formatoptions:remove({ "c", "r", "o" })
 --   command = "set guicursor=a:ver90-BlinkOn100",
 --   desc = "Set cursor back to beam and enable blinking when leaving Neovim.",
 -- })
+--

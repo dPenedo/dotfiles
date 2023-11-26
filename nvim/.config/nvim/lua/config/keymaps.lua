@@ -83,6 +83,8 @@ map("n", "<leader>cc", ':lua require("nvim-highlight-colors").toggle()<CR>')
 
 map("n", "<A-z>", ":ZenMode<CR>")
 
+map("t", "<Esc>", "<C-\\><C-n><CR>")
+
 -- Telescope
 
 -- map("n", "<leader>L", ":BLines<CR>")
@@ -102,9 +104,10 @@ map("n", "<leader>u", ":Telescope undo<CR>")
 -- Marks
 map("n", "?", ":Telescope marks<CR>")
 
--- ToggleTerm
-map("n", "<leader>t", ":ToggleTerm<CR>")
-map("n", "<C-t>", ':ToggleTerm direction="float"<CR>')
+-- ToggleTerm & terminal
+map("n", "<C-t>", ':ToggleTerm direction="tab"<CR>')
+map("n", "<leader>T", ":terminal<CR>:startinsert<CR>")
+map("n", "<leader>Y", ":terminal yazi .<CR>:startinsert<CR>")
 
 -- Gestión de tabs/pestañas
 map("n", "<leader>1", ":tabn 1<CR>")
