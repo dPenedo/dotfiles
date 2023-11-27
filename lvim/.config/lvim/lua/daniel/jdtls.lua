@@ -53,7 +53,7 @@ return {
                 )
               end)
 
-              -- local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
+              local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
               -- vim.lsp.set_log_level('DEBUG')
               -- local workspace_dir = "/home/jake/.workspace/" ..
               -- project_name -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
@@ -65,7 +65,7 @@ return {
                   "java", -- or '/path/to/java17_or_newer/bin/java'
                   -- depends on if `java` is in your $PATH env variable and if it points to the right version.
 
-                  -- "-javaagent:/home/jake/.local/share/java/lombok.jar",
+                  "-javaagent:$HOME/.local/share/java/lombok.jar",
                   -- '-Xbootclasspath/a:/home/jake/.local/share/java/lombok.jar',
                   "-Declipse.application=org.eclipse.jdt.ls.core.id1",
                   "-Dosgi.bundles.defaultStartLevel=4",
@@ -92,8 +92,8 @@ return {
                   -- eclipse.jdt.ls installation            Depending on your system.
 
                   -- See `data directory configuration` section in the README
-                  "-data",
-                  workspace_dir,
+                  -- "-data",
+                  -- workspace_dir,
                 },
 
                 -- This is the default if not provided, you can remove it. Or adjust as needed.

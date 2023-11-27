@@ -83,31 +83,41 @@ map("n", "<leader>cc", ':lua require("nvim-highlight-colors").toggle()<CR>')
 
 map("n", "<A-z>", ":ZenMode<CR>")
 
+-- Terminal
 map("t", "<Esc>", "<C-\\><C-n><CR>")
+map("t", "<C-l>", "<C-u>clear<CR>")
 
 -- Telescope
 
--- map("n", "<leader>L", ":BLines<CR>")
--- map("n", "<leader>f", ":Telescope find_files<CR>")
-map("n", "<leader>b", ":Telescope buffers<CR>")
+map("n", ",,", ":Telescope find_files<CR>")
+map("n", ",b", ":Telescope buffers<CR>")
+map("n", ",B", ":Telescope builtin<CR>")
+map("n", ",g", ":Telescope live_grep<CR>")
+map("n", ",r", ":Telescope registers<CR>")
+map("n", ",l", ":Telescope current_buffer_fuzzy_find<CR>")
+map("n", ",u", ":Telescope undo<CR>")
+map("n", ",t", ":Telescope treesitter<CR>")
+map("n", ",H", ":Telescope help_tags<CR>")
 map("n", "<Tab>", ":Telescope buffers<CR>")
-map("n", "<leader>g", ":Telescope live_grep<CR>")
-map("n", "<leader>r", ":Telescope registers<CR>")
-map("n", "<leader>H", ":Telescope help_tags<CR>")
-map("n", ",", ":Telescope current_buffer_fuzzy_find<CR>")
-map("n", "<leader>l", ":Telescope current_buffer_fuzzy_find<CR>")
-map("n", ";", ":Telescope find_files<CR>")
-map("n", "<C-p>", ":Telescope find_files<CR>")
 
-map("n", "<leader>u", ":Telescope undo<CR>")
+-- map("n", "<leader>b", ":Telescope buffers<CR>")
+-- map("n", "<leader>g", ":Telescope live_grep<CR>")
+-- map("n", "<leader>r", ":Telescope registers<CR>")
+-- map("n", "<leader>H", ":Telescope help_tags<CR>")
+-- -- map("n", ",", ":Telescope current_buffer_fuzzy_find<CR>")
+-- map("n", "<leader>l", ":Telescope current_buffer_fuzzy_find<CR>")
+-- map("n", "<C-p>", ":Telescope find_files<CR>")
+--
+-- map("n", "<leader>u", ":Telescope undo<CR>")
 
 -- Marks
-map("n", "?", ":Telescope marks<CR>")
+map("n", ",?", ":Telescope marks<CR>")
 
 -- ToggleTerm & terminal
 map("n", "<C-t>", ':ToggleTerm direction="tab"<CR>')
 map("n", "<leader>T", ":terminal<CR>:startinsert<CR>")
 map("n", "<leader>Y", ":terminal yazi .<CR>:startinsert<CR>")
+map("n", "<leader>E", ":terminal lf .<CR>:startinsert<CR>")
 
 -- Gestión de tabs/pestañas
 map("n", "<leader>1", ":tabn 1<CR>")

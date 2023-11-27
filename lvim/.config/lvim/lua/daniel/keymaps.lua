@@ -1,7 +1,14 @@
 lvim.keys.normal_mode["<A-s>"] = ":update<CR>"
 
 -- Telescope
-lvim.keys.normal_mode[","] = ":Telescope current_buffer_fuzzy_find<CR>"
+lvim.keys.normal_mode[",,"] = ":Telescope find_files<CR>"
+lvim.keys.normal_mode[",b"] = ":Telescope buffers<CR>"
+lvim.keys.normal_mode[",l"] = ":Telescope current_buffer_fuzzy_find<CR>"
+lvim.keys.normal_mode[",u"] = ":Telescope undo<CR>"
+lvim.keys.normal_mode[",r"] = ":Telescope registers<CR>"
+lvim.keys.normal_mode[",B"] = ":Telescope builtin<CR>"
+lvim.keys.normal_mode[",t"] = ":Telescope treesitter<CR>"
+lvim.keys.normal_mode[",H"] = ":Telescope help_tags<CR>"
 lvim.keys.normal_mode[";"] = ":Telescope find_files<CR>"
 lvim.keys.normal_mode["<Tab>"] = ":Telescope buffers<CR>"
 
@@ -9,14 +16,11 @@ lvim.keys.normal_mode["<leader>H"] = ":Telescope help_tags<CR>"
 lvim.keys.normal_mode["<leader>u"] = ":Telescope undo<CR>"
 lvim.keys.normal_mode["<leader>G"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode["<leader>r"] = ":Telescope registers<CR>"
-lvim.keys.normal_mode['<leader>t'] = ":ToggleTerm<CR>"
-
-
+lvim.keys.normal_mode["<leader>t"] = ":ToggleTerm<CR>"
 
 -- Mapeando el jj como Escape
 lvim.keys.insert_mode["jj"] = "<ESC>"
 lvim.keys.insert_mode["jk"] = "<ESC>la"
-
 
 -- ZenMode
 lvim.keys.normal_mode["<A-z>"] = ":ZenMode<CR>"
@@ -51,6 +55,13 @@ lvim.keys.normal_mode["''"] = ":b#<CR>"
 lvim.keys.normal_mode["<leader>o"] = "o<ESC>"
 lvim.keys.normal_mode["<leader>O"] = "O<ESC>"
 
+-- Terminal
+lvim.keys.term_mode["<c-l>"] = "<C-u>clear<CR>"
+lvim.keys.term_mode["<Esc>"] = "<C-\\><C-n><CR>"
+
+lvim.keys.normal_mode["<leader>T"] = ":terminal<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>Y"] = ":terminal yazi .<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>E"] = ":terminal lf .<CR>:startinsert<CR>"
 
 -- Copiar-pegar
 lvim.keys.normal_mode["<A-d>"] = '"_dd"'
