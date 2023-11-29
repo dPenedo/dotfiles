@@ -55,6 +55,9 @@ source ~/.aliases.sh
 # Completado
 # source ~/.completion.zsh
 
+export PATH="/home/daniel/anaconda3/bin:$PATH"
+
+
 # Control + flechas
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word

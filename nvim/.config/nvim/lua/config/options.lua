@@ -4,6 +4,7 @@
 local opt = vim.opt
 opt.clipboard = ""
 opt.wrap = true -- Disable line wrap
+opt.showtabline = 2
 opt.formatoptions:remove({ "c", "r", "o" })
 
 -- vim.cmd('command! NuevaNota lua require("config/Notas/nueva").nueva_nota()')
