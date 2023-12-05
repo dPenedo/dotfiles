@@ -3,12 +3,12 @@
 xfce4-panel -d &
 ~/scripts/xmodmap.sh &
 ~/scripts/inicio.sh &
-~/.config/polybar/launch.sh &
 sleep 5 && xprop -name "Whisker Menu"
 picom --config ~/.config/picom/picom.conf &
 xfce4-display.settings &
 sxhkd &
 pgrep -x sxhkd >/dev/null || sxhkd &
+~/.config/polybar/launch.sh &
 
 monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
