@@ -16,3 +16,4 @@ lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.colorscheme = "kanagawa"
 
 lvim.format_on_save = true
+lvim.builtin.cmp.preselect = true

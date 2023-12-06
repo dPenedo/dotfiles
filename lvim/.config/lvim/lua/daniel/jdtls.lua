@@ -11,43 +11,43 @@ return {
               require("lazyvim.util").on_attach(function(_, buffer)
                 vim.keymap.set(
                   "n",
-                  "<leader>di",
+                  "<leader>mi",
                   "<Cmd>lua require'jdtls'.organize_imports()<CR>",
                   { buffer = buffer, desc = "Organize Imports" }
                 )
                 vim.keymap.set(
                   "n",
-                  "<leader>dt",
+                  "<leader>mt",
                   "<Cmd>lua require'jdtls'.test_class()<CR>",
                   { buffer = buffer, desc = "Test Class" }
                 )
                 vim.keymap.set(
                   "n",
-                  "<leader>dn",
+                  "<leader>mn",
                   "<Cmd>lua require'jdtls'.test_nearest_method()<CR>",
                   { buffer = buffer, desc = "Test Nearest Method" }
                 )
                 vim.keymap.set(
                   "v",
-                  "<leader>de",
+                  "<leader>me",
                   "<Esc><Cmd>lua require('jdtls').extract_variable(true)<CR>",
                   { buffer = buffer, desc = "Extract Variable" }
                 )
                 vim.keymap.set(
                   "n",
-                  "<leader>de",
+                  "<leader>me",
                   "<Cmd>lua require('jdtls').extract_variable()<CR>",
                   { buffer = buffer, desc = "Extract Variable" }
                 )
                 vim.keymap.set(
                   "v",
-                  "<leader>dm",
+                  "<leader>mm",
                   "<Esc><Cmd>lua require('jdtls').extract_method(true)<CR>",
                   { buffer = buffer, desc = "Extract Method" }
                 )
                 vim.keymap.set(
                   "n",
-                  "<leader>cf",
+                  "<leader>mf",
                   "<cmd>lua vim.lsp.buf.formatting()<CR>",
                   { buffer = buffer, desc = "Format" }
                 )
