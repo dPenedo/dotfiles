@@ -16,7 +16,7 @@ return {
       local telescope = require("telescope")
       telescope.setup({
         defaults = {
-          theme = "ivy",
+          -- theme = "ivy",
           mappings = {
             i = {
               ["<C-s>"] = "select_horizontal",
@@ -37,26 +37,26 @@ return {
             },
           },
         },
-        pickers = {
-          find_files = {
-            theme = "ivy",
-          },
-          buffers = {
-            theme = "ivy",
-          },
-          help_tags = {
-            theme = "ivy",
-          },
-          current_buffer_fuzzy_find = {
-            theme = "ivy",
-          },
-          registers = {
-            theme = "ivy",
-          },
-          undo = {
-            theme = "ivy",
-          },
-        },
+        -- pickers = {
+        --   find_files = {
+        --     theme = "ivy",
+        --   },
+        --   buffers = {
+        --     theme = "ivy",
+        --   },
+        --   help_tags = {
+        --     theme = "ivy",
+        --   },
+        --   current_buffer_fuzzy_find = {
+        --     theme = "ivy",
+        --   },
+        --   registers = {
+        --     theme = "ivy",
+        --   },
+        --   undo = {
+        --     theme = "ivy",
+        --   },
+        -- },
       })
       telescope.load_extension("fzf")
       telescope.load_extension("undo")

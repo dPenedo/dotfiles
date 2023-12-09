@@ -14,7 +14,7 @@ return {
         theme = {
           all = {
             ui = {
-              bg_gutter = "#252535",
+              bg_gutter = "#1f1f28",
             },
           },
         },
