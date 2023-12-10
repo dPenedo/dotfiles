@@ -102,6 +102,27 @@ return {
       vim.g.gruvbox_material_statusline_style = "default"
     end,
   },
+  {
+    "ramojus/mellifluous.nvim",
+    config = function()
+      require("mellifluous").setup({ --[[...]]
+        color_set = "mellifluous",
+
+        mountain = {
+          neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+          bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
+        },
+        alduin = {
+          neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+          bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
+        },
+        mellifluous = {
+          neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+          bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
+        },
+      }) -- optional, see configuration section.
+    end,
+  },
   --  Everblush
   --
   {
