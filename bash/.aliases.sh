@@ -29,7 +29,6 @@ alias nrd="npm run dev"
 alias idea="intellijidea-ce . &"
 alias ta="tmux a"
 alias fu="fu | head -c 4 | xclip -selection clipboard"
-alias ta="tmux a"
 alias ccd="zi"
 alias za='zathura --fork'
 
