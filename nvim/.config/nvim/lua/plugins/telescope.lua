@@ -30,33 +30,13 @@ return {
           },
           extensions = {
             fzf = {
-              fuzzy = true, -- false will only do exact matching
+              fuzzy = true,                   -- false will only do exact matching
               override_generic_sorter = true, -- override the generic sorter
-              override_file_sorter = true, -- override the file sorter
-              case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+              override_file_sorter = true,    -- override the file sorter
+              case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
             },
           },
         },
-        -- pickers = {
-        --   find_files = {
-        --     theme = "ivy",
-        --   },
-        --   buffers = {
-        --     theme = "ivy",
-        --   },
-        --   help_tags = {
-        --     theme = "ivy",
-        --   },
-        --   current_buffer_fuzzy_find = {
-        --     theme = "ivy",
-        --   },
-        --   registers = {
-        --     theme = "ivy",
-        --   },
-        --   undo = {
-        --     theme = "ivy",
-        --   },
-        -- },
       })
       telescope.load_extension("fzf")
       telescope.load_extension("undo")

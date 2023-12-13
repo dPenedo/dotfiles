@@ -7,9 +7,9 @@ return {
       delete_to_trash = true,
       skip_confirm_for_simple_edits = true,
       keymaps = {
-        ["<C-v>"] = "actions.select_vsplit",
-        ["<C-s>"] = "actions.select_split",
-        ["<C-t>"] = "actions.select_tab",
+        ["<M-v>"] = "actions.select_vsplit",
+        ["<M-s>"] = "actions.select_split",
+        ["<M-t>"] = "actions.select_tab",
         ["<leader>t"] = "actions.open_terminal",
 
         ["gd"] = {
