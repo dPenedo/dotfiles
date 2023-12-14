@@ -5,7 +5,8 @@ sleep 5
 brave-browser &
 sleep 4
 # wezterm -e tmux new-session -A -D -s Hasiera &
-kitty -T "kitty" &
+kitty -e tmux new-session -A -D -s Hasiera &
+# kitty -T "kitty" &
 # sleep 2
 # Zotero &
 # sleep 2
