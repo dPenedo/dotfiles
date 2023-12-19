@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+# problema versiones python
+# export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
+
+
 # Historia
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -55,7 +60,7 @@ source ~/.aliases.sh
 # Completado
 # source ~/.completion.zsh
 
-export PATH="/home/daniel/anaconda3/bin:$PATH"
+# export PATH="/home/daniel/anaconda3/bin:$PATH"
 
 
 # Control + flechas
