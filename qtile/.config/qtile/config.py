@@ -188,7 +188,6 @@ for i in groups:
         ]
     )
 
-
 layouts = [
     # layout.Columns(border_focus_stack=["#5B65AB", "#7E9CD8"], border_width=3),
     layout.MonadTall(
