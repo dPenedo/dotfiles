@@ -25,7 +25,7 @@
 # SOFTWARE.
 
 from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
 from libqtile.lazy import lazy
 from color import colors
 import os
@@ -188,6 +188,43 @@ for i in groups:
         ]
     )
 
+
+groups.append(
+    ScratchPad(
+        "scratchpad",
+        [
+            DropDown(
+                "term", "kitty", width=0.6, height=0.6, x=0.2, y=0.2, opacity=0.97
+            ),
+            DropDown(
+                "lf", "kitty lf", width=0.8, height=0.8, x=0.1, y=0.1, opacity=0.97
+            ),
+            DropDown(
+                "pavucontrol",
+                "pavucontrol",
+                width=0.6,
+                height=0.6,
+                x=0.2,
+                y=0.2,
+                opacity=0.97,
+            ),
+            DropDown(
+                "nm", "kitty nmtui", width=0.6, height=0.6, x=0.2, y=0.2, opacity=0.97
+            ),
+        ],
+    )
+)
+
+keys.extend(
+    [
+        Key(["control"], "1", lazy.group["scratchpad"].dropdown_toggle("term")),
+        Key(["control"], "2", lazy.group["scratchpad"].dropdown_toggle("lf")),
+        Key(["control"], "3", lazy.group["scratchpad"].dropdown_toggle("pavucontrol")),
+        Key(["control"], "4", lazy.group["scratchpad"].dropdown_toggle("nm")),
+    ]
+)
+
+
 layouts = [
     # layout.Columns(border_focus_stack=["#5B65AB", "#7E9CD8"], border_width=3),
     layout.MonadTall(
@@ -267,7 +304,7 @@ screens = [
                     padding=4,
                     format=" {char} ",
                     charge_char="󰂄",
-                    discharge_char="🔋",
+                    discharge_char="",
                     full_char="󰁹",
                     unknown_char="⚡",
                     empty_char="⁉️ ",

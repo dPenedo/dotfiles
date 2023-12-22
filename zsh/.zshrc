@@ -60,7 +60,7 @@ source ~/.aliases.sh
 # Completado
 # source ~/.completion.zsh
 
-# export PATH="/home/daniel/anaconda3/bin:$PATH"
+export PATH="/home/daniel/anaconda3/bin:$PATH"
 
 
 # Control + flechas
