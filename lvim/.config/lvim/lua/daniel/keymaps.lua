@@ -31,8 +31,8 @@ lvim.keys.normal_mode["<A-o>"] = ":Oil<CR>"
 lvim.keys.normal_mode["<A-e>"] = ":Lf<CR>"
 
 -- Splits
-lvim.keys.normal_mode["<leader>\\"] = ":vsplit<CR>"
-lvim.keys.normal_mode["<leader>|"] = ":split<CR>"
+lvim.keys.normal_mode["<leader><CR>"] = ":vsplit<CR>"
+lvim.keys.normal_mode["<leader>-"] = ":split<CR>"
 
 -- Nohighlsearch
 lvim.keys.normal_mode["<ESC>"] = ":nohlsearch<CR>"

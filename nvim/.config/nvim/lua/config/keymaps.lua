@@ -56,6 +56,8 @@ map("n", "0", ":nohlsearch<CR>")
 -- Copying the vscode behaviour of making tab splits
 map("n", "<leader>\\", "<CMD>vsplit<CR>")
 map("n", "<leader>|", "<CMD>split<CR>")
+map("n", "<leader><CR>", "<CMD>vsplit<CR>")
+map("n", "<leader>-", "<CMD>split<CR>")
 -- map("n", "<A-->", "<CMD>split<CR>")
 
 -- Use operator pending mode to visually select the whole buffer

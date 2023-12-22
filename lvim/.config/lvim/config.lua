@@ -7,11 +7,14 @@ reload("daniel.alpha")
 reload("daniel.plugins")
 reload("daniel.telescope")
 reload("daniel.notas")
+reload("daniel.colorscheme")
 reload("daniel.prueba")
 reload("daniel.keymaps")
 
 -- NvimTree
 lvim.builtin.nvimtree.setup.view.side = "right"
+
+lvim.builtin.project.manual_mode = true
 
 lvim.colorscheme = "kanagawa"
 

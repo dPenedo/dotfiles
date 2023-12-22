@@ -14,30 +14,31 @@ return {
 
     config = function()
       local telescope = require("telescope")
-      telescope.setup({
+      telescope.setup {
         defaults = {
           layout_config = {
-          mappings = {
-            i = {
-              ["<C-s>"] = "select_horizontal",
-              ["<C-h>"] = "which_key",
-              ["<C-j>"] = "move_selection_next",
-              ["<C-k>"] = "move_selection_previous",
-            },
-            n = {
-              ["<C-s>"] = "select_horizontal",
-            },
-          },
-          extensions = {
-            fzf = {
-              fuzzy = true,                   -- false will only do exact matching
-              override_generic_sorter = true, -- override the generic sorter
-              override_file_sorter = true,    -- override the file sorter
-              case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
+            mappings = {
+              i = {
+                ["<C-s>"] = "select_horizontal",
+                ["<C-h>"] = "which_key",
+                ["<C-j>"] = "move_selection_next",
+                ["<C-k>"] = "move_selection_previous",
+              },
+              n = {
+                ["<C-s>"] = "select_horizontal",
+              },
             },
           },
         },
-      }) -- Remove the extra parenthesis here
+        extensions = {
+          fzf = {
+            fuzzy = true,                     -- false will only do exact matching
+            override_generic_sorter = true,   -- override the generic sorter
+            override_file_sorter = true,      -- override the file sorter
+            case_mode = "smart_case",         -- or "ignore_case" or "respect_case"
+          }
+        }
+      }
       telescope.load_extension("fzf")
       telescope.load_extension("undo")
       telescope.load_extension("file_browser")
@@ -46,4 +47,3 @@ return {
     end,
   },
 }
-
