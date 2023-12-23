@@ -31,10 +31,15 @@ from color import colors
 import os
 import subprocess
 from libqtile import hook
+from os.path import expanduser
+
 
 mod = "mod4"
 terminal = "kitty"
 browser = "brave-browser"
+volumen = expanduser("~/.config/qtile/scripts/volume-dunst.sh")
+
+
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -73,19 +78,20 @@ keys = [
     Key(
         [],
         "XF86AudioRaiseVolume",
-        lazy.spawn("pactl set-sink-volume 0 +5%"),
+        lazy.spawn(volumen + " up"),
         desc="Volume Up",
     ),
     Key(
         [],
         "XF86AudioLowerVolume",
-        lazy.spawn("pactl set-sink-volume 0 -5%"),
+        lazy.spawn(volumen + " down"),
         desc="volume down",
     ),
+
     Key(
         [],
         "XF86AudioMute",
-        lazy.spawn("amixer sset Master 1+ toggle"),
+        lazy.spawn(volumen + " mute"),
         desc="Volume Mute",
     ),
     Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause"), desc="playerctl"),
@@ -442,3 +448,9 @@ wmname = "LG3D"
 def autostart():
     home = os.path.expanduser("~/.config/qtile/autostart.sh")
     subprocess.run([home])
+
+
+@hook.subscribe.screen_change
+def on_screen_change(qtile, ev):
+    qtile.cmd_spawn("dunstify -u low -r 2594 -a 'screen' 'Screen' 'Configuration changed'")
+
