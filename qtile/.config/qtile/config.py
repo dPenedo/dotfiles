@@ -152,7 +152,7 @@ keys = [
     # Programas
     Key([mod], "b", lazy.spawn(browser), desc="Navegador predeterminado"),
     Key([mod], "w", lazy.spawn("firefox"), desc="Navegador firefox"),
-    Key([mod], "e", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
+    Key([mod], "t", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
     Key([mod], "g", lazy.spawn("gpick"), desc="Toma y almacena colores de la pantalla"),
     # Key(["control", mod1], "supr", lazy.spawn("xkill"), desc="Selecciona una ventana con el raton para cerrarla"),
 ]
@@ -223,10 +223,10 @@ groups.append(
 
 keys.extend(
     [
-        Key(["control"], "1", lazy.group["scratchpad"].dropdown_toggle("term")),
-        Key(["control"], "2", lazy.group["scratchpad"].dropdown_toggle("lf")),
-        Key(["control"], "3", lazy.group["scratchpad"].dropdown_toggle("pavucontrol")),
-        Key(["control"], "4", lazy.group["scratchpad"].dropdown_toggle("nm")),
+        Key([mod, "control"], "Return", lazy.group["scratchpad"].dropdown_toggle("term")),
+        Key([mod], "e", lazy.group["scratchpad"].dropdown_toggle("lf")),
+        Key([mod, "control"], "a", lazy.group["scratchpad"].dropdown_toggle("pavucontrol")),
+        Key([mod, "control"], "w", lazy.group["scratchpad"].dropdown_toggle("nm")),
     ]
 )
 
