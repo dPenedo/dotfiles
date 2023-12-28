@@ -16,9 +16,9 @@ alias l='exa -s type --icons -lah'
 alias pdf="nohup zathura"
 alias history='history 0'
 alias hist="history | fzf"
-alias t2="tre -l 2"
-alias t3="tre -l 3"
-alias t4="tre -l 4"
+alias t2="exa --icons --tree --level=2"
+alias t3="exa --icons --tree --level=3"
+alias t4="exa --icons --tree --level=4"
 alias neo="neovide"
 alias mm="cat ~/mm.txt | xclip -selection clipboard"
 alias ..="cd .."
