@@ -4,6 +4,9 @@ end
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+--
+--
+-- Lazy
 map("n", "<leader>L", "<cmd>:Lazy<cr>")
 
 -- Mimic shell movements
@@ -25,6 +28,10 @@ map("v", "\\", "$")
 
 -- Cambiar palabra
 map("n", "<CR>", "ciw")
+
+-- Rename
+map("n", "<leader>R", vim.lsp.buf.rename)
+map("n", "<leader>ca", vim.lsp.buf.code_action)
 
 -- Notas
 map("n", "<leader>nn", ":NuevaNota<CR>")
@@ -102,6 +109,7 @@ map("n", ",t", ":Telescope treesitter<CR>")
 map("n", ",t", ":TodoTelescope<CR>")
 map("n", ",H", ":Telescope help_tags<CR>")
 map("n", "<Tab>", ":Telescope buffers<CR>")
+map("n", "<leader><leader>", ":Telescope buffers<CR>")
 
 -- map("n", "<leader>b", ":Telescope buffers<CR>")
 -- map("n", "<leader>g", ":Telescope live_grep<CR>")

@@ -10,6 +10,7 @@ reload("daniel.notas")
 reload("daniel.colorscheme")
 reload("daniel.prueba")
 reload("daniel.keymaps")
+reload("daniel.luasnip")
 
 -- NvimTree
 lvim.builtin.nvimtree.setup.view.side = "right"
