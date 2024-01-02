@@ -141,6 +141,24 @@ return {
   {
     "AlexvZyl/nordic.nvim",
   },
+  {
+    "HoNamDuong/hybrid.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      overrides = function(hl, c)
+        local gris = "#737B87"
+        hl.LineNr = {
+          fg = gris,
+        }
+      end,
+    },
+  },
+  {
+    "zootedb0t/citruszest.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   -- Gruvbox
   {
@@ -160,6 +178,7 @@ return {
   },
   { "stevedylandev/flexoki-nvim" },
   { "tobi-wan-kenobi/zengarden" },
+  { "miikanissi/modus-themes.nvim" },
 
   -- Bamboo
   {
@@ -182,7 +201,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "hybrid",
       styles = {
         keyword = {
           bold = true,

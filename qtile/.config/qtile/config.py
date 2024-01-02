@@ -75,6 +75,11 @@ keys = [
     Key([mod], "m", lazy.layout.maximize(), desc="Maximize window sizes"),
     Key([mod], "z", lazy.window.toggle_floating(), desc="Toggle floating"),
     Key([mod], "f", lazy.window.toggle_fullscreen()),
+    # Ventana previa y siguiente
+    Key(["mod1"], "Tab", lazy.group.next_window(), desc="Focus next window"),
+    Key(["mod1", "shift"], "Tab", lazy.group.prev_window(), desc="Focus previous window"),
+    Key([mod], "Tab", lazy.screen.toggle_group()),
+
     # Volumen y media
     Key(
         [],
@@ -155,7 +160,7 @@ keys = [
     Key([mod], "w", lazy.spawn("firefox"), desc="Navegador firefox"),
     Key([mod], "t", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
     Key([mod], "g", lazy.spawn("gpick"), desc="Toma y almacena colores de la pantalla"),
-    # Key(["control", mod1], "supr", lazy.spawn("xkill"), desc="Selecciona una ventana con el raton para cerrarla"),
+    Key(["control", "mod1"], "Delete", lazy.spawn("xkill"), desc="Selecciona una ventana con el raton para cerrarla"),
 ]
 
 groups = [
@@ -182,16 +187,16 @@ for i in groups:
                 desc="Switch to group {}".format(i.name),
             ),
             # mod1 + shift + letter of group = switch to & move focused window to group
-            Key(
-                [mod, "shift"],
-                i.name,
-                lazy.window.togroup(i.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(i.name),
-            ),
+            # Key(
+            #     [mod, "shift"],
+            #     i.name,
+            #     lazy.window.togroup(i.name, switch_group=True),
+            #     desc="Switch to & move focused window to group {}".format(i.name),
+            # ),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group
-            # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-            #     desc="move focused window to group {}".format(i.name)),
+            Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
+                desc="move focused window to group {}".format(i.name)),
         ]
     )
 

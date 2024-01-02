@@ -41,8 +41,10 @@ map("n", "<leader>nf", ":Telescope find_files cwd=" .. "/home/daniel/Documentos/
 map("n", "<C-Q>", "<CMD>q<CR>")
 
 -- leader-o/O inserts blank line below/above
--- map("n", "<leader>o", "o<ESC>")
--- map("n", "<leader>O", "O<ESC>")
+map("n", "<leader>o", "o<ESC>")
+map("n", "<leader>O", "O<ESC>")
+map("n", "<C-j>", "7j")
+map("n", "<C-k>", "7k")
 
 -- Move to the next/previous buffer
 map("n", "<leader>m", "<CMD>bp<CR>")
