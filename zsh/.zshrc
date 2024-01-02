@@ -45,6 +45,7 @@ export KEYTIMEOUT=1
 source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
+
 source ~/.fzf/shell/key-bindings.zsh
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
 # source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
@@ -61,6 +62,9 @@ source ~/.aliases.sh
 # source ~/.completion.zsh
 
 # export PATH="/home/daniel/anaconda3/bin:$PATH"  # commented out by conda initialize
+
+
+
 
 
 # Control + flechas
