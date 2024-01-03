@@ -12,7 +12,7 @@ return {
       keywordStyle = { bold = true },
       colors = {
         theme = {
-          all = {
+          wave = {
             ui = {
               bg_gutter = "#1f1f28",
             },
@@ -23,7 +23,7 @@ return {
           oldWhite = "#DCD7Bb",
           fujiWhite = "#F6F1d3",
           -- oldWhite = "#F1eed7",
-          -- sumiInk3 = "#120309",
+          sumiInk3 = "#1D1F21",
           -- autumnGreen = "#037971",
           -- springGreen = "#9EBC9F",
         },

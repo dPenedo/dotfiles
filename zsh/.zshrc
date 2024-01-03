@@ -18,8 +18,6 @@ setopt appendhistory
 setopt inc_append_history
 setopt share_history
 
-# Hace que funcionen combinacionjes como el control a control e
-bindkey -e
 
 
 # Debian and derivatives: https://launchpad.net/ubuntu/+source/command-not-found
@@ -45,11 +43,12 @@ export KEYTIMEOUT=1
 source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
-
+# source ~/scripts/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source ~/.fzf/shell/key-bindings.zsh
 # source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
-# source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
+source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
 # source ~/.fzf/shell/completion.zsh
+
 # source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 #Cambio color zsh-autosuggestions
@@ -60,10 +59,13 @@ source ~/.aliases.sh
 
 # Completado
 # source ~/.completion.zsh
+fpath=(~/scripts/zsh/zsh-completions/src $fpath)
 
 # export PATH="/home/daniel/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 
+# Hace que funcionen combinacionjes como el control a control e
+bindkey -e
 
 
 
@@ -76,23 +78,30 @@ bindkey "^[[3~" delete-char
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 
+bindkey '\e[1~' beginning-of-line  # Para la tecla Home
+bindkey '\e[4~' end-of-line        # Para la tecla End
+
 
 # Tab normal
 bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
-
+bindkey '^[[A' history-substring-search-up # or '\eOA'
+bindkey '^[[B' history-substring-search-down # or '\eOB'
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 # bindkey '^[[A' fzf-history-widget
 # bindkey '^[[B' fzf-history-widget
 # bindkey "^[[A" history-beginning-search-backward
 # bindkey "^[[B" history-beginning-search-forward
 
-bindkey '^[[A' up-line-or-history
-bindkey '^[[B' down-line-or-history
+# bindkey '^[[A' up-line-or-history
+# bindkey '^[[B' down-line-or-history
 
 bindkey '^k' up-line-or-history
 bindkey '^j' down-line-or-history
 
+# bindkey '^[[A' up-line-or-history
+# bindkey '^[[B' down-line-or-history
 
 # ctrl abajo
 # bindkey '^[[1;5B' down-line-or-history
@@ -107,7 +116,7 @@ bindkey -s '\ev' 'vifm .^M'
 bindkey -s '\ey' 'ya .^M'
 bindkey -s '\en' 'n .^M'
 
-# USE LF TO SWITCH DIRECTORIES AND BIND IT TO CTRL-O
+# USE LF TO SWITCH DIRECTORIES 
 LFCD="~/.config/lf/lfcd.sh"
 if [ -f "$LFCD" ]; then
 	source "$LFCD"
@@ -121,7 +130,7 @@ bindkey -s '^o' 'lfcd\n' # zsh
 
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
 bindkey '^ ' fzf-history-widget
-bindkey '^[[B' fzf-history-widget
+# bindkey '^[[B' fzf-history-widget
 
 
 

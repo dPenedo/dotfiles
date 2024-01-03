@@ -161,6 +161,7 @@ keys = [
     Key([mod], "t", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
     Key([mod], "g", lazy.spawn("gpick"), desc="Toma y almacena colores de la pantalla"),
     Key(["control", "mod1"], "Delete", lazy.spawn("xkill"), desc="Selecciona una ventana con el raton para cerrarla"),
+    Key([mod, "control"], "x", lazy.spawn("~/scripts/xmodmap.sh"), desc="Script para modificar teclas del teclado"),
 ]
 
 groups = [

@@ -1,10 +1,9 @@
-[[language]]
-name = "python"
-roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
-language-server = { command = "pylsp", args = ["--stdio"] }
-auto-format = true
-formatter = {command = 'black', args = ["--quiet", "-"]}
-config = ""
+# [[language]]
+# name = "python"
+# roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+# language-server = { command = "pylsp", args = ["--stdio"] }
+# auto-format = true
+# formatter = {command = 'black', args = ["--quiet", "-"]}
 
 [[language]]
 name = "html"
@@ -32,4 +31,3 @@ auto-format = true
 name = "markdown"
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 auto-format = true
-
