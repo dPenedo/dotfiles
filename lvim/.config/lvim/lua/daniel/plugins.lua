@@ -26,6 +26,7 @@ lvim.plugins = {
   },
   {
     "crispgm/nvim-tabline",
+    lazy = true,
     dependencies = { "nvim-tree/nvim-web-devicons" }, -- optional
     config = function()
       require("tabline").setup({
@@ -38,6 +39,7 @@ lvim.plugins = {
   -- Probando a comentar
   {
     "folke/todo-comments.nvim",
+    lazy = true,
     event = "BufRead",
     config = function()
       require("todo-comments").setup()
@@ -45,18 +47,19 @@ lvim.plugins = {
   },
   {
     "NvChad/nvim-colorizer.lua",
+    lazy = true,
     opts = {
       user_default_options = {
         tailwind = true,
       },
     },
   },
-  {
-    "folke/zen-mode.nvim",
-    opts = {
-      window = { height = 0.9 },
-    },
-  },
+  -- {
+  --   "folke/zen-mode.nvim",
+  --   opts = {
+  --     window = { height = 0.9 },
+  --   },
+  -- },
 
   {
     "willothy/flatten.nvim",
@@ -122,7 +125,10 @@ lvim.plugins = {
     dependencies = "nvim-treesitter/nvim-treesitter",
     config = true, -- or `opts = {}`
   },
-  { "debugloop/telescope-undo.nvim" },
+  {
+    "debugloop/telescope-undo.nvim",
+    lazy = true
+  },
   -- {
   --   "Pocco81/auto-save.nvim",
   --   config = function()
@@ -130,16 +136,16 @@ lvim.plugins = {
   --   end,
   -- },
   -- JAVA
-  { "mfussenegger/nvim-jdtls",      ft = { "java" } },
+  { "mfussenegger/nvim-jdtls",   ft = { "java" } },
 
   {
     "deparr/tairiki.nvim",
-    lazy = false,
+    lazy = true,
   },
-  { "tobi-wan-kenobi/zengarden" },
+  { "tobi-wan-kenobi/zengarden", lazy = true },
   {
     "folke/tokyonight.nvim",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     opts = {},
   },
@@ -174,24 +180,24 @@ lvim.plugins = {
     },
   },
 
-  {
-    "sainnhe/gruvbox-material",
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      vim.g.gruvbox_material_background = "hard"
-      vim.g.gruvbox_material_enable_bold = 1
-      vim.g.gruvbox_material_visual = "red background"
-      vim.g.gruvbox_material_ui_contrast = "hight"
-      -- vim.g.gruvbox_material_transparent_background = 1
-      vim.g.gruvbox_material_better_performance = 1
-      vim.g.gruvbox_material_show_eob = 0
-      vim.g.gruvbox_material_statusline_style = "default"
-    end,
-  },
+  -- {
+  --   "sainnhe/gruvbox-material",
+  --   lazy = true,    -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     vim.g.gruvbox_material_background = "hard"
+  --     vim.g.gruvbox_material_enable_bold = 1
+  --     vim.g.gruvbox_material_visual = "red background"
+  --     vim.g.gruvbox_material_ui_contrast = "hight"
+  --     -- vim.g.gruvbox_material_transparent_background = 1
+  --     vim.g.gruvbox_material_better_performance = 1
+  --     vim.g.gruvbox_material_show_eob = 0
+  --     vim.g.gruvbox_material_statusline_style = "default"
+  --   end,
+  -- },
   {
     "ribru17/bamboo.nvim",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       require("bamboo").setup({

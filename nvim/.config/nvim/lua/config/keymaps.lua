@@ -77,7 +77,7 @@ map("o", "A", ":<C-U>normal! mzggVG<CR>`z")
 map("n", "<A-e>", ":Lf<CR>")
 map("n", "<A-n>", ":NnnPicker<CR>")
 map("n", "<A-r>", ":Ranger<CR>")
-map("n", "<A-v>", ":EditVifm<CR>")
+-- map("n", "<A-v>", ":EditVifm<CR>")
 map("n", "<A-o>", ":Oil<CR>")
 map("n", "-", ":Oil<CR>")
 map("n", "<leader>e", ":NvimTreeToggle<CR>")
@@ -96,6 +96,7 @@ map("n", "<A-z>", ":ZenMode<CR>")
 
 -- Terminal
 map("t", "<Esc>", "<C-\\><C-n><CR>")
+map("t", "<C-x>", "<C-\\><C-n><CR>")
 map("t", "<C-l>", "<C-u>clear<CR>")
 
 -- Telescope
@@ -131,6 +132,13 @@ map("n", "<C-t>", ':ToggleTerm direction="tab"<CR>')
 map("n", "<leader>T", ":terminal<CR>:startinsert<CR>")
 map("n", "<leader>Y", ":terminal yazi .<CR>:startinsert<CR>")
 map("n", "<leader>E", ":terminal lf .<CR>:startinsert<CR>")
+
+map("n", "<c-o>", ":ToggleTerm direction=vertical size=80<CR>")
+map("n", "<c-p>", ":2ToggleTerm direction=vertical size=80<CR>")
+-- map("n", "<C-2>", ":2ToggleTerm direction=vertical size=80<CR>")
+-- map("n", "<C-3>", ":3ToggleTerm direction=vertical size=80<CR>")
+-- map("n", "<C-4>", ":4ToggleTerm direction=vertical size=80<CR>")
+-- map("n", "<C-º>", ":ToggleTermToggleAll<CR>")
 
 -- Gestión de tabs/pestañas
 map("n", "<leader>1", ":tabn 1<CR>")

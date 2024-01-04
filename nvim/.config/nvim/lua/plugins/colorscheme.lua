@@ -36,25 +36,15 @@ return {
   },
   {
     "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
+    lazy = true,
     opts = {},
   },
   {
     "craftzdog/solarized-osaka.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
+    lazy = true,
   },
-  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = true },
   -- Zenbones
-  {
-    "mcchrish/zenbones.nvim",
-    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
-    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-    -- In Vim, compat mode is turned on as Lush only works in Neovim.
-    dependencies = "rktjmp/lush.nvim",
-  },
   { "dotsilas/darcubox-nvim" },
   {
     "tiagovla/tokyodark.nvim",
@@ -67,80 +57,77 @@ return {
     lazy = false,
     priority = 1000,
   },
-  {
-    "neanias/everforest-nvim",
-    version = false,
-    lazy = false,
-    config = function()
-      require("everforest").setup({
-        background = "hard",
-        ui_contrast = "high",
-        dim_inactive_windows = true,
-        diagnostic_text_highlight = true,
-        ---Some plugins support highlighting error/warning/info/hint lines, but this
-        ---feature is disabled by default in this colour scheme.
-        diagnostic_line_highlight = true,
-        -- Dark background, same as gruvbox dark hard
-        colours_override = function(palette)
-          palette.bg0 = "#282828"
-        end,
-      })
-    end,
-  },
-  {
-    "sainnhe/gruvbox-material",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      vim.g.gruvbox_material_background = "hard"
-      vim.g.gruvbox_material_enable_bold = 1
-      vim.g.gruvbox_material_visual = "red background"
-      vim.g.gruvbox_material_ui_contrast = "hight"
-      vim.g.gruvbox_material_transparent_background = 0
-      vim.g.gruvbox_material_better_performance = 1
-      vim.g.gruvbox_material_show_eob = 0
-      vim.g.gruvbox_material_statusline_style = "default"
-    end,
-  },
-  {
-    "ramojus/mellifluous.nvim",
-    config = function()
-      require("mellifluous").setup({ --[[...]]
-        color_set = "mellifluous",
-
-        mountain = {
-          neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
-          bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
-        },
-        alduin = {
-          neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
-          bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
-        },
-        mellifluous = {
-          neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
-          bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
-        },
-      }) -- optional, see configuration section.
-    end,
-  },
+  -- {
+  --   "neanias/everforest-nvim",
+  --   version = false,
+  --   lazy = false,
+  --   config = function()
+  --     require("everforest").setup({
+  --       background = "hard",
+  --       ui_contrast = "high",
+  --       dim_inactive_windows = true,
+  --       diagnostic_text_highlight = true,
+  --       ---Some plugins support highlighting error/warning/info/hint lines, but this
+  --       ---feature is disabled by default in this colour scheme.
+  --       diagnostic_line_highlight = true,
+  --       -- Dark background, same as gruvbox dark hard
+  --       colours_override = function(palette)
+  --         palette.bg0 = "#282828"
+  --       end,
+  --     })
+  --   end,
+  -- },
+  -- {
+  --   "sainnhe/gruvbox-material",
+  --   lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     vim.g.gruvbox_material_background = "hard"
+  --     vim.g.gruvbox_material_enable_bold = 1
+  --     vim.g.gruvbox_material_visual = "red background"
+  --     vim.g.gruvbox_material_ui_contrast = "hight"
+  --     vim.g.gruvbox_material_transparent_background = 0
+  --     vim.g.gruvbox_material_better_performance = 1
+  --     vim.g.gruvbox_material_show_eob = 0
+  --     vim.g.gruvbox_material_statusline_style = "default"
+  --   end,
+  -- },
+  -- {
+  --   "ramojus/mellifluous.nvim",
+  --   config = function()
+  --     require("mellifluous").setup({ --[[...]]
+  --       color_set = "mellifluous",
+  --
+  --       mountain = {
+  --         neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+  --         bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
+  --       },
+  --
+  --       alduin = {
+  --         neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+  --         bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
+  --       },
+  --       mellifluous = {
+  --         neutral = true, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+  --         bg_contrast = "hard", -- options: 'soft', 'medium', 'hard'
+  --       },
+  --     }) -- optional, see configuration section.
+  --   end,
+  -- },
   --  Everblush
   --
-  {
-    "Everblush/nvim",
-    name = "everblush",
-    opts = {
-      override = {
-        Comment = { fg = "#ffffff" },
-        Function = { bold = true },
-      },
-    },
-  },
-  { "rose-pine/neovim", name = "rose-pine" },
+  -- {
+  --   "Everblush/nvim",
+  --   name = "everblush",
+  --   opts = {
+  --     override = {
+  --       Comment = { fg = "#ffffff" },
+  --       Function = { bold = true },
+  --     },
+  --   },
+  -- },
+  -- { "rose-pine/neovim", name = "rose-pine" },
 
-  -- Nordic
-  {
-    "AlexvZyl/nordic.nvim",
-  },
   {
     "HoNamDuong/hybrid.nvim",
     lazy = false,
@@ -155,15 +142,22 @@ return {
     },
   },
   {
-    "zootedb0t/citruszest.nvim",
-    lazy = false,
-    priority = 1000,
+    "rmehri01/onenord.nvim",
+    opts = {
+      custom_colors = { bg = "#1d1f21", active = "#242933" },
+      disable = {
+        float_background = true, -- Disable setting the background color for floating windows
+      },
+      inverse = {
+        match_paren = true,
+      },
+    },
   },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   -- Gruvbox
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
+    lazy = true,
     config = true,
     opts = {
       contrast = "hard",
@@ -176,14 +170,14 @@ return {
       },
     },
   },
-  { "stevedylandev/flexoki-nvim" },
+  -- { "stevedylandev/flexoki-nvim" },
   { "tobi-wan-kenobi/zengarden" },
-  { "miikanissi/modus-themes.nvim" },
+  -- { "miikanissi/modus-themes.nvim" },
 
   -- Bamboo
   {
     "ribru17/bamboo.nvim",
-    lazy = false,
+    lazy = true,
     -- priority = 1000,
     config = function()
       require("bamboo").setup({
@@ -201,7 +195,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "hybrid",
+      colorscheme = "onenord",
       styles = {
         keyword = {
           bold = true,
