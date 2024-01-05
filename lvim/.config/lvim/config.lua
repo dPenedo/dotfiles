@@ -3,21 +3,18 @@
 
 reload("daniel.options")
 reload("daniel.disable")
+reload("daniel.telescope")
 reload("daniel.alpha")
 reload("daniel.plugins")
-reload("daniel.telescope")
 reload("daniel.notas")
-reload("daniel.colorscheme")
-reload("daniel.prueba")
 reload("daniel.keymaps")
-reload("daniel.luasnip")
 
--- NvimTree
-lvim.builtin.nvimtree.setup.view.side = "right"
 
-lvim.builtin.project.manual_mode = true
 
-lvim.colorscheme = "kanagawa"
 
-lvim.format_on_save = true
-lvim.builtin.cmp.preselect = true
+lvim.builtin.telescope.on_config_done = function(telescope)
+  pcall(telescope.load_extension, "fzf")
+  pcall(telescope.load_extension, "undo")
+  pcall(telescope.load_extension, "file_browser")
+  -- any other extensions loading
+end

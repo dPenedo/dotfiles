@@ -24,6 +24,8 @@ lvim.plugins = {
       },
     },
   },
+  { 'dstein64/vim-startuptime' },
+
   {
     "crispgm/nvim-tabline",
     lazy = true,
@@ -61,6 +63,7 @@ lvim.plugins = {
   --   },
   -- },
 
+  { "brenoprata10/nvim-highlight-colors" },
   {
     "willothy/flatten.nvim",
     -- config = true,
@@ -120,15 +123,18 @@ lvim.plugins = {
       disable_frontmatter = true,
     },
   },
-  {
-    "lukas-reineke/headlines.nvim",
-    dependencies = "nvim-treesitter/nvim-treesitter",
-    config = true, -- or `opts = {}`
-  },
+  -- {
+  --   "lukas-reineke/headlines.nvim",
+  --   dependencies = "nvim-treesitter/nvim-treesitter",
+  --   config = true, -- or `opts = {}`
+  -- },
   {
     "debugloop/telescope-undo.nvim",
     lazy = true
   },
+  { "nvim-telescope/telescope-file-browser.nvim" },
+
+
   -- {
   --   "Pocco81/auto-save.nvim",
   --   config = function()
@@ -136,7 +142,7 @@ lvim.plugins = {
   --   end,
   -- },
   -- JAVA
-  { "mfussenegger/nvim-jdtls",   ft = { "java" } },
+  { "mfussenegger/nvim-jdtls",                   lazy = true, ft = { "java" } },
 
   {
     "deparr/tairiki.nvim",

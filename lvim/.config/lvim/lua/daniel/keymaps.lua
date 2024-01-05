@@ -5,6 +5,7 @@ lvim.keys.normal_mode[",,"] = ":Telescope find_files<CR>"
 lvim.keys.normal_mode[",b"] = ":Telescope buffers<CR>"
 lvim.keys.normal_mode[",l"] = ":Telescope current_buffer_fuzzy_find<CR>"
 lvim.keys.normal_mode[",u"] = ":Telescope undo<CR>"
+lvim.keys.normal_mode[",g"] = ":Telescope live_grep<CR>"
 lvim.keys.normal_mode[",r"] = ":Telescope registers<CR>"
 lvim.keys.normal_mode[",B"] = ":Telescope builtin<CR>"
 lvim.keys.normal_mode[",t"] = ":Telescope treesitter<CR>"
@@ -21,6 +22,13 @@ lvim.keys.normal_mode["<leader>t"] = ":ToggleTerm<CR>"
 -- Mapeando el jj como Escape
 lvim.keys.insert_mode["jj"] = "<ESC>"
 lvim.keys.insert_mode["jk"] = "<ESC>la"
+
+
+-- Colores
+lvim.builtin.which_key.mappings = {
+  ["c"] = { "" },
+}
+lvim.keys.normal_mode["<leader>cc"] = ":lua require(\"nvim-highlight-colors\").toggle()<CR>"
 
 -- ZenMode
 lvim.keys.normal_mode["<A-z>"] = ":ZenMode<CR>"
