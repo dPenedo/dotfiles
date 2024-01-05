@@ -4,13 +4,17 @@
 
 alias icat="kitty +kitten icat"
 alias pym='python manage.py'
-alias vim='nvim'
-alias nv='nvim'
+
+
+# Neovim
+alias vim='lvim'
+alias nv='lvim'
+alias lazyvim='nvim'
 alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 alias nc='NVIM_APPNAME=nv-chad nvim'        # Nv-chad
+alias lv='lvim'
 
 # alias n='nvim -c Lf'
-alias lv='lvim'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
 alias ls='lsd --group-dirs=first'
