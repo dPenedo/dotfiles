@@ -4,6 +4,7 @@
 reload("daniel.options")
 reload("daniel.disable")
 reload("daniel.telescope")
+reload("daniel.cmp")
 reload("daniel.alpha")
 reload("daniel.plugins")
 reload("daniel.notas")
