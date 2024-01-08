@@ -22,6 +22,11 @@ lvim.keys.normal_mode["<leader>r"] = ":Telescope registers<CR>"
 
 
 
+-- Rename
+
+lvim.keys.normal_mode["<leader>R"]  = vim.lsp.buf.rename
+lvim.keys.normal_mode["<leader>ca"] = vim.lsp.buf.code_action
+
 
 -- Mapeando el jj como Escape
 lvim.keys.insert_mode["jj"] = "<ESC>"

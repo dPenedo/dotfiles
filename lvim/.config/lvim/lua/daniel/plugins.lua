@@ -51,6 +51,12 @@ lvim.plugins = {
       },
     },
   },
+  -- Lua
+  {
+    "olimorris/persisted.nvim",
+    config = true,
+    priority = 1000,
+  },
   {
     "crispgm/nvim-tabline",
     lazy = true,

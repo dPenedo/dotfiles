@@ -15,6 +15,7 @@ reload("daniel.keymaps")
 
 lvim.builtin.telescope.on_config_done = function(telescope)
   pcall(telescope.load_extension, "fzf")
+  pcall(telescope.load_extension, "fzf-lua")
   pcall(telescope.load_extension, "undo")
   pcall(telescope.load_extension, "file_browser")
   -- any other extensions loading
