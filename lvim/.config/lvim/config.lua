@@ -8,6 +8,7 @@ reload("daniel.cmp")
 reload("daniel.alpha")
 reload("daniel.plugins")
 reload("daniel.notas")
+reload("daniel.terminal")
 reload("daniel.keymaps")
 
 

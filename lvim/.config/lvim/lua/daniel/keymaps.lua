@@ -34,53 +34,56 @@ lvim.keys.insert_mode["jk"] = "<ESC>la"
 
 
 -- Colores
-lvim.builtin.which_key.mappings       = {
+lvim.builtin.which_key.mappings        = {
   ["c"] = { "" },
 }
-lvim.keys.normal_mode["<leader>cc"]   = ":lua require(\"nvim-highlight-colors\").toggle()<CR>"
+lvim.keys.normal_mode["<leader>cc"]    = ":lua require(\"nvim-highlight-colors\").toggle()<CR>"
 
 -- ZenMode
-lvim.keys.normal_mode["<A-z>"]        = ":ZenMode<CR>"
+lvim.keys.normal_mode["<A-z>"]         = ":ZenMode<CR>"
 
 -- Exploradores
-lvim.keys.normal_mode["-"]            = ":Oil<CR>"
-lvim.keys.normal_mode["<A-o>"]        = ":Oil<CR>"
-lvim.keys.normal_mode["<A-e>"]        = ":Lf<CR>"
-lvim.keys.normal_mode["<leader>e"]    = ":NvimTreeOpen<CR>"
+lvim.keys.normal_mode["-"]             = ":Oil<CR>"
+lvim.keys.normal_mode["<A-o>"]         = ":Oil<CR>"
+lvim.keys.normal_mode["<A-e>"]         = ":Lf<CR>"
+lvim.keys.normal_mode["<leader>e"]     = ":NvimTreeOpen<CR>"
 
 -- Splits
-lvim.keys.normal_mode["<leader><CR>"] = ":vsplit<CR>"
-lvim.keys.normal_mode["<leader>-"]    = ":split<CR>"
+lvim.keys.normal_mode["<leader><CR>"]  = ":vsplit<CR>"
+lvim.keys.normal_mode["<leader>-"]     = ":split<CR>"
 
 -- Nohighlsearch
-lvim.keys.normal_mode["<ESC>"]        = ":nohlsearch<CR>"
+lvim.keys.normal_mode["<ESC>"]         = ":nohlsearch<CR>"
 
 -- Tabs
-lvim.keys.normal_mode["<leader>1"]    = ":tabn 1<CR>"
-lvim.keys.normal_mode["<leader>2"]    = ":tabn 2<CR>"
-lvim.keys.normal_mode["<leader>3"]    = ":tabn 3<CR>"
-lvim.keys.normal_mode["<leader>4"]    = ":tabn 4<CR>"
-lvim.keys.normal_mode["<leader>5"]    = ":tabn 5<CR>"
-lvim.keys.normal_mode["<leader>6"]    = ":tabn 6<CR>"
-lvim.keys.normal_mode["<leader>7"]    = ":tabn 7<CR>"
-lvim.keys.normal_mode["<leader>8"]    = ":tabn 8<CR>"
-lvim.keys.normal_mode["<leader>9"]    = ":tabn 9<CR>"
+lvim.keys.normal_mode["<leader><Tab>"] = ":tabedit<CR>"
+lvim.keys.normal_mode["<leader>L"]     = ":+tabmove<CR>"
+lvim.keys.normal_mode["<leader>H"]     = ":-tabmove<CR>"
+lvim.keys.normal_mode["<leader>1"]     = ":tabn 1<CR>"
+lvim.keys.normal_mode["<leader>2"]     = ":tabn 2<CR>"
+lvim.keys.normal_mode["<leader>3"]     = ":tabn 3<CR>"
+lvim.keys.normal_mode["<leader>4"]     = ":tabn 4<CR>"
+lvim.keys.normal_mode["<leader>5"]     = ":tabn 5<CR>"
+lvim.keys.normal_mode["<leader>6"]     = ":tabn 6<CR>"
+lvim.keys.normal_mode["<leader>7"]     = ":tabn 7<CR>"
+lvim.keys.normal_mode["<leader>8"]     = ":tabn 8<CR>"
+lvim.keys.normal_mode["<leader>9"]     = ":tabn 9<CR>"
 
 -- Buffers
-lvim.keys.normal_mode["''"]           = ":b#<CR>"
+lvim.keys.normal_mode["''"]            = ":b#<CR>"
 
 -- Blank line
-lvim.keys.normal_mode["<leader>o"]    = "o<ESC>"
-lvim.keys.normal_mode["<leader>O"]    = "O<ESC>"
+lvim.keys.normal_mode["<leader>o"]     = "o<ESC>"
+lvim.keys.normal_mode["<leader>O"]     = "O<ESC>"
 
 -- Terminal
-lvim.keys.term_mode["<c-l>"]          = "<C-u>clear<CR>"
-lvim.keys.term_mode["<Esc>"]          = "<C-\\><C-n><CR>"
+lvim.keys.term_mode["<c-l>"]           = "<C-u>clear<CR>"
+lvim.keys.term_mode["<Esc>"]           = "<C-\\><C-n><CR>"
 
-lvim.keys.normal_mode["<leader>t"]    = ":ToggleTerm<CR>"
-lvim.keys.normal_mode["<leader>T"]    = ":terminal<CR>:startinsert<CR>"
-lvim.keys.normal_mode["<leader>Y"]    = ":terminal yazi .<CR>:startinsert<CR>"
-lvim.keys.normal_mode["<leader>E"]    = ":terminal lf .<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>t"]     = ":ToggleTerm<CR>"
+lvim.keys.normal_mode["<leader>T"]     = ":terminal<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>Y"]     = ":terminal yazi .<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>E"]     = ":terminal lf .<CR>:startinsert<CR>"
 
 
 -- Terminal

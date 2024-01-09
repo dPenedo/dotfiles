@@ -26,6 +26,37 @@ lvim.plugins = {
   },
   { 'dstein64/vim-startuptime' },
   {
+    "theprimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("harpoon"):setup()
+    end,
+    keys = {
+      { "<leader>sa", function() require("harpoon"):list():append() end, desc = "harpoon file", },
+      {
+        "<leader>ss",
+        function()
+          local harpoon = require("harpoon")
+          harpoon.ui:toggle_quick_menu(harpoon:list())
+        end,
+        desc = "harpoon quick menu",
+      },
+      { "<leader>sj", function() require("harpoon"):list():select(1) end, desc = "harpoon to file 1", },
+      { "<leader>sk", function() require("harpoon"):list():select(2) end, desc = "harpoon to file 2", },
+      { "<leader>sl", function() require("harpoon"):list():select(3) end, desc = "harpoon to file 3", },
+      { "<leader>sñ", function() require("harpoon"):list():select(4) end, desc = "harpoon to file 4", },
+      { "<leader>sh", function() require("harpoon"):list():select(5) end, desc = "harpoon to file 5", },
+    },
+  },
+  {
+    'rebelot/terminal.nvim',
+    config = function()
+      require("terminal").setup()
+    end
+  },
+
+  {
     "folke/flash.nvim",
     event = "VeryLazy",
     ---@type Flash.Config
@@ -51,22 +82,28 @@ lvim.plugins = {
       },
     },
   },
+  -- -- Lua
+  -- {
+  --   "olimorris/persisted.nvim",
+  --   config = true,
+  --   priority = 1000,
+  -- },
   -- Lua
   {
-    "olimorris/persisted.nvim",
-    config = true,
-    priority = 1000,
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    opts = {
+      -- add any custom options here
+    }
   },
   {
-    "crispgm/nvim-tabline",
-    lazy = true,
-    dependencies = { "nvim-tree/nvim-web-devicons" }, -- optional
+    'nanozuki/tabby.nvim',
+    event = 'VimEnter',
+    dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
-      require("tabline").setup({
-        show_icon = true,        -- show file extension icon
-        brackets = { " ", " " }, -- file name brackets surrounding
-      })
+      require("tabby").setup()
     end,
+
   },
 
   -- Probando a comentar
@@ -173,13 +210,13 @@ lvim.plugins = {
   --   end,
   -- },
   -- JAVA
-  { "mfussenegger/nvim-jdtls",                   lazy = true, ft = { "java" } },
+  -- { "mfussenegger/nvim-jdtls",                   lazy = true, ft = { "java" } },
 
   {
     "deparr/tairiki.nvim",
     lazy = true,
   },
-  { "tobi-wan-kenobi/zengarden", lazy = true },
+  { "tobi-wan-kenobi/zengarden",                 lazy = true },
   {
     "folke/tokyonight.nvim",
     lazy = true,
@@ -196,9 +233,10 @@ lvim.plugins = {
       keywordStyle = { bold = true },
       colors = {
         theme = {
-          all = {
+          wave = {
             ui = {
               bg_gutter = "#1f1f28",
+              -- bg_gutter = "#ff1111",
             },
           },
         },
@@ -209,7 +247,8 @@ lvim.plugins = {
           -- oldWhite = "#C8C093",
           -- fujiWhite = "#F1eed7",
           -- oldWhite = "#F1eed7",
-          -- sumiInk3 = "#120309",
+          sumiInk3 = "#120309",
+          sumiInk1 = "#16161d",
           -- autumnGreen = "#037971",
           -- springGreen = "#9EBC9F",
         },

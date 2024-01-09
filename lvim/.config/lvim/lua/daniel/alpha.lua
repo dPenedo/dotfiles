@@ -31,7 +31,7 @@ local dashboard = require("alpha.themes.dashboard")
 lvim.builtin.alpha.dashboard.section.buttons.val = {
   dashboard.button("e", "󰩡  LF", ":Lf <CR>"),
   dashboard.button("o", "  Oil", ":Oil <CR>"),
-  dashboard.button("s", "S  session", ":SessionLoad <CR>"),
+  dashboard.button("s", " " .. " Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
   dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
   dashboard.button("c", "  Configuration", ":e ~/.config/lvim/config.lua<CR>"),
   dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
