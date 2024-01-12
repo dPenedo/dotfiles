@@ -13,7 +13,7 @@ lvim.builtin.nvimtree.setup.view.side = "right"
 
 lvim.builtin.project.manual_mode = true
 
-lvim.colorscheme = "kanagawa"
+lvim.colorscheme = "melange"
 
 lvim.format_on_save = true
 lvim.builtin.cmp.preselect = true

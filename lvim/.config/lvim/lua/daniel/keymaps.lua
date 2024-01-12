@@ -34,13 +34,17 @@ lvim.keys.insert_mode["jk"] = "<ESC>la"
 
 
 -- Colores
-lvim.builtin.which_key.mappings        = {
+lvim.builtin.which_key.mappings     = {
   ["c"] = { "" },
 }
-lvim.keys.normal_mode["<leader>cc"]    = ":lua require(\"nvim-highlight-colors\").toggle()<CR>"
+lvim.keys.normal_mode["<leader>cc"] = ":lua require(\"nvim-highlight-colors\").toggle()<CR>"
 
 -- ZenMode
-lvim.keys.normal_mode["<A-z>"]         = ":ZenMode<CR>"
+lvim.keys.normal_mode["<A-z>"]      = ":ZenMode<CR>"
+
+-- Set wrap
+lvim.keys.normal_mode["<A-w>"]      = ":set wrap!<CR>"
+
 
 -- Exploradores
 lvim.keys.normal_mode["-"]             = ":Oil<CR>"
@@ -80,13 +84,21 @@ lvim.keys.normal_mode["<leader>O"]     = "O<ESC>"
 lvim.keys.term_mode["<c-l>"]           = "<C-u>clear<CR>"
 lvim.keys.term_mode["<Esc>"]           = "<C-\\><C-n><CR>"
 
-lvim.keys.normal_mode["<leader>t"]     = ":ToggleTerm<CR>"
-lvim.keys.normal_mode["<leader>T"]     = ":terminal<CR>:startinsert<CR>"
-lvim.keys.normal_mode["<leader>Y"]     = ":terminal yazi .<CR>:startinsert<CR>"
-lvim.keys.normal_mode["<leader>E"]     = ":terminal lf .<CR>:startinsert<CR>"
+vim.api.nvim_exec([[
+  augroup TerminalMappings
+    autocmd!
+    autocmd TermOpen * tnoremap <buffer> <Esc>[3~ <C-\><C-n>
+  augroup END
+]], false)
 
 
--- Terminal
+
+
+lvim.keys.normal_mode["<leader>t"] = ":terminal<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>T"] = ":terminal<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>Y"] = ":terminal yazi .<CR>:startinsert<CR>"
+lvim.keys.normal_mode["<leader>E"] = ":terminal lf .<CR>:startinsert<CR>"
+
 lvim.keys.normal_mode["<c-t>"] = ":ToggleTermToggleAll<CR>"
 lvim.keys.normal_mode["<c-o>"] = ":vs | terminal <cr> :startinsert<CR>"
 

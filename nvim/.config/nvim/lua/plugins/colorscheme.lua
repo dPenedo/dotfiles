@@ -34,6 +34,7 @@ return {
       },
     },
   },
+  { "Biscuit-Colorscheme/nvim" },
   {
     "folke/tokyonight.nvim",
     lazy = true,
@@ -45,7 +46,6 @@ return {
   },
   { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = true },
   -- Zenbones
-  { "dotsilas/darcubox-nvim" },
   {
     "tiagovla/tokyodark.nvim",
     opts = {
@@ -142,17 +142,35 @@ return {
     },
   },
   {
-    "rmehri01/onenord.nvim",
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
     opts = {
-      custom_colors = { bg = "#1d1f21", active = "#242933" },
-      disable = {
-        float_background = true, -- Disable setting the background color for floating windows
-      },
-      inverse = {
-        match_paren = true,
+      bold_keywords = true,
+      swap_backgrounds = true,
+      telescope = "flat",
+      cursorline = {
+        bold_number = true,
+        -- Avialable styles: 'dark', 'light'.
+        theme = "light",
+        -- Blending the cursorline bg with the buffer bg.
+        -- blend = 0.96,
       },
     },
   },
+
+  -- {
+  --   "rmehri01/onenord.nvim",
+  --   opts = {
+  --     custom_colors = { bg = "#1d1f21", active = "#242933" },
+  --     disable = {
+  --       float_background = true, -- Disable setting the background color for floating windows
+  --     },
+  --     inverse = {
+  --       match_paren = true,
+  --     },
+  --   },
+  -- },
   -- Gruvbox
   {
     "ellisonleao/gruvbox.nvim",
@@ -173,6 +191,8 @@ return {
   -- { "stevedylandev/flexoki-nvim" },
   { "tobi-wan-kenobi/zengarden" },
   -- { "miikanissi/modus-themes.nvim" },
+  { "metalelf0/jellybeans-nvim",        dependencies = "rktjmp/lush.nvim" },
+  { "Martin1887/melangeDarkerWarm-nvim" },
 
   -- Bamboo
   {
@@ -195,7 +215,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onenord",
+      colorscheme = "nordic",
       styles = {
         keyword = {
           bold = true,

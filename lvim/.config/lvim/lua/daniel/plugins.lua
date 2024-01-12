@@ -97,13 +97,16 @@ lvim.plugins = {
     }
   },
   {
-    'nanozuki/tabby.nvim',
-    event = 'VimEnter',
-    dependencies = 'nvim-tree/nvim-web-devicons',
-    config = function()
-      require("tabby").setup()
-    end,
+    'crispgm/nvim-tabline',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }, -- optional
+    config = true,
+    opts = {
+      show_icon = true, -- show file extension icon
+      modify_indicator = ' 󰈸 ', -- modify indicator
 
+
+
+    }
   },
 
   -- Probando a comentar
@@ -219,7 +222,7 @@ lvim.plugins = {
   { "tobi-wan-kenobi/zengarden",                 lazy = true },
   {
     "folke/tokyonight.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     opts = {},
   },
@@ -271,6 +274,30 @@ lvim.plugins = {
   --     vim.g.gruvbox_material_statusline_style = "default"
   --   end,
   -- },
+  {
+    "mcchrish/zenbones.nvim",
+    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+    dependencies = "rktjmp/lush.nvim"
+  },
+  {
+    'jesseleite/nvim-noirbuddy',
+    dependencies = {
+      { 'tjdevries/colorbuddy.nvim', branch = 'dev' }
+    },
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('noirbuddy').setup {
+        colors = {
+          primary = '#6EE2FF',
+          secondary = '#267FB5',
+        },
+      }
+    end
+  },
+  { "savq/melange-nvim" },
   {
     "ribru17/bamboo.nvim",
     lazy = true,
