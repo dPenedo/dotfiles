@@ -9,6 +9,10 @@ fi
 # problema versiones python
 # export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
 
+export VISUAL=lvim
+export EDITOR=lvim
+export READER="zathura"
+export BROWSER="brave-browser"
 
 # Historia
 HISTFILE=~/.zsh_history

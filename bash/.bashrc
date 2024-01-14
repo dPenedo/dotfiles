@@ -5,8 +5,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-export VISUAL=nvim
-export EDITOR=nvim
+export VISUAL=lvim
+export EDITOR=lvim
 export READER="zathura"
 export BROWSER="brave-browser"
 
