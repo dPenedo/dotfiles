@@ -103,6 +103,9 @@ lvim.plugins = {
     opts = {
       show_icon = true, -- show file extension icon
       modify_indicator = ' 󰈸 ', -- modify indicator
+      no_name = 'Sin nombre', -- no name buffer name
+      brackets = { ' ', '' }, -- file name brackets surrounding
+
 
 
 
@@ -221,19 +224,13 @@ lvim.plugins = {
   },
   { "tobi-wan-kenobi/zengarden",                 lazy = true },
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  {
     "rebelot/kanagawa.nvim",
     opts = {
       transparent = false,
-      functionStyle = { bold = true },
+      functionStyle = { bold = false },
       dimInactive = true,
       typeStyle = { bold = true },
-      keywordStyle = { bold = true },
+      keywordStyle = { bold = false },
       colors = {
         theme = {
           wave = {
@@ -281,26 +278,10 @@ lvim.plugins = {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim"
   },
-  {
-    'jesseleite/nvim-noirbuddy',
-    dependencies = {
-      { 'tjdevries/colorbuddy.nvim', branch = 'dev' }
-    },
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('noirbuddy').setup {
-        colors = {
-          primary = '#6EE2FF',
-          secondary = '#267FB5',
-        },
-      }
-    end
-  },
   { "savq/melange-nvim" },
   {
     "ribru17/bamboo.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       require("bamboo").setup({

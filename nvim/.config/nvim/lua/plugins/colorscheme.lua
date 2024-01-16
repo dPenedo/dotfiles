@@ -6,9 +6,9 @@ return {
       -- transparent = true, -- do not set background color
       compile = true,
       transparent = false,
-      functionStyle = { bold = true },
+      functionStyle = { bold = false },
       dimInactive = false,
-      typeStyle = { bold = true },
+      typeStyle = { bold = false },
       keywordStyle = { bold = true },
       colors = {
         theme = {
@@ -39,10 +39,6 @@ return {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {},
-  },
-  {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = true,
   },
   { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = true },
   -- Zenbones
@@ -158,6 +154,7 @@ return {
       },
     },
   },
+  { "EdenEast/nightfox.nvim" },
 
   -- {
   --   "rmehri01/onenord.nvim",
@@ -191,8 +188,33 @@ return {
   -- { "stevedylandev/flexoki-nvim" },
   { "tobi-wan-kenobi/zengarden" },
   -- { "miikanissi/modus-themes.nvim" },
-  { "metalelf0/jellybeans-nvim",        dependencies = "rktjmp/lush.nvim" },
+  { "metalelf0/jellybeans-nvim", dependencies = "rktjmp/lush.nvim" },
   { "Martin1887/melangeDarkerWarm-nvim" },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    config = function()
+      require("cyberdream").setup({
+        -- Recommended - see "Configuring" below for more config options
+        transparent = false,
+        italic_comments = true,
+        hide_fillchars = true,
+        borderless_telescope = true,
+      })
+    end,
+  },
+
+  { "projekt0n/caret.nvim" },
+  {
+    "judaew/ronny.nvim",
+    priority = 1000,
+    config = true,
+  },
+  {
+    "yorik1984/newpaper.nvim",
+    priority = 1000,
+    config = true,
+  },
 
   -- Bamboo
   {
@@ -215,7 +237,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nordic",
+      colorscheme = "newpaper",
       styles = {
         keyword = {
           bold = true,

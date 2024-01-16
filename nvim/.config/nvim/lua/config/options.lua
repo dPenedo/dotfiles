@@ -6,6 +6,7 @@ opt.clipboard = ""
 opt.wrap = true -- Disable line wrap
 opt.showtabline = 2
 opt.formatoptions:remove({ "c", "r", "o" })
+vim.g.newpaper_style = "dark"
 
 -- Devuelve la forma del cursor al salir
 vim.api.nvim_create_autocmd("ExitPre", {
