@@ -18,15 +18,15 @@ alias lv='lvim'
 # alias n='nvim -c Lf'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
-alias ls='lsd --group-dirs=first'
+alias ls='eza --group-directories-first --icons'
 # alias bat='batcat'
-alias l='exa -s type --icons -lah'
+alias l='eza -s type --icons -lah'
+alias t2="eza --icons --tree --level=2"
+alias t3="eza --icons --tree --level=3"
+alias t4="eza --icons --tree --level=4"
 alias pdf="nohup zathura"
 alias history='history 0'
 alias hist="history | fzf"
-alias t2="exa --icons --tree --level=2"
-alias t3="exa --icons --tree --level=3"
-alias t4="exa --icons --tree --level=4"
 alias neo="neovide"
 alias mm="cat ~/mm.txt | xclip -selection clipboard"
 alias ..="cd .."
