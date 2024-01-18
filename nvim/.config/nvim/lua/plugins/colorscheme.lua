@@ -23,7 +23,8 @@ return {
           oldWhite = "#DCD7Bb",
           fujiWhite = "#F6F1d3",
           -- oldWhite = "#F1eed7",
-          sumiInk3 = "#1D1F21",
+          -- sumiInk3 = "#1D1F21",
+          sumiInk3 = "#1F1F1F",
           -- autumnGreen = "#037971",
           -- springGreen = "#9EBC9F",
         },
@@ -154,7 +155,28 @@ return {
       },
     },
   },
-  { "EdenEast/nightfox.nvim" },
+  {
+    "EdenEast/nightfox.nvim",
+    opts = {
+      styles = { -- Style to be applied to different syntax groups
+        comments = "italic", -- Value is any valid attr-list value `:help attr-list`
+        conditionals = "bold",
+        constants = "bold",
+        functions = "NONE",
+        keywords = "bold",
+        numbers = "NONE",
+        operators = "bold",
+        strings = "italic",
+        types = "NONE",
+        variables = "NONE",
+      },
+      palettes = {
+        all = {
+          bg1 = "#1F1F1F", -- Default bg
+        },
+      },
+    },
+  },
 
   -- {
   --   "rmehri01/onenord.nvim",
@@ -237,7 +259,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "newpaper",
+      colorscheme = "nightfox",
       styles = {
         keyword = {
           bold = true,
