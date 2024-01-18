@@ -29,6 +29,10 @@ map("v", "\\", "$")
 -- Cambiar palabra
 map("n", "<CR>", "ciw")
 
+-- Borrar palabra
+map("i", "<C-h>", "<C-w>")
+map("i", "<C-l>", "<C-o>dw")
+
 -- Rename
 map("n", "<leader>R", vim.lsp.buf.rename)
 map("n", "<leader>ca", vim.lsp.buf.code_action)
@@ -46,9 +50,6 @@ map("n", "<leader>O", "O<ESC>")
 map("n", "<C-j>", "7j")
 map("n", "<C-k>", "7k")
 
--- Move to the next/previous buffer
-map("n", "<leader>m", "<CMD>bp<CR>")
-map("n", "<leader>,", "<CMD>bn<CR>")
 
 -- Move to last buffer
 map("n", "''", "<CMD>b#<CR>")
@@ -133,7 +134,7 @@ map("n", "<leader>T", ":terminal<CR>:startinsert<CR>")
 map("n", "<leader>Y", ":terminal yazi .<CR>:startinsert<CR>")
 map("n", "<leader>E", ":terminal lf .<CR>:startinsert<CR>")
 
-map("n", "<c-o>", ":ToggleTerm direction=vertical size=80<CR>")
+-- map("n", "<c-o>", ":ToggleTerm direction=vertical size=80<CR>")
 map("n", "<c-p>", ":2ToggleTerm direction=vertical size=80<CR>")
 -- map("n", "<C-2>", ":2ToggleTerm direction=vertical size=80<CR>")
 -- map("n", "<C-3>", ":3ToggleTerm direction=vertical size=80<CR>")

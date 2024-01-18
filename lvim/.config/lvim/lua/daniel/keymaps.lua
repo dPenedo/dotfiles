@@ -45,6 +45,14 @@ lvim.keys.normal_mode["<A-z>"]      = ":ZenMode<CR>"
 -- Set wrap
 lvim.keys.normal_mode["<A-w>"]      = ":set wrap!<CR>"
 
+-- buffer next- prev
+lvim.keys.normal_mode["<S-h>"]      = ":bprevious<CR>"
+lvim.keys.normal_mode["<S-l>"]      = ":bnext<CR>"
+
+
+
+lvim.keys.insert_mode["<C-h>"]         = "<C-w>"
+lvim.keys.insert_mode["<C-l>"]         = "<C-o>dw"
 
 -- Exploradores
 lvim.keys.normal_mode["-"]             = ":Oil<CR>"
