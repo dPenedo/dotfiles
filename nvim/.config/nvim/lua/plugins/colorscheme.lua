@@ -51,8 +51,7 @@ return {
   },
   {
     "maxmx03/solarized.nvim",
-    lazy = false,
-    priority = 1000,
+    lazy = true,
   },
   -- {
   --   "neanias/everforest-nvim",
@@ -211,27 +210,8 @@ return {
   { "tobi-wan-kenobi/zengarden" },
   -- { "miikanissi/modus-themes.nvim" },
   { "metalelf0/jellybeans-nvim", dependencies = "rktjmp/lush.nvim" },
-  { "Martin1887/melangeDarkerWarm-nvim" },
-  {
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
-    config = function()
-      require("cyberdream").setup({
-        -- Recommended - see "Configuring" below for more config options
-        transparent = false,
-        italic_comments = true,
-        hide_fillchars = true,
-        borderless_telescope = true,
-      })
-    end,
-  },
+  -- { "Martin1887/melangeDarkerWarm-nvim" },
 
-  { "projekt0n/caret.nvim" },
-  {
-    "judaew/ronny.nvim",
-    priority = 1000,
-    config = true,
-  },
   {
     "yorik1984/newpaper.nvim",
     priority = 1000,
