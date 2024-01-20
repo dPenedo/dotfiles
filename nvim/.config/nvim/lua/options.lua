@@ -21,6 +21,8 @@ vim.o.clipboard = ''
 -- Enable break indent
 vim.o.breakindent = true
 
+vim.o.conceallevel = 1
+
 -- Save undo history
 vim.o.undofile = true
 
