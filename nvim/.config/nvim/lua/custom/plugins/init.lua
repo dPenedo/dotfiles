@@ -37,7 +37,6 @@ return {
       escape_quit = true,
     },
   },
-  { 'dstein64/vim-startuptime' },
   -- {
   --   'lukas-reineke/headlines.nvim',
   --   lazy = true,
