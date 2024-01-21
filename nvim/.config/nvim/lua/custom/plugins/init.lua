@@ -19,7 +19,32 @@ return {
     }
   },
   { "cohama/lexima.vim" },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    }
+  },
 
+  -- {
+  --   'lmburns/lf.nvim',
+  --   dependencies = {
+  --     'akinsho/toggleterm.nvim',
+  --   },
+  --   opts = {
+  --     default_actions = {
+  --       -- default action keybindings
+  --       ['<C-t>'] = 'tabedit',
+  --       ['<C-s>'] = 'split',
+  --       ['<C-v>'] = 'vsplit',
+  --       ['<C-o>'] = 'tab drop',
+  --     },
+  --   },
+  -- },
   {
     'akinsho/toggleterm.nvim',
     version = "*",
@@ -29,24 +54,6 @@ return {
       float_opts = {
         border = "curved",
       }
-    },
-  },
-
-
-  {
-    'lmburns/lf.nvim',
-    dependencies = {
-      'akinsho/toggleterm.nvim',
-    },
-    opts = {
-      default_actions = {
-        -- default action keybindings
-        ['<C-t>'] = 'tabedit',
-        ['<C-s>'] = 'split',
-        ['<C-v>'] = 'vsplit',
-        ['<C-o>'] = 'tab drop',
-      },
-      escape_quit = true,
     },
   },
   -- {
@@ -95,14 +102,14 @@ return {
     config = function()
       require("nvim-tree").setup({
         view = {
-          side = "right",
+          side = "left",
         },
       })
     end,
   },
   {
     'epwalsh/obsidian.nvim',
-    version = '*',   -- recommended, use latest release instead of latest commit
+    version = '*', -- recommended, use latest release instead of latest commit
     lazy = true,
     ft = 'markdown',
     -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:

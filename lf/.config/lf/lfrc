@@ -27,7 +27,7 @@ set previewer '~/.config/lf/2preview'
 # set previewer '~/.config/lf/preview3'
 # set previewer ~/.config/lf/lf_kitty_preview
 # set cleaner ~/.config/lf/lf_kitty_clean
-set autoquit on
+set autoquit true
 
 # cmds/functions
 cmd open ${{
