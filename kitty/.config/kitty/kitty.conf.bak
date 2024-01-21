@@ -124,7 +124,7 @@ cursor_shape beam
 
 #: Scrollback {{{
 
-scrollback_pager nvim +"source /home/daniel/.config/kitty/vi-mode.lua"
+scrollback_pager lvim +"source /home/daniel/.config/kitty/vi-mode.lua"
 map kitty_mod+space  show_scrollback
 # scrollback_pager nvim -u ~/.config/kitty/scrollback-pager/nvim/init.vim -c "silent write! /tmp/kitty_scrollback_buffer | te cat /tmp/kitty_scrollback_buffer - "
 #
@@ -1091,6 +1091,6 @@ map alt+space launch --allow-remote-control ~/.config/kitty/fzf-tabs-kitty.sh
 
 
 # BEGIN_KITTY_THEME
-# Nord
+# Ayu Mirage
 include current-theme.conf
 # END_KITTY_THEME
