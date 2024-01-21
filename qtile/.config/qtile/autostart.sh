@@ -3,6 +3,7 @@
 ./scripts/bateria.sh &
 ~/scripts/xmodmap.sh &
 ~/scripts/inicio.sh &
+copyq &
 nm-applet &
 sleep 8
 picom &

@@ -20,7 +20,17 @@ return {
   },
   { "cohama/lexima.vim" },
 
-  { 'akinsho/toggleterm.nvim', version = "*", opts = { --[[ things you want to change go here]] } },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    opts = {
+      direction = "float",
+      size = 90,
+      float_opts = {
+        border = "curved",
+      }
+    },
+  },
 
 
   {
@@ -92,7 +102,7 @@ return {
   },
   {
     'epwalsh/obsidian.nvim',
-    version = '*', -- recommended, use latest release instead of latest commit
+    version = '*',   -- recommended, use latest release instead of latest commit
     lazy = true,
     ft = 'markdown',
     -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
