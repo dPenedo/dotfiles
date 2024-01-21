@@ -20,6 +20,8 @@ return {
   },
   { "cohama/lexima.vim" },
 
+  { 'akinsho/toggleterm.nvim', version = "*", opts = { --[[ things you want to change go here]] } },
+
 
   {
     'lmburns/lf.nvim',
