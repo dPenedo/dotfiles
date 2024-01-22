@@ -1,3 +1,4 @@
+-- TODO: modularizar los que tienen config
 return {
   {
     'willothy/flatten.nvim',
@@ -55,6 +56,15 @@ return {
         border = "curved",
       }
     },
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
   },
   -- {
   --   'lukas-reineke/headlines.nvim',

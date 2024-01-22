@@ -1,6 +1,4 @@
--- [[ Basic Keymaps ]]
-
--- Keymaps for better default experience
+-- TODO: Organizarlos con variables tipo lazyvim y agregar descripciones
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 

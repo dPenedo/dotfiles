@@ -45,6 +45,7 @@ require('telescope').setup {
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
+pcall(require('telescope').load_extension, 'fzf')
 
 -- Telescope live_grep in git root
 -- Function to find the git root directory based on the current buffer's path
@@ -108,7 +109,6 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-
 vim.keymap.set('n', ',,', ':Telescope find_files<CR>')
 vim.keymap.set('n', ',b', ':Telescope buffers<CR>')
 vim.keymap.set('n', ',B', ':Telescope builtin<CR>')
@@ -116,7 +116,8 @@ vim.keymap.set('n', ',g', ':Telescope live_grep<CR>')
 vim.keymap.set('n', ',r', ':Telescope registers<CR>')
 vim.keymap.set('n', ',l', ':Telescope current_buffer_fuzzy_find<CR>')
 vim.keymap.set('n', ',u', ':Telescope undo<CR>')
-vim.keymap.set('n', ',t', ':Telescope treesitter<CR>')
+vim.keymap.set('n', '<leader>u', ':Telescope undo<CR>')
+vim.keymap.set('n', ',T', ':Telescope treesitter<CR>')
 vim.keymap.set('n', ',t', ':TodoTelescope<CR>')
-vim.keymap.set('n', ',H', ':Telescope help_tags<CR>')
+vim.keymap.set('n', ',h', ':Telescope help_tags<CR>')
 vim.keymap.set('n', '<Tab>', ':Telescope buffers<CR>')
