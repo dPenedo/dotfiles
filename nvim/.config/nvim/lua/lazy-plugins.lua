@@ -137,34 +137,6 @@ require('lazy').setup({
       end,
     },
   },
-
-
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled = true,
-        component_separators = { left = '|', right = '|' },
-        section_separators = { left = "", right = '' },
-      },
-      sections = {
-        lualine_a = { 'mode' },
-        lualine_b = { 'branch', 'diff', 'diagnostics' },
-        lualine_c = {
-          {
-            'filename',
-            path = 1,
-          }
-        },
-        lualine_x = { { 'fileformat', 'filetype' } },
-        lualine_y = { 'progress' },
-        lualine_z = { 'location' }
-      },
-    },
-  },
-
   {
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',

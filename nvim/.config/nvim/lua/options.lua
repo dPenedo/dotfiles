@@ -10,6 +10,7 @@ vim.wo.number = true
 vim.opt.relativenumber = true
 
 
+vim.opt.cursorline = true
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
