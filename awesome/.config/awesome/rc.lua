@@ -84,20 +84,8 @@ awful.spawn.with_shell(
 
 -- {{{ Variable definitions
 
-local themes        = {
-    "blackburn",       -- 1
-    "copland",         -- 2
-    "dremora",         -- 3
-    "holo",            -- 4
-    "multicolor",      -- 5
-    "powerarrow",      -- 6
-    "powerarrow-dark", -- 7
-    "rainbow",         -- 8
-    "steamburn",       -- 9
-    "vertex"           -- 10
-}
 
-local chosen_theme  = themes[7]
+local chosen_theme  = "kanagawa"
 local modkey        = "Mod4"
 -- local altkey       = "Mod1"
 -- local terminal     = "alacritty"
@@ -994,10 +982,11 @@ tag.connect_signal("property::selected", backham)
 awful.spawn.with_shell("picom &")
 
 awful.spawn.with_shell("$HOME/scripts/xmodmap.sh &")
--- awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
+awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
 -- Network applet
 awful.spawn.with_shell("sleep 3; nm-applet &")
+awful.spawn.with_shell("copyq &")
 
 -- Power management
 -- awful.spawn.with_shell("xfce4-power-manager &")
