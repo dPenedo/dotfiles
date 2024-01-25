@@ -45,10 +45,10 @@ map('n', '<a-w>', ':set wrap!<CR>', { desc = 'Alternar ajuste de línea' })
 map('n', '<Esc>', ':nohlsearch<CR>', { desc = 'Limpiar resaltado de búsqueda' })
 
 -- Dividir ventanas
-map('n', '<leader>\\', '<CMD>vsplit<CR>', { desc = 'Dividir verticalmente la ventana' })
-map('n', '<leader>|', '<CMD>split<CR>', { desc = 'Dividir horizontalmente la ventana' })
-map('n', '<leader><CR>', '<CMD>vsplit<CR>', { desc = 'Dividir verticalmente la ventana' })
-map('n', '<leader>-', '<CMD>split<CR>', { desc = 'Dividir horizontalmente la ventana' })
+map('n', '<leader>\\', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
+map('n', '<leader>|', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
+map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
+map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
 map('n', '<leader>cc', '<CMD>HighlightColorsToggle<CR>', { desc = 'Alternar colores de resaltado' })
@@ -59,6 +59,7 @@ map('n', '<leader>E', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de N
 map('n', '<leader>t', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>E', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
+map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 -- Mapeos para el terminal
 map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
@@ -87,6 +88,7 @@ map('n', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
 
 -- Mapeos para moverse entre ventanas
+map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
 map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
 map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
 map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
