@@ -19,7 +19,11 @@ return {
       -- add any custom options here
     }
   },
-  { "cohama/lexima.vim" },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+  },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -29,6 +33,19 @@ return {
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
+  },
+  {
+    'chentoast/marks.nvim',
+    config = function()
+      require("marks").setup()
+    end,
+  },
+  {
+    'BartSte/nvim-project-marks',
+    lazy = false,
+    config = function()
+      require('projectmarks').setup({})
+    end
   },
 
   -- {

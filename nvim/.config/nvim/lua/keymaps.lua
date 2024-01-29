@@ -25,6 +25,16 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+
+map('n', 'ñ', '`', { desc = 'backtick asignado a ñ' })
+
+map('n', ',,', ',', { desc = 'coma para f' })
+
+
+map('n', '<leader>dm', ':delmarks ', { desc = 'Borrar mark' })
+
+
+
 -- Guardar rápidamente el búfer actual o todos los búferes
 map('n', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('i', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })

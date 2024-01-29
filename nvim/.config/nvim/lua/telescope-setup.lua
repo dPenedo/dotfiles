@@ -109,7 +109,6 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-vim.keymap.set('n', ',,', ':Telescope find_files<CR>', { desc = 'Abrir Telescope para buscar archivos' })
 vim.keymap.set('n', ',b', ':Telescope buffers<CR>', { desc = 'Abrir Telescope para buscar buffers' })
 vim.keymap.set('n', ',B', ':Telescope builtin<CR>', { desc = 'Abrir Telescope para buscar comandos internos' })
 vim.keymap.set('n', ',g', ':Telescope live_grep<CR>', { desc = 'Abrir Telescope para búsqueda en vivo con grep' })
@@ -122,3 +121,4 @@ vim.keymap.set('n', '<leader>u', ':Telescope undo<CR>',
 vim.keymap.set('n', ',T', ':Telescope treesitter<CR>', { desc = 'Abrir Telescope para buscar en Treesitter' })
 vim.keymap.set('n', ',t', ':TodoTelescope<CR>', { desc = 'Abrir Telescope para buscar TODOs' })
 vim.keymap.set('n', ',h', ':Telescope help_tags<CR>', { desc = 'Abrir Telescope para buscar etiquetas de ayuda' })
+vim.keymap.set('n', ',m', ':Telescope marks<CR>', { desc = 'Abrir Telescope para buscar marks' })
