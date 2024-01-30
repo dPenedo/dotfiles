@@ -54,13 +54,13 @@ return {
 
 
   --funciona?
-  {
-    'BartSte/nvim-project-marks',
-    lazy = false,
-    config = function()
-      require('projectmarks').setup({})
-    end
-  },
+  -- {
+  --   'BartSte/nvim-project-marks',
+  --   lazy = false,
+  --   config = function()
+  --     require('projectmarks').setup({})
+  --   end
+  -- },
 
   -- {
   --   'lmburns/lf.nvim',
