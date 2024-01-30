@@ -96,7 +96,12 @@ local editor        = os.getenv("EDITOR") or "nvim"
 local browser       = "brave-browser"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
+-- awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
+awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
+
+
+
+
 --  ls
 -- awful.util.tagnames = { "", "", "", "", "", "", "", "", "", "" }
 
