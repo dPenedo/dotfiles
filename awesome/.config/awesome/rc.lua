@@ -878,6 +878,14 @@ awful.rules.rules = {
         properties = { screen = 1, tag = "8" }
     },
     {
+        rule_any = { name = { "ChatGPT" } },
+        properties = { tag = "17" }
+    },
+    {
+        rule_any = { name = { "WhatsApp Web" } },
+        properties = { tag = "18" }
+    },
+    {
         rule_any = { class = { "obsidian", "Obsidian" } },
         properties = { screen = 1, tag = "0" }
     },
@@ -984,7 +992,6 @@ tag.connect_signal("property::selected", backham)
 -- Autostart
 -- awful.spawn.with_shell("nitrogen --restore &")
 awful.spawn.with_shell("pkill picom &")
-awful.spawn.with_shell("picom -b --config  $HOME/.config/picom/picom.conf")
 -- awful.spawn.with_shell("picom &")
 
 awful.spawn.with_shell("$HOME/scripts/xmodmap.sh &")
@@ -992,12 +999,13 @@ awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
 -- Network applet
 awful.spawn.with_shell("sleep 3; nm-applet &")
+awful.spawn.with_shell("sleep 1; pkill volumeicon &")
 awful.spawn.with_shell("pkill copyq &")
-awful.spawn.with_shell("sleep2; copyq &")
 
 -- Power management
 -- awful.spawn.with_shell("xfce4-power-manager &")
 
 -- Volume icon
-awful.spawn.with_shell("sleep 1; pkill volumeicon &")
+awful.spawn.with_shell("sleep 3; picom -b --config  $HOME/.config/picom/picom.conf")
+awful.spawn.with_shell("sleep2; copyq &")
 awful.spawn.with_shell("sleep 3; volumeicon &")
