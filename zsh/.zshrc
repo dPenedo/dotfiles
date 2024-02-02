@@ -25,6 +25,7 @@ setopt appendhistory
 setopt inc_append_history
 setopt share_history
 
+bindkey -e
 
 
 # Debian and derivatives: https://launchpad.net/ubuntu/+source/command-not-found
@@ -72,7 +73,7 @@ fpath=(~/scripts/zsh/zsh-completions/src $fpath)
 
 
 # Hace que funcionen combinacionjes como el control a control e
-bindkey -e
+# bindkey -e
 
 
 
@@ -175,4 +176,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# compinit
+autoload -Uz compinit && compinit
 
