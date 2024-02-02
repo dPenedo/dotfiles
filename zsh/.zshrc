@@ -6,7 +6,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 
-# problema versiones python
+# problema versiones. Solucion temporal para fedora
+fpath=($fpath /usr/share/zsh/5.9/functions)
+
+
 # export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
 
 export VISUAL=nvim

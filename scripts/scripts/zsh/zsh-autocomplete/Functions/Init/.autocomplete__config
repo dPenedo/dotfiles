@@ -7,10 +7,42 @@ typeset -g ZLE_SPACE_SUFFIX_CHARS='|&<>-+'
 builtin zstyle ':completion:*' use-cache yes
 builtin zstyle -e ':completion:*' cache-path autocomplete:config:cache-path
 autocomplete:config:cache-path() {
-  reply=( "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/compcache" )
+  typeset -ga reply=( "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/compcache" )
 }
 
-builtin zstyle ':completion:*' completer _expand _complete _prefix _ignored _correct _approximate
+builtin zstyle ':completion:*' completer \
+    _expand _complete _correct _approximate _complete:-fuzzy _prefix _ignored
+
+builtin zstyle -e ':completion:*' max-errors autocomplete:config:max-errors
+autocomplete:config:max-errors() {
+  typeset -ga reply=( $(( min( 2, ( $#PREFIX + $#SUFFIX ) / 3 ) )) )
+}
+
+# Order of matchers matters: m should come before r, which should come before l.
+# Otherwise, the results are not as expected.
+local lower_to_upper='m:{[:lower:]-}={[:upper:]_}'
+local any_before_dot='r:|[.]=**'
+local any_before_any='r:|?=**'
+local nonseparators_after_any_before_separator='r:?||[-_ \]=*'
+local any_before_word='l:|=*'
+local separator_after_any='l:?|=[-_ \]'
+builtin zstyle ':completion:*' matcher-list \
+    "$lower_to_upper $any_before_dot"
+builtin zstyle ':completion:*-fuzzy:*' matcher-list \
+    "$lower_to_upper $any_before_dot $any_before_word" \
+    "+$nonseparators_after_any_before_separator $separator_after_any" \
+    "$lower_to_upper $any_before_any"
+
+local minus_at_beginning_to_plus='b:-=+'
+builtin zstyle ':completion:*:options' matcher $minus_at_beginning_to_plus
+
+builtin zstyle ':completion:*' prefix-needed yes
+builtin zstyle ':completion:*:functions'  ignored-patterns '*.*' '*:*' '+*'
+builtin zstyle ':completion:*:users'      ignored-patterns '_*'
+builtin zstyle ':completion:*:widgets'    ignored-patterns '*.*' '*:*'
+builtin zstyle ':completion:*' single-ignored ''
+
+builtin zstyle ':completion:*:expand-alias:*' complete yes
 
 builtin zstyle    ':completion:*:expand:*' tag-order '! expansions original' -
 builtin zstyle    ':completion:*:expand:*' accept-exact continue
@@ -21,19 +53,18 @@ builtin zstyle -e ':completion:*:expand:*' substitute autocomplete:config:substi
 autocomplete:config:substitute:expand() {
   local -P __word__=$PREFIX$SUFFIX
   if [[ ${(Q)__word__} == *(\`*\`|\$\(*\))* ]]; then
-    reply=( false )
+    typeset -ga reply=( false )
   else
-    reply=( true )
+    typeset -ga reply=( true )
   fi
 }
-
 
 builtin zstyle -e ':completion:*:-command-:*' tag-order autocomplete:config:tag-order:command
 autocomplete:config:tag-order:command() {
   if [[ $PREFIX == (|.|*/*) ]]; then
-    reply=( 'suffix-aliases (|*-)directories executables (|*-)files' - )
+    typeset -ga reply=( 'suffix-aliases (|*-)directories executables (|*-)files' - )
   else
-    reply=( aliases suffix-aliases functions 'reserved-words builtins' )
+    typeset -ga reply=( aliases suffix-aliases functions 'reserved-words builtins' )
     if [[ -n $path[(r).] ]]; then
       reply+=( '(|*-)directories executables (|*-)files' commands )
     else
@@ -56,24 +87,6 @@ builtin zstyle ':completion:*:git-*:(|*-)argument-*:*' tag-order \
     '! (|cached-)files *-remote remote-* (|*-)tags' \
     '! *-remote remote-* tags'
 
-# Order of matchers matters: m should come before r, which should come before l.
-# Otherwise, the results are not as expected.
-builtin zstyle ':completion:*' matcher-list \
-    'm:{[:lower:]-}={[:upper:]_} r:|[.]=**' \
-    '+l:|=*' \
-    'm:{[:lower:]-}={[:upper:]_} r:|[.]=** l:?|=[-_\\ ] r:?||[-_]=*' \
-    'm:{[:lower:]-}={[:upper:]_} r:|?=**'
-
-builtin zstyle ':completion:*:options' matcher 'b:-=+'
-
-builtin zstyle ':completion:*' prefix-needed yes
-builtin zstyle ':completion:*:functions'  ignored-patterns '*.*' '*:*' '+*'
-builtin zstyle ':completion:*:users'      ignored-patterns '_*'
-builtin zstyle ':completion:*:widgets'    ignored-patterns '*.*' '*:*'
-builtin zstyle ':completion:*' single-ignored ''
-
-builtin zstyle ':completion:*:expand-alias:*' complete yes
-
 # Complete only the tail of a path.
 builtin zstyle ':completion:*' ignore-parents 'parent pwd directory'
 builtin zstyle ':completion:*:paths' expand suffix
@@ -91,7 +104,7 @@ builtin zstyle    ':completion:*'               file-patterns '*(-/):directories
 builtin zstyle -e ':completion:*:-command-:*'   file-patterns autocomplete:config:file-patterns:command
 autocomplete:config:file-patterns:command() {
   [[ $PREFIX$SUFFIX != */* ]] &&
-      reply=( '*(-/):directories:directory ./*(-*^/):executables:"executable file"' )
+      typeset -ga reply=( '*(-/):directories:directory ./*(-*^/):executables:"executable file"' )
 }
 builtin zstyle    ':completion:*:(.|source):*'  file-patterns \
     '%p(#q-/):directories:directory %p~*.zwc(-.^*):globbed-files' '%p~*.zwc(-^/):globbed-files'
@@ -103,7 +116,7 @@ builtin zstyle ':completion:*:descriptions'   format $'%{\e[0;1;2m%}%d%{\e[0m%}'
 builtin zstyle -e ':completion:*:warnings'    format autocomplete:config:format:warnings
 autocomplete:config:format:warnings() {
   [[ $CURRENT == 1 && -z $PREFIX$SUFFIX ]] ||
-      reply=( $'%{\e[0;2m%}'"no matching %d completions"$'%{\e[0m%}' )
+      typeset -ga reply=( $'%{\e[0;2m%}'"no matching %d completions"$'%{\e[0m%}' )
 }
 builtin zstyle ':completion:*:messages'       format '%F{9}%d%f'
 builtin zstyle ':completion:*:history-lines'  format ''
@@ -119,7 +132,7 @@ builtin zstyle ':completion:*' separate-sections yes
 is-at-least 5.9 ||
     builtin zstyle ':completion:*' command '- COLUMNS=999'
 
-.autocomplete:config:precmd() {
+${0}:precmd() {
   typeset -g _comp_setup="$_comp_setup"';
       [[ $_comp_caller_options[globdots] == yes ]] && setopt globdots'
 
