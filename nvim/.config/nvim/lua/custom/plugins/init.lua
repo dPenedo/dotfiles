@@ -19,6 +19,8 @@ return {
       -- add any custom options here
     }
   },
+  { "xiyaowong/transparent.nvim" },
+
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
@@ -133,7 +135,7 @@ return {
         ["<C-v>"] = "actions.select_vsplit",
         ["<C-s>"] = "actions.select_split",
         ["<C-r>"] = "actions.refresh",
-        ["<C-.>"] = "actions.toggle_hidden",
+        ["<C-h>"] = "actions.toggle_hidden",
       },
     },
     -- Optional dependencies

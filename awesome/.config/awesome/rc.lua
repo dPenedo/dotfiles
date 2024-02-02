@@ -33,7 +33,7 @@ local volume        = lain.widget.pulse()
 if awesome.startup_errors then
     naughty.notify {
         preset = naughty.config.presets.critical,
-        title = "Oops, there were errors during startup!",
+        title = "Vaya, han habido errores al iniciar awesomewm!",
         text = awesome.startup_errors
     }
 end
@@ -49,7 +49,7 @@ do
 
         naughty.notify {
             preset = naughty.config.presets.critical,
-            title = "Oops, an error happened!",
+            title = "Vaya, ha habido un error!",
             text = tostring(err)
         }
 
@@ -287,7 +287,7 @@ globalkeys = mytable.join(
         { description = "run prompt", group = "launcher" }),
 
     -- My applications
-    awful.key({ modkey }, "e", function() awful.util.spawn("thunar") end,
+    awful.key({ modkey }, "e", function() awful.util.spawn("nemo") end,
         { description = "thunar", group = "Mis programas" }),
     awful.key({ modkey }, "w", function() awful.util.spawn("firefox") end,
         { description = "firefox", group = "Mis programas" }),
