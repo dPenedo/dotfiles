@@ -18,9 +18,10 @@ alias lv='lvim'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
 alias py='python3'
-alias ls='eza --group-directories-first --icons'
 alias LS='/bin/ls --color=auto'
 # alias bat='batcat'
+# TODO:  hacer un condicional para los comandos eza
+alias ls='eza --group-directories-first --icons'
 alias l='eza -s type --icons -lah'
 alias t2="eza --icons --tree --level=2"
 alias t3="eza --icons --tree --level=3"

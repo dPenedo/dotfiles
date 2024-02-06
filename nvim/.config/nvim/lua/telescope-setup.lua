@@ -113,7 +113,7 @@ vim.keymap.set('n', ',b', ':Telescope buffers<CR>', { desc = 'Abrir Telescope pa
 vim.keymap.set('n', ',B', ':Telescope builtin<CR>', { desc = 'Abrir Telescope para buscar comandos internos' })
 vim.keymap.set('n', ',g', ':Telescope live_grep<CR>', { desc = 'Abrir Telescope para búsqueda en vivo con grep' })
 vim.keymap.set('n', ',r', ':Telescope registers<CR>', { desc = 'Abrir Telescope para buscar registros' })
-vim.keymap.set('n', ',l', ':Telescope current_buffer_fuzzy_find<CR>',
+vim.keymap.set('n', '<leader>l', ':Telescope current_buffer_fuzzy_find<CR>',
   { desc = 'Abrir Telescope para buscar en el buffer actual' })
 vim.keymap.set('n', ',u', ':Telescope undo<CR>', { desc = 'Abrir Telescope para buscar en el historial de deshacer' })
 vim.keymap.set('n', '<leader>u', ':Telescope undo<CR>',

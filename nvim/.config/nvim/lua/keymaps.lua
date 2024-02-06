@@ -61,7 +61,8 @@ map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalment
 map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
-map('n', '<leader>cc', '<CMD>HighlightColorsToggle<CR>', { desc = 'Alternar colores de resaltado' })
+map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
+  { desc = 'Alternar colores de resaltado' })
 
 -- Administradores de archivos y terminales
 map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })

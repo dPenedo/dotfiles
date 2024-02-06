@@ -21,3 +21,8 @@ Los que pueden temer más interés, porque están actualizados y los he ido elab
 ### Colorschemes
 
 Voy alternando entre [https://github.com/sainnhe/gruvbox-material](gruvbox-material) y [https://github.com/rebelot/kanagawa.nvim](kanagawa), así que prácticamente todo tiene versiones para ambos (una comentada y otra no).
+
+### TODO
+
+Hacer un archivo con información de como instalar cada programa.
+
