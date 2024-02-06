@@ -20,21 +20,22 @@ alias python='python3'
 alias py='python3'
 alias LS='/bin/ls --color=auto'
 # alias bat='batcat'
-if command -v eza &> /dev/null; then
-	alias ls='eza --group-directories-first --icons'
-	alias l='eza -s type --icons -lah'
-	alias t1="eza --icons --tree --level=1"
-	alias t2="eza --icons --tree --level=2"
-	alias t3="eza --icons --tree --level=3"
-	alias t4="eza --icons --tree --level=4"
+if command -v eza > /dev/null 2>&1
+    alias ls 'eza --group-directories-first --icons'
+    alias l 'eza -s type --icons -lah'
+    alias t1 'eza --icons --tree --level=1'
+    alias t2 'eza --icons --tree --level=2'
+    alias t3 'eza --icons --tree --level=3'
+    alias t4 'eza --icons --tree --level=4'
 else
-	alias ls='ls --color=auto'
-	alias l="ls -la"
-	alias t1 "tree -l 1 --dirsfirst"
-	alias t2="tree -l 2 --dirsfirst"
-	alias t3="tree -l 3 --dirsfirst"
-	alias t4="tree -l 4 --dirsfirst"
-fi
+    alias ls 'ls --color=auto'
+    alias l "ls -la"
+    alias t1 "tree -l 1 --dirsfirst"
+    alias t2 "tree -l 2 --dirsfirst"
+    alias t3 "tree -l 3 --dirsfirst"
+    alias t4 "tree -l 4 --dirsfirst"
+end
+
 alias pdf="nohup zathura"
 alias history='history 0'
 alias hist="history | fzf"

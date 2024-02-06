@@ -1,6 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    source ~/.aliases.sh
+    source ~/.aliases-fish.sh
     if string match -q -- 'tmux*' $TERM
         set -g fish_vi_force_cursor 1
     end
