@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade
 
 Instalar (en uso):
 ``` bash
-sudo apt install fzf rofi dmenu git python-pip fish awesome picom tmux zathura stow zsh curl rg
+sudo apt install fzf rofi dmenu git python-pip fish awesome picom tmux zathura stow zsh curl rg copyq volumeicon nm-applet
 ```
 
 Instalar (opcionales):
@@ -125,3 +125,20 @@ A Zsh
 chsh -s $(which zsh)
 ```
 
+#### Antidote
+
+``` bash
+git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-$HOME}/.zsh/antidote
+
+```
+#### GO
+Instalar Go
+[https://go.dev/doc/install]
+[https://phoenixnap.com/kb/debian-install-go]
+
+LazyGit
+``` bash
+git clone https://github.com/jesseduffield/lazygit.git
+cd lazygit
+go install
+```
