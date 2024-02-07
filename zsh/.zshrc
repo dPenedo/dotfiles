@@ -1,182 +1,85 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Inicializa el completado
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
-# problema versiones. Solucion temporal para fedora
-fpath=($fpath /usr/share/zsh/5.9/functions)
-
-
-# export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
-
-export VISUAL=nvim
-export EDITOR=nvim
-export READER="zathura"
-export BROWSER="brave-browser"
-
-# Historia
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory
-setopt inc_append_history
-setopt share_history
-
-bindkey -e
-
-
-# Debian and derivatives: https://launchpad.net/ubuntu/+source/command-not-found
-if [[ -x /usr/lib/command-not-found || -x /usr/share/command-not-found/command-not-found ]]; then
-  command_not_found_handler() {
-    if [[ -x /usr/lib/command-not-found ]]; then
-      /usr/lib/command-not-found -- "$1"
-      return $?
-    elif [[ -x /usr/share/command-not-found/command-not-found ]]; then
-      /usr/share/command-not-found/command-not-found -- "$1"
-      return $?
-    else
-      printf "zsh: command not found: %s\n" "$1" >&2
-      return 127
-    fi
-  }
-fi
-
+bindkey -v
 export KEYTIMEOUT=1
 
 
-# Importados
-source ~/scripts/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source ~/scripts/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/scripts/zsh/highlight/zsh-syntax-highlighting.zsh
-# source ~/scripts/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-source ~/.fzf/shell/key-bindings.zsh
-# source ~/scripts/zsh/fzf-zsh-plugin/fzf-zsh-plugin.plugin.zsh
-source ~/scripts/zsh/history-substring/zsh-history-substring-search.zsh
-# source ~/.fzf/shell/completion.zsh
+autoload -U compinit; compinit
 
-# source ~/scripts/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-
-#Cambio color zsh-autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#727169"
-
+_comp_options+=(globdots)
+source ~/.zsh/completion.zsh
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/vi-mode.zsh
 source ~/.filemanagers.sh
 source ~/.aliases.sh
-
-# Completado
-# source ~/.completion.zsh
-fpath=(~/scripts/zsh/zsh-completions/src $fpath)
-
-# export PATH="/home/daniel/anaconda3/bin:$PATH"  # commented out by conda initialize
-
-
-# Hace que funcionen combinacionjes como el control a control e
-# bindkey -e
+source ~/.fzf/shell/key-bindings.zsh
 
 
 
-# Control + flechas
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
 
-# Tecla supr
+
+setopt AUTO_PUSHD           # Push the current directory visited on the stack.
+setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
+setopt PUSHD_SILENT         # Do not print the directory stack after pushd or popd.
+alias d='dirs -v'
+# Cada numero va directo a las ultimas carpetas, se pueden ver haciendo "d"
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+# Moverse por el completion con hjkl
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+
+
+# Cargar plugins
+source ~/.zsh/antidote/antidote.zsh
+antidote load ${ZDOTDIR:-$HOME}/.zsh/zsh_plugins.txt
+
+
+# Tecla delete y backspace
 bindkey "^[[3~" delete-char
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
+bindkey -M viins '^H' backward-kill-word  # Control + Backspace No funciona
+bindkey -M viins '^W' backward-kill-word  # Control + Backspace No funciona
+bindkey -M viins '^[[3;5~' kill-word     # Control + Delete
+bindkey -M viins '\e[1~' beginning-of-line  # Para la tecla Home
+bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
-bindkey '\e[1~' beginning-of-line  # Para la tecla Home
-bindkey '\e[4~' end-of-line        # Para la tecla End
-
-
-# Tab normal
-bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
-
-bindkey '^[[A' history-substring-search-up # or '\eOA'
-bindkey '^[[B' history-substring-search-down # or '\eOB'
-HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
-
-# bindkey '^[[A' fzf-history-widget
-# bindkey '^[[B' fzf-history-widget
-# bindkey "^[[A" history-beginning-search-backward
-# bindkey "^[[B" history-beginning-search-forward
-
-# bindkey '^[[A' up-line-or-history
-# bindkey '^[[B' down-line-or-history
-
-bindkey '^k' up-line-or-history
-bindkey '^j' down-line-or-history
-
-# bindkey '^[[A' up-line-or-history
-# bindkey '^[[B' down-line-or-history
-
-# ctrl abajo
-# bindkey '^[[1;5B' down-line-or-history
-
-
-
-# Abrir programas desde terminal
-bindkey -s '\ee' 'lfcd^M'
-bindkey -s '\er' 'ranger^M'
-bindkey -s '\et' 'thunar .^M'
-bindkey -s '\ev' 'vifm .^M'
-bindkey -s '\ey' 'ya .^M'
-bindkey -s '\en' 'n .^M'
-
-# USE LF TO SWITCH DIRECTORIES 
-LFCD="~/.config/lf/lfcd.sh"
-if [ -f "$LFCD" ]; then
-	source "$LFCD"
-fi
-# bindkey -s '^o' 'lfcd\n' # zsh
-
-
-##############
-#### FZF #####
-##############
-
+# FZF 
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
-bindkey '^ ' fzf-history-widget
-# bindkey '^[[B' fzf-history-widget
+bindkey -M viins 'Ñ' fzf-history-widget
+bindkey -M vicmd 'Ñ' fzf-history-widget
+
+bindkey -s '\ee' 'lfcd^m'
+bindkey -s '\et' 'thunar .^m'
+bindkey -s '\ey' 'ya .^m'
+
+# Configuración de teclas de retroceso y suprimir en modo viins
+bindkey -M viins '^?' backward-delete-char  # Backspace
+bindkey -M viins '^H' backward-delete-char  # Backspace (otra representación)
+bindkey -M viins '^[[3~' delete-char        # Suprimir
+
+# Configuración de teclas de control para avanzar y retroceder palabras
+bindkey -M viins '^[[1;5C' forward-word     # Control + derecha
+bindkey -M viins '^[[1;5D' backward-word    # Control + izquierda
 
 
 
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#efefef,bg=#23a2ea,bold,underline"
-# TODO: asignar Contrl j y control k a coursorup coursor down
+# use lf to switch directories 
+lfcd="~/.config/lf/lfcd.sh"
+if [ -f "$lfcd" ]; then
+	source "$lfcd"
+fi
 
+# Zoxide
 eval "$(zoxide init zsh)"
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source /home/daniel/.config/broot/launcher/bash/br
-export PATH="$HOME/.local/bin/":$PATH
-export PATH=/bin/java/bin:$PATH
-
-
-# eval "$(starship init zsh)"
-
-source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/daniel/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/daniel/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/daniel/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/daniel/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# compinit
-autoload -Uz compinit && compinit
-

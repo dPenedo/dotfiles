@@ -24,5 +24,4 @@ Voy alternando entre [https://github.com/sainnhe/gruvbox-material](gruvbox-mater
 
 ### TODO
 
-Hacer un archivo con información de como instalar cada programa.
-
+- En zsh faltan algunos archivos que podrían estar directamente en la instalación

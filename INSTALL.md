@@ -12,12 +12,12 @@ sudo apt update && sudo apt upgrade
 
 Instalar (en uso):
 ``` bash
-sudo apt install fzf rofi dmenu git python-pip fish awesome picom tmux zathura stow
+sudo apt install fzf rofi dmenu git python-pip fish awesome picom tmux zathura stow zsh curl rg
 ```
 
 Instalar (opcionales):
 ``` bash
-sudo apt install zsh ranger alacritty lf
+sudo apt install ranger alacritty lf
 ```
 
 Instalar (opcionales):
@@ -82,6 +82,13 @@ mkdir ~/.fonts
 ``` 
 bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/nerd-fonts-installer/main/install.sh)" 
 ```
+
+#### ZSH powerlevel
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
+
 
 #### Kitty
 
