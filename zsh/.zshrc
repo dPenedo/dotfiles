@@ -1,12 +1,19 @@
-# Inicializa el completado
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+
+# problema versiones. Solucion temporal para fedora
+fpath=($fpath /usr/share/zsh/5.9/functions)
+
+
+
 
 bindkey -v
 export KEYTIMEOUT=1
 
 
+# Inicializa el completado
 autoload -U compinit; compinit
 
 _comp_options+=(globdots)
@@ -40,6 +47,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 # Cargar plugins
 source ~/.zsh/antidote/antidote.zsh
 antidote load ${ZDOTDIR:-$HOME}/.zsh/zsh_plugins.txt
+
+
 
 
 # Tecla delete y backspace

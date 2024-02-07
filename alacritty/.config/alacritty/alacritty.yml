@@ -16,8 +16,8 @@ import:
   # - ~/.config/alacritty/themes/themes/dark_pastels.yaml
   # - ~/.config/alacritty/themes/themes/nightfox.yaml
   # - ~/.config/alacritty/themes/themes/kanagawa_dragon.yaml
-  # - ~/.config/alacritty/themes/themes/kanagawa_wave.yaml
-  - ~/.config/alacritty/themes/themes/hybrid.yaml  # - ~/.config/alacritty/themes/themes/gruvbox_material_hard.yaml
+  - ~/.config/alacritty/themes/themes/kanagawa_wave.yaml
+  # - ~/.config/alacritty/themes/themes/hybrid.yaml  # - ~/.config/alacritty/themes/themes/gruvbox_material_hard.yaml
   # - ~/.config/alacritty/themes/themes/everforest_dark.yaml
   # - ~/.config/alacritty/themes/themes/kaolin.yaml
   # - ~/.config/alacritty/themes/themes/catppuccin.yaml
@@ -89,7 +89,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  # opacity: 0.97
+  opacity: 0.97
 
   # Startup Mode (changes require restart)
   #

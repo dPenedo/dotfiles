@@ -308,6 +308,8 @@ globalkeys = mytable.join(
         { description = "gpick", group = "Mis programas" }),
     awful.key({ modkey }, "G", function() awful.util.spawn("thunderbird") end,
         { description = "Thunderbird", group = "Mis programas" }),
+    awful.key({ "Control", "Mod1" }, "x", function() awful.util.spawn("xkill") end,
+        { description = "Xkill", group = "Mis programas" }),
     -- Brillo
     awful.key({}, "XF86MonBrightnessUp", function() awful.util.spawn("brightnessctl s 10%+") end,
         { description = "+ brillo", group = "Mis programas" }),
