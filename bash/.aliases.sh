@@ -30,10 +30,9 @@ if command -v eza &> /dev/null; then
 else
 	alias ls='ls --color=auto'
 	alias l="ls -la"
-	alias t1 "tree -l 1 --dirsfirst"
-	alias t2="tree -l 2 --dirsfirst"
-	alias t3="tree -l 3 --dirsfirst"
-	alias t4="tree -l 4 --dirsfirst"
+	alias t2="tree -l -L 2 --dirsfirst"
+	alias t3="tree -l -L 3 --dirsfirst"
+	alias t4="tree -l -L 4 --dirsfirst"
 fi
 alias pdf="nohup zathura"
 alias history='history 0'
@@ -57,3 +56,14 @@ alias obsidian="flatpak run md.obsidian.Obsidian"
 alias musescore="flatpak run org.musescore.MuseScore"
 alias spotify="flatpak run com.spotify.Client"
 alias zotero="flatpak run org.zotero.Zotero"
+
+
+# Git
+alias gs="git status"  # Estado de Git
+alias ga="git add"  # Agregar cambios a Git
+alias gc="git commit -m"  # Hacer un commit en Git
+alias gp="git push"  # Hacer push en Git
+alias gl="git log"  # Ver el registro de Git
+alias gll="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 20"
+
+

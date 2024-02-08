@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade
 
 Instalar (en uso):
 ``` bash
-sudo apt install fzf rofi dmenu git python-pip fish awesome picom tmux zathura stow zsh curl rg copyq volumeicon nm-applet
+sudo apt install fzf rofi dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop
 ```
 
 Instalar (opcionales):
@@ -85,8 +85,8 @@ bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/ne
 
 #### ZSH powerlevel
 ```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
+echo 'source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
 
@@ -141,4 +141,31 @@ LazyGit
 git clone https://github.com/jesseduffield/lazygit.git
 cd lazygit
 go install
+```
+
+Lf
+``` bash
+env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
+```
+
+#### Rust
+
+
+
+
+
+
+#### Brave browser
+
+``` bash
+
+sudo apt install curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser
 ```

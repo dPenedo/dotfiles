@@ -32,13 +32,13 @@ unset rc
 . "$HOME/.cargo/env"
 alias config='/usr/bin/git --git-dir=/home/daniel/.cfg/ --work-tree=/home/daniel'
 
-source /home/daniel/.config/broot/launcher/bash/br
+# source /home/daniel/.config/broot/launcher/bash/br
 
 #FZF
 
 if [ -x "$(command -v fzf)" ]; then
-	source /usr/share/fzf/shell/key-bindings.bash
-	source /usr/share/fzf/shell/completion.bash
+	source ~/.fzf/shell/key-bindings.bash
+	source ~/.fzf/shell/completion.bash
 fi
 
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'

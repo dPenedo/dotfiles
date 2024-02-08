@@ -287,7 +287,7 @@ globalkeys = mytable.join(
         { description = "run prompt", group = "launcher" }),
 
     -- My applications
-    awful.key({ modkey }, "e", function() awful.util.spawn("nemo") end,
+    awful.key({ modkey }, "e", function() awful.util.spawn("thunar") end,
         { description = "thunar", group = "Mis programas" }),
     awful.key({ modkey }, "w", function() awful.util.spawn("firefox") end,
         { description = "firefox", group = "Mis programas" }),
