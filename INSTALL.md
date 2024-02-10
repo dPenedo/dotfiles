@@ -17,7 +17,7 @@ sudo apt install fzf rofi curl dmenu git fish awesome picom tmux zathura stow zs
 
 Instalar (opcionales):
 ``` bash
-sudo apt install ranger alacritty lf arandr
+sudo apt install ranger alacritty lf arandr pipx
 ```
 
 Instalar (programas):
@@ -169,3 +169,15 @@ sudo apt update
 
 sudo apt install brave-browser
 ```
+
+
+#### NPM y node
+¿Cómo instalarlo? El menos problemático fue [ nvm ]( https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating )
+
+``` bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+``` bash
+npm install -g live-server
+```
+
