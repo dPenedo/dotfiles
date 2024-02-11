@@ -76,6 +76,11 @@ map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
 map("t", "<C-x>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
 map("t", "<C-l>", "<C-u>clear<CR>", { desc = 'Limpiar la pantalla del terminal' })
 
+-- Neorg
+map('n', '<leader>ni', ':Neorg index<CR>', { desc = 'Ir al archivo index de neorg' })
+map('n', '<leader>nr', ':Neorg return<CR>', { desc = 'Volver de neorg' })
+
+
 -- Gestión de pestañas
 map('n', '<leader>1', ':tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
 map('n', '<leader>2', ':tabn 2<CR>', { desc = 'Ir a la pestaña 2' })

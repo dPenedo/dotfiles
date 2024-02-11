@@ -62,6 +62,7 @@ alias zotero="flatpak run org.zotero.Zotero"
 alias gs="git status"  # Estado de Git
 alias ga="git add"  # Agregar cambios a Git
 alias gc="git commit -m"  # Hacer un commit en Git
+alias gce="~/scripts/commit.sh"
 alias gp="git push"  # Hacer push en Git
 alias gl="git log"  # Ver el registro de Git
 alias gll="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -n 20"

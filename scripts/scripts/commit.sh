@@ -13,4 +13,4 @@ output="$emoji $input_text"
 # Mostrar el resultado
 echo "Tu commit: $output"
 
-git commit -m "$ouput"
+git commit -m "$output"
