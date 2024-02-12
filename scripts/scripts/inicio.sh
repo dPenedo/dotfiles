@@ -28,6 +28,7 @@ if [[ $monitor_externo = *connected* ]]; then
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	wmctrl -r tmux -t 1 &
+	wmctrl -r "mozilla Thunderbird" -t 8 &
 	# wmctrl -r thunderbird -t 9 &
 fi
 # wmctrl -r tmux -t 3 &

@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade
 
 Instalar (en uso):
 ``` bash
-sudo apt install fzf rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl
+sudo apt install fzf rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl brightnessctl
 ```
 
 Instalar (opcionales):
@@ -176,6 +176,22 @@ sudo apt install brave-browser
 
 ``` bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+``` bash
+npm install -g live-server
+```
+
+#### Flatpak
+Activar Flatpak en Debian
+
+ <!-- TODO: -->
+
+
+
+Obsidian
+
+``` bash
+flatpak install flathub md.obsidian.Obsidian
 ```
 ``` bash
 npm install -g live-server

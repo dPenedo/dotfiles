@@ -109,7 +109,7 @@ awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", 
 awful.layout.layouts                   = {
 
     awful.layout.suit.tile,
-    awful.layout.suit.floating,
+    -- awful.layout.suit.floating,
     -- awful.layout.suit.spiral,
     -- awful.layout.suit.tile.left,
     -- awful.layout.suit.tile.bottom,
