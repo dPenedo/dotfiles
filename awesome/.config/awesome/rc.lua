@@ -85,7 +85,7 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 
-local chosen_theme  = "kanagawa"
+local chosen_theme  = "night-owl"
 local modkey        = "Mod4"
 -- local altkey       = "Mod1"
 -- local terminal     = "alacritty"
@@ -478,10 +478,10 @@ globalkeys = mytable.join(
         { description = "increase the number of columns", group = "layout" }),
     awful.key({ modkey, "Control", "Shift" }, "l", function() awful.tag.incncol(-1, nil, true) end,
         { description = "decrease the number of columns", group = "layout" }),
-    awful.key({ modkey, }, "space", function() awful.layout.inc(1) end,
-        { description = "select next", group = "layout" }),
-    awful.key({ modkey, "Shift" }, "space", function() awful.layout.inc(-1) end,
-        { description = "select previous", group = "layout" }),
+    -- awful.key({ modkey, }, "space", function() awful.layout.inc(1) end,
+    --     { description = "select next", group = "layout" }),
+    -- awful.key({ modkey, "Shift" }, "space", function() awful.layout.inc(-1) end,
+    --     { description = "select previous", group = "layout" }),
 
     awful.key({ modkey, "Control" }, "n", function()
         local c = awful.client.restore()

@@ -3,7 +3,7 @@ return {
     'rebelot/kanagawa.nvim',
     lazy = false,
     config = function()
-      vim.cmd.colorscheme 'kanagawa'
+      -- vim.cmd.colorscheme 'kanagawa'
     end,
     opts = {
       -- transparent = true, -- do not set background color
@@ -39,14 +39,52 @@ return {
   },
   {
     "oxfist/night-owl.nvim",
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
     opts = {
-      transparent_background = true,
+      transparent_background = false,
+    },
+    config = function()
+      vim.cmd.colorscheme 'night-owl'
+    end,
+  },
+  {
+    "marko-cerovac/material.nvim",
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    opts = {
+      -- transparent_background = true,
     },
     config = function()
       -- load the colorscheme here
       -- vim.cmd.colorscheme("night-owl")
     end,
   },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = false, -- Enable this to disable setting the background color
+    },
+  },
+  {
+    'ramojus/mellifluous.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = false, -- Enable this to disable setting the background color
+    },
+  },
+  {
+    "pauchiner/pastelnight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
+    "loctvl842/monokai-pro.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
+
 }

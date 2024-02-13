@@ -6,14 +6,14 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family       Fira Code
+# font_family       Fira Code
 # font_family       Iosevka
 # font_family       Atkinson Hyperlegible
 # font_family       JetBrains Mono
-# font_family         hack
-italic_font      JetBrains Mono Italic
+font_family         Hack
+# italic_font      JetBrains Mono Italic
 # italic_font      Victor Mono Italic
-# italic_font         hack
+italic_font         Hack
 
 
 # font_family                     FiraCode-Retina
@@ -21,7 +21,8 @@ italic_font      JetBrains Mono Italic
 # bold_font                       FiraCode-Bold
 # bold_font                       FiraCode-Bold
 # bold_font                       Fira Code
-bold_font                       Fira Code SemiBold
+bold_font                        Hack
+# bold_font                       Fira Code SemiBold
 # bold_font                         JetBrains Mono Bold
 # bold_font                         Atkinson Hyperlegible
 # italic_font                     auto
@@ -496,7 +497,7 @@ inactive_tab_font_style normal
 #: The foreground and background colors
 
 # background_opacity 0.94
-background_opacity 1
+background_opacity 0.97
 # background_opacity 0.90
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
@@ -1091,6 +1092,6 @@ map alt+space launch --allow-remote-control ~/.config/kitty/fzf-tabs-kitty.sh
 
 
 # BEGIN_KITTY_THEME
-# Ayu Mirage
+# Nord
 include current-theme.conf
 # END_KITTY_THEME
