@@ -197,3 +197,11 @@ flatpak install flathub md.obsidian.Obsidian
 npm install -g live-server
 ```
 
+
+### TPM
+
+Para los plugins de tmux:
+``` bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+Después conviene hacer prefix + I y prefix + R (o source)

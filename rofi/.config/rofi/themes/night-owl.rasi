@@ -3,8 +3,8 @@
     bg-col-light: #16161d;
     border-col: #16161d;
     selected-col: #16161d;
-    blue: #5C6BC0;
-    fg-col: #D6DEEB;
+    blue: #81a1c1;
+    fg-col: #f0f0f0;
     fg-col2: #E6C384;
     grey: #6c7086;
 

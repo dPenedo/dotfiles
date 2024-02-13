@@ -39,13 +39,10 @@ return {
   },
   {
     "oxfist/night-owl.nvim",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    lazy = true, -- make sure we load this during startup if it is your main colorscheme
     opts = {
       transparent_background = false,
     },
-    config = function()
-      vim.cmd.colorscheme 'night-owl'
-    end,
   },
   {
     "marko-cerovac/material.nvim",
@@ -71,8 +68,21 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = false, -- Enable this to disable setting the background color
+      color_set = 'mountain',
+      dim_inactive = true,
+      transparent = false,   -- Enable this to disable setting the background color
+      mellifluous = {
+        neutral = false,     -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+        bg_contrast = 'hard' -- options: 'soft', 'medium', 'hard'
+      },
+      mountain = {
+        bg_contrast = 'medium' -- options: 'soft', 'medium', 'hard'
+      }
     },
+    config = function()
+      vim.cmd.colorscheme 'mellifluous'
+      vim.cmd.Mellifluous 'mountain'
+    end,
   },
   {
     "pauchiner/pastelnight.nvim",
