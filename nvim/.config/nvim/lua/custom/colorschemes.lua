@@ -80,8 +80,8 @@ return {
       }
     },
     config = function()
-      vim.cmd.colorscheme 'mellifluous'
-      vim.cmd.Mellifluous 'mountain'
+      vim.cmd.colorscheme 'melange'
+      -- vim.cmd.Mellifluous 'mountain'
     end,
   },
   {
@@ -90,6 +90,9 @@ return {
     priority = 1000,
     opts = {},
   },
+  { 'cryptomilk/nightcity.nvim', version = '*' },
+  { 'mellow-theme/mellow.nvim' },
+  { "savq/melange-nvim" },
   {
     "loctvl842/monokai-pro.nvim",
     lazy = false,

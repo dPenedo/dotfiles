@@ -25,6 +25,24 @@ source ~/.aliases.sh
 source ~/.fzf/shell/key-bindings.zsh
 
 
+# Historia
+# Tamaño máximo del historial de comandos en memoria
+HISTSIZE=10000
+# Tamaño máximo del historial de comandos guardado en disco
+SAVEHIST=10000
+# Agregar nuevos comandos al historial existente
+setopt appendhistory
+# Guardar los comandos en el historial de manera incremental
+setopt inc_append_history
+# Compartir el historial entre sesiones de zsh
+setopt share_history
+# Ignorar comandos duplicados en cualquier posición del historial
+setopt hist_ignore_dups
+# Eliminar comandos duplicados en blanco automáticamente
+setopt hist_reduce_blanks
+# Mostrar el comando después de la expansión, pero antes de ejecutarlo
+setopt hist_verify
+
 
 
 
