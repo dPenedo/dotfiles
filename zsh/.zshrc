@@ -84,6 +84,8 @@ export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 
 bindkey -M viins 'Ñ' fzf-history-widget
 bindkey -M vicmd 'Ñ' fzf-history-widget
 
+
+
 bindkey -s '\ee' 'lfcd^m'
 bindkey -s '\et' 'thunar .^m'
 bindkey -s '\ey' 'ya .^m'

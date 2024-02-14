@@ -308,7 +308,7 @@ globalkeys = mytable.join(
         { description = "gpick", group = "Mis programas" }),
     awful.key({ modkey }, "G", function() awful.util.spawn("thunderbird") end,
         { description = "Thunderbird", group = "Mis programas" }),
-    awful.key({ modkey, "Mod1" }, "c", function() awful.util.spawn("gitmoji-rofi") end,
+    awful.key({ modkey, "Mod1" }, "e", function() awful.util.spawn("gitmoji-rofi") end,
         { description = "Emoji commit", group = "Mis programas" }),
     awful.key({ "Control", "Mod1" }, "x", function() awful.util.spawn("xkill") end,
         { description = "Xkill", group = "Mis programas" }),

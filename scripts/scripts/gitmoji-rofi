@@ -80,3 +80,4 @@ selected_option=$(printf "%s\n" "${options[@]}" | rofi -dmenu -i -p "Selecciona 
 
 # Imprimir el emoji de la opción seleccionada
 echo "$selected_option" | cut -d' ' -f1
+

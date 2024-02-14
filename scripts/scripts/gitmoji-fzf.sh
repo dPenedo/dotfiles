@@ -75,8 +75,8 @@ options=("🎨 -  Improve structure / format of the code."
          "🦺 -  Add or update code related to validation."
          )
 
-# Mostrar opciones usando rofi en modo dmenu
-selected_option=$(printf "%s\n" "${options[@]}" | rofi -dmenu -i -p "Selecciona una opción:" -case-sen)
+# Mostrar opciones usando fzf
+selected_option=$(printf "%s\n" "${options[@]}" | fzf --ansi --prompt="Selecciona una opción:")
 
 # Imprimir el emoji de la opción seleccionada
 echo "$selected_option" | cut -d' ' -f1
