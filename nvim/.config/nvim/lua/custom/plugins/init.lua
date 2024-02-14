@@ -206,6 +206,19 @@ return {
     },
   },
   {
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup()
+      local home = vim.fn.expand("$HOME")
+      api_key_cmd = "gpg --decrypt " .. home .. "/cc.txt.gpg"
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  },
+  {
     "theprimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },

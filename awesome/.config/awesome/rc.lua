@@ -85,7 +85,7 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 
-local chosen_theme  = "night-owl"
+local chosen_theme  = "propio"
 local modkey        = "Mod4"
 -- local altkey       = "Mod1"
 -- local terminal     = "alacritty"
