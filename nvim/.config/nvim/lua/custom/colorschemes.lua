@@ -84,15 +84,11 @@ return {
       -- vim.cmd.Mellifluous 'mountain'
     end,
   },
-  {
-    "pauchiner/pastelnight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
   { 'cryptomilk/nightcity.nvim', version = '*' },
   { 'mellow-theme/mellow.nvim' },
-  { "savq/melange-nvim" },
+
+  -- { "savq/melange-nvim" },
+  { "dpenedo/melange-nvim" },
   {
     "loctvl842/monokai-pro.nvim",
     lazy = false,

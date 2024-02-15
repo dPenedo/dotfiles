@@ -26,12 +26,17 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 
+map('n', '<leader>o', ':delmarks ', { desc = 'Borrar mark' })
+
 map('n', 'ñ', '`', { desc = 'backtick asignado a ñ' })
 
 map('n', ',,', ',', { desc = 'coma para f' })
 
 
-map('n', '<leader>dm', ':delmarks ', { desc = 'Borrar mark' })
+-- Linea abajo/linea encima
+map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
+map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
+
 
 
 -- Guardar rápidamente el búfer actual o todos los búferes
