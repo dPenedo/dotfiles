@@ -2,6 +2,7 @@
 
 # Define the base directory
 base_dir="/home/daniel/Documentos/repos"
+dotfiles="/home/daniel/.dotfiles/"
 
 # Making it bold
 bold=$(tput bold)
@@ -26,3 +27,17 @@ for dir in "$base_dir"/*; do
     fi
 done
 
+
+if [ -d "$dotfiles" ]; then
+    cd "$dotfiles" || { echo "Cannot change directory to $dir"; exit 1; }
+    # Check git status
+    status=$(git status)
+    if [[ $status =~ "En la rama main" && $status =~ "Tu rama está actualizada con 'origin/main'." && $status =~ "nada para hacer commit, el árbol de trabajo está limpio" ]]; then
+        printf "%-40s %-30s\n" "${bold}Archivos de configuración:${normal}" "${bold}✅ Completado${normal}"
+
+    else
+        printf "%-40s %-30s\n" "${bold}Archivos de configuración:${normal}" "${bold}⚠️  Algo falta para tenerlo actualizado ${normal}"
+
+        echo "$status"
+    fi
+fi
