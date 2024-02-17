@@ -12,12 +12,12 @@ sudo apt update && sudo apt upgrade
 
 Instalar (en uso):
 ``` bash
-sudo apt install fzf rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl brightnessctl
+sudo apt install fzf rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl brightnessctl xclip
 ```
 
 Instalar (opcionales):
 ``` bash
-sudo apt install ranger alacritty lf arandr pipx
+sudo apt install ranger alacritty lf arandr pipx chromium calibre
 ```
 
 Instalar (programas):
@@ -205,3 +205,12 @@ Para los plugins de tmux:
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 Después conviene hacer prefix + I y prefix + R (o source)
+
+
+### Evolution + Google-drive
+
+``` bash 
+sudo apt-get install gnome-control-center
+sudo apt-get install evolution               
+sudo apt-get install gnome-online-accounts   
+```
