@@ -995,9 +995,9 @@ tag.connect_signal("property::selected", backham)
 
 -- Autostart
 -- awful.spawn.with_shell("nitrogen --restore &")
-awful.spawn.with_shell("pkill picom &")
 -- awful.spawn.with_shell("picom &")
 
+awful.spawn.with_shell("pkill picom &")
 awful.spawn.with_shell("$HOME/scripts/xmodmap.sh &")
 awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
@@ -1008,8 +1008,6 @@ awful.spawn.with_shell("pkill copyq &")
 
 -- Power management
 -- awful.spawn.with_shell("xfce4-power-manager &")
-
--- Volume icon
 awful.spawn.with_shell("sleep 3; picom -b --config  $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("sleep2; copyq &")
 awful.spawn.with_shell("sleep 3; volumeicon &")

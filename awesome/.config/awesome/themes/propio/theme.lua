@@ -102,7 +102,7 @@ local clock                                     = awful.widget.watch(
 theme.cal                                       = lain.widget.cal({
     attach_to = { clock },
     notification_preset = {
-        font = "Lato 10",
+        font = "Lato 11",
         fg   = theme.fg_normal,
         bg   = theme.bg_focus
     }
@@ -311,9 +311,6 @@ function theme.at_screen_connect(s)
         awful.button({}, 5, function() awful.layout.inc(-1) end)))
     -- Create a taglist widget
     -- s.mytaglist = awful.widget.taglist(s, awful.widget.taglist.filter.all, awful.util.taglist_buttons)
-    -- TODO: Color azul activos, amarillo focus y apagado no activos
-    -- TODO: Solucionar espacios para iconos que no se ven
-    -- TODO: Quitar el cuadradito?
     s.mytaglist               = awful.widget.taglist {
         screen          = s,
         filter          = awful.widget.taglist.filter.all,
@@ -409,8 +406,8 @@ function theme.at_screen_connect(s)
             arrl_dl,
             clock,
             spr,
-            arrl_ld,
-            wibox.container.background(s.mylayoutbox, theme.bg_focus),
+            -- arrl_ld,
+            -- wibox.container.background(s.mylayoutbox, theme.bg_focus),
         },
     }
 end

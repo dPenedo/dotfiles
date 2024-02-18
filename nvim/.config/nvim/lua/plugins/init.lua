@@ -189,8 +189,8 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  { import = 'custom.plugins' },
-  { import = 'custom.colorschemes' },
+  { import = 'plugins.plugins' },
+  { import = 'plugins.colorschemes' },
 }, {})
 
 -- vim: ts=2 sts=2 sw=2 et

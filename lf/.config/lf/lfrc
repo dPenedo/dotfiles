@@ -18,7 +18,7 @@
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
-set ratios 1:2
+set ratios 1:2:4
 set icons
 set period 1
 set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
@@ -113,7 +113,6 @@ map M moveto
 map A push :mkdir<space>
 map a push :touch<space>
 map <c-r> reload
-map H set hidden!
 map s shell
 map <enter> open
 map x $$f
@@ -122,7 +121,9 @@ map o &mimeopen "$f"
 map O $mimeopen --ask "$f"
 map ~ home
 map <esc> quit
-map - quit
+
+map H set hidden!
+map . set hidden!
 
 map r rename # at the very end
 map c push A<c-u> # new rename

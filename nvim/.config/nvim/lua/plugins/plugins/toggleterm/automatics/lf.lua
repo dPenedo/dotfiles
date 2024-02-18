@@ -1,5 +1,5 @@
 local Terminal = require('toggleterm.terminal').Terminal
-local lf       = Terminal:new({ cmd = "lfcd", hidden = false })
+local lf       = Terminal:new({ cmd = "lf", hidden = false })
 
 function _lf_toggle()
   lf:toggle()
