@@ -4,8 +4,8 @@
     border-col: #16161d;
     selected-col: #16161d;
     blue: #7E9CD8;
-    fg-col: #f0f0f0;
-    fg-col2: #E6C384;
+    fg-col: #e6e8e6;
+    fg-col2: #F0C670;
     grey: #6c7086;
 
     width: 600;
