@@ -17,7 +17,7 @@ alt + F4
 	bspc node -c
 
 # alternate between the tiled and monocle layout
-super + f
+super + m
 	bspc desktop -l next
 # super + shift
 # 	bspc desktop -l next
@@ -28,7 +28,7 @@ super + alt + f
   polybar-msg cmd toggle
 
 # Go full mode
-super + shift + f
+super + f
     bspc node -t \~fullscreen
 
 
@@ -75,9 +75,9 @@ super + {_,shift + }n
 # MONITORES
 
 # focus the next/previous desktop in the current monitor
-super + {m,comma}
+super + {comma,dot}
 	bspc desktop -f {prev,next}.local
-super + shift + {m,comma}
+super + shift + {comma,dot}
 	bspc node -d {prev,next}.local --follow;
 
 
@@ -170,8 +170,8 @@ super + r
 super + Return
   kitty
 
-super + shift + Return
-	kitty
+# super + shift + Return
+#   kitty
 
 super + e
 	thunar
@@ -216,6 +216,16 @@ super + shift + e
   rofimoji
 
 
+# Media reproduccion
+super + p
+  playertctl play-pause
+XF86AudioPlay
+  playertctl play-pause
+XF86AudioPrev
+  playertctl previous
+XF86AudioNext
+  playertctl next
+
 
 
 ###################
@@ -239,5 +249,5 @@ ctrl + alt + Delete
 alt + F4
   xfce4-session-logout
 
-# super + v
-#   xfce4-popup-clipman 
+super + v
+  xfce4-popup-clipman 
