@@ -1,25 +1,18 @@
 #! /bin/sh
 
-xfce4-panel -d &
-~/scripts/xmodmap.sh &
-~/scripts/inicio.sh &
+~/scripts/inicio-bspwm.sh &
+~/scripts/xpantallas-bspwm.sh &
+nm-applet &
 sleep 5 && xprop -name "Whisker Menu"
 picom --config ~/.config/picom/picom.conf &
-xfce4-display.settings &
+# xfce4-display.settings &
 sxhkd &
+~/scripts/xmodmap.sh &
 pgrep -x sxhkd >/dev/null || sxhkd &
 # ~/.config/polybar/launch.sh &
 
-monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
-if [[ $monitor_externo = *connected* ]]; then
-	xrandr --output HDMI-0 --auto --primary --above eDP
-	# bspc wm -O eDP HDMI-0
-	bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
-	bspc monitor eDP -d - -
-else
-	xrandr --output eDP --auto --primary
-	bspc monitor -d 1 2 3 4 5 6 7 8 9 10
-fi
+xfce4-panel -d &
+feh --bg-fill /home/daniel/Imagenes/dragon-nord-extendido.png &
 
 bspc config border_width 3
 bspc config window_gap 6

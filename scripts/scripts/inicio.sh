@@ -21,6 +21,17 @@ sleep 7
 # sleep 12
 
 monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
+if ! pgrep -x bspwm > /dev/null; then
+    # Verificar si no hay un monitor externo conectado a través de HDMI
+    monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
+    if [[ ! $monitor_externo = *connected* ]]; then
+        # Bspwm no está en ejecución y no hay monitor externo conectado
+        # Mover las ventanas a los escritorios correspondientes
+        wmctrl -r "Nueva pestaña - Brave" -t 0 &
+        wmctrl -r tmux -t 1 &
+        wmctrl -r "mozilla Thunderbird" -t 8 &
+    fi
+fi
 if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "Nueva pestaña - Brave" -t 10 &
 	wmctrl -r tmux -t 11 &
