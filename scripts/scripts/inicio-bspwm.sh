@@ -12,7 +12,8 @@ kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # sleep 2
 # sleep
 
-thunderbird &
+# thunderbird &
+evolution &
 sleep 7
 #
 # sleep 9
@@ -23,7 +24,7 @@ sleep 7
         # Mover las ventanas a los escritorios correspondientes
 wmctrl -r "Brave" -t 0 &
 wmctrl -r "tmux" -t 1 &
-wmctrl -r "Thunderbird" -t 8 &
+wmctrl -r "evolution" -t 8 &
 	# wmctrl -r thunderbird -t 9 &
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4

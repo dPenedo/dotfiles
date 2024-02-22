@@ -24,6 +24,7 @@ return {
         palette = {
           -- fujiWhite = "#DCD7Bb",
           oldWhite = '#DCD7Bb',
+          sumiInk1 = "#161617",
           fujiWhite = '#F6F1d3',
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",

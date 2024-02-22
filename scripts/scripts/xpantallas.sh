@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Get the connected monitor info
-monitor_externo=$(xrandr --query | grep -i 'HDMI')
+monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 
 # Check if the monitor is connected
 if [ -n "$monitor_externo" ]; then
