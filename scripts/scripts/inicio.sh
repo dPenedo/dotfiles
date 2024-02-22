@@ -6,14 +6,15 @@ brave-browser &
 sleep 4
 # wezterm -e tmux new-session -A -D -s Hasiera &
 kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
+evolution &
+sleep 4
 # kitty -T "kitty" &
 # sleep 2
 # Zotero &
 # sleep 2
 # sleep
 
-thunderbird &
-sleep 7
+# thunderbird &
 #
 # sleep 9
 # flatpak run md.obsidian.Obsidian &
@@ -21,21 +22,15 @@ sleep 7
 # sleep 12
 
 monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
-if [[ ! $monitor_externo = *connected* ]]; then
-    # Bspwm no está en ejecución y no hay monitor externo conectado
-    # Mover las ventanas a los escritorios correspondientes
-    wmctrl -r "Nueva pestaña - Brave" -t 0 &
-    wmctrl -r tmux -t 1 &
-    wmctrl -r "mozilla Thunderbird" -t 8 &
-fi
 if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "Nueva pestaña - Brave" -t 10 &
 	wmctrl -r tmux -t 11 &
-	wmctrl -r "mozilla Thunderbird" -t 18 &
+	# wmctrl -r "mozilla Thunderbird" -t 18 &
+	wmctrl -r "Correo" -t 18 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	wmctrl -r tmux -t 1 &
-	wmctrl -r "mozilla Thunderbird" -t 8 &
+	wmctrl -r "Correo" -t 8 &
 	# wmctrl -r thunderbird -t 9 &
 fi
 # wmctrl -r tmux -t 3 &

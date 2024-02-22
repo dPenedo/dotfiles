@@ -61,9 +61,6 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
     }
   },
   -- {
@@ -96,18 +93,18 @@ return {
     'brenoprata10/nvim-highlight-colors',
   },
 
-  {
-    "jackMort/ChatGPT.nvim",
-    config = function()
-      require("chatgpt").setup()
-      local home = vim.fn.expand("$HOME")
-      api_key_cmd = "gpg --decrypt " .. home .. "/cc.txt.gpg"
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim"
-    }
-  },
-  { import = 'plugins.plugins.toggleterm' },
+  -- {
+  --   "jackMort/ChatGPT.nvim",
+  --   config = function()
+  --     require("chatgpt").setup()
+  --     local home = vim.fn.expand("$HOME")
+  --     api_key_cmd = "gpg --decrypt " .. home .. "/cc.txt.gpg"
+  --   end,
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-telescope/telescope.nvim"
+  --   }
+  -- },
+  -- { import = 'plugins.plugins.toggleterm' },
 }

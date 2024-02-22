@@ -38,13 +38,13 @@ return {
       },
     },
   },
-  {
-    "oxfist/night-owl.nvim",
-    lazy = true, -- make sure we load this during startup if it is your main colorscheme
-    opts = {
-      transparent_background = false,
-    },
-  },
+  -- {
+  --   "oxfist/night-owl.nvim",
+  --   lazy = true, -- make sure we load this during startup if it is your main colorscheme
+  --   opts = {
+  --     transparent_background = false,
+  --   },
+  -- },
   {
     "marko-cerovac/material.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -85,8 +85,8 @@ return {
       -- vim.cmd.Mellifluous 'mountain'
     end,
   },
-  { 'cryptomilk/nightcity.nvim', version = '*' },
-  { 'mellow-theme/mellow.nvim' },
+  -- { 'cryptomilk/nightcity.nvim', version = '*' },
+  -- { 'mellow-theme/mellow.nvim' },
 
   -- { "savq/melange-nvim" },
   { "dpenedo/melange-nvim" },
