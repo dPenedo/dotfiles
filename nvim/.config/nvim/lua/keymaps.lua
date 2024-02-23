@@ -25,6 +25,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+-- Mueve el bloque hacia la izquierda
+map('v', '<', '<gv', { noremap = true, silent = true })
+-- Mueve el bloque hacia la derecha
+map('v', '>', '>gv', { noremap = true, silent = true })
+
 
 map('n', '<leader>o', ':delmarks ', { desc = 'Borrar mark' })
 

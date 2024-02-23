@@ -1001,11 +1001,11 @@ tag.connect_signal("property::selected", backham)
 
 awful.spawn.with_shell("pkill picom &")
 awful.spawn.with_shell("$HOME/scripts/xmodmap.sh &")
-awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
 -- Network applet
 awful.spawn.with_shell("sleep 3; nm-applet &")
 awful.spawn.with_shell("sleep 1; pkill volumeicon &")
+awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 awful.spawn.with_shell("pkill copyq &")
 
 -- Power management

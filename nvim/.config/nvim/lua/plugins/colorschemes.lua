@@ -2,13 +2,10 @@ return {
   {
     'rebelot/kanagawa.nvim',
     lazy = false,
-    config = function()
-      -- vim.cmd.colorscheme 'kanagawa'
-    end,
     opts = {
       -- transparent = true, -- do not set background color
-      compile = true,
-      transparent = false,
+      -- compile = true,
+      transparent = true,
       functionStyle = { bold = true },
       dimInactive = false,
       typeStyle = { bold = true },
@@ -17,14 +14,14 @@ return {
         theme = {
           wave = {
             ui = {
-              bg_gutter = '#ff4444',
+              bg_gutter = '#161617',
             },
           },
         },
         palette = {
           -- fujiWhite = "#DCD7Bb",
-          oldWhite = '#DCD7Bb',
           sumiInk1 = "#161617",
+          oldWhite = '#DCD7Bb',
           fujiWhite = '#F6F1d3',
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",
@@ -38,31 +35,16 @@ return {
       },
     },
   },
-  -- {
-  --   "oxfist/night-owl.nvim",
-  --   lazy = true, -- make sure we load this during startup if it is your main colorscheme
-  --   opts = {
-  --     transparent_background = false,
-  --   },
-  -- },
   {
     "marko-cerovac/material.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     opts = {
       -- transparent_background = true,
     },
-    config = function()
-      -- load the colorscheme here
-      -- vim.cmd.colorscheme("night-owl")
-    end,
-  },
-  {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      transparent = false, -- Enable this to disable setting the background color
-    },
+    -- config = function()
+    --   -- load the colorscheme here
+    --   -- vim.cmd.colorscheme("night-owl")
+    -- end,
   },
   {
     'ramojus/mellifluous.nvim',
@@ -80,10 +62,10 @@ return {
         bg_contrast = 'medium' -- options: 'soft', 'medium', 'hard'
       }
     },
-    config = function()
-      vim.cmd.colorscheme 'melange'
-      -- vim.cmd.Mellifluous 'mountain'
-    end,
+    -- config = function()
+    --   vim.cmd.colorscheme 'melange'
+    --   -- vim.cmd.Mellifluous 'mountain'
+    -- end,
   },
   -- { 'cryptomilk/nightcity.nvim', version = '*' },
   -- { 'mellow-theme/mellow.nvim' },
