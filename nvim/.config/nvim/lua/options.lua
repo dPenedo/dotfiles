@@ -28,6 +28,10 @@ vim.o.conceallevel = 1
 -- Save undo history
 vim.o.undofile = true
 
+-- Mostrar siempre el indicador de pestañas/tabs
+vim.o.showtabline = 2
+
+
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true

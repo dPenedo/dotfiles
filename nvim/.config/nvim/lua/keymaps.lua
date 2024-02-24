@@ -79,6 +79,7 @@ map('n', '<leader>E', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de N
 map('n', '<leader>T', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>E', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
+-- map('n', '<A-<>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 -- Mapeos para el terminal
@@ -92,6 +93,7 @@ map('n', '<leader>nr', ':Neorg return<CR>', { desc = 'Volver de neorg' })
 
 
 -- Gestión de pestañas
+map('n', '<leader><tab>', ':tabedit<CR>', { desc = 'Crear pestaña' })
 map('n', '<leader>1', ':tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
 map('n', '<leader>2', ':tabn 2<CR>', { desc = 'Ir a la pestaña 2' })
 map('n', '<leader>3', ':tabn 3<CR>', { desc = 'Ir a la pestaña 3' })
@@ -103,8 +105,8 @@ map('n', '<leader>8', ':tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
 map('n', '<leader>9', ':tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
 
 -- Copiar/pegar
-map('n', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
-map('v', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
+-- map('n', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
+-- map('v', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
 map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('n', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
