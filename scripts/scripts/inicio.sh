@@ -6,7 +6,8 @@ brave-browser &
 sleep 4
 # wezterm -e tmux new-session -A -D -s Hasiera &
 kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
-evolution &
+# evolution &
+thunderbird &
 sleep 4
 # kitty -T "kitty" &
 # sleep 2
@@ -25,13 +26,13 @@ monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "Nueva pestaña - Brave" -t 10 &
 	wmctrl -r tmux -t 11 &
-	# wmctrl -r "mozilla Thunderbird" -t 18 &
-	wmctrl -r "Correo" -t 18 &
+	wmctrl -r "mozilla Thunderbird" -t 18 &
+	# wmctrl -r "Correo" -t 18 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	wmctrl -r tmux -t 1 &
 	wmctrl -r "Correo" -t 8 &
-	# wmctrl -r thunderbird -t 9 &
+	wmctrl -r thunderbird -t 9 &
 fi
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4

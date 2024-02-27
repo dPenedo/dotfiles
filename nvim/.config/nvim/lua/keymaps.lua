@@ -46,6 +46,7 @@ map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 
 -- Guardar rápidamente el búfer actual o todos los búferes
 map('n', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
+map('n', '<leader>w', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('i', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('v', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>W', '<CMD>wall<CR>', { desc = 'Guardar todos los búferes' })
