@@ -1,0 +1,100 @@
+2024-02-29 10:12:23.608 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4959)
+    at E.t (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at w.value (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.de (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30422)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-02-29 10:12:28.990 [info] Deleted uninstalled extension from disk ms-python.debugpy /home/daniel/.vscode/extensions/ms-python.debugpy-2024.0.0-linux-x64
+2024-02-29 10:12:29.333 [info] Deleted uninstalled extension from disk ms-python.python /home/daniel/.vscode/extensions/ms-python.python-2024.0.1
+2024-02-29 10:38:36.265 [info] Getting Manifest... qufiwefefwoyn.kanagawa
+2024-02-29 10:38:36.294 [info] Installing extension: qufiwefefwoyn.kanagawa
+2024-02-29 10:38:42.245 [info] Extension signature is verified: qufiwefefwoyn.kanagawa
+2024-02-29 10:38:42.323 [info] Extracted extension to file:///home/daniel/.vscode/extensions/qufiwefefwoyn.kanagawa-1.5.1: qufiwefefwoyn.kanagawa
+2024-02-29 10:38:42.333 [info] Renamed to /home/daniel/.vscode/extensions/qufiwefefwoyn.kanagawa-1.5.1
+2024-02-29 10:38:42.343 [info] Extracting extension completed. qufiwefefwoyn.kanagawa
+2024-02-29 10:38:42.377 [info] Extension installed successfully: qufiwefefwoyn.kanagawa
+2024-02-29 10:38:42.461 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
+2024-02-29 10:55:57.193 [info] Uninstalling extension from the profile: qufiwefefwoyn.kanagawa@1.5.1 vscode-userdata:/home/daniel/.vscode/extensions/extensions.json
+2024-02-29 10:55:57.287 [info] Marked extension as uninstalled qufiwefefwoyn.kanagawa-1.5.1
+2024-02-29 10:55:57.350 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
+2024-02-29 10:55:57.692 [info] Successfully uninstalled extension from the profile qufiwefefwoyn.kanagawa@1.5.1 vscode-userdata:/home/daniel/.vscode/extensions/extensions.json
+2024-02-29 11:05:19.124 [info] Getting Manifest... qufiwefefwoyn.kanagawa
+2024-02-29 11:05:19.143 [info] Installing extension: qufiwefefwoyn.kanagawa
+2024-02-29 11:05:24.347 [info] Extension signature is verified: qufiwefefwoyn.kanagawa
+2024-02-29 11:05:24.357 [info] Removed the extension from uninstalled list: qufiwefefwoyn.kanagawa
+2024-02-29 11:05:24.441 [info] Extension installed successfully: qufiwefefwoyn.kanagawa
+2024-02-29 11:05:24.518 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
+2024-02-29 11:09:19.252 [info] Getting Manifest... shwuy.zhxo-themes
+2024-02-29 11:09:19.287 [info] Installing extension: shwuy.zhxo-themes
+2024-02-29 11:09:25.840 [info] Extension signature is verified: shwuy.zhxo-themes
+2024-02-29 11:09:25.902 [info] Extracted extension to file:///home/daniel/.vscode/extensions/shwuy.zhxo-themes-1.0.3: shwuy.zhxo-themes
+2024-02-29 11:09:25.910 [info] Renamed to /home/daniel/.vscode/extensions/shwuy.zhxo-themes-1.0.3
+2024-02-29 11:09:25.913 [info] Extracting extension completed. shwuy.zhxo-themes
+2024-02-29 11:09:25.934 [info] Extension installed successfully: shwuy.zhxo-themes
+2024-02-29 11:09:26.014 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
+2024-02-29 11:13:50.658 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4959)
+    at E.t (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at w.value (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.de (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30422)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-02-29 19:08:49.143 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4959)
+    at E.t (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at w.value (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.de (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30422)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-02-29 19:08:53.847 [info] Getting Manifest... ms-python.python
+2024-02-29 19:08:54.255 [info] Installing extension: ms-python.python
+2024-02-29 19:09:05.266 [info] Extension signature is verified: ms-python.python
+2024-02-29 19:09:16.723 [info] Extracted extension to file:///home/daniel/.vscode/extensions/ms-python.python-2024.2.1: ms-python.python
+2024-02-29 19:09:16.733 [info] Renamed to /home/daniel/.vscode/extensions/ms-python.python-2024.2.1
+2024-02-29 19:09:16.753 [info] Extracting extension completed. ms-python.python
+2024-02-29 19:09:16.783 [info] Extension installed successfully: ms-python.python
+2024-02-29 19:09:16.802 [info] Marked extension as uninstalled ms-python.python-2024.2.0
+2024-02-29 19:09:16.859 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/daniel/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)

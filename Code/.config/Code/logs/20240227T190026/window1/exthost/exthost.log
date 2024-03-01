@@ -1,0 +1,48 @@
+2024-02-27 19:00:30.431 [info] Extension host with pid 137412 started
+2024-02-27 19:00:30.431 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/b7824dbba706c00aabb4b00582f4e996.
+2024-02-27 19:00:30.572 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-02-27 19:00:30.583 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2024-02-27 19:00:30.952 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-02-27 19:00:31.050 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-02-27 19:00:31.493 [info] Eager extensions activated
+2024-02-27 19:00:31.598 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-02-27 19:00:31.608 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-02-27 19:00:31.643 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2024-02-27 19:00:32.959 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'api', root cause: ms-python.python
+2024-02-27 19:02:05.969 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-02-27 19:03:08.956 [info] ExtensionService#_doActivateExtension batisteo.vscode-django, startup: false, activationEvent: 'onLanguage:python'
+2024-02-27 19:03:09.051 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-02-27 19:18:34.721 [info] ExtensionService#_doActivateExtension ms-python.black-formatter, startup: false, activationEvent: 'onLanguage:python'
+2024-02-27 19:19:08.936 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-02-27 19:19:09.000 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-02-27 19:19:12.208 [info] ExtensionService#_doActivateExtension jacobdufault.fuzzy-search, startup: false, activationEvent: 'onCommand:fuzzySearch.activeTextEditor'
+2024-02-27 19:23:32.802 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model2)
+2024-02-27 19:23:32.803 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model2)
+2024-02-27 19:23:33.472 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:33.473 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:34.211 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:34.211 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:34.793 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model9)
+2024-02-27 19:23:34.794 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model9)
+2024-02-27 19:23:35.405 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model4)
+2024-02-27 19:23:35.409 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model4)
+2024-02-27 19:23:36.057 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model7)
+2024-02-27 19:23:36.058 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model7)
+2024-02-27 19:23:36.640 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model2)
+2024-02-27 19:23:36.641 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model2)
+2024-02-27 19:23:37.316 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:37.317 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:38.068 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:38.070 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:38.811 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:38.811 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:39.375 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:39.376 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:39.922 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:39.923 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:40.500 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:40.501 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model3)
+2024-02-27 19:23:41.078 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:23:41.078 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:2,$model6)
+2024-02-27 19:32:50.918 [info] Extension host terminating: renderer closed the MessagePort
+2024-02-27 19:32:50.984 [info] Extension host with pid 137412 exiting with code 0

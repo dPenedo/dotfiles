@@ -1,0 +1,25 @@
+2024-02-27 19:56:42.557 [info] Log level: Info
+2024-02-27 19:56:42.557 [info] Validating found git in: "git"
+2024-02-27 19:56:42.557 [info] Using git "2.39.2" from "git"
+2024-02-27 19:56:42.557 [info] > git rev-parse --show-toplevel [8ms]
+2024-02-27 19:56:42.557 [info] > git rev-parse --git-dir --git-common-dir [5ms]
+2024-02-27 19:56:42.557 [info] Open repository: /home/daniel/Documentos/repos/albert-martin
+2024-02-27 19:56:42.560 [info] > git rev-parse --show-toplevel [296ms]
+2024-02-27 19:56:42.562 [info] > git config --get commit.template [312ms]
+2024-02-27 19:56:42.711 [info] > git rev-parse --show-toplevel [37ms]
+2024-02-27 19:56:42.744 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [38ms]
+2024-02-27 19:56:42.796 [warning] ENOENT: no such file or directory, open '/home/daniel/Documentos/repos/albert-martin/.git/refs/remotes/origin/main'
+2024-02-27 19:56:42.807 [info] > git rev-parse refs/remotes/origin/main [7ms]
+2024-02-27 19:56:42.829 [info] > git rev-parse --show-toplevel [86ms]
+2024-02-27 19:56:42.843 [info] > git status -z -uall [15ms]
+2024-02-27 19:56:42.949 [info] > git config --get commit.template [18ms]
+2024-02-27 19:56:42.978 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2024-02-27 19:56:42.996 [warning] ENOENT: no such file or directory, open '/home/daniel/Documentos/repos/albert-martin/.git/refs/remotes/origin/main'
+2024-02-27 19:56:43.001 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-02-27 19:56:43.030 [info] > git status -z -uall [9ms]
+2024-02-27 19:56:43.075 [info] > git check-ignore -v -z --stdin [4ms]
+2024-02-27 19:56:51.315 [info] > git check-ignore -v -z --stdin [155ms]
+2024-02-27 19:56:51.317 [info] > git show --textconv :dist/index.html [25ms]
+2024-02-27 19:56:51.326 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/albert-martin/dist/index.html [14ms]
+2024-02-27 19:56:51.354 [info] > git cat-file -s 6eae7588ed69c20b40be7af74fa22f4d498397b0 [8ms]
+2024-02-27 19:56:51.895 [info] > git check-ignore -v -z --stdin [7ms]

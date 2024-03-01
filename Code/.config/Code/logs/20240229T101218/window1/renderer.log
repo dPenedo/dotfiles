@@ -1,0 +1,47 @@
+2024-02-29 10:12:21.643 [info] Started local extension host with pid 16852.
+2024-02-29 10:12:25.727 [info] [perf] Render performance baseline is 219ms
+2024-02-29 10:28:31.286 [error] Error while searching for themes: Canceled
+2024-02-29 10:28:32.242 [error] Error while searching for themes: Canceled
+2024-02-29 10:31:27.935 [error] Error while searching for themes: Canceled
+2024-02-29 10:32:24.931 [error] Error while searching for themes: Canceled
+2024-02-29 10:32:25.897 [error] Error while searching for themes: Canceled
+2024-02-29 10:33:21.347 [error] Error while searching for themes: Canceled
+2024-02-29 10:33:46.400 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:13.520 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:14.040 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:31.927 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:32.380 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:48.575 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:49.150 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:55.129 [error] Error while searching for themes: Canceled
+2024-02-29 10:35:58.475 [error] Error while searching for themes: Canceled
+2024-02-29 10:38:33.883 [error] Cancelled: Canceled
+    at re.B (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:32466)
+    at async re.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:29361)
+    at async re.getExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:26345)
+    at async oe.getExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:12374)
+    at async ge.Ec (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:24452)
+    at async ge.Nc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:27116)
+    at async ge.lc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:14478)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:12777
+2024-02-29 10:59:59.568 [error] Error while searching for themes: Canceled
+2024-02-29 11:00:35.880 [error] Error while searching for themes: Canceled
+2024-02-29 11:00:42.211 [error] Unable to load https://seansassenrath.vscode-unpkg.net/seansassenrath/vscode-theme-superonedark/0.0.15/extension/themes/SuperOneDark.tmTheme: Problems loading tmTheme file https://seansassenrath.vscode-unpkg.net/seansassenrath/vscode-theme-superonedark/0.0.15/extension/themes/SuperOneDark.tmTheme: Server returned 404: Error: Unable to load https://seansassenrath.vscode-unpkg.net/seansassenrath/vscode-theme-superonedark/0.0.15/extension/themes/SuperOneDark.tmTheme: Problems loading tmTheme file https://seansassenrath.vscode-unpkg.net/seansassenrath/vscode-theme-superonedark/0.0.15/extension/themes/SuperOneDark.tmTheme: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-02-29 11:04:24.595 [error] Unable to load https://vidbregar.vscode-unpkg.net/vidbregar/dusk/1.0.1/extension/themes/dusk-color-theme.json: Server returned 404: Error: Unable to load https://vidbregar.vscode-unpkg.net/vidbregar/dusk/1.0.1/extension/themes/dusk-color-theme.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-02-29 11:04:30.569 [error] Unable to load https://vidbregar.vscode-unpkg.net/vidbregar/dusk/1.0.1/extension/themes/dusk-color-theme.json: Server returned 404: Error: Unable to load https://vidbregar.vscode-unpkg.net/vidbregar/dusk/1.0.1/extension/themes/dusk-color-theme.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-02-29 11:06:13.777 [error] Error while searching for themes: Canceled
+2024-02-29 11:07:03.727 [error] Error while searching for themes: Canceled
+2024-02-29 11:07:26.377 [error] Error while searching for themes: Canceled
+2024-02-29 11:07:42.398 [error] Error while searching for themes: Canceled
+2024-02-29 11:07:43.105 [error] Error while searching for themes: Canceled
+2024-02-29 11:08:29.827 [error] Error while searching for themes: Canceled
+2024-02-29 11:08:29.854 [error] Error while searching for themes: Canceled
+2024-02-29 11:13:25.733 [info] [lifecycle]: Shutdown was prevented (id: veto.confirmBeforeClose)
+2024-02-29 11:13:44.590 [warning] [backup tracker] suspended, ignoring dirty change event file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py 
+2024-02-29 11:13:47.903 [info] Started local extension host with pid 37607.
+2024-02-29 11:13:54.643 [info] [perf] Render performance baseline is 330ms
+2024-02-29 19:08:46.445 [info] Started local extension host with pid 181097.
+2024-02-29 19:08:54.340 [info] [perf] Render performance baseline is 429ms

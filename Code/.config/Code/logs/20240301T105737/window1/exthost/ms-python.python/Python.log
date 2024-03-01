@@ -1,0 +1,39 @@
+2024-03-01 10:58:17.944 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-03-01 10:58:17.944 [info] Experiment 'pythonREPLSmartSend' is active
+2024-03-01 10:58:17.944 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-03-01 10:58:17.944 [info] Experiment 'pythonTestAdapter' is active
+2024-03-01 10:58:17.944 [info] Default formatter is set to null for workspace /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 10:58:17.944 [info] Test server listening.
+2024-03-01 10:58:17.944 [info] Python interpreter path: ~/Documentos/repos/django-tutorial-castellano/env/bin/python
+2024-03-01 10:58:20.863 [warning] Shell integration may not be active, environment activated may be overridden by the shell.
+2024-03-01 10:58:22.209 [info] > . ~/Documentos/repos/django-tutorial-castellano/env/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariables.py
+2024-03-01 10:58:22.209 [info] shell: zsh
+2024-03-01 10:58:22.736 [info] > /bin/python3 ~/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariables.py
+2024-03-01 10:58:22.736 [info] shell: zsh
+2024-03-01 10:58:25.388 [info] Send text to terminal: /bin/python3 /home/daniel/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /home/daniel/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/zsh/envVars.txt
+2024-03-01 10:58:28.149 [info] Starting Pylance language server.
+2024-03-01 11:08:37.859 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:10:29.859 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:11:47.614 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:11:52.761 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:12:31.092 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:12:38.663 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:13:03.174 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:13:43.541 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:13:46.057 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:14:18.415 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:16:17.248 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:17:22.673 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:18:04.428 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:18:35.295 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:19:10.394 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:20:19.859 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:21:18.527 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:21:38.123 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:23:27.165 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:24:31.945 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:25:17.674 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:25:29.085 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:27:25.312 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:29:33.382 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-03-01 11:30:06.415 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json

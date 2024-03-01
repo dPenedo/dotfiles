@@ -1,0 +1,16 @@
+2024-02-27 19:33:08.562 [info] Telemetry level is off
+2024-02-27 19:33:08.562 [info] Experiments are disabled, only manually opted experiments are active.
+2024-02-27 19:33:08.562 [info] Default formatter is set to esbenp.prettier-vscode for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-27 19:33:08.562 [info] VS Code was launched from an activated environment: 'env', selecting it as the interpreter for workspace.
+2024-02-27 19:33:08.562 [info] Test server listening.
+2024-02-27 19:33:08.749 [info] > ./env/bin/python -I ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/interpreterInfo.py
+2024-02-27 19:33:09.024 [info] Python interpreter path: ./env/bin/python
+2024-02-27 19:33:10.868 [info] Send text to terminal: source /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/activate
+2024-02-27 19:33:15.288 [info] Starting Pylance language server.
+2024-02-27 19:35:29.776 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/newyear/views.py
+2024-02-27 19:38:04.925 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-27 19:38:27.304 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-27 19:39:41.557 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/newyear/views.py
+2024-02-27 19:43:52.419 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-27 19:48:55.447 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/newyear/views.py
+2024-02-27 19:57:47.797 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json

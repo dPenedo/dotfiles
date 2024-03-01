@@ -1,0 +1,228 @@
+{
+    //Window
+    "window.zoomLevel": 1,
+  
+    // Menubar Visibility (VSCODE)
+    "window.menuBarVisibility": "toggle",
+  
+    "window.density.editorTabHeight": "compact",
+  
+    //Editor
+    // "hide-tabs.toggleTabs": true,
+    "editor.tabSize": 4,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 17,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'FiraCode Nerd Font', 'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "same",
+    "editor.lineNumbers": "relative",
+    "editor.wordWrapColumn": 100,
+    "editor.folding": false,
+    "editor.insertSpaces": true,
+    "editor.smoothScrolling": false,
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": true,
+    "editor.suggestSelection": "first",
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderControlCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.cursorBlinking": "solid",
+    "editor.glyphMargin": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+      "а": true,
+      "с": true,
+      "Т": true,
+      "б": true,
+      "е": true
+    },
+  
+    //Editor settings for formatting
+    "editor.formatOnSave": true,
+  
+    //Workbench
+    "workbench.colorTheme": "Kanagawa Black",
+    "workbench.startupEditor": "none",
+    "window.openFilesInNewWindow": "off",
+    "workbench.sideBar.location": "right",
+  
+    // Terminal
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.tabs.enabled": false,
+  
+    //Explorer
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+  
+    //Emmet
+    "emmet.triggerExpansionOnTab": true,
+    // "emmet.showExpandedAbbreviation": "never",
+    "emmet.includeLanguages": {
+      "django-html": "html",
+      "jinja-html": "html"
+  },
+  
+    //Formatters
+    "prettier.semi": true,
+    "prettier.useTabs": true,
+    "prettier.singleQuote": false,
+    "prettier.jsxSingleQuote": false,
+    "prettier.arrowParens": "avoid",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.inlineSuggest.enabled": true,
+  
+    // Files settings
+    "files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
+  
+    //Prisma Formatter
+    "[prisma]": {
+      "editor.defaultFormatter": "Prisma.prisma"
+    },
+  
+    //Breadcrumbs Off
+    "breadcrumbs.enabled": false,
+  
+    // Java/Typescript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.quoteStyle": "double",
+    "javascript.preferences.quoteStyle": "double",
+    "javascript.format.semicolons": "insert",
+    "typescript.format.semicolons": "insert",
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+  
+    // Telemetry (VSCODE)
+    "telemetry.telemetryLevel": "off",
+    "vim.leader": "<space>",
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>", "l", "a"]
+      }
+    ],
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["<leader>", "s", "a"],
+        "commands": ["editor.action.selectAll"]
+      },
+      {
+        "before": ["<leader>", "w"],
+        "commands": ["workbench.action.files.save"]
+      },
+      {
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      {
+        "before": ["<leader>", "q"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<Esc>"],
+        "commands": [":nohl"]
+      },
+      {
+        "before": ["<leader>", "s", "v"],
+        "commands": ["workbench.action.splitEditor"]
+      },
+      {
+        "before": ["<leader>", "s", "h"],
+        "commands": ["workbench.action.splitEditorDown"]
+      },
+      {
+        "before": ["<leader>", "<tab>"],
+        "commands": [":tabnew"]
+      },
+      {
+        "before": ["<leader>", "t", "x"],
+        "commands": [":tabclose"]
+      },
+      {
+        "before": ["<S-h>"],
+        "commands": [":tabp"]
+      },
+      {
+        "before": ["<S-l>"],
+        "commands": [":tabnext"]
+      },
+      {
+        "before": ["<leader>", "f"],
+        "commands": ["workbench.action.quickOpen"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["fuzzySearch.activeTextEditor"]
+      },
+      {
+        "before": ["<leader>", "<leader>"],
+        "commands": ["workbench.action.showAllEditors"]
+      },
+      {
+        "before": ["<leader>", "g", "g"],
+        "commands": ["workbench.action.findInFiles"]
+      },
+      {
+        "before": ["<leader>", "r", "n"],
+        "commands": ["editor.action.rename"]
+      },
+      {
+        "before": ["<leader>", "a", "f"],
+        "commands": ["editor.action.autoFix"]
+      },
+      {
+        "before": ["<leader>", "shift + r"],
+        "commands": ["editor.action.rename"]
+      },
+      // {
+      //   "before": ["<leader>", "f", "m"],
+      //   "commands": ["editor.action.format"]
+      // },
+      {
+        "before": ["<leader>", "c", "a"],
+        "commands": ["editor.action.quickFix"]
+      },
+      {
+        "before": ["g", "r"],
+        "commands": ["editor.action.goToReferences"]
+      },
+      {
+        "before": ["<S-k>"],
+        "commands": ["editor.action.showHover"]
+      }
+    ],
+    "vim.visualModeKeyBindings": [
+      {
+        "before": [">"],
+        "commands": ["editor.action.indentLines"]
+      },
+      {
+        "before": ["<"],
+        "commands": ["editor.action.outdentLines"]
+      },
+      {
+        "before": ["''"],
+        "commands": ["editor.action.quickOpenNavigateNextInEditorPicker"]
+      },
+    ],
+    "workbench.activityBar.location": "hidden",
+    "window.confirmBeforeClose": "always",
+    "debug.confirmOnExit": "always",
+    "workbench.editor.showTabs": "single"
+  }

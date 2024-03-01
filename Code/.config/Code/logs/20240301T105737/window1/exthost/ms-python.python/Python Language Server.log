@@ -1,0 +1,17 @@
+2024-03-01 10:58:24.196 [info] (Client) Pylance async client (2024.2.2) started with python extension (2024.2.1)
+2024-03-01 10:58:27.962 [info] [Info  - 10:58:27] (31829) Pylance language server 2024.2.2 (pyright version 1.1.348, commit cfb1de0c) starting
+2024-03-01 10:58:27.987 [info] [Info  - 10:58:27] (31829) Server root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-03-01 10:58:28.002 [info] [Info  - 10:58:28] (31829) Starting service instance "Retos"
+2024-03-01 10:58:28.470 [info] [Info  - 10:58:28] (31829) Setting pythonPath for service "Retos": "/home/daniel/Documentos/repos/django-tutorial-castellano/env/bin/python"
+2024-03-01 10:58:28.561 [info] [Info  - 10:58:28] (31829) Setting environmentName for service "Retos": "3.11.2 (env venv)"
+2024-03-01 10:58:28.943 [info] [Info  - 10:58:28] (31829) Assuming Python version 3.11
+2024-03-01 10:58:32.042 [info] [Info  - 10:58:32] (31829) Found 2684 source files
+2024-03-01 10:58:32.077 [info] [Info  - 10:58:32] (31829) Background analysis(1) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-03-01 10:58:32.078 [info] [Info  - 10:58:32] (31829) Background analysis(1) started
+2024-03-01 10:58:45.374 [info] [Warn  - 10:58:45] (31829) Workspace indexing has hit its upper limit: 2000 files
+2024-03-01 11:32:49.856 [info] [Info  - 11:32:49] (31829) Indexer background runner(2) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-03-01 11:32:49.857 [info] [Info  - 11:32:49] (31829) Indexing(2) started
+2024-03-01 11:32:52.046 [info] [Info  - 11:32:52] (31829) [IDX(2)] Long operation: scan packages file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos (2174ms)
+2024-03-01 11:32:52.046 [info] [Info  - 11:32:52] (31829) scanned(2) 33 files over 1 exec env
+2024-03-01 11:32:54.247 [info] [Info  - 11:32:54] (31829) indexed(2) 23 files over 1 exec env
+2024-03-01 11:32:54.446 [info] [Info  - 11:32:54] (31829) Indexing finished(2).

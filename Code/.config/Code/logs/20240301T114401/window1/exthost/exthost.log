@@ -1,0 +1,18 @@
+2024-03-01 11:44:06.979 [info] Extension host with pid 48291 started
+2024-03-01 11:44:06.979 [info] Skipping acquiring lock for /home/daniel/.config/Code/User/workspaceStorage/e6eb06d0009efa16f21cdfca497bf21b.
+2024-03-01 11:44:07.589 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-03-01 11:44:07.624 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescript'
+2024-03-01 11:44:07.758 [info] ExtensionService#_doActivateExtension batisteo.vscode-django, startup: false, activationEvent: 'onLanguage:python'
+2024-03-01 11:44:07.818 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.black-formatter
+2024-03-01 11:44:08.147 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2024-03-01 11:44:09.547 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-03-01 11:44:11.476 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-03-01 11:44:11.653 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-03-01 11:44:12.634 [info] ExtensionService#_doActivateExtension ms-python.black-formatter, startup: false, activationEvent: 'onLanguage:python'
+2024-03-01 11:44:12.806 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2024-03-01 11:44:14.024 [info] Eager extensions activated
+2024-03-01 11:44:15.438 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-03-01 11:44:15.468 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-03-01 11:44:15.500 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2024-03-01 11:44:59.386 [info] Extension host terminating: renderer closed the MessagePort
+2024-03-01 11:44:59.471 [info] Extension host with pid 48291 exiting with code 0

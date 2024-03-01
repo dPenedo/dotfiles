@@ -1,0 +1,63 @@
+2024-02-28 15:25:14.359 [info] Name: Black Formatter
+2024-02-28 15:25:14.360 [info] Module: black
+2024-02-28 15:25:14.360 [info] Default formatter is set to esbenp.prettier-vscode for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:14.360 [warning] Black Formatter is NOT set as the default formatter for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:14.360 [warning] To set Black Formatter as the default formatter, add the following to your settings.json file:
+2024-02-28 15:25:14.360 [warning] 
+"[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+}
+2024-02-28 15:25:14.360 [info] Python extension loading
+2024-02-28 15:25:14.360 [info] Waiting for interpreter from python extension.
+2024-02-28 15:25:14.360 [info] No interpreter found from setting black-formatter.interpreter
+2024-02-28 15:25:14.360 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:14.360 [info] Python extension loaded
+2024-02-28 15:25:14.360 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python
+2024-02-28 15:25:14.360 [info] No interpreter found from setting black-formatter.interpreter
+2024-02-28 15:25:14.360 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:14.360 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python
+2024-02-28 15:25:14.360 [info] Server run command: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool/lsp_server.py
+2024-02-28 15:25:14.360 [info] Server: Start requested.
+2024-02-28 15:25:18.085 [info] CWD Server: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:18.132 [info] /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python -m black --version
+2024-02-28 15:25:18.142 [info] CWD formatter: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:20.049 [info] Version info for formatter running for /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django:
+black, 24.2.0 (compiled: no)
+Python (CPython) 3.11.2
+
+2024-02-28 15:25:20.063 [info] SUPPORTED black>=22.3.0
+FOUND black==24.2.0
+
+2024-02-28 15:25:20.063 [info] Settings used to run Server:
+[
+    {
+        "cwd": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django",
+        "workspace": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django",
+        "args": [],
+        "path": [],
+        "interpreter": [
+            "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+2024-02-28 15:25:20.063 [info] Global settings:
+{
+    "cwd": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django",
+    "workspace": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django",
+    "args": [],
+    "path": [],
+    "interpreter": [],
+    "importStrategy": "useBundled",
+    "showNotifications": "off"
+}
+
+2024-02-28 15:25:20.064 [info] sys.path used to run Server:
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/libs
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool
+   /usr/lib/python311.zip
+   /usr/lib/python3.11
+   /usr/lib/python3.11/lib-dynload
+   /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/lib/python3.11/site-packages

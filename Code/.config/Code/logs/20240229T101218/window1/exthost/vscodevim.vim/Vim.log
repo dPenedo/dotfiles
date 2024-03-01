@@ -1,0 +1,356 @@
+2024-02-29 10:12:40.485 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py
+2024-02-29 10:13:05.802 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/homepage/urls.py
+2024-02-29 10:13:05.859 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py.git closed
+2024-02-29 10:13:09.642 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py
+2024-02-29 10:13:09.683 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/homepage/urls.py.git closed
+2024-02-29 10:13:11.266 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/homepage/urls.py
+2024-02-29 10:13:11.308 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py.git closed
+2024-02-29 10:13:12.004 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py
+2024-02-29 10:13:12.052 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/homepage/urls.py.git closed
+2024-02-29 10:13:18.967 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/homepage/views.py
+2024-02-29 10:13:19.017 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py.git closed
+2024-02-29 10:13:20.839 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py
+2024-02-29 10:13:20.875 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/homepage/views.py.git closed
+2024-02-29 10:13:26.720 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/urls.py
+2024-02-29 10:13:26.772 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/mysite/urls.py.git closed
+2024-02-29 10:14:17.289 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:14:17.386 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/urls.py.git closed
+2024-02-29 10:16:06.760 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/resultados.html
+2024-02-29 10:16:06.784 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:16:22.272 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:16:22.320 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/resultados.html.git closed
+2024-02-29 10:16:46.186 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/resultados.html closed
+2024-02-29 10:16:46.242 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/models.py
+2024-02-29 10:16:46.287 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:16:52.422 [info] Active editor: file:///usr/lib/python3.11/datetime.py
+2024-02-29 10:16:52.482 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/models.py.git closed
+2024-02-29 10:16:57.850 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/models.py
+2024-02-29 10:17:18.824 [info] Active editor: file:///usr/lib/python3.11/datetime.py
+2024-02-29 10:17:18.880 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/models.py.git closed
+2024-02-29 10:17:24.619 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/models.py
+2024-02-29 10:17:57.136 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:17:57.175 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/models.py.git closed
+2024-02-29 10:18:09.387 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/keybindings.json
+2024-02-29 10:19:33.269 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/keybindings.json
+2024-02-29 10:19:37.905 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:20:15.325 [info] Configuration changed
+2024-02-29 10:20:16.733 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:20:18.746 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:20:25.151 [info] Configuration changed
+2024-02-29 10:20:44.130 [info] Configuration changed
+2024-02-29 10:20:58.556 [info] /settings/user closed
+2024-02-29 10:20:59.220 [info] /settings/resourceLanguage closed
+2024-02-29 10:20:59.245 [info] /ignoredSettings closed
+2024-02-29 10:20:59.440 [info] /launch closed
+2024-02-29 10:20:59.450 [info] /token-styling closed
+2024-02-29 10:20:59.453 [info] /textmate-colors closed
+2024-02-29 10:20:59.473 [info] /workbench-colors closed
+2024-02-29 10:21:09.538 [info] /keybindings closed
+2024-02-29 10:23:58.694 [info] /settings/user closed
+2024-02-29 10:23:59.813 [info] /settings/resourceLanguage closed
+2024-02-29 10:23:59.888 [info] /ignoredSettings closed
+2024-02-29 10:24:00.516 [info] /launch closed
+2024-02-29 10:24:00.527 [info] /token-styling closed
+2024-02-29 10:24:00.532 [info] /textmate-colors closed
+2024-02-29 10:24:00.563 [info] /workbench-colors closed
+2024-02-29 10:24:09.671 [info] /keybindings closed
+2024-02-29 10:25:00.229 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/keybindings.json
+2024-02-29 10:25:01.898 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:25:04.884 [info] /home/daniel/.config/Code/User/settings.json closed
+2024-02-29 10:25:04.896 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/keybindings.json
+2024-02-29 10:25:12.744 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/urls.py
+2024-02-29 10:25:16.776 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/keybindings.json
+2024-02-29 10:25:16.833 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/urls.py.git closed
+2024-02-29 10:25:20.551 [info] /home/daniel/.config/Code/User/keybindings.json closed
+2024-02-29 10:25:20.570 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/urls.py
+2024-02-29 10:25:36.436 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:25:36.442 [warning] Ignoring slipped selection: [6, 6; 6, 6]
+2024-02-29 10:25:36.475 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/urls.py.git closed
+2024-02-29 10:26:58.916 [info] /settings/user closed
+2024-02-29 10:27:00.276 [info] /settings/resourceLanguage closed
+2024-02-29 10:27:00.881 [info] /ignoredSettings closed
+2024-02-29 10:27:01.059 [info] /launch closed
+2024-02-29 10:27:01.067 [info] /token-styling closed
+2024-02-29 10:27:01.077 [info] /textmate-colors closed
+2024-02-29 10:27:01.124 [info] /workbench-colors closed
+2024-02-29 10:27:09.805 [info] /keybindings closed
+2024-02-29 10:38:42.865 [info] /home/daniel/.config/Code/User/settings.json closed
+2024-02-29 10:38:42.943 [info] Configuration changed
+2024-02-29 10:39:37.112 [info] /usr/lib/python3.11/datetime.py closed
+2024-02-29 10:39:37.141 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:40:39.801 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:40:43.833 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:42:36.041 [info] /home/daniel/.config/Code/User/settings.json closed
+2024-02-29 10:42:36.097 [info] Configuration changed
+2024-02-29 10:42:40.143 [info] /home/daniel/.config/Code/User/settings.json closed
+2024-02-29 10:42:40.217 [info] Configuration changed
+2024-02-29 10:43:21.779 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:43:21.788 [warning] Ignoring slipped selection: [49, 4; 49, 4]
+2024-02-29 10:43:34.589 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:43:34.654 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:44:24.617 [info] Configuration changed
+2024-02-29 10:44:41.337 [info] Configuration changed
+2024-02-29 10:44:48.024 [info] Configuration changed
+2024-02-29 10:44:53.327 [info] Configuration changed
+2024-02-29 10:46:34.911 [info] /settings/user closed
+2024-02-29 10:46:35.453 [info] /settings/resourceLanguage closed
+2024-02-29 10:46:35.486 [info] /ignoredSettings closed
+2024-02-29 10:46:35.740 [info] /launch closed
+2024-02-29 10:46:35.742 [info] /token-styling closed
+2024-02-29 10:46:35.745 [info] /textmate-colors closed
+2024-02-29 10:46:35.757 [info] /workbench-colors closed
+2024-02-29 10:47:12.913 [info] Configuration changed
+2024-02-29 10:49:26.342 [info] Executing :reg
+2024-02-29 10:49:35.121 [info] /settings/user closed
+2024-02-29 10:49:35.867 [info] /settings/resourceLanguage closed
+2024-02-29 10:49:35.907 [info] /ignoredSettings closed
+2024-02-29 10:49:36.657 [info] /launch closed
+2024-02-29 10:49:36.661 [info] /token-styling closed
+2024-02-29 10:49:36.737 [info] /textmate-colors closed
+2024-02-29 10:49:36.742 [info] /workbench-colors closed
+2024-02-29 10:50:00.895 [info] Configuration changed
+2024-02-29 10:51:56.390 [info] Configuration changed
+2024-02-29 10:51:59.897 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:51:59.905 [warning] Ignoring slipped selection: [26, 7; 26, 7]
+2024-02-29 10:52:05.082 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:52:05.130 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:52:35.330 [info] /settings/user closed
+2024-02-29 10:52:36.020 [info] /settings/resourceLanguage closed
+2024-02-29 10:52:36.420 [info] /ignoredSettings closed
+2024-02-29 10:52:37.024 [info] /launch closed
+2024-02-29 10:52:37.094 [info] /token-styling closed
+2024-02-29 10:52:37.718 [info] /textmate-colors closed
+2024-02-29 10:52:37.766 [info] /workbench-colors closed
+2024-02-29 10:53:05.211 [info] Configuration changed
+2024-02-29 10:54:22.264 [info] Configuration changed
+2024-02-29 10:55:16.799 [info] Configuration changed
+2024-02-29 10:55:24.764 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:55:24.768 [warning] Ignoring slipped selection: [26, 7; 26, 7]
+2024-02-29 10:55:35.554 [info] /settings/user closed
+2024-02-29 10:55:36.234 [info] /settings/resourceLanguage closed
+2024-02-29 10:55:36.577 [info] /ignoredSettings closed
+2024-02-29 10:55:37.411 [info] /launch closed
+2024-02-29 10:55:38.226 [info] /token-styling closed
+2024-02-29 10:55:38.228 [info] /textmate-colors closed
+2024-02-29 10:55:38.239 [info] /workbench-colors closed
+2024-02-29 10:56:20.182 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/shortcuts.py
+2024-02-29 10:56:20.248 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:56:36.471 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:56:36.480 [warning] Ignoring slipped selection: [1, 33; 1, 33]
+2024-02-29 10:56:36.507 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/shortcuts.py.git closed
+2024-02-29 10:56:42.975 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:56:43.027 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:57:46.546 [info] Configuration changed
+2024-02-29 10:57:51.065 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:57:51.070 [warning] Ignoring slipped selection: [4, 32; 4, 32]
+2024-02-29 10:57:59.797 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/shortcuts.py closed
+2024-02-29 10:57:59.863 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py
+2024-02-29 10:57:59.908 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:58:06.962 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 10:58:06.974 [warning] Ignoring slipped selection: [4, 27; 4, 27]
+2024-02-29 10:58:06.995 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py.git closed
+2024-02-29 10:58:35.756 [info] /settings/user closed
+2024-02-29 10:58:36.456 [info] /settings/resourceLanguage closed
+2024-02-29 10:58:36.860 [info] /ignoredSettings closed
+2024-02-29 10:58:37.784 [info] /launch closed
+2024-02-29 10:58:38.567 [info] /token-styling closed
+2024-02-29 10:58:38.569 [info] /textmate-colors closed
+2024-02-29 10:58:38.596 [info] /workbench-colors closed
+2024-02-29 10:59:17.862 [info] Configuration changed
+2024-02-29 10:59:27.618 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py
+2024-02-29 10:59:27.670 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 10:59:31.524 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 10:59:31.584 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py.git closed
+2024-02-29 11:01:35.906 [info] /settings/user closed
+2024-02-29 11:01:36.726 [info] /settings/resourceLanguage closed
+2024-02-29 11:01:37.140 [info] /ignoredSettings closed
+2024-02-29 11:01:38.115 [info] /launch closed
+2024-02-29 11:01:39.130 [info] /token-styling closed
+2024-02-29 11:01:39.160 [info] /textmate-colors closed
+2024-02-29 11:01:39.167 [info] /workbench-colors closed
+2024-02-29 11:01:44.678 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py
+2024-02-29 11:01:46.039 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 11:01:46.079 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py.git closed
+2024-02-29 11:01:47.638 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py
+2024-02-29 11:01:50.691 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 11:01:50.732 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages/django/utils/timezone.py.git closed
+2024-02-29 11:01:55.478 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 11:01:55.483 [warning] Ignoring slipped selection: [25, 0; 25, 0]
+2024-02-29 11:04:36.050 [info] /settings/user closed
+2024-02-29 11:04:36.952 [info] /settings/resourceLanguage closed
+2024-02-29 11:04:37.420 [info] /ignoredSettings closed
+2024-02-29 11:04:38.527 [info] /launch closed
+2024-02-29 11:04:39.383 [info] /token-styling closed
+2024-02-29 11:04:39.400 [info] /textmate-colors closed
+2024-02-29 11:04:39.402 [info] /workbench-colors closed
+2024-02-29 11:05:32.926 [info] Configuration changed
+2024-02-29 11:05:37.684 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 11:05:37.742 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 11:05:57.284 [info] Configuration changed
+2024-02-29 11:07:17.260 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 11:07:17.266 [warning] Ignoring slipped selection: [25, 0; 25, 0]
+2024-02-29 11:07:36.162 [info] /settings/user closed
+2024-02-29 11:07:37.205 [info] /settings/resourceLanguage closed
+2024-02-29 11:07:37.777 [info] /ignoredSettings closed
+2024-02-29 11:07:38.934 [info] /launch closed
+2024-02-29 11:07:39.769 [info] /token-styling closed
+2024-02-29 11:07:39.774 [info] /textmate-colors closed
+2024-02-29 11:07:39.794 [info] /workbench-colors closed
+2024-02-29 11:09:26.494 [info] Configuration changed
+2024-02-29 11:09:36.075 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/resultados.html
+2024-02-29 11:09:36.113 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 11:09:43.950 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/index.html
+2024-02-29 11:09:43.977 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/resultados.html.git closed
+2024-02-29 11:10:20.225 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/manage.py
+2024-02-29 11:10:20.324 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/templates/sondeo/index.html.git closed
+2024-02-29 11:10:28.824 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 11:10:28.830 [warning] Ignoring slipped selection: [23, 0; 23, 0]
+2024-02-29 11:10:28.884 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/manage.py.git closed
+2024-02-29 11:10:36.358 [info] /settings/user closed
+2024-02-29 11:10:37.362 [info] /settings/resourceLanguage closed
+2024-02-29 11:10:38.115 [info] /ignoredSettings closed
+2024-02-29 11:10:39.251 [info] /launch closed
+2024-02-29 11:10:40.057 [info] /token-styling closed
+2024-02-29 11:10:40.061 [info] /textmate-colors closed
+2024-02-29 11:10:40.071 [info] /workbench-colors closed
+2024-02-29 11:10:43.845 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/mysite/settings.py
+2024-02-29 11:10:43.900 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py.git closed
+2024-02-29 11:11:42.294 [info] Configuration changed
+2024-02-29 11:11:43.433 [info] Active editor: file:///home/daniel/Documentos/repos/django-tutorial-castellano/sondeo/views.py
+2024-02-29 11:11:43.481 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/mysite/settings.py.git closed
+2024-02-29 11:12:21.707 [info] Configuration changed
+2024-02-29 11:13:36.511 [info] /settings/user closed
+2024-02-29 11:13:37.625 [info] /settings/resourceLanguage closed
+2024-02-29 11:13:38.353 [info] /ignoredSettings closed
+2024-02-29 11:13:39.683 [info] /launch closed
+2024-02-29 11:13:40.294 [info] /token-styling closed
+2024-02-29 11:13:40.298 [info] /textmate-colors closed
+2024-02-29 11:13:40.312 [info] /workbench-colors closed
+2024-02-29 11:13:54.989 [info] Configuration changed
+2024-02-29 11:14:07.461 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/wiki/urls.py
+2024-02-29 16:30:59.690 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/encyclopedia/urls.py
+2024-02-29 16:31:28.751 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/encyclopedia/util.py
+2024-02-29 16:35:57.177 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/encyclopedia/views.py
+2024-02-29 16:36:13.008 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/encyclopedia/templates/encyclopedia/index.html
+2024-02-29 16:36:23.223 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/encyclopedia/templates/encyclopedia/layout.html
+2024-02-29 16:36:53.064 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki/encyclopedia/templates/encyclopedia/index.html
+2024-02-29 19:11:36.250 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/ejercicio.md
+2024-02-29 19:11:59.586 [info] /home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #0 - EL FAMOSO FIZZ BUZZ [Fácil]/ejercicio.md closed
+2024-02-29 19:11:59.642 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/danimarin24.js
+2024-02-29 19:12:10.476 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:12:19.942 [info] /home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #0 - EL FAMOSO FIZZ BUZZ [Fácil]/javascript/danimarin24.js closed
+2024-02-29 19:12:27.912 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/ejercicio.md
+2024-02-29 19:12:42.098 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:14:08.769 [warning] Ignoring slipped selection: [9, 9; 9, 9]
+2024-02-29 19:14:52.448 [warning] Ignoring slipped selection: [10, 13; 10, 18][10, 24; 10, 29][10, 46; 10, 51][11, 30; 11, 35]
+2024-02-29 19:15:24.292 [warning] Ignoring slipped selection: [9, 28; 9, 28]
+2024-02-29 19:15:31.273 [warning] Ignoring slipped selection: [10, 14; 10, 14]
+2024-02-29 19:15:37.770 [warning] Ignoring slipped selection: [10, 15; 10, 15]
+2024-02-29 19:15:37.962 [warning] Ignoring slipped selection: [10, 8; 10, 8]
+2024-02-29 19:15:52.738 [warning] Ignoring slipped selection: [10, 30; 10, 30]
+2024-02-29 19:16:31.088 [warning] Ignoring slipped selection: [11, 44; 11, 44]
+2024-02-29 19:16:42.628 [warning] Ignoring slipped selection: [12, 19; 12, 19]
+2024-02-29 19:16:57.007 [warning] Ignoring slipped selection: [16, 12; 16, 12]
+2024-02-29 19:19:53.750 [warning] Ignoring slipped selection: [9, 33; 9, 33]
+2024-02-29 19:20:21.058 [warning] Ignoring slipped selection: [13, 15; 13, 15]
+2024-02-29 19:20:22.140 [warning] Ignoring slipped selection: [13, 19; 13, 19]
+2024-02-29 19:20:39.069 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/DiegoSHS.js
+2024-02-29 19:20:44.337 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/diegomarprogramacion.js
+2024-02-29 19:21:01.057 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/DiegoSHS.js
+2024-02-29 19:21:04.400 [info] /home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #0 - EL FAMOSO FIZZ BUZZ [Fácil]/javascript/DiegoSHS.js closed
+2024-02-29 19:21:04.414 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/diegomarprogramacion.js
+2024-02-29 19:21:06.493 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:21:06.559 [warning] Ignoring slipped selection: [15, 0; 15, 0]
+2024-02-29 19:21:09.107 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/diegomarprogramacion.js
+2024-02-29 19:21:12.679 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:21:12.722 [warning] Ignoring slipped selection: [15, 0; 15, 0]
+2024-02-29 19:21:23.846 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/diegomarprogramacion.js
+2024-02-29 19:21:27.182 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:21:27.230 [warning] Ignoring slipped selection: [11, 26; 11, 26]
+2024-02-29 19:22:27.272 [warning] Ignoring slipped selection: [12, 30; 12, 30]
+2024-02-29 19:22:27.285 [warning] Ignoring slipped selection: [12, 31; 12, 31]
+2024-02-29 19:23:09.099 [warning] Ignoring slipped selection: [13, 41; 13, 41]
+2024-02-29 19:23:18.330 [warning] Ignoring slipped selection: [13, 37; 13, 37]
+2024-02-29 19:23:55.200 [warning] Ignoring slipped selection: [11, 43; 11, 43]
+2024-02-29 19:24:37.502 [warning] Ignoring slipped selection: [12, 16; 12, 16]
+2024-02-29 19:24:37.516 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:25:00.620 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/python/dPenedo.py
+2024-02-29 19:25:04.065 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:25:13.177 [warning] Ignoring slipped selection: [9, 8; 9, 8]
+2024-02-29 19:26:03.560 [warning] Ignoring slipped selection: [10, 27; 10, 27]
+2024-02-29 19:26:22.673 [warning] Ignoring slipped selection: [23, 7; 23, 7]
+2024-02-29 19:26:24.837 [warning] Ignoring slipped selection: [23, 11; 23, 11]
+2024-02-29 19:26:30.944 [warning] Ignoring slipped selection: [23, 22; 23, 22]
+2024-02-29 19:27:50.820 [warning] Ignoring slipped selection: [16, 4; 16, 4]
+2024-02-29 19:28:05.566 [warning] Ignoring slipped selection: [16, 34; 16, 34]
+2024-02-29 19:28:48.020 [warning] Ignoring slipped selection: [17, 44; 17, 44]
+2024-02-29 19:29:16.053 [warning] Ignoring slipped selection: [18, 23; 18, 23]
+2024-02-29 19:29:24.581 [warning] Ignoring slipped selection: [19, 19; 19, 19]
+2024-02-29 19:29:25.942 [warning] Ignoring slipped selection: [19, 23; 19, 23]
+2024-02-29 19:30:50.075 [warning] Ignoring slipped selection: [19, 38; 19, 38]
+2024-02-29 19:30:59.958 [warning] Ignoring slipped selection: [21, 9; 21, 9]
+2024-02-29 19:31:18.803 [warning] Ignoring slipped selection: [21, 28; 21, 28]
+2024-02-29 19:33:00.542 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/python/dPenedo.py
+2024-02-29 19:33:45.248 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:34:10.487 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/python/dPenedo.py
+2024-02-29 19:34:27.005 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dpenedo.js
+2024-02-29 19:35:12.899 [info] /home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #0 - EL FAMOSO FIZZ BUZZ [Fácil]/javascript/dpenedo.js closed
+2024-02-29 19:35:12.983 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/diegomarprogramacion.js
+2024-02-29 19:35:17.185 [info] /home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #0 - EL FAMOSO FIZZ BUZZ [Fácil]/javascript/diegomarprogramacion.js closed
+2024-02-29 19:35:17.193 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/ejercicio.md
+2024-02-29 19:35:22.663 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/python/dPenedo.py
+2024-02-29 19:35:22.774 [info] /home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #0 - EL FAMOSO FIZZ BUZZ [Fácil]/ejercicio.md closed
+2024-02-29 19:40:19.880 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:46:33.977 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/nrdevpy.ts
+2024-02-29 19:46:39.752 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:46:44.521 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:46:44.575 [warning] Ignoring slipped selection: [16, 21; 16, 21]
+2024-02-29 19:46:54.867 [warning] invalid cursor position. [[33, 31] | [33, 31]].
+2024-02-29 19:46:54.868 [warning] invalid cursor position. [[33, 31] | [33, 31]].
+2024-02-29 19:47:02.549 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 19:47:18.178 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:47:18.239 [warning] Ignoring slipped selection: [32, 16; 32, 16]
+2024-02-29 19:47:20.433 [warning] Ignoring slipped selection: [0, 0; 32, 17]
+2024-02-29 19:47:33.878 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:47:37.647 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:47:37.691 [warning] Ignoring slipped selection: [31, 0; 31, 0]
+2024-02-29 19:47:44.497 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:48:54.698 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:49:24.706 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:49:30.099 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:49:30.148 [warning] Ignoring slipped selection: [9, 0; 9, 0]
+2024-02-29 19:49:31.415 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:50:03.754 [info] /settings/user closed
+2024-02-29 19:50:04.206 [info] /settings/resourceLanguage closed
+2024-02-29 19:50:04.225 [info] /ignoredSettings closed
+2024-02-29 19:50:04.546 [info] /launch closed
+2024-02-29 19:50:04.557 [info] /token-styling closed
+2024-02-29 19:50:04.563 [info] /textmate-colors closed
+2024-02-29 19:50:04.572 [info] /workbench-colors closed
+2024-02-29 19:50:26.007 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:50:26.065 [warning] Ignoring slipped selection: [9, 0; 9, 0]
+2024-02-29 19:50:38.022 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:50:43.664 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/javascript/dPenedo.js
+2024-02-29 19:50:43.724 [warning] Ignoring slipped selection: [16, 21; 16, 21]
+2024-02-29 19:51:03.589 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:53:03.975 [info] /settings/user closed
+2024-02-29 19:53:04.687 [info] /settings/resourceLanguage closed
+2024-02-29 19:53:04.746 [info] /ignoredSettings closed
+2024-02-29 19:53:05.293 [info] /launch closed
+2024-02-29 19:53:05.297 [info] /token-styling closed
+2024-02-29 19:53:05.299 [info] /textmate-colors closed
+2024-02-29 19:53:05.313 [info] /workbench-colors closed
+2024-02-29 19:53:22.171 [info] Active editor: vscode-userdata:/home/daniel/.config/Code/User/settings.json
+2024-02-29 19:54:32.067 [info] Configuration changed
+2024-02-29 19:55:02.486 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:56:04.195 [info] /settings/user closed
+2024-02-29 19:56:04.918 [info] /settings/resourceLanguage closed
+2024-02-29 19:56:05.259 [info] /ignoredSettings closed
+2024-02-29 19:56:05.807 [info] /launch closed
+2024-02-29 19:56:05.885 [info] /token-styling closed
+2024-02-29 19:56:05.888 [info] /textmate-colors closed
+2024-02-29 19:56:05.891 [info] /workbench-colors closed
+2024-02-29 19:56:12.733 [info] Active editor: output:tasks
+2024-02-29 19:56:16.066 [info] Active editor: file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%230%20-%20EL%20FAMOSO%20FIZZ%20BUZZ%20%5BF%C3%A1cil%5D/typescript/dPenedo.ts
+2024-02-29 19:56:16.122 [info] tasks closed
+2024-02-29 19:58:59.650 [info] Executing :w

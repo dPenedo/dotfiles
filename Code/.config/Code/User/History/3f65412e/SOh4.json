@@ -1,0 +1,96 @@
+{
+    //Window
+    "window.zoomLevel": 1,
+  
+    // Menubar Visibility (VSCODE)
+    "window.menuBarVisibility": "toggle",
+  
+    "window.density.editorTabHeight": "compact",
+  
+    //Editor
+    // "hide-tabs.toggleTabs": true,
+    "editor.tabSize": 4,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 17,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'FiraCode Nerd Font', 'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "same",
+    "editor.lineNumbers": "relative",
+    "editor.wordWrapColumn": 100,
+    "editor.folding": false,
+    "editor.insertSpaces": true,
+    "editor.smoothScrolling": false,
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": true,
+    "editor.suggestSelection": "first",
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderControlCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.cursorBlinking": "solid",
+    "editor.glyphMargin": true,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+      "а": true,
+      "с": true,
+      "Т": true,
+      "б": true,
+      "е": true
+    },
+  
+    //Editor settings for formatting
+    "editor.formatOnSave": true,
+  
+    //Workbench
+      "editor.tokenColorCustomizations": {
+      "[Kanagawa Black]": {
+          "comments": "#8A8980"
+      },
+        "textMateRules": [
+          {
+            "scope": [
+              "comment",
+              "comment.block",
+              "comment.block.documentation",
+              "comment.line",
+              "comment.line.double-slash",
+              "punctuation.definition.comment",
+            ],
+
+            "settings": {
+              "fontStyle": "italic"
+            }
+          }
+        ]
+      },
+    "workbench.colorTheme": "zhxo'yll",
+    "workbench.startupEditor": "none",
+    "window.openFilesInNewWindow": "off",
+    "workbench.sideBar.location": "right",
+  
+    // Terminal
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.tabs.enabled": false,
+  
+    //Explorer
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+  
+    //Emmet
+    "emmet.triggerExpansionOnTab": true,
+    // "emmet.showExpandedAbbreviation": "never",
+    "emmet.includeLanguages": {
+      "django-html": "html",
+      "jinja-html": "html"
+  },
+    //Formatters
+    // "prettier.semi": true,
+    // "prettier.useTabs": true,
+    // "prettier.singleQuote": false,
+    // "prettier.jsxSingleQuote": false

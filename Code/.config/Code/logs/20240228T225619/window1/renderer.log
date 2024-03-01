@@ -1,0 +1,9 @@
+2024-02-28 22:56:22.892 [info] Started local extension host with pid 18751.
+2024-02-28 22:56:26.458 [info] [perf] Render performance baseline is 299ms
+2024-02-28 22:57:57.196 [warning] [lifecycle] onBeforeShutdown is taking a long time, pending operations: veto.confirmBeforeClose
+2024-02-28 22:58:16.277 [info] [lifecycle]: Shutdown was prevented (id: veto.confirmBeforeClose)
+2024-02-28 22:58:38.004 [warning] [backup tracker] suspended, ignoring dirty change event file:///home/daniel/Documentos/repos/ClipTube/main.py 
+2024-02-28 22:58:43.044 [info] Started local extension host with pid 19902.
+2024-02-28 22:58:50.261 [info] [perf] Render performance baseline is 233ms
+2024-02-28 22:59:47.520 [info] Started local extension host with pid 20269.
+2024-02-28 22:59:51.603 [info] [perf] Render performance baseline is 177ms

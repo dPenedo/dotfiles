@@ -1,0 +1,49 @@
+2024-02-27 19:00:34.662 [info] (Client) Pylance async client (2024.2.2) started with python extension (2024.0.1)
+2024-02-27 19:00:36.678 [info] [Info  - 19:00:36] (137471) Pylance language server 2024.2.2 (pyright version 1.1.348, commit cfb1de0c) starting
+2024-02-27 19:00:36.679 [info] [Info  - 19:00:36] (137471) Server root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-27 19:00:36.680 [info] [Info  - 19:00:36] (137471) Starting service instance "3_django"
+2024-02-27 19:00:36.815 [info] [Info  - 19:00:36] (137471) Setting pythonPath for service "3_django": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python"
+2024-02-27 19:00:36.816 [info] [Info  - 19:00:36] (137471) Setting environmentName for service "3_django": "3.11.2 (env venv)"
+2024-02-27 19:00:36.914 [info] [Info  - 19:00:36] (137471) Assuming Python version 3.11
+2024-02-27 19:00:37.117 [info] [Info  - 19:00:37] (137471) Auto-excluding /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env
+2024-02-27 19:00:37.137 [info] [Info  - 19:00:37] (137471) Found 14 source files
+2024-02-27 19:00:38.092 [info] [Info  - 19:00:38] (137471) Background analysis(1) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-27 19:00:38.099 [info] [Info  - 19:00:38] (137471) Background analysis(1) started
+2024-02-27 19:03:12.151 [info] [Info  - 19:03:12] (137471) [BG(1)] Long operation: checking: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/hello/views.py (3042ms)
+2024-02-27 19:03:12.152 [info] [Info  - 19:03:12] (137471) [BG(1)] Long operation: analyzing: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/hello/views.py (3054ms)
+2024-02-27 19:03:12.539 [info] [Info  - 19:03:12] (137471) Indexer background runner(2) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-27 19:03:12.540 [info] [Info  - 19:03:12] (137471) Indexing(2) started
+2024-02-27 19:03:14.005 [info] [Info  - 19:03:14] (137471) scanned(2) 33 files over 1 exec env
+2024-02-27 19:03:16.524 [info] [Info  - 19:03:16] (137471) indexed(2) 23 files over 1 exec env
+2024-02-27 19:03:16.736 [info] [Info  - 19:03:16] (137471) Indexing finished(2).
+2024-02-27 19:15:23.628 [info] [Info  - 19:15:23] (137471) Auto-excluding /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env
+2024-02-27 19:15:23.672 [info] [Info  - 19:15:23] (137471) Found 21 source files
+2024-02-27 19:18:34.522 [info] [Error - 19:18:34] Server process exited with code 0.
+2024-02-27 19:18:35.152 [info] (Client) Pylance async client (2024.2.2) started with python extension (2024.0.1)
+2024-02-27 19:18:37.170 [info] [Info  - 19:18:37] (144519) Pylance language server 2024.2.2 (pyright version 1.1.348, commit cfb1de0c) starting
+2024-02-27 19:18:37.170 [info] [Info  - 19:18:37] (144519) Server root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-27 19:18:37.192 [info] [Info  - 19:18:37] (144519) Starting service instance "3_django"
+2024-02-27 19:18:37.389 [info] [Info  - 19:18:37] (144519) Setting pythonPath for service "3_django": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python"
+2024-02-27 19:18:37.389 [info] [Info  - 19:18:37] (144519) Setting environmentName for service "3_django": "3.11.2 (env venv)"
+2024-02-27 19:18:37.492 [info] [Info  - 19:18:37] (144519) Assuming Python version 3.11
+2024-02-27 19:18:37.757 [info] [Info  - 19:18:37] (144519) Auto-excluding /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env
+2024-02-27 19:18:37.784 [info] [Info  - 19:18:37] (144519) Found 21 source files
+2024-02-27 19:18:38.967 [info] [Info  - 19:18:38] (144519) Background analysis(1) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-27 19:18:38.970 [info] [Info  - 19:18:38] (144519) Background analysis(1) started
+2024-02-27 19:18:39.548 [info] [Info  - 19:18:39] (144519) Indexer background runner(2) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-27 19:18:39.551 [info] [Info  - 19:18:39] (144519) Indexing(2) started
+2024-02-27 19:18:41.466 [info] [Info  - 19:18:41] (144519) scanned(2) 33 files over 1 exec env
+2024-02-27 19:18:43.738 [info] [Info  - 19:18:43] (144519) indexed(2) 23 files over 1 exec env
+2024-02-27 19:18:43.934 [info] [Info  - 19:18:43] (144519) Indexing finished(2).
+2024-02-27 19:19:28.124 [info] [Info  - 19:19:28] (144519) Setting pythonPath for service "3_django": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/python"
+2024-02-27 19:19:28.124 [info] [Info  - 19:19:28] (144519) Setting environmentName for service "3_django": "3.11.2 (env venv)"
+2024-02-27 19:19:28.251 [info] [Info  - 19:19:28] (144519) Assuming Python version 3.11
+2024-02-27 19:19:28.448 [info] [Info  - 19:19:28] (144519) Auto-excluding /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env
+2024-02-27 19:19:28.480 [info] [Info  - 19:19:28] (144519) Found 21 source files
+2024-02-27 19:19:30.283 [info] [Info  - 19:19:30] (144519) Indexer background runner(3) root directory: file:///home/daniel/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-27 19:19:30.283 [info] [Info  - 19:19:30] (144519) Indexing(3) started
+2024-02-27 19:19:31.472 [info] [Info  - 19:19:31] (144519) scanned(3) 33 files over 1 exec env
+2024-02-27 19:19:33.606 [info] [Info  - 19:19:33] (144519) indexed(3) 23 files over 1 exec env
+2024-02-27 19:19:33.784 [info] [Info  - 19:19:33] (144519) Indexing finished(3).
+2024-02-27 19:27:46.568 [info] [Info  - 19:27:46] (144519) Auto-excluding /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env
+2024-02-27 19:27:46.601 [info] [Info  - 19:27:46] (144519) Found 22 source files

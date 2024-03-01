@@ -1,0 +1,63 @@
+2024-03-01 11:44:16.062 [info] Name: Black Formatter
+2024-03-01 11:44:16.062 [info] Module: black
+2024-03-01 11:44:16.062 [info] Default formatter is set to null for workspace /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 11:44:16.062 [warning] Black Formatter is NOT set as the default formatter for workspace /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 11:44:16.062 [warning] To set Black Formatter as the default formatter, add the following to your settings.json file:
+2024-03-01 11:44:16.062 [warning] 
+"[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+}
+2024-03-01 11:44:16.062 [info] Python extension loading
+2024-03-01 11:44:16.062 [info] Waiting for interpreter from python extension.
+2024-03-01 11:44:16.062 [info] No interpreter found from setting black-formatter.interpreter
+2024-03-01 11:44:16.062 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 11:44:16.062 [info] Python extension loaded
+2024-03-01 11:44:16.062 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/retos-programacion-2023/Retos: /home/daniel/Documentos/repos/django-tutorial-castellano/env/bin/python
+2024-03-01 11:44:16.062 [info] No interpreter found from setting black-formatter.interpreter
+2024-03-01 11:44:16.062 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 11:44:16.062 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/retos-programacion-2023/Retos: /home/daniel/Documentos/repos/django-tutorial-castellano/env/bin/python
+2024-03-01 11:44:16.062 [info] Server run command: /home/daniel/Documentos/repos/django-tutorial-castellano/env/bin/python /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool/lsp_server.py
+2024-03-01 11:44:16.062 [info] Server: Start requested.
+2024-03-01 11:44:18.682 [info] CWD Server: /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 11:44:18.707 [info] /home/daniel/Documentos/repos/django-tutorial-castellano/env/bin/python -m black --version
+2024-03-01 11:44:18.708 [info] CWD formatter: /home/daniel/Documentos/repos/retos-programacion-2023/Retos
+2024-03-01 11:44:19.427 [info] Version info for formatter running for /home/daniel/Documentos/repos/retos-programacion-2023/Retos:
+black, 24.2.0 (compiled: no)
+Python (CPython) 3.11.2
+
+2024-03-01 11:44:19.429 [info] SUPPORTED black>=22.3.0
+FOUND black==24.2.0
+
+2024-03-01 11:44:19.430 [info] Settings used to run Server:
+[
+    {
+        "cwd": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos",
+        "workspace": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos",
+        "args": [],
+        "path": [],
+        "interpreter": [
+            "/home/daniel/Documentos/repos/django-tutorial-castellano/env/bin/python"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+2024-03-01 11:44:19.432 [info] Global settings:
+{
+    "cwd": "/home/daniel",
+    "workspace": "/home/daniel",
+    "args": [],
+    "path": [],
+    "interpreter": [],
+    "importStrategy": "useBundled",
+    "showNotifications": "off"
+}
+
+2024-03-01 11:44:19.434 [info] sys.path used to run Server:
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/libs
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool
+   /usr/lib/python311.zip
+   /usr/lib/python3.11
+   /usr/lib/python3.11/lib-dynload
+   /home/daniel/Documentos/repos/django-tutorial-castellano/env/lib/python3.11/site-packages

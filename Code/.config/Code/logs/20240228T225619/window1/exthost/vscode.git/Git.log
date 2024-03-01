@@ -1,0 +1,72 @@
+2024-02-28 22:56:26.224 [info] Log level: Info
+2024-02-28 22:56:26.224 [info] Validating found git in: "git"
+2024-02-28 22:56:26.224 [info] Using git "2.39.2" from "git"
+2024-02-28 22:56:26.224 [info] > git rev-parse --show-toplevel [92ms]
+2024-02-28 22:56:26.224 [info] > git rev-parse --git-dir --git-common-dir [309ms]
+2024-02-28 22:56:26.224 [info] Open repository: /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:26.242 [info] > git rev-parse --show-toplevel [39ms]
+2024-02-28 22:56:26.303 [info] > git config --get commit.template [71ms]
+2024-02-28 22:56:26.437 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [83ms]
+2024-02-28 22:56:26.516 [info] > git status -z -uall [16ms]
+2024-02-28 22:56:26.587 [info] > git config --get commit.template [12ms]
+2024-02-28 22:56:26.668 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [58ms]
+2024-02-28 22:56:26.829 [info] > git status -z -uall [24ms]
+2024-02-28 22:56:27.011 [info] > git check-ignore -v -z --stdin [16ms]
+2024-02-28 22:56:35.822 [info] > git show --textconv :main.py [138ms]
+2024-02-28 22:56:35.823 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/ClipTube/main.py [35ms]
+2024-02-28 22:56:35.929 [info] > git cat-file -s baa433b7ef12a69a0fd31dcb8d41aab8f9cd8e83 [82ms]
+2024-02-28 22:58:46.378 [info] Log level: Info
+2024-02-28 22:58:46.379 [info] Validating found git in: "git"
+2024-02-28 22:58:46.379 [info] Using git "2.39.2" from "git"
+2024-02-28 22:58:46.379 [info] > git rev-parse --show-toplevel [72ms]
+2024-02-28 22:58:47.123 [info] > git rev-parse --show-toplevel [679ms]
+2024-02-28 22:58:47.359 [info] > git rev-parse --show-toplevel [13ms]
+2024-02-28 22:58:49.812 [info] > git rev-parse --show-toplevel [5ms]
+2024-02-28 22:59:50.201 [info] Log level: Info
+2024-02-28 22:59:50.201 [info] Validating found git in: "git"
+2024-02-28 22:59:50.201 [info] Using git "2.39.2" from "git"
+2024-02-28 22:59:50.201 [info] > git rev-parse --show-toplevel [13ms]
+2024-02-28 22:59:50.251 [info] > git rev-parse --git-dir --git-common-dir [33ms]
+2024-02-28 22:59:50.282 [info] Open repository: /home/daniel/Documentos/repos/atomoak
+2024-02-28 22:59:50.354 [info] > git config --get commit.template [26ms]
+2024-02-28 22:59:50.387 [info] > git rev-parse --show-toplevel [39ms]
+2024-02-28 22:59:50.445 [info] > git rev-parse --show-toplevel [14ms]
+2024-02-28 22:59:50.446 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [41ms]
+2024-02-28 22:59:50.494 [warning] ENOENT: no such file or directory, open '/home/daniel/Documentos/repos/atomoak/.git/refs/remotes/origin/main'
+2024-02-28 22:59:50.505 [info] > git rev-parse --show-toplevel [33ms]
+2024-02-28 22:59:50.531 [info] > git rev-parse refs/remotes/origin/main [37ms]
+2024-02-28 22:59:50.558 [info] > git rev-parse --show-toplevel [30ms]
+2024-02-28 22:59:50.581 [info] > git status -z -uall [30ms]
+2024-02-28 22:59:50.581 [info] > git rev-parse --show-toplevel [6ms]
+2024-02-28 22:59:50.697 [info] > git config --get commit.template [18ms]
+2024-02-28 22:59:50.698 [info] > git rev-parse --show-toplevel [51ms]
+2024-02-28 22:59:50.734 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-02-28 22:59:50.764 [warning] ENOENT: no such file or directory, open '/home/daniel/Documentos/repos/atomoak/.git/refs/remotes/origin/main'
+2024-02-28 22:59:50.771 [info] > git rev-parse refs/remotes/origin/main [8ms]
+2024-02-28 22:59:50.799 [info] > git status -z -uall [11ms]
+2024-02-28 22:59:51.231 [info] > git check-ignore -v -z --stdin [8ms]
+2024-02-28 22:59:52.296 [info] > git check-ignore -v -z --stdin [8ms]
+2024-02-28 22:59:57.253 [info] > git check-ignore -v -z --stdin [6ms]
+2024-02-28 23:00:00.244 [info] > git show --textconv :TailwindInterfaz/3-cards.html [62ms]
+2024-02-28 23:00:00.263 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/atomoak/TailwindInterfaz/3-cards.html [37ms]
+2024-02-28 23:00:00.303 [info] > git cat-file -s e47328cbbf5f8fac5450bc05bd09326ce5d3af48 [9ms]
+2024-02-28 23:00:12.152 [info] > git show --textconv :TailwindInterfaz/3-cards.html [54ms]
+2024-02-28 23:00:12.155 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/atomoak/TailwindInterfaz/3-cards.html [5ms]
+2024-02-28 23:00:12.185 [info] > git cat-file -s e47328cbbf5f8fac5450bc05bd09326ce5d3af48 [2ms]
+2024-02-28 23:00:17.571 [info] > git check-ignore -v -z --stdin [6ms]
+2024-02-28 23:00:20.050 [info] > git check-ignore -v -z --stdin [7ms]
+2024-02-28 23:00:26.584 [info] > git check-ignore -v -z --stdin [7ms]
+2024-02-28 23:00:27.796 [info] > git show --textconv :Jolastoki/Vanilla/hamburguesa/index.html [32ms]
+2024-02-28 23:00:27.801 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/atomoak/Jolastoki/Vanilla/hamburguesa/index.html [9ms]
+2024-02-28 23:00:27.824 [info] > git cat-file -s 0ba42ff2b4e3ee40e58b066714dc829bab624f49 [4ms]
+2024-02-28 23:00:30.778 [info] > git show --textconv :Jolastoki/Vanilla/hamburguesa/script.js [358ms]
+2024-02-28 23:00:30.779 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/atomoak/Jolastoki/Vanilla/hamburguesa/script.js [342ms]
+2024-02-28 23:00:30.824 [info] > git cat-file -s 4198d83523958ee2ad0c0e4f82e1068cfcce4716 [26ms]
+2024-02-28 23:00:35.312 [info] > git show --textconv :Jolastoki/Vanilla/script.js [23ms]
+2024-02-28 23:00:35.319 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/atomoak/Jolastoki/Vanilla/script.js [9ms]
+2024-02-28 23:00:35.360 [info] > git cat-file -s ee90b26e7d4377eb12943f4b6e675cc171856f2f [9ms]
+2024-02-28 23:02:52.040 [info] > git show --textconv :Jolastoki/Vanilla/hamburguesa/script.js [26ms]
+2024-02-28 23:02:52.043 [info] > git ls-files --stage -- /home/daniel/Documentos/repos/atomoak/Jolastoki/Vanilla/hamburguesa/script.js [5ms]
+2024-02-28 23:02:52.075 [info] > git cat-file -s 4198d83523958ee2ad0c0e4f82e1068cfcce4716 [4ms]
+2024-02-28 23:03:03.598 [info] > git check-ignore -v -z --stdin [8ms]
+2024-02-28 23:03:09.519 [info] > git check-ignore -v -z --stdin [8ms]

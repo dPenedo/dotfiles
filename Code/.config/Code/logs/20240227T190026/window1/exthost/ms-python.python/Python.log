@@ -1,0 +1,25 @@
+2024-02-27 19:00:31.567 [info] Telemetry level is off
+2024-02-27 19:00:31.567 [info] Experiments are disabled, only manually opted experiments are active.
+2024-02-27 19:00:31.567 [info] Default formatter is set to esbenp.prettier-vscode for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-27 19:00:31.567 [info] VS Code was launched from an activated environment: 'env', selecting it as the interpreter for workspace.
+2024-02-27 19:00:31.567 [info] Test server listening.
+2024-02-27 19:00:32.276 [warning] Retry failed, storage update failed for key PYTHON_GLOBAL_STORAGE_KEYS
+2024-02-27 19:00:32.276 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2024-02-27 19:00:32.276 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2024-02-27 19:00:32.276 [warning] Retry failed, storage update failed for key PYTHON_WORKSPACE_STORAGE_KEYS
+2024-02-27 19:00:32.372 [info] > ./env/bin/python -I ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/interpreterInfo.py
+2024-02-27 19:00:32.679 [info] Python interpreter path: ./env/bin/python
+2024-02-27 19:00:32.956 [warning] Retry failed, storage update failed for key PYTHON_ENV_INFO_CACHE
+2024-02-27 19:00:32.957 [warning] Retry failed, storage update failed for key PYTHON_ENV_INFO_CACHE
+2024-02-27 19:00:32.957 [warning] Retry failed, storage update failed for key PYTHON_ENV_INFO_CACHE
+2024-02-27 19:00:32.957 [warning] Retry failed, storage update failed for key PYTHON_ENV_INFO_CACHE
+2024-02-27 19:00:36.713 [info] Starting Pylance language server.
+2024-02-27 19:01:49.783 [info] Send text to terminal: source /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/env/bin/activate
+2024-02-27 19:16:18.990 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/lecture3/settings.py
+2024-02-27 19:18:00.751 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/lecture3/urls.py
+2024-02-27 19:18:54.349 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/lecture3/urls.py
+2024-02-27 19:19:27.841 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-27 19:26:13.077 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-27 19:28:34.214 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/newyear/urls.py
+2024-02-27 19:30:36.030 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/newyear/views.py
+2024-02-27 19:32:49.689 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/newyear/views.py

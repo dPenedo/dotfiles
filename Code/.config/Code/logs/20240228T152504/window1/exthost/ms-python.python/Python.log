@@ -1,0 +1,44 @@
+2024-02-28 15:25:11.038 [info] Telemetry level is off
+2024-02-28 15:25:11.040 [info] Experiments are disabled, only manually opted experiments are active.
+2024-02-28 15:25:11.345 [info] Default formatter is set to esbenp.prettier-vscode for workspace /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django
+2024-02-28 15:25:11.460 [info] VS Code was launched from an activated environment: 'env', selecting it as the interpreter for workspace.
+2024-02-28 15:25:11.499 [info] Test server listening.
+2024-02-28 15:25:12.506 [info] > ./env/bin/python -I ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/interpreterInfo.py
+2024-02-28 15:25:12.910 [info] Python interpreter path: ./env/bin/python
+2024-02-28 15:25:16.094 [warning] Retry failed, storage update failed for key PYTHON_ENV_INFO_CACHE
+2024-02-28 15:25:22.366 [info] Starting Pylance language server.
+2024-02-28 15:25:58.193 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/lecture3/settings.py
+2024-02-28 15:26:18.199 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/lecture3/urls.py
+2024-02-28 15:34:01.596 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/urls.py
+2024-02-28 15:34:06.529 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/hello/views.py
+2024-02-28 15:34:25.344 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 15:36:53.930 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 15:37:33.665 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/urls.py
+2024-02-28 15:40:00.741 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/urls.py
+2024-02-28 15:41:13.686 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-28 15:44:00.357 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/urls.py
+2024-02-28 15:58:06.560 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/urls.py
+2024-02-28 15:58:12.868 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/urls.py
+2024-02-28 16:08:30.830 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:08:51.228 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:10:45.077 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:11:11.748 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:11:20.565 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:21:35.057 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:22:02.124 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:30:32.493 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:31:16.815 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:33:40.416 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:34:01.584 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:35:49.268 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-28 16:36:47.703 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:37:11.200 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:38:18.668 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-28 16:38:41.770 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-28 16:39:09.033 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-28 16:39:18.159 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json
+2024-02-28 16:42:21.984 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:44:40.050 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:45:32.381 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 16:46:31.735 [info] Discover tests for workspace name: 3_django - uri: /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/3_django/tasks/views.py
+2024-02-28 17:52:47.016 [info] Discover tests for workspace name: undefined - uri: /home/daniel/.config/Code/User/settings.json

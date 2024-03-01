@@ -1,0 +1,131 @@
+2024-02-28 22:56:26.369 [info] Name: Black Formatter
+2024-02-28 22:56:26.369 [info] Module: black
+2024-02-28 22:56:26.369 [info] Default formatter is set to esbenp.prettier-vscode for workspace /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:26.369 [warning] Black Formatter is NOT set as the default formatter for workspace /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:26.369 [warning] To set Black Formatter as the default formatter, add the following to your settings.json file:
+2024-02-28 22:56:26.369 [warning] 
+"[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+}
+2024-02-28 22:56:26.369 [info] Python extension loading
+2024-02-28 22:56:26.370 [info] Waiting for interpreter from python extension.
+2024-02-28 22:56:26.370 [info] No interpreter found from setting black-formatter.interpreter
+2024-02-28 22:56:26.370 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:26.429 [info] No interpreter found from setting black-formatter.interpreter
+2024-02-28 22:56:26.429 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:26.434 [info] Python extension loaded
+2024-02-28 22:56:27.156 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/ClipTube: /home/daniel/Documentos/repos/ClipTube/env/bin/python
+2024-02-28 22:56:27.157 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/ClipTube: /home/daniel/Documentos/repos/ClipTube/env/bin/python
+2024-02-28 22:56:27.159 [info] No interpreter found from setting black-formatter.interpreter
+2024-02-28 22:56:27.159 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:27.166 [info] No interpreter found from setting black-formatter.interpreter
+2024-02-28 22:56:27.166 [info] Getting interpreter from ms-python.python extension for workspace /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:27.177 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/ClipTube: /home/daniel/Documentos/repos/ClipTube/env/bin/python
+2024-02-28 22:56:27.177 [info] Interpreter from ms-python.python extension for /home/daniel/Documentos/repos/ClipTube: /home/daniel/Documentos/repos/ClipTube/env/bin/python
+2024-02-28 22:56:27.237 [info] Server run command: /home/daniel/Documentos/repos/ClipTube/env/bin/python /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool/lsp_server.py
+2024-02-28 22:56:27.238 [info] Server: Start requested.
+2024-02-28 22:56:27.240 [info] Server run command: /home/daniel/Documentos/repos/ClipTube/env/bin/python /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool/lsp_server.py
+2024-02-28 22:56:27.240 [info] Server: Start requested.
+2024-02-28 22:56:30.718 [info] CWD Server: /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:30.728 [info] CWD Server: /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:30.730 [info] /home/daniel/Documentos/repos/ClipTube/env/bin/python -m black --version
+2024-02-28 22:56:30.730 [info] CWD formatter: /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:30.737 [info] /home/daniel/Documentos/repos/ClipTube/env/bin/python -m black --version
+2024-02-28 22:56:30.737 [info] CWD formatter: /home/daniel/Documentos/repos/ClipTube
+2024-02-28 22:56:31.247 [info] Version info for formatter running for /home/daniel/Documentos/repos/ClipTube:
+black, 24.2.0 (compiled: no)
+Python (CPython) 3.11.2
+
+2024-02-28 22:56:31.248 [info] SUPPORTED black>=22.3.0
+FOUND black==24.2.0
+
+2024-02-28 22:56:31.249 [info] Settings used to run Server:
+[
+    {
+        "cwd": "/home/daniel/Documentos/repos/ClipTube",
+        "workspace": "file:///home/daniel/Documentos/repos/ClipTube",
+        "args": [],
+        "path": [],
+        "interpreter": [
+            "/home/daniel/Documentos/repos/ClipTube/env/bin/python"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+2024-02-28 22:56:31.249 [info] Version info for formatter running for /home/daniel/Documentos/repos/ClipTube:
+black, 24.2.0 (compiled: no)
+Python (CPython) 3.11.2
+
+2024-02-28 22:56:31.250 [info] Global settings:
+{
+    "cwd": "/home/daniel/Documentos/repos/ClipTube",
+    "workspace": "/home/daniel/Documentos/repos/ClipTube",
+    "args": [],
+    "path": [],
+    "interpreter": [],
+    "importStrategy": "useBundled",
+    "showNotifications": "off"
+}
+
+2024-02-28 22:56:31.250 [info] SUPPORTED black>=22.3.0
+FOUND black==24.2.0
+
+2024-02-28 22:56:31.251 [info] sys.path used to run Server:
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/libs
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool
+   /usr/lib/python311.zip
+   /usr/lib/python3.11
+   /usr/lib/python3.11/lib-dynload
+   /home/daniel/Documentos/repos/ClipTube/env/lib/python3.11/site-packages
+2024-02-28 22:56:31.251 [info] Settings used to run Server:
+[
+    {
+        "cwd": "/home/daniel/Documentos/repos/ClipTube",
+        "workspace": "file:///home/daniel/Documentos/repos/ClipTube",
+        "args": [],
+        "path": [],
+        "interpreter": [
+            "/home/daniel/Documentos/repos/ClipTube/env/bin/python"
+        ],
+        "importStrategy": "useBundled",
+        "showNotifications": "off"
+    }
+]
+
+2024-02-28 22:56:31.251 [info] Global settings:
+{
+    "cwd": "/home/daniel/Documentos/repos/ClipTube",
+    "workspace": "/home/daniel/Documentos/repos/ClipTube",
+    "args": [],
+    "path": [],
+    "interpreter": [],
+    "importStrategy": "useBundled",
+    "showNotifications": "off"
+}
+
+2024-02-28 22:56:31.251 [info] sys.path used to run Server:
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/libs
+   /home/daniel/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/tool
+   /usr/lib/python311.zip
+   /usr/lib/python3.11
+   /usr/lib/python3.11/lib-dynload
+   /home/daniel/Documentos/repos/ClipTube/env/lib/python3.11/site-packages
+2024-02-28 22:56:34.522 [info] [Trace - 22:56:34] Sending notification 'textDocument/didOpen'.
+2024-02-28 22:56:34.522 [info] [Trace - 22:56:34] Sending notification 'textDocument/didOpen'.
+2024-02-28 22:57:05.593 [info] [Trace - 22:57:05] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:05.593 [info] [Trace - 22:57:05] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:09.038 [info] [Trace - 22:57:09] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:09.039 [info] [Trace - 22:57:09] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:09.151 [info] [Trace - 22:57:09] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:09.151 [info] [Trace - 22:57:09] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:10.945 [info] [Trace - 22:57:10] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:10.945 [info] [Trace - 22:57:10] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:11.402 [info] [Trace - 22:57:11] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:11.402 [info] [Trace - 22:57:11] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:17.505 [info] [Trace - 22:57:17] Sending notification 'textDocument/didChange'.
+2024-02-28 22:57:17.505 [info] [Trace - 22:57:17] Sending notification 'textDocument/didChange'.
+2024-02-28 22:58:38.166 [info] [Trace - 22:58:38] Sending request 'shutdown - (1)'.
+2024-02-28 22:58:38.209 [info] [Trace - 22:58:38] Received response 'shutdown - (1)' in 66ms.
+2024-02-28 22:58:38.209 [info] [Trace - 22:58:38] Sending notification 'exit'.

@@ -1,0 +1,8 @@
+file:///home/daniel/Documentos/repos/atomoak/Jolastoki/Vanilla/script.js {"mtime":1707406722616,"ctime":1707406722616,"size":127,"etag":"3bscorsq943","orphaned":false,"typeId":""}
+// Pruebas en JavaScript
+
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+
+console.log(text3);
