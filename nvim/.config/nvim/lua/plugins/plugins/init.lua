@@ -12,6 +12,14 @@ return {
     priority = 1001,
   },
   {
+  "folke/zen-mode.nvim",
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+},
+  {
     "folke/persistence.nvim",
     event = "BufReadPre", -- this will only start session saving when an actual file was opened
     opts = {
@@ -41,6 +49,12 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+  {
+  "SR-MyStar/yazi.nvim",
+  opts = {
+    -- ...
+  },
   },
   -- {
   --   'lmburns/lf.nvim',

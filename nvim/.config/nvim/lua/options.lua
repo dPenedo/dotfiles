@@ -31,6 +31,13 @@ vim.o.undofile = true
 -- Mostrar siempre el indicador de pestañas/tabs
 vim.o.showtabline = 2
 
+-- Ancho del texto antes de hace wrap
+-- vim.opt.breakindent = true
+-- vim.opt.linebreak = true
+-- vim.opt.textwidth = 100
+
+
+
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true

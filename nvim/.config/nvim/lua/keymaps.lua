@@ -42,6 +42,8 @@ map('n', ',,', ',', { desc = 'coma para f' })
 map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 
+-- Zen mode
+map('n', '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
 
 
 -- Guardar rápidamente el búfer actual o todos los búferes
@@ -82,6 +84,8 @@ map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir te
 map('n', '<leader>E', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 -- map('n', '<A-<>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
+-- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
+map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 
 -- Mapeos para el terminal
 map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
