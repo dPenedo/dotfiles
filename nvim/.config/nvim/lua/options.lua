@@ -2,7 +2,9 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
-vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'tokyonight-moon'
+-- vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'melange'
 -- Set highlight on search
 vim.o.hlsearch = true
 
