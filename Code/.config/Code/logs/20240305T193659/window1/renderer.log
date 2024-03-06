@@ -1,0 +1,48 @@
+2024-03-05 19:37:03.428 [info] Started local extension host with pid 209393.
+2024-03-05 19:37:11.998 [info] [perf] Render performance baseline is 161ms
+2024-03-05 19:38:02.850 [error] Error while searching for themes: Canceled
+2024-03-05 19:38:10.878 [error] Error while searching for themes: Canceled
+2024-03-05 19:40:06.515 [error] Cancelled: Canceled
+    at re.B (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:32466)
+    at async re.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:29361)
+    at async re.z (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:30301)
+    at async re.getExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:26345)
+    at async oe.getExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:12374)
+    at async ge.Ec (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:24452)
+    at async ge.Nc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:27116)
+    at async ge.lc (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:14478)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:12777
+2024-03-05 19:40:30.822 [error] Error while searching for themes: Canceled
+2024-03-05 19:40:31.174 [error] Error while searching for themes: Canceled
+2024-03-05 19:40:31.705 [error] Error while searching for themes: Canceled
+2024-03-05 19:40:55.924 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:00.534 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:00.973 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:01.670 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:10.443 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:11.092 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:29.242 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:30.331 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:30.849 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:31.361 [error] Error while searching for themes: Canceled
+2024-03-05 19:41:59.867 [error] Error while searching for themes: Canceled
+2024-03-05 19:42:05.580 [error] Error while searching for themes: Canceled
+2024-03-05 19:43:03.761 [error] Error while searching for themes: Canceled
+2024-03-05 19:43:05.895 [error] Error while searching for themes: Canceled
+2024-03-05 19:43:12.024 [error] Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404: Error: Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-03-05 19:43:13.410 [error] Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404: Error: Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-03-05 19:43:20.563 [error] Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404: Error: Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-03-05 19:43:27.615 [error] Error while searching for themes: Canceled
+2024-03-05 19:43:27.776 [error] Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404: Error: Unable to load https://beardedbear.vscode-unpkg.net/BeardedBear/beardedtheme/9.1.4/extension/themes/bearded-theme-themanopia.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-03-05 19:45:21.894 [error] Error while searching for themes: Canceled
+2024-03-05 19:45:52.723 [error] Unable to load https://ciiqr.vscode-unpkg.net/ciiqr/theme-kaio/1.5.0/extension/themes/Kaio-color-theme.json: Server returned 404: Error: Unable to load https://ciiqr.vscode-unpkg.net/ciiqr/theme-kaio/1.5.0/extension/themes/Kaio-color-theme.json: Server returned 404
+    at ce.N (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2020:27561)
+2024-03-05 19:46:02.106 [error] Error while searching for themes: Canceled
+2024-03-05 19:47:33.661 [error] Error while searching for themes: Canceled
+2024-03-05 19:47:38.976 [error] Error while searching for themes: Canceled
+2024-03-05 19:47:43.726 [error] Error while searching for themes: Canceled
+2024-03-05 19:47:48.353 [error] Error while searching for themes: Canceled
