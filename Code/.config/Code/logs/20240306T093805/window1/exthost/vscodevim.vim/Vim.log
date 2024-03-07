@@ -170,3 +170,297 @@
 2024-03-06 12:49:49.175 [info] /workbench-colors closed
 2024-03-06 12:49:55.171 [info] Configuration changed
 2024-03-06 12:50:07.993 [info] Configuration changed
+2024-03-06 12:52:37.849 [info] /keybindings closed
+2024-03-06 12:52:46.338 [info] /settings/user closed
+2024-03-06 12:52:48.333 [info] /settings/resourceLanguage closed
+2024-03-06 12:52:48.337 [info] /ignoredSettings closed
+2024-03-06 12:52:48.564 [info] /launch closed
+2024-03-06 12:52:48.579 [info] /token-styling closed
+2024-03-06 12:52:48.583 [info] /textmate-colors closed
+2024-03-06 12:52:49.761 [info] /workbench-colors closed
+2024-03-06 12:55:37.963 [info] /keybindings closed
+2024-03-06 12:55:46.888 [info] /settings/user closed
+2024-03-06 12:55:48.900 [info] /settings/resourceLanguage closed
+2024-03-06 12:55:48.905 [info] /ignoredSettings closed
+2024-03-06 12:55:49.107 [info] /launch closed
+2024-03-06 12:55:49.111 [info] /token-styling closed
+2024-03-06 12:55:49.115 [info] /textmate-colors closed
+2024-03-06 12:55:50.632 [info] /workbench-colors closed
+2024-03-06 12:58:38.087 [info] /keybindings closed
+2024-03-06 12:58:47.394 [info] /settings/user closed
+2024-03-06 12:58:49.400 [info] /settings/resourceLanguage closed
+2024-03-06 12:58:49.405 [info] /ignoredSettings closed
+2024-03-06 12:58:49.575 [info] /launch closed
+2024-03-06 12:58:49.579 [info] /token-styling closed
+2024-03-06 12:58:49.583 [info] /textmate-colors closed
+2024-03-06 12:58:51.193 [info] /workbench-colors closed
+2024-03-06 13:01:38.206 [info] /keybindings closed
+2024-03-06 13:01:47.908 [info] /settings/user closed
+2024-03-06 13:01:49.932 [info] /settings/resourceLanguage closed
+2024-03-06 13:01:49.937 [info] /ignoredSettings closed
+2024-03-06 13:01:50.092 [info] /launch closed
+2024-03-06 13:01:50.096 [info] /token-styling closed
+2024-03-06 13:01:50.101 [info] /textmate-colors closed
+2024-03-06 13:01:51.674 [info] /workbench-colors closed
+2024-03-06 13:03:14.319 [info] /home/daniel/.config/Code/User/keybindings.json closed
+2024-03-06 13:03:15.069 [info] /home/daniel/.config/Code/User/settings.json closed
+2024-03-06 13:03:15.131 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 13:03:29.803 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 13:03:35.443 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/hello.html
+2024-03-06 13:03:38.822 [info] Executing :q
+2024-03-06 13:03:39.095 [info] /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/hello.html closed
+2024-03-06 13:03:39.099 [warning] getLineLength() called with out-of-bounds line 12
+2024-03-06 13:03:39.099 [warning] getLineLength() called with out-of-bounds line 12
+2024-03-06 13:03:39.114 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 13:03:45.305 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 13:03:46.249 [info] Executing :a
+2024-03-06 13:03:48.664 [info] Executing :q
+2024-03-06 13:03:48.746 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 13:04:38.329 [info] /keybindings closed
+2024-03-06 13:04:48.446 [info] /settings/user closed
+2024-03-06 13:04:50.487 [info] /settings/resourceLanguage closed
+2024-03-06 13:04:50.502 [info] /ignoredSettings closed
+2024-03-06 13:04:50.675 [info] /launch closed
+2024-03-06 13:04:50.678 [info] /token-styling closed
+2024-03-06 13:04:50.680 [info] /textmate-colors closed
+2024-03-06 13:04:52.273 [info] /workbench-colors closed
+2024-03-06 13:04:53.623 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:04:58.767 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:00.653 [info] Executing :q
+2024-03-06 13:05:00.669 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:02.549 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:07.141 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:12.630 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:15.207 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:21.224 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:24.731 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 13:05:28.599 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 16:00:09.226 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 16:00:54.408 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 16:02:00.541 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 16:02:03.870 [warning] Ignoring slipped selection: [10, 8; 10, 8]
+2024-03-06 16:02:32.713 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 16:02:33.607 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 16:06:12.586 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 16:32:31.957 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 16:32:59.281 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 17:40:33.946 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 17:41:02.611 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 17:49:18.998 [warning] invalid cursor position. [[23, 23] | [23, 23]].
+2024-03-06 17:49:18.998 [warning] invalid cursor position. [[23, 23] | [23, 23]].
+2024-03-06 17:49:31.692 [warning] Ignoring slipped selection: [1, 19; 1, 19]
+2024-03-06 17:49:47.636 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 17:49:51.746 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 17:50:00.646 [info] Executing :31
+2024-03-06 17:50:30.308 [warning] Ignoring slipped selection: [27, 4; 27, 4]
+2024-03-06 17:50:42.566 [warning] Ignoring slipped selection: [17, 19; 17, 19]
+2024-03-06 17:51:02.042 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 17:51:12.094 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 17:53:21.686 [warning] Ignoring slipped selection: [28, 12; 28, 12]
+2024-03-06 17:56:22.151 [warning] Ignoring slipped selection: [25, 8; 25, 8]
+2024-03-06 17:59:16.420 [warning] Ignoring slipped selection: [32, 13; 32, 13]
+2024-03-06 17:59:17.171 [warning] Ignoring slipped selection: [32, 12; 32, 12]
+2024-03-06 17:59:29.988 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 17:59:33.213 [warning] Ignoring slipped selection: [18, 17; 18, 17]
+2024-03-06 17:59:34.107 [warning] Ignoring slipped selection: [18, 16; 18, 16]
+2024-03-06 17:59:35.530 [warning] Ignoring slipped selection: [18, 17; 18, 17]
+2024-03-06 17:59:36.919 [warning] Ignoring slipped selection: [18, 16; 18, 16]
+2024-03-06 17:59:37.389 [warning] Ignoring slipped selection: [18, 17; 18, 17]
+2024-03-06 17:59:44.866 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 17:59:50.992 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 17:59:52.514 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:00:03.799 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:00:05.053 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:00:06.786 [warning] Ignoring slipped selection: [0, 0; 0, 0]
+2024-03-06 18:00:10.601 [warning] Ignoring slipped selection: [39, 0; 39, 0]
+2024-03-06 18:00:13.117 [warning] Ignoring slipped selection: [39, 0; 39, 0]
+2024-03-06 18:00:13.338 [warning] Ignoring slipped selection: [0, 0; 0, 0]
+2024-03-06 18:00:15.884 [warning] Ignoring slipped selection: [39, 0; 39, 0]
+2024-03-06 18:00:24.800 [warning] Ignoring slipped selection: [39, 72; 39, 72]
+2024-03-06 18:00:50.884 [warning] Ignoring slipped selection: [40, 7; 40, 7]
+2024-03-06 18:00:52.631 [warning] Ignoring slipped selection: [40, 11; 40, 11]
+2024-03-06 18:03:30.309 [warning] Ignoring slipped selection: [40, 18; 40, 18]
+2024-03-06 18:03:48.019 [warning] Ignoring slipped selection: [7, 20; 7, 20]
+2024-03-06 18:03:50.563 [warning] Ignoring slipped selection: [7, 21; 7, 21]
+2024-03-06 18:03:50.933 [warning] Ignoring slipped selection: [7, 22; 7, 22]
+2024-03-06 18:03:51.920 [warning] Ignoring slipped selection: [7, 21; 7, 21]
+2024-03-06 18:05:01.862 [warning] Ignoring slipped selection: [10, 61; 10, 61]
+2024-03-06 18:05:16.495 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:05:33.730 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:06:09.632 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:06:14.566 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:07:03.068 [warning] Ignoring slipped selection: [44, 15; 44, 15]
+2024-03-06 18:10:50.484 [warning] Ignoring slipped selection: [10, 21; 10, 21]
+2024-03-06 18:11:07.404 [warning] Ignoring slipped selection: [10, 35; 10, 35]
+2024-03-06 18:12:08.730 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:12:10.131 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:12:56.612 [warning] Ignoring slipped selection: [14, 12; 14, 12]
+2024-03-06 18:12:58.241 [warning] Ignoring slipped selection: [14, 22; 14, 22]
+2024-03-06 18:13:10.790 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:13:11.430 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:16:45.872 [warning] Ignoring slipped selection: [47, 27; 47, 27]
+2024-03-06 18:20:17.730 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:20:19.585 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:20:40.854 [warning] Ignoring slipped selection: [7, 18; 7, 18]
+2024-03-06 18:24:34.533 [warning] Ignoring slipped selection: [46, 0; 46, 0]
+2024-03-06 18:25:03.812 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:25:03.838 [warning] Ignoring slipped selection: [9, 5; 9, 5]
+2024-03-06 18:25:34.827 [warning] Ignoring slipped selection: [18, 16; 18, 16]
+2024-03-06 18:25:50.401 [warning] Ignoring slipped selection: [19, 16; 19, 16]
+2024-03-06 18:25:58.119 [warning] Ignoring slipped selection: [19, 20; 19, 20]
+2024-03-06 18:25:58.144 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:26:01.241 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:26:04.342 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 18:26:16.425 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:26:16.452 [warning] Ignoring slipped selection: [12, 0; 12, 0]
+2024-03-06 18:26:50.638 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:26:51.984 [info] Executing :q
+2024-03-06 18:26:52.005 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:27:37.053 [warning] Ignoring slipped selection: [8, 44; 8, 44]
+2024-03-06 18:28:09.369 [warning] Ignoring slipped selection: [13, 24; 13, 24]
+2024-03-06 18:28:50.948 [warning] Ignoring slipped selection: [17, 22; 17, 22]
+2024-03-06 18:30:40.013 [warning] Ignoring slipped selection: [17, 32; 17, 32]
+2024-03-06 18:30:51.021 [warning] Ignoring slipped selection: [17, 43; 17, 43]
+2024-03-06 18:31:24.112 [warning] Ignoring slipped selection: [21, 34; 21, 34]
+2024-03-06 18:31:26.169 [warning] Ignoring slipped selection: [21, 44; 21, 44]
+2024-03-06 18:31:39.502 [warning] Ignoring slipped selection: [17, 8; 17, 8]
+2024-03-06 18:32:32.067 [warning] Ignoring slipped selection: [49, 8; 49, 8]
+2024-03-06 18:35:46.969 [warning] Ignoring slipped selection: [57, 18; 57, 18]
+2024-03-06 18:37:47.510 [warning] Ignoring slipped selection: [57, 17; 57, 17]
+2024-03-06 18:38:18.691 [warning] Ignoring slipped selection: [58, 12; 58, 12]
+2024-03-06 18:39:07.498 [warning] Ignoring slipped selection: [39, 8; 39, 8]
+2024-03-06 18:39:07.501 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:39:49.943 [warning] Ignoring slipped selection: [8, 28; 8, 28]
+2024-03-06 18:39:52.638 [warning] Ignoring slipped selection: [8, 30; 8, 30]
+2024-03-06 18:39:58.296 [warning] Ignoring slipped selection: [8, 53; 8, 53]
+2024-03-06 18:41:17.511 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:41:46.921 [warning] Ignoring slipped selection: [33, 26; 33, 26]
+2024-03-06 18:41:46.922 [warning] Ignoring slipped selection: [33, 26; 33, 26][53, 26; 53, 26]
+2024-03-06 18:42:00.100 [warning] Ignoring slipped selection: [34, 22; 34, 22][54, 22; 54, 22]
+2024-03-06 18:42:10.280 [warning] Ignoring slipped selection: [35, 22; 35, 22][55, 22; 55, 22]
+2024-03-06 18:42:24.380 [warning] Ignoring slipped selection: [36, 20; 36, 20][56, 20; 56, 20]
+2024-03-06 18:49:40.298 [info] Executing :wq
+2024-03-06 18:49:40.404 [warning] getLineLength() called with out-of-bounds line 38
+2024-03-06 18:49:40.404 [warning] invalid cursor position. [[38, 27] | [38, 27]].
+2024-03-06 18:49:40.410 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 18:49:42.695 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:49:43.830 [info] Executing :q
+2024-03-06 18:49:43.853 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 18:49:44.024 [info] /home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js closed
+2024-03-06 18:49:44.024 [warning] getLineLength() called with out-of-bounds line 33
+2024-03-06 18:49:44.024 [warning] invalid cursor position. [[33, 26] | [33, 26]].
+2024-03-06 18:49:49.223 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 18:49:49.256 [warning] Ignoring slipped selection: [19, 20; 19, 20]
+2024-03-06 18:50:10.924 [warning] Ignoring slipped selection: [11, 11; 11, 11]
+2024-03-06 18:50:12.471 [warning] Ignoring slipped selection: [13, 0; 13, 0]
+2024-03-06 18:50:24.265 [warning] Ignoring slipped selection: [13, 12; 13, 12]
+2024-03-06 18:51:19.676 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/tasks.js
+2024-03-06 18:51:24.397 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.js
+2024-03-06 18:54:07.992 [warning] Ignoring slipped selection: [0, 0; 0, 0]
+2024-03-06 18:54:07.997 [warning] Ignoring slipped selection: [15, 0; 15, 0]
+2024-03-06 18:54:12.337 [warning] Ignoring slipped selection: [12, 0; 12, 0]
+2024-03-06 18:54:41.090 [warning] Ignoring slipped selection: [16, 15; 16, 15]
+2024-03-06 18:55:16.830 [warning] Ignoring slipped selection: [5, 11; 5, 11]
+2024-03-06 18:56:36.879 [warning] Ignoring slipped selection: [18, 28; 18, 28]
+2024-03-06 18:57:20.018 [warning] Ignoring slipped selection: [1, 18; 1, 18]
+2024-03-06 18:57:28.255 [warning] Ignoring slipped selection: [8, 18; 8, 18]
+2024-03-06 18:57:46.367 [warning] Ignoring slipped selection: [51, 21; 51, 21]
+2024-03-06 18:57:50.664 [warning] Ignoring slipped selection: [51, 32; 51, 32]
+2024-03-06 18:58:08.177 [warning] Ignoring slipped selection: [52, 17; 52, 17]
+2024-03-06 18:58:12.036 [warning] Ignoring slipped selection: [52, 25; 52, 25]
+2024-03-06 18:58:23.072 [warning] Ignoring slipped selection: [53, 19; 53, 19]
+2024-03-06 18:58:24.819 [warning] Ignoring slipped selection: [53, 29; 53, 29]
+2024-03-06 18:58:34.564 [warning] Ignoring slipped selection: [58, 36; 58, 36]
+2024-03-06 18:58:36.957 [warning] Ignoring slipped selection: [58, 51; 58, 51]
+2024-03-06 18:58:38.158 [warning] Ignoring slipped selection: [58, 67; 58, 67]
+2024-03-06 18:58:44.578 [warning] Ignoring slipped selection: [58, 52; 58, 52]
+2024-03-06 18:59:21.576 [warning] Ignoring slipped selection: [19, 22; 19, 22]
+2024-03-06 19:00:31.969 [warning] Ignoring slipped selection: [55, 52; 55, 52]
+2024-03-06 19:00:42.275 [warning] Ignoring slipped selection: [56, 42; 56, 42]
+2024-03-06 19:00:46.369 [warning] Ignoring slipped selection: [57, 42; 57, 42]
+2024-03-06 19:00:49.018 [warning] Ignoring slipped selection: [58, 38; 58, 38]
+2024-03-06 19:02:39.373 [warning] Ignoring slipped selection: [50, 12; 50, 12]
+2024-03-06 19:03:37.469 [warning] Ignoring slipped selection: [58, 31; 58, 31]
+2024-03-06 19:03:48.716 [warning] Ignoring slipped selection: [58, 43; 58, 43]
+2024-03-06 19:03:58.195 [warning] Ignoring slipped selection: [51, 50; 51, 50]
+2024-03-06 19:04:00.349 [warning] Ignoring slipped selection: [51, 63; 51, 63]
+2024-03-06 19:04:18.787 [warning] Ignoring slipped selection: [53, 54; 53, 54]
+2024-03-06 19:04:33.781 [warning] Ignoring slipped selection: [68, 21; 68, 21]
+2024-03-06 19:05:39.223 [warning] Ignoring slipped selection: [33, 55; 33, 55]
+2024-03-06 19:08:16.815 [info] Active editor: file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript/counter.html
+2024-03-06 19:08:16.853 [warning] Ignoring slipped selection: [26, 20; 26, 20]
+2024-03-06 19:09:00.038 [warning] Ignoring slipped selection: [16, 30; 16, 30]
+2024-03-06 19:09:15.098 [warning] Ignoring slipped selection: [16, 38; 16, 38]
+2024-03-06 19:10:06.955 [warning] Ignoring slipped selection: [17, 19; 17, 19]
+2024-03-06 19:10:08.133 [warning] Ignoring slipped selection: [17, 26; 17, 26]
+2024-03-06 19:10:55.561 [warning] Ignoring slipped selection: [19, 14; 19, 14]
+2024-03-06 19:11:02.805 [warning] Ignoring slipped selection: [20, 30; 20, 30]
+2024-03-06 19:11:12.260 [warning] Ignoring slipped selection: [20, 37; 20, 37]
+2024-03-06 19:11:17.735 [warning] Ignoring slipped selection: [21, 19; 21, 19]
+2024-03-06 19:11:18.962 [warning] Ignoring slipped selection: [21, 26; 21, 26]
+2024-03-06 19:11:19.927 [warning] Ignoring slipped selection: [22, 16; 22, 16]
+2024-03-06 19:11:31.341 [warning] Ignoring slipped selection: [23, 26; 23, 26]
+2024-03-06 19:11:38.614 [warning] Ignoring slipped selection: [23, 35; 23, 35]
+2024-03-06 19:11:54.746 [warning] Ignoring slipped selection: [24, 25; 24, 25]
+2024-03-06 19:12:06.370 [warning] Ignoring slipped selection: [25, 25; 25, 25]
+2024-03-06 19:12:26.517 [warning] Ignoring slipped selection: [26, 23; 26, 23]
+2024-03-06 19:12:29.366 [warning] Ignoring slipped selection: [26, 28; 26, 28]
+2024-03-06 19:15:55.415 [warning] Ignoring slipped selection: [22, 25; 22, 25]
+2024-03-06 19:16:02.040 [warning] Ignoring slipped selection: [16, 37; 16, 37]
+2024-03-06 19:17:29.655 [warning] Ignoring slipped selection: [17, 28; 17, 28]
+2024-03-06 19:17:56.213 [warning] Ignoring slipped selection: [23, 27; 23, 27]
+2024-03-06 19:17:57.381 [warning] Ignoring slipped selection: [23, 26; 23, 26]
+2024-03-06 19:18:46.415 [warning] Ignoring slipped selection: [23, 32; 23, 32]
+2024-03-06 19:19:22.349 [warning] Ignoring slipped selection: [15, 21; 15, 21]
+2024-03-06 19:19:59.683 [warning] Ignoring slipped selection: [27, 19; 27, 19]
+2024-03-06 19:20:12.797 [warning] Ignoring slipped selection: [27, 21; 27, 21]
+2024-03-06 19:20:15.729 [warning] Ignoring slipped selection: [27, 19; 27, 19]
+2024-03-06 19:20:37.227 [warning] Ignoring slipped selection: [28, 27; 28, 27]
+2024-03-06 19:20:48.917 [warning] Ignoring slipped selection: [29, 21; 29, 21]
+2024-03-06 19:21:10.707 [warning] Ignoring slipped selection: [30, 20; 30, 20]
+2024-03-06 19:23:02.286 [warning] Ignoring slipped selection: [26, 25; 26, 25]
+2024-03-06 19:23:07.699 [warning] Ignoring slipped selection: [26, 28; 26, 28]
+2024-03-06 19:23:48.513 [warning] Ignoring slipped selection: [38, 9; 38, 9]
+2024-03-06 19:23:53.488 [warning] Ignoring slipped selection: [38, 13; 38, 13]
+2024-03-06 19:25:21.099 [warning] Ignoring slipped selection: [39, 17; 39, 17]
+2024-03-06 19:25:31.103 [warning] Ignoring slipped selection: [34, 21; 34, 21]
+2024-03-06 19:25:33.509 [warning] Ignoring slipped selection: [34, 25; 34, 25]
+2024-03-06 19:25:34.607 [warning] Ignoring slipped selection: [35, 16; 35, 16]
+2024-03-06 19:25:39.331 [warning] Ignoring slipped selection: [36, 21; 36, 21]
+2024-03-06 19:26:14.639 [warning] Ignoring slipped selection: [36, 21; 36, 21]
+2024-03-06 19:26:16.482 [warning] Ignoring slipped selection: [36, 23; 36, 23]
+2024-03-06 19:27:06.601 [warning] Ignoring slipped selection: [49, 16; 49, 16]
+2024-03-06 19:27:37.685 [warning] Ignoring slipped selection: [40, 25; 40, 25]
+2024-03-06 19:27:40.434 [warning] Ignoring slipped selection: [41, 27; 41, 27]
+2024-03-06 19:28:28.510 [warning] Ignoring slipped selection: [48, 8; 48, 8]
+2024-03-06 19:29:04.457 [warning] Ignoring slipped selection: [21, 20; 21, 20]
+2024-03-06 19:29:05.495 [warning] Ignoring slipped selection: [21, 24; 21, 24]
+2024-03-06 19:29:06.165 [warning] Ignoring slipped selection: [22, 21; 22, 21]
+2024-03-06 19:29:31.126 [warning] Ignoring slipped selection: [21, 15; 21, 15]
+2024-03-06 19:29:36.985 [warning] Ignoring slipped selection: [22, 21; 22, 21]
+2024-03-06 19:29:43.357 [warning] Ignoring slipped selection: [23, 29; 23, 29]
+2024-03-06 19:29:44.718 [warning] Ignoring slipped selection: [23, 35; 23, 35]
+2024-03-06 19:30:30.898 [warning] Ignoring slipped selection: [69, 32; 69, 32]
+2024-03-06 19:30:35.729 [warning] Ignoring slipped selection: [71, 8; 71, 8]
+2024-03-06 19:31:05.493 [warning] Ignoring slipped selection: [43, 25; 43, 25]
+2024-03-06 19:32:30.676 [warning] Ignoring slipped selection: [44, 26; 44, 26]
+2024-03-06 19:32:35.237 [warning] Ignoring slipped selection: [44, 33; 44, 33]
+2024-03-06 19:32:48.780 [warning] Ignoring slipped selection: [45, 20; 45, 20]
+2024-03-06 19:32:56.947 [warning] Ignoring slipped selection: [45, 20; 45, 20]
+2024-03-06 19:33:34.501 [warning] Ignoring slipped selection: [45, 37; 45, 37]
+2024-03-06 19:33:49.370 [warning] Ignoring slipped selection: [45, 27; 45, 27]
+2024-03-06 19:34:01.829 [warning] Ignoring slipped selection: [46, 23; 46, 23]
+2024-03-06 19:34:10.219 [warning] Ignoring slipped selection: [46, 34; 46, 34]
+2024-03-06 19:34:40.598 [warning] Ignoring slipped selection: [46, 33; 46, 33]
+2024-03-06 19:34:43.702 [warning] Ignoring slipped selection: [46, 34; 46, 34]
+2024-03-06 19:34:59.472 [warning] Ignoring slipped selection: [42, 25; 42, 25]
+2024-03-06 19:35:00.440 [warning] Ignoring slipped selection: [42, 29; 42, 29]
+2024-03-06 19:35:33.695 [warning] Ignoring slipped selection: [48, 24; 48, 24]
+2024-03-06 19:35:35.113 [warning] Ignoring slipped selection: [48, 35; 48, 35]
+2024-03-06 19:36:32.206 [warning] Ignoring slipped selection: [24, 23; 24, 23]
+2024-03-06 19:37:25.387 [info] Executing :w
+2024-03-06 19:43:09.771 [warning] Ignoring slipped selection: [46, 8; 46, 8]
+2024-03-06 19:44:19.366 [warning] Ignoring slipped selection: [63, 1; 63, 1]
+2024-03-06 19:44:20.544 [warning] Ignoring slipped selection: [60, 7; 60, 7]
+2024-03-06 19:45:40.211 [warning] Ignoring slipped selection: [64, 20; 64, 20]
+2024-03-06 19:45:41.896 [warning] Ignoring slipped selection: [64, 27; 64, 27]

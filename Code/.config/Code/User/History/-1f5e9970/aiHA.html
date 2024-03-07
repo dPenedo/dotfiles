@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello</title>
+    <script src="counter.js">
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            padding: 4%;
+            font-family: "Kode Mono", sans-serif;
+            background-color: #1a1e23;
+            color: #61FF8B;
+        }
+
+        #title {
+            margin: auto;
+        }
+
+        button {
+            background-color: #61FF8B;
+            color: #1a1e23;
+            border-color: #a67db8;
+            font-family: "Kode Mono";
+            font-weight: 900;
+            font-size: 1em;
+            width: 8em;
+            border-radius: 5px;
+            padding: 0.5em;
+            margin: 1em;
+        }
+
+        #time-container {
+            display: flex;
+            padding: 10%;
+
+        }
+
+        #separator {
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Chronometer</h1>
+    <div id="time-container">
+        <h1 id="hours">00</h1>
+        <h1 id="separator">:</h1>
+        <h1 id="min">00</h1>
+        <h1 id="separator">:</h1>
+        <h1 id="sec">00</h1>
+        <h1 id="separator">:</h1>
+        <h1 id="milisec">00</h1>
+    </div>
+    <button id="playPause">Start</button>
+    <button id="reset">Reset</button>
+
+</body>
+
+</html>

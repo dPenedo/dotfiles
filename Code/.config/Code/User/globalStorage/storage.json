@@ -13,7 +13,8 @@
             "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023": "__default__profile__",
-            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript": "__default__profile__"
+            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript": "__default__profile__",
+            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -31,20 +32,23 @@
             },
             {
                 "folderUri": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript"
+            },
+            {
+                "folderUri": "file:///home/daniel/Documentos/repos/Chronostalgic-js"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript",
-            "backupPath": "/home/daniel/.config/Code/Backups/41f302d5a8ae180ebf096ccec433368b",
+            "folder": "file:///home/daniel/Documentos/repos/Chronostalgic-js",
+            "backupPath": "/home/daniel/.config/Code/Backups/ddff8db001eb97fd41c31f1265714c1a",
             "uiState": {
                 "mode": 1,
-                "x": 9,
-                "y": 27,
-                "width": 1424,
-                "height": 1044
+                "x": 6,
+                "y": 24,
+                "width": 1908,
+                "height": 1050
             }
         },
         "openedWindows": []
@@ -70,7 +74,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 0,
-            "sideBarWidth": 0,
+            "sideBarWidth": 234,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -113,11 +117,21 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/Chronostalgic-js",
+                                        "path": "/home/daniel/Documentos/repos/Chronostalgic-js",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/Chronostalgic-js"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -219,17 +233,6 @@
                                     "label": "~/Documentos/repos/Harvard-Web-Python-Javascript/3_django"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/albert-martin",
-                                        "path": "/home/daniel/Documentos/repos/albert-martin",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/repos/albert-martin"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -299,7 +302,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -309,6 +313,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -640,7 +651,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
