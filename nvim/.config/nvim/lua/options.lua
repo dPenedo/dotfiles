@@ -4,7 +4,7 @@
 
 -- vim.cmd.colorscheme 'tokyonight-moon'
 -- vim.cmd.colorscheme 'kanagawa'
-vim.cmd.colorscheme 'melange'
+vim.cmd.colorscheme 'kanagawa'
 -- Set highlight on search
 vim.o.hlsearch = true
 

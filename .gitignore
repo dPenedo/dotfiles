@@ -7,5 +7,7 @@ Code/.config/Code/Service\ Worker/
 Code/.config/Code/Session\ Storage/
 Code/.config/Code/TransportSecurity
 Code/.config/Code/logs/
+Code/.config/Code/DawnCache/
+Code/.config/Code/Cache/
 Code/.config/Code/History/
 Code/.config/Code/workspaceStorage/
