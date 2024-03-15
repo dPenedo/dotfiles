@@ -1,5 +1,0 @@
-2024-03-01 16:02:37.273 [info] Extension host with pid 141488 started
-2024-03-01 16:02:37.573 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2024-03-01 16:02:37.595 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
-2024-03-01 16:02:37.749 [info] Extension host terminating: renderer closed the MessagePort
-2024-03-01 16:02:37.752 [info] Extension host with pid 141488 exiting with code 0
