@@ -16,8 +16,8 @@
             "file:///home/daniel/Documentos/Dropbox/Notas": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%232%20-%20EL%20PARTIDO%20DE%20TENIS%20%5BMedia%5D": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%232%20-%20EL%20PARTIDO%20DE%20TENIS%20%5BMedia%5D/typescript": "__default__profile__",
-            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__",
-            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript": "__default__profile__"
+            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript": "__default__profile__",
+            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -38,38 +38,41 @@
             },
             {
                 "folderUri": "file:///home/daniel/Documentos/Dropbox/Notas"
+            },
+            {
+                "folderUri": "file:///home/daniel/Documentos/repos/Chronostalgic-js"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript",
-            "backupPath": "/home/daniel/.config/Code/Backups/41f302d5a8ae180ebf096ccec433368b",
+            "folder": "file:///home/daniel/Documentos/repos/Chronostalgic-js",
+            "backupPath": "/home/daniel/.config/Code/Backups/ddff8db001eb97fd41c31f1265714c1a",
             "uiState": {
                 "mode": 1,
-                "x": 9,
-                "y": 27,
-                "width": 1328,
-                "height": 1044
+                "x": 6,
+                "y": 24,
+                "width": 1908,
+                "height": 1050
             }
         },
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#0e131b",
+    "themeBackground": "#000000",
     "windowSplash": {
         "zoomLevel": 1,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#cccccc",
-            "background": "#0e131b",
-            "editorBackground": "#0e131b",
-            "titleBarBackground": "#0e131b",
-            "activityBarBackground": "#0e131b",
-            "sideBarBackground": "#0e131b",
-            "statusBarBackground": "#111722",
-            "statusBarNoFolderBackground": "#0e131b"
+            "background": "#000000",
+            "editorBackground": "#000000",
+            "titleBarBackground": "#000000",
+            "activityBarBackground": "#000000",
+            "sideBarBackground": "#000000",
+            "statusBarBackground": "#000000",
+            "statusBarNoFolderBackground": "#000000"
         },
         "layoutInfo": {
             "sideBarSide": "right",
@@ -128,23 +131,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript",
-                                        "path": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/daniel/Documentos/repos/Chronostalgic-js",
                                         "path": "/home/daniel/Documentos/repos/Chronostalgic-js",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Documentos/repos/Chronostalgic-js"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript",
+                                        "path": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -241,6 +244,17 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%233%20-%20EL%20GENERADOR%20DE%20CONTRASE%C3%91AS%20%5BMedia%5D/javascript/dpenedo.js",
+                                        "path": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #3 - EL GENERADOR DE CONTRASEÑAS [Media]/javascript/dpenedo.js",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/retos-programacion-2023/Retos/Reto #3 - EL GENERADOR DE CONTRASEÑAS [Media]/javascript/dpenedo.js"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/daniel/Documentos/repos/jolastoki/Javascript/speech.js",
                                         "path": "/home/daniel/Documentos/repos/jolastoki/Javascript/speech.js",
                                         "scheme": "file"
@@ -314,6 +328,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -1041,54 +1062,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }

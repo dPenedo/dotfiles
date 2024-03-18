@@ -77,8 +77,8 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
   { desc = 'Alternar colores de resaltado' })
 
 -- Administradores de archivos y terminales
-map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
-map('n', '<leader>E', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
+-- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
+map('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
 map('n', '<leader>T', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>E', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
