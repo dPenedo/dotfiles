@@ -294,6 +294,8 @@ globalkeys = mytable.join(
         { description = "firefox", group = "Mis programas" }),
     awful.key({ modkey }, "b", function() awful.util.spawn("brave-browser") end,
         { description = "brave", group = "Mis programas" }),
+    awful.key({ modkey }, "o", function() awful.util.spawn("obsidian") end,
+        { description = "obsidian", group = "Mis programas" }),
     awful.key({ modkey }, "d", function() awful.util.spawn("rofi -combi-modi -show-icons -show drun") end,
         { description = "programas", group = "Mis programas" }),
     awful.key({ modkey }, "s", function() awful.util.spawn("rofi -show window -show-icons") end,
@@ -894,7 +896,7 @@ awful.rules.rules = {
     },
     {
         rule_any = { class = { "obsidian", "Obsidian" } },
-        properties = { screen = 1, tag = "0" }
+        properties = { screen = 1, tag = "7" }
     },
 }
 

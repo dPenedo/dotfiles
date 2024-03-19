@@ -17,7 +17,10 @@
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%232%20-%20EL%20PARTIDO%20DE%20TENIS%20%5BMedia%5D": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%232%20-%20EL%20PARTIDO%20DE%20TENIS%20%5BMedia%5D/typescript": "__default__profile__",
             "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript": "__default__profile__",
-            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__"
+            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__",
+            "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%234%20-%20PRIMO%2C%20FIBONACCI%20Y%20PAR%20%5BMedia%5D": "__default__profile__",
+            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces": "__default__profile__",
+            "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -41,14 +44,17 @@
             },
             {
                 "folderUri": "file:///home/daniel/Documentos/repos/Chronostalgic-js"
+            },
+            {
+                "folderUri": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/daniel/Documentos/repos/Chronostalgic-js",
-            "backupPath": "/home/daniel/.config/Code/Backups/ddff8db001eb97fd41c31f1265714c1a",
+            "folder": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
+            "backupPath": "/home/daniel/.config/Code/Backups/2fb32b68db9c6d5a51dbd2379c682cc6",
             "uiState": {
                 "mode": 1,
                 "x": 6,
@@ -60,19 +66,19 @@
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#000000",
+    "themeBackground": "#161617",
     "windowSplash": {
         "zoomLevel": 1,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#cccccc",
-            "background": "#000000",
-            "editorBackground": "#000000",
-            "titleBarBackground": "#000000",
-            "activityBarBackground": "#000000",
-            "sideBarBackground": "#000000",
-            "statusBarBackground": "#000000",
-            "statusBarNoFolderBackground": "#000000"
+            "background": "#161617",
+            "editorBackground": "#161617",
+            "titleBarBackground": "#363646",
+            "activityBarBackground": "#2a2a37",
+            "sideBarBackground": "#1f1f28",
+            "statusBarBackground": "#16161d",
+            "statusBarNoFolderBackground": "#1f1f28"
         },
         "layoutInfo": {
             "sideBarSide": "right",
@@ -126,6 +132,39 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
+                                        "path": "/home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/Dropbox/Notas/.obsidian/themes"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces",
+                                        "path": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%234%20-%20PRIMO%2C%20FIBONACCI%20Y%20PAR%20%5BMedia%5D",
+                                        "path": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #4 - PRIMO, FIBONACCI Y PAR [Media]",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/retos-programacion-2023/Retos/Reto #4 - PRIMO, FIBONACCI Y PAR [Media]"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -203,39 +242,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documentos/repos/retos-programacion-2023/Retos"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki",
-                                        "path": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/repos/Harvard-Web-Python-Javascript/Projects/wiki"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/django-tutorial-castellano",
-                                        "path": "/home/daniel/Documentos/repos/django-tutorial-castellano",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/repos/django-tutorial-castellano"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/atomoak",
-                                        "path": "/home/daniel/Documentos/repos/atomoak",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/repos/atomoak"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -318,7 +324,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -328,13 +335,6 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
-                                {
-                                    "id": "github.copyVscodeDevLinkFile",
-                                    "label": "Copy vscode.dev Link"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -1062,45 +1062,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1504,8 +1513,8 @@
                 "userSettingsLabel": "alt+f4"
             },
             "workbench.action.quit": {
-                "label": "Ctrl+Q",
-                "userSettingsLabel": "ctrl+q"
+                "label": "Ctrl+Shift+Alt+Q",
+                "userSettingsLabel": "ctrl+shift+alt+q"
             },
             "undo": {
                 "label": "Ctrl+Z",
