@@ -17,10 +17,11 @@
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%232%20-%20EL%20PARTIDO%20DE%20TENIS%20%5BMedia%5D": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%232%20-%20EL%20PARTIDO%20DE%20TENIS%20%5BMedia%5D/typescript": "__default__profile__",
             "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/5_JavaScript": "__default__profile__",
-            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__",
             "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%234%20-%20PRIMO%2C%20FIBONACCI%20Y%20PAR%20%5BMedia%5D": "__default__profile__",
-            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces": "__default__profile__",
-            "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes": "__default__profile__"
+            "file:///home/daniel/Documentos/repos/Chronostalgic-js": "__default__profile__",
+            "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%236%20-%20PIEDRA%2C%20PAPEL%2C%20TIJERA%2C%20LAGARTO%2C%20SPOCK%20%5BMedia%5D": "__default__profile__",
+            "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes": "__default__profile__",
+            "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -43,24 +44,21 @@
                 "folderUri": "file:///home/daniel/Documentos/Dropbox/Notas"
             },
             {
-                "folderUri": "file:///home/daniel/Documentos/repos/Chronostalgic-js"
-            },
-            {
-                "folderUri": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes"
+                "folderUri": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
-            "backupPath": "/home/daniel/.config/Code/Backups/2fb32b68db9c6d5a51dbd2379c682cc6",
+            "folder": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces",
+            "backupPath": "/home/daniel/.config/Code/Backups/092367e331857d21a5d38c608a84c14c",
             "uiState": {
                 "mode": 1,
-                "x": 6,
-                "y": 24,
-                "width": 1908,
-                "height": 1050
+                "x": 9,
+                "y": 27,
+                "width": 1424,
+                "height": 1044
             }
         },
         "openedWindows": []
@@ -137,17 +135,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
-                                        "path": "/home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/Dropbox/Notas/.obsidian/themes"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces",
                                         "path": "/home/daniel/Documentos/repos/Harvard-Web-Python-Javascript/6__Interfaces",
                                         "scheme": "file"
@@ -159,12 +146,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%234%20-%20PRIMO%2C%20FIBONACCI%20Y%20PAR%20%5BMedia%5D",
-                                        "path": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #4 - PRIMO, FIBONACCI Y PAR [Media]",
+                                        "external": "file:///home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
+                                        "path": "/home/daniel/Documentos/Dropbox/Notas/.obsidian/themes",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/Documentos/repos/retos-programacion-2023/Retos/Reto #4 - PRIMO, FIBONACCI Y PAR [Media]"
+                                    "label": "~/Documentos/Dropbox/Notas/.obsidian/themes"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%236%20-%20PIEDRA%2C%20PAPEL%2C%20TIJERA%2C%20LAGARTO%2C%20SPOCK%20%5BMedia%5D",
+                                        "path": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #6 - PIEDRA, PAPEL, TIJERA, LAGARTO, SPOCK [Media]",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/retos-programacion-2023/Retos/Reto #6 - PIEDRA, PAPEL, TIJERA, LAGARTO, SPOCK [Media]"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -176,6 +174,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documentos/repos/Chronostalgic-js"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto%20%234%20-%20PRIMO%2C%20FIBONACCI%20Y%20PAR%20%5BMedia%5D",
+                                        "path": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos/Reto #4 - PRIMO, FIBONACCI Y PAR [Media]",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documentos/repos/retos-programacion-2023/Retos/Reto #4 - PRIMO, FIBONACCI Y PAR [Media]"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -231,17 +240,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documentos/repos/retos-programacion-2023"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/daniel/Documentos/repos/retos-programacion-2023/Retos",
-                                        "path": "/home/daniel/Documentos/repos/retos-programacion-2023/Retos",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documentos/repos/retos-programacion-2023/Retos"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
