@@ -464,7 +464,10 @@ globalkeys = mytable.join(
         { description = "delete tag", group = "tag" }),
 
     -- Standard program
-    awful.key({ modkey, }, "Return", function() awful.spawn(terminal) end,
+    awful.key({ modkey}, "Return", function() awful.spawn("kitty") end,
+        { description = "open a alacritty aterminal", group = "launcher" }),
+
+    awful.key({ modkey, "Shift" },"Return", function() awful.spawn(terminal) end,
         { description = "open a terminal", group = "launcher" }),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
         { description = "reload awesome", group = "awesome" }),
@@ -896,7 +899,7 @@ awful.rules.rules = {
     },
     {
         rule_any = { class = { "obsidian", "Obsidian" } },
-        properties = { screen = 1, tag = "7" }
+        properties = { tag = "17" }
     },
 }
 

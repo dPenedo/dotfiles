@@ -116,8 +116,8 @@ map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('n', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 
--- Movimiento entre ventanas
-map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
+-- Scroll
+map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })
 
 -- Mapeos para moverse entre ventanas
 map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })

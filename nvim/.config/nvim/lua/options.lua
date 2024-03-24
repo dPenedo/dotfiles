@@ -4,7 +4,10 @@
 
 -- vim.cmd.colorscheme 'tokyonight-moon'
 -- vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'gruvbox-material'
 vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'PaperColor'
+-- vim.cmd.colorscheme 'tokyonight'
 -- Set highlight on search
 vim.o.hlsearch = true
 
@@ -20,7 +23,8 @@ vim.o.mouse = 'a'
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.o.clipboard = ''
+vim.opt.clipboard = "unnamedplus"
+
 
 -- Enable break indent
 vim.o.breakindent = true

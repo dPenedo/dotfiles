@@ -10,9 +10,10 @@ alias pym='python manage.py'
 alias nv='nvim'
 # alias nvim='lvim'
 alias lazyvim='nvim'
+alias lv='NVIM_APPNAME=lazyvim nvim' # LazyVim
+
 alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 alias nc='NVIM_APPNAME=nv-chad nvim'        # Nv-chad
-alias lv='lvim'
 
 # alias n='nvim -c Lf'
 alias ts='tmux new-session -A -D -s'

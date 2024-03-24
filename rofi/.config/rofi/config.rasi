@@ -1,10 +1,8 @@
-//@theme "/home/daniel/.local/share/rofi/themes/kanagawa.rasi"
 //@theme "/home/daniel/.local/share/rofi/themes/launchpad.rasi"
 //@theme "/home/daniel/.config/rofi/themes/kanagawabox.rasi"
 //@theme "/home/daniel/.config/rofi/themes/gruvbox.rasi"
 //@theme "/home/daniel/.config/rofi/themes/simple-tokyonight.rasi"
 /* @theme "/home/daniel/.config/rofi/themes/light.rasi" */
-//@theme "/home/daniel/.config/rofi/themes/gruvbox-material.rasi"
 //@theme "/home/daniel/.config/rofi/themes/graphite.rasi"
 //@theme "/home/daniel/.config/rofi/themes/kanagawa-simple.rasi"
 //@theme "/home/daniel/.config/rofi/themes/kanagawa2.rasi"
@@ -14,7 +12,10 @@
 
 //@theme "/home/daniel/.config/rofi/themes/gruvbox-light.rasi"
 //@theme "/home/daniel/.config/rofi/themes/kanagawa2col.rasi"
-@theme "/home/daniel/.config/rofi/themes/night-owl.rasi"
+//@theme "/home/daniel/.config/rofi/themes/gruvbox-material.rasi"
+//@theme "/home/daniel/.config/rofi/themes/night-owl.rasi"
+//@theme "/home/daniel/.config/rofi/themes/everforest.rasi"
+@theme "/home/daniel/.config/rofi/themes/kanagawa.rasi"
 
 configuration {
 

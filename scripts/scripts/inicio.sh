@@ -9,7 +9,7 @@ kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # evolution &
 thunderbird &
 sleep 4
-obsidian
+obsidian &
 # kitty -T "kitty" &
 # sleep 2
 # Zotero &
@@ -30,13 +30,16 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "tmux" -t 11 &
 	wmctrl -r "kitty" -t 11 &
 	wmctrl -r "mozilla Thunderbird" -t 18 &
-	wmctrl -r "obsidian" -t 17 &
+	sleep 5
+	wmctrl -r "obsidian" -t 16 &
 	# wmctrl -r "Correo" -t 18 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	wmctrl -r tmux -t 1 &
 	wmctrl -r "Correo" -t 8 &
 	wmctrl -r thunderbird -t 9 &
+	sleep 5
+	wmctrl -r "obsidian" -t 6 &
 fi
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4

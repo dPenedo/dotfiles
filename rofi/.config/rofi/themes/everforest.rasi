@@ -1,11 +1,11 @@
 * {
     bg-col:  #121212;
-    bg-col-light: #2A2A37;
+    bg-col-light: #16161d;
     border-col: #16161d;
-    selected-col: #2A2A37;
-    blue: #7E9CD8;
-    fg-col: #f6f1d3;
-    fg-col2: #DCA561;
+    selected-col: #16161d;
+    green: #A7C080;
+    fg-col: #D3C6AA;
+    fg-col2: #e69875;
     grey: #6c7086;
 
     width: 600;
@@ -18,7 +18,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 460px;
+    height: 360px;
     border: 3px;
     border-color: @border-col;
     background-color: @bg-col;
@@ -36,7 +36,7 @@ inputbar {
 }
 
 prompt {
-    background-color: @blue;
+    background-color: @green;
     padding: 6px;
     text-color: @bg-col;
     border-radius: 3px;
@@ -93,7 +93,7 @@ button {
 
 button selected {
   background-color: @bg-col;
-  text-color: @blue;
+  text-color: @green;
 }
 
 message {
@@ -106,6 +106,6 @@ message {
 textbox {
     padding: 6px;
     margin: 20px 0px 0px 20px;
-    text-color: @blue;
+    text-color: @green;
     background-color: @bg-col-light;
 }
