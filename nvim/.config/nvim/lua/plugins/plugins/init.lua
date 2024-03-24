@@ -12,7 +12,7 @@ return {
     priority = 1001,
   },
   {
-  "folke/zen-mode.nvim",
+ "folke/zen-mode.nvim",
   opts = {
     -- your configuration comes here
     -- or leave it empty to use the default settings
@@ -26,8 +26,8 @@ return {
       -- add any custom options here
     }
   },
-  { "xiyaowong/transparent.nvim" },
-
+  -- { "xiyaowong/transparent.nvim",
+  -- },
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
@@ -52,6 +52,8 @@ return {
   },
   {
   "SR-MyStar/yazi.nvim",
+      lazy = true,
+  cmd = "Yazi",
   opts = {
     -- ...
   },
@@ -105,6 +107,7 @@ return {
   -- },
   {
     'brenoprata10/nvim-highlight-colors',
+    lazy = true
   },
 
   -- {

@@ -19,6 +19,7 @@ require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Git related plugins
+  -- TODO:comprobar el uso de cada uno
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 

@@ -35,11 +35,9 @@ return {
       },
     },
   },
-  {'NLKNguyen/papercolor-theme',
-  },
 
       {'sainnhe/everforest',
-    lazy = false,
+    lazy = true,
       config = function()
             vim.cmd([[
             " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
@@ -65,7 +63,7 @@ return {
         end,
       },
       {'sainnhe/gruvbox-material',
-    lazy = false,
+    lazy = true,
       config = function()
             vim.cmd([[
             " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
@@ -92,19 +90,8 @@ return {
         end,
       },
   {
-    "marko-cerovac/material.nvim",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    opts = {
-      -- transparent_background = true,
-    },
-    -- config = function()
-    --   -- load the colorscheme here
-    --   -- vim.cmd.colorscheme("night-owl")
-    -- end,
-  },
-  {
   "folke/tokyonight.nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   opts = {
         transparent = true, -- Enable this to disable setting the background color
@@ -113,7 +100,7 @@ return {
 },
   {
     'ramojus/mellifluous.nvim',
-    lazy = false,
+    lazy = true,
     priority = 1000,
     opts = {
       color_set = 'mountain',
