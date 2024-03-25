@@ -79,6 +79,8 @@ bindkey -M viins '^[[3;5~' kill-word     # Control + Delete
 bindkey -M viins '\e[1~' beginning-of-line  # Para la tecla Home
 bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
+
+
 # FZF 
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
 bindkey -M viins 'Ñ' fzf-history-widget

@@ -144,7 +144,7 @@
             ]
         }
     ],
-    "vim.normalModeKeyBindings": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "<leader>",
@@ -158,11 +158,28 @@
         {
             "before": [
                 "<leader>",
+                "t",
+                "t"
+            ],
+            "command": "workbench.view.extension.todo-tree-container"
+        },
+        {
+            "before": [
+                "<leader>",
                 "w"
             ],
             "commands": [
                 "workbench.action.files.save"
             ]
+        },
+        {
+            "before": [
+                "-"
+            ],
+            "commands": [
+                "vsnetrw.open"
+            ],
+            "when": "editorLangId != vsnetrw"
         },
         {
             "before": [
@@ -405,5 +422,45 @@
     "workbench.editor.showTabs": "single",
     "workbench.activityBar.location": "hidden",
     "workbench.colorTheme": "Kanagawa",
-    "git.openRepositoryInParentFolders": "never"
-}
+    "git.openRepositoryInParentFolders": "never",
+    "todo-tree.highlights.customHighlight": {
+        "WARN": {
+            "foreground": "white",
+            "background": "red",
+            "iconColour": "red",
+            "icon": "alert",
+            "type": "text"
+        },
+        "TODO": {
+            "foreground": "black",
+            "background": "#98BB6C",
+            "iconColour": "green",
+            "icon": "check",
+            "type": "text"
+        },
+        "FIXME": {
+            "foreground": "black",
+            "background": "#FFA066",
+            "iconColour": "red",
+            "icon": "bug"
+        },
+        "REVIEW": {
+            "foreground": "black",
+            "background": "cyan",
+            "iconColour": "lightblue",
+            "icon": "eye"
+        },
+        "HACK": {
+            "foreground": "black",
+            "background": "#FFA500",
+            "iconColour": "orange",
+            "icon": "alert"
+        },
+        "REF": {
+            "foreground": "black",
+            "background": "grey",
+            "iconColour": "grey",
+            "icon": "link",
+            "type": "tag"
+        }
+    },

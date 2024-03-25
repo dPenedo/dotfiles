@@ -120,5 +120,6 @@ vim.keymap.set('n', '<leader>u', ':Telescope undo<CR>',
   { desc = 'Abrir Telescope para buscar en el historial de deshacer' })
 vim.keymap.set('n', ',T', ':Telescope treesitter<CR>', { desc = 'Abrir Telescope para buscar en Treesitter' })
 vim.keymap.set('n', ',t', ':TodoTelescope<CR>', { desc = 'Abrir Telescope para buscar TODOs' })
+vim.keymap.set('n', '<leader>tt', ':TodoTelescope<CR>', { desc = 'Abrir Telescope para buscar TODOs' })
 vim.keymap.set('n', ',h', ':Telescope help_tags<CR>', { desc = 'Abrir Telescope para buscar etiquetas de ayuda' })
 vim.keymap.set('n', ',m', ':Telescope marks<CR>', { desc = 'Abrir Telescope para buscar marks' })

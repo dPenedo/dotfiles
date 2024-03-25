@@ -78,6 +78,9 @@ bind '"\et":"thunar . &\n"'
 bind '"\ee":"lfcd\n"'
 bind -x '"\C- ": __fzf_history__'
 
+
+
+
 #Aliases
 
 source ~/.aliases.sh
