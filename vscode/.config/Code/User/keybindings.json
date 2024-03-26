@@ -403,6 +403,7 @@
         ],
         "when": "editorFocus && vim.mode == 'Normal'"
     },
+
     // Vim Visual Mode Key Bindings
     {
         "before": [

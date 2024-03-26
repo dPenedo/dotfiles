@@ -145,6 +145,7 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+
         {
             "before": [
                 "<leader>",
@@ -284,7 +285,7 @@
         {
             "before": [
                 "<leader>",
-                "f",
+                "f"
             ],
             "commands": [
                 "workbench.action.quickOpen"
@@ -312,7 +313,7 @@
             "before": [
                 "<leader>",
                 "r",
-                "r",
+                "r"
             ],
             "commands": [
                 "editor.action.rename"
@@ -373,6 +374,24 @@
             ],
             "commands": [
                 "fuzzySearch.activeTextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "O"
+            ],
+            "after": [
+                "O", "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "o"
+            ],
+            "after": [
+                "o", "<Esc>"
             ]
         },
         {
