@@ -312,7 +312,17 @@
             "before": [
                 "<leader>",
                 "r",
-                "n"
+                "r",
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "a"
             ],
             "commands": [
                 "editor.action.rename"
@@ -326,16 +336,6 @@
             ],
             "commands": [
                 "editor.action.autoFix"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "r",
-                "a"
-            ],
-            "commands": [
-                "editor.action.rename"
             ]
         },
         {
@@ -400,22 +400,6 @@
             ],
             "commands": [
                 "editor.action.outdentLines"
-            ]
-        },
-        {
-            "before": [
-                "<S-j>"
-            ],
-            "commands": [
-                "editor.action.moveLinesDownAction"
-            ]
-        },
-        {
-            "before": [
-                "<S-k>"
-            ],
-            "commands": [
-                "editor.action.moveLinesUpAction"
             ]
         },
     ],

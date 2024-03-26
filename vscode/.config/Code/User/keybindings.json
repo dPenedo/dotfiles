@@ -1,6 +1,6 @@
 //TODO: no funciona bien. copiar previo del git y ordenarlo un poco
 [
-    // Normal Mode
+    // Navigate splits
     {
         "key": "ctrl+k",
         "command": "workbench.action.navigateUp",
@@ -31,11 +31,7 @@
         "command": "workbench.action.navigateRight",
         "when": "vim.active && vim.mode!='Insert'&& !terminalFocus"
     },
-    {
-        "key": "ctrl+s h",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
+    // Actions
     {
         "key": "ctrl+f f",
         "command": "prettier.forceFormatDocument"
@@ -44,26 +40,6 @@
         "key": "ctrl+f r",
         "command": "editor.action.startFindReplaceAction",
         "when": "editorFocus || editorIsOpen"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quit"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+w ctrl+w",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+s k",
-        "command": "workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "ctrl+s k",
-        "command": "-workbench.action.openGlobalKeybindings"
     },
     // copy
     {
@@ -76,6 +52,10 @@
                 "y"
             ]
         }
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-editor.action.clipboardPasteAction"
     },
     // Terminal
     {
@@ -121,16 +101,6 @@
     },
     // Miscellaneous
     {
-        "key": "ctrl+alt+j",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+alt+e",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
@@ -167,10 +137,6 @@
         "command": "-workbench.action.showCommands"
     },
     {
-        "key": "ctrl+v",
-        "command": "-editor.action.clipboardPasteAction"
-    },
-    {
         "key": "alt+f8",
         "command": "-editor.action.marker.next",
         "when": "editorFocus"
@@ -183,17 +149,6 @@
         "key": "alt+t",
         "command": "workbench.view.extension.todo-tree-container"
     },
-    // Vim Insert Mode Key Bindings
-    // FIXME: no funciona
-    //     "before": [
-    //         "l",
-    //         "l"
-    //     ],
-    //     "after": [
-    //         "<Esc>l"
-    //     ],
-    //     "when": "vim.active && vim.mode=='Insert'"
-    // },
     {
         "before": [
             "j",
@@ -368,8 +323,8 @@
     {
         "before": [
             "<leader>",
-            "r",
-            "n"
+            "shift",
+            "r"
         ],
         "commands": [
             "editor.action.rename"
@@ -467,30 +422,4 @@
         ],
         "when": "editorFocus && vim.mode == 'Visual'"
     },
-    {
-        "before": [
-            "<S-j>"
-        ],
-        "commands": [
-            "editor.action.moveLinesDownAction"
-        ],
-        "when": "editorFocus && vim.mode == 'Visual'"
-    },
-    {
-        "before": [
-            "<S-k>"
-        ],
-        "commands": [
-            "editor.action.moveLinesUpAction"
-        ],
-        "when": "editorFocus && vim.mode == 'Visual'"
-    },
-    {
-        "key": "ctrl+shift+f8",
-        "command": "workbench.action.closeEditorsInGroup"
-    },
-    {
-        "key": "ctrl+k w",
-        "command": "-workbench.action.closeEditorsInGroup"
-    }
 ]
