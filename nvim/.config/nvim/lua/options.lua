@@ -4,8 +4,8 @@
 
 -- vim.cmd.colorscheme 'tokyonight-moon'
 -- vim.cmd.colorscheme 'kanagawa'
--- vim.cmd.colorscheme 'gruvbox-material'
-vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'gruvbox-material'
+-- vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'PaperColor'
 -- vim.cmd.colorscheme 'tokyonight'
 -- Set highlight on search
@@ -29,7 +29,10 @@ vim.opt.clipboard = "unnamedplus"
 -- Enable break indent
 vim.o.breakindent = true
 
-vim.o.conceallevel = 1
+vim.o.conceallevel = 0
+vim.cmd([[
+  autocmd FileType markdown setlocal conceallevel=1
+]])
 
 -- Save undo history
 vim.o.undofile = true

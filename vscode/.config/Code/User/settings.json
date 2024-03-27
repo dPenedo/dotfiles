@@ -145,7 +145,6 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
-
         {
             "before": [
                 "<leader>",
@@ -376,13 +375,23 @@
                 "fuzzySearch.activeTextEditor"
             ]
         },
+        // Diagnostics
         {
             "before": [
-                "<leader>",
-                "O"
+                "]",
+                "e"
             ],
-            "after": [
-                "O", "<Esc>"
+            "commands": [
+                 "editor.action.marker.next"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "e"
+            ],
+            "commands": [
+                 "editor.action.marker.prev"
             ]
         },
         {
@@ -391,7 +400,8 @@
                 "o"
             ],
             "after": [
-                "o", "<Esc>"
+                "o",
+                "<Esc>"
             ]
         },
         {
@@ -424,7 +434,6 @@
     ],
     "workbench.editor.showTabs": "single",
     "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Kanagawa",
     "git.openRepositoryInParentFolders": "never",
     "todo-tree.highlights.customHighlight": {
         "WARN": {
@@ -467,3 +476,6 @@
             "type": "tag"
         }
     },
+    "workbench.colorTheme": "Gruvbox Material P Dark",
+    "editor.stickyScroll.enabled": false
+}

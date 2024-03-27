@@ -264,8 +264,6 @@ globalkeys = mytable.join(
         { description = "destroy all notifications", group = "hotkeys" }),
     -- Take a screenshot
     -- https://github.com/lcpz/dots/blob/master/bin/screenshot
-    awful.key({ modkey, "Control" }, "p", function() os.execute("screenshot") end,
-        { description = "take a screenshot", group = "hotkeys" }),
 
     -- X screen locker
     awful.key({ modkey, "Mod1" }, "l", function() os.execute(scrlocker) end,
@@ -287,6 +285,8 @@ globalkeys = mytable.join(
     awful.key({ modkey }, "r", function() awful.util.spawn("dmenu_run") end,
         { description = "run prompt", group = "launcher" }),
 
+    awful.key({  }, "Print", function() awful.util.spawn("xfce4-screenshooter") end,
+        { description = "take a screenshot", group = "hotkeys" }),
     -- My applications
     awful.key({ modkey }, "e", function() awful.util.spawn("thunar") end,
         { description = "thunar", group = "Mis programas" }),

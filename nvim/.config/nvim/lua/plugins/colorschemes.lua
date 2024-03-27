@@ -63,7 +63,7 @@ return {
         end,
       },
       {'sainnhe/gruvbox-material',
-    lazy = true,
+    lazy = false,
       config = function()
             vim.cmd([[
             " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
