@@ -193,6 +193,15 @@
         {
             "before": [
                 "<leader>",
+                "r"
+            ],
+            "commands": [
+                ":registers"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "q"
             ],
             "commands": [
@@ -382,7 +391,7 @@
                 "e"
             ],
             "commands": [
-                 "editor.action.marker.next"
+                "editor.action.marker.next"
             ]
         },
         {
@@ -391,7 +400,7 @@
                 "e"
             ],
             "commands": [
-                 "editor.action.marker.prev"
+                "editor.action.marker.prev"
             ]
         },
         {

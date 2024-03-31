@@ -30,7 +30,7 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "tmux" -t 11 &
 	wmctrl -r "kitty" -t 11 &
 	wmctrl -r "mozilla Thunderbird" -t 18 &
-	sleep 5
+	sleep 10
 	wmctrl -r "obsidian" -t 16 &
 	# wmctrl -r "Correo" -t 18 &
 else

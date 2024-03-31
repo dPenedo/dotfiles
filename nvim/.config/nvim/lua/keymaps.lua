@@ -150,6 +150,11 @@ map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
 map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
 map('n', '<C-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
 
+
+
+
+
+
 -- Mapeos para redimensionar ventanas
 map('n', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
 map('n', '<C-left>', ':vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })

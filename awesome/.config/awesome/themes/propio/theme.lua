@@ -12,10 +12,21 @@ theme.dir                                       = os.getenv("HOME") .. "/.config
 -- theme.wallpaper                                 = theme.dir .. "/dragon-des.jpeg"
 theme.wallpaper                                 = theme.dir .. "/subtle_ferns.jpg"
 theme.font                                      = "Sans 11"
-theme.fg_normal                                 = "#f6f1d3"
-theme.fg_focus                                  = "#7e9cd8"
+
+-- similar a gruvbox
+theme.fg_normal                                 = "#E6D0AC"
+theme.fg_focus                                  = "#7DAEA3"
 theme.fg_accent                                 = "#dcA561"
 theme.fg_inactive                               = "#3F3F3F"
+
+
+-- similar a Kanagawa
+-- theme.fg_normal                                 = "#f6f1d3"
+-- theme.fg_focus                                  = "#7e9cd8"
+-- theme.fg_accent                                 = "#dcA561"
+-- theme.fg_inactive                               = "#3F3F3F"
+
+
 theme.fg_urgent                                 = "#CC9393"
 theme.bg_normal                                 = "#171717"
 theme.bg_focus                                  = "#2A2A37"
@@ -335,8 +346,8 @@ function theme.at_screen_connect(s)
         }
     }
     theme.taglist_fg_empty    = theme.fg_inactive
-    theme.taglist_fg_occupied = theme.fg_focus
-    theme.taglist_fg_focus    = theme.fg_accent
+    theme.taglist_fg_occupied = theme.fg_normal
+    theme.taglist_fg_focus    = theme.fg_focus
     theme.taglist_fg_volatile = "#100110"
     theme.taglist_fg_urgent   = theme.fg_urgent
     theme.taglist_spacing     = 2
