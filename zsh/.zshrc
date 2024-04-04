@@ -89,7 +89,7 @@ bindkey -M vicmd 'Ñ' fzf-history-widget
 
 
 bindkey -s '\ee' 'ya .^m'
-bindkey -s '\et' 'thunar .^m'
+bindkey -s '\et' 'thunar . &^m'
 # bindkey -s '\ey' 'ya .^m'
 
 # Configuración de teclas de retroceso y suprimir en modo viins
