@@ -31,6 +31,18 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
 
 
+
+-- Notes
+vim.keymap.set('n', '<leader>nn', function()
+  local filename = vim.fn.input('Enter file name: ', '', 'file')
+  if filename ~= '' then
+    local filepath = '~/Documentos/Dropbox/Notas//' .. filename .. '.md'
+    vim.fn.writefile({}, vim.fn.expand(filepath))
+    vim.cmd('edit ' .. vim.fn.expand(filepath))
+  end
+end, { desc = '[N]ew [N]otes' })
+
+
 -- Diagnostics
 local diagnostic_goto = function(next, severity)
   local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
@@ -115,10 +127,6 @@ map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
 map("t", "<C-x>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
 map("t", "<C-l>", "<C-u>clear<CR>", { desc = 'Limpiar la pantalla del terminal' })
-
--- Neorg
-map('n', '<leader>ni', ':Neorg index<CR>', { desc = 'Ir al archivo index de neorg' })
-map('n', '<leader>nr', ':Neorg return<CR>', { desc = 'Volver de neorg' })
 
 
 -- Gestión de pestañas

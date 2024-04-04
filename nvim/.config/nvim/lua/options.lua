@@ -4,8 +4,8 @@
 
 -- vim.cmd.colorscheme 'tokyonight-moon'
 -- vim.cmd.colorscheme 'kanagawa'
-vim.cmd.colorscheme 'gruvbox-material'
--- vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'gruvbox-material'
+vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'PaperColor'
 -- vim.cmd.colorscheme 'tokyonight'
 -- Set highlight on search

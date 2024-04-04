@@ -14,15 +14,22 @@ return {
         theme = {
           wave = {
             ui = {
-              bg_gutter = '#161617',
+              -- bg_gutter = '#161617',
+              bg_gutter = "none",
+              nontext = "#5E6982",
             },
           },
         },
         palette = {
-          -- fujiWhite = "#DCD7Bb",
-          sumiInk1 = "#161617",
+          -- fujiWhite = "#DCD7Bb
+          -- sumiInk1 = "#161617",
+          -- sumiInk1 = "#1f1f28",
+          sumiInk3 = "#161617",
+          -- sumiInk6 = "#47475C",
+          sumiInk6 = "#3A3A4B",
           oldWhite = '#DCD7Bb',
-          fujiWhite = '#F6F1d3',
+          -- fujiWhite = '#F6F1d3',
+          fujiWhite = '#eee0bf',
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",
           -- autumnGreen = "#037971",
@@ -36,32 +43,32 @@ return {
     },
   },
 
-      {'sainnhe/everforest',
-    lazy = false,
-      config = function()
-            vim.cmd([[
-            " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
-            " Important!!
-            " For dark version.
-            " set background=dark
-            " Set contrast.
-            " This configuration option should be placed before `colorscheme gruvbox-material`.
-            " Available values: 'hard', 'medium'(default), 'soft'
-            let g:everforest_background = 'hard'
-            let g:everforest_transparent_background = 1
-            " For better performance
-            let g:everforest_better_performance = 1
-            let g:everforest_enable_italic = 1
-            let  g:everforest_enable_bold = 1
-            let g:everforest_diagnostic_text_highlight = 1
-            " let g:everforest_diagnostic_line_highlight = 1
-            let g:everforest_diagnostic_virtual_text = "colored"
-            let g:everforest_sign_column_background = 'none'
-
-            colorscheme gruvbox-material
-            ]])
-        end,
-      },
+    --   {'sainnhe/everforest',
+    -- lazy = false,
+    --   config = function()
+    --         vim.cmd([[
+    --         " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
+    --         " Important!!
+    --         " For dark version.
+    --         " set background=dark
+    --         " Set contrast.
+    --         " This configuration option should be placed before `colorscheme gruvbox-material`.
+    --         " Available values: 'hard', 'medium'(default), 'soft'
+    --         let g:everforest_background = 'hard'
+    --         let g:everforest_transparent_background = 1
+    --         " For better performance
+    --         let g:everforest_better_performance = 1
+    --         let g:everforest_enable_italic = 1
+    --         let  g:everforest_enable_bold = 1
+    --         let g:everforest_diagnostic_text_highlight = 1
+    --         " let g:everforest_diagnostic_line_highlight = 1
+    --         let g:everforest_diagnostic_virtual_text = "colored"
+    --         let g:everforest_sign_column_background = 'none'
+    --
+    --         colorscheme gruvbox-material
+    --         ]])
+    --     end,
+    --   },
       {'sainnhe/gruvbox-material',
     lazy = false,
       config = function()
@@ -89,46 +96,46 @@ return {
             ]])
         end,
       },
-  {
-  "folke/tokyonight.nvim",
-  lazy = true,
-  priority = 1000,
-  opts = {
-        transparent = true, -- Enable this to disable setting the background color
-
-    },
-},
-  {
-    'ramojus/mellifluous.nvim',
-    lazy = true,
-    priority = 1000,
-    opts = {
-      color_set = 'mountain',
-      dim_inactive = true,
-      transparent = false,   -- Enable this to disable setting the background color
-      mellifluous = {
-        neutral = false,     -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
-        bg_contrast = 'hard' -- options: 'soft', 'medium', 'hard'
-      },
-      mountain = {
-        bg_contrast = 'medium' -- options: 'soft', 'medium', 'hard'
-      }
-    },
-    -- config = function()
-    --   vim.cmd.colorscheme 'melange'
-    --   -- vim.cmd.Mellifluous 'mountain'
-    -- end,
-  },
+--   {
+--   "folke/tokyonight.nvim",
+--   lazy = true,
+--   priority = 1000,
+--   opts = {
+--         transparent = true, -- Enable this to disable setting the background color
+--
+--     },
+-- },
+  -- {
+  --   'ramojus/mellifluous.nvim',
+  --   lazy = true,
+  --   priority = 1000,
+  --   opts = {
+  --     color_set = 'mountain',
+  --     dim_inactive = true,
+  --     transparent = false,   -- Enable this to disable setting the background color
+  --     mellifluous = {
+  --       neutral = false,     -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+  --       bg_contrast = 'hard' -- options: 'soft', 'medium', 'hard'
+  --     },
+  --     mountain = {
+  --       bg_contrast = 'medium' -- options: 'soft', 'medium', 'hard'
+  --     }
+  --   },
+  --   -- config = function()
+  --   --   vim.cmd.colorscheme 'melange'
+  --   --   -- vim.cmd.Mellifluous 'mountain'
+  --   -- end,
+  -- },
   -- { 'cryptomilk/nightcity.nvim', version = '*' },
   -- { 'mellow-theme/mellow.nvim' },
 
   -- { "savq/melange-nvim" },
   { "dpenedo/melange-nvim" },
-  {
-    "loctvl842/monokai-pro.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  }
+  -- {
+  --   "loctvl842/monokai-pro.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- }
 
 }

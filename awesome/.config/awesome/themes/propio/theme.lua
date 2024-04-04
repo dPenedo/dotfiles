@@ -14,17 +14,19 @@ theme.wallpaper                                 = theme.dir .. "/subtle_ferns.jp
 theme.font                                      = "Sans 11"
 
 -- similar a gruvbox
-theme.fg_normal                                 = "#E6D0AC"
-theme.fg_focus                                  = "#7DAEA3"
-theme.fg_accent                                 = "#dcA561"
-theme.fg_inactive                               = "#3F3F3F"
+-- theme.fg_normal                                 = "#E6D0AC"
+-- theme.fg_focus                                  = "#7DAEA3"
+-- theme.fg_accent                                 = "#dcA561"
+-- theme.fg_inactive                               = "#3F3F3F"
 
 
 -- similar a Kanagawa
--- theme.fg_normal                                 = "#f6f1d3"
+theme.fg_normal                                 = "#DCD7bb"
 -- theme.fg_focus                                  = "#7e9cd8"
+theme.fg_focus                                  = "#E6C384"
 -- theme.fg_accent                                 = "#dcA561"
--- theme.fg_inactive                               = "#3F3F3F"
+theme.fg_accent                                  = "#7e9cd8"
+theme.fg_inactive                               = "#3F3F3F"
 
 
 theme.fg_urgent                                 = "#CC9393"
@@ -38,7 +40,7 @@ theme.border_marked                             = "#CC9393"
 theme.tasklist_bg_focus                         = "#1A1A1A"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
-theme.titlebar_fg_focus                         = theme.fg_focus
+theme.titlebar_fg_focus                         = theme.fg_accent
 theme.menu_height                               = dpi(16)
 theme.menu_width                                = dpi(140)
 theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.png"
@@ -347,7 +349,7 @@ function theme.at_screen_connect(s)
     }
     theme.taglist_fg_empty    = theme.fg_inactive
     theme.taglist_fg_occupied = theme.fg_normal
-    theme.taglist_fg_focus    = theme.fg_focus
+    theme.taglist_fg_focus    = theme.fg_accent
     theme.taglist_fg_volatile = "#100110"
     theme.taglist_fg_urgent   = theme.fg_urgent
     theme.taglist_spacing     = 2

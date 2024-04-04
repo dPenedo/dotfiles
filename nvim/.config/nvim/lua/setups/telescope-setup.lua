@@ -102,6 +102,13 @@ local function telescope_live_grep_open_files()
     prompt_title = 'Live Grep in Open Files',
   }
 end
+vim.api.nvim_create_user_command(
+    'NotasBuscar',
+    function ()
+        require('telescope.builtin').find_files({cwd="~/Documentos/Dropbox/Notas/", prompt_title="Notas"})
+    end,
+    {}
+)
 vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[S]earch [/] in Open Files' })
 vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', '<leader>f', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
@@ -111,6 +118,7 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+vim.keymap.set('n', '<leader>nb', ':NotasBuscar<CR>', { desc = '[N]otas [Buscar]' })
 vim.keymap.set('n', ',b', ':Telescope buffers<CR>', { desc = 'Abrir Telescope para buscar buffers' })
 vim.keymap.set('n', ',B', ':Telescope builtin<CR>', { desc = 'Abrir Telescope para buscar comandos internos' })
 vim.keymap.set('n', ',g', ':Telescope live_grep<CR>', { desc = 'Abrir Telescope para búsqueda en vivo con grep' })
