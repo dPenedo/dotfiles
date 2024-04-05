@@ -18,11 +18,21 @@
 @theme "/home/daniel/.config/rofi/themes/kanagawa.rasi"
 
 configuration {
-
     display-ssh:    "     ssh:";
     display-run:    "     run:";
     display-drun:   "     programas:";
     display-window: "     ventanas:";
     display-combi:  "     combi:";
     display-filebrowser: "    filebrowser:";
+
+
+	kb-accept-entry: "Tab";
+	kb-mode-complete: "Shift+Tab";
+	kb-row-tab: "Control+j";
+	kb-remove-to-eol: "Control+U";
+	kb-row-up: "Up,Control+p,Control+k";
+	kb-remove-char-back: "BackSpace";
+	kb-row-left: "Control+Page_Up,Control+h";
+	kb-row-right: "Control+Page_Down,Control+l";
 }
+

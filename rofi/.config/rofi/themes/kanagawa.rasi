@@ -4,11 +4,11 @@
     border-col: #16161d;
     selected-col: #2A2A37;
     blue: #7E9CD8;
-    fg-col: #f6f1d3;
+    fg-col: #eee0bf;
     fg-col2: #DCA561;
     grey: #6c7086;
 
-    width: 600;
+    width: 700;
     font: "Lato 13";
 }
 
@@ -72,6 +72,7 @@ element {
 
 element-icon {
     size: 25px;
+    margin: 0px 8px 0px 0px;
 }
 
 element selected {

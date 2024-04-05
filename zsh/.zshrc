@@ -83,8 +83,8 @@ bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
 # FZF 
 export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
-bindkey -M viins 'Ñ' fzf-history-widget
-bindkey -M vicmd 'Ñ' fzf-history-widget
+bindkey -M viins 'ø' fzf-history-widget
+bindkey -M vicmd 'ø' fzf-history-widget
 
 
 
@@ -122,3 +122,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Created by `pipx` on 2024-02-10 16:28:16
 export PATH="$PATH:/home/daniel/.local/bin"
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
