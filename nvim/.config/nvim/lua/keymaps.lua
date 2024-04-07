@@ -114,14 +114,18 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
-map('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
+-- map('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
+map('n', '-', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
+map('n', '<leader>e', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
+
+
 map('n', '<leader>T', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
-map('n', '<leader>E', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
+map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 -- map('n', '<A-<>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
-map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
+-- map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
-map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
+-- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 
 -- Mapeos para el terminal
 map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
@@ -152,7 +156,7 @@ map('n', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })
 
 -- Mapeos para moverse entre ventanas
-map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
+-- map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
 map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
 map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
 map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })

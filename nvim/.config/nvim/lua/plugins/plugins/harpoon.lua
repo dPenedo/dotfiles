@@ -19,7 +19,7 @@ return {
     { "<leader>sj", function() require("harpoon"):list():select(1) end, desc = "harpoon to file 1", },
     { "<leader>sk", function() require("harpoon"):list():select(2) end, desc = "harpoon to file 2", },
     { "<leader>sl", function() require("harpoon"):list():select(3) end, desc = "harpoon to file 3", },
-    { "<leader>sñ", function() require("harpoon"):list():select(4) end, desc = "harpoon to file 4", },
-    { "<leader>sh", function() require("harpoon"):list():select(5) end, desc = "harpoon to file 5", },
+    { "<leader>s;", function() require("harpoon"):list():select(4) end, desc = "harpoon to file 4", },
+    { "<leader>s'", function() require("harpoon"):list():select(5) end, desc = "harpoon to file 5", },
   },
 }

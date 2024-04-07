@@ -42,6 +42,7 @@ return {
 
   {
     "kylechui/nvim-surround",
+    lazy=true,
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
@@ -50,14 +51,14 @@ return {
       })
     end
   },
-  {
-  "SR-MyStar/yazi.nvim",
-      lazy = true,
-  cmd = "Yazi",
-  opts = {
-    -- ...
-  },
-  },
+  -- {
+  -- "SR-MyStar/yazi.nvim",
+  --     lazy = true,
+  -- cmd = "Yazi",
+  -- opts = {
+  --   -- ...
+  -- },
+  -- },
   -- {
   --   'lmburns/lf.nvim',
   --   dependencies = {
@@ -105,10 +106,37 @@ return {
   --     end)
   --   end,
   -- },
-  {
-    'brenoprata10/nvim-highlight-colors',
-    lazy = true
-  },
+	{
+		'brenoprata10/nvim-highlight-colors',
+		lazy = true
+	},
+	{
+		"shellRaining/hlchunk.nvim",
+		event = { "UIEnter" },
+		opts = {
+			chunk = {
+				-- details about support_filetypes and exclude_filetypes in https://github.com/shellRaining/hlchunk.nvim/blob/main/lua/hlchunk/utils/filetype.lua
+				style = {
+					{ fg = "#54546D" },
+					{ fg = "#c21f30" }, -- this fg is used to highlight wrong chunk
+				},
+				textobject = "",
+				max_file_size = 1024 * 1024,
+				error_sign = true,
+			},
+			line_num = {
+				enable = false,
+			},
+
+			blank = {
+				enable = false,}
+		}
+	},
+	{
+  'stevearc/dressing.nvim',
+  opts = {},
+},
+
 
   -- {
   --   "jackMort/ChatGPT.nvim",

@@ -11,7 +11,7 @@ require('lazy').setup({
     },
     rtp = {
       disabled_plugins = {
-        "netrwPlugin", "gzip", "tarPlugin", "tohtml", "tutor", "zipPlugin"
+        "netrwPlugin",  "gzip", "tarPlugin", "tohtml", "tutor", "zipPlugin"
       }
 
     }
@@ -20,11 +20,11 @@ require('lazy').setup({
 
   -- Git related plugins
   -- TODO:comprobar el uso de cada uno
-  'tpope/vim-fugitive',
-  'tpope/vim-rhubarb',
+  -- {'tpope/vim-fugitive', lazy=true},
+  -- 'tpope/vim-rhubarb',
 
   -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
+      -- 'tpope/vim-sleuth',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -138,17 +138,18 @@ require('lazy').setup({
       end,
     },
   },
-  {
-    -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help ibl`
-    main = 'ibl',
-    opts = {},
-  },
+  -- {
+  --   -- Add indentation guides even on blank lines
+  --   'lukas-reineke/indent-blankline.nvim',
+  -- event = "VeryLazy",
+  --   -- Enable `lukas-reineke/indent-blankline.nvim`
+  --   -- See `:help ibl`
+  --   main = 'ibl',
+  --   opts = {},
+  -- },
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim',  opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
   {

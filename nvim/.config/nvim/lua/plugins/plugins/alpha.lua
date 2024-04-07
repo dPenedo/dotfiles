@@ -26,9 +26,9 @@ return {
       -- dashboard.button("f", "󱝩" .. " Find file", ":Telescope find_files <CR>"),
       -- dashboard.button("e", "󰩡 " .. " LF", ":Lf <CR>"),
       dashboard.button("r", " " .. " Archivos Recientes", ":Telescope oldfiles <CR>"),
-      dashboard.button("f", "" .. " Buscar archivo", ":Telescope find_files <CR>"),
+      dashboard.button("f", " " .. " Buscar archivo", ":Telescope find_files <CR>"),
       dashboard.button("s", " " .. " Restaurar Sesión", [[:lua require("persistence").load() <cr>]]),
-      dashboard.button("g", " " .. " Encontrar texto", ":Telescope live_grep <CR>"),
+      dashboard.button("g", " " .. " Buscar texto", ":Telescope live_grep <CR>"),
       dashboard.button("q", "󰩈" .. "  Salir", ":qa<CR>"),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do

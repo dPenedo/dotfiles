@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
+setxkbmap -layout us -variant altgr-intl
 sleep 5
 brave-browser &
 sleep 4
@@ -8,6 +9,8 @@ sleep 4
 kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # evolution &
 thunderbird &
+brave-browser -app=https://chat.openai.com &
+brave-browser -app=https://keep.google.com &
 sleep 4
 obsidian &
 # kitty -T "kitty" &
@@ -29,6 +32,8 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r tmux -t 11 &
 	wmctrl -r "tmux" -t 11 &
 	wmctrl -r "kitty" -t 11 &
+	wmctrl -r "ChatGPT" -t 17
+	wmctrl -r "Google Keep" -t 17
 	wmctrl -r "mozilla Thunderbird" -t 18 &
 	sleep 10
 	wmctrl -r "obsidian" -t 16 &
