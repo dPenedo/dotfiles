@@ -1,5 +1,7 @@
 return  {
     -- Autocompletion
+		event = "VeryLazy",
+
     'hrsh7th/nvim-cmp',
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source

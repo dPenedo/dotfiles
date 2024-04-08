@@ -1,5 +1,6 @@
   return {
     'crispgm/nvim-tabline',
+	event = "VeryLazy",
     dependencies = { 'nvim-tree/nvim-web-devicons' }, -- optional
     config = true,
     opts = {

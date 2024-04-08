@@ -44,6 +44,7 @@ require('lazy').setup({
   },
   {
     'chentoast/marks.nvim',
+    event = "BufReadPre",
 		opts ={}
   },
 
