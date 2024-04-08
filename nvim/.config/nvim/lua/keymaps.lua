@@ -121,9 +121,9 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
--- map('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
-map('n', '<leader>-', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
-map('n', '<leader>e', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
+map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
+-- map('n', '<leader>-', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
+map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 map('n', '<leader>T', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })

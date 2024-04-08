@@ -40,6 +40,12 @@ return {
         sidebars = 'transparent',
         floats = 'transparent',
       },
+overrides = function(colors)
+    local theme = colors.theme
+    return {
+        NvimTreeIndentMarker           = {fg = theme.syn.comment},
+    }
+end,
     },
   },
 
