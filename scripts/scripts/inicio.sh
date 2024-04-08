@@ -32,8 +32,8 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r tmux -t 11 &
 	wmctrl -r "tmux" -t 11 &
 	wmctrl -r "kitty" -t 11 &
-	wmctrl -r "ChatGPT" -t 17
-	wmctrl -r "Google Keep" -t 17
+	wmctrl -r "ChatGPT" -t 17 &
+	wmctrl -r "Google Keep" -t 19 &
 	wmctrl -r "mozilla Thunderbird" -t 18 &
 	sleep 10
 	wmctrl -r "obsidian" -t 16 &

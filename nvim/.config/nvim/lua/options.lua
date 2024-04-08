@@ -6,23 +6,13 @@
 -- vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'gruvbox-material'
 vim.cmd.colorscheme 'kanagawa'
--- vim.cmd.colorscheme 'PaperColor'
--- vim.cmd.colorscheme 'tokyonight'
--- Set highlight on search
 vim.o.hlsearch = true
-
--- Make line numbers default
 vim.wo.number = true
 vim.opt.relativenumber = true
 
-
 vim.opt.cursorline = true
--- Enable mouse mode
 vim.o.mouse = 'a'
 
--- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
 vim.opt.clipboard = "unnamedplus"
 
 

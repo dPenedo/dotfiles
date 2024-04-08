@@ -30,10 +30,17 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 -- Mueve el bloque hacia la derecha
 map('v', '>', '>gv', { noremap = true, silent = true })
 
+-- Trouble
+map("n", "<leader>xx", function() require("trouble").toggle() end)
+map("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
+map("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
+map("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
+map("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
+map("n", "gR", function() require("trouble").toggle("lsp_references") end)
 
 
 -- Notes
-vim.keymap.set('n', '<leader>nn', function()
+map('n', '<leader>nn', function()
   local filename = vim.fn.input('Enter file name: ', '', 'file')
   if filename ~= '' then
     local filepath = '~/Documentos/Dropbox/Notas//' .. filename .. '.md'
@@ -115,15 +122,14 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
 -- map('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
-map('n', '-', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
+map('n', '<leader>-', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
 map('n', '<leader>e', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
-
+map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 map('n', '<leader>T', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 -- map('n', '<A-<>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
--- map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 
@@ -161,11 +167,6 @@ map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
 map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
 map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
 map('n', '<C-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
-
-
-
-
-
 
 -- Mapeos para redimensionar ventanas
 map('n', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
