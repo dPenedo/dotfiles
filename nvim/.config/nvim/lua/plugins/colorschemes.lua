@@ -132,16 +132,25 @@ end,
   --   --   -- vim.cmd.Mellifluous 'mountain'
   --   -- end,
   -- },
-  -- { 'cryptomilk/nightcity.nvim', version = '*' },
-  -- { 'mellow-theme/mellow.nvim' },
-
-  -- { "savq/melange-nvim" },
-  -- { "dpenedo/melange-nvim" },
+--   { "dpenedo/melange-nvim" },
+--
+--   {'ribru17/bamboo.nvim',
+--   lazy = false,
+--   config = function()
+--     require('bamboo').setup {
+--       -- optional configuration here
+--   transparent = true, -- Show/hide background
+--     }
+--     require('bamboo').load()
+--   end,
+-- },
+-- 	{'kvrohit/rasmus.nvim',
+-- 	},
+--
   -- {
   --   "loctvl842/monokai-pro.nvim",
   --   lazy = false,
   --   priority = 1000,
   --   opts = {},
   -- }
-
 }

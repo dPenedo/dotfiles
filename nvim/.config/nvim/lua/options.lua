@@ -5,7 +5,8 @@
 -- vim.cmd.colorscheme 'tokyonight-moon'
 -- vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'gruvbox-material'
-vim.cmd.colorscheme 'kanagawa'
+vim.g.rasmus_transparent = true
+vim.cmd.colorscheme "kanagawa"
 vim.o.hlsearch = true
 vim.wo.number = true
 vim.opt.relativenumber = true
