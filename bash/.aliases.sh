@@ -9,7 +9,7 @@ alias pym='python manage.py'
 # Neovim
 alias nv='nvim'
 # alias nvim='lvim'
-alias lazyvim='nvim'
+alias lazyvim='NVIM_APPNAME=lazyvim nvim' # LazyVim
 alias lv='NVIM_APPNAME=lazyvim nvim' # LazyVim
 
 alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart

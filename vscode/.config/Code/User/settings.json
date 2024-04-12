@@ -40,13 +40,21 @@
     "editor.formatOnSave": true,
     //Workbench
     "workbench.colorCustomizations": {
-        "editorBracketMatch.background": "#483C5D",
-        "editorBracketMatch.border": "#A8A68F",
-        "editor.background": "#161617"
+        "[Kanagawa]": {
+            "editorBracketMatch.background": "#363646",
+            "editorBracketMatch.border": "#7e9cd8",
+            // "editor.background": "#161617"
+            "terminal.background": "#1b1b22",
+            "editorLineNumber.foreground": "#5E6982",
+            "editorLineNumber.activeForeground": "#ED9338",
+            "editor.background": "#161617",
+            "editorCursor.background": "#161617",
+        },
     },
-    "editor.tokenColorCustomizations": {
+    "editor.semanticTokenColorCustomizations": {
         "[Kanagawa Black]": {
             "comments": "#8A8980",
+            "background": "#161617"
         },
         "textMateRules": [
             {
@@ -149,7 +157,6 @@
             "before": [
                 "<leader>",
                 "s",
-                "a"
             ],
             "commands": [
                 "editor.action.selectAll"
@@ -243,6 +250,78 @@
             ],
             "commands": [
                 "workbench.action.splitEditorDown"
+            ]
+        },
+        // Harpoon
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "a"
+            ],
+            "commands": [
+                "vscode-harpoon.addEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "s"
+            ],
+            "commands": [
+                "vscode-harpoon.editEditors"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "p",
+                "e"
+            ],
+            "commands": [
+                "vscode-harpoon.editorQuickPick"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "j"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "k"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "l"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                ";"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor4"
             ]
         },
         {
@@ -485,6 +564,6 @@
             "type": "tag"
         }
     },
-    "workbench.colorTheme": "Gruvbox Material P Dark",
+    "workbench.colorTheme": "Kanagawa",
     "editor.stickyScroll.enabled": false
 }

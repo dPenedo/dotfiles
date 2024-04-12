@@ -26,7 +26,6 @@ require('lazy').setup({
   {
     'willothy/flatten.nvim',
     opts = {},
-    priority = 1001,
   },
   {
  "folke/zen-mode.nvim",

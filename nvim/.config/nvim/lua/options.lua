@@ -17,6 +17,7 @@ vim.o.mouse = 'a'
 vim.opt.clipboard = "unnamedplus"
 
 
+
 -- Enable break indent
 vim.o.breakindent = true
 
@@ -29,7 +30,7 @@ vim.cmd([[
 vim.o.undofile = true
 
 -- Mostrar siempre el indicador de pestañas/tabs
-vim.o.showtabline = 2
+vim.o.showtabline = 1
 
 -- Ancho del texto antes de hace wrap
 -- vim.opt.breakindent = true

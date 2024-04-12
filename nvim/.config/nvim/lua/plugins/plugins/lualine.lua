@@ -1,9 +1,8 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
+    event = "BufReadPre",
     config = function()
-      local harpoon = require("harpoon")
 
       local function truncate_branch_name(branch)
         if not branch or branch == "" then
@@ -29,7 +28,7 @@ return {
 
       require("lualine").setup({
         options = {
-          globalstatus = true,
+          globalstatus = false,
           icons_enabled = true,
           component_separators = { left = '|', right = '|' },
           section_separators = { left = "", right = '' },
@@ -54,4 +53,5 @@ return {
       })
     end,
   },
+	--
 }

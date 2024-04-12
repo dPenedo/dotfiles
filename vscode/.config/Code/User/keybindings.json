@@ -437,4 +437,12 @@
         ],
         "when": "editorFocus && vim.mode == 'Visual'"
     },
+    {
+        "key": "alt+s",
+        "command": "java.debug.runJavaFile"
+    },
+    {
+        "key": "shift+space",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+    },
 ]

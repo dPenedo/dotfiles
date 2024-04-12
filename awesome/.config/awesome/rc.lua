@@ -330,6 +330,14 @@ globalkeys = mytable.join(
         { description = "Siguiente audio o video", group = "Mis programas" }),
     awful.key({}, "XF86AudioNext", function() awful.util.spawn("playerctl next") end,
         { description = "Anterior audio o video", group = "Mis programas" }),
+	awful.key({ modkey }, "`", function ()
+    local screen = awful.screen.focused()
+    local tag = screen.tags[5] -- Accede al workspace 5
+    if tag then
+        awful.tag.viewtoggle(tag) -- Alterna entre el workspace actual y el workspace 5
+    end
+end, {description = "Ir al espacio 5 toggle", group = "Workspace"}),
+
     --    Volumen
     -- awful.key({ modkey }, "+", function() awful.util.spawn("amixer setMaster 10%+ -q") end,
     --     { description = "Thunderbird", group = "Mis programas" }),

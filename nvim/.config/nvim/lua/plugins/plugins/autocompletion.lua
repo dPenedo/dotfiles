@@ -1,6 +1,9 @@
 return  {
     -- Autocompletion
-		event = "VeryLazy",
+	-- event = "VeryLazy",
+     -- event = "InsertEnter",
+	lazy = true,
+	
 
     'hrsh7th/nvim-cmp',
     dependencies = {
@@ -16,3 +19,4 @@ return  {
       'rafamadriz/friendly-snippets',
     },
   }
+

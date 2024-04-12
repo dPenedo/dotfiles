@@ -1,6 +1,7 @@
 return {
     'gbprod/yanky.nvim',
      event = "InsertEnter",
+	lazy = true,
    enabled = true,
     keys = {
         { '<leader>p', '<cmd>Telescope yank_history<cr>', desc = 'Paste from yanky' },

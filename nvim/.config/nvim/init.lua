@@ -6,4 +6,3 @@ require 'plugins'
 require 'keymaps'
 require 'setups'
 require 'options'
-
