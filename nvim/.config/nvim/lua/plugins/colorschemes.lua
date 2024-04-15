@@ -153,11 +153,14 @@ end,
   --   priority = 1000,
   --   opts = {},
 	--
-{ "catppuccin/nvim", name = "catppuccin",opts = {
+{ "catppuccin/nvim", 
+	name = "catppuccin",
+	opts = {
+    transparent_background = true, -- disables setting the background color.
 		  color_overrides = {
         mocha = {
             pink = "#F5C5C2",
-            base = "#161617",
+            base = "#161722",
             mauve =  "#A8A6F7"
 			}
 	},
