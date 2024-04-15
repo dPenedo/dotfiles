@@ -152,6 +152,16 @@ end,
   --   lazy = false,
   --   priority = 1000,
   --   opts = {},
+	--
+{ "catppuccin/nvim", name = "catppuccin",opts = {
+		  color_overrides = {
+        mocha = {
+            pink = "#F5C5C2",
+            base = "#161617",
+            mauve =  "#A8A6F7"
+			}
+	},
+		}, priority = 1000 },
  {
   'projekt0n/github-nvim-theme',
   lazy = true, -- make sure we load this during startup if it is your main colorscheme

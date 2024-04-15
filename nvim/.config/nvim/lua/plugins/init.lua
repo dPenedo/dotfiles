@@ -5,7 +5,27 @@ require('lazy').setup({
     },
     rtp = {
       disabled_plugins = {
-        "netrwPlugin",  "gzip", "tarPlugin", "tohtml", "tutor", "zipPlugin"
+  "2html_plugin",
+        "getscript",
+        "getscriptPlugin",
+        "gzip",
+        "logipat",
+        "matchit",
+        "matchparen",
+        "netrw",
+        "netrwFileHandlers",
+        "netrwPlugin",
+        "netrwSettings",
+        "rrhelper",
+        "spec",
+        "spellfile_plugin",
+        "tar",
+        "tarPlugin",
+        "vimball",
+        "vimballPlugin",
+        "zip",
+        "zipPlugin",
+
       }
 
     }

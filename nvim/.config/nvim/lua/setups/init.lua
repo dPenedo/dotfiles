@@ -3,4 +3,6 @@ require('setups.treesitter-setup')
 require('setups.lsp-setup')
 require('setups.cmp-setup')
 require('setups.conform-setup')
+require('setups.statusline')
+require('setups.nvimtree')
 

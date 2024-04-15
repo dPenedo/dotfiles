@@ -334,7 +334,7 @@ globalkeys = mytable.join(
     local screen = awful.screen.focused()
     local tag = screen.tags[5] -- Accede al workspace 5
     if tag then
-        awful.tag.viewtoggle(tag) -- Alterna entre el workspace actual y el workspace 5
+                    tag:view_only()-- Alterna entre el workspace actual y el workspace 5
     end
 end, {description = "Ir al espacio 5 toggle", group = "Workspace"}),
 

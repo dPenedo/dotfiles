@@ -10,7 +10,6 @@ vim.cmd.colorscheme "kanagawa"
 vim.o.hlsearch = true
 vim.wo.number = true
 vim.opt.relativenumber = true
-
 vim.opt.cursorline = true
 vim.o.mouse = 'a'
 

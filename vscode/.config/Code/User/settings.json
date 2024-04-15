@@ -1,8 +1,6 @@
 {
     //Window
     "window.zoomLevel": 1,
-    // Menubar Visibility (VSCODE)
-    "window.menuBarVisibility": "toggle",
     "window.density.editorTabHeight": "compact",
     //Editor
     // "hide-tabs.toggleTabs": true,
@@ -39,6 +37,14 @@
     //Editor settings for formatting
     "editor.formatOnSave": true,
     //Workbench
+    "catppuccin.accentColor": "peach",
+    "catppuccin.colorOverrides": {
+        "mocha": {
+            "pink": "#F5C5C2",
+            "base": "#161617",
+            "mauve": "#A8A6F7"
+        }
+    },
     "workbench.colorCustomizations": {
         "[Kanagawa]": {
             "editorBracketMatch.background": "#363646",
@@ -521,7 +527,6 @@
         },
     ],
     "workbench.editor.showTabs": "single",
-    "workbench.activityBar.location": "hidden",
     "git.openRepositoryInParentFolders": "never",
     "todo-tree.highlights.customHighlight": {
         "WARN": {
@@ -564,6 +569,7 @@
             "type": "tag"
         }
     },
-    "workbench.colorTheme": "Kanagawa",
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Catppuccin Mocha"
 }
