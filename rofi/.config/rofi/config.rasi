@@ -15,13 +15,14 @@
 //@theme "/home/daniel/.config/rofi/themes/gruvbox-material.rasi"
 //@theme "/home/daniel/.config/rofi/themes/night-owl.rasi"
 //@theme "/home/daniel/.config/rofi/themes/everforest.rasi"
-@theme "/home/daniel/.config/rofi/themes/kanagawa.rasi"
+//@theme "/home/daniel/.config/rofi/themes/kanagawa.rasi"
+@theme "/home/daniel/.config/rofi/themes/mocha.rasi"
 
 configuration {
     display-ssh:    "     ssh:";
     display-run:    "     run:";
-    display-drun:   "     programas:";
-    display-window: "     ventanas:";
+    display-drun:   "     Programas:";
+    display-window: "     Ventanas:";
     display-combi:  "     combi:";
     display-filebrowser: "    filebrowser:";
 

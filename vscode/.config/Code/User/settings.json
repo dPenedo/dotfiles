@@ -41,8 +41,10 @@
     "catppuccin.colorOverrides": {
         "mocha": {
             "pink": "#F5C5C2",
-            "base": "#161617",
-            "mauve": "#A8A6F7"
+            "base": "#161722",
+            "mauve": "#A8A6F7",
+            "text": "#DEE4F8",
+            "lavender": "#CBD1FB",
         }
     },
     "workbench.colorCustomizations": {

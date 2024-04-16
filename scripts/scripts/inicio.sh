@@ -12,7 +12,7 @@ thunderbird &
 brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://keep.google.com &
 sleep 4
-obsidian &
+# obsidian &
 # kitty -T "kitty" &
 # sleep 2
 # Zotero &
