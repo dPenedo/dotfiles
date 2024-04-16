@@ -56,7 +56,7 @@ return {
       color_overrides = {
         mocha = {
           pink = "#F5C5C2",
-          base = "#161617",
+          -- base = "#161617",
           mauve = "#A8A6F7",
         },
       },
