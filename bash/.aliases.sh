@@ -11,9 +11,9 @@ alias nv='nvim'
 # alias nvim='lvim'
 alias lazyvim='NVIM_APPNAME=lazyvim nvim' # LazyVim
 alias lv='NVIM_APPNAME=lazyvim nvim' # LazyVim
+alias n2='NVIM_APPNAME=2nvim nvim'        # Nv-chad
 
 alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
-alias nc='NVIM_APPNAME=nv-chad nvim'        # Nv-chad
 
 # alias n='nvim -c Lf'
 alias ts='tmux new-session -A -D -s'
@@ -45,11 +45,11 @@ alias ....="cd ../.."
 alias ......="cd ../../.."
 alias lg="lazygit"
 alias nrd="npm run dev"
-alias idea="intellijidea-ce . &"
 alias ta="tmux a"
 alias fu="fu | head -c 4 | xclip -selection clipboard"
 alias ccd="zi"
 alias za='zathura --fork'
+alias intellij='/home/daniel/Descargas/Programas/idea-IU-241.14494.240/bin/idea.sh'
 
 # Programas flatpak
 

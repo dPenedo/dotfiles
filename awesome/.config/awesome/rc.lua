@@ -373,11 +373,27 @@ globalkeys = mytable.join(
 	awful.key({}, "XF86AudioNext", function()
 		awful.util.spawn("playerctl next")
 	end, { description = "Anterior audio o video", group = "Mis programas" }),
+	-- awful.key({ modkey }, "`", function()
+	-- 	local screen = awful.screen.focused()
+	-- 	local tag = screen.tags[5] -- Accede al workspace 5
+	-- 	if tag then
+	-- 		tag:view_only() -- Alterna entre el workspace actual y el workspace 5
+	-- 	end
+	-- end, { description = "Ir al espacio 5 toggle", group = "Workspace" }),
+
 	awful.key({ modkey }, "`", function()
 		local screen = awful.screen.focused()
-		local tag = screen.tags[5] -- Accede al workspace 5
-		if tag then
-			tag:view_only() -- Alterna entre el workspace actual y el workspace 5
+		local current_tag = screen.selected_tag -- Obtener la etiqueta actual
+		local target_tag = screen.tags[5] -- Acceder al workspace 5
+
+		if current_tag == target_tag then
+			-- Si la etiqueta actual es la etiqueta 5, cambia a la última etiqueta almacenada
+			awful.tag.history.restore()
+		else
+			-- Si la etiqueta actual no es la etiqueta 5, cambia a la etiqueta 5
+			if target_tag then
+				target_tag:view_only()
+			end
 		end
 	end, { description = "Ir al espacio 5 toggle", group = "Workspace" }),
 
