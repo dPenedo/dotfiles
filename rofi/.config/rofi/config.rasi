@@ -21,13 +21,13 @@
 configuration {
     display-ssh:    "     ssh:";
     display-run:    "     run:";
-    display-drun:   "     Programas:";
-    display-window: "     Ventanas:";
+    display-drun:   "     programas:";
+    display-window: "     ventanas:";
     display-combi:  "     combi:";
     display-filebrowser: "    filebrowser:";
 
 
-	kb-accept-entry: "Tab";
+	kb-accept-entry: "Tab,Return";
 	kb-mode-complete: "Shift+Tab";
 	kb-row-tab: "Control+j";
 	kb-remove-to-eol: "Control+U";
