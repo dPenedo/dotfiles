@@ -58,6 +58,19 @@
             "editor.background": "#161617",
             "editorCursor.background": "#161617",
         },
+        "[nordic-vscode]": {
+            "editorBracketMatch.background": "#363646",
+            "editorBracketMatch.border": "#A3BE8C",
+            // "editor.background": "#161617"
+            "terminal.background": "#1B1F27",
+            // "editorLineNumber.foreground": "#5E6982",
+            "editorLineNumber.activeForeground": "#D08770",
+            "editor.background": "#1B1F27",
+            "editorError.foreground": "#f48771",
+            "editorError.background": "#5e262c",
+            "editorError.border": "#BF616A",
+            "editorCursor.background": "#161617",
+        },
     },
     "editor.semanticTokenColorCustomizations": {
         "[Kanagawa Black]": {
@@ -118,8 +131,6 @@
         "django-html": "html",
         "jinja-html": "html"
     },
-    //Breadcrumbs Off
-    "breadcrumbs.enabled": false,
     // Java/Typescript
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -573,5 +584,7 @@
     },
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Catppuccin Mocha"
+    "workbench.colorTheme": "nordic-vscode",
+    "workbench.activityBar.location": "hidden",
+    "explorer.autoReveal": false
 }
