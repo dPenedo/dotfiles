@@ -41,10 +41,10 @@
     "catppuccin.colorOverrides": {
         "mocha": {
             "pink": "#F5C5C2",
-            "base": "#161722",
+            "base": "#181825",
             "mauve": "#A8A6F7",
-            "text": "#DEE4F8",
-            "lavender": "#CBD1FB",
+            // "text": "#DEE4F8",
+            // "lavender": "#CBD1FB",
         }
     },
     "workbench.colorCustomizations": {
@@ -584,7 +584,7 @@
     },
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "nordic-vscode",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.activityBar.location": "hidden",
     "explorer.autoReveal": false
 }
