@@ -188,7 +188,11 @@ local cpu = lain.widget.cpu({
 local tempicon = wibox.widget.imagebox(theme.widget_temp)
 local temp = lain.widget.temp({
 	settings = function()
-		widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C "))
+		if coretemp_now ~= "N/A" then
+			widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C "))
+		else
+			widget:set_markup(markup.font(theme.font, " N/A°C ")) -- Display "N/A" if temperature is not available
+		end
 	end,
 })
 
@@ -402,9 +406,11 @@ function theme.at_screen_connect(s)
 			arrl_dl,
 			memicon,
 			mem.widget,
+
 			-- arrl_dl,
 			-- tempicon,
 			-- temp.widget,
+
 			arrl_ld,
 			-- wibox.container.background(fsicon, theme.bg_focus),
 			--wibox.container.background(theme.fs.widget, theme.bg_focus),

@@ -116,5 +116,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export JAVA_HOME=/usr/lib/jvm/default-java
-
+# export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME=/home/daniel/Descargas/Programas/jdk-11.0.0.1/
+source /home/daniel/.tmc-autocomplete.sh || true

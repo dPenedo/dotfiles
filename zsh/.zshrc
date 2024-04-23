@@ -123,3 +123,5 @@ export NVM_DIR="$HOME/.nvm"
 # Created by `pipx` on 2024-02-10 16:28:16
 export PATH="$PATH:/home/daniel/.local/bin"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# export JAVA_HOME=/home/daniel/Descargas/Programas/jdk-11.0.0.1/
+source /home/daniel/.tmc-autocomplete.sh || true
