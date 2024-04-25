@@ -31,13 +31,24 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
 
 -- Trouble
-map("n", "<leader>xx", function() require("trouble").toggle() end)
-map("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
-map("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
-map("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
-map("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
-map("n", "gR", function() require("trouble").toggle("lsp_references") end)
-
+map('n', '<leader>xx', function()
+  require('trouble').toggle()
+end)
+map('n', '<leader>xw', function()
+  require('trouble').toggle 'workspace_diagnostics'
+end)
+map('n', '<leader>xd', function()
+  require('trouble').toggle 'document_diagnostics'
+end)
+map('n', '<leader>xq', function()
+  require('trouble').toggle 'quickfix'
+end)
+map('n', '<leader>xl', function()
+  require('trouble').toggle 'loclist'
+end)
+map('n', 'gR', function()
+  require('trouble').toggle 'lsp_references'
+end)
 
 -- Notes
 map('n', '<leader>nn', function()
@@ -49,28 +60,24 @@ map('n', '<leader>nn', function()
   end
 end, { desc = '[N]ew [N]otes' })
 
-
 -- Diagnostics
 local diagnostic_goto = function(next, severity)
   local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
   severity = severity and vim.diagnostic.severity[severity] or nil
   return function()
-    go({ severity = severity })
+    go { severity = severity }
   end
 end
-map("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
-map("n", "]d", diagnostic_goto(true), { desc = "Next Diagnostic" })
-map("n", "[d", diagnostic_goto(false), { desc = "Prev Diagnostic" })
-map("n", "]e", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
-map("n", "[e", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
-map("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
-map("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
-
-
-
+map('n', '<leader>cd', vim.diagnostic.open_float, { desc = 'Line Diagnostics' })
+map('n', ']d', diagnostic_goto(true), { desc = 'Next Diagnostic' })
+map('n', '[d', diagnostic_goto(false), { desc = 'Prev Diagnostic' })
+map('n', ']e', diagnostic_goto(true, 'ERROR'), { desc = 'Next Error' })
+map('n', '[e', diagnostic_goto(false, 'ERROR'), { desc = 'Prev Error' })
+map('n', ']w', diagnostic_goto(true, 'WARN'), { desc = 'Next Warning' })
+map('n', '[w', diagnostic_goto(false, 'WARN'), { desc = 'Prev Warning' })
 
 -- concealevel
-map('n', '<leader>c0', ':set conceallevel=0<cr> ', { desc = 'conceallevel 0 ' });
+map('n', '<leader>c0', ':set conceallevel=0<cr> ', { desc = 'conceallevel 0 ' })
 map('n', '<leader>c1', ':set conceallevel=1<cr> ', { desc = 'conceallevel 1 ' })
 map('n', '<leader>c2', ':set conceallevel=2<cr> ', { desc = 'conceallevel 2 ' })
 
@@ -80,14 +87,12 @@ map('n', 'ñ', '`', { desc = 'backtick asignado a ñ' })
 
 map('n', ',,', ',', { desc = 'coma para f' })
 
-
 -- Linea abajo/linea encima
 map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 
 -- Zen mode
 map('n', '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
-
 
 -- Guardar rápidamente el búfer actual o todos los búferes
 map('n', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
@@ -116,8 +121,7 @@ map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalment
 map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
-map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
-  { desc = 'Alternar colores de resaltado' })
+map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>', { desc = 'Alternar colores de resaltado' })
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
@@ -134,10 +138,9 @@ map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir term
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 
 -- Mapeos para el terminal
-map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
-map("t", "<C-x>", "<C-\\><C-n><CR>", { desc = 'Salir del modo terminal' })
-map("t", "<C-l>", "<C-u>clear<CR>", { desc = 'Limpiar la pantalla del terminal' })
-
+map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+map('t', '<C-x>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+map('t', '<C-l>', '<C-u>clear<CR>', { desc = 'Limpiar la pantalla del terminal' })
 
 -- Gestión de pestañas
 map('n', '<leader><tab>', ':tabedit<CR>', { desc = 'Crear pestaña' })
@@ -162,7 +165,7 @@ map('n', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })
 
 -- Mapeos para moverse entre ventanas
--- map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
+map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
 map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
 map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
 map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
@@ -173,3 +176,6 @@ map('n', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño d
 map('n', '<C-left>', ':vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
 map('n', '<C-down>', ':horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
 map('n', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
+
+-- Java:
+map('n', '<A-;>', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
