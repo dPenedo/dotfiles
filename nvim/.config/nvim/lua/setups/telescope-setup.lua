@@ -23,24 +23,22 @@ require('telescope').setup {
       preview_cutoff = 120,
     },
 
-
     mappings = {
       i = {
         ['<C-u>'] = false,
         ['<C-d>'] = false,
         ['<Tab>'] = false,
-        ['<Tab>'] = "select_default",
-        ["<C-s>"] = "select_horizontal",
-        ["<C-v>"] = "select_vertical",
-        ["<C-h>"] = "which_key",
-        ["<C-j>"] = "move_selection_next",
-        ["<C-k>"] = "move_selection_previous",
+        ['<Tab>'] = 'select_default',
+        ['<C-s>'] = 'select_horizontal',
+        ['<C-v>'] = 'select_vertical',
+        ['<C-h>'] = 'which_key',
+        ['<C-j>'] = 'move_selection_next',
+        ['<C-k>'] = 'move_selection_previous',
       },
       n = {
-        ["<C-s>"] = "select_horizontal",
-        ["<C-v>"] = "select_vertical",
+        ['<C-s>'] = 'select_horizontal',
+        ['<C-v>'] = 'select_vertical',
       },
-
     },
   },
 }
@@ -86,8 +84,6 @@ end
 vim.api.nvim_create_user_command('LiveGrepGitRoot', live_grep_git_root, {})
 
 -- See `:help telescope.builtin`
-vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
-vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 -- vim.keymap.set('n', '<leader>/', function()
 --   -- You can pass additional configuration to telescope to change theme, layout, etc.
 --   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
@@ -102,35 +98,7 @@ local function telescope_live_grep_open_files()
     prompt_title = 'Live Grep in Open Files',
   }
 end
-vim.api.nvim_create_user_command(
-    'NotasBuscar',
-    function ()
-        require('telescope.builtin').find_files({cwd="~/Documentos/Dropbox/Notas/", prompt_title="Notas"})
-    end,
-    {}
-)
+vim.api.nvim_create_user_command('NotasBuscar', function()
+  require('telescope.builtin').find_files { cwd = '~/Documentos/Dropbox/Notas/', prompt_title = 'Notas' }
+end, {})
 vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[S]earch [/] in Open Files' })
-vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
-vim.keymap.set('n', '<leader>f', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
-vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
-vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
-vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
-vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-vim.keymap.set('n', '<leader>nb', ':NotasBuscar<CR>', { desc = '[N]otas [Buscar]' })
-vim.keymap.set('n', ',b', ':Telescope buffers<CR>', { desc = 'Telescope para buffers' })
-vim.keymap.set('n', ',B', ':Telescope builtin<CR>', { desc = 'Telescope para comandos internos' })
-vim.keymap.set('n', ',g', ':Telescope live_grep<CR>', { desc = 'Telescope para búsqueda en vivo con grep' })
-vim.keymap.set('n', ',r', ':Telescope registers<CR>', { desc = 'Telescope para registros' })
-vim.keymap.set('n', ',k', ':Telescope keymaps<CR>', { desc = 'keymaps' })
-vim.keymap.set('n', '<leader>l', ':Telescope current_buffer_fuzzy_find<CR>',
-	{ desc = 'Telescope para en el buffer actual' })
-vim.keymap.set('n', ',u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
-vim.keymap.set('n', '<leader>u', ':Telescope undo<CR>',
-	{ desc = 'Telescope para en el historial de deshacer' })
-vim.keymap.set('n', ',T', ':Telescope treesitter<CR>', { desc = 'Telescope para en Treesitter' })
-vim.keymap.set('n', ',t', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
-vim.keymap.set('n', '<leader>tt', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
-vim.keymap.set('n', ',h', ':Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
-vim.keymap.set('n', ',m', ':Telescope marks<CR>', { desc = 'Telescope para marks' })

@@ -179,3 +179,38 @@ map('n', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de 
 
 -- Java:
 map('n', '<A-;>', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
+
+-- Telescope
+
+map('n', '<leader>gf', ':Telescope git_files<CR>', { desc = 'Search [G]it [F]iles' })
+map('n', '<leader>sh', ':Telescope help_tags<CR>', { desc = '[S]earch [H]elp' })
+map('n', '<leader>sw', ':Telescope grep_string<CR>', { desc = '[S]earch current [W]ord' })
+map('n', '<leader>sg', ':Telescope live_grep<CR>', { desc = '[S]earch by [G]rep' })
+map('n', '<leader>sG', ':LiveGrepGitRoot<cr><CR>', { desc = '[S]earch by [G]rep on Git Root' })
+map('n', '<leader>sd', ':Telescope diagnostics<CR>', { desc = '[S]earch [D]iagnostics' })
+map('n', '<leader>sr', ':Telescope resume<CR>', { desc = '[S]earch [R]esume' })
+map('n', '<leader>nb', ':NotasBuscar<CR>', { desc = '[N]otas [Buscar]' })
+map('n', ',b', ':Telescope buffers<CR>', { desc = 'Telescope para buffers' })
+map('n', ',B', ':Telescope builtin<CR>', { desc = 'Telescope para comandos internos' })
+map('n', ',g', ':Telescope live_grep<CR>', { desc = 'Telescope para búsqueda en vivo con grep' })
+map('n', ',r', ':Telescope registers<CR>', { desc = 'Telescope para registros' })
+map('n', ',k', ':Telescope keymaps<CR>', { desc = 'keymaps' })
+map('n', ',u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
+map('n', '<leader>u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
+map('n', ',T', ':Telescope treesitter<CR>', { desc = 'Telescope para en Treesitter' })
+map('n', ',t', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
+map('n', '<leader>tt', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
+map('n', ',h', ':Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
+map('n', ',m', ':Telescope marks<CR>', { desc = 'Telescope para marks' })
+
+-- FzfLua
+map('n', '<leader>l', ':FzfLua blines<CR>', { desc = 'fzflua para en el buffer actual' })
+map('n', '<leader>gg', ':FzfLua lines<CR>', { desc = 'fzf grep' })
+map('n', '<leader>?', ':FzfLua oldfiles<CR>', { desc = 'fzf grep' })
+map('n', '<leader><space>', ':FzfLua buffers<CR>', { desc = 'fzf grep' })
+map('n', '<leader>f', ':FzfLua files<CR>', { desc = 'Fzf lua files' })
+map('n', '<leader>co', ':FzfLua colorschemes<CR>', { desc = 'Fzf lua colorschemes' })
+map('n', '<leader>ca', ':FzfLua lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
+map('n', 'gr', ':FzfLua lsp_references<CR>', { desc = 'Fzf lua colorschemes' })
+
+-- vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })

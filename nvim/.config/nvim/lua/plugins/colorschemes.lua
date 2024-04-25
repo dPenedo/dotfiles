@@ -5,7 +5,7 @@ return {
     opts = {
       -- transparent = true, -- do not set background color
       compile = true,
-      transparent = true,
+      -- transparent = true,
       functionStyle = { bold = true },
       dimInactive = false,
       typeStyle = { bold = true },
@@ -17,6 +17,12 @@ return {
               -- bg_gutter = '#161617',
               bg_gutter = 'none',
               nontext = '#5E6982',
+            },
+          },
+          lotus = {
+            ui = {
+              -- bg_gutter = '#161617',
+              -- bg = '#f6f9e1',
             },
           },
         },
@@ -34,6 +40,7 @@ return {
           -- sumiInk3 = "#120309",
           -- autumnGreen = "#037971",
           -- springGreen = "#9EBC9F",
+          lotusInk1 = '#161617',
         },
       },
       styles = {
@@ -157,7 +164,7 @@ return {
     'catppuccin/nvim',
     name = 'catppuccin',
     opts = {
-      transparent_background = true, -- disables setting the background color.
+      -- transparent_background = true, -- disables setting the background color.
       color_overrides = {
         mocha = {
           pink = '#F5C5C2',
@@ -165,6 +172,9 @@ return {
           mauve = '#A8A6F7',
           text = '#dee4f8',
           lavender = '#CBD1FB',
+        },
+        latte = {
+          mantle = '#c9cddf',
         },
       },
     },
