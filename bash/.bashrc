@@ -41,7 +41,10 @@ if [ -x "$(command -v fzf)" ]; then
 	source ~/.fzf/shell/completion.bash
 fi
 
-export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
+export FZF_DEFAULT_OPTS="--layout=reverse --info=inline  \
+--color=bg+:#313244,spinner:0,hl:green \
+--color=fg:#cdd6f4,header:blue,info:gray,pointer:blue \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:blue,hl+:green"
 
 #############
 ### PROMPT###

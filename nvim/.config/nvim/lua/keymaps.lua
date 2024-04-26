@@ -178,7 +178,7 @@ map('n', '<C-down>', ':horizontal resize +2<CR>', { desc = 'Aumentar el tamaño 
 map('n', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
 
 -- Java:
-map('n', '<A-;>', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
+map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 
 -- Telescope
 
@@ -194,7 +194,6 @@ map('n', ',b', ':Telescope buffers<CR>', { desc = 'Telescope para buffers' })
 map('n', ',B', ':Telescope builtin<CR>', { desc = 'Telescope para comandos internos' })
 map('n', ',g', ':Telescope live_grep<CR>', { desc = 'Telescope para búsqueda en vivo con grep' })
 map('n', ',r', ':Telescope registers<CR>', { desc = 'Telescope para registros' })
-map('n', ',k', ':Telescope keymaps<CR>', { desc = 'keymaps' })
 map('n', ',u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
 map('n', '<leader>u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
 map('n', ',T', ':Telescope treesitter<CR>', { desc = 'Telescope para en Treesitter' })
@@ -202,13 +201,14 @@ map('n', ',t', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
 map('n', '<leader>tt', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
 map('n', ',h', ':Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
 map('n', ',m', ':Telescope marks<CR>', { desc = 'Telescope para marks' })
-
+map('n', '<leader>f', ':Telescope find_files <CR>', { desc = 'Fzf lua files' })
 -- FzfLua
+map('n', ',k', ':FzfLua keymaps<CR>', { desc = 'keymaps' })
 map('n', '<leader>l', ':FzfLua blines<CR>', { desc = 'fzflua para en el buffer actual' })
-map('n', '<leader>gg', ':FzfLua lines<CR>', { desc = 'fzf grep' })
+map('n', ',f', ':FzfLua files <CR>', { desc = 'Fzf lua files' })
+map('n', '<leader>gg', ':FzfLua grep_visual<CR>', { desc = 'fzf grep' })
 map('n', '<leader>?', ':FzfLua oldfiles<CR>', { desc = 'fzf grep' })
 map('n', '<leader><space>', ':FzfLua buffers<CR>', { desc = 'fzf grep' })
-map('n', '<leader>f', ':FzfLua files<CR>', { desc = 'Fzf lua files' })
 map('n', '<leader>co', ':FzfLua colorschemes<CR>', { desc = 'Fzf lua colorschemes' })
 map('n', '<leader>ca', ':FzfLua lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
 map('n', 'gr', ':FzfLua lsp_references<CR>', { desc = 'Fzf lua colorschemes' })

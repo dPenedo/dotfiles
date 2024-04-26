@@ -82,7 +82,13 @@ bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
 
 # FZF 
-export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
+# export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
+# export FZF_DEFAULT_OPTS=' --color=bg+:-1, fg:white, fg+:blue, border:black, spinner:0, hl:blue, header:blue, info:gray, pointer:blue, marker:blue, prompt:blue, hl+:red'
+# export FZF_DEFAULT_OPTS="--layout=reverse --info=inline --prompt="▶ " --pointer="→" --marker="✅"\
+export FZF_DEFAULT_OPTS="--layout=reverse --info=inline  \
+--color=bg+:#313244,spinner:0,hl:green \
+--color=fg:#cdd6f4,header:blue,info:gray,pointer:blue \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:blue,hl+:green"
 bindkey -M viins 'ø' fzf-history-widget
 bindkey -M vicmd 'ø' fzf-history-widget
 
