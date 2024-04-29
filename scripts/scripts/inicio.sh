@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
-setxkbmap -layout us -variant altgr-intl
+setxkbmap -layout us -variant altgr-intl &
+./xmodmap.sh &
+
 sleep 5
 brave-browser &
 sleep 4
@@ -40,8 +42,10 @@ if [[ $monitor_externo = *connected* ]]; then
 	# wmctrl -r "Correo" -t 18 &
 else
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
-	wmctrl -r tmux -t 1 &
+	wmctrl -r "kitty" -t 1 &
+	wmctrl -r "tmux" -t 1 &
 	wmctrl -r "Correo" -t 8 &
+	wmctrl -r "ChatGPT" -t 7 &
 	wmctrl -r thunderbird -t 9 &
 	sleep 5
 	wmctrl -r "obsidian" -t 6 &

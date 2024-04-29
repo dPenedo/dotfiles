@@ -177,6 +177,16 @@ return {
           mantle = '#c9cddf',
         },
       },
+      highlight_overrides = {
+        mocha = function(colors)
+          return {
+            LineNr = { fg = colors.overlay2 },
+            CursorLineNr = { fg = colors.yellow },
+            NvimTreeOpenedFolderName = { fg = colors.lavender },
+            NvimTreeEmptyFolderName = { fg = colors.teal },
+          }
+        end,
+      },
     },
     priority = 1000,
   },
