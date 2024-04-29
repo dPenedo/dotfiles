@@ -24,6 +24,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
+--Format
+map('n', '<leader>F', ':Format<CR>', { desc = 'Formato al archivo' })
 
 -- Mueve el bloque hacia la izquierda
 map('v', '<', '<gv', { noremap = true, silent = true })
@@ -83,7 +85,7 @@ map('n', '<leader>c2', ':set conceallevel=2<cr> ', { desc = 'conceallevel 2 ' })
 
 map('n', '<leader>o', ':delmarks ', { desc = 'Borrar mark' })
 
-map('n', 'ñ', '`', { desc = 'backtick asignado a ñ' })
+map('n', "'", '`', { desc = "backtick asignado a '" })
 
 map('n', ',,', ',', { desc = 'coma para f' })
 

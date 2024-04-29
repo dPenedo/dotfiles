@@ -2,7 +2,7 @@
 
 # xdg-open https://www.tutanota.com &
 setxkbmap -layout us -variant altgr-intl &
-./xmodmap.sh &
+~/scripts/xmodmap.sh &
 
 sleep 5
 brave-browser &
