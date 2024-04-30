@@ -30,12 +30,12 @@ return {
           -- fujiWhite = "#DCD7Bb
           -- sumiInk1 = "#161617",
           -- sumiInk1 = "#1f1f28",
-          sumiInk3 = '#161617',
+          -- sumiInk3 = '#161617',
           -- sumiInk6 = "#47475C",
           sumiInk6 = '#3A3A4B',
-          oldWhite = '#DCD7Bb',
+          -- oldWhite = '#DCD7Bb',
           -- fujiWhite = '#F6F1d3',
-          fujiWhite = '#eee0bf',
+          -- fujiWhite = '#eee0bf',
           -- oldWhite = "#F1eed7",
           -- sumiInk3 = "#120309",
           -- autumnGreen = "#037971",
@@ -141,12 +141,13 @@ return {
   -- },
   --   { "dpenedo/melange-nvim" },
   --
-  --   {'ribru17/bamboo.nvim',
+  -- {
+  --   'ribru17/bamboo.nvim',
   --   lazy = false,
   --   config = function()
   --     require('bamboo').setup {
   --       -- optional configuration here
-  --   transparent = true, -- Show/hide background
+  --       -- transparent = true, -- Show/hide background
   --     }
   --     require('bamboo').load()
   --   end,
