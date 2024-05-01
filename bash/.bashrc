@@ -124,5 +124,5 @@ export JAVA_HOME=/home/daniel/Descargas/Programas/jdk-11.0.0.1/
 source /home/daniel/.tmc-autocomplete.sh || true
 # Solo para el curso de MOOC, borrar al finalizar!
 alias tt="tmc test && notify-send '✅ Tests completados' "
-alias tss="tmc submit"
+alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
 alias te="tmc exercises mooc-java-programming-i"
