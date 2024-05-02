@@ -2,7 +2,6 @@
 
 # xdg-open https://www.tutanota.com &
 setxkbmap -layout us -variant altgr-intl &
-~/scripts/xmodmap.sh &
 
 sleep 5
 brave-browser &
@@ -11,6 +10,7 @@ sleep 4
 kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # evolution &
 thunderbird &
+/home/daniel/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://keep.google.com &
 sleep 4

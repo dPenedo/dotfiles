@@ -172,7 +172,7 @@ return {
           base = '#161722',
           mauve = '#A8A6F7',
           text = '#dee4f8',
-          lavender = '#CBD1FB',
+          -- lavender = '#CBD1FB',
         },
         latte = {
           mantle = '#c9cddf',

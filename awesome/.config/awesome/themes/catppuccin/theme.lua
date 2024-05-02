@@ -20,8 +20,8 @@ theme.fg_accent = "#89b4fa"
 theme.fg_inactive = "#313244"
 
 theme.fg_urgent = "#CC9393"
-theme.bg_normal = "#1b1c26"
-theme.bg_focus = "#2A2A37"
+theme.bg_normal = "#161722"
+theme.bg_focus = "#313244"
 theme.bg_urgent = "#1A1A1A"
 theme.border_width = dpi(3)
 theme.border_normal = "#3F3F3F"
