@@ -6,9 +6,9 @@ return {
       -- transparent = true, -- do not set background color
       compile = true,
       transparent = true,
-      functionStyle = { bold = true },
+      functionStyle = { bold = false },
       dimInactive = false,
-      typeStyle = { bold = true },
+      typeStyle = { bold = false },
       keywordStyle = { bold = true },
       colors = {
         theme = {
@@ -53,12 +53,28 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     opts = {
+      -- transparent_background = true, -- disables setting the background color.
       color_overrides = {
         mocha = {
-          pink = "#F5C5C2",
-          -- base = "#161617",
-          mauve = "#A8A6F7",
+          -- pink = "#F5C5C2",
+          base = "#161722",
+          -- mauve = "#A8A6F7",
+          text = "#dee4f8",
+          -- lavender = '#CBD1FB',
         },
+        latte = {
+          mantle = "#c9cddf",
+        },
+      },
+      highlight_overrides = {
+        mocha = function(colors)
+          return {
+            LineNr = { fg = colors.overlay2 },
+            CursorLineNr = { fg = colors.yellow },
+            NvimTreeOpenedFolderName = { fg = colors.lavender },
+            NvimTreeEmptyFolderName = { fg = colors.teal },
+          }
+        end,
       },
     },
     priority = 1000,
