@@ -8,6 +8,14 @@ end
 -- Mapeo para <Space> (espacio) usando vim.keymap
 map({ "n", "v" }, "<Space>", "<Nop>")
 
+-- Borrar keymaps
+
+vim.keymap.del("n", "<leader>w-")
+vim.keymap.del("n", "<leader>wd")
+vim.keymap.del("n", "<leader>ww")
+vim.keymap.del("n", "<leader>w|")
+vim.keymap.del("n", "<leader>qq")
+
 -- Remapeo para manejar el salto de palabras
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
@@ -49,6 +57,7 @@ map("n", "<leader>z", ":ZenMode<CR>", { desc = "Entra o sale  en Zen mode" })
 -- Guardar rápidamente el búfer actual o todos los búferes
 map("n", "<A-s>", "<CMD>update<CR>", { desc = "Guardar el búfer actual" })
 map("n", "<leader>w", "<CMD>update<CR>", { desc = "Guardar el búfer actual" })
+map("n", "<leader>qq", "<CMD>quit<CR>", { desc = "Cerrar el búfer actual" })
 map("i", "<A-s>", "<CMD>update<CR>", { desc = "Guardar el búfer actual" })
 map("v", "<A-s>", "<CMD>update<CR>", { desc = "Guardar el búfer actual" })
 map("n", "<leader>W", "<CMD>wall<CR>", { desc = "Guardar todos los búferes" })
