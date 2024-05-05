@@ -1,5 +1,8 @@
 return {
   "nvim-telescope/telescope.nvim",
+  dependencies = {
+    "debugloop/telescope-undo.nvim",
+  },
 
   opts = {
     defaults = {
