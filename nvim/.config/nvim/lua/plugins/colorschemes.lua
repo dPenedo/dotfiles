@@ -21,6 +21,7 @@ return {
           },
           lotus = {
             ui = {
+              bg_gutter = 'none',
               -- bg_gutter = '#161617',
               -- bg = '#f6f9e1',
             },
@@ -41,6 +42,12 @@ return {
           -- autumnGreen = "#037971",
           -- springGreen = "#9EBC9F",
           lotusInk1 = '#161617',
+          lotusWhite0 = '#B3BDFD',
+          lotusWhite1 = '#dcd5ac',
+          lotusWhite2 = '#e5ddb0',
+          lotusWhite3 = '#F0F0F0',
+          lotusWhite4 = '#CDD6F4',
+          lotusWhite5 = '#CDD6F4',
         },
       },
       styles = {
@@ -109,30 +116,29 @@ return {
   --         ]])
   --     end,
   --   },
-  --   {
-  --   "folke/tokyonight.nvim",
-  --   lazy = true,
-  --   priority = 1000,
-  --   opts = {
-  --         transparent = true, -- Enable this to disable setting the background color
-  --
-  --     },
-  -- },
+  {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      -- transparent = true, -- Enable this to disable setting the background color
+    },
+  },
   -- {
   --   'ramojus/mellifluous.nvim',
-  --   lazy = true,
+  --   lazy = false,
   --   priority = 1000,
   --   opts = {
   --     color_set = 'mountain',
   --     dim_inactive = true,
-  --     transparent = false,   -- Enable this to disable setting the background color
+  --     transparent = false, -- Enable this to disable setting the background color
   --     mellifluous = {
-  --       neutral = false,     -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
-  --       bg_contrast = 'hard' -- options: 'soft', 'medium', 'hard'
+  --       neutral = false, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
+  --       bg_contrast = 'hard', -- options: 'soft', 'medium', 'hard'
   --     },
   --     mountain = {
-  --       bg_contrast = 'medium' -- options: 'soft', 'medium', 'hard'
-  --     }
+  --       bg_contrast = 'medium', -- options: 'soft', 'medium', 'hard'
+  --     },
   --   },
   --   -- config = function()
   --   --   vim.cmd.colorscheme 'melange'
@@ -141,17 +147,17 @@ return {
   -- },
   --   { "dpenedo/melange-nvim" },
   --
-  -- {
-  --   'ribru17/bamboo.nvim',
-  --   lazy = false,
-  --   config = function()
-  --     require('bamboo').setup {
-  --       -- optional configuration here
-  --       -- transparent = true, -- Show/hide background
-  --     }
-  --     require('bamboo').load()
-  --   end,
-  -- },
+  {
+    'ribru17/bamboo.nvim',
+    lazy = false,
+    config = function()
+      require('bamboo').setup {
+        -- optional configuration here
+        -- transparent = true, -- Show/hide background
+      }
+      require('bamboo').load()
+    end,
+  },
   -- 	{'kvrohit/rasmus.nvim',
   -- 	},
   --
