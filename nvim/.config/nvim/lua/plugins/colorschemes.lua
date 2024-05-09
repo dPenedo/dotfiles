@@ -8,8 +8,8 @@ return {
       -- transparent = true,
       functionStyle = { bold = true },
       dimInactive = false,
-      typeStyle = { bold = true },
-      keywordStyle = { bold = true },
+      typeStyle = { bold = false },
+      keywordStyle = { bold = false },
       colors = {
         theme = {
           wave = {
@@ -21,7 +21,7 @@ return {
           },
           lotus = {
             ui = {
-              bg_gutter = 'none',
+              -- bg_gutter = 'none',
               -- bg_gutter = '#161617',
               -- bg = '#f6f9e1',
             },
@@ -45,7 +45,10 @@ return {
           lotusWhite0 = '#B3BDFD',
           lotusWhite1 = '#dcd5ac',
           lotusWhite2 = '#e5ddb0',
-          lotusWhite3 = '#F0F0F0',
+          -- lotusWhite3 = '#F5E0DC',
+          -- lotusWhite3 = '#F2e7de',
+          -- lotusWhite3 = '#F7EFE9',
+          lotusWhite3 = '#E9E4DD',
           lotusWhite4 = '#CDD6F4',
           lotusWhite5 = '#CDD6F4',
         },
