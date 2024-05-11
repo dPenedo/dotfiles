@@ -5,7 +5,7 @@ return {
     opts = {
       -- transparent = true, -- do not set background color
       compile = true,
-      -- transparent = true,
+      transparent = true,
       functionStyle = { bold = true },
       dimInactive = false,
       typeStyle = { bold = false },
@@ -28,19 +28,12 @@ return {
           },
         },
         palette = {
-          -- fujiWhite = "#DCD7Bb
-          -- sumiInk1 = "#161617",
-          -- sumiInk1 = "#1f1f28",
-          -- sumiInk3 = '#161617',
-          -- sumiInk6 = "#47475C",
+          -- Wave
+          fujiWhite = '#e9e4dd',
+          oldWhite = '#CDD6F4',
           sumiInk6 = '#3A3A4B',
-          -- oldWhite = '#DCD7Bb',
-          -- fujiWhite = '#F6F1d3',
-          -- fujiWhite = '#eee0bf',
-          -- oldWhite = "#F1eed7",
-          -- sumiInk3 = "#120309",
-          -- autumnGreen = "#037971",
-          -- springGreen = "#9EBC9F",
+
+          -- Lotus
           lotusInk1 = '#161617',
           lotusWhite0 = '#B3BDFD',
           lotusWhite1 = '#dcd5ac',

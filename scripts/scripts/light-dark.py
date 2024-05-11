@@ -17,7 +17,7 @@ CONFIGURATIONS = {
 
 def change_configuration(mode):
     for app, config in CONFIGURATIONS.items():
-        change_files(mode, config["directory"], config["file"])
+        change_files(app, mode, config["directory"], config["file"])
     try:
         with open(SCRIPT_PATH, "r+") as archivo:
             archivo.write(f'current_mode = "{mode}"\n')
@@ -29,7 +29,7 @@ def change_configuration(mode):
         sys.exit(1)
 
 
-def change_files(mode, directory, file):
+def change_files(app, mode, directory, file):
     try:
         if mode == "light":
             SELECTED_MODE = "-light"
@@ -45,7 +45,7 @@ def change_files(mode, directory, file):
             os.path.join(directory, f"{file}{SELECTED_MODE}"),
             os.path.join(directory, f"{file}"),
         )
-        print(f"En {directory}, se ha cambiado el archivo {file} a {mode}")
+        print(f"{app}|| En {directory}, se ha cambiado el archivo {file} a {mode}")
         list_dir(directory, file)
     except FileNotFoundError as e:
         print(f"Error: {e}. Archivo no encontrado")
