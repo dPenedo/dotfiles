@@ -383,6 +383,7 @@ function theme.at_screen_connect(s)
 			-- Right widgets
 			layout = wibox.layout.fixed.horizontal,
 			wibox.widget.systray(),
+
 			-- keyboardlayout,
 			-- spr,
 			-- arrl_ld,

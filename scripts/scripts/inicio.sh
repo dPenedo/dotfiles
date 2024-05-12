@@ -13,6 +13,7 @@ thunderbird &
 /home/daniel/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://keep.google.com &
+brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
 # obsidian &
 # kitty -T "kitty" &
