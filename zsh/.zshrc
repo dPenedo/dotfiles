@@ -84,8 +84,9 @@ bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
 
 
-bindkey -M viins 'ø' fzf-history-widget
-bindkey -M vicmd 'ø' fzf-history-widget
+bindkey -M vicmd '\er' fzf-history-widget
+bindkey -M viins '\er' fzf-history-widget
+
 
 
 

@@ -48,6 +48,7 @@ alias nrd="npm run dev"
 alias ta="tmux a"
 alias fu="fu | head -c 4 | xclip -selection clipboard"
 alias ccd="zi"
+alias zz="zi"
 alias za='zathura --fork'
 alias intellij='/home/daniel/Descargas/Programas/idea-IU-241.14494.240/bin/idea.sh'
 

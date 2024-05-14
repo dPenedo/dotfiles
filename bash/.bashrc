@@ -68,7 +68,11 @@ PS1="\n${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
 # Abrir programas
 bind '"\et":"thunar . &\n"'
 bind '"\ee":"lfcd\n"'
+
+# No funcionan
 bind -x '"\C- ": __fzf_history__'
+bind '"\e[A": fzf-history-widget'
+
 
 
 # FZF
@@ -76,6 +80,8 @@ if [ -x "$(command -v fzf)" ]; then
 	source ~/.fzf/shell/key-bindings.bash
 	source ~/.fzf/shell/completion.bash
 fi
+
+
 
 
 
@@ -121,4 +127,4 @@ source /home/daniel/.tmc-autocomplete.sh || true
 # Solo para el curso de MOOC, borrar al finalizar!
 alias tt="tmc test && notify-send '✅ Tests completados' "
 alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
-alias te="tmc exercises mooc-java-programming-i"
+alias te="tmc exercises mooc-java-programming-ii"
