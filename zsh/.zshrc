@@ -23,6 +23,7 @@ source ~/.zsh/vi-mode.zsh
 source ~/.filemanagers.sh
 source ~/.aliases.sh
 source ~/.fzf/shell/key-bindings.zsh
+source ~/.fzf/fzf-config.sh
 
 
 # Historia
@@ -81,14 +82,8 @@ bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
 
 
-# FZF 
-# export FZF_DEFAULT_OPTS='--layout=reverse --border=bold  --border-label="| 🔎 |"'
-# export FZF_DEFAULT_OPTS=' --color=bg+:-1, fg:white, fg+:blue, border:black, spinner:0, hl:blue, header:blue, info:gray, pointer:blue, marker:blue, prompt:blue, hl+:red'
-# export FZF_DEFAULT_OPTS="--layout=reverse --info=inline --prompt="▶ " --pointer="→" --marker="✅"\
-# --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
-# --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-# --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
-export FZF_DEFAULT_OPTS="--layout=reverse --info=inline"
+
+
 bindkey -M viins 'ø' fzf-history-widget
 bindkey -M vicmd 'ø' fzf-history-widget
 

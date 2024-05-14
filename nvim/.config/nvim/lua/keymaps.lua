@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 --Format
-map('n', '<leader>F', ':Format<CR>', { desc = 'Formato al archivo' })
+map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
 
 -- Mueve el bloque hacia la izquierda
 map('v', '<', '<gv', { noremap = true, silent = true })

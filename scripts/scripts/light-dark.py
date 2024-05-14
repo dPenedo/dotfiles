@@ -1,8 +1,8 @@
-current_mode = "dark"
-
+current_mode = "light"
 import os
 import sys
 import time
+import subprocess
 
 
 SCRIPT_PATH = "/home/daniel/scripts/light-dark.py"
@@ -12,6 +12,7 @@ CONFIGURATIONS = {
     "gtk": {"directory": "/home/daniel/.config/gtk-3.0/", "file": "settings.ini"},
     "tmux": {"directory": "/home/daniel/", "file": ".tmux-theme.conf"},
     "bat": {"directory": "/home/daniel/.config/bat/", "file": "config"},
+    "fzf": {"directory": "/home/daniel/.fzf/", "file": "fzf-config.sh"},
     "kitty": {"directory": "/home/daniel/.config/kitty/", "file": "current-theme.conf"},
 }
 
@@ -28,6 +29,14 @@ def change_configuration(mode):
     except Exception as e:
         print(f"Ha ocurrido un error {e}")
         sys.exit(1)
+    print("Ejecutando comando tmux...")
+
+    # WARN: no funciona: trato de reiniciar tmux, pero no tiene efecto
+    try:
+        subprocess.run(["tmux", "source-file", "/home/daniel/.tmux.conf"], check=True)
+    except subprocess.CalledProcessError as e:
+        print("Error al ejecutar el comando tmux: " + e)
+    time.sleep(2)
 
 
 def change_files(app, mode, directory, file):

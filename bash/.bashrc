@@ -34,17 +34,6 @@ alias config='/usr/bin/git --git-dir=/home/daniel/.cfg/ --work-tree=/home/daniel
 
 # source /home/daniel/.config/broot/launcher/bash/br
 
-#FZF
-
-if [ -x "$(command -v fzf)" ]; then
-	source ~/.fzf/shell/key-bindings.bash
-	source ~/.fzf/shell/completion.bash
-fi
-
-export FZF_DEFAULT_OPTS="--layout=reverse --info=inline  \
---color=bg+:#313244,spinner:0,hl:green \
---color=fg:#cdd6f4,header:blue,info:gray,pointer:blue \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:blue,hl+:green"
 
 #############
 ### PROMPT###
@@ -82,12 +71,19 @@ bind '"\ee":"lfcd\n"'
 bind -x '"\C- ": __fzf_history__'
 
 
+# FZF
+if [ -x "$(command -v fzf)" ]; then
+	source ~/.fzf/shell/key-bindings.bash
+	source ~/.fzf/shell/completion.bash
+fi
+
 
 
 #Aliases
 
 source ~/.aliases.sh
 source ~/.filemanagers.sh
+source ~/.fzf/fzf-config.sh
 
 # Ranger
 

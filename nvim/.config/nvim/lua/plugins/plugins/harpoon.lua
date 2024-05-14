@@ -1,25 +1,61 @@
 return {
-  "theprimeagen/harpoon",
-  branch = "harpoon2",
+  'theprimeagen/harpoon',
+  branch = 'harpoon2',
   lazy = true,
-  dependencies = { "nvim-lua/plenary.nvim" },
+  dependencies = { 'nvim-lua/plenary.nvim' },
   config = function()
-    require("harpoon").setup()
+    require('harpoon').setup()
   end,
   keys = {
-    { "<leader>sa", function() require("harpoon"):list():append() end,  desc = "harpoon file", },
     {
-      "<leader>ss",
+      '<leader>sa',
       function()
-        local harpoon = require("harpoon")
+        require('harpoon'):list():add()
+      end,
+      desc = 'harpoon file',
+    },
+    {
+      '<leader>ss',
+      function()
+        local harpoon = require 'harpoon'
         harpoon.ui:toggle_quick_menu(harpoon:list())
       end,
-      desc = "harpoon quick menu",
+      desc = 'harpoon quick menu',
     },
-    { "<leader>sj", function() require("harpoon"):list():select(1) end, desc = "harpoon to file 1", },
-    { "<leader>sk", function() require("harpoon"):list():select(2) end, desc = "harpoon to file 2", },
-    { "<leader>sl", function() require("harpoon"):list():select(3) end, desc = "harpoon to file 3", },
-    { "<leader>s;", function() require("harpoon"):list():select(4) end, desc = "harpoon to file 4", },
-    { "<leader>s'", function() require("harpoon"):list():select(5) end, desc = "harpoon to file 5", },
+    {
+      '<leader>sj',
+      function()
+        require('harpoon'):list():select(1)
+      end,
+      desc = 'harpoon to file 1',
+    },
+    {
+      '<leader>sk',
+      function()
+        require('harpoon'):list():select(2)
+      end,
+      desc = 'harpoon to file 2',
+    },
+    {
+      '<leader>sl',
+      function()
+        require('harpoon'):list():select(3)
+      end,
+      desc = 'harpoon to file 3',
+    },
+    {
+      '<leader>s;',
+      function()
+        require('harpoon'):list():select(4)
+      end,
+      desc = 'harpoon to file 4',
+    },
+    {
+      "<leader>s'",
+      function()
+        require('harpoon'):list():select(5)
+      end,
+      desc = 'harpoon to file 5',
+    },
   },
 }
