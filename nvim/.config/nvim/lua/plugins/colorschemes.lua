@@ -41,7 +41,8 @@ return {
           -- lotusWhite3 = '#F5E0DC',
           -- lotusWhite3 = '#F2e7de',
           -- lotusWhite3 = '#F7EFE9',
-          lotusWhite3 = '#E9E4DD',
+          -- lotusWhite3 = '#E9E4DD',
+          lotusWhite3 = '#F8F3F0',
           lotusWhite4 = '#CDD6F4',
           lotusWhite5 = '#CDD6F4',
         },
@@ -163,6 +164,18 @@ return {
   --   priority = 1000,
   --   opts = {},
   --
+  --
+  {
+    'EdenEast/nightfox.nvim',
+    opts = {
+      palettes = {
+        dayfox = {
+          -- Defining multiple shades is done by passing a table
+          blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
+        },
+      },
+    },
+  }, -- lazy
   {
     'catppuccin/nvim',
     name = 'catppuccin',

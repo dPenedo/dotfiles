@@ -1,55 +1,100 @@
-# vim:ft=kitty
-
-## name: Kanagawa_light
-## license: MIT
-## author: Tommaso Laurenzi
-## upstream: https://github.com/rebelot/kanagawa.nvim/
 
 
-background #E9E4DD
-foreground #161617
-selection_background #c9cbd1
-selection_foreground #43436c
-url_color #73A7BC
-cursor #43436c
-cursor_text_color #F2e7de
+
+# Nightfox colors for Kitty
+## name: dayfox
+## upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/dayfox/kitty.conf
+
+background #f6f2ee
+foreground #3d2b5a
+selection_background #e7d2be
+selection_foreground #3d2b5a
+cursor_text_color #f6f2ee
+url_color #396847
+
+# Cursor
+# uncomment for reverse background
+# cursor none
+cursor #3d2b5a
+
+# Border
+active_border_color #464c8b
+inactive_border_color #aab0ad
+bell_border_color #955f61
 
 # Tabs
-active_tab_background #b3bdfd
-active_tab_foreground #716e61
-inactive_tab_background #d5cea3
-inactive_tab_foreground #8a8980
-
-url_color               #Fab387
-
-# Kitty window border colors
-active_border_color     #B4BEFE
-inactive_border_color   #6C7086
-bell_border_color       #F9E2AF
+active_tab_background #464c8b
+active_tab_foreground #e4dcd4
+inactive_tab_background #e7d2be
+inactive_tab_foreground #837a72
 
 # normal
-color0 #545464
-color1 #c84053
-#Cambiado
-color2 #475535 
-color3 #77713f
-color4 #4d699b
-color5 #b35b79
-color6 #597b75
-color7 #545464
+color0 #352c24
+color1 #a5222f
+color2 #396847
+color3 #ac5402
+# cambio
+color4 #464c8b
+color5 #6e33ce
+color6 #287980
+color7 #f2e9e1
 
 # bright
-color8  #8a8980
-color9  #d7474b
- #Cambiado
-color10 #4C5E36
-color11 #836f4a
-color12 #6693bf
-color13 #624c83
-color14 #5e857a
-color15 #43436c
-
+color8 #534c45
+color9 #b3434e
+color10 #577f63
+color11 #b86e28
+color12 #4863b6
+color13 #8452d5
+color14 #488d93
+color15 #f4ece6
 
 # extended colors
-color16 #cc6d00
-color17 #e82424
+color16 #955f61
+color17 #a440b5
+background #f6f2ee
+foreground #3d2b5a
+selection_background #e7d2be
+selection_foreground #3d2b5a
+cursor_text_color #f6f2ee
+url_color #396847
+
+# Cursor
+# uncomment for reverse background
+# cursor none
+cursor #3d2b5a
+
+# Border
+active_border_color #464c8b
+inactive_border_color #aab0ad
+bell_border_color #955f61
+
+# Tabs
+active_tab_background #464c8b
+active_tab_foreground #e4dcd4
+inactive_tab_background #e7d2be
+inactive_tab_foreground #837a72
+
+# normal
+color0 #352c24
+color1 #a5222f
+color2 #396847
+color3 #ac5402
+color4 #464c8b
+color5 #6e33ce
+color6 #287980
+color7 #f2e9e1
+
+# bright
+color8 #534c45
+color9 #b3434e
+color10 #577f63
+color11 #b86e28
+color12 #4863b6
+color13 #8452d5
+color14 #488d93
+color15 #f4ece6
+
+# extended colors
+color16 #955f61
+color17 #a440b5

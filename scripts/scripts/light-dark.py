@@ -33,11 +33,11 @@ def change_configuration(mode):
     print("Ejecutando comando tmux...")
 
     # WARN: no funciona: trato de reiniciar tmux, pero no tiene efecto
-    try:
-        subprocess.run(["tmux", "source-file", "/home/daniel/.tmux.conf"], check=True)
-    except subprocess.CalledProcessError as e:
-        print("Error al ejecutar el comando tmux: " + e)
-    time.sleep(2)
+    # try:
+    #     subprocess.run(["tmux", "source-file", "/home/daniel/.tmux.conf"], check=True)
+    # except subprocess.CalledProcessError as e:
+    #     print("Error al ejecutar el comando tmux: " + e)
+    # time.sleep(2)
 
 
 def change_files(app, mode, directory, file):
