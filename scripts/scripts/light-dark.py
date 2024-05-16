@@ -1,4 +1,5 @@
-current_mode = "light"
+current_mode = "dark"
+
 import os
 import sys
 import time
@@ -32,11 +33,18 @@ def change_configuration(mode):
     print("Ejecutando comando tmux...")
 
     # WARN: no funciona: trato de reiniciar tmux, pero no tiene efecto
-    # try:
-    #     subprocess.run(["tmux", "source-file", "/home/daniel/.tmux.conf"], check=True)
-    # except subprocess.CalledProcessError as e:
-    #     print("Error al ejecutar el comando tmux: " + e)
-    # time.sleep(2)
+    try:
+        subprocess.run(["tmux", "kill-server"], check=True)
+    except subprocess.CalledProcessError as e:
+        print("Error al ejecutar el comando tmux: " + e)
+    finally:
+        # Reiniciar Kitty
+        try:
+            subprocess.run(["pkill", "kitty"], check=True)
+            subprocess.run(["kitty"], check=True)
+        except subprocess.CalledProcessError as e:
+            print("Error al reiniciar Kitty: " + e)
+        time.sleep(2)
 
 
 def change_files(app, mode, directory, file):
