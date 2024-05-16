@@ -113,14 +113,14 @@ return {
   --         ]])
   --     end,
   --   },
-  {
-    'folke/tokyonight.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {
-      -- transparent = true, -- Enable this to disable setting the background color
-    },
-  },
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     -- transparent = true, -- Enable this to disable setting the background color
+  --   },
+  -- },
   -- {
   --   'ramojus/mellifluous.nvim',
   --   lazy = false,
@@ -144,17 +144,17 @@ return {
   -- },
   --   { "dpenedo/melange-nvim" },
   --
-  {
-    'ribru17/bamboo.nvim',
-    lazy = false,
-    config = function()
-      require('bamboo').setup {
-        -- optional configuration here
-        -- transparent = true, -- Show/hide background
-      }
-      require('bamboo').load()
-    end,
-  },
+  -- {
+  --   'ribru17/bamboo.nvim',
+  --   lazy = false,
+  --   config = function()
+  --     require('bamboo').setup {
+  --       -- optional configuration here
+  --       -- transparent = true, -- Show/hide background
+  --     }
+  --     require('bamboo').load()
+  --   end,
+  -- },
   -- 	{'kvrohit/rasmus.nvim',
   -- 	},
   --
@@ -168,6 +168,20 @@ return {
   {
     'EdenEast/nightfox.nvim',
     opts = {
+      options = {
+        styles = { -- Style to be applied to different syntax groups
+          comments = 'NONE', -- Value is any valid attr-list value `:help attr-list`
+          conditionals = 'bold',
+          constants = 'bold',
+          functions = 'bold',
+          keywords = 'NONE',
+          numbers = 'NONE',
+          operators = 'NONE',
+          strings = 'NONE',
+          types = 'italic',
+          variables = 'NONE',
+        },
+      },
       palettes = {
         dayfox = {
           -- Defining multiple shades is done by passing a table
@@ -176,34 +190,34 @@ return {
       },
     },
   }, -- lazy
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    opts = {
-      -- transparent_background = true, -- disables setting the background color.
-      color_overrides = {
-        mocha = {
-          pink = '#F5C5C2',
-          base = '#161722',
-          mauve = '#A8A6F7',
-          text = '#dee4f8',
-          -- lavender = '#CBD1FB',
-        },
-        latte = {
-          mantle = '#c9cddf',
-        },
-      },
-      highlight_overrides = {
-        mocha = function(colors)
-          return {
-            LineNr = { fg = colors.overlay2 },
-            CursorLineNr = { fg = colors.yellow },
-            NvimTreeOpenedFolderName = { fg = colors.lavender },
-            NvimTreeEmptyFolderName = { fg = colors.teal },
-          }
-        end,
-      },
-    },
-    priority = 1000,
-  },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   opts = {
+  --     -- transparent_background = true, -- disables setting the background color.
+  --     color_overrides = {
+  --       mocha = {
+  --         pink = '#F5C5C2',
+  --         base = '#161722',
+  --         mauve = '#A8A6F7',
+  --         text = '#dee4f8',
+  --         -- lavender = '#CBD1FB',
+  --       },
+  --       latte = {
+  --         mantle = '#c9cddf',
+  --       },
+  --     },
+  --     highlight_overrides = {
+  --       mocha = function(colors)
+  --         return {
+  --           LineNr = { fg = colors.overlay2 },
+  --           CursorLineNr = { fg = colors.yellow },
+  --           NvimTreeOpenedFolderName = { fg = colors.lavender },
+  --           NvimTreeEmptyFolderName = { fg = colors.teal },
+  --         }
+  --       end,
+  --     },
+  --   },
+  --   priority = 1000,
+  -- },
 }

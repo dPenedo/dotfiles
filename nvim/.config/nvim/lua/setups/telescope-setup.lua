@@ -27,13 +27,14 @@ require('telescope').setup {
       i = {
         ['<C-u>'] = false,
         ['<C-d>'] = false,
-        ['<Tab>'] = false,
-        ['<Tab>'] = 'select_default',
+        -- ['<Tab>'] = false,
+        -- ['<Tab>'] = 'select_default',
         ['<C-s>'] = 'select_horizontal',
         ['<C-v>'] = 'select_vertical',
         ['<C-h>'] = 'which_key',
         ['<C-j>'] = 'move_selection_next',
         ['<C-k>'] = 'move_selection_previous',
+        ['<c-d>'] = require('telescope.actions').delete_buffer,
       },
       n = {
         ['<C-s>'] = 'select_horizontal',
