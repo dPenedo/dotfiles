@@ -1,5 +1,4 @@
-current_mode = "dark"
-
+current_mode = "light"
 import os
 import sys
 import time
@@ -86,14 +85,25 @@ def list_all_dirs():
         list_dir(config["directory"], config["file"])
 
 
+def toggle():
+    if current_mode == "dark":
+        print(f"El modo ha cambiado a light")
+        change_configuration("light")
+    elif current_mode == "light":
+        print(f"El modo ha cambiado a dark")
+        change_configuration("dark")
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("El argumento tiene que ser uno solo: light o dark")
+        print("El argumento tiene que ser uno solo: light, dark, toggle, current o ls")
         sys.exit(1)
     mode = sys.argv[1]
-    if mode not in ["dark", "light", "current", "ls"]:
-        print("Modo no válido. Tiene que ser light o dark")
+    if mode not in ["dark", "light", "toggle", "current", "ls"]:
+        print("Modo no válido. Tiene que ser light, dark, toggle, current o ls")
         sys.exit(1)
+    if mode == "toggle":
+        toggle()
     if mode == "ls":
         list_all_dirs()
         sys.exit(1)

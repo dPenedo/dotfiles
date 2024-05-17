@@ -41,7 +41,9 @@ return {
             'diagnostics',
           },
           lualine_c = {
-            { 'filename', path = 1 },
+            { 'filename', path = 1, colored = true, symbols = {
+              modified = '󰈸',
+            } },
           },
           lualine_x = {
             -- "fileformat",
