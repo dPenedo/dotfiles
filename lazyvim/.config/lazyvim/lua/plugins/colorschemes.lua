@@ -48,6 +48,31 @@ return {
       end,
     },
   },
+  {
+    "EdenEast/nightfox.nvim",
+    opts = {
+      options = {
+        styles = { -- Style to be applied to different syntax groups
+          comments = "NONE", -- Value is any valid attr-list value `:help attr-list`
+          conditionals = "bold",
+          constants = "bold",
+          functions = "bold",
+          keywords = "NONE",
+          numbers = "NONE",
+          operators = "NONE",
+          strings = "NONE",
+          types = "italic",
+          variables = "NONE",
+        },
+      },
+      palettes = {
+        dayfox = {
+          -- Defining multiple shades is done by passing a table
+          blue = { base = "#464C8B", bright = "#7e94ed", dim = "#595C78" },
+        },
+      },
+    },
+  }, -- lazy
 
   {
     "catppuccin/nvim",

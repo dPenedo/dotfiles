@@ -47,6 +47,11 @@ map("n", "ñ", "`", { desc = "backtick asignado a ñ" })
 
 map("n", ",,", ",", { desc = "coma para f" })
 
+-- concealevel
+map("n", "<leader>c0", ":set conceallevel=0<cr> ", { desc = "conceallevel 0 " })
+map("n", "<leader>c1", ":set conceallevel=1<cr> ", { desc = "conceallevel 1 " })
+map("n", "<leader>c2", ":set conceallevel=2<cr> ", { desc = "conceallevel 2 " })
+
 -- Linea abajo/linea encima
 map("n", "<leader>o", "o<ESC>", { desc = "Crea una linea debajo" })
 map("n", "<leader>O", "O<ESC>", { desc = "Crea una linea encima" })
@@ -105,10 +110,6 @@ map("t", "<Esc>", "<C-\\><C-n><CR>", { desc = "Salir del modo terminal" })
 map("t", "<C-x>", "<C-\\><C-n><CR>", { desc = "Salir del modo terminal" })
 map("t", "<C-l>", "<C-u>clear<CR>", { desc = "Limpiar la pantalla del terminal" })
 
--- Neorg
-map("n", "<leader>ni", ":Neorg index<CR>", { desc = "Ir al archivo index de neorg" })
-map("n", "<leader>nr", ":Neorg return<CR>", { desc = "Volver de neorg" })
-
 -- Gestión de pestañas
 map("n", "<leader><tab>", ":tabedit<CR>", { desc = "Crear pestaña" })
 map("n", "<leader>1", ":tabn 1<CR>", { desc = "Ir a la pestaña 1" })
@@ -127,6 +128,8 @@ map("n", "<leader>9", ":tabn 9<CR>", { desc = "Ir a la pestaña 9" })
 map("v", "<A-c>", '"+y', { desc = "Copiar al portapapeles" })
 map("v", "<leader>y", '"+y', { desc = "Copiar al portapapeles" })
 map("n", "<leader>y", '"+y', { desc = "Copiar al portapapeles" })
+map("v", "<leader>p", ":FzfLua registers<cr>", { desc = "Pegar con fzf lua" })
+map("n", "<leader>p", ":FzfLua registers<cr>", { desc = "Pegar del portapapeles" })
 
 -- Scroll
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
@@ -156,7 +159,6 @@ map("n", "<leader>sG", ":LiveGrepGitRoot<cr><CR>", { desc = "[S]earch by [G]rep 
 map("n", "<leader>sd", ":Telescope diagnostics<CR>", { desc = "[S]earch [D]iagnostics" })
 map("n", "<leader>sr", ":Telescope resume<CR>", { desc = "[S]earch [R]esume" })
 map("n", "<leader>nb", ":NotasBuscar<CR>", { desc = "[N]otas [Buscar]" })
-map("n", ",b", ":Telescope buffers<CR>", { desc = "Telescope para buffers" })
 map("n", ",B", ":Telescope builtin<CR>", { desc = "Telescope para comandos internos" })
 map("n", ",g", ":Telescope live_grep<CR>", { desc = "Telescope para búsqueda en vivo con grep" })
 map("n", ",r", ":Telescope registers<CR>", { desc = "Telescope para registros" })
@@ -168,7 +170,7 @@ map("n", "<leader>tt", ":TodoTelescope<CR>", { desc = "Telescope para TODOs" })
 map("n", ",h", ":Telescope help_tags<CR>", { desc = "Telescope para etiquetas de ayuda" })
 map("n", ",m", ":Telescope marks<CR>", { desc = "Telescope para marks" })
 map("n", "<leader>ff", ":Telescope find_files <CR>", { desc = "Fzf lua files" })
-map("n", "<leader>ds", ":Telescope lsp_document_symbols", { desc = "[D]ocument [S]ymbols" })
+map("n", "<leader>ds", ":Telescope lsp_document_symbols<cr>", { desc = "[D]ocument [S]ymbols" })
 -- FzfLua
 map("n", ",k", ":FzfLua keymaps<CR>", { desc = "keymaps" })
 map("n", "<leader>l", ":FzfLua blines<CR>", { desc = "fzflua para en el buffer actual" })

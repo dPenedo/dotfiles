@@ -175,10 +175,6 @@ map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
 map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
 map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
 map('n', '<C-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
-map('n', '<A-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
-map('n', '<A-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
-map('n', '<A-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
-map('n', '<A-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
 
 -- Mapeos para redimensionar ventanas
 map('n', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
