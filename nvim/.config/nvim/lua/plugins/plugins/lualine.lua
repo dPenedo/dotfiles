@@ -46,10 +46,16 @@ return {
             } },
           },
           lualine_x = {
-            -- "fileformat",
-            'filetype',
+
+            {
+              'harpoon2',
+              indicators = { 'j', 'k', 'l', ';' },
+              active_indicators = { '(J)', '(K)', '(L)', '(;)' },
+              _separator = ' ',
+              no_harpoon = 'Harpoon not loaded',
+            },
           },
-          lualine_y = { '' },
+          lualine_y = { 'filetype' },
           lualine_z = { lineas },
         },
       }

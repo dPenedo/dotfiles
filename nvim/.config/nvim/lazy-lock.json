@@ -13,6 +13,7 @@
   "fzf-lua": { "branch": "main", "commit": "e412b1b0db62ccfccee41d994da87923eb2d8abd" },
   "gitsigns.nvim": { "branch": "main", "commit": "805610a9393fa231f2c2b49cb521bfa413fadb3d" },
   "harpoon": { "branch": "harpoon2", "commit": "0378a6c428a0bed6a2781d459d7943843f374bce" },
+  "harpoon-lualine": { "branch": "master", "commit": "d1b873c19b701fd80d60a67d086dbb3bcc4eb00e" },
   "hlchunk.nvim": { "branch": "main", "commit": "882d1bc86d459fa8884398223c841fd09ea61b6b" },
   "kanagawa.nvim": { "branch": "master", "commit": "860e4f80df71221d18bf2cd9ef1deb4d364274d2" },
   "lazy.nvim": { "branch": "main", "commit": "e44636a43376e8a1e851958f7e9cbe996751d59f" },
