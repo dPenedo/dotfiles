@@ -164,7 +164,7 @@ map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('n', '<leader>y', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>p', ':Tele registers<cr>', { desc = 'Pegar con fzf lua' })
-map('n', '<leader>p', ':Tele registers<cr>', { desc = 'Pegar del portapapeles' })
+map('n', '<leader>p', ':FzfLua registers<cr>', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
 
 -- Scroll
