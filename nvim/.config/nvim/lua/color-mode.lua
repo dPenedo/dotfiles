@@ -1,4 +1,4 @@
 --dark
-vim.cmd.colorscheme 'kanagawa-wave'
+--vim.cmd.colorscheme 'catppuccin-mocha'
 -- light
--- vim.cmd.colorscheme 'kanagawa-lotus'
+vim.cmd.colorscheme 'dayfox'

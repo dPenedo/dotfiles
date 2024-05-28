@@ -12,7 +12,7 @@ kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 thunderbird &
 /home/daniel/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
-brave-browser -app=https://keep.google.com &
+brave-browser -app=https://ticktick.com &
 brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
 # obsidian &
@@ -37,7 +37,7 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "tmux" -t 11 &
 	sleep 3
 	wmctrl -r "ChatGPT" -t 17 &
-	wmctrl -r "Google Keep" -t 19 &
+	wmctrl -r "TickTick" -t 19 &
 	wmctrl -r "mozilla Thunderbird" -t 18 &
 	# sleep 10
 	# wmctrl -r "obsidian" -t 16 &
@@ -49,6 +49,7 @@ else
 	wmctrl -r "Correo" -t 8 &
 	wmctrl -r "ChatGPT" -t 7 &
 	wmctrl -r thunderbird -t 9 &
+	wmctrl -r "TickTick" -t 9 &
 	sleep 5
 	wmctrl -r "obsidian" -t 6 &
 fi
