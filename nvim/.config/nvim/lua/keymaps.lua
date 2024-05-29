@@ -27,6 +27,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 --Format
 map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
 
+--Borrar palabra
+map('i', '<c-h>', '<Esc>cvb', { desc = 'Borrar palabra' })
+
+map('n', '<CR>', ':', { desc = 'command con ;' })
+
 -- Mueve el bloque hacia la izquierda
 map('v', '<', '<gv', { noremap = true, silent = true })
 -- Mueve el bloque hacia la derecha

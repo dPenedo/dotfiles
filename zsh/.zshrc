@@ -103,6 +103,8 @@ bindkey -M viins '^[[3~' delete-char        # Suprimir
 bindkey -M viins '^[[1;5C' forward-word     # Control + derecha
 bindkey -M viins '^[[1;5D' backward-word    # Control + izquierda
 
+bindkey -M viins '^H' backward-kill-word  # Ctrl + H para borrar la palabra anterior
+
 
 
 # use lf to switch directories 
