@@ -223,7 +223,7 @@ map('n', '<leader>f', ':Telescope find_files <CR>', { desc = 'Fzf lua files' })
 
 map('n', '<leader>l', ':Telescope current_buffer_fuzzy_find<CR>', { desc = 'fzflua para en el buffer actual' })
 map('n', '<leader><space>', ':Telescope buffers<CR>', { desc = 'fzf grep' })
-map('n', '<leader>gg', ':FzfLua live_grep<CR>', { desc = 'Telescope grep' })
+map('n', '<leader>gg', ':Tele live_grep<CR>', { desc = 'Telescope grep' })
 
 -- FzfLua
 map('n', ',g', ':FzfLua grep_visual<CR>', { desc = 'Telescope para búsqueda en vivo con grep' })

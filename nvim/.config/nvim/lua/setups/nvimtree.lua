@@ -1,5 +1,4 @@
-
-local api = require("nvim-tree.api")
+local api = require 'nvim-tree.api'
 
 local function edit_or_open()
   local node = api.tree.get_node_under_cursor()
@@ -31,10 +30,8 @@ local function vsplit_preview()
   api.tree.focus()
 end
 
-
-
 -- global
--- vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
+-- vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle<cr>', { silent = true, noremap = true })
 
 -- on_attach
 -- vim.keymap.set("n", "l", edit_or_open,          opts("Edit Or Open"))

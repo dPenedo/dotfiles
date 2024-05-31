@@ -56,6 +56,7 @@ return {
           lotusBlue3 = '#9fb5c9',
           lotusBlue4 = '#4d699b',
           lotusBlue5 = '#5d57a3',
+
           -- lotusGreen = '#6f894e',
           lotusGreen = '#4F6138',
           -- lotusGreen2 = '#6e915f',
@@ -78,7 +79,8 @@ return {
           lotusAqua = '#3C534F',
           lotusAqua2 = '#5e857a',
           lotusTeal1 = '#4e8ca2',
-          lotusTeal2 = '#6693bf',
+          -- lotusTeal2 = '#6693bf',
+          lotusTeal2 = '#3F7497',
           lotusTeal3 = '#5a7785',
           lotusCyan = '#d7e3d8',
         },

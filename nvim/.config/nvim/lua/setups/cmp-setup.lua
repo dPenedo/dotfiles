@@ -21,7 +21,7 @@ cmp.setup {
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete {},
     ['<Tab>'] = cmp.mapping.confirm {},
-    -- ['<Cr>'] = cmp.mapping.confirm {},
+    ['<Cr>'] = cmp.mapping.confirm {},
     -- ['<cr>'] = cmp.mapping.confirm {
     --   behavior = cmp.ConfirmBehavior.Replace,
     --   select = true,
