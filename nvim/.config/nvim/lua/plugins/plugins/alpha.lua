@@ -29,6 +29,7 @@ return {
       dashboard.button('f', ' ' .. ' Buscar archivo', ':Telescope find_files <CR>'),
       dashboard.button('s', ' ' .. ' Restaurar Sesión', [[:lua require("persistence").load() <cr>]]),
       dashboard.button('g', ' ' .. ' Buscar texto', ':Telescope live_grep <CR>'),
+      dashboard.button('<CR>', ' ' .. ' Comando', ':'),
       dashboard.button('q', '󰩈' .. '  Salir', ':qa<CR>'),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do

@@ -8,6 +8,7 @@
 local helpers = require("lain.helpers")
 local wibox = require("wibox")
 local tonumber = tonumber
+local beautiful = require("beautiful") -- Añadir beautiful para acceder a la configuración del tema
 
 -- {thermal,core} temperature info
 -- lain.widget.temp
@@ -24,22 +25,18 @@ local function factory(args)
 	local settings = args.settings or function() end
 
 	function temp.update()
-		helpers.async({ "find", "/sys/devices", "-type", "f", "-name", "*temp*" }, function(f)
-			temp_now = {}
-			local temp_fl, temp_value
-			for t in f:gmatch("[^\n]+") do
-				temp_fl = helpers.first_line(t)
-				if temp_fl then
-					temp_value = tonumber(temp_fl)
-					temp_now[t] = temp_value and temp_value / 1e3 or temp_fl
-				end
-			end
-			if temp_now[tempfile] then
-				coretemp_now = string.format(format, temp_now[tempfile])
+		helpers.async({ "cat", tempfile }, function(f)
+			local temp_value = tonumber(f)
+			if temp_value then
+				temp_value = temp_value / 1000 -- Convertir a grados Celsius
+				coretemp_now = string.format(format, temp_value)
 			else
 				coretemp_now = "N/A"
 			end
-			widget = temp.widget
+			-- temp.widget:set_text(coretemp_now) -- Actualizar el widget
+
+			temp.widget:set_markup_silently(" <span font='" .. beautiful.font .. "'>" .. coretemp_now .. "</span>")
+
 			settings()
 		end)
 	end

@@ -70,7 +70,7 @@ local function run_once(cmd_arr)
 	end
 end
 
--- run_once({ "kitty", "unclutter -root" }) -- comma-separated entries
+run_once({ "kitty", "unclutter -root" }) -- comma-separated entries
 
 -- This function implements the XDG autostart specification
 --[[
@@ -98,8 +98,10 @@ local editor = os.getenv("EDITOR") or "nvim"
 local browser = "brave-browser"
 
 awful.util.terminal = terminal
--- awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
-awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
+awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
+-- awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
+
+-- awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
 
 --  ls
 -- awful.util.tagnames = { "", "", "", "", "", "", "", "", "", "" }
@@ -1082,11 +1084,11 @@ awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
 -- Network applet
 awful.spawn.with_shell("sleep 3; nm-applet &")
 awful.spawn.with_shell("sleep 1; pkill volumeicon &")
+-- awful.spawn.with_shell("sleep 1; pkill cbatticon &")
 awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 awful.spawn.with_shell("pkill copyq &")
 
--- Power management
--- awful.spawn.with_shell("xfce4-power-manager &")
 awful.spawn.with_shell("sleep 3; picom -b --config  $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("sleep2; copyq &")
 awful.spawn.with_shell("sleep 3; volumeicon &")
+awful.spawn.with_shell("sleep2; cbatticon &")
