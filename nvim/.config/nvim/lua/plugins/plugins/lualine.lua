@@ -35,8 +35,8 @@ return {
           lualine_a = { 'mode' },
           lualine_b = {
             { 'branch', icon = '', fmt = truncate_branch_name },
-            -- 'diff',
             'searchcount',
+            -- 'diff',
             'selectioncount',
             'diagnostics',
           },

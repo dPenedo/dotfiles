@@ -1086,7 +1086,7 @@ awful.spawn.with_shell("sleep 3; nm-applet &")
 awful.spawn.with_shell("sleep 1; pkill volumeicon &")
 -- awful.spawn.with_shell("sleep 1; pkill cbatticon &")
 awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
-awful.spawn.with_shell("pkill copyq &")
+-- awful.spawn.with_shell("pkill copyq &")
 
 awful.spawn.with_shell("sleep 3; picom -b --config  $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("sleep 2; copyq &")

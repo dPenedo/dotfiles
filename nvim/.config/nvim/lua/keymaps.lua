@@ -231,7 +231,8 @@ map('n', ',k', ':FzfLua keymaps<CR>', { desc = 'keymaps' })
 map('n', ',f', ':FzfLua files <CR>', { desc = 'Fzf lua files' })
 map('n', '<leader>?', ':Tele oldfiles<CR>', { desc = 'fzf grep' })
 map('n', '<leader>co', ':FzfLua colorschemes<CR>', { desc = 'Fzf lua colorschemes' })
-map('n', '<leader>ca', ':Tele lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
+-- map('n', '<leader>ca', ':FzfLua lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
+
 map('n', 'gr', ':Tele lsp_references<CR>', { desc = 'Fzf lua colorschemes' })
 map('n', '<leader>aa', ':FzfLua commands<CR>', { desc = 'Fzf commands' })
 
