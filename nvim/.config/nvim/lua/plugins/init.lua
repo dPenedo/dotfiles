@@ -67,14 +67,6 @@ require('lazy').setup({
   },
 
   {
-    'kylechui/nvim-surround',
-    lazy = true,
-    version = '*', -- Use for stability; omit to use `main` branch for the latest features
-    event = 'VeryLazy',
-    opts = {},
-  },
-
-  {
     'folke/todo-comments.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = {},
@@ -83,11 +75,11 @@ require('lazy').setup({
     'brenoprata10/nvim-highlight-colors',
     lazy = true,
   },
-  {
-    'stevearc/dressing.nvim',
-    event = 'VeryLazy',
-    opts = {},
-  },
+  -- {
+  --   'stevearc/dressing.nvim',
+  --   event = 'VeryLazy',
+  --   opts = {},
+  -- },
   { import = 'plugins.plugins' },
   { import = 'plugins.colorschemes' },
 }, {})
