@@ -2,6 +2,7 @@
 
 # xdg-open https://www.tutanota.com &
 setxkbmap -layout us -variant altgr-intl &
+pkill kitty &
 
 sleep 5
 brave-browser &
@@ -9,7 +10,7 @@ sleep 4
 # wezterm -e tmux new-session -A -D -s Hasiera &
 kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # evolution &
-thunderbird &
+# thunderbird &
 /home/daniel/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://ticktick.com &
@@ -37,7 +38,7 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "tmux" -t 1 &
 	sleep 3
 	wmctrl -r "ChatGPT" -t 7 &
-	wmctrl -r "TickTick" -t 9 &
+	# wmctrl -r "TickTick" -t 9 &
 	wmctrl -r "mozilla Thunderbird" -t 8 &
 	# sleep 10
 	# wmctrl -r "obsidian" -t 16 &

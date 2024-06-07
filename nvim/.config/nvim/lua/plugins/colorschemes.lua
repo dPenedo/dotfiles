@@ -227,7 +227,20 @@ return {
         },
       },
     },
-  }, -- lazy
+  },
+  {
+    'fynnfluegge/monet.nvim',
+    name = 'monet',
+    opts = {
+      transparent_background = true,
+      dark_mode = true,
+
+      color_overrides = {
+        dark0 = '#161617',
+      },
+    },
+  },
+
   -- {
   --   'catppuccin/nvim',
   --   name = 'catppuccin',
