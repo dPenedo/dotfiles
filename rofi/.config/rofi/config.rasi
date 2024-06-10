@@ -16,7 +16,7 @@
 //@theme "/home/daniel/.config/rofi/themes/night-owl.rasi"
 //@theme "/home/daniel/.config/rofi/themes/everforest.rasi"
 @theme "/home/daniel/.config/rofi/themes/kanagawa.rasi"
-//@theme "/home/daniel/.config/rofi/themes/mocha.rasi"
+//@theme "/home/daniyari/.config/rofi/themes/mocha.rasi"
 
 configuration {
     display-ssh:    "     ssh:";
