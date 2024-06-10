@@ -125,7 +125,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Created by `pipx` on 2024-02-10 16:28:16
-export PATH="$PATH:/home/daniel/.local/bin"
+export PATH="$PATH:~/.local/bin"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 # export JAVA_HOME=/home/daniel/Descargas/Programas/jdk-11.0.0.1/
-source /home/daniel/.tmc-autocomplete.sh || true
+source ~/.tmc-autocomplete.sh || true

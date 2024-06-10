@@ -122,8 +122,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # export JAVA_HOME=/usr/lib/jvm/default-java
-export JAVA_HOME=/home/daniel/Descargas/Programas/jdk-11.0.0.1/
-source /home/daniel/.tmc-autocomplete.sh || true
+export JAVA_HOME=~/Descargas/Programas/jdk-11.0.0.1/
+source ~/.tmc-autocomplete.sh || true
 # Solo para el curso de MOOC, borrar al finalizar!
 alias tt="tmc test && notify-send '✅ Tests completados' "
 alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
