@@ -101,7 +101,7 @@ local days = {
 	["rcoles"] = "asteazkena",
 	["jueves"] = "osteguna",
 	["viernes"] = "ostirala",
-	["sábado"] = "larunbata",
+	["bado"] = "larunbata",
 	["domingo"] = "igandea",
 }
 

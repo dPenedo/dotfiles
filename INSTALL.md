@@ -12,7 +12,7 @@ sudo apt update && sudo apt upgrade
 
 Instalar (en uso):
 ``` bash
-sudo apt install fzf rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl brightnessctl xclip cbatticon
+sudo apt install rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl brightnessctl xclip cbatticon
 ```
 
 Instalar (opcionales):
@@ -68,6 +68,16 @@ sudo make install
 ```
 
 [Documentacion oficial](https://github.com/neovim/neovim/blob/master/BUILD.md)
+
+
+
+#### FZF
+
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf/fzf/
+~/.fzf/fzf/install
+```
+
 
 
 #### NerdFonts
@@ -213,4 +223,12 @@ Después conviene hacer prefix + I y prefix + R (o source)
 sudo apt-get install gnome-control-center
 sudo apt-get install evolution               
 sudo apt-get install gnome-online-accounts   
+```
+
+### applets para awesome
+
+
+```bash
+sudo apt install cbatticon copyq volumeicon-alsa
+
 ```

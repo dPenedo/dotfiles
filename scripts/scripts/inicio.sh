@@ -11,7 +11,7 @@ sleep 4
 kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # evolution &
 # thunderbird &
-/home/daniel/scripts/xmodmap.sh &
+~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://ticktick.com &
 brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
@@ -44,6 +44,7 @@ if [[ $monitor_externo = *connected* ]]; then
 	# wmctrl -r "obsidian" -t 16 &
 	# wmctrl -r "Correo" -t 18 &
 else
+	sleep 5
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	wmctrl -r "kitty" -t 1 &
 	wmctrl -r "tmux" -t 1 &
