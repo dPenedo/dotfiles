@@ -64,9 +64,15 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 
 # Cargar plugins
-source ~/.zsh/antidote/antidote.zsh
-antidote load ${ZDOTDIR:-$HOME}/.zsh/zsh_plugins.txt
+if [[ ! -e ~/.zsh/zsh-syntax-highlighting ]]; then
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+fi
+if [[ ! -e ~/.zsh/zsh-autosuggestions ]]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
+fi
 
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 

@@ -11,3 +11,5 @@ Code/.config/Code/DawnCache/
 Code/.config/Code/Cache/
 Code/.config/Code/History/
 Code/.config/Code/workspaceStorage/
+zsh/.zsh/zsh-autosuggestions/
+zsh/.zsh/zsh-syntax-highlighting/
