@@ -71,9 +71,18 @@ if [[ ! -e ~/.zsh/zsh-autosuggestions ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 fi
 
+if [[ ! -e ~/.zsh/fzf-tab ]]; then
+  git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
+fi
+
+# When using Ubuntu, add to your .zshenv file:
+skip_global_compinit=1
+
+
+
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+source ~/.zsh/fzf-tab/fzf-tab.zsh
 
 
 # Tecla delete y backspace

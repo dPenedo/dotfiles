@@ -146,7 +146,7 @@ map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'Alternar visibili
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
-map('n', '<leader>T', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 -- map('n', '<A-<>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
@@ -154,7 +154,7 @@ map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir term
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 
 -- Mapeos para el terminal
-map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+-- map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<C-x>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<C-l>', '<C-u>clear<CR>', { desc = 'Limpiar la pantalla del terminal' })
 

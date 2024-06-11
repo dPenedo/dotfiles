@@ -32,7 +32,6 @@ return {
           fujiWhite = '#e9e4dd',
           oldWhite = '#CDD6F4',
           sumiInk6 = '#3A3A4B',
-
           -- Lotus
           lotusInk1 = '#161617',
           lotusWhite0 = '#B3BDFD',
@@ -223,6 +222,9 @@ return {
       palettes = {
         dayfox = {
           -- Defining multiple shades is done by passing a table
+					    bg3 = "#e4dcd4",
+					    sel0 = "#CDD6F4",
+					    -- sel1 = "#7e94ed",
           blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
         },
       },

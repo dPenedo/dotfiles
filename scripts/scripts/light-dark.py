@@ -10,7 +10,7 @@ SCRIPT_PATH = os.path.expanduser("~/scripts/light-dark.py")
 CONFIGURATIONS = {
     "nvim": {"directory": os.path.expanduser("~/.config/nvim/lua/"), "file": "color-mode.lua"},
     "gtk": {"directory": os.path.expanduser("~/.config/gtk-3.0/"), "file": "settings.ini"},
-    "tmux": {"directory": os.path.expanduser("~/.tmux/"), "file": ".tmux-theme.conf"},
+    "tmux": {"directory": os.path.expanduser("~/.tmux/"), "file": "tmux-theme.conf"},
     "bat": {"directory": os.path.expanduser("~/.config/bat/"), "file": "config"},
     "fzf": {"directory": os.path.expanduser("~/.fzf/"), "file": "fzf-config.sh"},
     "kitty": {"directory": os.path.expanduser("~/.config/kitty/"), "file": "current-theme.conf"},
