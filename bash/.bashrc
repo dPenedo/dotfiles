@@ -130,3 +130,4 @@ alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
 alias te="tmc exercises mooc-java-programming-ii"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+source /home/daniyari/.tmc-autocomplete.sh || true

@@ -8,7 +8,7 @@ sleep 5
 brave-browser &
 sleep 4
 # wezterm -e tmux new-session -A -D -s Hasiera &
-kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
+kitty -e tmux new-session -A -D -s "  Hasiera" &
 # evolution &
 # thunderbird &
 ~/scripts/xmodmap.sh &

@@ -134,6 +134,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:~/.local/bin"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 # export JAVA_HOME=/home/daniel/Descargas/Programas/jdk-11.0.0.1/
-source ~/.tmc-autocomplete.sh || true
+# source ~/.tmc-autocomplete.sh || true
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# source /home/daniyari/.tmc-autocomplete.sh || true

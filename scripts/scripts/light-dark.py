@@ -5,15 +5,15 @@ import time
 import subprocess
 
 
-SCRIPT_PATH = "/home/daniel/scripts/light-dark.py"
+SCRIPT_PATH = os.path.expanduser("~/scripts/light-dark.py")
 
 CONFIGURATIONS = {
-    "nvim": {"directory": "/home/daniel/.config/nvim/lua/", "file": "color-mode.lua"},
-    "gtk": {"directory": "/home/daniel/.config/gtk-3.0/", "file": "settings.ini"},
-    "tmux": {"directory": "/home/daniel/", "file": ".tmux-theme.conf"},
-    "bat": {"directory": "/home/daniel/.config/bat/", "file": "config"},
-    "fzf": {"directory": "/home/daniel/.fzf/", "file": "fzf-config.sh"},
-    "kitty": {"directory": "/home/daniel/.config/kitty/", "file": "current-theme.conf"},
+    "nvim": {"directory": os.path.expanduser("~/.config/nvim/lua/"), "file": "color-mode.lua"},
+    "gtk": {"directory": os.path.expanduser("~/.config/gtk-3.0/"), "file": "settings.ini"},
+    "tmux": {"directory": os.path.expanduser("~/.tmux/"), "file": ".tmux-theme.conf"},
+    "bat": {"directory": os.path.expanduser("~/.config/bat/"), "file": "config"},
+    "fzf": {"directory": os.path.expanduser("~/.fzf/"), "file": "fzf-config.sh"},
+    "kitty": {"directory": os.path.expanduser("~/.config/kitty/"), "file": "current-theme.conf"},
 }
 
 
