@@ -177,7 +177,7 @@ map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar seleccion portapapeles' })
 map('n', '<leader>y', 'm`V"+y``', { desc = 'Copiar linea al portapapeles' })
 map('v', '<leader>p', ':Tele registers<cr>', { desc = 'Pegar con fzf lua' })
-map('n', '<leader>p', ':FzfLua registers<cr>', { desc = 'Pegar del portapapeles' })
+map('n', '<leader>p', ':Tele registers<cr>', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
 
 -- Scroll
@@ -235,7 +235,8 @@ map('n', ',k', ':FzfLua keymaps<CR>', { desc = 'keymaps' })
 map('n', ',f', ':FzfLua files <CR>', { desc = 'Fzf lua files' })
 map('n', '<leader>?', ':Tele oldfiles<CR>', { desc = 'fzf grep' })
 map('n', '<leader>co', ':FzfLua colorschemes<CR>', { desc = 'Fzf lua colorschemes' })
-map('n', '<leader>ca', ':FzfLua lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
+-- map('n', '<leader>ca', ':FzfLua lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
+map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<cr>', { desc = 'Fzf lua colorschemes' })
 
 map('n', 'gr', ':Tele lsp_references<CR>', { desc = 'Fzf lua colorschemes' })
 map('n', '<leader>aa', ':FzfLua commands<CR>', { desc = 'Fzf commands' })

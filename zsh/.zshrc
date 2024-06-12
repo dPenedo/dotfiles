@@ -25,6 +25,11 @@ source ~/.aliases.sh
 source ~/.fzf/shell/key-bindings.zsh
 source ~/.fzf/fzf-config.sh
 
+# Preview file content using bat (https://github.com/sharkdp/bat)
+export FZF_CTRL_T_OPTS="
+  --walker-skip .git,node_modules,target
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 # Historia
 # Tamaño máximo del historial de comandos en memoria
@@ -71,9 +76,6 @@ if [[ ! -e ~/.zsh/zsh-autosuggestions ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 fi
 
-if [[ ! -e ~/.zsh/fzf-tab ]]; then
-  git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
-fi
 
 # When using Ubuntu, add to your .zshenv file:
 skip_global_compinit=1
@@ -82,7 +84,6 @@ skip_global_compinit=1
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/fzf-tab/fzf-tab.zsh
 
 
 # Tecla delete y backspace
