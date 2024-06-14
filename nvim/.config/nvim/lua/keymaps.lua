@@ -38,9 +38,7 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
 
 -- Trouble
-map('n', '<leader>xx', function()
-  require('trouble').toggle()
-end)
+map('n', '<leader>xx', ":Trouble diagnostics toggle<cr>", {desc = "Trouble diagnostics"})
 map('n', '<leader>xw', function()
   require('trouble').toggle 'workspace_diagnostics'
 end)
@@ -74,6 +72,13 @@ map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
 map('n', '<leader>nl', ':ObsidianLink<cr> ', { desc = 'Obsidian Link' })
 map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
 map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
+
+
+
+
+ -- Neogit
+
+map('n', '<leader>ng', ':Neogit<cr> ', { desc = 'Neogit' })
 
 -- Diagnostics
 local diagnostic_goto = function(next, severity)
@@ -142,9 +147,14 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
 map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
--- map('n', '<leader>-', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
+-- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
+-- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
+
+
+
+
 
 map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
@@ -231,7 +241,7 @@ map('n', '<leader>gg', ':Tele live_grep<CR>', { desc = 'Telescope grep' })
 
 -- FzfLua
 map('n', ',g', ':FzfLua grep_visual<CR>', { desc = 'Telescope para búsqueda en vivo con grep' })
-map('n', ',k', ':FzfLua keymaps<CR>', { desc = 'keymaps' })
+map('n', ',k', ':Tele keymaps<CR>', { desc = 'keymaps' })
 map('n', ',f', ':FzfLua files <CR>', { desc = 'Fzf lua files' })
 map('n', '<leader>?', ':Tele oldfiles<CR>', { desc = 'fzf grep' })
 map('n', '<leader>co', ':FzfLua colorschemes<CR>', { desc = 'Fzf lua colorschemes' })
