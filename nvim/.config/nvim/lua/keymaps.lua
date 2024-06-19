@@ -156,16 +156,23 @@ map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 
 
-map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+-- Mapeos para el terminal
+-- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
--- map('n', '<A-<>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
+map('n', '<A-`>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
+map('n', '<leader>tf', ':ToggleTerm direction=float <CR>', { desc = 'Abrir ToggleTerm' })
+map('n', '<leader>ts', ':ToggleTerm direction=vertical size=60<CR> ', { desc = 'Abrir ToggleTerm' })
+map('n', '<leader>th', ':ToggleTerm direction=horizontal<CR> ', { desc = 'Abrir ToggleTerm' })
+map('t', '<A-`>', '<C-\\><C-n><CR>:ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
+map('t', '<C-\\>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Salir del modo terminal' })
+map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Salir del modo terminal' })
+
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
 
--- Mapeos para el terminal
 -- map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
-map('t', '<C-x>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<C-l>', '<C-u>clear<CR>', { desc = 'Limpiar la pantalla del terminal' })
 
 -- Gestión de pestañas
