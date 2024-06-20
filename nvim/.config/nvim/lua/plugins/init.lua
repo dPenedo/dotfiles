@@ -42,7 +42,7 @@ require('lazy').setup({
 
   {
     'willothy/flatten.nvim',
-    event = 'VeryLazy',
+    -- event = 'VeryLazy',
     opts = {},
   },
   {

@@ -158,16 +158,28 @@ map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>tn', ':terminal<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
-map('n', '<A-`>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
-map('n', '<leader>tf', ':ToggleTerm direction=float <CR>', { desc = 'Abrir ToggleTerm' })
-map('n', '<leader>ts', ':ToggleTerm direction=vertical size=60<CR> ', { desc = 'Abrir ToggleTerm' })
-map('n', '<leader>th', ':ToggleTerm direction=horizontal<CR> ', { desc = 'Abrir ToggleTerm' })
-map('t', '<A-`>', '<C-\\><C-n><CR>:ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
 map('t', '<C-\\>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
-map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Salir del modo terminal' })
-map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Salir del modo terminal' })
+map('t', '<Esc><Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
+map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
+map('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Cambiar de split desde el terminal' })
+
+
+map('t', '<A-`>', '<C-\\><C-n><CR>:TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
+map('n', '<A-`>', ':TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
+
+
+
+-- map('t', '<A-`>', '<C-\\><C-n><CR>:ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
+-- map('n', '<A-`>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
+-- map('n', '<leader>tf', ':ToggleTerm direction=float <CR>', { desc = 'Abrir ToggleTerm' })
+-- map('n', '<leader>ts', ':ToggleTerm direction=vertical size=60<CR> ', { desc = 'Abrir ToggleTerm' })
+-- map('n', '<leader>th', ':ToggleTerm direction=horizontal<CR> ', { desc = 'Abrir ToggleTerm' })
+
+
 
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
@@ -217,6 +229,10 @@ map('n', '<C-left>', ':vertical resize -5<CR>', { desc = 'Reducir el tamaño de 
 map('n', '<C-down>', ':horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
 map('n', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
 
+map('t', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
+map('t', '<C-left>', ':vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
+map('t', '<C-down>', ':horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
+map('t', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
 -- Java:
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 
