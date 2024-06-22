@@ -177,7 +177,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+alt+s",
+        "key": "alt+e",
         "command": "workbench.files.action.focusFilesExplorer"
     },
     {
@@ -223,7 +223,7 @@
             "e"
         ],
         "commands": [
-            "workbench.action.toggleSidebarVisibility"
+            "workbench.action.focusSideBar"
         ],
         "when": "editorFocus && vim.mode == 'Normal'"
     },
@@ -234,6 +234,18 @@
         ],
         "command": "workbench.action.closeEditorsInGroup",
         "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "before": [
+            "<leader>",
+            ";"
+        ],
+        "after": "m`A;<Esc>``",
+        "when": "editorTextFocus && vim.mode == 'Normal'",
+    },
+    {
+        "before": "'",
+        "after": "`",
     },
     {
         "before": [
@@ -484,5 +496,20 @@
     {
         "key": "ctrl+alt+h",
         "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelAlignment == 'center' || panelPosition != 'bottom'"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+    {
+        "key": "ctrl+k ctrl+m",
+        "command": "-workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
     },
 ]

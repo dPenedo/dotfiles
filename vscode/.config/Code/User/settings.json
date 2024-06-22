@@ -27,6 +27,7 @@
     "editor.bracketPairColorization.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.hideCursorInOverviewRuler": true,
+    "keyboard.dispatch": "keyCode",
     "editor.unicodeHighlight.allowedCharacters": {
         "а": true,
         "с": true,
@@ -71,6 +72,11 @@
             "editorError.border": "#BF616A",
             "editorCursor.background": "#161617",
         },
+        "[NeoRose-VimPine]": {
+            "editorBracketHighlight.foreground2": "#3e8fb0",
+            "terminal.ansiBlue": "#3e8fb0",
+            "terminal.ansiBrightBlue": "#3e8fb0",
+        }
     },
     "editor.semanticTokenColorCustomizations": {
         "[Kanagawa Black]": {
@@ -182,6 +188,10 @@
             ]
         },
         {
+            "before": "'",
+            "after": "`",
+        },
+        {
             "before": [
                 "<leader>",
                 "t",
@@ -213,7 +223,7 @@
                 "e"
             ],
             "commands": [
-                "workbench.action.toggleSidebarVisibility"
+                "workbench.action.focusPrimarySide"
             ]
         },
         {
@@ -250,6 +260,21 @@
             ],
             "commands": [
                 "workbench.action.splitEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";"
+            ],
+            "after": [
+                "m",
+                "`",
+                "A",
+                ";",
+                "<Esc>",
+                "`",
+                "`"
             ]
         },
         {
@@ -381,6 +406,10 @@
             ]
         },
         {
+            "before": "'",
+            "after": "`",
+        },
+        {
             "before": [
                 "<S-l>"
             ],
@@ -395,6 +424,16 @@
             ],
             "commands": [
                 "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "a",
+                "a"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
             ]
         },
         {
@@ -584,7 +623,10 @@
     },
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.activityBar.location": "hidden",
-    "explorer.autoReveal": false
+    "explorer.autoReveal": false,
+    "workbench.colorTheme": "NeoRose-VimPine",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
 }
