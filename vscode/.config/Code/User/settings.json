@@ -199,9 +199,8 @@
     },
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.location": "hidden",
     "explorer.autoReveal": false,
-    "workbench.colorTheme": "NeoRose-VimPine",
+    "workbench.colorTheme": "Dayfox",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -217,5 +216,6 @@
         "u",
         "w"
     ],
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden"
 }

@@ -30,7 +30,7 @@ map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
 --Borrar palabra
 map('i', '<c-h>', '<Esc>cvb', { desc = 'Borrar palabra' })
 
-map('n', '<CR>', ':', { desc = 'command con ;' })
+map('n', '<CR>', ':', { desc = 'command con enter' })
 
 -- Mueve el bloque hacia la izquierda
 map('v', '<', '<gv', { noremap = true, silent = true })
