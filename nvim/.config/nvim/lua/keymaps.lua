@@ -199,15 +199,20 @@ map('n', '<leader>7', ':tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
 map('n', '<leader>8', ':tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
 map('n', '<leader>9', ':tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
 
--- Copiar/pegar
+-- Copiar/pegar Clipboard
 -- map('n', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
 -- map('v', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
 map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar seleccion portapapeles' })
 map('n', '<leader>y', 'm`V"+y``', { desc = 'Copiar linea al portapapeles' })
-map('v', '<leader>p', ':Tele registers<cr>', { desc = 'Pegar con fzf lua' })
-map('n', '<leader>p', ':Tele registers<cr>', { desc = 'Pegar del portapapeles' })
+map('v', '<leader>P', ':Tele registers<cr>', { desc = 'Pegar con fzf lua' })
+map('n', '<leader>P', ':Tele registers<cr>', { desc = 'Pegar del portapapeles' })
+map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
+map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
+
+
+
 
 -- Scroll
 map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })

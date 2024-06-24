@@ -53,6 +53,7 @@ nmap <leader>p "+p
 nmap <leader>P "+P
 vmap <leader>p "+p
 vmap <leader>P "+P
+nmap <leader>v ggVG
 
 
 nnoremap == :action ReformatCode <CR>

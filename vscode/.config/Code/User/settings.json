@@ -193,7 +193,7 @@
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
     "explorer.autoReveal": false,
-    "workbench.colorTheme": "NeoRose-VimPine",
+    "workbench.colorTheme": "Dayfox",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -229,4 +229,12 @@
     },
     "editor.showFoldingControls": "never",
     "editor.foldingImportsByDefault": true,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-11",
+            "path": "/home/daniyari/Descargas/Programas/jdk-11.0.0.1",
+            "default": true
+        }
+    ],
+    "java.jdt.ls.java.home": "/home/daniyari/Descargas/Programas/jdk-11.0.0.1"
 }

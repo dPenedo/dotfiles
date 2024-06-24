@@ -32,5 +32,10 @@
         "key": "ctrl+h",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.action.maximizeEditorHideSidebar",
+        "when": "auxiliaryBarVisible || sideBarVisible || editorPartMultipleEditorGroups && !editorPartMaximizedEditorGroup"
     }
 ]
