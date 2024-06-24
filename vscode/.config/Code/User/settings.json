@@ -3,7 +3,7 @@
     "window.zoomLevel": 1,
     "window.density.editorTabHeight": "compact",
     //Editor
-    // "hide-tabs.toggleTabs": true,
+    "hide-tabs.toggleTabs": true,
     "editor.tabSize": 4,
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
@@ -16,6 +16,7 @@
     "editor.insertSpaces": true,
     "editor.smoothScrolling": false,
     "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
     "editor.detectIndentation": true,
     "editor.suggestSelection": "first",
     "editor.scrollBeyondLastLine": false,
@@ -27,6 +28,9 @@
     "editor.bracketPairColorization.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.hideCursorInOverviewRuler": true,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.showTabs": "single",
     "keyboard.dispatch": "keyCode",
     "editor.unicodeHighlight.allowedCharacters": {
         "а": true,
@@ -43,8 +47,6 @@
             "pink": "#F5C5C2",
             "base": "#181825",
             "mauve": "#A8A6F7",
-            // "text": "#DEE4F8",
-            // "lavender": "#CBD1FB",
         }
     },
     "workbench.colorCustomizations": {
@@ -146,14 +148,6 @@
     // "javascript.suggest.paths": false,
     // Telemetry (VSCODE)
     "telemetry.telemetryLevel": "off",
-    "vim.leader": "<space>",
-    // "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.highlightedyank.enable": true,
-    "workbench.editor.showTabs": "single",
     "git.openRepositoryInParentFolders": "never",
     // TODO-TREE
     "todo-tree.highlights.customHighlight": {
@@ -200,7 +194,7 @@
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
     "explorer.autoReveal": false,
-    "workbench.colorTheme": "Dayfox",
+    "workbench.colorTheme": "NeoRose-VimPine",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -216,6 +210,22 @@
         "u",
         "w"
     ],
-    "workbench.sideBar.location": "right",
-    "workbench.activityBar.location": "hidden"
+    "vscode-neovim.compositeKeys": {
+        "jj": {
+            "command": "vscode-neovim.escape",
+        },
+        "jk": {
+            // Use lua to execute any logic
+            "command": "vscode-neovim.lua",
+            "args": [
+                [
+                    "local api = vim.api",
+                    "local mode = api.nvim_get_mode().mode",
+                    "if mode == 'i' then",
+                    "  api.nvim_input('<Esc>la')",
+                    "end",
+                ],
+            ],
+        },
+    },
 }

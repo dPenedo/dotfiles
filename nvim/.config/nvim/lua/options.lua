@@ -2,11 +2,6 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
--- vim.cmd.colorscheme 'tokyonight-moon'
--- vim.cmd.colorscheme 'kanagawa'
--- vim.cmd.colorscheme 'gruvbox-material'
-vim.g.rasmus_transparent = true
--- vim.cmd.colorscheme 'catppuccin'
 vim.o.hlsearch = true
 vim.wo.number = true
 vim.opt.relativenumber = true

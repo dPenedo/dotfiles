@@ -1,26 +1,6 @@
-//TODO: no funciona bien. copiar previo del git y ordenarlo un poco
 [
     // Vim Normal Mode Key Bindings
     // VS CODE Shortcuts
-    {
-        "key": "ctrl+shift+e",
-        "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
-        "key": "ctrl+shift+p",
-        "command": "workbench.action.showCommands"
-    },
-    {
-        "key": "ctrl+shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
     {
         "key": "ctrl+shift+alt+q",
         "command": "workbench.action.quit"
@@ -30,26 +10,27 @@
         "command": "workbench.action.hideEditorTabs"
     },
     {
-        "key": "ctrl+shift+e",
-        "command": "-workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
         "key": "alt+f8",
         "command": "-editor.action.marker.next",
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+alt+s",
-        "command": "workbench.files.action.focusFilesExplorer"
+        "key": "alt+s",
+        "command": "workbench.action.debug.start",
+        "when": "editorFocus"
     },
     {
         "key": "alt+t",
         "command": "workbench.view.extension.todo-tree-container"
     },
     {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
+        "key": "q",
+        "command": "workbench.action.closeSidebar",
+        "when": "explorerViewletVisible && !inputFocus"
     },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible && !inputFocus"
+    }
 ]
