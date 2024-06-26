@@ -108,7 +108,7 @@ bindkey -M viins '\er' fzf-history-widget
 
 bindkey -s '\ee' 'lfcd^m'
 bindkey -s '\et' 'thunar . &^m'
-# bindkey -s '\ey' 'ya .^m'
+bindkey -s '\ey' 'ya .^m'
 
 # Configuración de teclas de retroceso y suprimir en modo viins
 bindkey -M viins '^?' backward-delete-char  # Backspace

@@ -51,6 +51,7 @@ alias ccd="zi"
 alias zz="zi"
 alias za='zathura --fork'
 alias intellij='/home/daniel/Descargas/Programas/idea-IU-241.14494.240/bin/idea.sh'
+alias intellij='/home/daniyari/Descargas/Programas/idea-IU-241.17890.1/bin/idea.sh'
 
 # Programas flatpak
 

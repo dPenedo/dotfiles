@@ -1,4 +1,5 @@
-current_mode = "light"
+current_mode = "dark"
+
 import os
 import sys
 import time
