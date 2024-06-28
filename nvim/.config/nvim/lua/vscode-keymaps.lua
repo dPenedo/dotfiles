@@ -16,6 +16,10 @@ map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo siti
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 -- map('n', 'j', vscode_call("cursorDown"))
 -- map('n', 'k', vscode_call("cursorUp"))
+-- map('n', 'j', "gj")
+-- map('n', 'k', "gk")
+-- no funciona
+map ('n', "<C-;>", "<ESC>")
 
 -- Splits 
 map('n', '<leader><CR>', vscode_call("workbench.action.splitEditorRight"))

@@ -56,8 +56,29 @@
             "terminal.background": "#1b1b22",
             "editorLineNumber.foreground": "#5E6982",
             "editorLineNumber.activeForeground": "#ED9338",
-            "editor.background": "#161617",
-            "editorCursor.background": "#161617",
+            "editor.background": "#191624",
+            "activityBar.foreground": "#e0DEF4",
+            "activityBarBadge.foreground": "#e0DEF4",
+            "button.secondaryForeground": "#e0DEF4",
+            "descriptionForeground": "#e0DEF4",
+            "editor.foreground": "#e0DEF4",
+            "editorCursor.foreground": "#4d699B",
+            "list.activeSelectionForeground": "#e0DEF4",
+            "list.focusForeground": "#e0DEF4",
+            "list.hoverForeground": "#e0DEF4",
+            "list.inactiveSelectionForeground": "#e0DEF4",
+            "menu.foreground": "#e0DEF4",
+            "settings.headerForeground": "#e0DEF4",
+            "sideBar.foreground": "#e0DEF4",
+            "sideBarSectionHeader.foreground": "#e0DEF4",
+            "statusBar.debuggingForeground": "#e0DEF4",
+            "statusBarItem.remoteForeground": "#e0DEF4",
+            "tab.activeForeground": "#e0DEF4",
+            "terminal.ansiBrightWhite": "#e0DEF4",
+            "terminal.ansiWhite": "#e0DEF4",
+            "terminal.foreground": "#e0DEF4",
+            "titleBar.activeForeground": "#e0DEF4",
+            "titleBar.inactiveForeground": "#e0DEF4",
         },
         "[nordic-vscode]": {
             "editorBracketMatch.background": "#363646",
@@ -76,7 +97,7 @@
             "editorBracketHighlight.foreground2": "#3e8fb0",
             "terminal.ansiBlue": "#3e8fb0",
             "terminal.ansiBrightBlue": "#3e8fb0",
-        }
+        },
     },
     "editor.semanticTokenColorCustomizations": {
         "[Kanagawa Black]": {
@@ -193,7 +214,6 @@
     "editor.stickyScroll.enabled": false,
     "window.menuBarVisibility": "toggle",
     "explorer.autoReveal": false,
-    "workbench.colorTheme": "Dayfox",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
@@ -228,7 +248,9 @@
         },
     },
     "editor.showFoldingControls": "never",
-    "editor.foldingImportsByDefault": true,
+    "workbench.editor.enablePreview": false,
+    "editor.foldingImportsByDefault": false,
+    "workbench.colorTheme": "Dayfox",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",

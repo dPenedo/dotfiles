@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   "tpope/vim-surround",
-"xiyaowong/fast-cursor-move.nvim"
 })
 
 

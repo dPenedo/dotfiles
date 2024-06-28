@@ -121,7 +121,6 @@ map('n', '<leader>qq', '<CMD>quit<CR>', { desc = 'Cerrar el búfer actual' })
 map('i', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('v', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>W', '<CMD>wall<CR>', { desc = 'Guardar todos los búferes' })
-
 -- Mapeos para salir del modo de inserción
 map('i', 'jj', '<ESC>', { desc = 'Salir del modo de inserción' })
 map('i', 'jk', '<ESC>la', { desc = 'Salir del modo de inserción y agregar una línea' })
