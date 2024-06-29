@@ -123,7 +123,9 @@ map('v', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>W', '<CMD>wall<CR>', { desc = 'Guardar todos los búferes' })
 -- Mapeos para salir del modo de inserción
 map('i', 'jj', '<ESC>', { desc = 'Salir del modo de inserción' })
-map('i', 'jk', '<ESC>la', { desc = 'Salir del modo de inserción y agregar una línea' })
+map('i', 'jk', '<ESC>la', { desc = 'Desplazar una posicion a la derecha' })
+map('i', '<C-l>', '<ESC>la', { desc = 'Desplazar una posicion a la derecha' })
+
 
 -- Moverse al último búfer
 map('n', "''", '<CMD>b#<CR>', { desc = 'Ir al último búfer' })

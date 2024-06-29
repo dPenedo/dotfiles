@@ -1,6 +1,7 @@
 return {
   'lukas-reineke/headlines.nvim',
   dependencies = 'nvim-treesitter/nvim-treesitter',
+  event = 'BufReadPre',
   opts = {
     markdown = {
       headline_highlights = { 'Headline' },

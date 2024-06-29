@@ -21,6 +21,8 @@ map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 -- no funciona
 map ('n', "<C-;>", "<ESC>")
 
+map('i', '<C-l>', '<ESC>la', { desc = 'Desplazar una posicion a la derecha' })
+
 -- Splits 
 map('n', '<leader><CR>', vscode_call("workbench.action.splitEditorRight"))
 map('n', '<leader>-', vscode_call("workbench.action.splitEditorDown"))

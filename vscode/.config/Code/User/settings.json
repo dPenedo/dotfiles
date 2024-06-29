@@ -227,7 +227,8 @@
         "r",
         "t",
         "u",
-        "w"
+        "w",
+        "l"
     ],
     "vscode-neovim.compositeKeys": {
         "jj": {
@@ -250,7 +251,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Dayfox",
+    "workbench.colorTheme": "Kanagawa",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
