@@ -9,6 +9,7 @@ end
 
 -- Neovim
 map('n', '<CR>', ':', { desc = 'command con enter' })
+map('v', '<CR>', ':', { desc = 'command con enter' })
 map('n', "'", '`', { desc = "backtick asignado a '" })
 map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
@@ -81,6 +82,7 @@ map('n', '<leader>xx', vscode_call("workbench.action.problems.focus"))
 map('n', '<leader>e', vscode_call("workbench.files.action.focusFilesExplorer"))
 map('n', '<leader>bb', vscode_call("workbench.action.toggleSidebarVisibility"))
 map('n', '<leader>tt', vscode_call("workbench.view.extension.todo-tree-container"))
+map('n', '==', vscode_call("editor.action.formatDocument"))
 
 -- Harpoon
 map('n', '<leader>sa', vscode_call("vscode-harpoon.addEditor"))
