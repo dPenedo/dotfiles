@@ -255,9 +255,9 @@
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
-            "path": "/home/daniyari/Descargas/Programas/jdk-11.0.0.1",
+            "path": "/home/daniel/Descargas/Programas/jdk-11.0.0.1",
             "default": true
         }
     ],
-    "java.jdt.ls.java.home": "/home/daniyari/Descargas/Programas/jdk-11.0.0.1"
+    "java.jdt.ls.java.home": "/home/daniel/Descargas/Programas/jdk-11.0.0.1"
 }

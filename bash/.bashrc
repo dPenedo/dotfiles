@@ -19,6 +19,9 @@ export PATH
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
+
+
+
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
 	for rc in ~/.bashrc.d/*; do
@@ -130,4 +133,4 @@ alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
 alias te="tmc exercises mooc-java-programming-ii"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-source /home/daniyari/.tmc-autocomplete.sh || true
+source /home/daniel/.tmc-autocomplete.sh || true

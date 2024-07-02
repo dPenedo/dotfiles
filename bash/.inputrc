@@ -2,6 +2,8 @@
 "\e[1;5D": backward-word
 "\b":backward-kill-word
 
+"\e[A": history-search-backward
+"\e[B": history-search-forward
 
 set show-all-if-ambiguous on
 set completion-ignore-case on
