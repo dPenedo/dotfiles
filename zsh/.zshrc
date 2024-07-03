@@ -91,25 +91,10 @@ bindkey -M viins '^[[3;5~' kill-word     # Control + Delete
 bindkey -M viins '\e[1~' beginning-of-line  # Para la tecla Home
 bindkey -M viins '\e[4~' end-of-line        # Para la tecla End
 
-
-
-
-
-bindkey -M vicmd '\er' fzf-history-widget
-bindkey -M viins '\er' fzf-history-widget
-
-
-
-
-bindkey -s '\ee' 'lfcd^m'
-bindkey -s '\et' 'thunar . &^m'
-bindkey -s '\ey' 'ya .^m'
-
 # Configuración de teclas de retroceso y suprimir en modo viins
 bindkey -M viins '^?' backward-delete-char  # Backspace
 bindkey -M viins '^H' backward-delete-char  # Backspace (otra representación)
 bindkey -M viins '^[[3~' delete-char        # Suprimir
-
 # Configuración de teclas de control para avanzar y retroceder palabras
 bindkey -M viins '^[[1;5C' forward-word     # Control + derecha
 bindkey -M viins '^[[1;5D' backward-word    # Control + izquierda
@@ -118,11 +103,16 @@ bindkey -M viins '^H' backward-kill-word  # Ctrl + H para borrar la palabra ante
 
 
 
+# File managers
+bindkey -s '\ee' 'lfcd^m'
+bindkey -s '\et' 'thunar . &^m'
+bindkey -s '\ey' 'ya .^m'
 # use lf to switch directories 
 lfcd="~/.config/lf/lfcd.sh"
 if [ -f "$lfcd" ]; then
 	source "$lfcd"
 fi
+
 
 # Zoxide
 eval "$(zoxide init zsh)"

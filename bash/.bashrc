@@ -5,6 +5,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+
+export HISTFILE="$HOME/.bash_history"
+
+
 export VISUAL=nvim
 export EDITOR=nvim
 export READER="zathura"
@@ -16,26 +20,9 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
 
-
-
-
-# User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-	for rc in ~/.bashrc.d/*; do
-		if [ -f "$rc" ]; then
-			. "$rc"
-		fi
-	done
-fi
-
-unset rc
 . "$HOME/.cargo/env"
 alias config='/usr/bin/git --git-dir=/home/daniel/.cfg/ --work-tree=/home/daniel'
-
-# source /home/daniel/.config/broot/launcher/bash/br
 
 
 #############
@@ -49,9 +36,6 @@ YELLOW="\[\033[33m\]"
 GRAY="\[\033[37m\]"
 RESET="\[\033[0m\]"
 
-# rama_git() {
-# 	git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-# }
 rama_git() {
 	local branch
 	branch=$(git branch 2>/dev/null | sed -n '/^\*/s/^\* //p')
@@ -82,47 +66,16 @@ bind '"\e[A": fzf-history-widget'
 if [ -x "$(command -v fzf)" ]; then
 	source ~/.fzf/shell/key-bindings.bash
 	source ~/.fzf/shell/completion.bash
+	source ~/.fzf/fzf-config.sh
 fi
 
-
-
-
-
 #Aliases
-
 source ~/.aliases.sh
 source ~/.filemanagers.sh
-source ~/.fzf/fzf-config.sh
 
-# Ranger
-
-rangercd() {
-	tmp="$(mktemp)"
-	ranger --choosedir="$tmp" "$@"
-	if [ -f "$tmp" ]; then
-		dir="$(cat "$tmp")"
-		rm -f "$tmp"
-		[ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-	fi
-}
-alias ranger="rangercd"
 
 eval "$(zoxide init bash)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/daniel/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/daniel/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/daniel/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/daniel/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # export JAVA_HOME=/usr/lib/jvm/default-java
 export JAVA_HOME=~/Descargas/Programas/jdk-11.0.0.1/
