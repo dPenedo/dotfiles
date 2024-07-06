@@ -19,6 +19,9 @@ source ~/.filemanagers.sh
 source ~/.aliases.sh
 source ~/.fzf/shell/key-bindings.zsh
 source ~/.fzf/fzf-config.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# source <(fzf --zsh)
+
 
 # Preview file content using bat (https://github.com/sharkdp/bat)
 export FZF_CTRL_T_OPTS="

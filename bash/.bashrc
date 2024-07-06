@@ -79,6 +79,8 @@ eval "$(zoxide init bash)"
 
 # export JAVA_HOME=/usr/lib/jvm/default-java
 export JAVA_HOME=~/Descargas/Programas/jdk-11.0.0.1/
+export PATH=$JAVA_HOME/bin:$PATH
+
 source ~/.tmc-autocomplete.sh || true
 # Solo para el curso de MOOC, borrar al finalizar!
 alias tt="tmc test && notify-send '✅ Tests completados' "
