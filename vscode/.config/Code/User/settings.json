@@ -251,7 +251,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Gruvbox Material P Dark",
+    "workbench.colorTheme": "Pen Paper Coffee",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
@@ -259,5 +259,5 @@
             "default": true
         }
     ],
-    "java.jdt.ls.java.home": "/home/daniel/Descargas/Programas/jdk-11.0.0.1"
+    "java.jdt.ls.java.home": "/home/daniel/Descargas/Programas/jdk-11.0.0.1",
 }

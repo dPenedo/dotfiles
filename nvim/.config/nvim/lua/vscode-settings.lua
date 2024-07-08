@@ -16,6 +16,7 @@ require("lazy").setup({
 })
 
 
+
 vim.g.clipboard = vim.g.vscode_clipboard
 vim.o.hlsearch = true
 vim.wo.number = true

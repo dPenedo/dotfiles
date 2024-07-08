@@ -32,6 +32,8 @@ sleep 4
 
 monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
+
+	xrandr --output eDP --off --output HDMI-0 --auto --primary &
 	sleep 15
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	sleep 3
