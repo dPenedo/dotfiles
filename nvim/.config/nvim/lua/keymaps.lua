@@ -67,11 +67,29 @@ map('n', '<leader>nn', function()
   end
 end, { desc = '[N]ew [N]otes' })
 
+map('n', '<leader>nl', function()
+  local telescope_builtin = require('telescope.builtin')
+  telescope_builtin.find_files({
+    prompt_title = 'Selecciona una nota',
+    cwd = '~/Documentos/Dropbox/Notas',
+    attach_mappings = function(_, map_note)
+      map_note('i', '<CR>', function(prompt_bufnr)
+        local entry = require('telescope.actions.state').get_selected_entry()
+        require('telescope.actions').close(prompt_bufnr)
+        if entry and entry.path then
+          local filename = vim.fn.fnamemodify(entry.path, ':t:r') -- nombre del archivo sin extensión
+          local link = string.format('[[%s|%s]]', filename, filename)
+          vim.api.nvim_put({ link }, '', true, true)
+        end
+      end)
+      return true
+    end,
+  })
+end, { desc = '[N]ew [L]ink' })
+
 map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
-map('n', '<leader>ne', ':ObsidianExtractNote<cr> ', { desc = 'Obsidian Extract note' })
 map('n', '<leader>nt', ':ObsidianTemplate<cr> ', { desc = 'Obsidian Template' })
 map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
-map('n', '<leader>nl', ':ObsidianLink<cr> ', { desc = 'Obsidian Link' })
 map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
 map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
 
@@ -208,8 +226,8 @@ map('n', '<leader>9', ':tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
 map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar seleccion portapapeles' })
 map('n', '<leader>y', 'm`V"+y``', { desc = 'Copiar linea al portapapeles' })
-map('v', '<leader>P', ':Tele registers<cr>', { desc = 'Pegar con fzf lua' })
-map('n', '<leader>P', ':Tele registers<cr>', { desc = 'Pegar del portapapeles' })
+map('v', '<leader>P', ':telescope registers<cr>', { desc = 'Buscar registros en telescope' })
+map('n', '<leader>P', ':telescope registers<cr>', { desc = 'Buscar registros en telescope' })
 map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
@@ -245,41 +263,31 @@ map('t', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de 
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 
 -- Telescope
-
-map('n', '<leader>gf', ':Telescope git_files<CR>', { desc = 'Search [G]it [F]iles' })
-map('n', '<leader>sh', ':Telescope help_tags<CR>', { desc = '[S]earch [H]elp' })
+map('n', '<leader>f', ':Telescope find_files <CR>', { desc = 'Telescope files' })
+map('n', '<leader>l', ':Telescope current_buffer_fuzzy_find<CR>', { desc = 'Telescope para en el buffer actual' })
+map('n', '<leader><space>', ':Telescope buffers<CR>', { desc = 'Telescope buffers' })
+map('n', '<leader>gg', ':telescope live_grep<CR>', { desc = 'Telescope grep' })
 map('n', '<leader>sw', ':Telescope grep_string<CR>', { desc = '[S]earch current [W]ord' })
-map('n', '<leader>sg', ':Telescope live_grep<CR>', { desc = '[S]earch by [G]rep' })
-map('n', '<leader>sG', ':LiveGrepGitRoot<cr><CR>', { desc = '[S]earch by [G]rep on Git Root' })
 map('n', '<leader>sd', ':Telescope diagnostics<CR>', { desc = '[S]earch [D]iagnostics' })
-map('n', '<leader>sr', ':Telescope resume<CR>', { desc = '[S]earch [R]esume' })
 map('n', '<leader>nf', ':NotasBuscar<CR>', { desc = '[N]otas [F]ind' })
-map('n', ',b', ':Telescope buffers<CR>', { desc = 'Telescope para buffers' })
-map('n', ',B', ':Telescope builtin<CR>', { desc = 'Telescope para comandos internos' })
-map('n', ',r', ':Telescope registers<CR>', { desc = 'Telescope para registros' })
-map('n', ',u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
 map('n', '<leader>u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
-map('n', ',T', ':Telescope treesitter<CR>', { desc = 'Telescope para en Treesitter' })
-map('n', ',t', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
+map('n', ',t', ':Telescope treesitter<CR>', { desc = 'Telescope para en Treesitter' })
 map('n', '<leader>tt', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
 map('n', ',h', ':Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
 map('n', ',m', ':Telescope marks<CR>', { desc = 'Telescope para marks' })
-map('n', '<leader>f', ':Telescope find_files <CR>', { desc = 'Fzf lua files' })
+map('n', ',k', ':Telescope keymaps<CR>', { desc = 'keymaps' })
+map('n', ',o', ':Telescope oldfiles<CR>', { desc = 'Telescope oldfiles' })
+map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<cr>', { desc = 'Code actions' })
+map('n', 'gr', ':Telescope lsp_references<CR>', { desc = 'Telescope lsp references' })
+map('n', '<leader>aa', ':Telescope commands<CR>', { desc = 'Telescope commands' })
 
-map('n', '<leader>l', ':Telescope current_buffer_fuzzy_find<CR>', { desc = 'fzflua para en el buffer actual' })
-map('n', '<leader><space>', ':Telescope buffers<CR>', { desc = 'fzf grep' })
-map('n', '<leader>gg', ':Tele live_grep<CR>', { desc = 'Telescope grep' })
 
--- FzfLua
-map('n', ',g', ':FzfLua grep_visual<CR>', { desc = 'Telescope para búsqueda en vivo con grep' })
-map('n', ',k', ':Tele keymaps<CR>', { desc = 'keymaps' })
-map('n', ',f', ':FzfLua files <CR>', { desc = 'Fzf lua files' })
-map('n', '<leader>?', ':Tele oldfiles<CR>', { desc = 'fzf grep' })
-map('n', '<leader>co', ':FzfLua colorschemes<CR>', { desc = 'Fzf lua colorschemes' })
--- map('n', '<leader>ca', ':FzfLua lsp_code_actions<CR>', { desc = 'Fzf lua colorschemes' })
-map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<cr>', { desc = 'Fzf lua colorschemes' })
 
-map('n', 'gr', ':Tele lsp_references<CR>', { desc = 'Fzf lua colorschemes' })
-map('n', '<leader>aa', ':FzfLua commands<CR>', { desc = 'Fzf commands' })
-
--- vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
+-- load the session for the current directory
+map("n", "<leader>S", function() require("persistence").load() end)
+-- select a session to load
+map("n", "<leader>se", function() require("persistence").select() end)
+-- load the last session
+map("n", "<leader>sL", function() require("persistence").load({ last = true }) end)
+-- stop Persistence => session won't be saved on exit
+map("n", "<leader>sq", function() require("persistence").stop() end)

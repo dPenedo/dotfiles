@@ -33,6 +33,8 @@ vim.o.showtabline = 1
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+
+
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
 
@@ -54,11 +56,11 @@ vim.o.shiftwidth = 4
 -- vim: ts=2 sts=2 sw=2 et
 -- Para que deje de crear un comentario al dar enter
 -- vim.opt_local.formatoptions:remove { 'r', 'o' }
-vim.api.nvim_create_autocmd('BufEnter', {
-  callback = function()
-    vim.opt.formatoptions = vim.opt.formatoptions - { 'c', 'r', 'o' }
-  end,
-})
+-- vim.api.nvim_create_autocmd('BufEnter', {
+--   callback = function()
+--     vim.opt.formatoptions = vim.opt.formatoptions - { 'c', 'r', 'o' }
+--   end,
+-- })
 
 -- Desactivar la barra de estado en nvim-tree
 vim.opt.laststatus = 3

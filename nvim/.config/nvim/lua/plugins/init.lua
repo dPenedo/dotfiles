@@ -1,4 +1,5 @@
 require('lazy').setup({
+
   performance = {
     cache = {
       enabled = true,
@@ -30,15 +31,16 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  -- { 'folke/which-key.nvim',     opts = {} },
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', event = 'VeryLazy', opts = {} },
+  { 'numToStr/Comment.nvim',    event = 'VeryLazy', opts = {} },
 
-  {
-    'stevearc/conform.nvim',
-    event = 'InsertEnter',
-    opts = {},
-  },
+  -- { 'echasnovski/mini.starter', version = '*', opts = {} },
+  -- {
+  --   'stevearc/conform.nvim',
+  --   event = 'InsertEnter',
+  --   opts = {},
+  -- },
 
   {
     'willothy/flatten.nvim',

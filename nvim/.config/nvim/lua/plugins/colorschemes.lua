@@ -260,6 +260,9 @@ return {
 	-- 	}
 	-- },
 
+	{"yorik1984/newpaper.nvim",
+		opts = {}
+	},
 	-- {
 	--   'catppuccin/nvim',
 	--   name = 'catppuccin',

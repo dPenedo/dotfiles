@@ -6,9 +6,10 @@ return {
       ["<C-v>"] = "actions.select_vsplit",
       ["<C-s>"] = "actions.select_split",
       ["<C-h>"] = false,
+      ["<C-l>"] = false,
       ["<C-r>"] = "actions.refresh",
 
-      ["."] = "actions.toggle_hidden",
+      ["<leader>h"] = "actions.toggle_hidden",
     },
   },
   -- Optional dependencies
