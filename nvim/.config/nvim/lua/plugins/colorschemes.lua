@@ -206,6 +206,7 @@ return {
 		'EdenEast/nightfox.nvim',
 		opts = {
 			options = {
+				transparent = true,
 				styles = {   -- Style to be applied to different syntax groups
 					comments = 'NONE', -- Value is any valid attr-list value `:help attr-list`
 					conditionals = 'bold',

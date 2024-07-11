@@ -8,22 +8,23 @@ local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme = {}
-theme.dir = os.getenv("HOME") .. "/.config/awesome/themes/kanagawa"
-theme.wallpaper = theme.dir .. "/moon.jpg"
+theme.dir = os.getenv("HOME") .. "/.config/awesome/themes/desert"
+theme.wallpaper = theme.dir .. "/costa.jpg"
 theme.font = "Hack 10"
-theme.fg_normal = "#e0def4"
-theme.fg_focus = "#7e9cd8"
-theme.fg_accent = "#E6C384"
-theme.fg_inactive = "#3F3F3F"
+theme.fg_normal = "#2a2a37"
+theme.fg_focus = "#282828"
+theme.fg_accent = "#E2E0d8"
+theme.fg_inactive = "#B1AAA1"
 theme.fg_urgent = "#CC9393"
-theme.bg_normal = "#1f1f28"
-theme.bg_focus = "#363646"
-theme.bg_urgent = "#1A1A1A"
+theme.bg_normal = "#CFCBC5"
+theme.bg_sec = "#b1a9a0"
+theme.bg_focus = "#464c8B"
+theme.bg_urgent = "#ffffff"
 theme.border_width = dpi(3)
 theme.border_normal = "#3F3F3F"
 theme.border_focus = theme.fg_focus
 theme.border_marked = "#CC9393"
-theme.tasklist_bg_focus = "#1A1A1A"
+theme.tasklist_bg_focus = "#CFCBC5"
 theme.titlebar_bg_focus = theme.bg_focus
 theme.titlebar_bg_normal = theme.bg_normal
 theme.titlebar_fg_focus = theme.fg_focus
@@ -148,7 +149,7 @@ theme.cal = lain.widget.cal({
 	notification_preset = {
 		font = "Lato 16",
 		fg = theme.fg_normal,
-		bg = theme.bg_focus,
+		bg = theme.bg_sec,
 	},
 })
 
@@ -156,7 +157,7 @@ theme.cal = lain.widget.cal({
 local memicon = wibox.widget.imagebox(theme.widget_mem)
 local mem = lain.widget.mem({
 	settings = function()
-		widget:set_markup(markup.font(theme.font, " " .. mem_now.used .. "MB "))
+		widget:set_markup(markup.font(theme.font, " " .. mem_now.used .. "MB "))
 	end,
 })
 
@@ -164,7 +165,7 @@ local mem = lain.widget.mem({
 local cpuicon = wibox.widget.imagebox(theme.widget_cpu)
 local cpu = lain.widget.cpu({
 	settings = function()
-		widget:set_markup(markup.font(theme.font, " " .. cpu_now.usage .. "% "))
+		widget:set_markup(markup.font(theme.font, "  " .. cpu_now.usage .. "% "))
 	end,
 })
 
@@ -173,7 +174,7 @@ local tempicon = wibox.widget.imagebox(theme.widget_temp)
 
 local temp = lain.widget.temp({
 	settings = function()
-		widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C "))
+		widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C "))
 	end,
 })
 
@@ -214,20 +215,8 @@ local weather = lain.widget.weather()
 
 -- Separators
 local spr = wibox.widget.textbox(" ")
-local arrl_dl = separators.arrow_left(theme.bg_focus, "alpha")
-local arrl_ld = separators.arrow_left("alpha", theme.bg_focus)
--- local separr = separators.
--- local round_f = wibox.widget.textbox('')
--- local round_e = wibox.widget.textbox('')
---
---
--- separator_claro  = theme.fg_inactive
--- separator_oscuro = theme.bg_normal
--- -- Set fg and bg colors for the separator widget
--- round_f:set_markup_silently('<span foreground="' ..
---     separator_claro .. '" background="' .. separator_oscuro .. '"></span>')
--- round_e:set_markup_silently('<span foreground="' ..
---     separator_oscuro .. '" background="' .. separator_claro .. '"></span>')
+local arrl_dl = separators.arrow_left(theme.bg_sec, "alpha")
+local arrl_ld = separators.arrow_left("alpha", theme.bg_sec)
 
 function theme.at_screen_connect(s)
 	-- Quake application
@@ -345,10 +334,10 @@ function theme.at_screen_connect(s)
 			-- tempicon,
 			-- temp.widget,
 			arrl_ld,
-			wibox.container.background(cpuicon, theme.bg_focus),
-			wibox.container.background(cpu.widget, theme.bg_focus),
+			-- wibox.container.background(cpuicon, theme.bg_sec),
+			wibox.container.background(cpu.widget, theme.bg_sec),
 			arrl_dl,
-			memicon,
+			-- memicon,
 			mem.widget,
 			-- arrl_dl,
 			arrl_ld,
@@ -357,8 +346,8 @@ function theme.at_screen_connect(s)
 			-- arrl_dl,
 			-- wibox.container.background(baticon, theme.bg_focus),
 			-- wibox.container.background(bat.widget, theme.bg_focus),
-			wibox.container.background(tempicon, theme.bg_focus),
-			wibox.container.background(temp.widget, theme.bg_focus),
+			-- wibox.container.background(tempicon, theme.bg_sec),
+			wibox.container.background(temp.widget, theme.bg_sec),
 			-- baticon,
 			-- bat.widget,
 			-- arrl_ld,
