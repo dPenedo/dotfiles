@@ -18,13 +18,14 @@ theme.fg_inactive = "#B1AAA1"
 theme.fg_urgent = "#CC9393"
 theme.bg_normal = "#CFCBC5"
 theme.bg_sec = "#b1a9a0"
-theme.bg_focus = "#464c8B"
+theme.bg_focus = "#6C76BB"
 theme.bg_urgent = "#ffffff"
 theme.border_width = dpi(3)
 theme.border_normal = "#3F3F3F"
-theme.border_focus = theme.fg_focus
+theme.border_focus = theme.bg_focus
 theme.border_marked = "#CC9393"
-theme.tasklist_bg_focus = "#CFCBC5"
+theme.tasklist_bg_focus = theme.fg_accent
+theme.tasklist_bg_normal = theme.bg_sec
 theme.titlebar_bg_focus = theme.bg_focus
 theme.titlebar_bg_normal = theme.bg_normal
 theme.titlebar_fg_focus = theme.fg_focus
@@ -256,9 +257,6 @@ function theme.at_screen_connect(s)
 	))
 	-- Create a taglist widget
 	-- s.mytaglist = awful.widget.taglist(s, awful.widget.taglist.filter.all, awful.util.taglist_buttons)
-	-- TODO: Color azul activos, amarillo focus y apagado no activos
-	-- TODO: Solucionar espacios para iconos que no se ven
-	-- TODO: Quitar el cuadradito?
 	s.mytaglist = awful.widget.taglist({
 		screen = s,
 		filter = awful.widget.taglist.filter.all,

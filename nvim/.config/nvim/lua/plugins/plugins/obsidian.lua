@@ -61,7 +61,7 @@ return {
     },
 
     templates = {
-      subdir = '.templates',
+      subdir = 'Graficos/templates',
       -- A map for custom variables, the key should be the variable and the value a function
       substitutions = {},
 		date_format = "%d/%m/%Y"
