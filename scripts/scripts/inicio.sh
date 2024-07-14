@@ -41,11 +41,11 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "tmux" -t 1 &
 	sleep 3
 	wmctrl -r "Chat" -t 7 &
-	wmctrl -r "TickTick" -t 9 &
+	wmctrl -r "TickTick" -t 6 &
 	wmctrl -r "mozilla Thunderbird" -t 8 &
-	wmctrl -r "Meteored" -t 9 &
+	wmctrl -r "Meteored" -t 6 &
 	# sleep 10
-	wmctrl -r "obsidian" -t 6 &
+	wmctrl -r "obsidian" -t 9 &
 	# wmctrl -r "Correo" -t 18 &
 else
 	sleep 5

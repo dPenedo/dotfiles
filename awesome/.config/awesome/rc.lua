@@ -294,9 +294,13 @@ globalkeys = mytable.join(
 	-- https://github.com/lcpz/dots/blob/master/bin/screenshot
 
 	-- X screen locker
-	awful.key({ modkey, "Mod1" }, "l", function()
-		os.execute(scrlocker)
-	end, { description = "lock screen", group = "hotkeys" }),
+	-- awful.key({ modkey, "Mod1" }, "l", function()
+	-- 	os.execute(scrlocker)
+	-- end, { description = "lock screen", group = "hotkeys" }),
+	-- i3Lock - locker
+	awful.key({ modkey, "Mod1"}, "l", function()
+		os.execute("i3lock --color=#282828")
+	end, { description = "lockscreen", group = "hotkeys" }),
 
 	-- Show help
 	awful.key({ modkey, "Mod1" }, "s", hotkeys_popup.show_help, { description = "show help", group = "awesome" }),
