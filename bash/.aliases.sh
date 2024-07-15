@@ -12,6 +12,7 @@ alias nv='nvim'
 alias lazyvim='NVIM_APPNAME=lazyvim nvim' # LazyVim
 alias lv='NVIM_APPNAME=lazyvim nvim' # LazyVim
 alias n2='NVIM_APPNAME=2nvim nvim'        # Nv-chad
+alias vim='NVIM_APPNAME=simplevim nvim' # LazyVim
 
 alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 
