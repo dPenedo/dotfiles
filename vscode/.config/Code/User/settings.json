@@ -52,11 +52,10 @@
         "[Kanagawa]": {
             "editorBracketMatch.background": "#363646",
             "editorBracketMatch.border": "#7e9cd8",
-            // "editor.background": "#161617"
+            "editor.background": "#1b1b22",
             "terminal.background": "#1b1b22",
             "editorLineNumber.foreground": "#5E6982",
             "editorLineNumber.activeForeground": "#ED9338",
-            "editor.background": "#191624",
             "activityBar.foreground": "#e0DEF4",
             "activityBarBadge.foreground": "#e0DEF4",
             "button.secondaryForeground": "#e0DEF4",
@@ -251,7 +250,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Solarized Autumn",
+    "workbench.colorTheme": "Kanagawa",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
@@ -260,5 +259,4 @@
         }
     ],
     "java.jdt.ls.java.home": "/home/daniel/Descargas/Programas/jdk-11.0.0.1",
-    "editor.fontSize": 13,
 }

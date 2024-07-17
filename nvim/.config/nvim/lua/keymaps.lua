@@ -132,7 +132,7 @@ map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 
 -- Zen mode
-map('n', '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
+map('n', '<leader>j', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
 
 -- Guardar rápidamente el búfer actual o todos los búferes
 map('n', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
@@ -184,22 +184,14 @@ map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir te
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 map('t', '<C-\\>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<Esc><Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
-map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
-map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
-map('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Cambiar de split desde el terminal' })
+
+-- map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
+-- map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
+-- map('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Cambiar de split desde el terminal' })
 
 
 map('t', '<A-`>', '<C-\\><C-n><CR>:TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
 map('n', '<A-`>', ':TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
-
-
-
--- map('t', '<A-`>', '<C-\\><C-n><CR>:ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
--- map('n', '<A-`>', ':ToggleTerm<CR>', { desc = 'Abrir ToggleTerm' })
--- map('n', '<leader>tf', ':ToggleTerm direction=float <CR>', { desc = 'Abrir ToggleTerm' })
--- map('n', '<leader>ts', ':ToggleTerm direction=vertical size=60<CR> ', { desc = 'Abrir ToggleTerm' })
--- map('n', '<leader>th', ':ToggleTerm direction=horizontal<CR> ', { desc = 'Abrir ToggleTerm' })
-
 
 
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
@@ -239,11 +231,11 @@ map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
 map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })
 
 -- Mapeos para moverse entre ventanas
-map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
-map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
-map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
-map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
-map('n', '<C-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
+-- map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
+-- map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
+-- map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
+-- map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
+-- map('n', '<C-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
 
 -- Mapeos para redimensionar ventanas
 map('n', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })

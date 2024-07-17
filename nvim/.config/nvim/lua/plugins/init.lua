@@ -45,12 +45,19 @@ require('lazy').setup({
   {
     'willothy/flatten.nvim',
     -- event = 'VeryLazy',
-    opts = {},
+    opts = {
+    },
   },
   {
     'folke/zen-mode.nvim',
     event = 'BufReadPre',
-    opts = {},
+    opts = {
+      plugins = {
+        options = {
+          laststatus = 3, -- turn off the statusline in zen mode
+        }
+    }
+  }
   },
   {
     'folke/persistence.nvim',
