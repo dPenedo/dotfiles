@@ -2,11 +2,11 @@ local wezterm = require("wezterm")
 
 return {
 	font = wezterm.font_with_fallback({
-		-- "FiraCode",
+		"FiraCode Nerd Font",
 		-- "Hack",
 		-- "Azeret Mono",
 		-- "Iosevka Nerd Font",
-		"Hack Nerd Font",
+		-- "Hack Nerd Font",
 		-- "Noto Sans SC",
 	}),
 	font_size = 11.6,

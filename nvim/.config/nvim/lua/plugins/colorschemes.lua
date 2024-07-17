@@ -29,9 +29,9 @@ return {
 				},
 				palette = {
 					-- Wave
-					fujiWhite = '#e0def4',
-					oldWhite = '#CDD6F4',
-					sumiInk6 = '#3A3A4B',
+					fujiWhite = '#E2E0DB',
+					-- oldWhite = '#CDD6F4',
+					-- sumiInk6 = '#3A3A4B',
 					-- Lotus
 					lotusInk1 = '#161617',
 					lotusWhite0 = '#B3BDFD',

@@ -1,4 +1,5 @@
-current_mode = "light"
+current_mode = "dark"
+
 import os
 import sys
 import time
@@ -35,14 +36,14 @@ def change_configuration(mode):
     try:
         subprocess.run(["tmux", "kill-server"], check=True)
     except subprocess.CalledProcessError as e:
-        print("Error al ejecutar el comando tmux: " + e)
+        print(f"Error al ejecutar el comando tmux: {e}")
     finally:
         # Reiniciar Kitty
         try:
             subprocess.run(["pkill", "kitty"], check=True)
             subprocess.run(["kitty"], check=True)
         except subprocess.CalledProcessError as e:
-            print("Error al reiniciar Kitty: " + e)
+            print(f"Error al reiniciar Kitty: {e}" )
         time.sleep(2)
 
 
@@ -76,6 +77,10 @@ def list_dir(directory, file):
     print("=" * 22)
     os.system(f'ls -a {directory} | grep "{file}*"')
     print("=" * 22)
+
+# TODO: comprobar que estén los light o dark modes
+# def check_file_existing():
+#     subprocess.run
 
 
 def list_all_dirs():

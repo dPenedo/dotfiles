@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
-setxkbmap -layout us -variant altgr-intl &
 pkill kitty &
 
 sleep 5
@@ -17,6 +16,7 @@ brave-browser -app=https://ticktick.com &
 brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
 obsidian &
+setxkbmap -layout us -variant altgr-intl &
 # kitty -T "kitty" &
 # sleep 2
 # Zotero &
