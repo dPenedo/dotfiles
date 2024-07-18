@@ -24,13 +24,16 @@ return {
 							-- bg_gutter = 'none',
 							-- bg_gutter = '#161617',
 							-- bg = '#f6f9e1',
+							--
 						},
 					},
 				},
+
 				palette = {
 					-- Wave
 					fujiWhite = '#E8DBCF',
 					-- oldWhite = '#CDD6F4',
+					oldWhite = '#c9cbd1',
 					-- sumiInk6 = '#3A3A4B',
 					-- Lotus
 					lotusInk1 = '#161617',

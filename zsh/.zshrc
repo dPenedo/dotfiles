@@ -82,4 +82,3 @@ export NVM_DIR="$HOME/.nvm"
 # Created by `pipx` on 2024-02-10 16:28:16
 export PATH="$PATH:~/.local/bin"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-
