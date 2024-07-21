@@ -87,12 +87,12 @@ awful.spawn.with_shell(
 -- {{{ Variable definitions
 
 -- local chosen_theme  = "propio"
-local chosen_theme = "desert"
+local chosen_theme = "kanagawa"
 local modkey = "Mod4"
 -- local altkey       = "Mod1"
 -- local terminal     = "alacritty"
 local terminal = "kitty"
-local vi_focus = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
+local vi_focus = false  -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev = true -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor = os.getenv("EDITOR") or "nvim"
 local browser = "brave-browser"
@@ -192,9 +192,9 @@ local myawesomemenu = {
 			hotkeys_popup.show_help(nil, awful.screen.focused())
 		end,
 	},
-	{ "Manual", string.format("%s -e man awesome", terminal) },
+	{ "Manual",      string.format("%s -e man awesome", terminal) },
 	{ "Edit config", string.format("%s -e %s %s", terminal, editor, awesome.conffile) },
-	{ "Restart", awesome.restart },
+	{ "Restart",     awesome.restart },
 	{
 		"Quit",
 		function()
@@ -277,8 +277,8 @@ root.buttons(mytable.join(
 	awful.button({}, 3, function()
 		awful.util.mymainmenu:toggle()
 	end)
-	-- awful.button({ }, 4, awful.tag.viewnext),
-	-- awful.button({ }, 5, awful.tag.viewprev)
+-- awful.button({ }, 4, awful.tag.viewnext),
+-- awful.button({ }, 5, awful.tag.viewprev)
 ))
 
 -- }}}
@@ -286,7 +286,7 @@ root.buttons(mytable.join(
 -- {{{ Key bindings
 
 globalkeys = mytable.join(
-	-- Destroy all notifications
+-- Destroy all notifications
 	awful.key({ "Control" }, "space", function()
 		naughty.destroy_all_notifications()
 	end, { description = "destroy all notifications", group = "hotkeys" }),
@@ -298,7 +298,7 @@ globalkeys = mytable.join(
 	-- 	os.execute(scrlocker)
 	-- end, { description = "lock screen", group = "hotkeys" }),
 	-- i3Lock - locker
-	awful.key({ modkey, "Mod1"}, "l", function()
+	awful.key({ modkey, "Mod1" }, "l", function()
 		os.execute("i3lock --color=#282828")
 	end, { description = "lockscreen", group = "hotkeys" }),
 
@@ -484,7 +484,6 @@ globalkeys = mytable.join(
 	awful.key({ modkey, "Shift" }, "l", function()
 		awful.client.swap.byidx(-1)
 	end, { description = "swap with previous client by index", group = "client" }),
-
 	awful.key({ modkey, "Control" }, "j", function()
 		awful.screen.focus_relative(1)
 	end, { description = "focus the next screen", group = "screen" }),
@@ -542,7 +541,6 @@ globalkeys = mytable.join(
 	awful.key({ modkey }, "Return", function()
 		awful.spawn("kitty")
 	end, { description = "open a alacritty aterminal", group = "launcher" }),
-
 	awful.key({ modkey, "Shift" }, "Return", function()
 		awful.spawn(terminal)
 	end, { description = "open a terminal", group = "launcher" }),
@@ -554,7 +552,6 @@ globalkeys = mytable.join(
 	awful.key({ modkey, "Control" }, "h", function()
 		awful.tag.incmwfact(-0.05)
 	end, { description = "decrease master width factor", group = "layout" }),
-
 	awful.key({ modkey, "Shift" }, "j", function()
 		awful.tag.incnmaster(1, nil, true)
 	end, { description = "increase the number of master clients", group = "layout" }),
@@ -718,7 +715,7 @@ globalkeys = mytable.join(
 			history_path = awful.util.get_cache_dir() .. "/history_eval",
 		})
 	end, { description = "lua execute prompt", group = "awesome" })
-	--]]
+--]]
 )
 
 clientkeys = mytable.join(

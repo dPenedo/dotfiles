@@ -33,7 +33,7 @@ require('lazy').setup({
   -- Useful plugin to show you pending keybinds.
   -- { 'folke/which-key.nvim',     opts = {} },
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim',    event = 'VeryLazy', opts = {} },
+  { 'numToStr/Comment.nvim',        event = 'VeryLazy', opts = {} },
 
   -- { 'echasnovski/mini.starter', version = '*', opts = {} },
   -- {
@@ -47,17 +47,6 @@ require('lazy').setup({
     -- event = 'VeryLazy',
     opts = {
     },
-  },
-  {
-    'folke/zen-mode.nvim',
-    event = 'BufReadPre',
-    opts = {
-      plugins = {
-        options = {
-          laststatus = 3, -- turn off the statusline in zen mode
-        }
-    }
-  }
   },
   {
     'folke/persistence.nvim',

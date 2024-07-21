@@ -16,7 +16,7 @@ return {
 						ui = {
 							-- bg_gutter = '#161617',
 							bg_gutter = 'none',
-							nontext = '#5E6982',
+							nontext = '#B1A9A0'
 						},
 					},
 					lotus = {
@@ -34,6 +34,29 @@ return {
 					fujiWhite = '#E8DBCF',
 					-- oldWhite = '#CDD6F4',
 					oldWhite = '#c9cbd1',
+
+					-- Brown:
+					-- sumiInk0 = "#191715",
+					-- sumiInk1 = "#1B1917",
+					-- sumiInk2 = "#1D1B19",
+					-- sumiInk3 = "#221F1C",
+					-- sumiInk4 = "#2A2622",
+					-- sumiInk5 = "#36322C",
+					-- sumiInk6 = "#4A433D",
+
+					--Neutral:
+					sumiInk0 = "#161616",
+					sumiInk1 = "#181818",
+					sumiInk2 = "#1a1a1a",
+					sumiInk3 = "#1F1F1F",
+					sumiInk4 = "#2A2A2A",
+					sumiInk5 = "#363636",
+					sumiInk6 = "#545454",
+
+
+
+
+
 					-- sumiInk6 = '#3A3A4B',
 					-- Lotus
 					lotusInk1 = '#161617',

@@ -1,5 +1,5 @@
 local function map(mode, key, value, options)
-  vim.keymap.set(mode, key, value, options or { silent = true })
+	vim.keymap.set(mode, key, value, options or { silent = true })
 end
 
 -- Mapeo para <Space> (espacio) usando vim.keymap
@@ -18,11 +18,11 @@ map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Abrir lista de diagn�
 -- Resaltado al pegar (yank)
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+	group = highlight_group,
+	pattern = '*',
 })
 --Format
 map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
@@ -40,51 +40,51 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
 
 -- Trouble
-map('n', '<leader>xx', ":Trouble diagnostics toggle<cr>", {desc = "Trouble diagnostics"})
+map('n', '<leader>xx', ":Trouble diagnostics toggle<cr>", { desc = "Trouble diagnostics" })
 map('n', '<leader>xw', function()
-  require('trouble').toggle 'workspace_diagnostics'
+	require('trouble').toggle 'workspace_diagnostics'
 end)
 map('n', '<leader>xd', function()
-  require('trouble').toggle 'document_diagnostics'
+	require('trouble').toggle 'document_diagnostics'
 end)
 map('n', '<leader>xq', function()
-  require('trouble').toggle 'quickfix'
+	require('trouble').toggle 'quickfix'
 end)
 map('n', '<leader>xl', function()
-  require('trouble').toggle 'loclist'
+	require('trouble').toggle 'loclist'
 end)
 map('n', 'gR', function()
-  require('trouble').toggle 'lsp_references'
+	require('trouble').toggle 'lsp_references'
 end)
 
 -- Notes
 map('n', '<leader>nn', function()
-  local filename = vim.fn.input('Enter file name: ', '', 'file')
-  if filename ~= '' then
-    local filepath = '~/Documentos/Dropbox/Notas//' .. filename .. '.md'
-    vim.fn.writefile({}, vim.fn.expand(filepath))
-    vim.cmd('edit ' .. vim.fn.expand(filepath))
-  end
+	local filename = vim.fn.input('Enter file name: ', '', 'file')
+	if filename ~= '' then
+		local filepath = '~/Documentos/Dropbox/Notas//' .. filename .. '.md'
+		vim.fn.writefile({}, vim.fn.expand(filepath))
+		vim.cmd('edit ' .. vim.fn.expand(filepath))
+	end
 end, { desc = '[N]ew [N]otes' })
 
 map('n', '<leader>nl', function()
-  local telescope_builtin = require('telescope.builtin')
-  telescope_builtin.find_files({
-    prompt_title = 'Selecciona una nota',
-    cwd = '~/Documentos/Dropbox/Notas',
-    attach_mappings = function(_, map_note)
-      map_note('i', '<CR>', function(prompt_bufnr)
-        local entry = require('telescope.actions.state').get_selected_entry()
-        require('telescope.actions').close(prompt_bufnr)
-        if entry and entry.path then
-          local filename = vim.fn.fnamemodify(entry.path, ':t:r') -- nombre del archivo sin extensión
-          local link = string.format('[[%s|%s]]', filename, filename)
-          vim.api.nvim_put({ link }, '', true, true)
-        end
-      end)
-      return true
-    end,
-  })
+	local telescope_builtin = require('telescope.builtin')
+	telescope_builtin.find_files({
+		prompt_title = 'Selecciona una nota',
+		cwd = '~/Documentos/Dropbox/Notas',
+		attach_mappings = function(_, map_note)
+			map_note('i', '<CR>', function(prompt_bufnr)
+				local entry = require('telescope.actions.state').get_selected_entry()
+				require('telescope.actions').close(prompt_bufnr)
+				if entry and entry.path then
+					local filename = vim.fn.fnamemodify(entry.path, ':t:r') -- nombre del archivo sin extensión
+					local link = string.format('[[%s|%s]]', filename, filename)
+					vim.api.nvim_put({ link }, '', true, true)
+				end
+			end)
+			return true
+		end,
+	})
 end, { desc = '[N]ew [L]ink' })
 
 map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
@@ -96,17 +96,17 @@ map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' 
 
 
 
- -- Neogit
+-- Neogit
 
 map('n', '<leader>ng', ':Neogit<cr> ', { desc = 'Neogit' })
 
 -- Diagnostics
 local diagnostic_goto = function(next, severity)
-  local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-  severity = severity and vim.diagnostic.severity[severity] or nil
-  return function()
-    go { severity = severity }
-  end
+	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+	severity = severity and vim.diagnostic.severity[severity] or nil
+	return function()
+		go { severity = severity }
+	end
 end
 map('n', '<leader>cd', vim.diagnostic.open_float, { desc = 'Line Diagnostics' })
 map('n', ']d', diagnostic_goto(true), { desc = 'Next Diagnostic' })
@@ -163,7 +163,8 @@ map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalment
 map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
-map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>', { desc = 'Alternar colores de resaltado' })
+map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
+	{ desc = 'Alternar colores de resaltado' })
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
@@ -180,10 +181,12 @@ map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>tn', ':terminal<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>`', ':terminal<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 map('t', '<C-\\>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
-map('t', '<Esc><Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+map('t', '<C-q>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 
 -- map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
 -- map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })

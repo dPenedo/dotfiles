@@ -9,15 +9,15 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme = {}
 theme.dir = os.getenv("HOME") .. "/.config/awesome/themes/kanagawa"
-theme.wallpaper = theme.dir .. "/moon.jpg"
+theme.wallpaper = theme.dir .. "/costa.jpg"
 theme.font = "Hack 10"
-theme.fg_normal = "#e0def4"
+theme.fg_normal = "#E8DBCF"
 theme.fg_focus = "#7e9cd8"
 theme.fg_accent = "#E6C384"
 theme.fg_inactive = "#3F3F3F"
 theme.fg_urgent = "#CC9393"
-theme.bg_normal = "#1f1f28"
-theme.bg_focus = "#363646"
+theme.bg_normal = "#1e1e1e"
+theme.bg_focus = "#282828"
 theme.bg_urgent = "#1A1A1A"
 theme.border_width = dpi(3)
 theme.border_normal = "#3F3F3F"
@@ -295,6 +295,7 @@ function theme.at_screen_connect(s)
 	theme.taglist_fg_empty = theme.fg_inactive
 	theme.taglist_fg_occupied = theme.fg_focus
 	theme.taglist_fg_focus = theme.fg_accent
+	theme.taglist_bg_focus = theme.bg_focus
 	theme.taglist_fg_volatile = "#100110"
 	theme.taglist_fg_urgent = theme.fg_urgent
 	theme.taglist_spacing = 2
@@ -302,6 +303,14 @@ function theme.at_screen_connect(s)
 
 	-- Create a tasklist widget
 	s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
+
+	theme.tasklist_fg_empty = theme.fg_inactive
+	theme.tasklist_fg_occupied = theme.fg_normal
+	theme.tasklist_fg_focus = theme.fg_focus
+	theme.tasklist_bg_focus = theme.bg_focus
+	theme.tasklist_fg_volatile = "#100110"
+	theme.tasklist_fg_urgent = theme.fg_urgent
+	theme.tasklist_spacing = 2
 
 	-- Create the wibox
 	s.mywibox = awful.wibar({
