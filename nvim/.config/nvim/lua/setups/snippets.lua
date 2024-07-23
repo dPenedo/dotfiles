@@ -96,13 +96,23 @@ ls.add_snippets("markdown", {
 	}),
 	-- Etiquetas
 	snip({
-		trig = "etiquetas",
-		namr = "Etiquetas",
-		dscr = "Bloque de etiquetas",
+		trig = "output",
+		namr = "Output en Python",
+		dscr = "Comentario de output en python",
 	}, {
-		text({ "------------------", "" }),
-		text({ "Etiquetas: #" }),
+		text({ "# Output: " }),
 		insert(1),
+	}),
+	-- Output
+	snip({
+		trig = "relacionados",
+		namr = "Relacionados",
+		dscr = "Bloque de relacionados",
+	}, {
+		text({ "### Relacionados", "" }),
+		text({ "- [[" }),
+		insert(1),
+		text({ "]]" }),
 	}),
 	-- Relacionados
 	snip({
@@ -159,4 +169,7 @@ ls.add_snippets("markdown", {
 			"Etiquetas: #"
 		}),
 	}),
+
+
+
 })

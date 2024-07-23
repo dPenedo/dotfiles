@@ -89,18 +89,18 @@ end, { desc = '[N]ew [L]ink' })
 
 
 -- Plugin obsidian
--- map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
--- map('n', '<leader>nt', ':ObsidianTemplate<cr> ', { desc = 'Obsidian Template' })
--- map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
--- map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
--- map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
+map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
+map('n', '<leader>nt', ':ObsidianTemplate<cr> ', { desc = 'ObsidiantagsTemplate' })
+map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
+map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
+map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
 
 -- Plugin telekasten
-map('n', '<leader>ns', ':Telekasten find_notes<cr> ', { desc = 'Telekasten Quick Switch' })
-map('n', '<leader>nt', ':Telekasten new_templated_note<cr> ', { desc = 'Telekasten Template' })
-map('n', '<leader>nT', ':Telekasten show_tags<cr> ', { desc = 'Telekasten Template' })
-map('n', '<leader>nr', ':Telekasten rename_note<cr> ', { desc = 'Telekasten Rename' })
-map('n', '<leader>nb', ':Telekasten show_backlinks<cr> ', { desc = 'Telekasten backlinks' })
+-- map('n', '<leader>ns', ':Telekasten find_notes<cr> ', { desc = 'Telekasten Quick Switch' })
+-- map('n', '<leader>nt', ':Telekasten new_templated_note<cr> ', { desc = 'Telekasten Template' })
+-- map('n', '<leader>nT', ':Telekasten show_tags<cr> ', { desc = 'Telekasten Template' })
+-- map('n', '<leader>nr', ':Telekasten rename_note<cr> ', { desc = 'Telekasten Rename' })
+-- map('n', '<leader>nb', ':Telekasten show_backlinks<cr> ', { desc = 'Telekasten backlinks' })
 
 
 

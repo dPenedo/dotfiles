@@ -20,6 +20,8 @@ alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
 alias py='python3'
+alias bp='bpython'
+alias ipy='ipython3'
 alias LS='/bin/ls --color=auto'
 # alias bat='batcat'
 if command -v eza &> /dev/null; then
