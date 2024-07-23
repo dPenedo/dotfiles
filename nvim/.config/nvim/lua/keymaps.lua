@@ -87,12 +87,20 @@ map('n', '<leader>nl', function()
 	})
 end, { desc = '[N]ew [L]ink' })
 
-map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
-map('n', '<leader>nt', ':ObsidianTemplate<cr> ', { desc = 'Obsidian Template' })
-map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
-map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
-map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
 
+-- Plugin obsidian
+-- map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
+-- map('n', '<leader>nt', ':ObsidianTemplate<cr> ', { desc = 'Obsidian Template' })
+-- map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
+-- map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
+-- map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
+
+-- Plugin telekasten
+map('n', '<leader>ns', ':Telekasten find_notes<cr> ', { desc = 'Telekasten Quick Switch' })
+map('n', '<leader>nt', ':Telekasten new_templated_note<cr> ', { desc = 'Telekasten Template' })
+map('n', '<leader>nT', ':Telekasten show_tags<cr> ', { desc = 'Telekasten Template' })
+map('n', '<leader>nr', ':Telekasten rename_note<cr> ', { desc = 'Telekasten Rename' })
+map('n', '<leader>nb', ':Telekasten show_backlinks<cr> ', { desc = 'Telekasten backlinks' })
 
 
 
@@ -169,6 +177,8 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
 map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
+
+
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
 -- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
@@ -180,13 +190,15 @@ map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
 
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
-map('n', '<leader>tn', ':terminal<CR>', { desc = 'Abrir terminal' })
-map('n', '<leader>`', ':terminal<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>tn', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>`', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
 map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
 map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 map('t', '<C-\\>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<C-q>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
+
+map('t', '<C-h>', '<C-\\><C-n><CR><C-w>w', { desc = 'Salir del modo terminal' })
 
 -- map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
 -- map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })

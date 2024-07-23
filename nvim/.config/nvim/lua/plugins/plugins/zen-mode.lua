@@ -5,10 +5,11 @@ return {
 		window = {
 			width = 100,
 		},
-		options = {
-			laststatus = 3, -- turn off the statusline in zen mode
-		},
 		plugins = {
+
+			options = {
+				laststatus = 3, -- turn off the statusline in zen mode
+			},
 		}
 	}
 

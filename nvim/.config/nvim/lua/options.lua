@@ -22,7 +22,7 @@ vim.cmd [[
 vim.o.undofile = true
 
 -- Mostrar siempre el indicador de pestañas/tabs
-vim.o.showtabline = 1
+vim.o.showtabline = 2
 
 -- Ancho del texto antes de hace wrap
 -- vim.opt.breakindent = true

@@ -4,3 +4,17 @@
 --   command = 'silent! wall',
 --   nested = true,
 -- })
+--
+-- vim.cmd('autocmd VimEnter *.lua, *.py, *.md,*.txt :ZenMode')
+--
+-- vim.api.nvim_create_autocmd(
+-- 	{ "VimEnter", "BufReadPost" },
+-- 	{
+-- 		pattern = { "*.md", "*.txt", "*.py", "*.lua", },
+-- 		callback = function()
+-- 			local zen_mode = require("zen-mode")
+--
+-- 			zen_mode.open()
+-- 		end
+-- 	}
+-- )
