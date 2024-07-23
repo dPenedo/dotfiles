@@ -1,7 +1,5 @@
 --dark
-vim.cmd.colorscheme 'kanagawa-wave'
--- vim.cmd.colorscheme 'gruvbox-material'
--- vim.cmd.colorscheme 'monet'
--- vim.cmd.colorscheme 'rose-pine-main'
+-- vim.cmd.colorscheme 'kanagawa-wave'
+--vim.cmd.colorscheme 'monet'
 -- light
--- vim.cmd.colorscheme 'kanagawa-lotus'
+vim.cmd.colorscheme 'dayfox'
