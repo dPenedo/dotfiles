@@ -11,7 +11,7 @@ autoload -U compinit; compinit
 # Editar linea comandos
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey '^xe' edit-command-line
+bindkey '^X^E' edit-command-line
 
 _comp_options+=(globdots)
 source ~/.zsh/completion.zsh

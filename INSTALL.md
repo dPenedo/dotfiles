@@ -122,7 +122,6 @@ echo 'source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 Instalador:
 ``` bash
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-
 ```
 Integracion de escritorio
 

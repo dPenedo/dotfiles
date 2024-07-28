@@ -17,21 +17,21 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 11.5
+size = 11.8
 
 [font.bold]
-family = "Hack Nerd Font Complete"
+family = "Hack "
 style = "Bold"
 
 [font.bold_italic]
-style = "Bold Italic"
+style = "Hack"
 
 [font.italic]
-family = "Hack Nerd Font Complete"
+family = "Hack "
 style = "Italic"
 
 [font.normal]
-family = "Hack Nerd Font Complete"
+family = "Hack"
 style = "Regular"
 
 [font.offset]

@@ -26,10 +26,12 @@ ls.add_snippets("markdown", {
 		namr = "Fecha",
 		dscr = "Fecha en formaro DD-MM-YYYY",
 	}, {
+		text("Fecha: "),
 		func(date, {}),
 	}),
 	-- List
 	snip({
+		text("- **"),
 		trig = "lista",
 		namr = "Lista",
 		dscr = "Insert a list item with bold text",

@@ -15,7 +15,7 @@ vim.o.breakindent = true
 
 vim.o.conceallevel = 0
 vim.cmd [[
-  autocmd FileType markdown setlocal conceallevel=1
+  autocmd FileType markdown setlocal conceallevel=2
 ]]
 
 -- Save undo history
