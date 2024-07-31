@@ -67,6 +67,24 @@ map('n', '<leader>nn', function()
 	end
 end, { desc = '[N]ew [N]otes' })
 
+map('n', '<leader>nt', function()
+	local filename = vim.fn.input('Enter Temp file name: ', '', 'file')
+	if filename ~= '' then
+		local filepath = '~/Documentos/Dropbox/Notas/Temp/' .. filename .. '.md'
+		vim.fn.writefile({}, vim.fn.expand(filepath))
+		vim.cmd('edit ' .. vim.fn.expand(filepath))
+	end
+end, { desc = '[N]ew [T]emp' })
+
+map('n', '<leader>na', function()
+	local filename = vim.fn.input('Enter Atom file name: ', '', 'file')
+	if filename ~= '' then
+		local filepath = '~/Documentos/Dropbox/Notas/Atomoak/' .. filename .. '.md'
+		vim.fn.writefile({}, vim.fn.expand(filepath))
+		vim.cmd('edit ' .. vim.fn.expand(filepath))
+	end
+end, { desc = '[N]ew [A]tom' })
+
 map('n', '<leader>nl', function()
 	local telescope_builtin = require('telescope.builtin')
 	telescope_builtin.find_files({
@@ -90,7 +108,6 @@ end, { desc = '[N]ew [L]ink' })
 
 -- Plugin obsidian
 map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
-map('n', '<leader>nt', ':ObsidianTemplate<cr> ', { desc = 'ObsidiantagsTemplate' })
 map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
 map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
 map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
