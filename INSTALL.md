@@ -10,6 +10,7 @@ sudo apt update && sudo apt upgrade
 ```
 
 
+
 Instalar (en uso):
 ``` bash
 sudo apt install rofi curl dmenu git fish awesome picom tmux zathura stow zsh curl  copyq stow gpick htop python3-venv python3-pip lxappearance volumeicon-alsa wmctrl  zoxide gpick playerctl brightnessctl xclip cbatticon
@@ -25,6 +26,12 @@ Instalar (programas):
 sudo apt install gimp thunderbird gnome-boxes libvirt-clients
 ```
 
+### Zoxide
+
+Script de instalación:
+```bash
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+```
 
 
 #### NVIM

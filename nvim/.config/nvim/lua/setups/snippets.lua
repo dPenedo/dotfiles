@@ -145,6 +145,16 @@ ls.add_snippets("markdown", {
 			"Etiquetas: #"
 		}),
 	}),
+	-- Comentario TODO
+	snip({
+		trig = "TODO",
+		namr = "Comentario TODO",
+		dscr = "Agrega un comentario TODO en formato HTML comment",
+	}, {
+		text({ "<!-- TODO: " }),
+		insert(1),
+		text({ "-->" }),
+	}),
 	-- Nota temporal
 	snip({
 		trig = "temporal",
@@ -170,6 +180,14 @@ ls.add_snippets("markdown", {
 			"",
 			"Etiquetas: #"
 		}),
+	}),
+	-- Checkbox
+	snip({
+		trig = "-",
+		namr = "Nuevo checkbox",
+		dscr = "Insertar un nuevo Checkbox",
+	}, {
+		text({ "- [ ] " }),
 	}),
 
 

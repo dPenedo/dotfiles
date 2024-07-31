@@ -67,7 +67,15 @@ require('lazy').setup({
   {
     'folke/todo-comments.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
-    opts = {},
+    opts = {
+
+      highlight = {
+        comments_only = false
+      },
+      keywords = {
+        NOTE = { icon = " ", color = "info" },
+      },
+    },
   },
   {
     'brenoprata10/nvim-highlight-colors',
