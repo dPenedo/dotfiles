@@ -55,10 +55,18 @@ fi
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Tecla delete y backspace
-bindkey "^[[3~" delete-char
+# Movimiento entre palabras
+bindkey '^[[1;5D' backward-word   # Ctrl + Left Arrow
+bindkey '^[[1;5C' forward-word    # Ctrl + Right Arrow
+# Borrar un carácter hacia atrás
+bindkey '^?' backward-delete-char
+# Borrar una palabra hacia atrás con Ctrl + Backspace
 bindkey '^H' backward-kill-word
-bindkey '5~' kill-word
+# Borrar un carácter hacia adelante con Supr (Delete)
+bindkey '^[[3~' delete-char
+# Borrar una palabra hacia adelante con Ctrl + Supr (Delete)
+bindkey '^[[3;5~' delete-word
+
 
 # File managers
 bindkey -s '\ee' 'lfcd^m'

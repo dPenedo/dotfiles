@@ -341,8 +341,8 @@ globalkeys = mytable.join(
 		awful.util.spawn("rofi -show powermenu -modi powermenu:~/scripts/rofi-power-menu")
 	end, { description = "Powermenu", group = "Mis programas" }),
 	awful.key({ modkey, "Shift" }, "e", function()
-		awful.util.spawn("rofimoji")
-	end, { description = "rofimoji", group = "Mis programas" }),
+		awful.util.spawn("emojipick")
+	end, { description = "emojipick", group = "Mis programas" }),
 	awful.key({ modkey }, "c", function()
 		awful.util.spawn("gnome-calendar")
 	end, { description = "Calendario", group = "Mis programas" }),

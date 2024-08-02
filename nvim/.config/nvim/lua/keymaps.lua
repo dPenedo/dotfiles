@@ -31,8 +31,8 @@ map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
 -- map('i', '<c-h>', '<Esc>cvb', { desc = 'Borrar palabra' })
 map('i', '<C-h>', '<ESC>i', { desc = 'Desplazar una posicion a la izquierda' })
 
-map('n', '<CR>', ':', { desc = 'command con enter' })
-map('v', '<CR>', ':', { desc = 'command con enter' })
+-- map('n', '<CR>', ':', { desc = 'command con enter' })
+-- map('v', '<CR>', ':', { desc = 'command con enter' })
 
 -- Mueve el bloque hacia la izquierda
 map('v', '<', '<gv', { noremap = true, silent = true })

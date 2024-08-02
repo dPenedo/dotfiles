@@ -7,7 +7,7 @@ sleep 5
 brave-browser &
 sleep 7
 # wezterm -e tmux new-session -A -D -s Hasiera &
-kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
+# kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
 # kitty -e tmux new-session -A -D -s "📔  Notas" &
 # evolution &
 # thunderbird &
@@ -18,8 +18,9 @@ brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+S
 sleep 4
 obsidian &
 setxkbmap -layout us -variant altgr-intl &
-# kitty -T "kitty" &
-# sleep 2
+kitty -T "kitty" &
+sleep 2
+~/scripts/load_sessions.sh &
 # Zotero &
 # sleep 2
 # sleep
