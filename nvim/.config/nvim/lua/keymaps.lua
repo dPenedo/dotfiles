@@ -58,6 +58,7 @@ map('n', 'gR', function()
 end)
 
 -- Notes
+-- New Notes
 map('n', '<leader>nn', function()
 	local filename = vim.fn.input('Enter file name: ', '', 'file')
 	if filename ~= '' then
@@ -67,6 +68,7 @@ map('n', '<leader>nn', function()
 	end
 end, { desc = '[N]ew [N]otes' })
 
+-- New Temp Notes
 map('n', '<leader>nt', function()
 	local filename = vim.fn.input('Enter Temp file name: ', '', 'file')
 	if filename ~= '' then
@@ -76,6 +78,7 @@ map('n', '<leader>nt', function()
 	end
 end, { desc = '[N]ew [T]emp' })
 
+-- New Atom Notes
 map('n', '<leader>na', function()
 	local filename = vim.fn.input('Enter Atom file name: ', '', 'file')
 	if filename ~= '' then
@@ -85,7 +88,7 @@ map('n', '<leader>na', function()
 	end
 end, { desc = '[N]ew [A]tom' })
 
-map('n', '<leader>nl', function()
+map('i', '<A-=>', function()
 	local telescope_builtin = require('telescope.builtin')
 	telescope_builtin.find_files({
 		prompt_title = 'Selecciona una nota',
@@ -103,7 +106,7 @@ map('n', '<leader>nl', function()
 			return true
 		end,
 	})
-end, { desc = '[N]ew [L]ink' })
+end, { desc = 'New Link' })
 
 
 -- Plugin obsidian
@@ -111,6 +114,7 @@ map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Swi
 map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
 map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
 map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
+map('n', '<leader>nl', ':ObsidianLinks<cr> ', { desc = 'Obsidian Links' })
 
 -- Plugin telekasten
 -- map('n', '<leader>ns', ':Telekasten find_notes<cr> ', { desc = 'Telekasten Quick Switch' })
@@ -118,6 +122,9 @@ map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' 
 -- map('n', '<leader>nT', ':Telekasten show_tags<cr> ', { desc = 'Telekasten Template' })
 -- map('n', '<leader>nr', ':Telekasten rename_note<cr> ', { desc = 'Telekasten Rename' })
 -- map('n', '<leader>nb', ':Telekasten show_backlinks<cr> ', { desc = 'Telekasten backlinks' })
+
+-- Markdown preview
+map('n', '<leader>mp', ':MarkdownPreviewToggle<cr> ', { desc = 'MarkdownPreview' })
 
 
 

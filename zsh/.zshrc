@@ -69,7 +69,10 @@ if [ -f "$lfcd" ]; then
   source "$lfcd"
 fi
 
+# Añadir ~/.local/bin a PATH
+
 # Zoxide
+export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -80,5 +83,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Created by `pipx` on 2024-02-10 16:28:16
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
