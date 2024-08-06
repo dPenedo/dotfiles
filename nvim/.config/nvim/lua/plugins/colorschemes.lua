@@ -54,6 +54,13 @@ return {
 					sumiInk6 = "#545454",
 
 
+					-- -- Popup and Floats
+					-- waveBlue1 = "#223249",
+					-- waveBlue2 = "#2D4F67",
+					waveBlue1 = "#4A433D",
+					waveBlue2 = "#414981",
+
+
 
 
 
@@ -269,12 +276,6 @@ return {
 	-- 	},
 	-- },
 	-- {
-	-- 	"folke/tokyonight.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {},
-	-- },
-	-- {
 	-- 	"rose-pine/neovim",
 	-- 	name = "rose-pine",
 	-- 	opts = {
@@ -287,33 +288,33 @@ return {
 	-- },
 
 	-- {
-	--   'catppuccin/nvim',
-	--   name = 'catppuccin',
-	--   opts = {
-	--     -- transparent_background = true, -- disables setting the background color.
-	--     color_overrides = {
-	--       mocha = {
-	--         pink = '#F5C5C2',
-	--         base = '#161722',
-	--         mauve = '#A8A6F7',
-	--         text = '#dee4f8',
-	--         -- lavender = '#CBD1FB',
-	--       },
-	--       latte = {
-	--         mantle = '#c9cddf',
-	--       },
-	--     },
-	--     highlight_overrides = {
-	--       mocha = function(colors)
-	--         return {
-	--           LineNr = { fg = colors.overlay2 },
-	--           CursorLineNr = { fg = colors.yellow },
-	--           NvimTreeOpenedFolderName = { fg = colors.lavender },
-	--           NvimTreeEmptyFolderName = { fg = colors.teal },
-	--         }
-	--       end,
-	--     },
-	--   },
-	--   priority = 1000,
+	-- 	'catppuccin/nvim',
+	-- 	name = 'catppuccin',
+	-- 	opts = {
+	-- 		transparent_background = true, -- disables setting the background color.
+	-- 		color_overrides = {
+	-- 			mocha = {
+	-- 				pink = '#F5C5C2',
+	-- 				base = '#161722',
+	-- 				mauve = '#A8A6F7',
+	-- 				text = '#dee4f8',
+	-- 				-- lavender = '#CBD1FB',
+	-- 			},
+	-- 			latte = {
+	-- 				mantle = '#c9cddf',
+	-- 			},
+	-- 		},
+	-- 		highlight_overrides = {
+	-- 			mocha = function(colors)
+	-- 				return {
+	-- 					LineNr = { fg = colors.overlay2 },
+	-- 					CursorLineNr = { fg = colors.yellow },
+	-- 					NvimTreeOpenedFolderName = { fg = colors.lavender },
+	-- 					NvimTreeEmptyFolderName = { fg = colors.teal },
+	-- 				}
+	-- 			end,
+	-- 		},
+	-- 	},
+	-- 	priority = 1000,
 	-- },
 }

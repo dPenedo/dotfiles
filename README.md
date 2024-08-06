@@ -4,7 +4,7 @@ Aquí van mis archivos de configuración por si a alguien les son de utilidad. A
 
 Los que pueden temer más interés, porque están actualizados y los he ido elaborando más son:
 
-- eovim: es una versión propia que tomé empezando con [kickstart](https://github.com/nvim-lua/kickstart.nvim) y lo he ido armando tomando como referencia [LazyVim](https://github.com/LazyVim/LazyVim), pero un poco más simple.
+- Neovim: es una versión propia que tomé empezando con [kickstart](https://github.com/nvim-lua/kickstart.nvim) y lo he ido armando tomando como referencia [LazyVim](https://github.com/LazyVim/LazyVim), pero un poco más simple.
 - VSCode: lo uso con el plugin de vim y tiene unos cuantos atajos de teclado para acercarse a mi configuración de neovim.
 - Awesomewm: Es el window manager que uso actualmente, tiene dos temas muy similares que son modificaciones que vienen de copiar cosas de [copycats](https://github.com/lcpz/awesome-copycats).
 - Qtile: no lo uso actualmente, pero en principio funciona todo bien

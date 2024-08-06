@@ -16,11 +16,11 @@ brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://ticktick.com &
 brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
+kitty &
 obsidian &
 setxkbmap -layout us -variant altgr-intl &
-kitty -T "kitty" &
+kitty -e bash ~/scripts/load_sessions.sh &
 sleep 2
-~/scripts/load_sessions.sh &
 # Zotero &
 # sleep 2
 # sleep
@@ -40,6 +40,7 @@ if [[ $monitor_externo = *connected* ]]; then
 	wmctrl -r "Nueva pestaña - Brave" -t 0 &
 	sleep 3
 	wmctrl -r "kitty" -t 1 &
+	wmctrl -r "bash" -t 1 &
 	wmctrl -r "tmux" -t 1 &
 	sleep 3
 	wmctrl -r "Chat" -t 7 &
