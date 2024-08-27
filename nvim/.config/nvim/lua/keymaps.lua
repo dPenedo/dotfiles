@@ -126,11 +126,12 @@ map('n', '<leader>nl', ':ObsidianLinks<cr> ', { desc = 'Obsidian Links' })
 -- Markdown preview
 map('n', '<leader>mp', ':MarkdownPreviewToggle<cr> ', { desc = 'MarkdownPreview' })
 
-
+-- Buffer Next & Prev
+map('n', '<leader>.', ':bn<cr> ', { desc = 'BufferNext' })
+map('n', '<leader>,', ':bp<cr> ', { desc = 'BufferPrev' })
 
 -- Neogit
-
-map('n', '<leader>ng', ':Neogit<cr> ', { desc = 'Neogit' })
+-- map('n', '<leader>ng', ':Neogit<cr> ', { desc = 'Neogit' })
 
 -- Diagnostics
 local diagnostic_goto = function(next, severity)
@@ -200,7 +201,7 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
-map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'Alternar visibilidad de Neotree' })
+map('n', '<leader>e', ':Neotree filesystem reveal right<CR>', { desc = 'Alternar visibilidad de Neotree' })
 
 
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
