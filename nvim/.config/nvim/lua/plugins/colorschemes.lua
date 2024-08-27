@@ -58,7 +58,9 @@ return {
 					-- waveBlue1 = "#223249",
 					-- waveBlue2 = "#2D4F67",
 					waveBlue1 = "#4A433D",
-					waveBlue2 = "#414981",
+					waveBlue2 = "#3A334c",
+
+
 
 
 
@@ -315,6 +317,11 @@ return {
 	-- 			end,
 	-- 		},
 	-- 	},
+	-- 	priority = 1000,
+	-- },
+	-- {
+	-- 	"dgox16/oldworld.nvim",
+	-- 	lazy = false,
 	-- 	priority = 1000,
 	-- },
 }

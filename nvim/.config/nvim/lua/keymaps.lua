@@ -189,10 +189,10 @@ map('n', '<a-w>', ':set wrap!<CR>', { desc = 'Alternar ajuste de línea' })
 map('n', '<Esc>', ':nohlsearch<CR>', { desc = 'Limpiar resaltado de búsqueda' })
 
 -- Dividir ventanas
-map('n', '<leader>\\', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
-map('n', '<leader>|', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
+-- map('n', '<leader>\\', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
+-- map('n', '<leader>|', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })key
 map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
-map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
+-- map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
 map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
@@ -250,7 +250,17 @@ map('n', '<leader>6', ':tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
 map('n', '<leader>7', ':tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
 map('n', '<leader>8', ':tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
 map('n', '<leader>9', ':tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
-
+-- map('n', '<leader>1', '<Cmd>BufferGoto1<CR>', { desc = 'Ir a la pestaña 1' })
+-- map('n', '<leader>2', '<Cmd>BufferGoto2<CR>', { desc = 'Ir a la pestaña 2' })
+-- map('n', '<leader>3', '<Cmd>BufferGoto3<CR>', { desc = 'Ir a la pestaña 3' })
+-- map('n', '<leader>4', '<Cmd>BufferGoto4<CR>', { desc = 'Ir a la pestaña 4' })
+-- map('n', '<leader>5', '<Cmd>BufferGoto5<CR>', { desc = 'Ir a la pestaña 5' })
+-- map('n', '<leader>6', '<Cmd>BufferGoto6<CR>', { desc = 'Ir a la pestaña 6' })
+-- map('n', '<leader>7', '<Cmd>BufferGoto7<CR>', { desc = 'Ir a la pestaña 7' })
+-- map('n', '<leader>8', '<Cmd>BufferGoto8<CR>', { desc = 'Ir a la pestaña 8' })
+-- map('n', '<leader>9', '<Cmd>BufferGoto9<CR>', { desc = 'Ir a la pestaña 9' })
+--
+-- map('n', '<leader>b', '<Cmd>BufferPick<CR>', { desc = 'Telescope buffers' })
 -- Copiar/pegar Clipboard
 -- map('n', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
 -- map('v', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
