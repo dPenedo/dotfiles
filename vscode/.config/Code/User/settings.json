@@ -250,7 +250,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Tokyo Night Light",
+    "workbench.colorTheme": "nordic-vscode",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",

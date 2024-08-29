@@ -185,14 +185,16 @@ return {
 	--         ]])
 	--     end,
 	--   },
-	-- {
-	--   'folke/tokyonight.nvim',
-	--   lazy = false,
-	--   priority = 1000,
-	--   opts = {
-	--     -- transparent = true, -- Enable this to disable setting the background color
-	--   },
-	-- },
+	{
+		'folke/tokyonight.nvim',
+		lazy = false,
+		priority = 1000,
+		opts = {
+			transparent = true, -- Enable this to disable setting the background color
+			day_brightness = 0.1, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+
+		},
+	},
 	-- {
 	--   'ramojus/mellifluous.nvim',
 	--   lazy = false,
@@ -242,7 +244,7 @@ return {
 		opts = {
 			options = {
 				styles = { -- Style to be applied to different syntax groups
-					comments = 'NONE', -- Value is any valid attr-list value `:help attr-list`
+					comments = 'italic', -- Value is any valid attr-list value `:help attr-list`
 					conditionals = 'bold',
 					constants = 'bold',
 					functions = 'bold',
@@ -319,6 +321,19 @@ return {
 	-- 	},
 	-- 	priority = 1000,
 	-- },
+	{
+		"vague2k/vague.nvim",
+		config = function()
+			require("vague").setup({
+				-- optional configuration here
+			})
+		end
+	},
+	{
+		'mellow-theme/mellow.nvim',
+	}
+
+
 	-- {
 	-- 	"dgox16/oldworld.nvim",
 	-- 	lazy = false,

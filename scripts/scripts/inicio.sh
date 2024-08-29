@@ -19,7 +19,7 @@ sleep 4
 kitty &
 obsidian &
 setxkbmap -layout us -variant altgr-intl &
-kitty -e bash ~/scripts/load_sessions.sh &
+# kitty -e bash ~/scripts/load_sessions.sh &
 sleep 2
 # Zotero &
 # sleep 2
