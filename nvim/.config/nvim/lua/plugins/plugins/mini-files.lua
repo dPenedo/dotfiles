@@ -4,26 +4,30 @@ return {
 	opts = {
 		mappings = {
 			synchronize = '<leader>w',
-			go_in       = 'L',
-			go_in_plus  = 'l',
-			go_out      = 'H',
+			go_in = 'L',
+			go_in_plus = 'l',
+			go_out = 'H',
 			go_out_plus = 'h',
+		},
+		windows = {
+			preview = true,
+			width_preview = 50,
 		},
 	},
 	keys = {
 		{
-			"<leader>-",
+			'<leader>-',
 			function()
-				require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
+				require('mini.files').open(vim.api.nvim_buf_get_name(0), true)
 			end,
-			desc = "Open mini.files (Directory of Current File)",
+			desc = 'Open mini.files (Directory of Current File)',
 		},
 		{
-			"<leader>_",
+			'<leader>_',
 			function()
-				require("mini.files").open(vim.uv.cwd(), true)
+				require('mini.files').open(vim.uv.cwd(), true)
 			end,
-			desc = "Open mini.files (cwd)",
+			desc = 'Open mini.files (cwd)',
 		},
-	}
+	},
 }

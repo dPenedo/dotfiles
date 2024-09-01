@@ -16,12 +16,12 @@ return {
 						ui = {
 							-- bg_gutter = '#161617',
 							bg_gutter = 'none',
-							nontext = '#B1A9A0'
+							nontext = '#B1A9A0',
 						},
 					},
 					lotus = {
 						ui = {
-							-- bg_gutter = 'none',
+							bg_gutter = 'none',
 							-- bg_gutter = '#161617',
 							-- bg = '#f6f9e1',
 							--
@@ -45,26 +45,19 @@ return {
 					-- sumiInk6 = "#4A433D",
 
 					--Neutral:
-					sumiInk0 = "#161616",
-					sumiInk1 = "#181818",
-					sumiInk2 = "#1a1a1a",
-					sumiInk3 = "#1F1F1F",
-					sumiInk4 = "#2A2A2A",
-					sumiInk5 = "#363636",
-					sumiInk6 = "#545454",
-
+					sumiInk0 = '#161616',
+					sumiInk1 = '#181818',
+					sumiInk2 = '#1a1a1a',
+					sumiInk3 = '#1F1F1F',
+					sumiInk4 = '#2A2A2A',
+					sumiInk5 = '#363636',
+					sumiInk6 = '#545454',
 
 					-- -- Popup and Floats
 					-- waveBlue1 = "#223249",
 					-- waveBlue2 = "#2D4F67",
-					waveBlue1 = "#4A433D",
-					waveBlue2 = "#3A334c",
-
-
-
-
-
-
+					waveBlue1 = '#4A433D',
+					waveBlue2 = '#3A334c',
 
 					-- sumiInk6 = '#3A3A4B',
 					-- Lotus
@@ -77,46 +70,46 @@ return {
 					-- lotusWhite3 = '#F7EFE9',
 					-- lotusWhite3 = '#e0def4',
 					lotusWhite3 = '#F8F3F0',
-					lotusWhite4 = '#CDD6F4',
+					lotusWhite4 = '#DEE4F8',
 					lotusWhite5 = '#CDD6F4',
 					-- Para cambiar
 					-- lotusViolet1 = '#a09cac',
-					lotusViolet1 = '#777490',
-					lotusViolet2 = '#766b90',
-					lotusViolet3 = '#c9cbd1',
-					lotusViolet4 = '#624c83',
-					lotusBlue1 = '#c7d7e0',
-					lotusBlue2 = '#b5cbd2',
-					lotusBlue3 = '#9fb5c9',
-					lotusBlue4 = '#4d699b',
-					lotusBlue5 = '#5d57a3',
-
-					-- lotusGreen = '#6f894e',
-					lotusGreen = '#4F6138',
-					-- lotusGreen2 = '#6e915f',
-					lotusGreen2 = '#48683B',
-					lotusGreen3 = '#b7d0ae',
-					lotusPink = '#b35b79',
-					lotusOrange = '#cc6d00',
-					lotusOrange2 = '#e98a00',
-					-- lotusYellow = '#77713f',
-					lotusYellow = '#423829',
-					-- lotusYellow2 = '#836f4a',
-					lotusYellow2 = '#4F4330',
-					lotusYellow3 = '#de9800',
-					lotusYellow4 = '#f9d791',
-					lotusRed = '#c84053',
-					lotusRed2 = '#d7474b',
-					lotusRed3 = '#e82424',
-					lotusRed4 = '#d9a594',
-					-- lotusAqua = '#597b75',
-					lotusAqua = '#3C534F',
-					lotusAqua2 = '#5e857a',
-					lotusTeal1 = '#4e8ca2',
-					-- lotusTeal2 = '#6693bf',
-					lotusTeal2 = '#3F7497',
-					lotusTeal3 = '#5a7785',
-					lotusCyan = '#d7e3d8',
+					-- lotusViolet1 = '#777490',
+					-- lotusViolet2 = '#766b90',
+					-- lotusViolet3 = '#c9cbd1',
+					-- lotusViolet4 = '#624c83',
+					-- lotusBlue1 = '#c7d7e0',
+					-- lotusBlue2 = '#b5cbd2',
+					-- lotusBlue3 = '#9fb5c9',
+					-- lotusBlue4 = '#4d699b',
+					-- lotusBlue5 = '#5d57a3',
+					--
+					-- -- lotusGreen = '#6f894e',
+					-- lotusGreen = '#4F6138',
+					-- -- lotusGreen2 = '#6e915f',
+					-- lotusGreen2 = '#48683B',
+					-- lotusGreen3 = '#b7d0ae',
+					-- lotusPink = '#b35b79',
+					-- lotusOrange = '#cc6d00',
+					-- lotusOrange2 = '#e98a00',
+					-- -- lotusYellow = '#77713f',
+					-- lotusYellow = '#423829',
+					-- -- lotusYellow2 = '#836f4a',
+					-- lotusYellow2 = '#4F4330',
+					-- lotusYellow3 = '#de9800',
+					-- lotusYellow4 = '#f9d791',
+					-- lotusRed = '#c84053',
+					-- lotusRed2 = '#d7474b',
+					-- lotusRed3 = '#e82424',
+					-- lotusRed4 = '#d9a594',
+					-- -- lotusAqua = '#597b75',
+					-- lotusAqua = '#3C534F',
+					-- lotusAqua2 = '#5e857a',
+					-- lotusTeal1 = '#4e8ca2',
+					-- -- lotusTeal2 = '#6693bf',
+					-- lotusTeal2 = '#3F7497',
+					-- lotusTeal3 = '#5a7785',
+					-- lotusCyan = '#d7e3d8',
 				},
 			},
 			styles = {
@@ -192,42 +185,67 @@ return {
 		opts = {
 			transparent = true, -- Enable this to disable setting the background color
 			day_brightness = 0.1, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
-
 		},
 	},
-	-- {
-	--   'ramojus/mellifluous.nvim',
-	--   lazy = false,
-	--   priority = 1000,
-	--   opts = {
-	--     color_set = 'mountain',
-	--     dim_inactive = true,
-	--     transparent = false, -- Enable this to disable setting the background color
-	--     mellifluous = {
-	--       neutral = false, -- set this to false and bg_contrast to 'medium' for original mellifluous (then it was called meliora theme)
-	--       bg_contrast = 'hard', -- options: 'soft', 'medium', 'hard'
-	--     },
-	--     mountain = {
-	--       bg_contrast = 'medium', -- options: 'soft', 'medium', 'hard'
-	--     },
-	--   },
-	--   -- config = function()
-	--   --   vim.cmd.colorscheme 'melange'
-	--   --   -- vim.cmd.Mellifluous 'mountain'
-	--   -- end,
-	-- },
-	--   { "dpenedo/melange-nvim" },
+	{
+		'ramojus/mellifluous.nvim',
+		lazy = false,
+		priority = 1000,
+		opts = {
+			color_set = 'kanagawa_dragon',
+			-- color_set = 'mellifluous',
+			-- dim_inactive = true,
+			transparent_background = {
+				enabled = true,
+				floating_windows = true,
+				telescope = true,
+				file_tree = true,
+				cursor_line = false,
+				status_line = false,
+			},
+			kanagawa_dragon = {
+				color_overrides = {
+					dark = {
+						bg = '#31353f',
+					},
+				},
+			},
+			mellifluous = {
+				color_overrides = {
+					dark = {
+						-- bg = '#31353f',
+						-- bg = '#232834',
+						-- bg = '#1f2637',
+						-- bg = '#232834',
+						-- bg = '#1b1e28', -- Se ve genial pero no el visual
+						--
+						-- bg = '#141c2e',
+						bg = '#111827',
+						-- bg = '#31353f',
+						-- bg = '#60687b',
+						-- shades_fg = '#31353f',
+					},
+				},
+			},
+		},
+		-- config = function()
+		--   vim.cmd.colorscheme 'melange'
+		--   -- vim.cmd.Mellifluous 'mountain'
+		-- end,
+	},
+	-- { 'dpenedo/melange-nvim' },
 	--
 	-- {
-	--   'ribru17/bamboo.nvim',
-	--   lazy = false,
-	--   config = function()
-	--     require('bamboo').setup {
-	--       -- optional configuration here
-	--       -- transparent = true, -- Show/hide background
-	--     }
-	--     require('bamboo').load()
-	--   end,
+	-- 	'ribru17/bamboo.nvim',
+	-- 	lazy = false,
+	-- 	config = function()
+	-- 		require('bamboo').setup {
+	-- 			-- optional configuration here
+	-- 			style = 'vulgaris',
+	-- 			transparent = true, -- Show/hide background
+	-- 		}
+	-- 		require('bamboo').load()
+	-- 	end,
 	-- },
 	-- 	{'kvrohit/rasmus.nvim',
 	-- 	},
@@ -243,7 +261,7 @@ return {
 		'EdenEast/nightfox.nvim',
 		opts = {
 			options = {
-				styles = { -- Style to be applied to different syntax groups
+				styles = {     -- Style to be applied to different syntax groups
 					comments = 'italic', -- Value is any valid attr-list value `:help attr-list`
 					conditionals = 'bold',
 					constants = 'bold',
@@ -259,8 +277,8 @@ return {
 			palettes = {
 				dayfox = {
 					-- Defining multiple shades is done by passing a table
-					bg3 = "#e4dcd4",
-					sel0 = "#CDD6F4",
+					bg3 = '#e4dcd4',
+					sel0 = '#CDD6F4',
 					-- sel1 = "#7e94ed",
 					blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
 				},
@@ -322,21 +340,46 @@ return {
 	-- 	priority = 1000,
 	-- },
 	{
-		"vague2k/vague.nvim",
+		'vague2k/vague.nvim',
 		config = function()
-			require("vague").setup({
+			require('vague').setup {
 				-- optional configuration here
-			})
-		end
+				transparent = true, -- don't set background
+			}
+		end,
+	},
+	-- {
+	-- 	'mellow-theme/mellow.nvim',
+	-- },
+	{
+		'sho-87/kanagawa-paper.nvim',
+		lazy = false,
+		priority = 1000,
+		opts = {
+			transparent = true,
+		},
 	},
 	{
-		'mellow-theme/mellow.nvim',
-	}
+		'AlexvZyl/nordic.nvim',
+		lazy = false,
+		priority = 1000,
+		-- opts = {
+		-- 	transparent_bg = true,
+		-- },
+	},
 
-
-	-- {
-	-- 	"dgox16/oldworld.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- },
+	{
+		'dgox16/oldworld.nvim',
+		lazy = false,
+		priority = 1000,
+		opts = {
+			highlight_overrides = {
+				Normal = { bg = 'NONE' },
+				NormalNC = { bg = 'NONE' },
+				NormalFloat = { bg = 'NONE' },
+				FloatBorder = { bg = 'NONE' },
+				CursorLine = { bg = '#222128' },
+			},
+		},
+	},
 }

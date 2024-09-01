@@ -36,11 +36,11 @@ require('lazy').setup({
   { 'numToStr/Comment.nvim',        event = 'VeryLazy', opts = {} },
 
   -- { 'echasnovski/mini.starter', version = '*', opts = {} },
-  -- {
-  --   'stevearc/conform.nvim',
-  --   event = 'InsertEnter',
-  --   opts = {},
-  -- },
+  {
+    'stevearc/conform.nvim',
+    event = 'InsertEnter',
+    opts = {},
+  },
 
   {
     'willothy/flatten.nvim',

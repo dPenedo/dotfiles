@@ -2,10 +2,10 @@
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
 	extensions = {
-		["ui-select"] = {
-			require("telescope.themes").get_dropdown {
+		['ui-select'] = {
+			require('telescope.themes').get_dropdown {
 				-- even more opts
-			}
+			},
 
 			-- pseudo code / specification for writing custom displays, like the one
 			-- for "codeactions"
@@ -20,7 +20,7 @@ require('telescope').setup {
 			--      do the following
 			--   codeactions = false,
 			-- }
-		}
+		},
 	},
 	-- To get ui-select loaded and working with telescope, you need to call
 	-- load_extension, somewhere after setup function:
@@ -57,8 +57,7 @@ require('telescope').setup {
 				['<C-h>'] = 'which_key',
 				['<C-j>'] = 'move_selection_next',
 				['<C-k>'] = 'move_selection_previous',
-				["<c-d>"] = "delete_buffer",
-
+				['<c-d>'] = 'delete_buffer',
 			},
 			n = {
 				['<C-s>'] = 'select_horizontal',
@@ -80,4 +79,5 @@ vim.api.nvim_create_user_command('NotasBuscar', function()
 	require('telescope.builtin').find_files { cwd = '~/Documentos/Dropbox/Notas/', prompt_title = 'Notas' }
 end, {})
 vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[S]earch [/] in Open Files' })
-require("telescope").load_extension("ui-select")
+require('telescope').load_extension 'ui-select'
+require('telescope').load_extension 'file_browser'
