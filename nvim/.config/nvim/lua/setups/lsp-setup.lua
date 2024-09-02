@@ -16,6 +16,7 @@ local on_attach = function(_, bufnr)
   end
 
   nmap('<leader>R', vim.lsp.buf.rename, '[R]e[n]ame')
+  nmap('<leader>r', vim.lsp.buf.rename, '[R]e[n]ame')
   -- nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
   nmap('gd', ':Tele lsp_definitions<cr>', '[G]oto [D]efinition')
@@ -62,7 +63,7 @@ local servers = {
   -- gopls = {},
   pyright = {},
   --rust_analyzer = {},
-      jdtls = {},
+  jdtls = {},
 
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
