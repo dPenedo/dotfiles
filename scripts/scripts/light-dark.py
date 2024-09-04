@@ -1,20 +1,26 @@
-current_mode = "dark"
-
+current_mode = "light"
 import os
 import sys
-import time
-import subprocess
 
 
 SCRIPT_PATH = os.path.expanduser("~/scripts/light-dark.py")
 
 CONFIGURATIONS = {
-    "nvim": {"directory": os.path.expanduser("~/.config/nvim/lua/"), "file": "color-mode.lua"},
-    "gtk": {"directory": os.path.expanduser("~/.config/gtk-3.0/"), "file": "settings.ini"},
+    "nvim": {
+        "directory": os.path.expanduser("~/.config/nvim/lua/"),
+        "file": "color-mode.lua",
+    },
+    "gtk": {
+        "directory": os.path.expanduser("~/.config/gtk-3.0/"),
+        "file": "settings.ini",
+    },
     "tmux": {"directory": os.path.expanduser("~/.tmux/"), "file": "tmux-theme.conf"},
     "bat": {"directory": os.path.expanduser("~/.config/bat/"), "file": "config"},
     "fzf": {"directory": os.path.expanduser("~/.fzf/"), "file": "fzf-config.sh"},
-    "kitty": {"directory": os.path.expanduser("~/.config/kitty/"), "file": "current-theme.conf"},
+    "kitty": {
+        "directory": os.path.expanduser("~/.config/kitty/"),
+        "file": "current-theme.conf",
+    },
 }
 
 
@@ -77,6 +83,7 @@ def list_dir(directory, file):
     print("=" * 22)
     os.system(f'ls -a {directory} | grep "{file}*"')
     print("=" * 22)
+
 
 # TODO: comprobar que estén los light o dark modes
 # def check_file_existing():
