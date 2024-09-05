@@ -37,18 +37,18 @@ monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
 
 	sleep 15
-	wmctrl -r "Nueva pestaña - Brave" -t 0 &
+	wmctrl -r "Nueva pestaña - Brave" -t 10 &
 	sleep 3
-	wmctrl -r "kitty" -t 1 &
-	wmctrl -r "bash" -t 1 &
-	wmctrl -r "tmux" -t 1 &
+	wmctrl -r "kitty" -t 11 &
+	wmctrl -r "bash" -t 11 &
+	wmctrl -r "tmux" -t 11 &
 	sleep 3
-	wmctrl -r "Chat" -t 7 &
-	wmctrl -r "TickTick" -t 6 &
-	wmctrl -r "mozilla Thunderbird" -t 8 &
-	wmctrl -r "Meteored" -t 6 &
+	wmctrl -r "Chat" -t 17 &
+	wmctrl -r "TickTick" -t 16 &
+	wmctrl -r "mozilla Thunderbird" -t 18 &
+	wmctrl -r "Meteored" -t 16 &
 	# sleep 10
-	wmctrl -r "obsidian" -t 9 &
+	wmctrl -r "obsidian" -t 19 &
 	# wmctrl -r "Correo" -t 18 &
 else
 	sleep 5

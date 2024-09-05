@@ -151,10 +151,11 @@ return {
 	--         ]])
 	--     end,
 	--   },
-	--   {'sainnhe/gruvbox-material',
-	-- lazy = false,
-	--   config = function()
-	--         vim.cmd([[
+	-- {
+	-- 	'sainnhe/gruvbox-material',
+	-- 	lazy = false,
+	-- 	config = function()
+	-- 		vim.cmd [[
 	--         " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
 	--         " Important!!
 	--         " For dark version.
@@ -175,9 +176,9 @@ return {
 	--         let g:gruvbox_material_sign_column_background = 'none'
 	--
 	--         colorscheme gruvbox-material
-	--         ]])
-	--     end,
-	--   },
+	--         ]]
+	-- 	end,
+	-- },
 	{
 		'folke/tokyonight.nvim',
 		lazy = false,
@@ -192,7 +193,7 @@ return {
 		lazy = false,
 		priority = 1000,
 		opts = {
-			color_set = 'kanagawa_dragon',
+			color_set = 'mellifluous',
 			-- color_set = 'mellifluous',
 			-- dim_inactive = true,
 			transparent_background = {
@@ -221,6 +222,19 @@ return {
 						--
 						-- bg = '#141c2e',
 						bg = '#111827',
+						-- bg = '#31353f',
+						-- bg = '#60687b',
+						-- shades_fg = '#31353f',
+					},
+					light = {
+						-- bg = '#31353f',
+						-- bg = '#232834',
+						-- bg = '#1f2637',
+						-- bg = '#232834',
+						-- bg = '#1b1e28', -- Se ve genial pero no el visual
+						--
+						-- bg = '#141c2e',
+						bg = '#DEDACF',
 						-- bg = '#31353f',
 						-- bg = '#60687b',
 						-- shades_fg = '#31353f',
