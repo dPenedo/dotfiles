@@ -16,7 +16,7 @@ brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://ticktick.com &
 brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
-kitty &
+kitty -e tmux &
 obsidian &
 setxkbmap -layout us -variant altgr-intl &
 # kitty -e bash ~/scripts/load_sessions.sh &
