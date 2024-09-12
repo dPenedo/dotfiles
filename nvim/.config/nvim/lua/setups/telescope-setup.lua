@@ -80,4 +80,4 @@ vim.api.nvim_create_user_command('NotasBuscar', function()
 end, {})
 vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[S]earch [/] in Open Files' })
 require('telescope').load_extension 'ui-select'
-require('telescope').load_extension 'file_browser'
+-- require('telescope').load_extension 'file_browser'

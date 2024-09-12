@@ -10,11 +10,11 @@ map({ "n", "v" }, "<Space>", "<Nop>")
 
 -- Borrar keymaps
 
-vim.keymap.del("n", "<leader>w-")
-vim.keymap.del("n", "<leader>wd")
-vim.keymap.del("n", "<leader>ww")
-vim.keymap.del("n", "<leader>w|")
-vim.keymap.del("n", "<leader>qq")
+-- vim.keymap.del("n", "<leader>w-")
+-- vim.keymap.del("n", "<leader>wd")
+-- vim.keymap.del("n", "<leader>ww")
+-- vim.keymap.del("n", "<leader>w|")
+-- vim.keymap.del("n", "<leader>qq")
 
 -- Remapeo para manejar el salto de palabras
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
@@ -26,24 +26,10 @@ map("n", "]d", vim.diagnostic.goto_next, { desc = "Ir al siguiente mensaje de di
 map("n", "<leader>dd", vim.diagnostic.open_float, { desc = "Abrir mensaje de diagnóstico flotante" })
 map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Abrir lista de diagnósticos" })
 
--- Resaltado al pegar (yank)
-local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
-vim.api.nvim_create_autocmd("TextYankPost", {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = "*",
-})
-
 -- Mueve el bloque hacia la izquierda
 map("v", "<", "<gv", { noremap = true, silent = true })
 -- Mueve el bloque hacia la derecha
 map("v", ">", ">gv", { noremap = true, silent = true })
-
-map("n", "<leader>o", ":delmarks ", { desc = "Borrar mark" })
-
-map("n", "ñ", "`", { desc = "backtick asignado a ñ" })
 
 map("n", ",,", ",", { desc = "coma para f" })
 
@@ -57,7 +43,7 @@ map("n", "<leader>o", "o<ESC>", { desc = "Crea una linea debajo" })
 map("n", "<leader>O", "O<ESC>", { desc = "Crea una linea encima" })
 
 -- Zen mode
-map("n", "<leader>z", ":ZenMode<CR>", { desc = "Entra o sale  en Zen mode" })
+map("n", "<leader>j", ":ZenMode<CR>", { desc = "Entra o sale  en Zen mode" })
 
 -- Guardar rápidamente el búfer actual o todos los búferes
 map("n", "<A-s>", "<CMD>update<CR>", { desc = "Guardar el búfer actual" })
@@ -147,6 +133,8 @@ map("n", "<C-left>", ":vertical resize -5<CR>", { desc = "Reducir el tamaño de 
 map("n", "<C-down>", ":horizontal resize +2<CR>", { desc = "Aumentar el tamaño de la ventana horizontalmente" })
 map("n", "<C-up>", ":horizontal resize -2<CR>", { desc = "Reducir el tamaño de la ventana horizontalmente" })
 
+map("n", "'", "`", { desc = "backtick asignado a '" })
+
 -- Java:
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 -- Telescope
@@ -160,7 +148,6 @@ map("n", "<leader>sd", ":Telescope diagnostics<CR>", { desc = "[S]earch [D]iagno
 map("n", "<leader>sr", ":Telescope resume<CR>", { desc = "[S]earch [R]esume" })
 map("n", "<leader>nb", ":NotasBuscar<CR>", { desc = "[N]otas [Buscar]" })
 map("n", ",B", ":Telescope builtin<CR>", { desc = "Telescope para comandos internos" })
-map("n", ",g", ":Telescope live_grep<CR>", { desc = "Telescope para búsqueda en vivo con grep" })
 map("n", ",r", ":Telescope registers<CR>", { desc = "Telescope para registros" })
 map("n", ",u", ":Telescope undo<CR>", { desc = "Telescope para en el historial de deshacer" })
 map("n", "<leader>u", ":Telescope undo<CR>", { desc = "Telescope para en el historial de deshacer" })
@@ -172,12 +159,11 @@ map("n", ",m", ":Telescope marks<CR>", { desc = "Telescope para marks" })
 map("n", "<leader>ff", ":Telescope find_files <CR>", { desc = "Fzf lua files" })
 map("n", "<leader>ds", ":Telescope lsp_document_symbols<cr>", { desc = "[D]ocument [S]ymbols" })
 -- FzfLua
-map("n", ",k", ":FzfLua keymaps<CR>", { desc = "keymaps" })
-map("n", "<leader>l", ":FzfLua blines<CR>", { desc = "fzflua para en el buffer actual" })
-map("n", ",f", ":FzfLua files <CR>", { desc = "Fzf lua files" })
-map("n", "<leader>gg", ":FzfLua grep_visual<CR>", { desc = "fzf grep" })
-map("n", "<leader>?", ":FzfLua oldfiles<CR>", { desc = "fzf grep" })
-map("n", "<leader><space>", ":FzfLua buffers<CR>", { desc = "fzf grep" })
-map("n", "<leader>co", ":FzfLua colorschemes<CR>", { desc = "Fzf lua colorschemes" })
-map("n", "<leader>ca", ":FzfLua lsp_code_actions<CR>", { desc = "Fzf lua colorschemes" })
-map("n", "gr", ":FzfLua lsp_references<CR>", { desc = "Fzf lua colorschemes" })
+map("n", ",k", ":Telescope keymaps<CR>", { desc = "keymaps" })
+map("n", "<leader>l", ":Telescope current_buffer_fuzzy_find<CR>", { desc = "fzflua para en el buffer actual" })
+map("n", "<leader>gg", ":Telescope live_grep<CR>", { desc = "fzf grep" })
+map("n", "<leader>?", ":Telescope oldfiles<CR>", { desc = "fzf grep" })
+map("n", "<leader><space>", ":Telescope buffers<CR>", { desc = "fzf grep" })
+map("n", "<leader>co", ":Telescope colorschemes<CR>", { desc = "Fzf lua colorschemes" })
+map("n", "<leader>ca", ":Telescope lsp_code_actions<CR>", { desc = "Fzf lua colorschemes" })
+map("n", "gr", ":Telescope lsp_references<CR>", { desc = "Fzf lua colorschemes" })
