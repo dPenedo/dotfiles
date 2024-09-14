@@ -136,15 +136,15 @@ return {
 	--         ]]
 	-- 	end,
 	-- },
-	{
-		'folke/tokyonight.nvim',
-		lazy = false,
-		priority = 1000,
-		opts = {
-			transparent = false, -- Enable this to disable setting the background color
-			day_brightness = 0.1, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
-		},
-	},
+	-- {
+	-- 	'folke/tokyonight.nvim',
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {
+	-- 		transparent = true, -- Enable this to disable setting the background color
+	-- 		day_brightness = 0.1, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+	-- 	},
+	-- },
 	{
 		'ramojus/mellifluous.nvim',
 		lazy = false,
@@ -227,34 +227,34 @@ return {
 	--   opts = {},
 	--
 	--
-	-- {
-	-- 	'EdenEast/nightfox.nvim',
-	-- 	opts = {
-	-- 		options = {
-	-- 			styles = {     -- Style to be applied to different syntax groups
-	-- 				comments = 'italic', -- Value is any valid attr-list value `:help attr-list`
-	-- 				conditionals = 'bold',
-	-- 				constants = 'bold',
-	-- 				functions = 'bold',
-	-- 				keywords = 'NONE',
-	-- 				numbers = 'NONE',
-	-- 				operators = 'NONE',
-	-- 				strings = 'NONE',
-	-- 				types = 'italic',
-	-- 				variables = 'NONE',
-	-- 			},
-	-- 		},
-	-- 		palettes = {
-	-- 			dayfox = {
-	-- 				-- Defining multiple shades is done by passing a table
-	-- 				bg3 = '#e4dcd4',
-	-- 				sel0 = '#CDD6F4',
-	-- 				-- sel1 = "#7e94ed",
-	-- 				blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
-	-- 			},
-	-- 		},
-	-- 	},
-	-- },
+	{
+		'EdenEast/nightfox.nvim',
+		opts = {
+			options = {
+				styles = {     -- Style to be applied to different syntax groups
+					comments = 'italic', -- Value is any valid attr-list value `:help attr-list`
+					conditionals = 'bold',
+					constants = 'bold',
+					functions = 'bold',
+					keywords = 'NONE',
+					numbers = 'NONE',
+					operators = 'NONE',
+					strings = 'NONE',
+					types = 'italic',
+					variables = 'NONE',
+				},
+			},
+			palettes = {
+				dayfox = {
+					-- Defining multiple shades is done by passing a table
+					bg3 = '#e4dcd4',
+					sel0 = '#CDD6F4',
+					-- sel1 = "#7e94ed",
+					blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
+				},
+			},
+		},
+	},
 	-- {
 	-- 	'fynnfluegge/monet.nvim',
 	-- 	name = 'monet',
