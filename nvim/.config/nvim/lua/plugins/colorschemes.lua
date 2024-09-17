@@ -108,6 +108,7 @@ return {
 	--         ]])
 	--     end,
 	--   },
+
 	-- {
 	-- 	'sainnhe/gruvbox-material',
 	-- 	lazy = false,
@@ -219,6 +220,17 @@ return {
 	-- 	end,
 	-- },
 	{ 'kvrohit/rasmus.nvim' },
+	{
+		'https://github.com/sainnhe/sonokai',
+		opts = {
+
+			config = function()
+				vim.cmd [[
+            let g:sonokai_style= "shusia"
+		]]
+			end,
+		},
+	},
 	--
 	-- {
 	--   "loctvl842/monokai-pro.nvim",

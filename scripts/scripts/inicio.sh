@@ -14,7 +14,7 @@ sleep 7
 ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://ticktick.com &
-brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
+# brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
 kitty -e tmux &
 # obsidian &

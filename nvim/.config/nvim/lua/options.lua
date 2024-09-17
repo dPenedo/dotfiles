@@ -13,6 +13,9 @@ vim.o.mouse = 'a'
 -- Enable break indent
 vim.o.breakindent = true
 
+-- Split derecha, en principio para oil
+vim.opt.splitright = true
+
 vim.o.conceallevel = 0
 vim.cmd [[
   autocmd FileType markdown setlocal conceallevel=2
@@ -32,8 +35,6 @@ vim.o.showtabline = 1
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
-
 
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'

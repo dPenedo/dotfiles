@@ -44,6 +44,8 @@
   "persistence.nvim": { "branch": "main", "commit": "f6aad7dde7fcf54148ccfc5f622c6d5badd0cc3d" },
   "plenary.nvim": { "branch": "master", "commit": "ec289423a1693aeae6cd0d503bac2856af74edaa" },
   "rasmus.nvim": { "branch": "main", "commit": "86d608bd1d12a53b39d9b4b2847cd7c3ea81d473" },
+  "sonokai": { "branch": "master", "commit": "a9d4d398999b5f74a6dfe3af400f824e2cbddf6f" },
+  "tailwind-tools": { "branch": "master", "commit": "41e901e7b4470082b5388b8385249632642c2510" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "cf48d4dfce44e0b9a2e19a008d6ec6ea6f01a83b" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope-undo.nvim": { "branch": "main", "commit": "51be9ae7c42fc27c0b05505e3a0162e0f05fbb6a" },
