@@ -250,7 +250,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Jellybeans.vim",
+    "workbench.colorTheme": "Paper Owl Light",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
