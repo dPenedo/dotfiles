@@ -250,7 +250,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Paper Owl Light",
+    "workbench.colorTheme": "Solarized Autumn",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
