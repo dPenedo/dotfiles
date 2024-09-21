@@ -1,5 +1,5 @@
 local function map(mode, key, value, options)
-  vim.keymap.set(mode, key, value, options or { silent = true })
+	vim.keymap.set(mode, key, value, options or { silent = true })
 end
 
 -- Mapeo para <Space> (espacio) usando vim.keymap
@@ -18,11 +18,11 @@ map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Abrir lista de diagn�
 -- Resaltado al pegar (yank)
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+	group = highlight_group,
+	pattern = '*',
 })
 --Format
 map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
@@ -42,70 +42,70 @@ map('v', '>', '>gv', { noremap = true, silent = true })
 -- Trouble
 map('n', '<leader>xx', ':Trouble diagnostics toggle<cr>', { desc = 'Trouble diagnostics' })
 map('n', '<leader>xw', function()
-  require('trouble').toggle 'workspace_diagnostics'
+	require('trouble').toggle 'workspace_diagnostics'
 end)
 map('n', '<leader>xd', function()
-  require('trouble').toggle 'document_diagnostics'
+	require('trouble').toggle 'document_diagnostics'
 end)
 map('n', '<leader>xq', function()
-  require('trouble').toggle 'quickfix'
+	require('trouble').toggle 'quickfix'
 end)
 map('n', '<leader>xl', function()
-  require('trouble').toggle 'loclist'
+	require('trouble').toggle 'loclist'
 end)
 map('n', 'gR', function()
-  require('trouble').toggle 'lsp_references'
+	require('trouble').toggle 'lsp_references'
 end)
 
 -- Notes
 -- New Notes
 map('n', '<leader>nn', function()
-  local filename = vim.fn.input('Enter file name: ', '', 'file')
-  if filename ~= '' then
-    local filepath = '~/Documentos/Dropbox/Notas//' .. filename .. '.md'
-    vim.fn.writefile({}, vim.fn.expand(filepath))
-    vim.cmd('edit ' .. vim.fn.expand(filepath))
-  end
+	local filename = vim.fn.input('Enter file name: ', '', 'file')
+	if filename ~= '' then
+		local filepath = '~/Documentos/Dropbox/Notas//' .. filename .. '.md'
+		vim.fn.writefile({}, vim.fn.expand(filepath))
+		vim.cmd('edit ' .. vim.fn.expand(filepath))
+	end
 end, { desc = '[N]ew [N]otes' })
 
 -- New Temp Notes
 map('n', '<leader>nt', function()
-  local filename = vim.fn.input('Enter Temp file name: ', '', 'file')
-  if filename ~= '' then
-    local filepath = '~/Documentos/Dropbox/Notas/Temp/' .. filename .. '.md'
-    vim.fn.writefile({}, vim.fn.expand(filepath))
-    vim.cmd('edit ' .. vim.fn.expand(filepath))
-  end
+	local filename = vim.fn.input('Enter Temp file name: ', '', 'file')
+	if filename ~= '' then
+		local filepath = '~/Documentos/Dropbox/Notas/Temp/' .. filename .. '.md'
+		vim.fn.writefile({}, vim.fn.expand(filepath))
+		vim.cmd('edit ' .. vim.fn.expand(filepath))
+	end
 end, { desc = '[N]ew [T]emp' })
 
 -- New Atom Notes
 map('n', '<leader>na', function()
-  local filename = vim.fn.input('Enter Atom file name: ', '', 'file')
-  if filename ~= '' then
-    local filepath = '~/Documentos/Dropbox/Notas/Atomoak/' .. filename .. '.md'
-    vim.fn.writefile({}, vim.fn.expand(filepath))
-    vim.cmd('edit ' .. vim.fn.expand(filepath))
-  end
+	local filename = vim.fn.input('Enter Atom file name: ', '', 'file')
+	if filename ~= '' then
+		local filepath = '~/Documentos/Dropbox/Notas/Atomoak/' .. filename .. '.md'
+		vim.fn.writefile({}, vim.fn.expand(filepath))
+		vim.cmd('edit ' .. vim.fn.expand(filepath))
+	end
 end, { desc = '[N]ew [A]tom' })
 
 map('i', '<A-=>', function()
-  local telescope_builtin = require 'telescope.builtin'
-  telescope_builtin.find_files {
-    prompt_title = 'Selecciona una nota',
-    cwd = '~/Documentos/Dropbox/Notas',
-    attach_mappings = function(_, map_note)
-      map_note('i', '<CR>', function(prompt_bufnr)
-        local entry = require('telescope.actions.state').get_selected_entry()
-        require('telescope.actions').close(prompt_bufnr)
-        if entry and entry.path then
-          local filename = vim.fn.fnamemodify(entry.path, ':t:r') -- nombre del archivo sin extensión
-          local link = string.format('[[%s|%s]]', filename, filename)
-          vim.api.nvim_put({ link }, '', true, true)
-        end
-      end)
-      return true
-    end,
-  }
+	local telescope_builtin = require 'telescope.builtin'
+	telescope_builtin.find_files {
+		prompt_title = 'Selecciona una nota',
+		cwd = '~/Documentos/Dropbox/Notas',
+		attach_mappings = function(_, map_note)
+			map_note('i', '<CR>', function(prompt_bufnr)
+				local entry = require('telescope.actions.state').get_selected_entry()
+				require('telescope.actions').close(prompt_bufnr)
+				if entry and entry.path then
+					local filename = vim.fn.fnamemodify(entry.path, ':t:r') -- nombre del archivo sin extensión
+					local link = string.format('[[%s|%s]]', filename, filename)
+					vim.api.nvim_put({ link }, '', true, true)
+				end
+			end)
+			return true
+		end,
+	}
 end, { desc = 'New Link' })
 
 -- Plugin obsidian
@@ -134,11 +134,11 @@ map('n', '<leader>,', ':bp<cr> ', { desc = 'BufferPrev' })
 
 -- Diagnostics
 local diagnostic_goto = function(next, severity)
-  local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-  severity = severity and vim.diagnostic.severity[severity] or nil
-  return function()
-    go { severity = severity }
-  end
+	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+	severity = severity and vim.diagnostic.severity[severity] or nil
+	return function()
+		go { severity = severity }
+	end
 end
 map('n', '<leader>cd', vim.diagnostic.open_float, { desc = 'Line Diagnostics' })
 map('n', ']d', diagnostic_goto(true), { desc = 'Next Diagnostic' })
@@ -164,7 +164,7 @@ map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 
 -- Zen mode
-map('n', '<leader>j', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
+map('n', '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
 
 -- Guardar rápidamente el búfer actual o todos los búferes
 map('n', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
@@ -194,12 +194,12 @@ map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalment
 -- map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
-map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>', { desc = 'Alternar colores de resaltado' })
+map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
+	{ desc = 'Alternar colores de resaltado' })
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
-map('n', '<leader>e', ':Neotree filesystem reveal right<CR>', { desc = 'Alternar visibilidad de Neotree' })
-map('n', '<leader>ge', ':Neotree float git_status<CR>', { desc = 'Alternar visibilidad de Neotree' })
+map('n', '<leader>e', ':Neotree filesystem reveal toggle right<CR>', { desc = 'Alternar visibilidad de Neotree' })
 -- map('n', '<leader>e', ':NvimTreeFocus<CR>', { desc = 'NvimTreeFocus' })
 
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
@@ -310,17 +310,17 @@ map('n', '<leader>aa', ':Telescope commands<CR>', { desc = 'Telescope commands' 
 
 -- load the session for the current directory
 map('n', '<leader>S', function()
-  require('persistence').load()
+	require('persistence').load()
 end)
 -- select a session to load
 map('n', '<leader>se', function()
-  require('persistence').select()
+	require('persistence').select()
 end)
 -- load the last session
 map('n', '<leader>sL', function()
-  require('persistence').load { last = true }
+	require('persistence').load { last = true }
 end)
 -- stop Persistence => session won't be saved on exit
 map('n', '<leader>sq', function()
-  require('persistence').stop()
+	require('persistence').stop()
 end)
