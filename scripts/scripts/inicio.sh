@@ -16,7 +16,10 @@ brave-browser -app=https://chat.openai.com &
 brave-browser -app=https://ticktick.com &
 # brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
-kitty -e tmux &
+kitty &
+sleep 4
+kitty -e bash -c 'sleep 4; tmux' &
+
 # obsidian &
 setxkbmap -layout us -variant altgr-intl &
 # kitty -e bash ~/scripts/load_sessions.sh &
@@ -38,9 +41,11 @@ if [[ $monitor_externo = *connected* ]]; then
 
 	sleep 15
 	wmctrl -r "Nueva pestaña - Brave" -t 10 &
+	wmctrl -r "New Tab - Brave" -t 10 &
 	sleep 3
 	wmctrl -r "kitty" -t 11 &
 	wmctrl -r "bash" -t 11 &
+	wmctrl -r "zsh" -t 11 &
 	wmctrl -r "tmux" -t 11 &
 	sleep 3
 	wmctrl -r "Chat" -t 17 &

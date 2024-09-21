@@ -40,7 +40,7 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
 
 -- Trouble
-map('n', '<leader>xx', ":Trouble diagnostics toggle<cr>", { desc = "Trouble diagnostics" })
+map('n', '<leader>xx', ':Trouble diagnostics toggle<cr>', { desc = 'Trouble diagnostics' })
 map('n', '<leader>xw', function()
 	require('trouble').toggle 'workspace_diagnostics'
 end)
@@ -89,8 +89,8 @@ map('n', '<leader>na', function()
 end, { desc = '[N]ew [A]tom' })
 
 map('i', '<A-=>', function()
-	local telescope_builtin = require('telescope.builtin')
-	telescope_builtin.find_files({
+	local telescope_builtin = require 'telescope.builtin'
+	telescope_builtin.find_files {
 		prompt_title = 'Selecciona una nota',
 		cwd = '~/Documentos/Dropbox/Notas',
 		attach_mappings = function(_, map_note)
@@ -105,9 +105,8 @@ map('i', '<A-=>', function()
 			end)
 			return true
 		end,
-	})
+	}
 end, { desc = 'New Link' })
-
 
 -- Plugin obsidian
 map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
@@ -179,7 +178,6 @@ map('i', 'jj', '<ESC>', { desc = 'Salir del modo de inserción' })
 map('i', 'jk', '<ESC>la', { desc = 'Desplazar una posicion a la derecha' })
 map('i', '<C-l>', '<ESC>la', { desc = 'Desplazar una posicion a la derecha' })
 
-
 -- Moverse al último búfer
 map('n', "''", '<CMD>b#<CR>', { desc = 'Ir al último búfer' })
 
@@ -202,16 +200,12 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
 map('n', '<leader>e', ':Neotree filesystem reveal right<CR>', { desc = 'Alternar visibilidad de Neotree' })
-
+-- map('n', '<leader>e', ':NvimTreeFocus<CR>', { desc = 'NvimTreeFocus' })
 
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
 -- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
-
-
-
-
 
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
@@ -229,10 +223,8 @@ map('t', '<C-h>', '<C-\\><C-n><CR><C-w>w', { desc = 'Salir del modo terminal' })
 -- map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
 -- map('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Cambiar de split desde el terminal' })
 
-
 map('t', '<A-`>', '<C-\\><C-n><CR>:TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
 map('n', '<A-`>', ':TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
-
 
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
@@ -273,9 +265,6 @@ map('n', '<leader>P', ':Telescope registers<cr>', { desc = 'Buscar registros en 
 map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
-
-
-
 
 -- Scroll
 map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })
@@ -319,13 +308,19 @@ map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<cr>', { desc = 'Code acti
 map('n', 'gr', ':Telescope lsp_references<CR>', { desc = 'Telescope lsp references' })
 map('n', '<leader>aa', ':Telescope commands<CR>', { desc = 'Telescope commands' })
 
-
-
 -- load the session for the current directory
-map("n", "<leader>S", function() require("persistence").load() end)
+map('n', '<leader>S', function()
+	require('persistence').load()
+end)
 -- select a session to load
-map("n", "<leader>se", function() require("persistence").select() end)
+map('n', '<leader>se', function()
+	require('persistence').select()
+end)
 -- load the last session
-map("n", "<leader>sL", function() require("persistence").load({ last = true }) end)
+map('n', '<leader>sL', function()
+	require('persistence').load { last = true }
+end)
 -- stop Persistence => session won't be saved on exit
-map("n", "<leader>sq", function() require("persistence").stop() end)
+map('n', '<leader>sq', function()
+	require('persistence').stop()
+end)
