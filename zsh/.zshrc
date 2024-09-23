@@ -93,3 +93,7 @@ export NVM_DIR="$HOME/.nvm"
 # Created by `pipx` on 2024-02-10 16:28:16
 export PATH="$PATH:$HOME/.local/bin"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/.go
+export GOBIN=$GOPATH/bin   # opcional, define la ubicación de los binarios
+export PATH=$PATH:$GOBIN   # añade los binarios de Go al PATH

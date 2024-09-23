@@ -146,65 +146,65 @@ return {
 	-- 		day_brightness = 0.1, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
 	-- 	},
 	-- },
-	{
-		'ramojus/mellifluous.nvim',
-		lazy = false,
-		priority = 1000,
-		opts = {
-			color_set = 'mellifluous',
-			-- color_set = 'mellifluous',
-			-- dim_inactive = true,
-			transparent_background = {
-				enabled = true,
-				floating_windows = true,
-				telescope = true,
-				file_tree = true,
-				cursor_line = false,
-				status_line = false,
-			},
-			kanagawa_dragon = {
-				color_overrides = {
-					dark = {
-						bg = '#31353f',
-					},
-				},
-			},
-			mellifluous = {
-				color_overrides = {
-					dark = {
-						-- bg = '#31353f',
-						-- bg = '#232834',
-						-- bg = '#1f2637',
-						-- bg = '#232834',
-						-- bg = '#1b1e28', -- Se ve genial pero no el visual
-						--
-						-- bg = '#141c2e',
-						bg = '#111827',
-						-- bg = '#31353f',
-						-- bg = '#60687b',
-						-- shades_fg = '#31353f',
-					},
-					light = {
-						-- bg = '#31353f',
-						-- bg = '#232834',
-						-- bg = '#1f2637',
-						-- bg = '#232834',
-						-- bg = '#1b1e28', -- Se ve genial pero no el visual
-						--
-						-- bg = '#141c2e',
-						bg = '#DEDACF',
-						-- bg = '#31353f',
-						-- bg = '#60687b',
-						-- shades_fg = '#31353f',
-					},
-				},
-			},
-		},
-		-- config = function()
-		--   vim.cmd.colorscheme 'melange'
-		--   -- vim.cmd.Mellifluous 'mountain'
-		-- end,
-	},
+	-- {
+	-- 	'ramojus/mellifluous.nvim',
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {
+	-- 		color_set = 'mellifluous',
+	-- 		-- color_set = 'mellifluous',
+	-- 		-- dim_inactive = true,
+	-- 		transparent_background = {
+	-- 			enabled = true,
+	-- 			floating_windows = true,
+	-- 			telescope = true,
+	-- 			file_tree = true,
+	-- 			cursor_line = false,
+	-- 			status_line = false,
+	-- 		},
+	-- 		kanagawa_dragon = {
+	-- 			color_overrides = {
+	-- 				dark = {
+	-- 					bg = '#31353f',
+	-- 				},
+	-- 			},
+	-- 		},
+	-- 		mellifluous = {
+	-- 			color_overrides = {
+	-- 				dark = {
+	-- 					-- bg = '#31353f',
+	-- 					-- bg = '#232834',
+	-- 					-- bg = '#1f2637',
+	-- 					-- bg = '#232834',
+	-- 					-- bg = '#1b1e28', -- Se ve genial pero no el visual
+	-- 					--
+	-- 					-- bg = '#141c2e',
+	-- 					bg = '#111827',
+	-- 					-- bg = '#31353f',
+	-- 					-- bg = '#60687b',
+	-- 					-- shades_fg = '#31353f',
+	-- 				},
+	-- 				light = {
+	-- 					-- bg = '#31353f',
+	-- 					-- bg = '#232834',
+	-- 					-- bg = '#1f2637',
+	-- 					-- bg = '#232834',
+	-- 					-- bg = '#1b1e28', -- Se ve genial pero no el visual
+	-- 					--
+	-- 					-- bg = '#141c2e',
+	-- 					bg = '#DEDACF',
+	-- 					-- bg = '#31353f',
+	-- 					-- bg = '#60687b',
+	-- 					-- shades_fg = '#31353f',
+	-- 				},
+	-- 			},
+	-- 		},
+	-- 	},
+	-- 	-- config = function()
+	-- 	--   vim.cmd.colorscheme 'melange'
+	-- 	--   -- vim.cmd.Mellifluous 'mountain'
+	-- 	-- end,
+	-- },
 	{ 'dpenedo/melange-nvim' },
 	-- { 'savq/melange-nvim' },
 	-- {
@@ -219,18 +219,18 @@ return {
 	-- 		require('bamboo').load()
 	-- 	end,
 	-- },
-	{ 'kvrohit/rasmus.nvim' },
-	{
-		'https://github.com/sainnhe/sonokai',
-		opts = {
-
-			config = function()
-				vim.cmd [[
-            let g:sonokai_style= "shusia"
-		]]
-			end,
-		},
-	},
+	-- { 'kvrohit/rasmus.nvim' },
+	-- {
+	-- 	'https://github.com/sainnhe/sonokai',
+	-- 	opts = {
+	--
+	-- 		config = function()
+	-- 			vim.cmd [[
+	--            let g:sonokai_style= "shusia"
+	-- 	]]
+	-- 		end,
+	-- 	},
+	-- },
 	--
 	-- {
 	--   "loctvl842/monokai-pro.nvim",
@@ -321,15 +321,15 @@ return {
 	-- 	},
 	-- 	priority = 1000,
 	-- },
-	{
-		'vague2k/vague.nvim',
-		config = function()
-			require('vague').setup {
-				-- optional configuration here
-				transparent = true, -- don't set background
-			}
-		end,
-	},
+	-- {
+	-- 	'vague2k/vague.nvim',
+	-- 	config = function()
+	-- 		require('vague').setup {
+	-- 			-- optional configuration here
+	-- 			transparent = true, -- don't set background
+	-- 		}
+	-- 	end,
+	-- },
 	-- {
 	-- 	'mellow-theme/mellow.nvim',
 	-- },
@@ -365,21 +365,21 @@ return {
 	-- 	},
 	-- },
 	-- Lazy
-	{
-		'polirritmico/monokai-nightasty.nvim',
-		lazy = false,
-		priority = 1000,
-		opts = {
-			dark_style_background = 'transparent', -- default, dark, transparent, #color
-			color_headers = true,            -- Enable header colors for each header level (h1, h2, etc.)
-		},
-	},
-	{
-		'2giosangmitom/nightfall.nvim',
-		lazy = false,
-		priority = 1000,
-		opts = {
-			transparent = false,
-		},
-	},
+	-- {
+	-- 	'polirritmico/monokai-nightasty.nvim',
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {
+	-- 		dark_style_background = 'transparent', -- default, dark, transparent, #color
+	-- 		color_headers = true,            -- Enable header colors for each header level (h1, h2, etc.)
+	-- 	},
+	-- },
+	-- {
+	-- 	'2giosangmitom/nightfall.nvim',
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {
+	-- 		transparent = false,
+	-- 	},
+	-- },
 }

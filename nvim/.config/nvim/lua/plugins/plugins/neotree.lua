@@ -46,38 +46,11 @@ return {
 					nowait = true,
 				},
 				mappings = {
-					['<space>'] = {
-						'toggle_node',
-						nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
-					},
-					['<1-LeftMouse>'] = 'open',
-					['<cr>'] = 'open',
 					['l'] = 'open',
 					['S'] = 'open_split',
 					['<c-v>'] = 'open_vsplit',
 					-- ["S"] = "split_with_window_picker",
 					-- ["s"] = "vsplit_with_window_picker",
-					['t'] = 'open_tabnew',
-					['w'] = 'open_with_window_picker',
-					['C'] = 'close_node',
-					['a'] = {
-						'add',
-						-- some commands may take optional config options, see `:h neo-tree-mappings` for details
-						config = {
-							show_path = 'none', -- "none", "relative", "absolute"
-						},
-					},
-					['A'] = 'add_directory', -- also accepts the config.show_path option.
-					['d'] = 'delete',
-					['r'] = 'rename',
-					['y'] = 'copy_to_clipboard',
-					['x'] = 'cut_to_clipboard',
-					['p'] = 'paste_from_clipboard',
-					['c'] = 'copy', -- takes text input for destination
-					['m'] = 'move', -- takes text input for destination
-					['q'] = 'close_window',
-					['R'] = 'refresh',
-					['?'] = 'show_help',
 				},
 			},
 			nesting_rules = {
@@ -104,35 +77,6 @@ return {
 						['<c-x>'] = 'clear_filter',
 						['[g'] = 'prev_git_modified',
 						[']g'] = 'next_git_modified',
-					},
-				},
-			},
-			buffers = {
-				follow_current_file = {
-					enabled = true, -- This will find and focus the file in the active buffer every
-				},
-				-- time the current file is changed while the tree is open.
-				group_empty_dirs = true, -- when true, empty folders will be grouped together
-				show_unloaded = true,
-				window = {
-					mappings = {
-						['bd'] = 'buffer_delete',
-						['<bs>'] = 'navigate_up',
-						['.'] = 'set_root',
-					},
-				},
-			},
-			git_status = {
-				window = {
-					position = 'float',
-					mappings = {
-						['A'] = 'git_add_all',
-						['gu'] = 'git_unstage_file',
-						['ga'] = 'git_add_file',
-						['gr'] = 'git_revert_file',
-						['gc'] = 'git_commit',
-						['gp'] = 'git_push',
-						['gg'] = 'git_commit_and_push',
 					},
 				},
 			},
