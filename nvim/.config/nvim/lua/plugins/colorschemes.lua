@@ -262,7 +262,7 @@ return {
 					bg3 = '#e4dcd4',
 					sel0 = '#CDD6F4',
 					-- sel1 = "#7e94ed",
-					blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
+					-- blue = { base = '#464C8B', bright = '#7e94ed', dim = '#595C78' },
 				},
 			},
 		},

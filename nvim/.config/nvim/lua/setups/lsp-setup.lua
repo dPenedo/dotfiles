@@ -1,3 +1,7 @@
+if server_name == 'tsserver' then
+  server_name = 'ts_ls'
+end
+
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
@@ -65,7 +69,7 @@ local servers = {
   --rust_analyzer = {},
   jdtls = {},
 
-  -- tsserver = {},
+  ts_ls = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
 
   lua_ls = {

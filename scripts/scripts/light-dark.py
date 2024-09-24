@@ -1,5 +1,4 @@
-current_mode = "dark"
-
+current_mode = "light"
 import os
 import sys
 
@@ -39,20 +38,6 @@ def change_configuration(mode):
         sys.exit(1)
     print("Ejecutando comando tmux...")
 
-    # # WARN: no funciona: trato de reiniciar tmux, pero no tiene efecto
-    # try:
-    #     subprocess.run(["tmux", "kill-server"], check=True)
-    # except subprocess.CalledProcessError as e:
-    #     print(f"Error al ejecutar el comando tmux: {e}")
-    # finally:
-    #     # Reiniciar Kitty
-    #     try:
-    #         subprocess.run(["pkill", "kitty"], check=True)
-    #         subprocess.run(["kitty"], check=True)
-    #     except subprocess.CalledProcessError as e:
-    #         print(f"Error al reiniciar Kitty: {e}" )
-    #     time.sleep(2)
-
 
 def change_files(app, mode, directory, file):
     try:
@@ -76,7 +61,9 @@ def change_files(app, mode, directory, file):
         print(f"Error: {e}. Archivo no encontrado")
         sys.exit(1)
     except Exception as e:
-        print(f"Ha ocurrido un error al cambiar los archivos: {e}")
+        print(
+            f"Ha ocurrido un error al cambiar los archivos de {app} en {directory}: {e}"
+        )
         sys.exit(1)
 
 
