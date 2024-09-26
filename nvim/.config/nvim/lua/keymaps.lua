@@ -206,6 +206,7 @@ map('n', '<leader>e', ':Neotree filesystem reveal toggle right<CR>', { desc = 'A
 -- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
 map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
+map('n', '<leader>-', ':Oil .<CR>', { desc = 'Abrir Oil en root' })
 
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })

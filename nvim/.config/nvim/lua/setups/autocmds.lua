@@ -1,8 +1,8 @@
 -- Autosave
 -- vim.api.nvim_create_autocmd({ 'InsertLeave', 'TextChanged' }, {
---   pattern = { '*' },
---   command = 'silent! wall',
---   nested = true,
+-- 	pattern = { '*' },
+-- 	command = 'silent! wall',
+-- 	nested = true,
 -- })
 --
 -- vim.cmd('autocmd VimEnter *.lua, *.py, *.md,*.txt :ZenMode')

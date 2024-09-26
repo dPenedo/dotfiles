@@ -37,6 +37,17 @@ local snippets_js = {
 		insert(1),
 		text ' */}',
 	}),
+	-- Empty tag on JSX
+	snip({
+		namr = '<></>',
+		trig = '<>',
+		dscr = 'Empty tag  on JSX',
+	}, {
+		text '<>',
+		insert(1),
+		text '',
+		text '</>',
+	}),
 	-- Arrow function
 	-- Component with export
 	snip({
