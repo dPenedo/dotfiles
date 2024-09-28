@@ -6,19 +6,27 @@ return {
 		'nvim-tree/nvim-web-devicons',
 	},
 	opts = {
+		hijack_cursor = true,
 		view = {
 			side = 'right',
 		},
+
 		renderer = {
 			indent_markers = {
 				enable = true,
 			},
 		},
+		modified = {
+			enable = true,
+		},
+		diagnostics = {
+			enable = true,
+		},
 		actions = {
 			open_file = {
-				quit_on_open = true,
+				-- quit_on_open = true,
 				window_picker = {
-					chars = 'jkl;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
+					chars = 'jkl;uiop',
 				},
 			},
 		},

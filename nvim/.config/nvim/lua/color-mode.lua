@@ -1,6 +1,6 @@
 --dark
-vim.cmd.colorscheme 'kanagawa-wave'
--- vim.cmd.colorscheme 'melange'
+-- vim.cmd.colorscheme 'kanagawa-wave'
+vim.cmd.colorscheme 'melange'
 -- vim.cmd.colorscheme 'vague'
 -- vim.cmd.colorscheme 'mellifluous'
 -- vim.cmd.colorscheme 'gruvbox-material'

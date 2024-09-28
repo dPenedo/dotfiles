@@ -15,6 +15,8 @@ map('n', ']d', vim.diagnostic.goto_next, { desc = 'Ir al siguiente mensaje de di
 map('n', '<leader>dd', vim.diagnostic.open_float, { desc = 'Abrir mensaje de diagnóstico flotante' })
 map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Abrir lista de diagnósticos' })
 
+map('n', '<leader>b', '<cmd>lua require("buffer_manager.ui").toggle_quick_menu()<cr>', { desc = 'buffer manager' })
+
 -- Resaltado al pegar (yank)
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -199,8 +201,8 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
-map('n', '<leader>e', ':Neotree filesystem reveal toggle right<CR>', { desc = 'Alternar visibilidad de Neotree' })
--- map('n', '<leader>e', ':NvimTreeFocus<CR>', { desc = 'NvimTreeFocus' })
+-- map('n', '<leader>e', ':Neotree filesystem reveal toggle right<CR>', { desc = 'Alternar visibilidad de Neotree' })
+map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'NvimTree' })
 
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
 -- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})

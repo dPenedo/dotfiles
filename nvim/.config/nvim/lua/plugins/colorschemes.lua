@@ -162,43 +162,43 @@ return {
 	-- 			cursor_line = false,
 	-- 			status_line = false,
 	-- 		},
-	-- 		kanagawa_dragon = {
-	-- 			color_overrides = {
-	-- 				dark = {
-	-- 					bg = '#31353f',
-	-- 				},
-	-- 			},
-	-- 		},
-	-- 		mellifluous = {
-	-- 			color_overrides = {
-	-- 				dark = {
-	-- 					-- bg = '#31353f',
-	-- 					-- bg = '#232834',
-	-- 					-- bg = '#1f2637',
-	-- 					-- bg = '#232834',
-	-- 					-- bg = '#1b1e28', -- Se ve genial pero no el visual
-	-- 					--
-	-- 					-- bg = '#141c2e',
-	-- 					bg = '#111827',
-	-- 					-- bg = '#31353f',
-	-- 					-- bg = '#60687b',
-	-- 					-- shades_fg = '#31353f',
-	-- 				},
-	-- 				light = {
-	-- 					-- bg = '#31353f',
-	-- 					-- bg = '#232834',
-	-- 					-- bg = '#1f2637',
-	-- 					-- bg = '#232834',
-	-- 					-- bg = '#1b1e28', -- Se ve genial pero no el visual
-	-- 					--
-	-- 					-- bg = '#141c2e',
-	-- 					bg = '#DEDACF',
-	-- 					-- bg = '#31353f',
-	-- 					-- bg = '#60687b',
-	-- 					-- shades_fg = '#31353f',
-	-- 				},
-	-- 			},
-	-- 		},
+	-- 		-- kanagawa_dragon = {
+	-- 		-- 	color_overrides = {
+	-- 		-- 		dark = {
+	-- 		-- 			bg = '#31353f',
+	-- 		-- 		},
+	-- 		-- 	},
+	-- 		-- },
+	-- 		-- mellifluous = {
+	-- 		-- 	color_overrides = {
+	-- 		-- 		dark = {
+	-- 		-- 			-- bg = '#31353f',
+	-- 		-- 			-- bg = '#232834',
+	-- 		-- 			-- bg = '#1f2637',
+	-- 		-- 			-- bg = '#232834',
+	-- 		-- 			-- bg = '#1b1e28', -- Se ve genial pero no el visual
+	-- 		-- 			--
+	-- 		-- 			-- bg = '#141c2e',
+	-- 		-- 			bg = '#111827',
+	-- 		-- 			-- bg = '#31353f',
+	-- 		-- 			-- bg = '#60687b',
+	-- 		-- 			-- shades_fg = '#31353f',
+	-- 		-- 		},
+	-- 		-- 		light = {
+	-- 		-- 			-- bg = '#31353f',
+	-- 		-- 			-- bg = '#232834',
+	-- 		-- 			-- bg = '#1f2637',
+	-- 		-- 			-- bg = '#232834',
+	-- 		-- 			-- bg = '#1b1e28', -- Se ve genial pero no el visual
+	-- 		-- 			--
+	-- 		-- 			-- bg = '#141c2e',
+	-- 		-- 			bg = '#DEDACF',
+	-- 		-- 			-- bg = '#31353f',
+	-- 		-- 			-- bg = '#60687b',
+	-- 		-- 			-- shades_fg = '#31353f',
+	-- 		-- 		},
+	-- 		-- 	},
+	-- 		-- },
 	-- 	},
 	-- 	-- config = function()
 	-- 	--   vim.cmd.colorscheme 'melange'
@@ -280,15 +280,15 @@ return {
 	-- 	},
 	-- },
 	-- {
-	-- 	"rose-pine/neovim",
-	-- 	name = "rose-pine",
+	-- 	'rose-pine/neovim',
+	-- 	name = 'rose-pine',
 	-- 	opts = {
 	-- 		styles = {
 	-- 			bold = true,
 	-- 			italic = true,
 	-- 			transparency = false,
 	-- 		},
-	-- 	}
+	-- 	},
 	-- },
 
 	-- {
@@ -379,7 +379,13 @@ return {
 	-- 	lazy = false,
 	-- 	priority = 1000,
 	-- 	opts = {
-	-- 		transparent = false,
+	-- 		transparent = true,
+	-- 		color_overrides = {
+	-- 			maron = { background = '#000100' },
+	-- 		},
+	-- 		integrations = {
+	-- 			headlines = { enabled = true },
+	-- 		},
 	-- 	},
 	-- },
 }
