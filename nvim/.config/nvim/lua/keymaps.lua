@@ -207,8 +207,8 @@ map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'NvimTree' })
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
 -- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
-map('n', '-', ':Oil<CR>', { desc = 'Abrir Oil' })
-map('n', '<leader>-', ':Oil .<CR>', { desc = 'Abrir Oil en root' })
+map('n', '-', ':Oil --float<CR>', { desc = 'Abrir Oil' })
+map('n', '<leader>-', ':Oil . --float<CR>', { desc = 'Abrir Oil en root' })
 
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
