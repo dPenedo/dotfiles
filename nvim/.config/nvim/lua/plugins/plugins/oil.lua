@@ -6,9 +6,10 @@ return {
 			['<C-h>'] = false,
 			['<C-l>'] = false,
 			['<leader>r'] = 'actions.refresh',
-			['<C-h>'] = 'actions.parent',
-			['<C-l>'] = 'actions.select',
-			['<leader>h'] = 'actions.toggle_hidden',
+			['<leader>h'] = 'actions.parent',
+			['<leader>l'] = 'actions.select',
+			['<leader>.'] = 'actions.toggle_hidden',
+			['<leader>q'] = 'actions.close',
 		},
 	},
 	-- optional dependencies

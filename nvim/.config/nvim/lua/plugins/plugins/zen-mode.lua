@@ -10,8 +10,6 @@ return {
 			options = {
 				laststatus = 3, -- turn off the statusline in zen mode
 			},
-		}
-	}
-
-
+		},
+	},
 }

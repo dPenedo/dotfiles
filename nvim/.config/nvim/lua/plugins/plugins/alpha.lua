@@ -3,13 +3,30 @@ return {
 	event = 'VimEnter',
 	opts = function()
 		local dashboard = require 'alpha.themes.dashboard'
+		dashboard.section.header.val = {
+			'⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠛⠉⠉⢹⡆⠀',
+			'⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⢰⡏⢀⡴⠀⠀⣾⠁⠀',
+			'⠰⣟⠋⠉⠙⠛⢶⣄⠀⠀⠀⢸⣷⠟⠁⣀⡼⠋⠀⠀',
+			'⠀⢻⡄⠀⠰⢦⣄⣹⡆⠀⠀⣼⠿⠛⠛⠉⠀⠀⠀⠀',
+			'⠀⠀⠻⢦⣄⣀⣈⣻⣿⡀⢰⡏⠀⠀⠀⠀⠀⣀⠀⠀',
+			'⠀⠀⠀⠀⠈⠉⠉⠉⠈⠻⣼⡇⠀⢀⡴⠛⠋⠉⢙⡿',
+			'⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⢀⣾⣥⠾⠃⢀⣼⠃',
+			'⠀⠀⠀⠀⣤⣤⣤⣤⣀⠀⢸⣇⣼⠿⠷⠶⠶⠛⠁⠀',
+			'⠀⠀⠀⠀⢻⡄⠀⣤⣹⣧⢸⡿⠁⠀⠀⠀⠀⠀⠀⠀',
+			'⠀⠀⠀⠀⠀⠛⢶⣤⣽⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀',
+			'⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⠀⠀⠀⠀',
+			'⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⡼⢧⣄⡀⠀⠀⠀⠀⠀⠀',
+			'⠀⠀⠀⠀⣀⣀⣤⣾⣋⣁⣀⣀⣈⣙⣷⣤⣀⣀⠀⠀',
+			'⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀',
+		}
 		dashboard.section.buttons.val = {
 			-- dashboard.button("f", "󱝩" .. " Find file", ":Telescope find_files <CR>"),
 			-- dashboard.button("e", "󰩡 " .. " LF", ":Lf <CR>"),
-			dashboard.button('f', ' ' .. ' Buscar archivo', ':Telescope find_files <CR>'),
+			dashboard.button('f', ' ' .. ' Buscar archivo', '<CMD>Telescope find_files <CR>'),
 			dashboard.button('s', ' ' .. ' Restaurar Sesión', [[:lua require("persistence").load() <cr>]]),
-			dashboard.button('q', '󰩈' .. '  Salir', ':qa<CR>'), cols
-
+			dashboard.button('o', ' ' .. ' Archivos Antiguos ', '<CMD>Telescope oldfiles <cr>'),
+			dashboard.button('q', '󰩈' .. '  Salir', ':qa<CR>'),
+			cols,
 		}
 		for _, button in ipairs(dashboard.section.buttons.val) do
 			button.opts.hl = 'AlphaButtons'

@@ -27,14 +27,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 	pattern = '*',
 })
 --Format
-map('n', '==', ':Format<CR>', { desc = 'Formato al archivo' })
+map('n', '==', '<CMD>Format<CR>', { desc = 'Formato al archivo' })
 
 --Borrar palabra
 -- map('i', '<c-h>', '<Esc>cvb', { desc = 'Borrar palabra' })
 map('i', '<C-h>', '<ESC>i', { desc = 'Desplazar una posicion a la izquierda' })
-
--- map('n', '<CR>', ':', { desc = 'command con enter' })
--- map('v', '<CR>', ':', { desc = 'command con enter' })
 
 -- Mueve el bloque hacia la izquierda
 map('v', '<', '<gv', { noremap = true, silent = true })
@@ -42,7 +39,7 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 map('v', '>', '>gv', { noremap = true, silent = true })
 
 -- Trouble
-map('n', '<leader>xx', ':Trouble diagnostics toggle<cr>', { desc = 'Trouble diagnostics' })
+map('n', '<leader>xx', '<CMD>Trouble diagnostics toggle<cr>', { desc = 'Trouble diagnostics' })
 map('n', '<leader>xw', function()
 	require('trouble').toggle 'workspace_diagnostics'
 end)
@@ -111,25 +108,18 @@ map('i', '<A-=>', function()
 end, { desc = 'New Link' })
 
 -- Plugin obsidian
-map('n', '<leader>ns', ':ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
-map('n', '<leader>nT', ':ObsidianTags<cr> ', { desc = 'Obsidian Template' })
-map('n', '<leader>nr', ':ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
-map('n', '<leader>nb', ':ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
-map('n', '<leader>nl', ':ObsidianLinks<cr> ', { desc = 'Obsidian Links' })
-
--- Plugin telekasten
--- map('n', '<leader>ns', ':Telekasten find_notes<cr> ', { desc = 'Telekasten Quick Switch' })
--- map('n', '<leader>nt', ':Telekasten new_templated_note<cr> ', { desc = 'Telekasten Template' })
--- map('n', '<leader>nT', ':Telekasten show_tags<cr> ', { desc = 'Telekasten Template' })
--- map('n', '<leader>nr', ':Telekasten rename_note<cr> ', { desc = 'Telekasten Rename' })
--- map('n', '<leader>nb', ':Telekasten show_backlinks<cr> ', { desc = 'Telekasten backlinks' })
+map('n', '<leader>ns', '<CMD>ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
+map('n', '<leader>nT', '<CMD>ObsidianTags<cr> ', { desc = 'Obsidian Template' })
+map('n', '<leader>nr', '<CMD>ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
+map('n', '<leader>nb', '<CMD>ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
+map('n', '<leader>nl', '<CMD>ObsidianLinks<cr> ', { desc = 'Obsidian Links' })
 
 -- Markdown preview
-map('n', '<leader>mp', ':MarkdownPreviewToggle<cr> ', { desc = 'MarkdownPreview' })
+map('n', '<leader>mp', '<CMD>MarkdownPreviewToggle<cr> ', { desc = 'MarkdownPreview' })
 
 -- Buffer Next & Prev
-map('n', '<leader>.', ':bn<cr> ', { desc = 'BufferNext' })
-map('n', '<leader>,', ':bp<cr> ', { desc = 'BufferPrev' })
+map('n', '<leader>.', '<CMD>bn<cr> ', { desc = 'BufferNext' })
+map('n', '<leader>,', '<CMD>bp<cr> ', { desc = 'BufferPrev' })
 
 -- Neogit
 -- map('n', '<leader>ng', ':Neogit<cr> ', { desc = 'Neogit' })
@@ -151,11 +141,11 @@ map('n', ']w', diagnostic_goto(true, 'WARN'), { desc = 'Next Warning' })
 map('n', '[w', diagnostic_goto(false, 'WARN'), { desc = 'Prev Warning' })
 
 -- concealevel
-map('n', '<leader>c0', ':set conceallevel=0<cr> ', { desc = 'conceallevel 0 ' })
-map('n', '<leader>c1', ':set conceallevel=1<cr> ', { desc = 'conceallevel 1 ' })
-map('n', '<leader>c2', ':set conceallevel=2<cr> ', { desc = 'conceallevel 2 ' })
+map('n', '<leader>c0', '<CMD>set conceallevel=0<cr> ', { desc = 'conceallevel 0 ' })
+map('n', '<leader>c1', '<CMD>set conceallevel=1<cr> ', { desc = 'conceallevel 1 ' })
+map('n', '<leader>c2', '<CMD>set conceallevel=2<cr> ', { desc = 'conceallevel 2 ' })
 
-map('n', '<leader>o', ':delmarks ', { desc = 'Borrar mark' })
+map('n', '<leader>o', '<CMD>delmarks ', { desc = 'Borrar mark' })
 
 map('n', "'", '`', { desc = "backtick asignado a '" })
 
@@ -169,11 +159,7 @@ map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 map('n', '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
 
 -- Guardar rápidamente el búfer actual o todos los búferes
-map('n', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>w', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
-map('n', '<leader>qq', '<CMD>quit<CR>', { desc = 'Cerrar el búfer actual' })
-map('i', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
-map('v', '<A-s>', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>W', '<CMD>wall<CR>', { desc = 'Guardar todos los búferes' })
 -- Mapeos para salir del modo de inserción
 map('i', 'jj', '<ESC>', { desc = 'Salir del modo de inserción' })
@@ -184,10 +170,10 @@ map('i', '<C-l>', '<ESC>la', { desc = 'Desplazar una posicion a la derecha' })
 map('n', "''", '<CMD>b#<CR>', { desc = 'Ir al último búfer' })
 
 -- Alternar ajuste de línea
-map('n', '<a-w>', ':set wrap!<CR>', { desc = 'Alternar ajuste de línea' })
+map('n', '<a-w>', '<CMD>set wrap!<CR>', { desc = 'Alternar ajuste de línea' })
 
 -- Limpiar resaltado de búsqueda
-map('n', '<Esc>', ':nohlsearch<CR>', { desc = 'Limpiar resaltado de búsqueda' })
+map('n', '<Esc>', '<CMD>nohlsearch<CR>', { desc = 'Limpiar resaltado de búsqueda' })
 
 -- Dividir ventanas
 -- map('n', '<leader>\\', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
@@ -202,60 +188,46 @@ map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 -- Administradores de archivos y terminales
 -- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
 -- map('n', '<leader>e', ':Neotree filesystem reveal toggle right<CR>', { desc = 'Alternar visibilidad de Neotree' })
-map('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', { desc = 'NvimTree' })
+map('n', '<leader>e', '<CMD>NvimTreeFindFileToggle<CR>', { desc = 'NvimTree' })
 
 -- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
 -- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
 -- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
-map('n', '-', ':Oil --float<CR>', { desc = 'Abrir Oil' })
-map('n', '<leader>-', ':Oil . --float<CR>', { desc = 'Abrir Oil en root' })
+map('n', '-', '<CMD>Oil --float<CR>', { desc = 'Abrir Oil' })
+map('n', '<leader>h', '<CMD>Oil --float<CR>', { desc = 'Abrir Oil' })
+map('n', '<leader>-', '<CMD>Oil . --float<CR>', { desc = 'Abrir Oil en root' })
 
 -- Mapeos para el terminal
--- map('n', '<leader>ts', ':botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
-map('n', '<leader>tn', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
-map('n', '<leader>`', ':terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
-map('n', '<leader>Y', ':terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
-map('n', '<leader>L', ':terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
+-- map('n', '<leader>ts', '<CMD>botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>tn', '<CMD>terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>`', '<CMD>terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
+map('n', '<leader>Y', '<CMD>terminal yazi .<CR>:startinsert<CR>', { desc = 'Abrir terminal Yazi' })
+map('n', '<leader>L', '<CMD>terminal lf .<CR>:startinsert<CR>', { desc = 'Abrir terminal LF' })
 map('t', '<C-\\>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<C-q>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 
 map('t', '<C-h>', '<C-\\><C-n><CR><C-w>w', { desc = 'Salir del modo terminal' })
 
--- map('t', '<C-k>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
--- map('t', '<C-j>', '<C-\\><C-n><C-w>w', { desc = 'Cambiar de split desde el terminal' })
--- map('t', '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Cambiar de split desde el terminal' })
-
-map('t', '<A-`>', '<C-\\><C-n><CR>:TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
-map('n', '<A-`>', ':TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
+map('t', '<A-`>', '<C-\\><C-n><CR><CMD>TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
+map('n', '<A-`>', '<CMD>TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
 
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
-
 -- map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 map('t', '<C-l>', '<C-u>clear<CR>', { desc = 'Limpiar la pantalla del terminal' })
 
 -- Gestión de pestañas
-map('n', '<leader><tab>', ':tabedit<CR>', { desc = 'Crear pestaña' })
-map('n', '<leader>1', ':tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
-map('n', '<leader>2', ':tabn 2<CR>', { desc = 'Ir a la pestaña 2' })
-map('n', '<leader>3', ':tabn 3<CR>', { desc = 'Ir a la pestaña 3' })
-map('n', '<leader>4', ':tabn 4<CR>', { desc = 'Ir a la pestaña 4' })
-map('n', '<leader>5', ':tabn 5<CR>', { desc = 'Ir a la pestaña 5' })
-map('n', '<leader>6', ':tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
-map('n', '<leader>7', ':tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
-map('n', '<leader>8', ':tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
-map('n', '<leader>9', ':tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
--- map('n', '<leader>1', '<Cmd>BufferGoto1<CR>', { desc = 'Ir a la pestaña 1' })
--- map('n', '<leader>2', '<Cmd>BufferGoto2<CR>', { desc = 'Ir a la pestaña 2' })
--- map('n', '<leader>3', '<Cmd>BufferGoto3<CR>', { desc = 'Ir a la pestaña 3' })
--- map('n', '<leader>4', '<Cmd>BufferGoto4<CR>', { desc = 'Ir a la pestaña 4' })
--- map('n', '<leader>5', '<Cmd>BufferGoto5<CR>', { desc = 'Ir a la pestaña 5' })
--- map('n', '<leader>6', '<Cmd>BufferGoto6<CR>', { desc = 'Ir a la pestaña 6' })
--- map('n', '<leader>7', '<Cmd>BufferGoto7<CR>', { desc = 'Ir a la pestaña 7' })
--- map('n', '<leader>8', '<Cmd>BufferGoto8<CR>', { desc = 'Ir a la pestaña 8' })
--- map('n', '<leader>9', '<Cmd>BufferGoto9<CR>', { desc = 'Ir a la pestaña 9' })
---
+map('n', '<leader><tab>', '<CMD>tabedit<CR>', { desc = 'Crear pestaña' })
+map('n', '<leader>1', '<CMD>tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
+map('n', '<leader>2', '<CMD>tabn 2<CR>', { desc = 'Ir a la pestaña 2' })
+map('n', '<leader>3', '<CMD>tabn 3<CR>', { desc = 'Ir a la pestaña 3' })
+map('n', '<leader>4', '<CMD>tabn 4<CR>', { desc = 'Ir a la pestaña 4' })
+map('n', '<leader>5', '<CMD>tabn 5<CR>', { desc = 'Ir a la pestaña 5' })
+map('n', '<leader>6', '<CMD>tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
+map('n', '<leader>7', '<CMD>tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
+map('n', '<leader>8', '<CMD>tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
+map('n', '<leader>9', '<CMD>tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
 -- map('n', '<leader>b', '<Cmd>BufferPick<CR>', { desc = 'Telescope buffers' })
 -- Copiar/pegar Clipboard
 -- map('n', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
@@ -263,53 +235,42 @@ map('n', '<leader>9', ':tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
 map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar seleccion portapapeles' })
 map('n', '<leader>y', 'm`V"+y``', { desc = 'Copiar linea al portapapeles' })
-map('v', '<leader>P', ':Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
-map('n', '<leader>P', ':Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
-map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
-map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
+map('n', '<leader>p', '<CMD>Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
+map('v', '<leader>p', '<CMD>Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
+-- map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
+-- map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
 
 -- Scroll
 map('n', 'zx', 'zt6k6j', { desc = 'Scrollear teniendo el cursor en el mismo sitio' })
 
--- Mapeos para moverse entre ventanas
--- map('n', '<Tab>', '<C-w>w', { desc = 'Moverse a la siguiente ventana' })
--- map('n', '<C-h>', '<C-w>h', { desc = 'Moverse a la ventana izquierda' })
--- map('n', '<C-j>', '<C-w>j', { desc = 'Moverse a la ventana inferior' })
--- map('n', '<C-k>', '<C-w>k', { desc = 'Moverse a la ventana superior' })
--- map('n', '<C-l>', '<C-w>l', { desc = 'Moverse a la ventana derecha' })
-
 -- Mapeos para redimensionar ventanas
-map('n', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
-map('n', '<C-left>', ':vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
-map('n', '<C-down>', ':horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
-map('n', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
+map('n', '<C-right>', '<CMD>vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
+map('n', '<C-left>', '<CMD>vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
+map('n', '<C-down>', '<CMD>horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
+map('n', '<C-up>', '<CMD>horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
 
-map('t', '<C-right>', ':vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
-map('t', '<C-left>', ':vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
-map('t', '<C-down>', ':horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
-map('t', '<C-up>', ':horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
--- Java:
+map('t', '<C-right>', '<CMD>vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
+map('t', '<C-left>', '<CMD>vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
+map('t', '<C-down>', '<CMD>horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
+map('t', '<C-up>', '<CMD>horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
+-- Java
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 
 -- Telescope
-map('n', '<leader>f', ':Telescope find_files <CR>', { desc = 'Telescope files' })
-map('n', '<leader>l', ':Telescope current_buffer_fuzzy_find<CR>', { desc = 'Telescope para en el buffer actual' })
-map('n', '<leader><space>', ':Telescope buffers<CR>', { desc = 'Telescope buffers' })
-map('n', '<leader>gg', ':Telescope live_grep<CR>', { desc = 'Telescope grep' })
-map('n', '<leader>sw', ':Telescope grep_string<CR>', { desc = '[S]earch current [W]ord' })
-map('n', '<leader>sd', ':Telescope diagnostics<CR>', { desc = '[S]earch [D]iagnostics' })
-map('n', '<leader>nf', ':NotasBuscar<CR>', { desc = '[N]otas [F]ind' })
-map('n', '<leader>u', ':Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
-map('n', ',t', ':Telescope treesitter<CR>', { desc = 'Telescope para en Treesitter' })
-map('n', '<leader>tt', ':TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
-map('n', ',h', ':Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
-map('n', ',m', ':Telescope marks<CR>', { desc = 'Telescope para marks' })
-map('n', ',k', ':Telescope keymaps<CR>', { desc = 'keymaps' })
-map('n', ',o', ':Telescope oldfiles<CR>', { desc = 'Telescope oldfiles' })
-map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<cr>', { desc = 'Code actions' })
-map('n', 'gr', ':Telescope lsp_references<CR>', { desc = 'Telescope lsp references' })
-map('n', '<leader>aa', ':Telescope commands<CR>', { desc = 'Telescope commands' })
+map('n', '<leader>f', '<CMD>Telescope find_files <CR>', { desc = 'Telescope files' })
+map('n', '<leader>/', '<CMD>Telescope current_buffer_fuzzy_find<CR>', { desc = 'Telescope para en el buffer actual' })
+map('n', '<leader><space>', '<CMD>Telescope buffers<CR>', { desc = 'Telescope buffers' })
+map('n', '<leader>gg', '<CMD>Telescope live_grep<CR>', { desc = 'Telescope grep' })
+map('n', '<leader>nf', '<CMD>NotasBuscar<CR>', { desc = '[N]otas [F]ind' })
+map('n', '<leader>u', '<CMD>Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
+map('n', '<leader>tt', '<CMD>TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
+map('n', ',h', '<CMD>Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
+map('n', ',k', '<CMD>Telescope keymaps<CR>', { desc = 'keymaps' })
+map('n', '<leader>so', '<CMD>Telescope oldfiles<CR>', { desc = 'Telescope oldfiles' })
+map('n', '<leader>ca', '<CMD>lua vim.lsp.buf.code_action()<cr>', { desc = 'Code actions' })
+map('n', 'gr', '<CMD>Telescope lsp_references<CR>', { desc = 'Telescope lsp references' })
+map('n', '<leader>aa', '<CMD>Telescope commands<CR>', { desc = 'Telescope commands' })
 
 -- load the session for the current directory
 map('n', '<leader>S', function()
