@@ -209,8 +209,8 @@ map('t', '<Esc>', '<C-\\><C-n><CR>', { desc = 'Salir del modo terminal' })
 
 map('t', '<C-h>', '<C-\\><C-n><CR><C-w>w', { desc = 'Salir del modo terminal' })
 
-map('t', '<A-`>', '<C-\\><C-n><CR><CMD>TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
-map('n', '<A-`>', '<CMD>TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
+-- map('t', '<A-`>', '<C-\\><C-n><CR><CMD>TermToggle<CR>', { desc = 'Abrir ToggleTerm' })
+-- map('n', '<A-`>', '<CMD>TermToggle<CR><CR>', { desc = 'Abrir ToggleTerm' })
 
 -- map('n', '<A-e>', ':Lf<CR>', { desc = 'Abrir lf' })
 -- map('n', '<A-e>', ':Yazi<CR>', { desc = 'Abrir lf' })
@@ -250,10 +250,6 @@ map('n', '<C-left>', '<CMD>vertical resize -5<CR>', { desc = 'Reducir el tamaño
 map('n', '<C-down>', '<CMD>horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
 map('n', '<C-up>', '<CMD>horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
 
-map('t', '<C-right>', '<CMD>vertical resize +5<CR>', { desc = 'Aumentar el tamaño de la ventana verticalmente' })
-map('t', '<C-left>', '<CMD>vertical resize -5<CR>', { desc = 'Reducir el tamaño de la ventana verticalmente' })
-map('t', '<C-down>', '<CMD>horizontal resize +2<CR>', { desc = 'Aumentar el tamaño de la ventana horizontalmente' })
-map('t', '<C-up>', '<CMD>horizontal resize -2<CR>', { desc = 'Reducir el tamaño de la ventana horizontalmente' })
 -- Java
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 

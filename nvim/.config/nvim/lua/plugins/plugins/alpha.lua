@@ -26,7 +26,6 @@ return {
 			dashboard.button('s', ' ' .. ' Restaurar Sesión', [[:lua require("persistence").load() <cr>]]),
 			dashboard.button('o', ' ' .. ' Archivos Antiguos ', '<CMD>Telescope oldfiles <cr>'),
 			dashboard.button('q', '󰩈' .. '  Salir', ':qa<CR>'),
-			cols,
 		}
 		for _, button in ipairs(dashboard.section.buttons.val) do
 			button.opts.hl = 'AlphaButtons'
@@ -35,7 +34,7 @@ return {
 		-- dashboard.section.header.opts.hl = 'AlphaHeader'
 		dashboard.section.buttons.opts.hl = 'AlphaButtons'
 		-- dashboard.section.footer.opts.hl = 'AlphaFooter'
-		dashboard.opts.layout[1].val = 3
+		dashboard.opts.layout[1].val = 2
 		return dashboard
 	end,
 	config = function(_, dashboard)
