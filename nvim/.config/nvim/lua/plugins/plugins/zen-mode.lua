@@ -12,4 +12,8 @@ return {
 			},
 		},
 	},
+	keys = {
+
+		{ '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' } },
+	},
 }

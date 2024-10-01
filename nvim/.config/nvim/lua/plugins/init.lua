@@ -33,7 +33,7 @@ require('lazy').setup({
   -- Useful plugin to show you pending keybinds.
   -- { 'folke/which-key.nvim',     opts = {} },
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim',        event = 'VeryLazy', opts = {} },
+  -- { 'numToStr/Comment.nvim',        event = 'VeryLazy', opts = {} },
 
   -- { 'echasnovski/mini.starter', version = '*', opts = {} },
   {
@@ -45,12 +45,6 @@ require('lazy').setup({
   {
     'willothy/flatten.nvim',
     -- event = 'VeryLazy',
-    opts = {
-    },
-  },
-  {
-    'folke/persistence.nvim',
-    event = 'BufReadPre',
     opts = {},
   },
   {
@@ -70,10 +64,10 @@ require('lazy').setup({
     opts = {
 
       highlight = {
-        comments_only = false
+        comments_only = false,
       },
       keywords = {
-        NOTE = { icon = " ", color = "info" },
+        NOTE = { icon = ' ', color = 'info' },
       },
     },
   },

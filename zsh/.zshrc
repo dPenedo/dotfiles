@@ -13,6 +13,10 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
+# Aceptar el autocompletado
+bindkey '^A' autosuggest-accept
+
+
 _comp_options+=(globdots)
 source ~/.zsh/completion.zsh
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme

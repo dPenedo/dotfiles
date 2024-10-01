@@ -21,4 +21,7 @@ return {
 	opts = {
 		enable_chat = true,
 	},
+	keys = {
+		{ '<leader>co', '<cmd>CodeiumToggle<cr>', desc = 'Codeium Toggle' },
+	},
 }

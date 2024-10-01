@@ -14,4 +14,8 @@ return {
 	},
 	-- optional dependencies
 	dependencies = { 'nvim-tree/nvim-web-devicons' },
+	keys = {
+		{ '<leader>h', '<CMD>Oil --float<CR>',   { desc = 'Abrir Oil' } },
+		{ '<leader>-', '<CMD>Oil . --float<CR>', { desc = 'Abrir Oil en root' } },
+	},
 }

@@ -38,24 +38,6 @@ map('v', '<', '<gv', { noremap = true, silent = true })
 -- Mueve el bloque hacia la derecha
 map('v', '>', '>gv', { noremap = true, silent = true })
 
--- Trouble
-map('n', '<leader>xx', '<CMD>Trouble diagnostics toggle<cr>', { desc = 'Trouble diagnostics' })
-map('n', '<leader>xw', function()
-	require('trouble').toggle 'workspace_diagnostics'
-end)
-map('n', '<leader>xd', function()
-	require('trouble').toggle 'document_diagnostics'
-end)
-map('n', '<leader>xq', function()
-	require('trouble').toggle 'quickfix'
-end)
-map('n', '<leader>xl', function()
-	require('trouble').toggle 'loclist'
-end)
-map('n', 'gR', function()
-	require('trouble').toggle 'lsp_references'
-end)
-
 -- Notes
 -- New Notes
 map('n', '<leader>nn', function()
@@ -107,13 +89,6 @@ map('i', '<A-=>', function()
 	}
 end, { desc = 'New Link' })
 
--- Plugin obsidian
-map('n', '<leader>ns', '<CMD>ObsidianQuickSwitch<cr> ', { desc = 'Obsidian Quick Switch' })
-map('n', '<leader>nT', '<CMD>ObsidianTags<cr> ', { desc = 'Obsidian Template' })
-map('n', '<leader>nr', '<CMD>ObsidianRename<cr> ', { desc = 'Obsidian Rename' })
-map('n', '<leader>nb', '<CMD>ObsidianBacklinks<cr> ', { desc = 'Obsidian backlinks' })
-map('n', '<leader>nl', '<CMD>ObsidianLinks<cr> ', { desc = 'Obsidian Links' })
-
 -- Markdown preview
 map('n', '<leader>mp', '<CMD>MarkdownPreviewToggle<cr> ', { desc = 'MarkdownPreview' })
 
@@ -155,9 +130,6 @@ map('n', ',,', ',', { desc = 'coma para f' })
 map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 
--- Zen mode
-map('n', '<leader>z', ':ZenMode<CR>', { desc = 'Entra o sale  en Zen mode' })
-
 -- Guardar rápidamente el búfer actual o todos los búferes
 map('n', '<leader>w', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>W', '<CMD>wall<CR>', { desc = 'Guardar todos los búferes' })
@@ -179,23 +151,11 @@ map('n', '<Esc>', '<CMD>nohlsearch<CR>', { desc = 'Limpiar resaltado de búsqued
 -- map('n', '<leader>\\', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
 -- map('n', '<leader>|', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })key
 map('n', '<leader><CR>', '<CMD>vsplit<CR><c-w>l', { desc = 'Dividir verticalmente la ventana' })
--- map('n', '<leader>-', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
+map('n', '<leader>\\', '<CMD>split<CR><c-w>j', { desc = 'Dividir horizontalmente la ventana' })
 
 -- Colores de resaltado
 map('n', '<leader>cc', '<CMD>lua require("nvim-highlight-colors").toggle()<CR>',
 	{ desc = 'Alternar colores de resaltado' })
-
--- Administradores de archivos y terminales
--- map('n', '<leader>e', ':Neotree position=float float<CR>', { desc = 'Abrir administrador de archivos Neotree' })
--- map('n', '<leader>e', ':Neotree filesystem reveal toggle right<CR>', { desc = 'Alternar visibilidad de Neotree' })
-map('n', '<leader>e', '<CMD>NvimTreeFindFileToggle<CR>', { desc = 'NvimTree' })
-
--- map('n', '<leader>e', ':lua require("mini.files").open(vim.api.nvim_buf_get_name(0), true)<CR>', {desc = 'Open mini.files floating file manager at current directory'})
--- map('n', '<leader>E', ':lua require("mini.files").open()<CR>', {desc = 'Open mini.files'})
--- map('n', '<leader>E', ':lua require("mini.files").open(vim.loop.cwd(), true)<CR>', { desc = 'Abrir mini files en la raíz' })
-map('n', '-', '<CMD>Oil --float<CR>', { desc = 'Abrir Oil' })
-map('n', '<leader>h', '<CMD>Oil --float<CR>', { desc = 'Abrir Oil' })
-map('n', '<leader>-', '<CMD>Oil . --float<CR>', { desc = 'Abrir Oil en root' })
 
 -- Mapeos para el terminal
 -- map('n', '<leader>ts', '<CMD>botright terminal<CR>:startinsert<CR>', { desc = 'Abrir terminal' })
@@ -252,35 +212,3 @@ map('n', '<C-up>', '<CMD>horizontal resize -2<CR>', { desc = 'Reducir el tamaño
 
 -- Java
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
-
--- Telescope
-map('n', '<leader>f', '<CMD>Telescope find_files <CR>', { desc = 'Telescope files' })
-map('n', '<leader>/', '<CMD>Telescope current_buffer_fuzzy_find<CR>', { desc = 'Telescope para en el buffer actual' })
-map('n', '<leader><space>', '<CMD>Telescope buffers<CR>', { desc = 'Telescope buffers' })
-map('n', '<leader>gg', '<CMD>Telescope live_grep<CR>', { desc = 'Telescope grep' })
-map('n', '<leader>nf', '<CMD>NotasBuscar<CR>', { desc = '[N]otas [F]ind' })
-map('n', '<leader>u', '<CMD>Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' })
-map('n', '<leader>tt', '<CMD>TodoTelescope<CR>', { desc = 'Telescope para TODOs' })
-map('n', ',h', '<CMD>Telescope help_tags<CR>', { desc = 'Telescope para etiquetas de ayuda' })
-map('n', ',k', '<CMD>Telescope keymaps<CR>', { desc = 'keymaps' })
-map('n', '<leader>so', '<CMD>Telescope oldfiles<CR>', { desc = 'Telescope oldfiles' })
-map('n', '<leader>ca', '<CMD>lua vim.lsp.buf.code_action()<cr>', { desc = 'Code actions' })
-map('n', 'gr', '<CMD>Telescope lsp_references<CR>', { desc = 'Telescope lsp references' })
-map('n', '<leader>aa', '<CMD>Telescope commands<CR>', { desc = 'Telescope commands' })
-
--- load the session for the current directory
-map('n', '<leader>S', function()
-	require('persistence').load()
-end)
--- select a session to load
-map('n', '<leader>se', function()
-	require('persistence').select()
-end)
--- load the last session
-map('n', '<leader>sL', function()
-	require('persistence').load { last = true }
-end)
--- stop Persistence => session won't be saved on exit
-map('n', '<leader>sq', function()
-	require('persistence').stop()
-end)

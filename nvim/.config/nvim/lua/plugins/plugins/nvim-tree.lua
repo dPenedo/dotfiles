@@ -31,4 +31,7 @@ return {
 			},
 		},
 	},
+	keys = {
+		{ '<leader>e', '<CMD>NvimTreeFindFileToggle<CR>', { desc = 'NvimTree' } },
+	},
 }
