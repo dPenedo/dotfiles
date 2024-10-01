@@ -5,7 +5,7 @@ return {
 		opts = {
 			-- transparent = true, -- do not set background color
 			compile = true,
-			transparent = true,
+			transparent = false,
 			functionStyle = { bold = true },
 			dimInactive = false,
 			typeStyle = { bold = false },
@@ -43,10 +43,10 @@ return {
 					-- sumiInk6 = '#4A433D',
 
 					--Neutral:
-					sumiInk0 = '#161616',
+					sumiInk0 = '#121212',
 					sumiInk1 = '#181818',
 					sumiInk2 = '#1a1a1a',
-					sumiInk3 = '#1F1F1F',
+					sumiInk3 = '#121212',
 					sumiInk4 = '#2A2A2A',
 					sumiInk5 = '#363636',
 					sumiInk6 = '#545454',

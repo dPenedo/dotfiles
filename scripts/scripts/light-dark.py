@@ -18,6 +18,7 @@ CONFIGURATIONS = {
     "tmux": {"directory": os.path.expanduser("~/.tmux/"), "file": "tmux-theme.conf"},
     "bat": {"directory": os.path.expanduser("~/.config/bat/"), "file": "config"},
     "fzf": {"directory": os.path.expanduser("~/.fzf/"), "file": "fzf-config.sh"},
+    "rofi": {"directory": os.path.expanduser("~/.config/rofi/"), "file": "config.rasi"},
     "kitty": {
         "directory": os.path.expanduser("~/.config/kitty/"),
         "file": "current-theme.conf",
