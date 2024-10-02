@@ -8,6 +8,8 @@ return {
 			['<leader>r'] = 'actions.refresh',
 			['<leader>h'] = 'actions.parent',
 			['<leader>l'] = 'actions.select',
+			['<C-h>'] = 'actions.parent',
+			['<C-l>'] = 'actions.select',
 			['<leader>.'] = 'actions.toggle_hidden',
 			['<leader>q'] = 'actions.close',
 		},
@@ -15,7 +17,7 @@ return {
 	-- optional dependencies
 	dependencies = { 'nvim-tree/nvim-web-devicons' },
 	keys = {
-		{ '<leader>h', '<CMD>Oil --float<CR>',   { desc = 'Abrir Oil' } },
-		{ '<leader>-', '<CMD>Oil . --float<CR>', { desc = 'Abrir Oil en root' } },
+		{ '<leader>h', '<CMD>Oil <CR>',  { desc = 'Abrir Oil' } },
+		{ '<leader>-', '<CMD>Oil .<CR>', { desc = 'Abrir Oil en root' } },
 	},
 }

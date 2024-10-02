@@ -12,8 +12,7 @@ else
 	require 'options'
 	require 'color-mode'
 
-
-
+	-- Restaurar el cursor
 	vim.cmd [[
   augroup RestoreCursorShapeOnExit
 		autocmd!
@@ -30,14 +29,13 @@ vim.cmd [[
   let g:mkdp_browserfunc = 'OpenMarkdownPreview'
 ]]
 
-
 -- Probando neovide
 if vim.g.neovide then
-	vim.o.guifont = "Hack Nerd Font:h10.5" -- text below applies for VimScript
+	vim.o.guifont = 'Hack Nerd Font:h10.5' -- text below applies for VimScript
 	vim.g.neovide_transparency = 0.9
 	vim.g.neovide_confirm_quit = true
 	vim.g.neovide_cursor_animation_length = 0.02
 	vim.g.neovide_cursor_trail_size = 0.3
 	vim.g.neovide_cursor_animate_in_insert_mode = true
-	vim.g.neovide_cursor_vfx_mode = "ripple"
+	vim.g.neovide_cursor_vfx_mode = 'ripple'
 end

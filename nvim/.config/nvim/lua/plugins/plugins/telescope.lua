@@ -5,6 +5,7 @@ return {
 	dependencies = {
 		'nvim-lua/plenary.nvim',
 		'debugloop/telescope-undo.nvim',
+
 		-- "lexay/telescope-zoxide.nvim",
 		{
 			'nvim-telescope/telescope-fzf-native.nvim',

@@ -1,7 +1,6 @@
 local function map(mode, key, value, options)
 	vim.keymap.set(mode, key, value, options or { silent = true })
 end
-
 -- Mapeo para <Space> (espacio) usando vim.keymap
 map({ 'n', 'v' }, '<Space>', '<Nop>')
 
@@ -13,8 +12,7 @@ map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
 map('n', '[d', vim.diagnostic.goto_prev, { desc = 'Ir al mensaje de diagnóstico anterior' })
 map('n', ']d', vim.diagnostic.goto_next, { desc = 'Ir al siguiente mensaje de diagnóstico' })
 map('n', '<leader>dd', vim.diagnostic.open_float, { desc = 'Abrir mensaje de diagnóstico flotante' })
-map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Abrir lista de diagnósticos' })
-
+-- map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Abrir lista de diagnósticos' })
 map('n', '<leader>b', '<cmd>lua require("buffer_manager.ui").toggle_quick_menu()<cr>', { desc = 'buffer manager' })
 
 -- Resaltado al pegar (yank)
@@ -188,17 +186,17 @@ map('n', '<leader>6', '<CMD>tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
 map('n', '<leader>7', '<CMD>tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
 map('n', '<leader>8', '<CMD>tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
 map('n', '<leader>9', '<CMD>tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
--- map('n', '<leader>b', '<Cmd>BufferPick<CR>', { desc = 'Telescope buffers' })
+
 -- Copiar/pegar Clipboard
 -- map('n', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
 -- map('v', '<A-d>', '"_dd', { desc = 'Eliminar línea sin afectar el registro' })
 map('v', '<A-c>', '"+y', { desc = 'Copiar al portapapeles' })
 map('v', '<leader>y', '"+y', { desc = 'Copiar seleccion portapapeles' })
 map('n', '<leader>y', 'm`V"+y``', { desc = 'Copiar linea al portapapeles' })
-map('n', '<leader>p', '<CMD>Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
-map('v', '<leader>p', '<CMD>Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
--- map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
--- map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
+map('n', '<leader>sp', '<CMD>Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
+map('v', '<leader>sp', '<CMD>Telescope registers<cr>', { desc = 'Buscar registros en telescope' })
+map('n', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
+map('v', '<leader>p', '"+p', { desc = 'Pegar del portapapeles' })
 map('n', '<leader>v', 'ggVG', { desc = 'Seleccionar todo' })
 
 -- Scroll
@@ -212,3 +210,9 @@ map('n', '<C-up>', '<CMD>horizontal resize -2<CR>', { desc = 'Reducir el tamaño
 
 -- Java
 map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
+
+--QuickFix
+map('n', '<leader>qf', '<CMD>copen<CR>', { desc = 'Abrir lista QuickFix' })
+map('n', '<leader>j', '<CMD>cnext<CR>', { desc = 'Siguiente QuickFix' })
+map('n', '<leader>k', '<CMD>cprev<CR>', { desc = 'Anterior QuickFix' })
+map('n', '<leader>ll', '<CMD>lua vim.diagnostic.setqflist()<CR>', { desc = 'Set Local List' })
