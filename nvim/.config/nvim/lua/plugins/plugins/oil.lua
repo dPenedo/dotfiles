@@ -13,11 +13,16 @@ return {
 			['<leader>.'] = 'actions.toggle_hidden',
 			['<leader>q'] = 'actions.close',
 		},
+		view_options = {
+			-- Show files and directories that start with "."
+			show_hidden = true,
+		},
 	},
 	-- optional dependencies
 	dependencies = { 'nvim-tree/nvim-web-devicons' },
 	keys = {
 		{ '<leader>h', '<CMD>Oil <CR>',  { desc = 'Abrir Oil' } },
+		{ '<C-h>',     '<CMD>Oil <CR>',  { desc = 'Abrir Oil' } },
 		{ '<leader>-', '<CMD>Oil .<CR>', { desc = 'Abrir Oil en root' } },
 	},
 }
