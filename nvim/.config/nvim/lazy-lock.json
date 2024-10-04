@@ -24,6 +24,7 @@
   "mason-lspconfig.nvim": { "branch": "main", "commit": "25c11854aa25558ee6c03432edfa0df0217324be" },
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "melange-nvim": { "branch": "master", "commit": "f6bd55e19ab7b3af070b0a0a9596fa800cf67707" },
+  "mellifluous.nvim": { "branch": "main", "commit": "cb70855442eae1ddab70c82e672c80d9dc9538f7" },
   "modus-themes.nvim": { "branch": "master", "commit": "24b34562a71cb75769411ca3146d35c093e7f4e6" },
   "newpaper.nvim": { "branch": "main", "commit": "1b54d910152dcb8d460b852bdd6288dfc5a07a92" },
   "nightfox.nvim": { "branch": "main", "commit": "7557f26defd093c4e9bc17f28b08403f706f5a44" },
