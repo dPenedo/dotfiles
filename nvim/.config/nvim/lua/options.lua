@@ -64,4 +64,4 @@ vim.o.shiftwidth = 4
 -- })
 
 -- Desactivar la barra de estado en nvim-tree
-vim.opt.laststatus = 3
+vim.opt.laststatus = 2

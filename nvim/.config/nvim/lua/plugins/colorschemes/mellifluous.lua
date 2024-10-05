@@ -3,7 +3,6 @@ return {
 	lazy = false,
 	priority = 1000,
 	opts = {
-		color_set = 'mellifluous',
 		-- color_set = 'mellifluous',
 		-- dim_inactive = true,
 		transparent_background = {

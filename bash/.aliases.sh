@@ -16,6 +16,8 @@ alias vim='NVIM_APPNAME=simplevim nvim' # LazyVim
 
 alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 
+alias fd='fdfind'
+
 # alias n='nvim -c Lf'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'

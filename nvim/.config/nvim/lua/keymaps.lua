@@ -216,3 +216,17 @@ map('n', '<leader>qf', '<CMD>copen<CR>', { desc = 'Abrir lista QuickFix' })
 map('n', '<leader>j', '<CMD>cnext<CR>', { desc = 'Siguiente QuickFix' })
 map('n', '<leader>k', '<CMD>cprev<CR>', { desc = 'Anterior QuickFix' })
 map('n', '<leader>ll', '<CMD>lua vim.diagnostic.setqflist()<CR>', { desc = 'Set Local List' })
+
+vim.api.nvim_create_user_command('OilDirectory', function()
+	require('telescope.builtin').find_files {
+		find_command = { 'fdfind', '--type', 'd' },
+		attach_mappings = function(_, map)
+			map('i', '<CR>', function(prompt_bufnr)
+				local selection = require('telescope.actions.state').get_selected_entry()
+				require('telescope.actions').close(prompt_bufnr)
+				require('oil').open(selection.path)
+			end)
+			return true
+		end,
+	}
+end, {})
