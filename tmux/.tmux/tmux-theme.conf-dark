@@ -38,20 +38,17 @@ set -g pane-active-border-style "fg=$color1"
 # Status bar colors and format
 set -g status-style "fg=$color1,bg=$color3"
 
-# Simplified window status format (no separators, just the window number and name)
-setw -g window-status-current-format "#[fg=$color3,bg=$color1,bold] #I: #W #[fg=$color1,bg=$color3,bold]"
+# setw -g window-status-current-format "#[fg=$color3,bg=$color1,bold] #I: #W #[fg=$color1,bg=$color3,bold]"
+setw -g window-status-current-format "#[fg=$color3,bg=$color1,bold] #I: #W #[fg=$color1,bg=$color3,bold]"
 
 
 
-# Simplified status-left (just session name)
 set -g status-left "#[fg=$color2,bg=$color4,nobold] #S #[fg=$color2,bg=$color3,nobold] "
 
-# Status-right with time and current path, no separators
 set -g status-right "#[fg=$color1,bg=$color4,nobold] #{b:pane_current_path} #[fg=$color2,bg=$color4,bold] %H:%M "
 
 # Adjust status lengths
 set -g status-left-length 40
 set -g status-right-length 40
 
-# Status position
 set -g status-position bottom
