@@ -27,10 +27,10 @@ local function lsp()
 	local info = ''
 
 	if count['errors'] ~= 0 then
-		errors = ' %#LspDiagnosticsSignError# ' .. count['errors']
+		errors = ' %#DiagnosticError# ' .. count['errors']
 	end
 	if count['warnings'] ~= 0 then
-		warnings = ' %#LspDiagnosticsSignWarning# ' .. count['warnings']
+		warnings = ' %#WarningMsg# ' .. count['warnings']
 	end
 	if count['hints'] ~= 0 then
 		hints = ' %#LspDiagnosticsSignHint# ' .. count['hints']
@@ -48,8 +48,8 @@ local function statusline()
 	local modified_color = '%#WarningMsg#'  -- Color para archivos modificados
 	local default_color = '%#Normal#'       -- Color por defecto para el resto de la línea
 	local align_right = '%='                -- Para alinear a la derecha
-	local lsp_info = lsp()
-	local branch = ' ' .. git_branch() .. ' '
+	local lsp_info = '' .. lsp()
+	local branch = '  ' .. git_branch() .. ' '
 	local file_name = ' %f '
 	local modified = '%m'
 	local linecol = ' L:%l/%L ' -- Muestra el número de línea actual y el total
