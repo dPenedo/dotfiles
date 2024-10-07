@@ -52,7 +52,7 @@ require('mason-lspconfig').setup()
 -- Servidores LSP que queremos activar
 local servers = {
 	pyright = {},
-	jdtls = {},
+	-- jdtls = {},
 	ts_ls = {},
 	lua_ls = {
 		Lua = {

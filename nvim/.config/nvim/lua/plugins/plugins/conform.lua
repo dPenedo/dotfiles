@@ -1,5 +1,5 @@
 return {
 	'stevearc/conform.nvim',
-	event = 'InsertEnter',
+	event = { 'BufWritePre' },
 	opts = {},
 }

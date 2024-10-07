@@ -1,8 +1,6 @@
 --[[
-
      Awesome WM configuration template
      github.com/lcpz
-
 --]]
 
 -- {{{ Required libraries
@@ -22,9 +20,6 @@ local lain = require("lain")
 local freedesktop = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local mytable = awful.util.table or gears.table -- 4.{0,1} compatibility
-
-local volume = lain.widget.pulse()
--- }}}
 
 -- {{{ Error handling
 
@@ -214,24 +209,6 @@ awful.util.mymainmenu = freedesktop.menu.build({
 	},
 })
 
--- Hide the menu when the mouse leaves it
---[[
-awful.util.mymainmenu.wibox:connect_signal("mouse::leave", function()
-    if not awful.util.mymainmenu.active_child or
-       (awful.util.mymainmenu.wibox ~= mouse.current_wibox and
-       awful.util.mymainmenu.active_child.wibox ~= mouse.current_wibox) then
-        awful.util.mymainmenu:hide()
-    else
-        awful.util.mymainmenu.active_child.wibox:connect_signal("mouse::leave",
-        function()
-            if awful.util.mymainmenu.wibox ~= mouse.current_wibox then
-                awful.util.mymainmenu:hide()
-            end
-        end)
-    end
-end)
---]]
-
 -- Set the Menubar terminal for applications that require it
 --menubar.utils.terminal = terminal
 
@@ -292,11 +269,6 @@ globalkeys = mytable.join(
 	end, { description = "destroy all notifications", group = "hotkeys" }),
 	-- Take a screenshot
 	-- https://github.com/lcpz/dots/blob/master/bin/screenshot
-
-	-- X screen locker
-	-- awful.key({ modkey, "Mod1" }, "l", function()
-	-- 	os.execute(scrlocker)
-	-- end, { description = "lock screen", group = "hotkeys" }),
 	-- i3Lock - locker
 	awful.key({ modkey, "Mod1" }, "l", function()
 		os.execute("i3lock --color=#282828")
@@ -402,37 +374,6 @@ globalkeys = mytable.join(
 			end
 		end
 	end, { description = "Ir al espacio 5 toggle", group = "Workspace" }),
-
-	--    Volumen
-	-- awful.key({ modkey }, "+", function() awful.util.spawn("amixer setMaster 10%+ -q") end,
-	--     { description = "Thunderbird", group = "Mis programas" }),
-	-- awful.key({ altkey }, "m",
-	--     function ()
-	--         os.execute(string.format("pactl set-sink-mute %s toggle", volume.device))
-	--         volume.update()
-	--     end),
-	-- awful.key({ altkey, "Control" }, "m",
-	--     function ()
-	--         os.execute(string.format("pactl set-sink-volume %s 100%%", volume.device))
-	--         volume.update()
-	--     end),
-	-- awful.key({ altkey, "Control" }, "0",
-	--     function ()
-	--         os.execute(string.format("pactl set-sink-volume %s 0%%", volume.device))
-	--         volume.update()
-	--     end),
-	--     awful.key({ modkey, }, "XF86AudioRaiseVolume",
-	--         function() awful.util.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%") end,
-	--         { description = "Subir volumen", group = "Sonido" }),
-	--     awful.key({ modkey, }, "XF86AudioLowerVolume",
-	--         function() awful.util.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%") end,
-	--         { description = "Bajar volumen", group = "Sonido" }),
-
-	-- Non-empty tag browsing
-	-- awful.key({ altkey }, "Left", function () lain.util.tag_view_nonempty(-1) end,
-	--           {description = "view  previous nonempty", group = "tag"}),
-	-- awful.key({ altkey }, "Right", function () lain.util.tag_view_nonempty(1) end,
-	--           {description = "view  previous nonempty", group = "tag"}),
 
 	-- Default client focus
 	awful.key({ modkey }, "z", function()
@@ -607,67 +548,6 @@ globalkeys = mytable.join(
 		os.execute("xbacklight -dec 10")
 	end, { description = "-10%", group = "hotkeys" }),
 
-	-- ALSA volume control
-	-- awful.key({ modkey, "Control" }, "Up", function()
-	-- 	os.execute(string.format("amixer -q set %s 1%%+", beautiful.volume.channel))
-	-- 	beautiful.volume.update()
-	-- end, { description = "volume up", group = "hotkeys" }),
-	-- awful.key({ modkey, "Control" }, "Down", function()
-	-- 	os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
-	-- 	beautiful.volume.update()
-	-- end, { description = "volume down", group = "hotkeys" }),
-	-- awful.key({ modkey, "Control" }, "m", function()
-	-- 	os.execute(string.format("amixer -q set %s toggle", beautiful.volume.togglechannel or beautiful.volume.channel))
-	-- 	beautiful.volume.update()
-	-- end, { description = "toggle mute", group = "hotkeys" }),
-	-- awful.key({ modkey, "Control" }, "s", function()
-	-- 	os.execute(string.format("amixer -q set %s 100%%", beautiful.volume.channel))
-	-- 	beautiful.volume.update()
-	-- end, { description = "volume 100%", group = "hotkeys" }),
-	-- awful.key({ modkey, "Control" }, "0", function()
-	-- 	os.execute(string.format("amixer -q set %s 0%%", beautiful.volume.channel))
-	-- 	beautiful.volume.update()
-	-- end, { description = "volume 0%", group = "hotkeys" }),
-
-	-- -- MPD control
-	-- awful.key({ modkey, "Control" }, "Up",
-	--     function ()
-	--         os.execute("mpc toggle")
-	--         beautiful.mpd.update()
-	--     end,
-	--     {description = "mpc toggle", group = "widgets"}),
-	-- awful.key({ altkey, "Control" }, "Down",
-	--     function ()
-	--         os.execute("mpc stop")
-	--         beautiful.mpd.update()
-	--     end,
-	--     {description = "mpc stop", group = "widgets"}),
-	-- awful.key({ altkey, "Control" }, "Left",
-	--     function ()
-	--         os.execute("mpc prev")
-	--         beautiful.mpd.update()
-	--     end,
-	--     {description = "mpc prev", group = "widgets"}),
-	-- awful.key({ altkey, "Control" }, "Right",
-	--     function ()
-	--         os.execute("mpc next")
-	--         beautiful.mpd.update()
-	--     end,
-	--     {description = "mpc next", group = "widgets"}),
-	-- awful.key({ altkey }, "0",
-	--     function ()
-	--         local common = { text = "MPD widget ", position = "top_middle", timeout = 2 }
-	--         if beautiful.mpd.timer.started then
-	--             beautiful.mpd.timer:stop()
-	--             common.text = common.text .. lain.util.markup.bold("OFF")
-	--         else
-	--             beautiful.mpd.timer:start()
-	--             common.text = common.text .. lain.util.markup.bold("ON")
-	--         end
-	--         naughty.notify(common)
-	--     end,
-	--     {description = "mpc on/off", group = "widgets"}),
-
 	-- Copy primary to clipboard (terminals to gtk)
 	awful.key({ modkey }, "c", function()
 		awful.spawn.with_shell("xsel | xsel -i -b")
@@ -676,36 +556,6 @@ globalkeys = mytable.join(
 	awful.key({ modkey }, "v", function()
 		awful.spawn.with_shell("xsel -b | xsel")
 	end, { description = "copy gtk to terminal", group = "hotkeys" }),
-
-	-- -- User programs
-	-- awful.key({ modkey }, "q", function () awful.spawn(browser) end,
-	--           {description = "run browser", group = "launcher"}),
-	--
-	-- Default
-	--[[ Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
-    --]]
-	--[[ dmenu
-    awful.key({ modkey }, "x", function ()
-            os.execute(string.format("dmenu_run -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-            beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
-        end,
-        {description = "show dmenu", group = "launcher"}),
-    --]]
-	-- alternatively use rofi, a dmenu-like application with more features
-	-- check https://github.com/DaveDavenport/rofi for more details
-	--[[ rofi
-    awful.key({ modkey }, "x", function ()
-            os.execute(string.format("rofi -show %s -theme %s",
-            'run', 'dmenu'))
-        end,
-        {description = "show rofi", group = "launcher"}),
-    --]]
-	-- Prompt
-	-- awful.key({  modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
-	-- awful.key({ modkey }, "b", function () awful.util.spawn(dmenu_run) end,
-	--           {description = "run prompt", group = "launcher"}),
 
 	awful.key({ modkey }, "x", function()
 		awful.prompt.run({
@@ -903,13 +753,6 @@ awful.rules.rules = {
 			size_hints_honor = false,
 		},
 	},
-	-- Intento de solución al dropdown menu
-	-- { rule = {class = "Brave-browser" },
-	--   properties = {
-	--     focus = false,
-	--     placement = function() return false end
-	--   }
-	-- },
 	-- Floating clients.
 	{
 		rule_any = {
@@ -1073,12 +916,17 @@ tag.connect_signal("property::selected", backham)
 
 -- }}}
 --
---
+-- Ocultar el wibar en el tag 2
+tag.connect_signal("property::selected", function(t)
+	local s = t.screen
+	if t.index == 2 then
+		s.mywibox.visible = false
+	else
+		s.mywibox.visible = true
+	end
+end)
 
 -- Autostart
--- awful.spawn.with_shell("nitrogen --restore &")
--- awful.spawn.with_shell("picom &")
-
 awful.spawn.with_shell("pkill picom &")
 awful.spawn.with_shell("$HOME/scripts/xmodmap.sh &")
 awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
