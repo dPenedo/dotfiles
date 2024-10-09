@@ -87,17 +87,16 @@ local modkey = "Mod4"
 -- local altkey       = "Mod1"
 -- local terminal     = "alacritty"
 local terminal = "kitty"
-local vi_focus = false  -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
+local vi_focus = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev = true -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor = os.getenv("EDITOR") or "nvim"
 local browser = "brave-browser"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
+awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }
+-- awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
 -- awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
-
 -- awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
-
 --  ls
 -- awful.util.tagnames = { "", "", "", "", "", "", "", "", "", "" }
 
@@ -187,9 +186,9 @@ local myawesomemenu = {
 			hotkeys_popup.show_help(nil, awful.screen.focused())
 		end,
 	},
-	{ "Manual",      string.format("%s -e man awesome", terminal) },
+	{ "Manual", string.format("%s -e man awesome", terminal) },
 	{ "Edit config", string.format("%s -e %s %s", terminal, editor, awesome.conffile) },
-	{ "Restart",     awesome.restart },
+	{ "Restart", awesome.restart },
 	{
 		"Quit",
 		function()
@@ -254,8 +253,8 @@ root.buttons(mytable.join(
 	awful.button({}, 3, function()
 		awful.util.mymainmenu:toggle()
 	end)
--- awful.button({ }, 4, awful.tag.viewnext),
--- awful.button({ }, 5, awful.tag.viewprev)
+	-- awful.button({ }, 4, awful.tag.viewnext),
+	-- awful.button({ }, 5, awful.tag.viewprev)
 ))
 
 -- }}}
@@ -263,7 +262,7 @@ root.buttons(mytable.join(
 -- {{{ Key bindings
 
 globalkeys = mytable.join(
--- Destroy all notifications
+	-- Destroy all notifications
 	awful.key({ "Control" }, "space", function()
 		naughty.destroy_all_notifications()
 	end, { description = "destroy all notifications", group = "hotkeys" }),
@@ -565,7 +564,7 @@ globalkeys = mytable.join(
 			history_path = awful.util.get_cache_dir() .. "/history_eval",
 		})
 	end, { description = "lua execute prompt", group = "awesome" })
---]]
+	--]]
 )
 
 clientkeys = mytable.join(
@@ -920,7 +919,7 @@ tag.connect_signal("property::selected", backham)
 tag.connect_signal("property::selected", function(t)
 	local s = t.screen
 	if t.index == 2 then
-		s.mywibox.visible = false
+		s.mywibox.visible = not s.mywibox.visible
 	else
 		s.mywibox.visible = true
 	end

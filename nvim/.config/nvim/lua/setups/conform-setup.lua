@@ -9,6 +9,7 @@ require('conform').setup {
     javascriptreact = { 'prettierd', '--tab-width=4' },
     typescript = { 'prettierd', '--tab-width=4' },
     jsx = { 'prettierd', '--tab-width=4' },
+    json = { 'prettierd', '--tab-width=4' },
     html = { 'prettierd' },
     css = { 'prettierd' },
     -- java = { 'jdtls' },
