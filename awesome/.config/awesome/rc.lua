@@ -106,7 +106,7 @@ awful.layout.layouts = {
 	-- awful.layout.suit.floating,
 	-- awful.layout.suit.spiral,
 	-- awful.layout.suit.tile.left,
-	-- awful.layout.suit.tile.bottom,
+	awful.layout.suit.tile.bottom,
 	-- awful.layout.suit.tile.top,
 	-- awful.layout.suit.fair,
 	-- awful.layout.suit.fair.horizontal,
@@ -294,7 +294,7 @@ globalkeys = mytable.join(
 		awful.util.spawn("thunar")
 	end, { description = "thunar", group = "Mis programas" }),
 	awful.key({ modkey }, "w", function()
-		awful.util.spawn("firefox")
+		awful.util.spawn("firefox-developer-edition")
 	end, { description = "firefox", group = "Mis programas" }),
 	awful.key({ modkey }, "b", function()
 		awful.util.spawn("brave-browser")
@@ -424,10 +424,11 @@ globalkeys = mytable.join(
 	awful.key({ modkey, "Shift" }, "l", function()
 		awful.client.swap.byidx(-1)
 	end, { description = "swap with previous client by index", group = "client" }),
-	awful.key({ modkey, "Control" }, "j", function()
+
+	awful.key({ modkey, "Mod1" }, "j", function()
 		awful.screen.focus_relative(1)
 	end, { description = "focus the next screen", group = "screen" }),
-	awful.key({ modkey, "Control" }, "k", function()
+	awful.key({ modkey, "Mod1" }, "k", function()
 		awful.screen.focus_relative(-1)
 	end, { description = "focus the previous screen", group = "screen" }),
 	awful.key({ modkey }, "u", awful.client.urgent.jumpto, { description = "jump to urgent client", group = "client" }),
@@ -486,12 +487,14 @@ globalkeys = mytable.join(
 	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift", "Control" }, "q", awesome.quit, { description = "quit awesome", group = "awesome" }),
+
 	awful.key({ modkey, "Control" }, "l", function()
 		awful.tag.incmwfact(0.05)
 	end, { description = "increase master width factor", group = "layout" }),
 	awful.key({ modkey, "Control" }, "h", function()
 		awful.tag.incmwfact(-0.05)
 	end, { description = "decrease master width factor", group = "layout" }),
+
 	awful.key({ modkey, "Shift" }, "j", function()
 		awful.tag.incnmaster(1, nil, true)
 	end, { description = "increase the number of master clients", group = "layout" }),
@@ -501,11 +504,13 @@ globalkeys = mytable.join(
 	awful.key({ modkey, "Control" }, "h", function()
 		awful.tag.incncol(1, nil, true)
 	end, { description = "increase the number of columns", group = "layout" }),
+
 	awful.key({ modkey, "Control", "Shift" }, "l", function()
 		awful.tag.incncol(-1, nil, true)
 	end, { description = "decrease the number of columns", group = "layout" }),
-	-- awful.key({ modkey, }, "space", function() awful.layout.inc(1) end,
-	--     { description = "select next", group = "layout" }),
+	awful.key({ modkey }, "space", function()
+		awful.layout.inc(1)
+	end, { description = "select next", group = "layout" }),
 	-- awful.key({ modkey, "Shift" }, "space", function() awful.layout.inc(-1) end,
 	--     { description = "select previous", group = "layout" }),
 

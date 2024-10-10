@@ -1,5 +1,5 @@
 local function map(mode, key, value, options)
-	vim.keymap.set(mode, key, value, options or { silent = true })
+  vim.keymap.set(mode, key, value, options or { silent = true })
 end
 
 -- Leader
@@ -87,3 +87,17 @@ map('n', '<leader>qf', '<CMD>copen<CR>', { desc = 'Abrir lista QuickFix' })
 map('n', '<leader>j', '<CMD>cnext<CR>', { desc = 'Siguiente QuickFix' })
 map('n', '<leader>k', '<CMD>cprev<CR>', { desc = 'Anterior QuickFix' })
 map('n', '<leader>ll', '<CMD>lua vim.diagnostic.setqflist()<CR>', { desc = 'Set Local List' })
+
+-- Crear un comando para abrir Thunar en el archivo o directorio actual
+vim.api.nvim_create_user_command('OpenThunar', function()
+  local file_path = vim.fn.expand '%:p:h'
+
+  if file_path:match '^oil://' then
+    file_path = file_path:gsub('^oil://', '')
+  end
+
+  -- Ejecutar Thunar con la ruta corregida
+  vim.fn.jobstart { 'thunar', file_path }
+end, {})
+
+vim.api.nvim_set_keymap('n', '<leader>e', ':OpenThunar<CR>', { noremap = true, silent = true })
