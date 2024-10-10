@@ -180,7 +180,7 @@ super + c
   gnome-calendar
 
 super + w 
-	firefox
+	firefox-developer-edition
 
 super + b
 	brave-browser

@@ -2,21 +2,31 @@
 
 ~/scripts/inicio-bspwm.sh &
 ~/scripts/xpantallas-bspwm.sh &
-nm-applet &
-sleep 5 && xprop -name "Whisker Menu"
-picom --config ~/.config/picom/picom.conf &
+# sleep 5 && xprop -name "Whisker Menu"
+
+sleep 3; nm-applet &
+sleep 1; pkill volumeicon &
+sleep 1; pkill cbatticon &
+$HOME/scripts/inicio.sh &
+pkill copyq &
+
+sleep 3; picom -b --config  $HOME/.config/picom/picom.conf
+sleep 2; copyq &
+sleep 3; volumeicon &
+sleep 2; cbatticon &
 # xfce4-display.settings &
 sxhkd &
 ~/scripts/xmodmap.sh &
 pgrep -x sxhkd >/dev/null || sxhkd &
-# ~/.config/polybar/launch.sh &
+pkill polybar &
+~/.config/polybar/launch.sh &
 
-xfce4-panel -d &
-feh --bg-fill /home/daniel/Imagenes/dragon-nord-extendido.png &
+# xfce4-panel -d &
+feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/moon.jpg &
 
 bspc config border_width 3
-bspc config window_gap 6
-bspc config top_padding 20
+bspc config window_gap 5
+bspc config bottom_padding 20
 bspc config single_monocle false
 bspc config borderless_monocle true
 bspc config click_to_focus true

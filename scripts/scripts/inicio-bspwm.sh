@@ -1,32 +1,49 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
+pkill kitty &
+
 sleep 5
 brave-browser &
+sleep 7
+~/scripts/xmodmap.sh &
+brave-browser -app=https://chat.openai.com &
+brave-browser -app=https://ticktick.com &
 sleep 4
-# wezterm -e tmux new-session -A -D -s Hasiera &
-kitty -e tmux new-session -A -D -s "🏠 Hasiera" &
-# kitty -T "kitty" &
-# sleep 2
+kitty &
+# sleep 4
+# kitty -e bash -c 'sleep 4; tmux' &
+
+# obsidian &
+setxkbmap -layout us -variant altgr-intl &
+# kitty -e bash ~/scripts/load_sessions.sh &
+sleep 2
 # Zotero &
 # sleep 2
 # sleep
 
 # thunderbird &
-evolution &
-sleep 7
 #
 # sleep 9
 # flatpak run md.obsidian.Obsidian &
 #
+# sleep 12
 
-        # Bspwm no está en ejecución y no hay monitor externo conectado
-        # Mover las ventanas a los escritorios correspondientes
-wmctrl -r "Brave" -t 0 &
-wmctrl -r "tmux" -t 1 &
-wmctrl -r "evolution" -t 8 &
-	# wmctrl -r thunderbird -t 9 &
+	sleep 5
+	wmctrl -r "Nueva pestaña - Brave" -t 0 &
+	wmctrl -r "kitty" -t 1 &
+	wmctrl -r "~" -t 1 &
+	wmctrl -r "tmux" -t 1 &
+	wmctrl -r "Correo" -t 8 &
+	wmctrl -r "Chat" -t 7 &
+	wmctrl -r thunderbird -t 9 &
+	wmctrl -r "TickTick" -t 9 &
+	sleep 5
+	wmctrl -r "obsidian" -t 6 &
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &
 # rofi -e "⚡¡Bienvenido🎷 Se han abierto: 🦊Firefox, 🦁Brave, 📭 el mail y un par de sesiones de la terminal 🐈kitty"
+#
+
+ tmux source-file ~/.tmux.conf &

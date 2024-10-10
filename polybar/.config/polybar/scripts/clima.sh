@@ -111,8 +111,8 @@ else
 	UNIT_URL="&units=$UNITS"
 fi
 
-# URL="api.openweathermap.org/data/2.5/weather?appid=$APIKEY$UNIT_URL&lang=$LANG&q=$(echo $CITY_NAME | sed 's/ /%20/g'),${COUNTRY_CODE}"
-URL=$(cat $HOME/.clima-key)
+APIKEY=$(cat $HOME/.clima-key)
+URL="https://api.openweathermap.org/data/2.5/weather?appid=$APIKEY$UNIT_URL&lang=$LANG&q=$(echo $CITY_NAME | sed 's/ /%20/g'),${COUNTRY_CODE}"
 
 function getData {
 	ERROR=0
@@ -283,7 +283,7 @@ function setIcons {
 		WIND="$WIND |"
 	fi
 	if [ "$UNITS" = "metric" ]; then
-		TEMP_ICON="󰔄"
+		TEMP_ICON="°"
 	elif [ "$UNITS" = "imperial" ]; then
 		TEMP_ICON="󰔅"
 	else
