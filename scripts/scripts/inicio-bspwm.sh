@@ -8,7 +8,7 @@ brave-browser &
 sleep 7
 ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
-brave-browser -app=https://ticktick.com &
+# brave-browser -app=https://ticktick.com &
 sleep 4
 kitty &
 # sleep 4
@@ -19,24 +19,16 @@ setxkbmap -layout us -variant altgr-intl &
 # kitty -e bash ~/scripts/load_sessions.sh &
 sleep 2
 # Zotero &
-# sleep 2
 # sleep
-
 # thunderbird &
-#
-# sleep 9
 # flatpak run md.obsidian.Obsidian &
-#
-# sleep 12
 
-	sleep 5
-	wmctrl -r "Nueva pestaña - Brave" -t 0 &
+	sleep 8
+	wmctrl -r "Brave" -t 0 &
 	wmctrl -r "kitty" -t 1 &
 	wmctrl -r "~" -t 1 &
 	wmctrl -r "tmux" -t 1 &
-	wmctrl -r "Correo" -t 8 &
 	wmctrl -r "Chat" -t 7 &
-	wmctrl -r thunderbird -t 9 &
 	wmctrl -r "TickTick" -t 9 &
 	sleep 5
 	wmctrl -r "obsidian" -t 6 &

@@ -29,8 +29,8 @@ return {
       palette = {
         -- Wave
         fujiWhite = '#E8DBCF',
-        -- oldWhite = '#CDD6F4',
         oldWhite = '#c9cbd1',
+        -- oldWhite = '#CDD6F4',
 
         -- Brown:
         -- sumiInk0 = '#191715',
