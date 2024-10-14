@@ -1,10 +1,10 @@
 # Colores comentados para futuras modificacion
-
 # #kanagawa - wave
-color1="#7E9CD8"
+color1="#938aa9"
 color2="#E8DBCF"
-color3="#16161d"
+color3="#1a1a22"
 color4="#2a2a37"
+autumnYellow="#dca561"
 
 #Gruvbox material
 # color1="#A89984"
@@ -39,13 +39,13 @@ set -g pane-active-border-style "fg=$color1"
 set -g status-style "fg=$color1,bg=$color3"
 
 # setw -g window-status-current-format "#[fg=$color3,bg=$color1,bold] #I: #W #[fg=$color1,bg=$color3,bold]"
-setw -g window-status-current-format "#[fg=$color2,bg=$color4] #I: #W #[fg=$color1,bg=$color3,bold]"
+setw -g window-status-current-format "#[fg=$autumnYellow,bg=$color4] #I: #W #[fg=$color1,bg=$color3,bold]"
 
 
 
 set -g status-left "#[fg=$color2,bg=$color4,nobold] #S #[fg=$color2,bg=$color3,nobold] "
 
-set -g status-right "#[fg=$color2,bg=$color4,nobold] #{b:pane_current_path} #[fg=$color2,bg=$color4,bold] %H:%M "
+set -g status-right "#[fg=$color2,bg=$color4,nobold] #{b:pane_current_path} #[fg=$color2,bg=$color4]  %H:%M "
 
 # Adjust status lengths
 set -g status-left-length 40
