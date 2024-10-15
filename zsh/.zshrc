@@ -101,3 +101,4 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
 export GOBIN=$GOPATH/bin   # opcional, define la ubicación de los binarios
 export PATH=$PATH:$GOBIN   # añade los binarios de Go al PATH
+. "/home/daniel/.deno/env"

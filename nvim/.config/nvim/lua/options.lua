@@ -54,6 +54,7 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 
+-- Desactivar netrw
 -- vim: ts=2 sts=2 sw=2 et
 -- Para que deje de crear un comentario al dar enter
 -- vim.opt_local.formatoptions:remove { 'r', 'o' }

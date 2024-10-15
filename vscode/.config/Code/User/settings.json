@@ -7,7 +7,7 @@
     "editor.tabSize": 4,
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'FiraCode Nerd Font', 'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.fontFamily": " 'JetBrainsMono Nerd Font','FiraCode Nerd Font', 'monospace', monospace",
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.lineNumbers": "relative",
@@ -250,7 +250,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Solarized Autumn",
+    "workbench.colorTheme": "Kanagawa",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",

@@ -89,3 +89,4 @@ alias te="tmc exercises mooc-java-programming-ii"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source /home/daniel/.tmc-autocomplete.sh || true
+. "/home/daniel/.deno/env"

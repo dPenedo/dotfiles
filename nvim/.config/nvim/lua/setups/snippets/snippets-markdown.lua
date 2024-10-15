@@ -87,6 +87,17 @@ ls.add_snippets('markdown', {
     text { '', '```' },
     insert(0),
   }),
+  -- TypeScript code block
+  snip({
+    trig = 'typescript',
+    namr = 'Código TypeScript',
+    dscr = 'code block TypeScript',
+  }, {
+    text { '```typescript', '' },
+    insert(1),
+    text { '', '```' },
+    insert(0),
+  }),
   -- Lua code block
   snip({
     trig = 'lua',
