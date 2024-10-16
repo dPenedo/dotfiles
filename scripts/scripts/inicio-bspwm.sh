@@ -4,7 +4,8 @@
 pkill kitty &
 
 sleep 5
-brave-browser &
+# brave-browser &
+firefox-developer-edition &
 sleep 7
 ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
@@ -24,7 +25,8 @@ sleep 2
 # flatpak run md.obsidian.Obsidian &
 
 	sleep 8
-	wmctrl -r "Brave" -t 0 &
+	# wmctrl -r "Brave" -t 0 &
+	wmctrl -r "Firefox" -t 0 &
 	wmctrl -r "kitty" -t 1 &
 	wmctrl -r "~" -t 1 &
 	wmctrl -r "tmux" -t 1 &

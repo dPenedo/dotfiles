@@ -7,6 +7,8 @@ map({ 'n', 'v' }, '<Space>', '<Nop>')
 
 map('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
 map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
+map('v', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
+map('v', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
 -- Save
 map('n', '<leader>w', '<CMD>update<CR>', { desc = 'Guardar el búfer actual' })
 map('n', '<leader>W', '<CMD>wall<CR>', { desc = 'Guardar todos los búferes' })
