@@ -18,6 +18,8 @@ alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 
 alias fd='fdfind'
 
+alias fire='firefox-developer-edition'
+
 # alias n='nvim -c Lf'
 alias ts='tmux new-session -A -D -s'
 alias python='python3'

@@ -38,6 +38,9 @@ map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
 -- Moverse al último búfer
 map('n', "''", '<CMD>b#<CR>', { desc = 'Ir al último búfer' })
 
+map('n', '<leader>,', '<CMD>bprev<CR>', { desc = 'Ir al búfer anterior' })
+map('n', '<leader>.', '<CMD>bnext<CR>', { desc = 'Ir al siguiente búfer' })
+
 -- Alternar ajuste de línea
 map('n', '<a-w>', '<CMD>set wrap!<CR>', { desc = 'Alternar ajuste de línea' })
 
