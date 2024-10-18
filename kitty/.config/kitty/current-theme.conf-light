@@ -1,0 +1,43 @@
+# melange - light
+
+background #F1F1F1
+foreground #54433A
+cursor     none
+url_color  #7892BD
+selection_background    #D9D3CE
+selection_foreground    #54433A
+tab_bar_background      #E9E1DB
+active_tab_background   #E9E1DB
+active_tab_foreground   #BC5C00
+inactive_tab_background #E9E1DB
+inactive_tab_foreground #54433A
+# Border
+active_border_color #464c8b
+inactive_border_color #aab0ad
+bell_border_color #955f61
+color0  #E9E1DB
+
+
+# cambio
+color1 #a5222f
+# color1  #C77B8B
+# cambio
+color2 #396847
+# color2  #6E9B72
+color3  #BC5C00
+# cambio
+color4 #464c8b
+color5  #BE79BB
+# color6  #739797
+# cambio
+color6 #287980
+
+color7  #7D6658
+color8  #A98A78
+color9  #BF0021
+color10 #3A684A
+color11 #A06D00
+color12 #465AA4
+color13 #904180
+color14 #3D6568
+color15 #54433A

@@ -14,6 +14,9 @@ return {
         types = 'italic',
         variables = 'NONE',
       },
+      modules = {
+        barbar = true,
+      },
     },
     palettes = {
       dayfox = {
