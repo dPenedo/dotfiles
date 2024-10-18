@@ -178,16 +178,16 @@ ls.add_snippets('markdown', {
       'Etiquetas: #',
     },
   }),
-  -- Comentario TODO
-  snip({
-    trig = 'TODO',
-    namr = 'Comentario TODO',
-    dscr = 'Agrega un comentario TODO en formato HTML comment',
-  }, {
-    text { '> [!TODO]', '' },
-    text { '> ' },
-    insert(1),
-  }),
+  -- Callout note
+  -- snip({
+  --   trig = 'NOTE',
+  --   namr = 'callout NOTE',
+  --   dscr = 'agregar un callout NOTE en formato Github',
+  -- }, {
+  --   text { '> [!NOTE]', '' },
+  --   text { '> ' },
+  --   insert(1),
+  -- }),
   -- Nota temporal
   snip({
     trig = 'temporal',
