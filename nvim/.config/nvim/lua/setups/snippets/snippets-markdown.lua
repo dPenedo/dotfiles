@@ -87,6 +87,17 @@ ls.add_snippets('markdown', {
     text { '', '```' },
     insert(0),
   }),
+  -- html code block
+  snip({
+    trig = 'html',
+    namr = 'Código html',
+    dscr = 'code block html',
+  }, {
+    text { '```html', '' },
+    insert(1),
+    text { '', '```' },
+    insert(0),
+  }),
   -- css code block
   snip({
     trig = 'css',
@@ -173,9 +184,9 @@ ls.add_snippets('markdown', {
     namr = 'Comentario TODO',
     dscr = 'Agrega un comentario TODO en formato HTML comment',
   }, {
-    text { '<!-- TODO: ' },
+    text { '> [!TODO]', '' },
+    text { '> ' },
     insert(1),
-    text { '-->' },
   }),
   -- Nota temporal
   snip({

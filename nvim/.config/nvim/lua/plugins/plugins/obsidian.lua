@@ -8,7 +8,6 @@ return {
     'nvim-lua/plenary.nvim',
   },
   opts = {
-
     workspaces = {
       {
         name = 'Notas',
@@ -41,7 +40,7 @@ return {
       },
     },
     ui = {
-      -- { enable = false },
+      { enable = false },
       checkboxes = {
         -- NOTE: the 'char' value has to be a single character, and the highlight groups are defined below.
         [' '] = { char = '󰄱', hl_group = 'ObsidianTodo' },
