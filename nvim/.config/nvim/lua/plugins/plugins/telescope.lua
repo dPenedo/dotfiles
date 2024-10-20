@@ -18,7 +18,7 @@ return {
   keys = {
     { '<leader>f', '<CMD>Telescope find_files <CR>', { desc = 'Telescope files' } },
     { '<leader>/', '<CMD>Telescope current_buffer_fuzzy_find<CR>', { desc = 'Telescope para en el buffer actual' } },
-    { '<leader><space>', '<CMD>Telescope buffers<CR>', { desc = 'Telescope buffers' } },
+    { '<leader>b', '<CMD>Telescope buffers<CR>', { desc = 'Telescope buffers' } },
     { '<leader>gg', '<CMD>Telescope live_grep<CR>', { desc = 'Telescope grep' } },
     { '<leader>nf', '<CMD>NotasBuscar<CR>', { desc = '[N]otas [F]ind' } },
     { '<leader>u', '<CMD>Telescope undo<CR>', { desc = 'Telescope para en el historial de deshacer' } },

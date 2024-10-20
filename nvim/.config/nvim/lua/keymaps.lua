@@ -89,8 +89,8 @@ map('n', '<leader>;', 'm`A;<Esc>``', { desc = 'Poner punto y coma al final' })
 
 --QuickFix
 map('n', '<leader>qf', '<CMD>copen<CR>', { desc = 'Abrir lista QuickFix' })
-map('n', '<leader>j', '<CMD>cnext<CR>', { desc = 'Siguiente QuickFix' })
-map('n', '<leader>k', '<CMD>cprev<CR>', { desc = 'Anterior QuickFix' })
+map('n', '<leader>J', '<CMD>cnext<CR>', { desc = 'Siguiente QuickFix' })
+map('n', '<leader>K', '<CMD>cprev<CR>', { desc = 'Anterior QuickFix' })
 map('n', '<leader>ll', '<CMD>lua vim.diagnostic.setqflist()<CR>', { desc = 'Set Local List' })
 
 -- Crear un comando para abrir Thunar en el archivo o directorio actual
