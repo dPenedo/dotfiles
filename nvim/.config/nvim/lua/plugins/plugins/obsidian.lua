@@ -1,3 +1,5 @@
+-- Probando a quitarlo, se solapa la ui
+
 return {
   'epwalsh/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit

@@ -31,6 +31,16 @@ map('n', '<leader>c2', '<CMD>set conceallevel=2<cr> ', { desc = 'conceallevel 2 
 
 map('n', "'", '`', { desc = "backtick asignado a '" })
 
+map('n', '<leader>1', '<CMD>tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
+map('n', '<leader>2', '<CMD>tabn 2<CR>', { desc = 'Ir a la pestaña 2' })
+map('n', '<leader>3', '<CMD>tabn 3<CR>', { desc = 'Ir a la pestaña 3' })
+map('n', '<leader>4', '<CMD>tabn 4<CR>', { desc = 'Ir a la pestaña 4' })
+map('n', '<leader>5', '<CMD>tabn 5<CR>', { desc = 'Ir a la pestaña 5' })
+map('n', '<leader>6', '<CMD>tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
+map('n', '<leader>7', '<CMD>tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
+map('n', '<leader>8', '<CMD>tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
+map('n', '<leader>9', '<CMD>tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
+
 -- Linea abajo/linea encima
 map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
 map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
@@ -105,4 +115,4 @@ vim.api.nvim_create_user_command('OpenThunar', function()
   vim.fn.jobstart { 'thunar', file_path }
 end, {})
 
-vim.api.nvim_set_keymap('n', '<leader>e', ':OpenThunar<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-e>', ':OpenThunar<CR>', { noremap = true, silent = true })

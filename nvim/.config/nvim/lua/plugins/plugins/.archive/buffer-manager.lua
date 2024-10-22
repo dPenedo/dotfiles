@@ -1,3 +1,5 @@
+-- Funciona vien, pero no lo estoy usando
+
 return {
   'j-morano/buffer_manager.nvim',
   lazy = true,

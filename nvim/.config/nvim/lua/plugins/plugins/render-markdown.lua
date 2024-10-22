@@ -12,7 +12,7 @@ return {
       signs = { '󰫎 ' },
       width = 'full',
       backgrounds = {
-        'RenderMarkdownH1Bg',
+        'RenderMarkdownH2Bg',
         'RenderMarkdownH2Bg',
         'RenderMarkdownH2Bg',
         'RenderMarkdownH2Bg',
@@ -22,12 +22,11 @@ return {
       -- The 'level' is used to index into the list using a clamp
       -- Highlight for the heading and sign icons
       foregrounds = {
+        'Constant',
+        'Type',
+        'Operator',
+        'Number',
         'RenderMarkdownH1',
-        'RenderMarkdownH2',
-        'RenderMarkdownH3',
-        'RenderMarkdownH4',
-        'RenderMarkdownH5',
-        'RenderMarkdownH6',
       },
     },
     bullet = {
