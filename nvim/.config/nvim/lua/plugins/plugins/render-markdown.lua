@@ -41,5 +41,17 @@ return {
       -- Highlight for the bullet icon
       highlight = 'RenderMarkdownBullet',
     },
+    code = {
+      style = 'full',
+      sign = 'false',
+      position = 'right',
+      width = 'block',
+      right_pad = 10,
+      language_name = false,
+    },
+    checkbox = {
+      -- Turn on / off checkbox state rendering
+      enabled = true,
+    },
   },
 }
