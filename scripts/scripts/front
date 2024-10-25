@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Puerto y navegador por defecto
+DEFAULT_PORT=3000
+DEFAULT_BROWSER="brave-browser"
+
+# Si se pasan argumentos, se utilizan. Si no, se usan los valores por defecto.
+PORT=${1:-$DEFAULT_PORT}
+BROWSER=${2:-$DEFAULT_BROWSER}
+
+# Seleccionar la URL con el puerto dado
+URL="http://localhost:$PORT"
+
+# Seleccionar los escritorios
+DESKTOPS=(1 2 10)
+
+# Abrir el navegador especificado en nuevas ventanas
+for ((i=1; i<=${#DESKTOPS[@]}; i++)); do
+    $BROWSER --new-window "$URL" &
+    sleep 1
+done
+
+# Mover las ventanas del navegador a los escritorios definidos
+for i in "${!DESKTOPS[@]}"; do
+    wmctrl -r "${BROWSER:0:6}" -t "${DESKTOPS[i]}"
+    sleep 1 
+done
+echo 'IP local:'
+hostname -I
