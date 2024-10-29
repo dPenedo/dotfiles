@@ -1,7 +1,7 @@
 --dark
 --dark
--- vim.cmd.colorscheme 'kanagawa-wave'
-vim.cmd.colorscheme 'jellybeans-nvim'
+vim.cmd.colorscheme 'kanagawa-wave'
+-- vim.cmd.colorscheme 'jellybeans-nvim'
 
 -- vim.cmd.colorscheme 'mellow'
 -- vim.cmd.colorscheme 'melange'

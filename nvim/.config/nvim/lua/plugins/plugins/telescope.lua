@@ -28,6 +28,6 @@ return {
     { '<leader>so', '<CMD>Telescope oldfiles<CR>', { desc = 'Telescope oldfiles' } },
     { '<leader>ca', '<CMD>lua vim.lsp.buf.code_action()<cr>', { desc = 'Code actions' } },
     { 'gr', '<CMD>Telescope lsp_references<CR>', { desc = 'Telescope lsp references' } },
-    { '<leader>aa', '<CMD>Telescope commands<CR>', { desc = 'Telescope commands' } },
+    -- { '<leader>aa', '<CMD>Telescope commands<CR>', { desc = 'Telescope commands' } },
   },
 }
