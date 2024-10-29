@@ -12,12 +12,12 @@ return {
       signs = { '󰫎 ' },
       width = 'full',
       backgrounds = {
-        'RenderMarkdownH2Bg',
-        'RenderMarkdownH2Bg',
-        'RenderMarkdownH2Bg',
-        'RenderMarkdownH2Bg',
-        'RenderMarkdownH2Bg',
-        'RenderMarkdownH2Bg',
+        -- 'RenderMarkdownH1Bg',
+        -- 'RenderMarkdownH2Bg',
+        -- 'RenderMarkdownH2Bg',
+        -- 'RenderMarkdownH2Bg',
+        -- 'RenderMarkdownH2Bg',
+        -- 'RenderMarkdownH2Bg',
       },
       -- The 'level' is used to index into the list using a clamp
       -- Highlight for the heading and sign icons
@@ -27,6 +27,17 @@ return {
         'Operator',
         'Number',
         'RenderMarkdownH1',
+      },
+    },
+    link = {
+      enabled = true,
+      image = '󰥶 ',
+      email = '󰀓 ',
+      hyperlink = '󰌹 ',
+      highlight = 'RenderMarkdownLink',
+      wiki = { icon = '󱗖 ', highlight = 'RenderMarkdownWikiLink' },
+      custom = {
+        web = { pattern = '^http[s]?://', icon = '󰖟 ', highlight = 'RenderMarkdownLink' },
       },
     },
     bullet = {
@@ -39,7 +50,7 @@ return {
       -- Padding to add to the right of bullet point
       right_pad = 1,
       -- Highlight for the bullet icon
-      highlight = 'RenderMarkdownBullet',
+      highlight = 'RenderMarkdownH1',
     },
     code = {
       style = 'full',

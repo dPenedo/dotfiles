@@ -13,8 +13,8 @@ return {
       theme = {
         wave = {
           ui = {
-            bg_gutter = '#1a1a22',
-            -- bg_gutter = 'none',
+            -- bg_gutter = '#1a1a22',
+            bg_gutter = 'none',
             nontext = '#B1A9A0',
           },
         },
@@ -59,7 +59,8 @@ return {
 
         -- sumiInk6 = '#3A3A4B',
         -- Lotus
-        lotusInk1 = '#161617',
+        lotusInk1 = '#141414',
+
         lotusWhite0 = '#B3BDFD',
         lotusWhite1 = '#dcd5ac',
         lotusWhite2 = '#e5ddb0',

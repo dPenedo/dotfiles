@@ -43,7 +43,8 @@ local function lsp()
 end
 
 local function statusline()
-  local color_column = '%#ColorColumn#' -- Usa colores de Gitsigns si está instalado
+  -- local color_column = '%#ColorColumn#' -- Usa colores de Gitsigns si está instalado
+  local color_column = '%#CursorLineNr#' -- Usa colores de Gitsigns si está instalado
   local file_name_color = '%#Directory#' -- Usa el color del directorio para el nombre del archivo
   local modified_color = '%#WarningMsg#' -- Color para archivos modificados
   local default_color = '%#Normal#' -- Color por defecto para el resto de la línea

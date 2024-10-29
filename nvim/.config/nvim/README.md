@@ -7,3 +7,4 @@ It has some custom *snippets* for:
 - Markdown:
 
 Plugins and colorschemes that I don't use are saved on `.archive` directories.
+

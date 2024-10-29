@@ -20,3 +20,5 @@ pkill polybar &
 
 # xfce4-panel -d &
 feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/moon.jpg &
+# feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/mirage-Kan.png &
+# feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/blackgolden-mountains.png &

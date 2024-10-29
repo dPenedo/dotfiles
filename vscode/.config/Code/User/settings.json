@@ -250,7 +250,7 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Kanagawa",
+    "workbench.colorTheme": "Jellybeans.vim",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
@@ -259,5 +259,9 @@
         }
     ],
     "java.jdt.ls.java.home": "/home/daniel/Descargas/Programas/jdk-11.0.0.1",
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.color": "#7e9cd8",
+    "material-icon-theme.hidesExplorerArrows": false,
+    "material-icon-theme.folders.theme": "specific",
+    "editor.fontSize": 13
 }
