@@ -9,7 +9,7 @@ map('n', '<leader>nn', function()
     vim.fn.writefile({}, vim.fn.expand(filepath))
     vim.cmd('edit ' .. vim.fn.expand(filepath))
   end
-end, { desc = '[N]ew [N]otes' })
+end, { desc = '[n]ew [n]otes' })
 -- New Temp Notes
 map('n', '<leader>nt', function()
   local filename = vim.fn.input('Enter Temp file name: ', '', 'file')
@@ -18,7 +18,7 @@ map('n', '<leader>nt', function()
     vim.fn.writefile({}, vim.fn.expand(filepath))
     vim.cmd('edit ' .. vim.fn.expand(filepath))
   end
-end, { desc = '[N]ew [T]emp' })
+end, { desc = '[n]ew [t]emp' })
 -- New Atom Notes
 map('n', '<leader>na', function()
   local filename = vim.fn.input('Enter Atom file name: ', '', 'file')
@@ -27,7 +27,7 @@ map('n', '<leader>na', function()
     vim.fn.writefile({}, vim.fn.expand(filepath))
     vim.cmd('edit ' .. vim.fn.expand(filepath))
   end
-end, { desc = '[N]ew [A]tom' })
+end, { desc = '[n]ew [a]tom' })
 -- New Note Link
 map('i', '<A-=>', function()
   local telescope_builtin = require 'telescope.builtin'
@@ -49,4 +49,4 @@ map('i', '<A-=>', function()
       return true
     end,
   }
-end, { desc = 'New Link' })
+end, { desc = 'new link' })

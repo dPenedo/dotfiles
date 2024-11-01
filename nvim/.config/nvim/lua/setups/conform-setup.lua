@@ -9,6 +9,7 @@ require('conform').setup {
     json = { 'prettier' },
     html = { 'prettier' },
     css = { 'prettier' },
+    astro = { 'prettier' },
     -- Puedes añadir más lenguajes y formateadores según sea necesario
   },
 }

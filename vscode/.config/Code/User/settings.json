@@ -7,7 +7,7 @@
     "editor.tabSize": 4,
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
-    "editor.fontFamily": " 'JetBrainsMono Nerd Font','FiraCode Nerd Font', 'monospace', monospace",
+    "editor.fontFamily": " 'Hack', 'JetBrainsMono Nerd Font','FiraCode Nerd Font', 'monospace', monospace",
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.lineNumbers": "relative",
@@ -250,7 +250,6 @@
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,
     "editor.foldingImportsByDefault": false,
-    "workbench.colorTheme": "Jellybeans.vim",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-11",
@@ -263,5 +262,6 @@
     "material-icon-theme.folders.color": "#7e9cd8",
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.folders.theme": "specific",
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "workbench.colorTheme": "Kanagawa"
 }

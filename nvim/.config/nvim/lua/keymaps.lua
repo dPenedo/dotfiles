@@ -1,7 +1,6 @@
 local function map(mode, key, value, options)
   vim.keymap.set(mode, key, value, options or { silent = true })
 end
-
 -- Leader
 map({ 'n', 'v' }, '<Space>', '<Nop>')
 
@@ -31,19 +30,19 @@ map('n', '<leader>c2', '<CMD>set conceallevel=2<cr> ', { desc = 'conceallevel 2 
 
 map('n', "'", '`', { desc = "backtick asignado a '" })
 
-map('n', '<leader>1', '<CMD>tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
-map('n', '<leader>2', '<CMD>tabn 2<CR>', { desc = 'Ir a la pestaña 2' })
-map('n', '<leader>3', '<CMD>tabn 3<CR>', { desc = 'Ir a la pestaña 3' })
-map('n', '<leader>4', '<CMD>tabn 4<CR>', { desc = 'Ir a la pestaña 4' })
-map('n', '<leader>5', '<CMD>tabn 5<CR>', { desc = 'Ir a la pestaña 5' })
-map('n', '<leader>6', '<CMD>tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
-map('n', '<leader>7', '<CMD>tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
-map('n', '<leader>8', '<CMD>tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
-map('n', '<leader>9', '<CMD>tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
+-- map('n', '<leader>1', '<CMD>tabn 1<CR>', { desc = 'Ir a la pestaña 1' })
+-- map('n', '<leader>2', '<CMD>tabn 2<CR>', { desc = 'Ir a la pestaña 2' })
+-- map('n', '<leader>3', '<CMD>tabn 3<CR>', { desc = 'Ir a la pestaña 3' })
+-- map('n', '<leader>4', '<CMD>tabn 4<CR>', { desc = 'Ir a la pestaña 4' })
+-- map('n', '<leader>5', '<CMD>tabn 5<CR>', { desc = 'Ir a la pestaña 5' })
+-- map('n', '<leader>6', '<CMD>tabn 6<CR>', { desc = 'Ir a la pestaña 6' })
+-- map('n', '<leader>7', '<CMD>tabn 7<CR>', { desc = 'Ir a la pestaña 7' })
+-- map('n', '<leader>8', '<CMD>tabn 8<CR>', { desc = 'Ir a la pestaña 8' })
+-- map('n', '<leader>9', '<CMD>tabn 9<CR>', { desc = 'Ir a la pestaña 9' })
 
 -- Linea abajo/linea encima
-map('n', '<leader>o', 'o<ESC>', { desc = 'Crea una linea debajo' })
-map('n', '<leader>O', 'O<ESC>', { desc = 'Crea una linea encima' })
+map('n', '<leader>o', 'm`o<ESC>``', { desc = 'Crea una linea debajo' })
+map('n', '<leader>O', 'm`O<ESC>``', { desc = 'Crea una linea encima' })
 
 -- Moverse al último búfer
 map('n', "''", '<CMD>b#<CR>', { desc = 'Ir al último búfer' })

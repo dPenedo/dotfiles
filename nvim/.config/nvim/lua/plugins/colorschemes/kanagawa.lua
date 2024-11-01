@@ -42,21 +42,20 @@ return {
         -- sumiInk6 = '#4A433D',
 
         --Neutral:
-        -- sumiInk0 = '#121212',
-        -- sumiInk1 = '#181818',
-        -- sumiInk2 = '#1a1a1a',
-        -- sumiInk3 = '#121212',
-        -- sumiInk4 = '#2A2A2A',
-        -- sumiInk5 = '#363636',
-        -- sumiInk6 = '#545454',
-
+        sumiInk0 = '#121212',
+        sumiInk1 = '#181818',
+        sumiInk2 = '#1a1a1a',
+        sumiInk3 = '#121212',
+        sumiInk4 = '#2A2A2A',
+        sumiInk5 = '#363636',
+        sumiInk6 = '#545454',
         -- -- Popup and Floats
-        -- waveBlue1 = "#223249",
-        -- waveBlue2 = "#2D4F67",
-        waveBlue1 = '#4A433D',
-        waveBlue2 = '#3A334c',
+        waveBlue1 = '#223249',
+        waveBlue2 = '#2D4F67',
+        -- waveBlue1 = '#4A433D',
+        -- waveBlue1 = '#2c2c2c',
+        -- waveBlue2 = '#3A334c',
         --lotusInk1
-
         -- sumiInk6 = '#3A3A4B',
         -- Lotus
         lotusInk1 = '#141414',
