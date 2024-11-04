@@ -1,19 +1,10 @@
 --dark
---dark
-vim.cmd.colorscheme 'kanagawa-wave'
--- vim.cmd.colorscheme 'jellybeans-nvim'
-
--- vim.cmd.colorscheme 'mellow'
--- vim.cmd.colorscheme 'melange'
--- vim.cmd.colorscheme 'modus'
--- vim.cmd.colorscheme 'vague'
--- vim.cmd.colorscheme 'mellifluous'
--- vim.cmd.colorscheme 'gruvbox-material'
--- vim.cmd.colorscheme 'monet'
--- vim.cmd.colorscheme 'rose-pine-main'
+vim.o.background = 'light'
+-- vim.cmd.colorscheme 'kanagawa-wave'
+--vim.cmd.colorscheme 'monet'
 -- light
+vim.cmd.colorscheme 'dayfox'
+-- vim.cmd.colorscheme 'tokyonight-day'
+-- vim.cmd.colorscheme 'mellifluous'
 -- vim.cmd.colorscheme 'kanagawa-lotus'
--- vim.cmd.colorscheme 'monokai-nightasty'
--- vim.cmd.colorscheme 'maron'
--- vim.cmd.colorscheme 'rasmus'
-vim.o.background = 'dark'
+-- vim.cmd.colorscheme 'melange'
