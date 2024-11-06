@@ -1,0 +1,52 @@
+{
+  "Class Name": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "className",
+    "body": ["className=\"${1}\""],
+    "description": "Insert className for React"
+  },
+  "Comment on JSX": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "commentJSX",
+    "body": ["{/* ${1} */}"],
+    "description": "Comment on JSX"
+  },
+  "Empty Tag JSX": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "<>",
+    "body": ["<>", "\t${1}", "</>"],
+    "description": "Empty tag on JSX"
+  },
+  "React Functional Component (RFC)": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "rfc",
+    "body": [
+      "export const ${TM_FILENAME_BASE} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${1}",
+      "\t\t</div>",
+      "\t);",
+      "};"
+    ],
+    "description": "Create a React functional component"
+  },
+  "TODO Comment": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "todo",
+    "body": ["// TODO: ${1}"],
+    "description": "Insert a TODO comment"
+  },
+  "WARN Comment": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "warn",
+    "body": ["// WARN: ${1}"],
+    "description": "Insert a WARN comment"
+  },
+  "NOTE Comment": {
+    "scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prefix": "note",
+    "body": ["// NOTE: ${1}"],
+    "description": "Insert a NOTE comment"
+  }
+}

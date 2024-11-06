@@ -1,0 +1,92 @@
+{
+  "Fecha": {
+    "prefix": "fecha",
+    "body": ["Fecha: ${CURRENT_DATE:$(date +'%d-%m-%Y')}"],
+    "description": "Fecha en formato DD-MM-YYYY"
+  },
+  "Lista": {
+    "prefix": "lista",
+    "body": ["- **${1}**: ${0}"],
+    "description": "Insertar un elemento de lista en negrita"
+  },
+  "Bloque de código Python": {
+    "prefix": "python",
+    "body": ["```python", "${0}", "```"],
+    "description": "Bloque de código en Python"
+  },
+  "Bloque de código Bash": {
+    "prefix": "bash",
+    "body": ["```bash", "${0}", "```"],
+    "description": "Bloque de código en Bash"
+  },
+  "Bloque de código Java": {
+    "prefix": "java",
+    "body": ["```java", "${0}", "```"],
+    "description": "Bloque de código en Java"
+  },
+  "Bloque de código JavaScript": {
+    "prefix": "javascript",
+    "body": ["```javascript", "${0}", "```"],
+    "description": "Bloque de código en JavaScript"
+  },
+  "Bloque de código HTML": {
+    "prefix": "html",
+    "body": ["```html", "${0}", "```"],
+    "description": "Bloque de código en HTML"
+  },
+  "Bloque de código CSS": {
+    "prefix": "css",
+    "body": ["```css", "${0}", "```"],
+    "description": "Bloque de código en CSS"
+  },
+  "Bloque de código TypeScript": {
+    "prefix": "typescript",
+    "body": ["```typescript", "${0}", "```"],
+    "description": "Bloque de código en TypeScript"
+  },
+  "Bloque de código Lua": {
+    "prefix": "lua",
+    "body": ["```lua", "${0}", "```"],
+    "description": "Bloque de código en Lua"
+  },
+  "Output Python": {
+    "prefix": "outputpython",
+    "body": ["# Output: ${1}"],
+    "description": "Comentario de output en Python"
+  },
+  "Output JavaScript": {
+    "prefix": "outputjavascript",
+    "body": ["// Output: ${1}"],
+    "description": "Comentario de output en JavaScript"
+  },
+  "Bloque de relacionados": {
+    "prefix": "relacionados",
+    "body": ["### Relacionados", "- [[${1}]]"],
+    "description": "Bloque de relacionados"
+  },
+  "Nueva nota": {
+    "prefix": "nueva",
+    "body": ["# ${TM_FILENAME_BASE}", "", "", "", "", "------------------", "Etiquetas: #"],
+    "description": "Nueva nota"
+  },
+  "Nueva nota temporal": {
+    "prefix": "temporal",
+    "body": [
+      "# ${TM_FILENAME_BASE}",
+      "",
+      "",
+      "",
+      "",
+      "------------------",
+      "",
+      "Fecha de creación: ${CURRENT_DATE:$(date +'%d-%m-%Y')}",
+      "Etiquetas: #"
+    ],
+    "description": "Nueva nota temporal"
+  },
+  "Checkbox": {
+    "prefix": "-",
+    "body": ["- [ ] ${0}"],
+    "description": "Nuevo checkbox"
+  }
+}

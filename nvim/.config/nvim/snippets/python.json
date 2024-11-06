@@ -1,0 +1,27 @@
+{
+  "Print Statement": {
+    "prefix": "print",
+    "body": ["print(${1})"],
+    "description": "Insert a print function"
+  },
+  "Type Statement": {
+    "prefix": "type",
+    "body": ["type(${1})"],
+    "description": "Insert a type function"
+  },
+  "TODO Comment": {
+    "prefix": "todo",
+    "body": ["# TODO: ${1}"],
+    "description": "Insert a TODO comment"
+  },
+  "WARN Comment": {
+    "prefix": "warn",
+    "body": ["# WARN: ${1}"],
+    "description": "Insert a WARN comment"
+  },
+  "NOTE Comment": {
+    "prefix": "note",
+    "body": ["# NOTE: ${1}"],
+    "description": "Insert a NOTE comment"
+  }
+}

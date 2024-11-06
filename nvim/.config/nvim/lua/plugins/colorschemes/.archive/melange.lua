@@ -1,1 +1,0 @@
-return { 'dpenedo/melange-nvim' }

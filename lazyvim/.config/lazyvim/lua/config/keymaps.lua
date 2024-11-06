@@ -38,10 +38,6 @@ map("n", "<leader>c0", ":set conceallevel=0<cr> ", { desc = "conceallevel 0 " })
 map("n", "<leader>c1", ":set conceallevel=1<cr> ", { desc = "conceallevel 1 " })
 map("n", "<leader>c2", ":set conceallevel=2<cr> ", { desc = "conceallevel 2 " })
 
--- Linea abajo/linea encima
-map("n", "<leader>o", "o<ESC>", { desc = "Crea una linea debajo" })
-map("n", "<leader>O", "O<ESC>", { desc = "Crea una linea encima" })
-
 -- Zen mode
 map("n", "<leader>j", ":ZenMode<CR>", { desc = "Entra o sale  en Zen mode" })
 
