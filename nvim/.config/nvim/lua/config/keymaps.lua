@@ -10,6 +10,7 @@ map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "'", "`", { desc = "backtick asignado a '" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
+map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 
 --
 -- Notas --

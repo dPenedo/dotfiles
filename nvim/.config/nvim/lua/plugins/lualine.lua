@@ -22,7 +22,7 @@ return {
       local current_line = vim.fn.line(".")
       local total_lines = vim.fn.line("$")
       local current_col = vim.fn.col(".")
-      return string.format("C%d L%d/%d", current_line, current_col, total_lines)
+      return string.format("C%d L%d/%d", current_col, current_line, total_lines)
     end
     vim.o.laststatus = vim.g.lualine_laststatus
 

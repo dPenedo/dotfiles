@@ -1,5 +1,12 @@
 return {
   "akinsho/bufferline.nvim",
+  opts = {
+    options = {
+      numbers = function(opts)
+        return string.format("%s", opts.raise(opts.ordinal))
+      end,
+    },
+  },
   keys = {
     { "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", desc = "Go to buffer 1" },
     { "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", desc = "Go to buffer 2" },
