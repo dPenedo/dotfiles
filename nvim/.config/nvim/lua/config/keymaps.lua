@@ -66,3 +66,11 @@ map("i", "<A-=>", function()
     end,
   })
 end, { desc = "new link" })
+
+-- Toggle Inlay Hints keymap
+map(
+  "n",
+  "<leader>ci",
+  [[:lua local is = vim.lsp.inlay_hint.is_enabled() vim.lsp.inlay_hint.enable(not is, nil)<CR>]],
+  { desc = "Toggle [C]ode [I]nlay hints" }
+)

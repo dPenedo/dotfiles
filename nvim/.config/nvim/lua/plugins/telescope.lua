@@ -25,6 +25,7 @@ return {
     { "<leader>fg", false },
     { "<leader>fg", "<CMD>Tele live_grep<CR>", { desc = "Fzf current buffer" } },
     { "<leader>ff", "<CMD>Tele find_files<CR>", { desc = "Fzf files on project" } },
+    { "<leader>fu", "<CMD>Tele undo<CR>", { desc = "Fzf undo" } },
     { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
     -- change a keymap
   },
