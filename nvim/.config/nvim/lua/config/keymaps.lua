@@ -11,6 +11,8 @@ map("n", "'", "`", { desc = "backtick asignado a '" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
+map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
+map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
 
 --
 -- Notas --
