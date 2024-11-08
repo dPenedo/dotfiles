@@ -97,9 +97,34 @@ return {
           -- Defining multiple shades is done by passing a table
           blue = { base = "#464C8B", bright = "#7e94ed", dim = "#595C78" },
         },
+        nordfox = {
+          -- bg0 = "#232831", -- Dark bg (status line and float)
+          bg1 = "#242424", -- Default bg
+        },
       },
     },
-  }, -- lazy
+  },
+  -- {
+  --   "rmehri01/onenord.nvim",
+  --   opts = {
+  --     styles = {
+  --       comments = "italic",
+  --       strings = "italic",
+  --       keywords = "bold",
+  --     },
+  --     disable = {
+  --       background = true,
+  --       float_background = true,
+  --     },
+  --     inverse = {
+  --       match_paren = true,
+  --     },
+  --     custom_colors = {
+  --       float = "#2c2c2c",
+  --     }, -- Overwrite default colors
+  --   },
+  -- },
+  -- lazy
   {
     "LazyVim/LazyVim",
     opts = {

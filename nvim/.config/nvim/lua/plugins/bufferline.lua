@@ -8,6 +8,9 @@ return {
     },
   },
   keys = {
+
+    { "]b", "<Cmd>BufferLineMoveNext<CR>", desc = "Buffer line to next" },
+    { "[b", "<Cmd>BufferLineMovePrev<CR>", desc = "Buffer line to prev" },
     { "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", desc = "Go to buffer 1" },
     { "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", desc = "Go to buffer 2" },
     { "<leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>", desc = "Go to buffer 3" },
