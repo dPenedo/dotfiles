@@ -9,14 +9,20 @@ map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar una l
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "'", "`", { desc = "backtick asignado a '" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
-map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
 
---
+-- Copiar/pegar Clipboard
+map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })
+map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })
+map("n", "<leader>sp", "<CMD>Telescope registers<cr>", { desc = "Buscar registros en telescope" })
+map("v", "<leader>sp", "<CMD>Telescope registers<cr>", { desc = "Buscar registros en telescope" })
+map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
+map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
+map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
+
 -- Notas --
---
 -- New Notes
 map("n", "<leader>nn", function()
   local filename = vim.fn.input("Enter file name: ", "", "file")

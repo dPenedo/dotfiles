@@ -104,31 +104,21 @@ return {
       },
     },
   },
-  -- {
-  --   "rmehri01/onenord.nvim",
-  --   opts = {
-  --     styles = {
-  --       comments = "italic",
-  --       strings = "italic",
-  --       keywords = "bold",
-  --     },
-  --     disable = {
-  --       background = true,
-  --       float_background = true,
-  --     },
-  --     inverse = {
-  --       match_paren = true,
-  --     },
-  --     custom_colors = {
-  --       float = "#2c2c2c",
-  --     }, -- Overwrite default colors
-  --   },
-  -- },
+  { "kepano/flexoki-neovim", name = "flexoki" },
+  {
+    "sho-87/kanagawa-paper.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = { transparent = true },
+  },
+  {
+    "yorumicolors/yorumi.nvim",
+  },
   -- lazy
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "yorumi",
     },
   },
 }
