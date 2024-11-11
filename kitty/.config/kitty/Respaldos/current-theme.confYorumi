@@ -1,0 +1,71 @@
+## name: Yorumi
+## author: esskayesss
+
+#: The basic colors
+
+foreground                      #BDBFCB
+background                      #100F0F
+selection_foreground            #A7A9B5
+selection_background            #D6B476
+
+
+#: Cursor colors
+
+cursor                          #BDBFCB
+cursor_text_color               #060914
+
+
+#: URL underline color when hovering with mouse
+
+url_color                       #597BC0
+
+
+#: kitty window border colors and terminal bell colors
+
+active_border_color             #597BC0
+inactive_border_color           #cccccc
+bell_border_color               #E1C084
+visual_bell_color               none
+
+
+#: Tab bar colors
+
+active_tab_foreground           #1D202B
+active_tab_background           #597BC0 
+inactive_tab_foreground         #BDBFCB
+inactive_tab_background         #060914
+tab_bar_background              none
+tab_bar_margin_color            none
+
+
+#: black
+color0 #060914
+color8 #878996
+
+#: red
+color1 #C65E53
+color9 #F47571
+
+#: green
+color2  #8CB167
+color10 #A9D07C
+
+#: yellow
+color3  #C39D55
+color11 #E1C084
+
+#: blue
+color4  #798DDC
+color12 #597BC0
+
+#: magenta
+color5  #BB5D7D
+color13 #E184AF
+
+#: cyan
+color6  #67BBB9
+color14 #85E0CB
+
+#: white
+color7  #BDBFCB
+color15 #D7E1B7

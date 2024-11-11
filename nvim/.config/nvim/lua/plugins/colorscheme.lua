@@ -73,6 +73,19 @@ return {
         sidebars = "transparent",
         floats = "transparent",
       },
+      overrides = function(colors)
+        return {
+          -- Ejemplo de sobrescritura para el grupo de highlight "String"
+          String = { fg = colors.palette.springGreen, italic = true },
+
+          -- Ejemplo de sobrescritura para un grupo de highlight de un plugin
+          ["@markup.strong.markdown_inline"] = { fg = colors.palette.oniViolet2, bold = true },
+          Pmenu = { bg = colors.palette.sumiInk1, fg = colors.palette.oldWhite },
+          PmenuSel = { bg = colors.palette.waveBlue, fg = colors.palette.fujiWhite, bold = true },
+          PmenuSbar = { bg = colors.palette.sumiInk2 },
+          PmenuThumb = { bg = colors.palette.sumiInk4 },
+        }
+      end,
     },
   },
   {
@@ -104,7 +117,16 @@ return {
       },
     },
   },
-  { "kepano/flexoki-neovim", name = "flexoki" },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
+  },
   {
     "sho-87/kanagawa-paper.nvim",
     lazy = false,
@@ -112,13 +134,47 @@ return {
     opts = { transparent = true },
   },
   {
-    "yorumicolors/yorumi.nvim",
+    "dpenedo/yorumi.nvim",
   },
+  {
+    "gbprod/nord.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = { bold = true },
+        variables = {},
+      },
+    },
+  },
+  -- {
+  --   "rmehri01/onenord.nvim",
+  --   opts = {
+  --     styles = {
+  --       comments = "italic",
+  --       strings = "italic",
+  --       keywords = "bold",
+  --     },
+  --     disable = {
+  --       background = true,
+  --       float_background = true,
+  --     },
+  --     inverse = {
+  --       match_paren = true,
+  --     },
+  --     custom_colors = {
+  --       float = "#2c2c2c",
+  --     },
+  --   },
+  -- },
   -- lazy
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "yorumi",
+      colorscheme = "kanagawa",
     },
   },
 }
