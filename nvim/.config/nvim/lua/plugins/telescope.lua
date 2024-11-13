@@ -13,6 +13,27 @@ return {
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         winblend = 0,
+
+        mappings = {
+          i = {
+            ["<C-u>"] = false,
+            ["<C-d>"] = false,
+            ["<C-l>"] = false,
+            -- ['<Tab>'] = false,
+            -- ['<Tab>'] = 'select_default',
+            ["<C-s>"] = "select_horizontal",
+            ["<C-v>"] = "select_vertical",
+            ["<C-j>"] = "move_selection_next",
+            ["<C-k>"] = "move_selection_previous",
+            ["<c-d>"] = "delete_buffer",
+            ["<c-l>"] = "select_default",
+          },
+          n = {
+            ["<C-s>"] = "select_horizontal",
+            ["<C-v>"] = "select_vertical",
+            ["<c-l>"] = "select_default",
+          },
+        },
       },
     })
     require("telescope").load_extension("undo")
@@ -27,6 +48,11 @@ return {
     { "<leader>ff", "<CMD>Tele find_files<CR>", { desc = "Fzf files on project" } },
     { "<leader>fu", "<CMD>Tele undo<CR>", { desc = "Fzf undo" } },
     { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
+    {
+      "<leader>l",
+      "<CMD>Telescope buffers sorting_mru=true sort_lastused=true initial_mode=normal ignore_current_buffer=true<CR>",
+      { desc = "Telescop buffers" },
+    },
     -- change a keymap
   },
 }

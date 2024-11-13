@@ -28,7 +28,7 @@ return {
       mappings = {
         ["/"] = "none",
         ["<C-f>"] = "fuzzy_finder",
-        ["l"] = "open_with_window_picker",
+        -- ["l"] = "open_with_window_picker",
         ["s"] = "none",
         ["<c-v>"] = "vsplit_with_window_picker",
         ["<c-s>"] = "split_with_window_picker",

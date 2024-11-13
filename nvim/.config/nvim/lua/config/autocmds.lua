@@ -20,3 +20,10 @@ vim.api.nvim_create_user_command("Format", function(args)
   end
   require("conform").format({ async = true, lsp_format = "fallback", range = range })
 end, { range = true })
+
+-- -- Configurar el color de los tabs inactivos
+-- vim.cmd("hi TabLine guifg=#888888 guibg=#333333")
+-- -- Configurar el color del tab activo
+-- vim.cmd("hi TabLineSel guifg=#ffffff guibg=#121212")
+-- -- Configurar el fondo del área vacía entre tabs
+-- vim.cmd("hi TabLineFill guifg=#888888 guibg=#222222")

@@ -84,6 +84,9 @@ return {
           PmenuSel = { bg = colors.palette.waveBlue, fg = colors.palette.fujiWhite, bold = true },
           PmenuSbar = { bg = colors.palette.sumiInk2 },
           PmenuThumb = { bg = colors.palette.sumiInk4 },
+          -- TabLine = { fg = "#888888", bg = "#333333" },
+          -- TabLineSel = { fg = "#7e9cd8", bg = "#121212" },
+          -- TabLineFill = { fg = "#888888", bg = "#222222" },
         }
       end,
     },
@@ -93,14 +96,14 @@ return {
     opts = {
       options = {
         styles = { -- Style to be applied to different syntax groups
-          comments = "NONE", -- Value is any valid attr-list value `:help attr-list`
+          comments = "italic", -- Value is any valid attr-list value `:help attr-list`
           conditionals = "bold",
           constants = "bold",
           functions = "bold",
           keywords = "NONE",
           numbers = "NONE",
           operators = "NONE",
-          strings = "NONE",
+          strings = "italic",
           types = "italic",
           variables = "NONE",
         },
@@ -118,63 +121,42 @@ return {
     },
   },
   {
-    "folke/tokyonight.nvim",
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
-  },
-  {
-    "sho-87/kanagawa-paper.nvim",
+    "cdmill/neomodern.nvim",
     lazy = false,
     priority = 1000,
-    opts = { transparent = true },
+    config = function()
+      require("neomodern").setup({
+        -- optional configuration here
+      })
+    end,
   },
   {
-    "dpenedo/yorumi.nvim",
+    "dpenedo/melange-nvim",
   },
   {
-    "gbprod/nord.nvim",
+    "ramojus/mellifluous.nvim",
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = true,
-      styles = {
-        comments = { italic = true },
-        keywords = { italic = true },
-        functions = { bold = true },
-        variables = {},
+      colorset = "tender",
+      -- dim_inactive = true,
+      transparent_background = {
+        enabled = true,
+        floating_windows = true,
+        telescope = true,
+        file_tree = true,
+        cursor_line = false,
+        status_line = false,
       },
     },
   },
-  -- {
-  --   "rmehri01/onenord.nvim",
-  --   opts = {
-  --     styles = {
-  --       comments = "italic",
-  --       strings = "italic",
-  --       keywords = "bold",
-  --     },
-  --     disable = {
-  --       background = true,
-  --       float_background = true,
-  --     },
-  --     inverse = {
-  --       match_paren = true,
-  --     },
-  --     custom_colors = {
-  --       float = "#2c2c2c",
-  --     },
-  --   },
-  -- },
+
+  -- Using lazy.nvim
   -- lazy
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "dayfox",
     },
   },
 }
