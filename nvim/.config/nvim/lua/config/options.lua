@@ -4,5 +4,3 @@
 vim.opt.wrap = true -- Disable line wrap
 vim.opt.clipboard = ""
 vim.o.showtabline = 2
-
--- Configuración del color de los tabs en Neovim usando Lua

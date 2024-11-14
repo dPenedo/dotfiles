@@ -31,6 +31,7 @@ return {
           -- Wave
           fujiWhite = "#E8DBCF",
           oldWhite = "#c9cbd1",
+          surimiOrange = "#F9AB7B",
           -- oldWhite = '#CDD6F4',
 
           -- Brown:
@@ -156,7 +157,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "dayfox",
+      colorscheme = "kanagawa",
     },
   },
 }

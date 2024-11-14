@@ -1,4 +1,4 @@
--- Keymaps are automatically loaded on the VeryLazy event
+# -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 vim.keymap.del("n", "<leader>wd")
@@ -27,6 +27,24 @@ map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
 -- Notas --
+-- Headings
+vim.keymap.set("n", "#", function()
+  -- Guarda la posición original del cursor
+  local cursor_pos = vim.api.nvim_win_get_cursor(0)
+  local line = vim.fn.getline(".")
+
+  if line:match("^#") then
+    -- Si la línea ya tiene un #, añade otro sin espacio
+    vim.fn.setline(".", "#" .. line)
+  else
+    -- Si no tiene #, añade '# ' con un espacio
+    vim.fn.setline(".", "# " .. line)
+  end
+
+  -- Restaura la posición del cursor y desplaza una columna a la derecha
+  vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + 1 })
+end, { desc = "Poner # al principio para headings con espacio si es necesario" })
+
 -- New Notes
 map("n", "<leader>nn", function()
   local filename = vim.fn.input("Enter file name: ", "", "file")
