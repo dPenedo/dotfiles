@@ -5,16 +5,16 @@ return {
     opts = {
       -- transparent = true, -- do not set background color
       compile = true,
-      transparent = true,
+      transparent = false,
       functionStyle = { bold = true },
-      dimInactive = false,
+      dimInactive = true,
       typeStyle = { bold = false },
       keywordStyle = { bold = false },
       colors = {
         theme = {
           wave = {
             ui = {
-              -- bg_gutter = '#1a1a22',
+              -- bg_gutter = "#1a1a22",
               bg_gutter = "none",
               nontext = "#B1A9A0",
             },
@@ -35,22 +35,22 @@ return {
           -- oldWhite = '#CDD6F4',
 
           -- Brown:
-          -- sumiInk0 = '#191715',
-          -- sumiInk1 = '#1B1917',
-          -- sumiInk2 = '#1D1B19',
-          -- sumiInk3 = '#221F1C',
-          -- sumiInk4 = '#2A2622',
-          -- sumiInk5 = '#36322C',
-          -- sumiInk6 = '#4A433D',
+          -- sumiInk0 = "#191715",
+          -- sumiInk1 = "#1B1917",
+          -- sumiInk2 = "#1D1B19",
+          -- sumiInk3 = "#221F1C",
+          -- sumiInk4 = "#2A2622",
+          -- sumiInk5 = "#433E37",
+          -- sumiInk6 = "#5A5349",
 
           --Neutral:
-          sumiInk0 = "#121212",
-          sumiInk1 = "#181818",
-          sumiInk2 = "#1a1a1a",
-          sumiInk3 = "#121212",
-          sumiInk4 = "#2A2A2A",
-          sumiInk5 = "#363636",
-          sumiInk6 = "#545454",
+          -- sumiInk0 = "#121212",
+          -- sumiInk1 = "#212121",
+          -- sumiInk2 = "#1a1a1a",
+          -- sumiInk3 = "#121212",
+          -- sumiInk4 = "#2A2A2A",
+          -- sumiInk5 = "#363636",
+          -- sumiInk6 = "#545454",
           -- -- Popup and Floats
           waveBlue1 = "#223249",
           waveBlue2 = "#2D4F67",
@@ -71,8 +71,8 @@ return {
         },
       },
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+        -- sidebars = "transparent",
+        -- floats = "transparent",
       },
       overrides = function(colors)
         return {
@@ -85,6 +85,8 @@ return {
           PmenuSel = { bg = colors.palette.waveBlue, fg = colors.palette.fujiWhite, bold = true },
           PmenuSbar = { bg = colors.palette.sumiInk2 },
           PmenuThumb = { bg = colors.palette.sumiInk4 },
+          VertSplit = { fg = colors.palette.oniViolet2 },
+          WinSeparator = { fg = colors.palette.winterYellow },
           -- TabLine = { fg = "#888888", bg = "#333333" },
           -- TabLineSel = { fg = "#7e9cd8", bg = "#121212" },
           -- TabLineFill = { fg = "#888888", bg = "#222222" },

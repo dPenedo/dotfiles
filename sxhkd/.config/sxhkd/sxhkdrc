@@ -98,7 +98,9 @@ super + Tab
 alt +  Tab
   bspc node --focus next.local
 
-
+# Alternar al escritorio 5 o al último escritorio activo
+super + `
+    ~/.config/bspwm/toggle_workspace.sh 5
 
 # focus the older or newer node in the focus history
 # super + {o,i}

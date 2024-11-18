@@ -7,7 +7,7 @@
     "editor.tabSize": 4,
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
-    "editor.fontFamily": " 'Hack', 'JetBrainsMono Nerd Font','FiraCode Nerd Font', 'monospace', monospace",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Hack', 'JetBrainsMono Nerd Font', 'monospace', monospace",
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.lineNumbers": "relative",
@@ -27,7 +27,7 @@
     "editor.bracketPairColorization.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.hideCursorInOverviewRuler": true,
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
     "keyboard.dispatch": "keyCode",
@@ -52,7 +52,7 @@
         "[Kanagawa]": {
             "editorBracketMatch.background": "#363646",
             "editorBracketMatch.border": "#7e9cd8",
-            "editor.background": "#232324",
+            "editor.background": "#121212",
             "terminal.background": "#191922",
             "editorLineNumber.foreground": "#5E6982",
             "editorLineNumber.activeForeground": "#ED9338",
@@ -98,27 +98,6 @@
             "terminal.ansiBrightBlue": "#3e8fb0",
         },
     },
-    "editor.semanticTokenColorCustomizations": {
-        "[Kanagawa Black]": {
-            "comments": "#8A8980",
-            "background": "#161617"
-        },
-        "textMateRules": [
-            {
-                "scope": [
-                    "comment",
-                    "comment.block",
-                    "comment.block.documentation",
-                    "comment.line",
-                    "comment.line.double-slash",
-                    "punctuation.definition.comment",
-                ],
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
-    },
     "editor.tokenColorCustomizations": {
         "[Kanagawa]": {
             "comments": "#8A8980",
@@ -143,7 +122,7 @@
     "window.openFilesInNewWindow": "off",
     // Terminal
     "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'JetBrainsMono Nerd Font', 'monospace', monospace",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 13,
     "terminal.integrated.tabs.enabled": false,
     //Explorer
     "explorer.confirmDelete": true,

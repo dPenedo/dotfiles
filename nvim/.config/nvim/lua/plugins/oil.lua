@@ -5,11 +5,12 @@ return {
     skip_confirm_for_simple_edits = true,
     default_file_explorer = true,
     keymaps = {
-      ["<C-h>"] = false,
-      ["<C-l>"] = false,
+
+      ["<C-p>"] = false,
       ["<leader>r"] = "actions.refresh",
       ["<leader>h"] = "actions.parent",
       ["<leader>l"] = "actions.select",
+      ["<a-p>"] = "actions.preview",
       ["<C-h>"] = "actions.parent",
       ["<C-l>"] = "actions.select",
       ["<leader>."] = "actions.toggle_hidden",
