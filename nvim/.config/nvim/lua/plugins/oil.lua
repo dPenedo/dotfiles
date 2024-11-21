@@ -8,8 +8,6 @@ return {
 
       ["<C-p>"] = false,
       ["<leader>r"] = "actions.refresh",
-      ["<leader>h"] = "actions.parent",
-      ["<leader>l"] = "actions.select",
       ["<a-p>"] = "actions.preview",
       ["<C-h>"] = "actions.parent",
       ["<C-l>"] = "actions.select",

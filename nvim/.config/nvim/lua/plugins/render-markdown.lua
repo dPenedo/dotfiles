@@ -2,8 +2,6 @@ return {
   "MeanderingProgrammer/render-markdown.nvim",
   event = "VeryLazy",
   dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" }, -- if you prefer nvim-web-devicons
-  ---@module 'render-markdown'
-  ---@type render.md.UserConfig
   opts = {
     heading = {
       enabled = true,
@@ -66,5 +64,8 @@ return {
       -- Turn on / off checkbox state rendering
       enabled = true,
     },
+  },
+  keys = {
+    { "<leader>um", "<CMD>RenderMarkdown toggle<CR>", { desc = "Toggle RenderMarkdown" } },
   },
 }

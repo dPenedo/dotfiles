@@ -7,7 +7,8 @@
     "editor.tabSize": 4,
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'FiraCode Nerd Font', 'Hack', 'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.fontFamily": "'FiraCode Nerd Font','Liberation Mono','DejaVu Sans Mono Book','SauceCodePro NF','BlexMono Nerd Font Mono','JetBrainsMono Nerd Font','Hack',   'monospace', monospace",
+    "editor.fontSize": 14,
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.lineNumbers": "relative",
@@ -26,6 +27,7 @@
     "editor.glyphMargin": true,
     "editor.bracketPairColorization.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
     "editor.hideCursorInOverviewRuler": true,
     "workbench.sideBar.location": "left",
     "workbench.activityBar.location": "hidden",
@@ -52,7 +54,7 @@
         "[Kanagawa]": {
             "editorBracketMatch.background": "#363646",
             "editorBracketMatch.border": "#7e9cd8",
-            "editor.background": "#121212",
+            "editor.background": "#202027",
             "terminal.background": "#191922",
             "editorLineNumber.foreground": "#5E6982",
             "editorLineNumber.activeForeground": "#ED9338",
@@ -241,6 +243,5 @@
     "material-icon-theme.folders.color": "#7e9cd8",
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.folders.theme": "specific",
-    "editor.fontSize": 13,
-    "workbench.colorTheme": "Kanagawa"
+    "workbench.colorTheme": "Kanagawa",
 }

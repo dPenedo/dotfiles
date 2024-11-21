@@ -24,20 +24,20 @@ sleep 2
 # thunderbird &
 # flatpak run md.obsidian.Obsidian &
 
-	sleep 8
-	wmctrl -r "Brave" -t 0 &
-	# wmctrl -r "Firefox" -t 0 &
-	wmctrl -r "kitty" -t 1 &
-	wmctrl -r "~" -t 1 &
-	wmctrl -r "tmux" -t 1 &
-	wmctrl -r "Chat" -t 7 &
-	wmctrl -r "TickTick" -t 9 &
-	sleep 5
-	wmctrl -r "obsidian" -t 6 &
+sleep 8
+wmctrl -r "kitty" -t 0 &
+wmctrl -r "Brave" -t 1 &
+# wmctrl -r "Firefox" -t 0 &
+wmctrl -r "~" -t 1 &
+wmctrl -r "tmux" -t 1 &
+wmctrl -r "Chat" -t 7 &
+wmctrl -r "TickTick" -t 9 &
+sleep 5
+wmctrl -r "obsidian" -t 6 &
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &
 # rofi -e "⚡¡Bienvenido🎷 Se han abierto: 🦊Firefox, 🦁Brave, 📭 el mail y un par de sesiones de la terminal 🐈kitty"
 #
 
- tmux source-file ~/.tmux.conf &
+tmux source-file ~/.tmux.conf &

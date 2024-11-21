@@ -27,9 +27,11 @@ return {
     window = {
       mappings = {
         ["/"] = "none",
+        ["?"] = "none",
         ["<C-f>"] = "fuzzy_finder",
-        -- ["l"] = "open_with_window_picker",
+        ["l"] = "open_with_window_picker",
         ["s"] = "none",
+        ["g?"] = "show_help",
         ["<c-v>"] = "vsplit_with_window_picker",
         ["<c-s>"] = "split_with_window_picker",
         ["<tab>"] = {
@@ -54,8 +56,8 @@ return {
     },
     {
       -- "<C-h>",
-      "<leader>h>",
-      "<CMD>Neotree position=current reveal <CR>",
+      "<leader>h",
+      "<CMD>Neotree position=float reveal <CR>",
       desc = "Explorer NeoTree (Root Dir)",
     },
   },
