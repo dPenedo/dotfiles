@@ -8,8 +8,7 @@
     fg-col2: #DCA561;
     grey: #6c7086;
 
-    width: 700;
-    font: "Hack 12";
+    font: "FiraCode Nerd Font 12";
 }
 
 element-text, element-icon , mode-switcher {
@@ -18,7 +17,8 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 460px;
+    height: 480px;
+    width: 700px;
     border: 3px;
     border-color: @border-col;
     background-color: @bg-col;

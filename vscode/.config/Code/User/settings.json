@@ -7,8 +7,8 @@
     "editor.tabSize": 4,
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'FiraCode Nerd Font','Liberation Mono','DejaVu Sans Mono Book','SauceCodePro NF','BlexMono Nerd Font Mono','JetBrainsMono Nerd Font','Hack',   'monospace', monospace",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "'FiraCode Nerd Font','Iosevka Term','Liberation Mono','DejaVu Sans Mono Book','SauceCodePro NF','BlexMono Nerd Font Mono','JetBrainsMono Nerd Font','Hack',   'monospace', monospace",
+    "editor.fontSize": 13.4,
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.lineNumbers": "relative",
@@ -239,9 +239,8 @@
         }
     ],
     "java.jdt.ls.java.home": "/home/daniel/Descargas/Programas/jdk-11.0.0.1",
-    "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.folders.color": "#7e9cd8",
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.folders.theme": "specific",
-    "workbench.colorTheme": "Kanagawa",
+    "workbench.colorTheme": "Panda Theme High Contrast",
 }
