@@ -25,6 +25,7 @@ return {
   },
   opts = {
     window = {
+      position = "current",
       mappings = {
         ["/"] = "none",
         ["?"] = "none",
@@ -37,6 +38,24 @@ return {
         ["<tab>"] = {
           "toggle_node",
           nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
+        },
+      },
+      default_component_configs = {
+        modified = {
+          symbol = "[aaaa+]",
+          highlight = "NeoTreeModified",
+        },
+        file_size = {
+          enabled = false,
+        },
+        type = {
+          enabled = false,
+        },
+        last_modified = {
+          enabled = false,
+        },
+        created = {
+          enabled = false,
         },
       },
     },
@@ -62,7 +81,7 @@ return {
     {
       -- "<C-h>",
       "<leader>h",
-      "<CMD>Neotree position=float reveal <CR>",
+      "<CMD>Neotree position=current reveal <CR>",
       desc = "Explorer NeoTree (Root Dir)",
     },
   },

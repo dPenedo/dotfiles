@@ -8,7 +8,7 @@
     fg-col2: #DCA561;
     grey: #6c7086;
 
-    font: "FiraCode Nerd Font 12";
+    font: "Hack 12";
 }
 
 element-text, element-icon , mode-switcher {

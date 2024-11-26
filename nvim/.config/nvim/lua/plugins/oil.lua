@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     skip_confirm_for_simple_edits = true,
-    default_file_explorer = true,
+    default_file_explorer = false,
     keymaps = {
 
       ["<C-p>"] = false,

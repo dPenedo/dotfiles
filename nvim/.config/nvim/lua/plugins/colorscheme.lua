@@ -5,7 +5,7 @@ return {
     opts = {
       -- transparent = true, -- do not set background color
       compile = true,
-      transparent = false,
+      transparent = true,
       functionStyle = { bold = true },
       dimInactive = true,
       typeStyle = { bold = false },
@@ -174,7 +174,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "melange",
     },
   },
 }

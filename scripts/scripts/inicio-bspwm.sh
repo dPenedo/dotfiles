@@ -9,6 +9,7 @@ brave-browser &
 sleep 7
 ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
+brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
 sleep 4
 kitty &
