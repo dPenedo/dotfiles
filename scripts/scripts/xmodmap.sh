@@ -13,8 +13,4 @@ setxkbmap -option ctrl:nocaps
 xcape -e 'Control_L=Escape'
 xcape -e 'Control_L=Escape' -t 50
 
-
 notify-send -u normal -t 2000 "Teclas cambiadas" "Bloq Mayus como Control y Alt gr + - como /"
-
-
-
