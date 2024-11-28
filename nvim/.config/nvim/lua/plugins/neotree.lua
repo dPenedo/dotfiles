@@ -42,7 +42,7 @@ return {
       },
       default_component_configs = {
         modified = {
-          symbol = "[aaaa+]",
+          symbol = "[+]",
           highlight = "NeoTreeModified",
         },
         file_size = {

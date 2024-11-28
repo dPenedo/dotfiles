@@ -36,7 +36,8 @@ return {
           cwd = function()
             return vim.fn.getcwd()
           end,
-        })
+        }),
+        require("neotest-python")
       )
       table.insert(opts.adapters, require("neotest-vitest"))
     end,

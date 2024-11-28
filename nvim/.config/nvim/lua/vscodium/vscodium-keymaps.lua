@@ -83,6 +83,7 @@ map("n", "<leader>xx", vscode_call("workbench.action.problems.focus"))
 -- Actions
 map("n", "<leader>e", vscode_call("workbench.files.action.focusFilesExplorer"))
 map("n", "<leader>bb", vscode_call("workbench.action.toggleSidebarVisibility"))
+map("n", "<leader>h", vscode_call("vsnetrw.open"))
 map("n", "<leader>tt", vscode_call("workbench.view.extension.todo-tree-container"))
 map("n", "==", vscode_call("editor.action.formatDocument"))
 
