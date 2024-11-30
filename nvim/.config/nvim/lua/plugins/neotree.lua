@@ -73,11 +73,11 @@ return {
       "<CMD>Neotree position=left<CR>",
       desc = "Explorer NeoTree (Root Dir)",
     },
-    {
-      "<C-h>",
-      "<CMD>Neotree position=float reveal <CR>",
-      desc = "Explorer NeoTree (Root Dir)",
-    },
+    -- {
+    --   "<C-h>",
+    --   "<CMD>Neotree position=float reveal <CR>",
+    --   desc = "Explorer NeoTree (Root Dir)",
+    -- },
     {
       -- "<C-h>",
       "<leader>h",

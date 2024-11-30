@@ -57,7 +57,7 @@ return {
       position = "right",
       width = "block",
       right_pad = 10,
-      left_pad = 2,
+      -- left_pad = 2,
       language_name = false,
     },
     checkbox = {

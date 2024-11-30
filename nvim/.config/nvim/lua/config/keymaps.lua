@@ -79,7 +79,7 @@ map("i", "<A-=>", function()
     prompt_title = "Selecciona una nota",
     cwd = "~/Documentos/Dropbox/Notas",
     attach_mappings = function(_, map_note)
-      map_note("i", "<CR>", function(prompt_bufnr)
+      local function insert_link(prompt_bufnr)
         local entry = require("telescope.actions.state").get_selected_entry()
         require("telescope.actions").close(prompt_bufnr)
         if entry and entry.path then
@@ -89,16 +89,14 @@ map("i", "<A-=>", function()
           local link = string.format("[[%s|%s]]", filename, description)
           vim.api.nvim_put({ link }, "", true, true)
         end
-      end)
+      end
+
+      -- Mapear tanto <CR> como <C-i> a la función insert_link
+      map_note("i", "<CR>", insert_link)
+      map_note("i", "<C-l>", insert_link)
+
       return true
     end,
   })
 end, { desc = "new link" })
 
--- Toggle Inlay Hints keymap
-map(
-  "n",
-  "<leader>ci",
-  [[:lua local is = vim.lsp.inlay_hint.is_enabled() vim.lsp.inlay_hint.enable(not is, nil)<CR>]],
-  { desc = "Toggle [C]ode [I]nlay hints" }
-)
