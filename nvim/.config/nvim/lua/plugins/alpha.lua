@@ -22,10 +22,10 @@ return {
     dashboard.section.buttons.val = {
       -- dashboard.button("f", "󱝩" .. " Find file", ":Telescope find_files <CR>"),
       -- dashboard.button("e", "󰩡 " .. " LF", ":Lf <CR>"),
-      dashboard.button("f", " " .. " Buscar archivo", "<CMD>Telescope find_files <CR>"),
-      dashboard.button("s", " " .. " Restaurar Sesión", [[:lua require("persistence").load() <cr>]]),
-      dashboard.button("o", " " .. " Archivos Antiguos ", "<CMD>Telescope oldfiles <cr>"),
-      dashboard.button("q", "󰩈" .. "  Salir", ":qa<CR>"),
+      dashboard.button("f", " " .. " Fitxategiak bilatu", "<CMD>Telescope find_files <CR>"),
+      dashboard.button("s", " " .. " Sesioa berreskuratu", [[:lua require("persistence").load() <cr>]]),
+      dashboard.button("o", " " .. " Fitxategi zaharrak ", "<CMD>Telescope oldfiles <cr>"),
+      dashboard.button("q", "󰩈" .. "  Irten", ":qa<CR>"),
     }
     for _, button in ipairs(dashboard.section.buttons.val) do
       button.opts.hl = "AlphaButtons"

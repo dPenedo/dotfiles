@@ -154,20 +154,6 @@ return {
       },
     },
   },
-  {
-    "gbprod/nord.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      transparent = true,
-      styles = {
-        comments = { italic = true },
-        keywords = { bold = true },
-        functions = { bold = true },
-        variables = {},
-      },
-    },
-  },
 
   -- Using lazy.nvim
   -- lazy

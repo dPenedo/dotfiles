@@ -29,7 +29,6 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "editor.hideCursorInOverviewRuler": true,
-    "workbench.sideBar.location": "left",
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
     "keyboard.dispatch": "keyCode",
@@ -192,7 +191,6 @@
         }
     },
     "editor.stickyScroll.enabled": false,
-    "window.menuBarVisibility": "toggle",
     "explorer.autoReveal": false,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
@@ -243,4 +241,5 @@
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.folders.theme": "specific",
     "workbench.colorTheme": "Kanagawa",
+    "window.menuBarVisibility": "toggle",
 }
