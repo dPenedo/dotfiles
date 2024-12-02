@@ -24,7 +24,7 @@ return {
   keys = {
     { "<c-h>", "<CMD>Oil <CR>", { desc = "Abrir Oil" } },
     { "<leader>o", "<CMD>Oil <CR>", { desc = "Abrir Oil" } },
-    { "<leader>-", "<CMD>Oil .<CR>", { desc = "Abrir Oil en root" } },
+    { "-", "<CMD>Oil .<CR>", { desc = "Abrir Oil en root" } },
     { "<leader>sd", "<CMD>OilDirectory<CR>", { desc = "Abrir Oil en root" } },
   },
 }

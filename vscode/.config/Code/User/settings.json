@@ -8,7 +8,7 @@
     "editor.lineHeight": 17,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Hack','Iosevka Term','Liberation Mono','DejaVu Sans Mono Book','SauceCodePro NF','BlexMono Nerd Font Mono','JetBrainsMono Nerd Font',   'monospace', monospace",
-    "editor.fontSize": 13.3,
+    "editor.fontSize": 13.1,
     "editor.wordWrap": "bounded",
     "editor.wrappingIndent": "same",
     "editor.lineNumbers": "relative",
