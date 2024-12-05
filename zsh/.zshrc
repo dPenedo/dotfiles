@@ -15,6 +15,9 @@ bindkey '^X^E' edit-command-line
 
 # Aceptar el autocompletado
 bindkey '^A' autosuggest-accept
+bindkey '^ ' autosuggest-accept
+
+
 
 
 _comp_options+=(globdots)
