@@ -14,9 +14,6 @@ map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
 
-map("n", "<leader>k", "<CMD>bl<CR>", { desc = "Ir al búfer previo" })
-map("n", "<leader>j", "<CMD>bn<CR>", { desc = "Ir al siguienteh búfer" })
-
 -- Copiar/pegar Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })
 map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })

@@ -3,9 +3,8 @@ return {
     "rebelot/kanagawa.nvim",
     lazy = false,
     opts = {
-      -- transparent = true, -- do not set background color
       compile = true,
-      transparent = false,
+      transparent = true,
       functionStyle = { bold = true },
       dimInactive = true,
       typeStyle = { bold = false },
@@ -44,13 +43,13 @@ return {
           -- sumiInk6 = "#5A5349",
 
           --Neutral:
-          sumiInk0 = "#121212",
-          sumiInk1 = "#212121",
-          sumiInk2 = "#1a1a1a",
-          sumiInk3 = "#121212",
-          sumiInk4 = "#2A2A2A",
-          sumiInk5 = "#363636",
-          sumiInk6 = "#545454",
+          -- sumiInk0 = "#121212",
+          -- sumiInk1 = "#181818",
+          -- sumiInk2 = "#1a1a1a",
+          -- sumiInk3 = "#121212",
+          -- sumiInk4 = "#2A2A2A",
+          -- sumiInk5 = "#363636",
+          -- sumiInk6 = "#545454",
           -- -- Popup and Floats
           waveBlue1 = "#223249",
           waveBlue2 = "#2D4F67",
@@ -159,7 +158,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "melange",
     },
   },
 }

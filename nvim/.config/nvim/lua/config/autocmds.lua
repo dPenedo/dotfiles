@@ -108,7 +108,8 @@ function M.setup_markdown_keymaps()
             local filename = vim.fn.fnamemodify(entry.path, ":t:r")
             local description = filename:gsub("[_-]", " ")
             local link = string.format("[[%s|%s]]", filename, description)
-            vim.api.nvim_put({ link }, "", true, true)
+            -- Cambié el cuarto parámetro de true a false para evitar el espacio extra
+            vim.api.nvim_put({ link }, "", false, true)
           end
         end
         map_note("i", "<CR>", insert_link)
