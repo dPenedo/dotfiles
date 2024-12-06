@@ -86,6 +86,9 @@ return {
           PmenuThumb = { bg = colors.palette.sumiInk4 },
           VertSplit = { fg = colors.palette.oniViolet2 },
           WinSeparator = { fg = colors.palette.winterYellow },
+
+          RenderMarkdownLink = { fg = colors.palette.springBlue },
+          RenderMarkdownWikiLink = { fg = colors.palette.springBlue },
           -- TabLine = { fg = "#888888", bg = "#333333" },
           -- TabLineSel = { fg = "#7e9cd8", bg = "#121212" },
           -- TabLineFill = { fg = "#888888", bg = "#222222" },
@@ -153,12 +156,25 @@ return {
       },
     },
   },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   opts = {
+  --     flavour = "mocha", -- latte, frappe, macchiato, mocha
+  --     transparent_background = true,
+  --     styles = {
+  --       functions = { "bold" },
+  --       keywords = { "italic" },
+  --       types = { "italic" },
+  --     },
+  --   },
+  -- },
   -- Using lazy.nvim
   -- lazy
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "melange",
+      colorscheme = "kanagawa",
     },
   },
 }
