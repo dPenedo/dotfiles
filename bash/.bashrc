@@ -2,12 +2,10 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 
-
 export HISTFILE="$HOME/.bash_history"
-
 
 export VISUAL=nvim
 export EDITOR=nvim
@@ -16,14 +14,12 @@ export BROWSER="brave-browser"
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-	PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
-
 . "$HOME/.cargo/env"
 alias config='/usr/bin/git --git-dir=/home/daniel/.cfg/ --work-tree=/home/daniel'
-
 
 #############
 ### PROMPT###
@@ -37,17 +33,17 @@ GRAY="\[\033[37m\]"
 RESET="\[\033[0m\]"
 
 rama_git() {
-	local branch
-	branch=$(git branch 2>/dev/null | sed -n '/^\*/s/^\* //p')
-	if [ -n "$branch" ]; then
-		if [[ $(git status -s) ]]; then
-			# echo "($branch*)"
-			echo -e "(\033[32m$branch*\033[0m)"
+  local branch
+  branch=$(git branch 2>/dev/null | sed -n '/^\*/s/^\* //p')
+  if [ -n "$branch" ]; then
+    if [[ $(git status -s) ]]; then
+      # echo "($branch*)"
+      echo -e "(\033[32m$branch*\033[0m)"
 
-		else
-			echo "($branch)"
-		fi
-	fi
+    else
+      echo "($branch)"
+    fi
+  fi
 }
 
 PS1="\n${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
@@ -60,22 +56,18 @@ bind '"\ee":"lfcd\n"'
 bind -x '"\C- ": __fzf_history__'
 bind '"\e[A": fzf-history-widget'
 
-
-
 # FZF
 if [ -x "$(command -v fzf)" ]; then
-	source ~/.fzf/shell/key-bindings.bash
-	source ~/.fzf/shell/completion.bash
-	source ~/.fzf/fzf-config.sh
+  source ~/.fzf/shell/key-bindings.bash
+  source ~/.fzf/shell/completion.bash
+  source ~/.fzf/fzf-config.sh
 fi
 
 #Aliases
 source ~/.aliases.sh
 source ~/.filemanagers.sh
 
-
 eval "$(zoxide init bash)"
-
 
 # export JAVA_HOME=/usr/lib/jvm/default-java
 export JAVA_HOME=~/Descargas/Programas/jdk-11.0.0.1/
@@ -89,4 +81,3 @@ alias te="tmc exercises mooc-java-programming-ii"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source /home/daniel/.tmc-autocomplete.sh || true
-. "/home/daniel/.deno/env"

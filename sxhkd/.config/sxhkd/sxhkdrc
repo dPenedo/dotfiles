@@ -68,7 +68,7 @@ super + alt + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
-super + {_,shift + }n
+super + {_,shift + }u
 	bspc node -f {next,prev}.local
 
 
@@ -98,9 +98,9 @@ super + Tab
 alt +  Tab
   bspc node --focus next.local
 
-# Alternar al escritorio 5 o al último escritorio activo
-super + a
-    ~/.config/bspwm/toggle_workspace.sh 5
+# Alternar al escritorio 7 o al último escritorio activo
+super + n
+    ~/.config/bspwm/toggle_workspace.sh 7
 
 # focus the older or newer node in the focus history
 # super + {o,i}
@@ -171,6 +171,7 @@ super + r
 # terminal emulator
 super + Return
   kitty
+
 
 # super + shift + Return
 #   kitty
@@ -252,4 +253,5 @@ alt + F4
   xfce4-session-logout
 
 super + v
-  xfce4-popup-clipman 
+  copyq toggle
+

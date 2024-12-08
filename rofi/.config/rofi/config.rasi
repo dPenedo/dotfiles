@@ -7,7 +7,7 @@ configuration {
     display-filebrowser: "    filebrowser:";
 
 
-	kb-accept-entry: "Tab,Return";
+	kb-accept-entry: "Return";
 	kb-mode-complete: "Shift+Tab";
 	kb-row-tab: "Control+j";
 	kb-remove-to-eol: "Control+U";

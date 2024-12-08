@@ -35,6 +35,8 @@ wmctrl -r "Chat" -t 7 &
 wmctrl -r "TickTick" -t 9 &
 sleep 5
 wmctrl -r "obsidian" -t 6 &
+kitty --title "📔 Notas" -e tmux attach-session -t "📔 Notas" &
+sleep 0.5 && wmctrl -r "📔 Notas" -t 6 &
 # wmctrl -r tmux -t 3 &
 # wmctrl -r Brave -t 4
 # wmctrl -r obsidian -t 8 &

@@ -25,7 +25,8 @@ source ~/.zsh/completion.zsh
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.filemanagers.sh
 source ~/.aliases.sh
-source ~/.fzf/shell/key-bindings.zsh
+# source ~/.fzf/shell/key-bindings.zsh
+source <(fzf --zsh)
 source ~/.fzf/fzf-config.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -104,4 +105,5 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
 export GOBIN=$GOPATH/bin   # opcional, define la ubicación de los binarios
 export PATH=$PATH:$GOBIN   # añade los binarios de Go al PATH
-. "/home/daniel/.deno/env"
+# . "/home/daniel/.deno/env"
+. "$HOME/.cargo/env"
