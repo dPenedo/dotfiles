@@ -216,7 +216,8 @@ super + alt + space
  xfce4-popup-whiskermenu
 
 super + alt + e
-  rofimoji
+  rofimoji -s neutral -a copy --clipboarder xclip
+
 
 
 # Media reproduccion

@@ -267,3 +267,26 @@ sudo apt-get install gnome-online-accounts
 sudo apt install cbatticon copyq volumeicon-alsa
 
 ```
+
+### xcape
+
+En basados en debian:
+
+```bash
+sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
+```
+
+En fedora:
+
+```bash
+sudo dnf install git gcc make pkgconfig libX11-devel libXtst-devel libXi-devel
+```
+
+Luego:
+
+```bash
+git clone https://github.com/alols/xcape.git
+cd xcape
+make
+sudo make install
+```
