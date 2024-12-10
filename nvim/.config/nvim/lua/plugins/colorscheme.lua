@@ -62,11 +62,12 @@ return {
           lotusInk1 = "#141414",
 
           lotusWhite0 = "#B3BDFD",
-          lotusWhite1 = "#dcd5ac",
-          lotusWhite2 = "#e5ddb0",
+          lotusWhite1 = "#E2E0DB",
+          lotusWhite2 = "#CFCBC5",
           lotusWhite3 = "#F8F3F0",
           lotusWhite4 = "#DEE4F8",
           lotusWhite5 = "#CDD6F4",
+          lotusGreen3 = "#9DBF91",
         },
       },
       styles = {
@@ -100,6 +101,7 @@ return {
     "EdenEast/nightfox.nvim",
     opts = {
       options = {
+        transparent = true,
         dim_inactive = true,
         styles = { -- Style to be applied to different syntax groups
           comments = "italic", -- Value is any valid attr-list value `:help attr-list`
@@ -118,10 +120,23 @@ return {
         dayfox = {
           -- Defining multiple shades is done by passing a table
           blue = { base = "#464C8B", bright = "#7e94ed", dim = "#595C78" },
+          bg2 = "#E2E0DB", -- Lighter bg (colorcolm folds)
         },
         nordfox = {
           -- bg0 = "#232831", -- Dark bg (status line and float)
           bg1 = "#242424", -- Default bg
+        },
+      },
+      groups = {
+        dayfox = {
+          RenderMarkdownLink = { fg = "#5E69AF" },
+          RenderMarkdownH1 = { fg = "#AC5402" },
+          RenderMarkdownH2 = { fg = "#6E33CE" },
+          RenderMarkdownH3 = { fg = "#709244" },
+          RenderMarkdownH4 = { fg = "#464C8B" },
+          RenderMarkdownH5 = { fg = "#464C8B" },
+          RenderMarkdownH6 = { fg = "#464C8B" },
+          ["@markup.heading"] = { fg = "#464C8B", style = "bold" },
         },
       },
     },
@@ -138,6 +153,20 @@ return {
   },
   {
     "dpenedo/melange-nvim",
+  },
+  {
+    "zenbones-theme/zenbones.nvim",
+    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+    -- In Vim, compat mode is turned on as Lush only works in Neovim.
+    dependencies = "rktjmp/lush.nvim",
+    lazy = false,
+    priority = 1000,
+    -- you can set set configuration options here
+    -- config = function()
+    --     vim.g.zenbones_darken_comments = 45
+    --     vim.cmd.colorscheme('zenbones')
+    -- end
   },
   {
     "ramojus/mellifluous.nvim",
@@ -161,7 +190,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "dayfox",
     },
   },
 }

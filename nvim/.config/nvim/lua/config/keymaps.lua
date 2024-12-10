@@ -13,6 +13,9 @@ map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo siti
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
+map("n", "<leader>G", ":!python gaur.py<CR>", { desc = "Generar una sección diaria en notas, eguneroka_" })
+map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2024.md<CR>", { desc = "Ir a Egunerokoa" })
+
 
 -- Copiar/pegar Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })

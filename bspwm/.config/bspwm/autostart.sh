@@ -31,6 +31,7 @@ pkill dunst && dunst &
 # feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/pond_shed.png &
 # feh --bg-fill /home/daniel/.config/bspwm/wallpapers/moon.jpg &
 # feh --bg-fill /home/daniel/.config/bspwm/wallpapers/yazi2.webp &
-feh --bg-fill /home/daniel/.config/bspwm/wallpapers/fish1.png &
+# feh --bg-fill /home/daniel/.config/bspwm/wallpapers/fish1.png &
+feh --bg-fill /home/daniel/.config/bspwm/wallpapers/costa.jpg &
 # feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/mirage-Kan.png &
 # feh --bg-fill /home/daniel/Imagenes/Fondos-de-pantalla/blackgolden-mountains.png &

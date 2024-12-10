@@ -1,0 +1,7 @@
+#Desert
+bspc config normal_border_color "#1E1E1E"
+bspc config active_border_color "#3F3F3F"
+bspc config focused_border_color "#7e9CD8"
+# bspc config focused_border_color "#7E9CD8"
+bspc config presel_feedback_color "#5e81ac"
+bspc config urgent_border_color "#dd2727"
