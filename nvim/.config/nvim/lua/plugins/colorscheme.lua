@@ -120,7 +120,8 @@ return {
         dayfox = {
           -- Defining multiple shades is done by passing a table
           blue = { base = "#464C8B", bright = "#7e94ed", dim = "#595C78" },
-          bg2 = "#E2E0DB", -- Lighter bg (colorcolm folds)
+          bg0 = "#E2E0DB", -- Lighter bg (colorcolm folds)
+          bg2 = "#D6D3CD", -- Lighter bg (colorcolm folds)
         },
         nordfox = {
           -- bg0 = "#232831", -- Dark bg (status line and float)
@@ -137,6 +138,7 @@ return {
           RenderMarkdownH5 = { fg = "#464C8B" },
           RenderMarkdownH6 = { fg = "#464C8B" },
           ["@markup.heading"] = { fg = "#464C8B", style = "bold" },
+          ["@markup.link.label"] = { fg = "#709244" },
         },
       },
     },
@@ -156,17 +158,19 @@ return {
   },
   {
     "zenbones-theme/zenbones.nvim",
-    -- Optionally install Lush. Allows for more configuration or extending the colorscheme
-    -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-    -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = "rktjmp/lush.nvim",
     lazy = false,
     priority = 1000,
-    -- you can set set configuration options here
-    -- config = function()
-    --     vim.g.zenbones_darken_comments = 45
-    --     vim.cmd.colorscheme('zenbones')
-    -- end
+    config = function()
+      -- Configuración básica
+      vim.g.forestbones_darkness = "stark" -- Otras opciones: 'stark'
+      vim.g.forestbones_lighten_noncurrent_window = true -- Ajustar color de comentarios
+      vim.g.forestbones_solid_vert_split = true -- Ajustar color de comentarios
+      vim.g.forestbones_solid_line_nr = true -- Ajustar color de comentarios
+      vim.g.forestbones_lighten_cursor_line = 8 -- Ajustar color de comentarios
+
+      -- Aplicar el esquema de colores
+    end,
   },
   {
     "ramojus/mellifluous.nvim",
@@ -185,12 +189,27 @@ return {
       },
     },
   },
-  -- Using lazy.nvim
-  -- lazy
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "dayfox",
-    },
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+    -- Optional; default configuration will be used if setup isn't called.
+    config = function()
+      require("everforest").setup({
+        background = "hard",
+        transparent_background_level = 0,
+        italics = true,
+        dim_inactive_windows = true,
+      })
+    end,
   },
+  {
+    "f4z3r/gruvbox-material.nvim",
+    name = "gruvbox-material",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  -- Using lazy.nvim
 }
