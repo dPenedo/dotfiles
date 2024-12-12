@@ -34,13 +34,13 @@ return {
           -- oldWhite = '#CDD6F4',
 
           -- Brown:
-          -- sumiInk0 = "#191715",
-          -- sumiInk1 = "#1B1917",
-          -- sumiInk2 = "#1D1B19",
-          -- sumiInk3 = "#221F1C",
-          -- sumiInk4 = "#2A2622",
-          -- sumiInk5 = "#433E37",
-          -- sumiInk6 = "#5A5349",
+          sumiInk0 = "#191715",
+          sumiInk1 = "#1B1917",
+          sumiInk2 = "#1D1B19",
+          sumiInk3 = "#221F1C",
+          sumiInk4 = "#3E3832",
+          sumiInk5 = "#433E37",
+          sumiInk6 = "#5A5349",
 
           --Neutral:
           -- sumiInk0 = "#121212",
@@ -204,12 +204,14 @@ return {
       })
     end,
   },
-  {
-    "f4z3r/gruvbox-material.nvim",
-    name = "gruvbox-material",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  -- {
+  --   "f4z3r/gruvbox-material.nvim",
+  --   name = "gruvbox-material",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     contrast = "hard",
+  --   },
+  -- },
   -- Using lazy.nvim
 }
