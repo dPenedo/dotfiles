@@ -108,11 +108,20 @@ function M.setup_markdown_keymaps()
             local filename = vim.fn.fnamemodify(entry.path, ":t:r")
             local description = filename:gsub("[_-]", " ")
             local link = string.format("[[%s|%s]]", filename, description)
-            vim.api.nvim_put({ link }, "", true, true)
+
+            -- Obtiene la posición actual del cursor en modo de inserción
+            local cursor_pos = vim.api.nvim_win_get_cursor(0)
+            local line = vim.fn.getline(".")
+
+            -- Inserta el enlace en la posición actual, sin mover el cursor extra
+            vim.fn.setline(".", line:sub(1, cursor_pos[2]) .. link .. line:sub(cursor_pos[2] + 1))
+
+            -- Ajusta el cursor para colocarlo después del enlace insertado
+            vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + #link })
           end
         end
         map_note("i", "<CR>", insert_link)
-        map_note("i", "<C-l>", insert_link)
+        map_note("i", "<C-Space>", insert_link)
         return true
       end,
     })

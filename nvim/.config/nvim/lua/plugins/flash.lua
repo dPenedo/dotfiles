@@ -10,7 +10,7 @@ return {
     modes = {
       search = { enabled = false },
       char = {
-        jump_labels = true,
+        jump_labels = false,
         highlight = {
           backdrop = false, -- Desactiva el fondo en el modo char
         },

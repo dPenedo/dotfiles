@@ -81,7 +81,7 @@ return {
     {
       -- "<C-h>",
       "<leader>h",
-      "<CMD>Neotree position=current reveal <CR>",
+      "<CMD>Neotree position=current reveal <CR><CMD>set relativenumber<CR>",
       desc = "Explorer NeoTree (Root Dir)",
     },
   },
