@@ -102,6 +102,10 @@ alt +  Tab
 super + n
     ~/.config/bspwm/toggle_workspace.sh 7
 
+# Alternar al escritorio 5 o al último escritorio activo
+super + a
+    ~/.config/bspwm/toggle_workspace.sh 5
+
 # focus the older or newer node in the focus history
 # super + {o,i}
 # 	bspc wm -h off; \
@@ -216,7 +220,7 @@ super + alt + space
  xfce4-popup-whiskermenu
 
 super + alt + e
-  rofimoji -s neutral -a copy --clipboarder xclip
+  rofimoji -s neutral
 
 
 
