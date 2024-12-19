@@ -1,2 +1,3 @@
-2024/12/08-13:10:17.197 33c5 Creating DB /home/daniel/.config/Code/Local Storage/leveldb since it was missing.
-2024/12/08-13:10:17.228 33c5 Reusing MANIFEST /home/daniel/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2024/12/12-14:00:17.393 68fba Reusing MANIFEST /home/daniel/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2024/12/12-14:00:17.419 68fba Recovering log #3
+2024/12/12-14:00:17.420 68fba Reusing old log /home/daniel/.config/Code/Local Storage/leveldb/000003.log 

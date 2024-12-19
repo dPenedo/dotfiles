@@ -21,12 +21,15 @@ alias fd='fdfind'
 alias fire='firefox-developer-edition'
 
 # alias n='nvim -c Lf'
+alias tt='kitty --title "📔 Notas" -e tmux attach-session -t "📔 Notas" & sleep 1 && wmctrl -r "📔 Notas" -t 6 &'
+
 alias ts='tmux new-session -A -D -s'
 alias python='python3'
 alias py='python3'
 alias bp='bpython'
 alias ipy='ipython3'
 alias LS='/bin/ls --color=auto'
+alias senv='source ./env/bin/activate'
 # alias bat='batcat'
 if command -v eza &>/dev/null; then
   alias ls='eza --group-directories-first --icons'

@@ -49,7 +49,7 @@ return {
     { "<leader>fu", "<CMD>Tele undo<CR>", { desc = "Fzf undo" } },
     { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
     {
-      "<leader>l",
+      "<leader><space>",
       "<CMD>Telescope buffers  sort_lastused=true  ignore_current_buffer=true<CR>",
       { desc = "Telescop buffers" },
     },

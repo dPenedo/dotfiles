@@ -7,7 +7,7 @@ return {
       ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
       -- ["<C-l>"] = cmp.mapping.confirm({ select = true }),
       ["<C-Space>"] = cmp.mapping.confirm({ select = true }),
-      ["<CR>"] = cmp.config.disable,
+      -- ["<CR>"] = cmp.config.disable,
     })
 
     opts.experimental = opts.experimental or {}

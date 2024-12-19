@@ -1,3 +1,3 @@
-2024/12/08-13:11:21.001 37f9 Reusing MANIFEST /home/daniel/.config/Code/Local Storage/leveldb/MANIFEST-000001
-2024/12/08-13:11:21.024 37f9 Recovering log #3
-2024/12/08-13:11:21.025 37f9 Reusing old log /home/daniel/.config/Code/Local Storage/leveldb/000003.log 
+2024/12/13-12:04:30.122 1f305 Reusing MANIFEST /home/daniel/.config/Code/Local Storage/leveldb/MANIFEST-000001
+2024/12/13-12:04:30.140 1f305 Recovering log #3
+2024/12/13-12:04:30.141 1f305 Reusing old log /home/daniel/.config/Code/Local Storage/leveldb/000003.log 

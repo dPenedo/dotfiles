@@ -8,6 +8,7 @@ vim.keymap.del("v", "<A-j>")
 vim.keymap.del("n", "<A-k>")
 vim.keymap.del("i", "<A-k>")
 vim.keymap.del("v", "<A-k>")
+vim.keymap.del("n", "<leader>n")
 -- vim.keymap.del("n", "<leader>l")
 local map = LazyVim.safe_keymap_set
 
@@ -19,7 +20,8 @@ map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo siti
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
-map("n", "<leader>G", ":!python gaur.py<CR>", { desc = "Generar una sección diaria en notas, eguneroka_" })
+map("n", "<leader>ng", ":!python gaur.py<CR>", { desc = "Generar una sección diaria en notas, eguneroka_" })
+map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
 map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2024.md<CR>", { desc = "Ir a Egunerokoa" })
 
 -- Copiar/pegar Clipboard
