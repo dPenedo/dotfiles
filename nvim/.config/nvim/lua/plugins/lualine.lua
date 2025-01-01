@@ -82,12 +82,13 @@ return {
           },
         },
         lualine_y = {
-          { lineas },
+          -- { lineas },
         },
         lualine_z = {
-          function()
-            return " " .. os.date("%R")
-          end,
+          { lineas },
+          -- function()
+          --   return " " .. os.date("%R")
+          -- end,
         },
       },
       extensions = { "neo-tree", "lazy" },

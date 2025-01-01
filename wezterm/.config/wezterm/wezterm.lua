@@ -3,9 +3,9 @@ local wezterm = require("wezterm")
 return {
 	font = wezterm.font_with_fallback({
 		-- "FiraCode Nerd Font",
-		-- "Hack Nerd Font",
+		"Hack Nerd Font",
 		-- "IosevkaTerm Nerd Font",
-		"JetBrainsMono Nerd Font Mono",
+		-- "JetBrainsMono Nerd Font Mono",
 		-- "Azeret Mono",
 		-- "Iosevka Nerd Font",
 		-- "Hack Nerd Font",
@@ -34,8 +34,8 @@ return {
 	color_scheme = "kanagawa (Gogh)",
 
 	colors = {
-		background = "#16161d",
-		foreground = "#fffef7",
+		background = "#161616",
+		foreground = "#E8DBCF",
 		tab_bar = {
 			-- The color of the strip that goes along the top of the window
 			-- (does not apply when fancy tab bar is in use)
@@ -109,8 +109,8 @@ return {
 		},
 	},
 
-	default_cursor_style = "BlinkingBar",
-	cursor_blink_rate = 400,
+	default_cursor_style = "SteadyBar",
+	-- cursor_blink_rate = 100,
 	check_for_updates = false,
 	force_reverse_video_cursor = false,
 	-- enable_tab_bar = true,

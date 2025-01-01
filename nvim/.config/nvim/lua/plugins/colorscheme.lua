@@ -18,6 +18,13 @@ return {
               nontext = "#B1A9A0",
             },
           },
+          dragon = {
+            ui = {
+              -- bg_gutter = "#1a1a22",
+              bg_gutter = "none",
+              nontext = "#B1A9A0",
+            },
+          },
           lotus = {
             ui = {
               bg_gutter = "none",
@@ -51,8 +58,8 @@ return {
           sumiInk5 = "#363636",
           sumiInk6 = "#545454",
           -- -- Popup and Floats
-          waveBlue1 = "#223249",
-          waveBlue2 = "#2D4F67",
+          waveBlue1 = "#2D2F49",
+          waveBlue2 = "#464C8B",
           -- waveBlue1 = '#4A433D',
           -- waveBlue1 = '#2c2c2c',
           -- waveBlue2 = '#3A334c',
@@ -90,9 +97,9 @@ return {
 
           RenderMarkdownLink = { fg = colors.palette.springBlue },
           RenderMarkdownWikiLink = { fg = colors.palette.springBlue },
-          -- TabLine = { fg = "#888888", bg = "#333333" },
-          -- TabLineSel = { fg = "#7e9cd8", bg = "#121212" },
-          -- TabLineFill = { fg = "#888888", bg = "#222222" },
+          TabLine = { fg = colors.palette.sumiInk6, bg = colors.palette.sumiInk4 },
+          TabLineSel = { fg = colors.palette.oldWhite, bg = colors.palette.sumiInk1 },
+          -- TabLineFill = { fg = colors.palette.sumiInk1, bg = colors.palette.sumiInk1 },
         }
       end,
     },
@@ -198,12 +205,46 @@ return {
     config = function()
       require("everforest").setup({
         background = "hard",
-        transparent_background_level = 0,
+        transparent_background_level = 1,
         italics = true,
         dim_inactive_windows = true,
       })
     end,
   },
+  {
+    "Styzex/Sonomin.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "dgox16/oldworld.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "comfysage/evergarden",
+    priority = 1000, -- Colorscheme plugin is loaded first before any other plugins
+    opts = {
+      transparent_background = true,
+      contrast_dark = "medium", -- 'hard'|'medium'|'soft'
+      overrides = {
+        -- Keyword = {
+        --   fg = "#ce96de",
+        --   bg = "#ae45be",
+        -- },
+      }, -- add custom overrides
+    },
+  },
+  {
+    "steguiosaur/fullerene.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  { "rose-pine/neovim", name = "rose-pine", opts = {
+    styles = {
+      transparency = true,
+    },
+  } },
   -- {
   --   "f4z3r/gruvbox-material.nvim",
   --   name = "gruvbox-material",

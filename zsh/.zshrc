@@ -59,9 +59,16 @@ fi
 if [[ ! -e ~/.zsh/zsh-autosuggestions ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 fi
+if [[ ! -e ~/.zsh/zsh-vim-mode ]]; then
+  git clone https://github.com/softmoth/zsh-vim-mode.git ~/.zsh/zsh-vim-mode
+fi
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-vim-mode/zsh-vim-mode.plugin.zsh
+source ~/.zsh/cursor-color
+
+
 
 # Movimiento entre palabras
 bindkey '^[[1;5D' backward-word   # Ctrl + Left Arrow
