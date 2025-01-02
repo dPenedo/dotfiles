@@ -94,18 +94,18 @@ function M.setup_markdown_keymaps()
     end
   end, { desc = "[n]ew [a]tom", buffer = true })
 
-  -- Insertar enlaces a notas existentes
+  -- Insertar enlaces a notas existentes usando fzf-lua
   vim.keymap.set("i", "<A-=>", function()
-    local telescope_builtin = require("telescope.builtin")
-    telescope_builtin.find_files({
-      prompt_title = "Selecciona una nota",
+    local fzf = require("fzf-lua")
+
+    fzf.files({
+      prompt = "Selecciona una nota",
       cwd = "~/Documentos/Dropbox/Notas",
-      attach_mappings = function(_, map_note)
-        local function insert_link(prompt_bufnr)
-          local entry = require("telescope.actions.state").get_selected_entry()
-          require("telescope.actions").close(prompt_bufnr)
-          if entry and entry.path then
-            local filename = vim.fn.fnamemodify(entry.path, ":t:r")
+      actions = {
+        ["default"] = function(selected)
+          if selected and #selected > 0 then
+            local path = selected[1] -- La ruta del archivo seleccionado
+            local filename = vim.fn.fnamemodify(path, ":t:r")
             local description = filename:gsub("[_-]", " ")
             local link = string.format("[[%s|%s]]", filename, description)
 
@@ -119,11 +119,8 @@ function M.setup_markdown_keymaps()
             -- Ajusta el cursor para colocarlo después del enlace insertado
             vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + #link })
           end
-        end
-        map_note("i", "<CR>", insert_link)
-        map_note("i", "<C-Space>", insert_link)
-        return true
-      end,
+        end,
+      },
     })
   end, { desc = "new link", buffer = true })
 end

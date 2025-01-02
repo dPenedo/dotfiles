@@ -222,20 +222,6 @@ return {
     priority = 1000,
   },
   {
-    "comfysage/evergarden",
-    priority = 1000, -- Colorscheme plugin is loaded first before any other plugins
-    opts = {
-      transparent_background = true,
-      contrast_dark = "medium", -- 'hard'|'medium'|'soft'
-      overrides = {
-        -- Keyword = {
-        --   fg = "#ce96de",
-        --   bg = "#ae45be",
-        -- },
-      }, -- add custom overrides
-    },
-  },
-  {
     "steguiosaur/fullerene.nvim",
     lazy = false,
     priority = 1000,
