@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
-pkill kitty &
+pkill alacritty &
 
 sleep 5
 brave-browser &
@@ -12,7 +12,7 @@ brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
 sleep 4
-kitty &
+alacritty &
 # sleep 4
 # kitty -e bash -c 'sleep 4; tmux' &
 
@@ -27,7 +27,7 @@ sleep 2
 
 sleep 8
 wmctrl -r "Brave" -t 1 &
-wmctrl -r "kitty" -t 0 &
+wmctrl -r "alacritty" -t 0 &
 wmctrl -r "~" -t 0 &
 # wmctrl -r "Firefox" -t 0 &
 wmctrl -r "tmux" -t 1 &

@@ -244,3 +244,11 @@ super + v
 # Abrir Neovim con texto seleccionado
 super + i
     ~/.local/bin/nvim_selection.sh
+
+  # Toggle Polybar
+super + semicolon
+	{polybar-msg cmd toggle; bspc config bottom_padding +0 ,\
+         polybar-msg cmd toggle; bspc config bottom_padding 20 }
+
+
+
