@@ -4,7 +4,6 @@ return {
   opts = {
     mappings = {
       synchronize = "<leader>w",
-      synchronize = "s",
       -- go_in = "<c-l>",
       -- go_in_plus = "<cr>",
       -- go_out = "H",

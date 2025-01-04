@@ -72,9 +72,10 @@ alias spotify="flatpak run com.spotify.Client"
 alias zotero="flatpak run org.zotero.Zotero"
 
 # Git
-alias gs="git status -sb" # Estado de Git
-alias ga="git add"        # Agregar cambios a Git
-alias gc="git commit -m"  # Hacer un commit en Git
+alias gs="git status -sb"        # Estado de Git
+alias ga="git add"               # Agregar cambios a Git
+alias gaa="~/scripts/fzf-git.sh" # Agregar cambios a Git
+alias gc="git commit -m"         # Hacer un commit en Git
 alias gce="~/scripts/fzf-commit.sh"
 alias gp="git push" # Hacer push en Git
 alias gl="git log"  # Ver el registro de Git

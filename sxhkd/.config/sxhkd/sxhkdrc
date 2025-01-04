@@ -49,7 +49,7 @@ super + shift + {i,o,p}
 
 
 # floating toggle
-super + z
+super + alt + space
   bspc node focused -t \~floating
 
 # set the node flags
@@ -106,6 +106,9 @@ super + n
 super + a
     ~/.config/bspwm/toggle_workspace.sh 5
 
+
+
+
 # focus the older or newer node in the focus history
 # super + {o,i}
 # 	bspc wm -h off; \
@@ -148,23 +151,6 @@ super + ctrl + alt + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# add to tabbed container
-ctrl + alt + {Left,Down,Up,Right}
-    tabc attach $(bspc query -N -n) {$(bspc query -N -n west),$(bspc query -N -n south),$(bspc query -N -n north),$(bspc query -N -n east)}
-
-# create/remove from tabbed container
-super + x 
-    id=$(bspc query -N -n); \
-    [[ "$(tabc printclass $id)" == "tabbed" ]] \
-    && tabc detach $id \
-    || tabc create $id 
-
-# toggle autoattach in tabbed container
-super + shift + x 
-    tabc autoattach $(bspc query -N -n) 
-
-super + r
-   bspc node @/ -R 90
 
 
 
@@ -174,7 +160,8 @@ super + r
 
 # terminal emulator
 super + Return
-  kitty
+  alacritty
+  # kitty
 
 
 # super + shift + Return
@@ -186,8 +173,6 @@ super + e
 super + c
   gnome-calendar
 
-super + w 
-	firefox-developer-edition
 
 super + b
 	brave-browser
@@ -196,15 +181,13 @@ super + g
   gpick
 # /home/daniel/.scripts/.tab-esc.sh
 # No funciona
-super + i
-  intellijide-ce
 
 super + d
  rofi -combi-modi -show-icons -show drun 
 super + Escape
  rofi -show powermenu -modi powermenu:~/scripts/rofi-power-menu  
 
-super + s
+super + w
  rofi -show window -show-icons
 
 ctrl + alt + w
@@ -216,8 +199,6 @@ super + space
    # dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"
 
 
-super + alt + space
- xfce4-popup-whiskermenu
 
 super + alt + e
   rofimoji -s neutral
@@ -260,3 +241,6 @@ alt + F4
 super + v
   copyq toggle
 
+# Abrir Neovim con texto seleccionado
+super + i
+    ~/.local/bin/nvim_selection.sh

@@ -99,6 +99,7 @@ return {
           RenderMarkdownWikiLink = { fg = colors.palette.springBlue },
           TabLine = { fg = colors.palette.sumiInk6, bg = colors.palette.sumiInk4 },
           TabLineSel = { fg = colors.palette.oldWhite, bg = colors.palette.sumiInk1 },
+          FzfLuaHeaderText = { fg = colors.palette.oniViolet2, bg = colors.palette.sumiInk1 },
           -- TabLineFill = { fg = colors.palette.sumiInk1, bg = colors.palette.sumiInk1 },
         }
       end,
