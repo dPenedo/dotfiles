@@ -2,11 +2,24 @@ return {
   "nvim-telescope/telescope.nvim",
   dependencies = {
     "debugloop/telescope-undo.nvim",
+    "jvgrootveld/telescope-zoxide",
   },
   config = function()
     require("telescope").setup({
       extensions = {
         undo = {},
+        zoxide = {
+          mappings = {
+            default = {
+              action = function(selection)
+                require("mini.files").open(selection.path)
+              end,
+              after_action = function(selection)
+                vim.notify("Explore " .. selection.path)
+              end,
+            },
+          },
+        },
       },
       defaults = {
         layout_strategy = "horizontal",
@@ -37,6 +50,7 @@ return {
       },
     })
     require("telescope").load_extension("undo")
+    require("telescope").load_extension("zoxide")
   end,
   keys = {
     -- -- disable the keymap to grep files
@@ -47,6 +61,7 @@ return {
     -- { "<leader>fg", "<CMD>Tele live_grep<CR>", { desc = "Fzf current buffer" } },
     { "<leader>fi", "<CMD>Tele find_files<CR>", { desc = "Fzf files on project" } },
     { "<leader>fu", "<CMD>Tele undo<CR>", { desc = "Fzf undo" } },
+    { "<leader>fz", "<CMD>Tele zoxide list<CR>", { desc = "Telescope zoxide list" } },
     -- { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
     -- {
     --   "<leader><space>",
