@@ -4,6 +4,7 @@
 
 alias icat="kitty +kitten icat"
 alias pym='python manage.py'
+alias brave='brave-browser'
 
 # Neovim
 alias nv='nvim'

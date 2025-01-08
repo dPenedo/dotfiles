@@ -3,6 +3,7 @@
 -- Add any additional keymaps here
 vim.keymap.del("n", "<leader>wd")
 vim.keymap.del("n", "<leader>wm")
+vim.keymap.del("n", "<leader>w")
 vim.keymap.del("n", "<A-j>")
 vim.keymap.del("i", "<A-j>")
 vim.keymap.del("v", "<A-j>")
@@ -23,7 +24,7 @@ map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
 map("n", "<leader>ng", ":!python gaur.py<CR>", { desc = "Generar una sección diaria en notas, eguneroka_" })
 map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
-map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2024.md<CR>", { desc = "Ir a Egunerokoa" })
+map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2025.md<CR>", { desc = "Ir a Egunerokoa" })
 
 -- Copiar/pegar Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })

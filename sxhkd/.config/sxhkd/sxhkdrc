@@ -49,7 +49,7 @@ super + shift + {i,o,p}
 
 
 # floating toggle
-super + alt + space
+super + space
   bspc node focused -t \~floating
 
 # set the node flags
@@ -62,6 +62,9 @@ super + ctrl + {m,x,y,z}
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
+
+super + r
+  bspc node @/ -R 90
 
 # focus the node for the given path jump
 super + alt + {p,b,comma,period}
@@ -193,7 +196,7 @@ super + w
 ctrl + alt + w
   rofi-wifi-menu
 
-super + space
+super + shift + d
    dmenu_run -nb "#16161D" -nf "#ECE1C0" -sb "#16161D" -sf "#7E9CD8" -fn "Hack"
   # dmenu_run -fn 'Hack'
    # dmenu_run -nb "#282828" -nf "#83a598" -sb "#282828" -sf "#8ec07c" -fn "Hack"

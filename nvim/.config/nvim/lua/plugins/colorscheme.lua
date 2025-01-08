@@ -58,7 +58,7 @@ return {
           sumiInk5 = "#363636",
           sumiInk6 = "#545454",
           -- -- Popup and Floats
-          waveBlue1 = "#2D2F49",
+          waveBlue1 = "#3A3D5F",
           waveBlue2 = "#464C8B",
           -- waveBlue1 = '#4A433D',
           -- waveBlue1 = '#2c2c2c',
@@ -100,6 +100,9 @@ return {
           TabLine = { fg = colors.palette.sumiInk6, bg = colors.palette.sumiInk4 },
           TabLineSel = { fg = colors.palette.oldWhite, bg = colors.palette.sumiInk1 },
           FzfLuaHeaderText = { fg = colors.palette.oniViolet2, bg = colors.palette.sumiInk1 },
+          FzfLuaHeaderBind = { fg = colors.palette.oniViolet2, bg = colors.palette.sumiInk1 },
+          FzfLuaBufLineNr = { fg = colors.palette.oniViolet2, bg = colors.palette.sumiInk1 },
+          FzfLuaBufNr = { fg = colors.palette.oniViolet2, bg = colors.palette.sumiInk1 },
           -- TabLineFill = { fg = colors.palette.sumiInk1, bg = colors.palette.sumiInk1 },
         }
       end,
@@ -227,11 +230,14 @@ return {
     lazy = false,
     priority = 1000,
   },
-  { "rose-pine/neovim", name = "rose-pine", opts = {
-    styles = {
-      transparency = true,
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
     },
-  } },
+  },
   -- {
   --   "f4z3r/gruvbox-material.nvim",
   --   name = "gruvbox-material",

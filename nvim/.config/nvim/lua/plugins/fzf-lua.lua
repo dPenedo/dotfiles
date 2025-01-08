@@ -8,16 +8,12 @@ return {
 
     fzf.setup({
       winopts = {
-        height = 0.85,
-        width = 0.80,
-        row = 0.30,
-        col = 0.50,
+        height = 0.7,
+        width = 0.7,
+        row = 0.3,
         border = "rounded",
-        preview = {
-          horizontal = "right:60%",
-        },
-        layout = "horizontal",
-        prompt = "> ",
+        treesitter = { enabled = false },
+        preview = { hidden = false },
       },
       keymap = {
         builtin = {
@@ -28,10 +24,7 @@ return {
           ["<C-j>"] = "down",
           ["<C-k>"] = "up",
           ["<C-l>"] = "select",
-        },
-        fzf = {
-          ["ctrl-s"] = "toggle-preview",
-          ["ctrl-x"] = "toggle-preview-wrap",
+          ["<C-p>"] = "toggle-preview",
         },
       },
       actions = {
@@ -40,23 +33,6 @@ return {
           ["ctrl-s"] = fzf.actions.file_split,
           ["ctrl-v"] = fzf.actions.file_vsplit,
         },
-      },
-      fzf_colors = {
-        true, -- inherit fzf colors that aren't specified below from
-        -- the auto-generated theme similar to `fzf_colors=true`
-        ["fg"] = { "fg", "CursorLine" },
-        ["bg"] = { "bg", "Normal" },
-        ["hl"] = { "fg", "Comment" },
-        ["fg+"] = { "fg", "Normal", "underline" },
-        ["bg+"] = { "bg", { "CursorLine", "Normal" } },
-        ["hl+"] = { "fg", "Statement" },
-        ["info"] = { "fg", "PreProc" },
-        ["prompt"] = { "fg", "Conditional" },
-        ["pointer"] = { "fg", "Exception" },
-        ["marker"] = { "fg", "Keyword" },
-        ["spinner"] = { "fg", "Label" },
-        ["header"] = { "fg", "Comment" },
-        ["gutter"] = "-1",
       },
     })
 
@@ -68,13 +44,13 @@ return {
     { "<leader><space>", false },
     { "<leader>/", false },
     { "<leader>fg", false },
-    { "<leader>/", "<CMD>FzfLua blines<CR>", { desc = "Fzf current buffer" } },
-    { "<leader>fg", "<CMD>FzfLua live_grep<CR>", { desc = "Fzf current buffer" } },
-    { "<leader>ff", "<CMD>FzfLua files<CR>", { desc = "Fzf files on project" } },
-    { "<c-p>", "<CMD>FzfLua files <CR>", { desc = "Fzf lua files" } },
+    { "<leader>/", "<CMD>FzfLua blines fzf_colors=false<CR>", { desc = "Fzf current buffer" } },
+    { "<leader>fg", "<CMD>FzfLua live_grep fzf_colors=false<CR>", { desc = "Fzf current buffer" } },
+    { "<leader>ff", "<CMD>FzfLua files fzf_colors=false<CR>", { desc = "Fzf files on project" } },
+    { "<c-p>", "<CMD>FzfLua files fzf_colors=false<CR>", { desc = "Fzf lua files" } },
     {
       "<leader><space>",
-      "<CMD>FzfLua buffers<CR>",
+      "<CMD>FzfLua buffers fzf_colors=false<CR>",
       { desc = "FzfLua buffers" },
     },
   },
