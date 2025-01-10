@@ -13,7 +13,7 @@ return {
         row = 0.3,
         border = "rounded",
         treesitter = { enabled = false },
-        preview = { hidden = false },
+        preview = { hidden = true },
       },
       keymap = {
         builtin = {
@@ -26,6 +26,16 @@ return {
           ["<C-l>"] = "select",
           ["<C-p>"] = "toggle-preview",
         },
+      },
+      files = {
+        git_icons = false, -- show git icons?
+        file_icons = false, -- show file icons (true|"devicons"|"mini")?
+        color_icons = false, -- colorize file|git icons
+      },
+      buffers = {
+        git_icons = false, -- show git icons?
+        file_icons = false, -- show file icons (true|"devicons"|"mini")?
+        color_icons = false, -- colorize file|git icons
       },
       actions = {
         files = {
@@ -44,13 +54,13 @@ return {
     { "<leader><space>", false },
     { "<leader>/", false },
     { "<leader>fg", false },
-    { "<leader>/", "<CMD>FzfLua blines fzf_colors=false<CR>", { desc = "Fzf current buffer" } },
-    { "<leader>fg", "<CMD>FzfLua live_grep fzf_colors=false<CR>", { desc = "Fzf current buffer" } },
-    { "<leader>ff", "<CMD>FzfLua files fzf_colors=false<CR>", { desc = "Fzf files on project" } },
-    { "<c-p>", "<CMD>FzfLua files fzf_colors=false<CR>", { desc = "Fzf lua files" } },
+    { "<leader>/", "<CMD>FzfLua blines fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
+    { "<leader>fg", "<CMD>FzfLua live_grep fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
+    { "<leader>ff", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf files on project" } },
+    { "<c-p>", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf lua files" } },
     {
       "<leader><space>",
-      "<CMD>FzfLua buffers fzf_colors=false<CR>",
+      "<CMD>FzfLua buffers fzf_colors=true<CR>",
       { desc = "FzfLua buffers" },
     },
   },

@@ -8,4 +8,7 @@ return {
     "neovim/nvim-lspconfig", -- optional
   },
   opts = {}, -- your configuration
+  keys = {
+    { "<leader>ut", "<CMD>TailwindConcealToggle<CR>", { desc = "Tailwind Conceal Toggle" } },
+  },
 }

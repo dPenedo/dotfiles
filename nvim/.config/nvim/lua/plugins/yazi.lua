@@ -1,16 +1,25 @@
 return {
   "mikavilpas/yazi.nvim",
   event = "VeryLazy",
+  opts = {
+    -- if you want to open yazi instead of netrw, see below for more info
+    open_for_directories = true,
+    keymaps = {
+      show_help = "<f1>",
+      open_file_in_horizontal_split = "<c-s>",
+      grep_in_directory = "<c-g>",
+    },
+  },
   keys = {
     -- 👇 in this section, choose your own keymappings!
     {
-      "<M-y>",
+      "<C-h>",
       "<cmd>Yazi<cr>",
       desc = "Open yazi at the current file",
     },
     {
       -- Open in the current working directory
-      "<M-Y>",
+      "<leader>e",
       "<cmd>Yazi cwd<cr>",
       desc = "Open the file manager in nvim's working directory",
     },
@@ -21,12 +30,5 @@ return {
     --   "<cmd>Yazi toggle<cr>",
     --   desc = "Resume the last yazi session",
     -- },
-  },
-  opts = {
-    -- if you want to open yazi instead of netrw, see below for more info
-    open_for_directories = false,
-    keymaps = {
-      show_help = "<f1>",
-    },
   },
 }

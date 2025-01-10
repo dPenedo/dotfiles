@@ -65,9 +65,8 @@ return {
     -- { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
     -- {
     --   "<leader><space>",
-    --   "<CMD>Telescope buffers  sort_lastused=true  ignore_current_buffer=true<CR>",
+    --   "<CMD>Telescope buffers  sort_lastused=true  ignore_current_buffer=true previewer=false layout_config={width=0.5}<CR>",
     --   { desc = "Telescop buffers" },
     -- },
-    -- change a keymap
   },
 }
