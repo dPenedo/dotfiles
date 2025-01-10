@@ -1,6 +1,3 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 bindkey -e
 export KEYTIMEOUT=1
@@ -22,7 +19,7 @@ bindkey '^ ' autosuggest-accept
 
 _comp_options+=(globdots)
 source ~/.zsh/completion.zsh
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/prompt.zsh
 source ~/.filemanagers.sh
 source ~/.aliases.sh
 # source ~/.fzf/shell/key-bindings.zsh
@@ -98,8 +95,6 @@ fi
 export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

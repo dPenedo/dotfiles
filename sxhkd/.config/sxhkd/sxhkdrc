@@ -17,7 +17,7 @@ alt + F4
 	bspc node -c
 
 # alternate between the tiled and monocle layout
-super + m
+super + f
 	bspc desktop -l next
 # super + shift
 # 	bspc desktop -l next
@@ -28,7 +28,7 @@ super + alt + f
   polybar-msg cmd toggle
 
 # Go full mode
-super + f
+super + shift + f
     bspc node -t \~fullscreen
 
 
@@ -78,10 +78,10 @@ super + {_,shift + }u
 # MONITORES
 
 # focus the next/previous desktop in the current monitor
-super + {comma,dot}
-	bspc desktop -f {prev,next}.local
-super + shift + {comma,dot}
-	bspc node -d {prev,next}.local --follow;
+# super + {comma,dot}
+# 	bspc desktop -f {prev,next}.local
+# super + shift + {comma,dot}
+# 	bspc node -d {prev,next}.local --follow;
 
 
 # focus left or right monitor
@@ -104,6 +104,12 @@ alt +  Tab
 # Alternar al escritorio 7 o al último escritorio activo
 super + n
     ~/.config/bspwm/toggle_workspace.sh 7
+super + m
+    ~/.config/bspwm/toggle_workspace.sh 8
+super + comma
+    ~/.config/bspwm/toggle_workspace.sh 9
+super + dot
+    ~/.config/bspwm/toggle_workspace.sh 10
 
 # Alternar al escritorio 5 o al último escritorio activo
 super + a
