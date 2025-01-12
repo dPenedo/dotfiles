@@ -1,17 +1,16 @@
 #FZF
-
-export FZF_DEFAULT_OPTS="--layout=reverse --info=inline"
-
+# Configuración de FZF con esquema de colores Kanagawa Wave
 # #  Kanagawa Wave
+export FZF_DEFAULT_OPTS="
+  --layout=reverse
+  --info=inline
+  --multi
+  --color=bg:#1a1a1a,bg+:#3a3a3a,selected-bg:#45475a
+  --color=spinner:#7e9cd8,info:#afaf87,prompt:#F9AB7B,header:#7e9cd8
+  --color=fg:#e9e4dd,fg+:#cdd6f4,hl:#F9AB7B,hl+:#F9AB7B
+  --color=pointer:#F9AB7B,marker:#7e9cd8
+"
 
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
---color=selected-bg:#45475a \
---multi"
-
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#e9e4dd,bg:#1a1a1a,hl:#ff9e3b --color=fg+:#cdd6f4,bg+:#3a3a3a,hl+:#ff9e3b --color=info:#afaf87,prompt:#ff9e3b,pointer:#ff9e3b --color=marker:#7e9cd8,spinner:#7e9cd8,header:#7e9cd8'
 # Gruvbox-material
 # export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' --color=fg:#d4bca6,bg:#282828,hl:#D19F5C --color=fg+:#D7C09D,bg+:#3a3a4b,hl+:#D19F5C --color=info:#afaf87,prompt:#D19F5C,pointer:#D19F5C --color=marker:#A1AE66,spinner:#A1AE66,header:#A1AE66'
 

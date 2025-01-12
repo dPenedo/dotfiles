@@ -12,7 +12,7 @@ return {
           mappings = {
             default = {
               action = function(selection)
-                require("mini.files").open(selection.path)
+                require("oil").open(selection.path)
               end,
               after_action = function(selection)
                 vim.notify("Explore " .. selection.path)

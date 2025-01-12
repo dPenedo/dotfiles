@@ -15,7 +15,6 @@ bindkey '^ ' autosuggest-accept
 
 
 
-
 _comp_options+=(globdots)
 source ~/.zsh/completion.zsh
 source ~/.zsh/prompt.zsh
@@ -61,7 +60,8 @@ fi
 if [[ ! -e ~/.zsh/zsh-vim-mode ]]; then
   git clone https://github.com/softmoth/zsh-vim-mode.git ~/.zsh/zsh-vim-mode
 fi
-
+zstyle ':fzf-tab:*' default-color ""
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
 source ~/.zsh/fzf-tab/fzf-tab.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
