@@ -32,10 +32,10 @@ y = 1
 
 
 [window]
-opacity = 0.97
+opacity = 0.95
 
 [window.padding]
-x = 2
+x = 6
 y = 4
 
 [[keyboard.bindings]]

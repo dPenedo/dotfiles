@@ -11,7 +11,6 @@ zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
 # Aceptar el autocompletado
-bindkey '^A' autosuggest-accept
 bindkey '^ ' autosuggest-accept
 
 
@@ -56,14 +55,21 @@ fi
 if [[ ! -e ~/.zsh/zsh-autosuggestions ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 fi
+if [[ ! -e ~/.zsh/fzf-tab ]]; then
+  git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
+fi
 if [[ ! -e ~/.zsh/zsh-vim-mode ]]; then
   git clone https://github.com/softmoth/zsh-vim-mode.git ~/.zsh/zsh-vim-mode
 fi
 
+source ~/.zsh/fzf-tab/fzf-tab.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source ~/.zsh/zsh-vim-mode/zsh-vim-mode.plugin.zsh
 source ~/.zsh/cursor-color
+
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:*' switch-group '<' '>'
 
 
 
