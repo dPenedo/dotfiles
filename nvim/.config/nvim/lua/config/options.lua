@@ -4,5 +4,7 @@
 vim.opt.wrap = true -- Disable line wrap
 vim.opt.clipboard = ""
 vim.o.showtabline = 2
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 vim.opt.laststatus = 2
