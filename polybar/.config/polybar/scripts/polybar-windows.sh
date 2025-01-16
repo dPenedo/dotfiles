@@ -12,7 +12,7 @@ bg_color="CFCBC5" # beige
 # Dark
 color1="729cd8"   # Blue
 color2="e6c384"   # Yellow
-bg_color="2a2a37" # Black
+bg_color="363646" # Black
 
 active_window_decoration_style_left_side="     %{F#$color2}%{+u}%{u#$color2}%{B$bg_color}  "
 active_window_decoration_style_right_side=" %{-u}%{F-}%{B-}"

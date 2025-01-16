@@ -65,15 +65,26 @@ return {
   --     },
   --   },
   -- },
+  {
+    "steguiosaur/fullerene.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      styles = { -- You can pass the style using the format: style = true
+        comments = { italic = true },
+        keywords = { bold = true },
+      },
+      highlight_overrides = {
+        lCursor = { fg = "#1616dd" },
+      },
+    },
+  },
   -- {
-  --   "Styzex/Sonomin.nvim",
-  --   lazy = false,
+  --   "yorik1984/newpaper.nvim",
   --   priority = 1000,
-  -- },
-  -- {
-  --   "steguiosaur/fullerene.nvim",
-  --   lazy = false,
-  --   priority = 1000,
+  --   config = {
+  --     style = "dark",
+  --   },
   -- },
   -- {
   --   "folke/tokyonight.nvim",

@@ -35,10 +35,9 @@ from os.path import expanduser
 
 
 mod = "mod4"
-terminal = "kitty"
+terminal = "alacritty"
 browser = "brave-browser"
 volumen = expanduser("~/.config/qtile/scripts/volume-dunst.sh")
-
 
 
 keys = [
@@ -66,9 +65,7 @@ keys = [
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
     Key([mod, "control"], "k", lazy.layout.shrink(), desc="shrink window"),
-    Key(
-        [mod, "control"], "j", lazy.layout.grow(), desc="Grow window"
-    ),
+    Key([mod, "control"], "j", lazy.layout.grow(), desc="Grow window"),
     Key([mod, "control"], "l", lazy.layout.grow_main(), desc="Grow main window"),
     Key([mod, "control"], "h", lazy.layout.shrink_main(), desc="shrink main window"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
@@ -77,9 +74,10 @@ keys = [
     Key([mod], "f", lazy.window.toggle_fullscreen()),
     # Ventana previa y siguiente
     Key(["mod1"], "Tab", lazy.group.next_window(), desc="Focus next window"),
-    Key(["mod1", "shift"], "Tab", lazy.group.prev_window(), desc="Focus previous window"),
+    Key(
+        ["mod1", "shift"], "Tab", lazy.group.prev_window(), desc="Focus previous window"
+    ),
     Key([mod], "Tab", lazy.screen.toggle_group()),
-
     # Volumen y media
     Key(
         [],
@@ -93,7 +91,6 @@ keys = [
         lazy.spawn(volumen + " down"),
         desc="volume down",
     ),
-
     Key(
         [],
         "XF86AudioMute",
@@ -110,7 +107,7 @@ keys = [
         lazy.spawn("brightnessctl s 10%+"),
         desc="brightness UP",
     ),
-    Key(    
+    Key(
         [],
         "XF86MonBrightnessDown",
         lazy.spawn("brightnessctl s 10%-"),
@@ -160,8 +157,18 @@ keys = [
     Key([mod], "w", lazy.spawn("firefox"), desc="Navegador firefox"),
     Key([mod], "t", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
     Key([mod], "g", lazy.spawn("gpick"), desc="Toma y almacena colores de la pantalla"),
-    Key(["control", "mod1"], "Delete", lazy.spawn("xkill"), desc="Selecciona una ventana con el raton para cerrarla"),
-    Key([mod, "control"], "x", lazy.spawn("~/scripts/xmodmap.sh"), desc="Script para modificar teclas del teclado"),
+    Key(
+        ["control", "mod1"],
+        "Delete",
+        lazy.spawn("xkill"),
+        desc="Selecciona una ventana con el raton para cerrarla",
+    ),
+    Key(
+        [mod, "control"],
+        "x",
+        lazy.spawn("~/scripts/xmodmap.sh"),
+        desc="Script para modificar teclas del teclado",
+    ),
 ]
 
 groups = [
@@ -250,9 +257,15 @@ groups.append(
 
 keys.extend(
     [
-        Key([mod, "control"], "Return", lazy.group["scratchpad"].dropdown_toggle("term")),
-        Key([mod], "e", lazy.group["scratchpad"].dropdown_toggle("lf")),
-        Key([mod, "control"], "a", lazy.group["scratchpad"].dropdown_toggle("pavucontrol")),
+        Key(
+            [mod, "control"], "Return", lazy.group["scratchpad"].dropdown_toggle("term")
+        ),
+        Key([mod], "e", lazy.spwawn("thunar"), desc="thunar"),
+        Key(
+            [mod, "control"],
+            "a",
+            lazy.group["scratchpad"].dropdown_toggle("pavucontrol"),
+        ),
         Key([mod, "control"], "w", lazy.group["scratchpad"].dropdown_toggle("nm")),
     ]
 )
@@ -277,7 +290,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Lato",
+    font="Hack Nerd Font",
     fontsize=14,
     padding=3,
 )
@@ -285,7 +298,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        wallpaper="~/Imagenes/Fondos-de-pantalla/203553-mod.jpg",
+        wallpaper="~/Imagenes/fondos-de-pantalla/moon.jpg",
         wallpaper_mode="fill",
         top=bar.Bar(
             [
@@ -328,7 +341,7 @@ screens = [
                 widget.Memory(
                     foreground=colors["brown"],
                     format="{MemUsed: .0f}{mm}",
-                    measure_mem='M',
+                    measure_mem="M",
                     fmt=" {} ",
                 ),
                 widget.Battery(
@@ -347,7 +360,7 @@ screens = [
                     default_text="",
                 ),
                 # widget.PulseVolume(emoji=True, foreground=colors["purple"], padding=4),
-                widget.Volume(foreground=colors["purple"], fmt='Vol: {}'),
+                widget.Volume(foreground=colors["purple"], fmt="Vol: {}"),
                 widget.Systray(),
                 widget.Clock(format="    %A, %d de %B", foreground=colors["blue"]),
                 widget.Clock(
@@ -361,7 +374,7 @@ screens = [
         ),
     ),
     Screen(
-        wallpaper="~/Imagenes/Fondos-de-pantalla/203553-mod.jpg",
+        wallpaper="~/Imagenes/Fondos-de-pantalla/moon.jpg",
         wallpaper_mode="fill",
         top=bar.Bar(
             [
@@ -404,7 +417,7 @@ screens = [
                     show_short_text=True,
                     default_text="",
                 ),
-                widget.Volume(foreground=colors["purple"], fmt='Vol: {}'),
+                widget.Volume(foreground=colors["purple"], fmt="Vol: {}"),
                 widget.Clock(format="    %A, %d de %B", foreground=colors["blue"]),
                 widget.Clock(
                     format="   %H:%M ",
@@ -479,5 +492,6 @@ def autostart():
 
 @hook.subscribe.screen_change
 def on_screen_change(qtile, ev):
-    qtile.cmd_spawn("dunstify -u low -r 2594 -a 'screen' 'Screen' 'Configuration changed'")
-
+    qtile.cmd_spawn(
+        "dunstify -u low -r 2594 -a 'screen' 'Screen' 'Configuration changed'"
+    )

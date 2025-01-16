@@ -15,7 +15,7 @@ sleep 7
 brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4
-kitty &
+alacritty &
 # sleep 4
 # kitty -e bash -c 'sleep 4; tmux' &
 
@@ -42,7 +42,7 @@ if [[ $monitor_externo = *connected* ]]; then
   wmctrl -r "Nueva pestaña - Brave" -t 10 &
   wmctrl -r "New Tab - Brave" -t 10 &
   sleep 3
-  wmctrl -r "kitty" -t 11 &
+  wmctrl -r "alacritty" -t 11 &
   wmctrl -r "~" -t 11 &
   wmctrl -r "bash" -t 11 &
   wmctrl -r "zsh" -t 11 &
@@ -58,7 +58,7 @@ if [[ $monitor_externo = *connected* ]]; then
 else
   sleep 5
   wmctrl -r "Brave" -t 1 &
-  wmctrl -r "kitty" -t 0 &
+  wmctrl -r "alacritty" -t 0 &
   wmctrl -r "~" -t 0 &
   wmctrl -r "tmux" -t 0 &
   wmctrl -r "Correo" -t 8 &

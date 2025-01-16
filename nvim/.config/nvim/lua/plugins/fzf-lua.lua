@@ -5,7 +5,6 @@ return {
   },
   config = function()
     local fzf = require("fzf-lua")
-
     fzf.setup({
       winopts = {
         height = 0.7,
@@ -27,16 +26,16 @@ return {
           ["<C-p>"] = "toggle-preview",
         },
       },
-      files = {
-        git_icons = false, -- show git icons?
-        file_icons = false, -- show file icons (true|"devicons"|"mini")?
-        color_icons = false, -- colorize file|git icons
-      },
-      buffers = {
-        git_icons = false, -- show git icons?
-        file_icons = false, -- show file icons (true|"devicons"|"mini")?
-        color_icons = false, -- colorize file|git icons
-      },
+      -- files = {
+      --   git_icons = false, -- show git icons?
+      --   file_icons = false, -- show file icons (true|"devicons"|"mini")?
+      --   color_icons = false, -- colorize file|git icons
+      -- },
+      -- buffers = {
+      --   git_icons = false, -- show git icons?
+      --   file_icons = false, -- show file icons (true|"devicons"|"mini")?
+      --   color_icons = false, -- colorize file|git icons
+      -- },
       actions = {
         files = {
           ["default"] = fzf.actions.file_edit,

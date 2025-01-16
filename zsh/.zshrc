@@ -68,7 +68,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source ~/.zsh/zsh-vim-mode/zsh-vim-mode.plugin.zsh
 source ~/.zsh/cursor-color
 
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --group-directories-first --icons --color=always $realpath'
+zstyle ':fzf-tab:complete:nvim:*' fzf-preview '[ -d "$realpath" ] && eza -1 --group-directories-first --icons --color=always "$realpath" || bat --style=numbers --color=always --line-range=:500 "$realpath"'
 zstyle ':fzf-tab:*' switch-group '<' '>'
 
 

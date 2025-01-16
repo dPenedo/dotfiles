@@ -2,13 +2,14 @@
 # Configuración de FZF con esquema de colores Kanagawa Wave
 # #  Kanagawa Wave
 export FZF_DEFAULT_OPTS="
+  --bind='ctrl-p:toggle-preview'
   --layout=reverse
   --info=inline
   --multi
   --color=bg:#1a1a1a,bg+:#3a3a3a,selected-bg:#45475a
-  --color=spinner:#7e9cd8,info:#afaf87,prompt:#F9AB7B,header:#7e9cd8
-  --color=fg:#e9e4dd,fg+:#cdd6f4,hl:#F9AB7B,hl+:#F9AB7B
-  --color=pointer:#F9AB7B,marker:#7e9cd8
+  --color=spinner:#7e9cd8,info:#afaf87,prompt:#Ffa066,header:#7e9cd8
+  --color=fg:#e9e4dd,fg+:#cdd6f4,hl:#Ffa066,hl+:#Ffa066
+  --color=pointer:#Ffa066,marker:#7e9cd8
 "
 
 # Gruvbox-material

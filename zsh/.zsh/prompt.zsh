@@ -1,5 +1,10 @@
 # Cargar vcs_info
 autoload -Uz vcs_info
+
+# Desactivar modificaciones automáticas del prompt por virtualenv
+export VIRTUAL_ENV_DISABLE_PROMPT=true
+
+
 # Configurar estilos de vcs_info para Git
 zstyle ':vcs_info:git:*' formats '%F{green} %b%f %F{yellow}%u%c%f'
 zstyle ':vcs_info:git:*' actionformats '%F{yellow} %b|%a%f'
@@ -16,8 +21,20 @@ precmd() {
 # Habilitar PROMPT_SUBST para evaluar el prompt dinámicamente
 setopt PROMPT_SUBST
 
+get_virtualenv_name() {
+  if [[ -n $VIRTUAL_ENV ]]; then
+    # Obtener el nombre del directorio padre de la carpeta del virtual environment
+    local project_name
+    project_name=$(basename "$(dirname "$VIRTUAL_ENV")")
+    echo "%F{yellow}($project_name)%f "
+  else
+    echo ""
+  fi
+}
+
 # Configurar el prompt
-PROMPT=' %F{blue}%~%f  ${vcs_info_msg_0_} 
+PROMPT=' 
+$(get_virtualenv_name)%F{blue}%~%f  ${vcs_info_msg_0_} 
 %F{blue}❯ %f'
 
 # Configurar el prompt para comandos continuados
@@ -49,5 +66,4 @@ zle-line-init() {
   fi
   return ret
 }
-
 zle -N zle-line-init

@@ -1,7 +1,7 @@
 return {
   "folke/flash.nvim",
   opts = {
-    labels = "jklqsfghwertyuiopzcvbnm",
+    -- labels = "jklqsfghwertyuiopzcvbnm",
     search = {
       -- search/jump in all windows
       multi_window = false,
@@ -10,7 +10,9 @@ return {
     modes = {
       search = { enabled = false },
       char = {
+        enabled = false,
         jump_labels = false,
+        multi_line = false,
         highlight = {
           backdrop = false, -- Desactiva el fondo en el modo char
         },
@@ -23,7 +25,7 @@ return {
   keys = {
     { "S", mode = { "n", "o", "x" }, false },
     {
-      "<a-s>",
+      "<c-s>",
       mode = { "n", "x", "o" },
       function()
         require("flash").treesitter()

@@ -8,7 +8,7 @@ return {
 
       ["<C-p>"] = false,
       ["<leader>r"] = "actions.refresh",
-      ["<a-p>"] = "actions.preview",
+      ["<tab>"] = "actions.preview",
       ["<C-h>"] = "actions.parent",
       ["<C-l>"] = "actions.select",
       ["<leader>."] = "actions.toggle_hidden",
@@ -24,6 +24,6 @@ return {
   keys = {
     { "<leader>o", "<CMD>Oil <CR>", { desc = "Abrir Oil" } },
     -- { "-", "<CMD>Oil .<CR>", { desc = "Abrir Oil en root" } },
-    { "<leader>O", "<CMD>OilDirectory<CR>", { desc = "Abrir Oil en root" } },
+    { "<leader>O", "<CMD>Oil .<CR>", { desc = "Abrir Oil en root" } },
   },
 }
