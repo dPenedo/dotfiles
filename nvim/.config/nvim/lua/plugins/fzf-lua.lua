@@ -7,25 +7,28 @@ return {
     local fzf = require("fzf-lua")
     fzf.setup({
       winopts = {
-        height = 0.7,
-        width = 0.7,
-        row = 0.3,
-        border = "rounded",
+        height = 0.6,
+        width = 0.6,
+        row = 0.2,
+        col = 0.2,
+        border = "single",
         treesitter = { enabled = false },
         preview = { hidden = true },
       },
       keymap = {
         builtin = {
-          ["<C-u>"] = "preview-up",
-          ["<C-d>"] = "preview-down",
           ["<C-s>"] = "split",
           ["<C-v>"] = "vsplit",
           ["<C-j>"] = "down",
           ["<C-k>"] = "up",
           ["<C-l>"] = "select",
           ["<C-p>"] = "toggle-preview",
+          ["<down>"] = "preview-down",
+          ["<up>"] = "preview-up",
+          ["<F1>"] = "toggle-help",
         },
       },
+
       -- files = {
       --   git_icons = false, -- show git icons?
       --   file_icons = false, -- show file icons (true|"devicons"|"mini")?
