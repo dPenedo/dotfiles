@@ -13,13 +13,13 @@ return {
   keys = {
     -- 👇 in this section, choose your own keymappings!
     {
-      "<C-h>",
+      "<leadr>h>",
       "<cmd>Yazi<cr>",
       desc = "Open yazi at the current file",
     },
     {
       -- Open in the current working directory
-      "<leader>e",
+      "<leader>E",
       "<cmd>Yazi cwd<cr>",
       desc = "Open the file manager in nvim's working directory",
     },

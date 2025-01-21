@@ -27,6 +27,10 @@ CONFIGURATIONS = {
         "directory": os.path.expanduser("~/.config/kitty/"),
         "file": "current-theme.conf",
     },
+    "alacritty": {
+        "directory": os.path.expanduser("~/.config/alacritty/"),
+        "file": "alacritty.toml",
+    },
 }
 
 

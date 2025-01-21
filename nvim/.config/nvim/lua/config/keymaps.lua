@@ -26,6 +26,8 @@ map("n", "<leader>ng", ":!python gaur.py<CR>", { desc = "Generar una sección di
 map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
 map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2025.md<CR>", { desc = "Ir a Egunerokoa" })
 
+map("t", "<Esc>", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
+
 -- Copiar/pegar Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })
 map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })
