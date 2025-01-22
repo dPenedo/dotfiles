@@ -7,13 +7,13 @@ return {
     local fzf = require("fzf-lua")
     fzf.setup({
       winopts = {
-        height = 0.6,
-        width = 0.6,
+        height = 0.8,
+        width = 0.8,
         row = 0.2,
         col = 0.2,
         border = "single",
         treesitter = { enabled = false },
-        preview = { hidden = true },
+        preview = { hidden = false },
       },
       keymap = {
         builtin = {
@@ -26,6 +26,7 @@ return {
           ["<down>"] = "preview-down",
           ["<up>"] = "preview-up",
           ["<F1>"] = "toggle-help",
+          ["<F3>"] = "file_sel_to_qf",
         },
       },
 
@@ -56,13 +57,13 @@ return {
     { "<leader><space>", false },
     { "<leader>/", false },
     { "<leader>fg", false },
-    { "<leader>/", "<CMD>FzfLua blines fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
+    -- { "<leader>/", "<CMD>FzfLua blines fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
     { "<leader>fg", "<CMD>FzfLua live_grep fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
     { "<leader>ff", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf files on project" } },
-    { "<c-p>", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf lua files" } },
+    { "<C-p>", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf lua files" } },
     {
       "<leader><space>",
-      "<CMD>FzfLua buffers fzf_colors=true<CR>",
+      "<CMD>FzfLua buffers previewer=hidden<CR>",
       { desc = "FzfLua buffers" },
     },
   },

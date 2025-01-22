@@ -57,7 +57,7 @@ return {
     -- { "<leader><space>", false },
     -- { "<leader>/", false },
     -- { "<leader>fg", false },
-    -- { "<leader>/", "<CMD>Tele current_buffer_fuzzy_find<CR>", { desc = "Fzf current buffer" } },
+    { "<leader>/", "<CMD>Tele current_buffer_fuzzy_find<CR>", { desc = "Fzf current buffer" } },
     -- { "<leader>fg", "<CMD>Tele live_grep<CR>", { desc = "Fzf current buffer" } },
     { "<leader>fi", "<CMD>Tele find_files<CR>", { desc = "Fzf files on project" } },
     { "<leader>fu", "<CMD>Tele undo<CR>", { desc = "Fzf undo" } },
@@ -65,7 +65,7 @@ return {
     -- { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
     -- {
     --   "<leader><space>",
-    --   "<CMD>Telescope buffers  sort_lastused=true  ignore_current_buffer=true previewer=false layout_config={width=0.5}<CR>",
+    --   "<CMD>Telescope buffers  sort_lastused=true  ignore_current_buffer=true <CR>",
     --   { desc = "Telescop buffers" },
     -- },
   },
