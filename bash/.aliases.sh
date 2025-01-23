@@ -31,6 +31,7 @@ alias bp='bpython'
 alias ipy='ipython3'
 alias LS='/bin/ls --color=auto'
 alias senv='source ./env/bin/activate'
+alias senvv='tmux list-panes -F "#{pane_id}" | xargs -I {} tmux send-keys -t {} "senv" C-m'
 # alias bat='batcat'
 if command -v eza &>/dev/null; then
   alias ls='eza --group-directories-first --icons'

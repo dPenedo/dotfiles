@@ -34,7 +34,8 @@ return {
       },
       palette = {
         -- Wave
-        fujiWhite = "#E8DBCF",
+        -- fujiWhite = "#E8DBCF",
+        fujiWhite = "#e5e9f0",
         oldWhite = "#c9cbd1",
         -- surimiOrange = "#F9AB7B",
         -- oldWhite = '#CDD6F4',
