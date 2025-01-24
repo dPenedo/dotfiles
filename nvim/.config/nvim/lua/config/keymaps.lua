@@ -15,7 +15,8 @@ vim.keymap.del("n", "<leader>n")
 local map = LazyVim.safe_keymap_set
 
 map("n", "<leader>w", "<cmd>update<cr>", { desc = "Windows", remap = true })
-map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar una línea" })
+map("i", "jj", "<ESC>", { desc = "Salir del modo de inserción" })
+map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar un espacio" })
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "'", "`", { desc = "backtick asignado a '" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
@@ -26,7 +27,10 @@ map("n", "<leader>ng", ":!python gaur.py<CR>", { desc = "Generar una sección di
 map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
 map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2025.md<CR>", { desc = "Ir a Egunerokoa" })
 
+-- Terminal
 map("t", "<Esc>", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
+map("t", "jj", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
+map("n", "<leader>kk", "<CMD>terminal<CR>", { desc = "Terminal" })
 
 -- Copiar/pegar Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })

@@ -125,6 +125,16 @@ function M.setup_markdown_keymaps()
   end, { desc = "new link", buffer = true })
 end
 
+-- Entrar al terminal en modo insert
+vim.api.nvim_create_autocmd("TermOpen", {
+  pattern = "*",
+  callback = function()
+    vim.opt_local.number = false
+    vim.opt_local.relativenumber = false
+    vim.cmd("startinsert")
+  end,
+})
+
 -- Configura el autocomando para los archivos Markdown
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",

@@ -116,5 +116,6 @@ export GOBIN=$GOPATH/bin   # opcional, define la ubicación de los binarios
 export PATH=$PATH:$GOBIN   # añade los binarios de Go al PATH
 # . "/home/daniel/.deno/env"
 . "$HOME/.cargo/env"
+export CARGO_TARGET_DIR=$HOME/.cargo/target
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH=$PATH:/home/daniel/Descargas/Programas/pycharm-2024.3.1/bin
