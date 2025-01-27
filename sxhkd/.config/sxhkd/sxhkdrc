@@ -96,6 +96,8 @@ super + alt + {Up,Down}
 
 
 # focus the last node/desktop
+ctrl + semicolon
+	bspc desktop -f last
 super + Tab
 	bspc desktop -f last
 alt +  Tab
@@ -237,6 +239,7 @@ shift + Print
   xfce4-screenshooter -r
 ctrl + Print
   xfce4-screenshooter -w
+
 
 
 
