@@ -120,7 +120,17 @@ return {
   -- --     contrast = "hard",
   -- --   },
   -- -- },
-  -- -- Using lazy.nvim
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+
+      -- Enable italics comments
+      italic_comments = true,
+    },
+  },
   {
     "gbprod/nord.nvim",
     lazy = false,

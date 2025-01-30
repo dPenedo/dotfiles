@@ -17,7 +17,7 @@ alt + F4
 	bspc node -c
 
 # alternate between the tiled and monocle layout
-super + f
+super + z
 	bspc desktop -l next
 # super + shift
 # 	bspc desktop -l next
@@ -28,7 +28,7 @@ super + alt + f
   polybar-msg cmd toggle
 
 # Go full mode
-super + shift + f
+super +  f
     bspc node -t \~fullscreen
 
 
@@ -186,7 +186,8 @@ super + c
 
 
 super + b
-	brave-browser
+	firefox
+	# brave-browser
 
 super + g 
   gpick
@@ -261,6 +262,3 @@ super + i
 super + semicolon
 	{polybar-msg cmd toggle; bspc config bottom_padding +0 ,\
          polybar-msg cmd toggle; bspc config bottom_padding 20 }
-
-
-

@@ -4,7 +4,7 @@
 pkill alacritty &
 
 sleep 5
-brave-browser &
+firefox &
 # firefox-developer-edition &
 sleep 7
 ~/scripts/xmodmap.sh &
@@ -26,7 +26,7 @@ sleep 2
 # flatpak run md.obsidian.Obsidian &
 
 sleep 8
-wmctrl -r "Brave" -t 1 &
+wmctrl -r "firefox" -t 1 &
 wmctrl -r "alacritty" -t 0 &
 wmctrl -r "~" -t 0 &
 # wmctrl -r "Firefox" -t 0 &

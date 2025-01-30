@@ -3,7 +3,7 @@
 -- Add any additional options here
 vim.opt.wrap = true -- Disable line wrap
 vim.opt.clipboard = ""
-vim.o.showtabline = 2
+vim.o.showtabline = 1
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 

@@ -50,7 +50,7 @@ fi
 alias pdf="nohup zathura"
 alias history='history 0'
 alias hist="history | fzf"
-alias neo="neovide"
+alias nvd="neovide"
 alias mm="cat ~/mm.txt | xclip -selection clipboard"
 alias ..="cd .."
 alias ....="cd ../.."
