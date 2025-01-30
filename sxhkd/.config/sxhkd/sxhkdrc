@@ -186,8 +186,8 @@ super + c
 
 
 super + b
-	firefox
-	# brave-browser
+	brave-browser
+	# firefox
 
 super + g 
   gpick
