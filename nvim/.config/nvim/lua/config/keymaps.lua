@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 vim.keymap.del("n", "<leader>wd")
 vim.keymap.del("n", "<leader>wm")
-vim.keymap.del("n", "<leader>w")
 vim.keymap.del("n", "<A-j>")
 vim.keymap.del("i", "<A-j>")
 vim.keymap.del("v", "<A-j>")

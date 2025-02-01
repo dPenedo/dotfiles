@@ -3,12 +3,14 @@
 general.import = [
     # "~/.config/alacritty/themes/themes/kanagawa_dragon.toml"
     # "~/.config/alacritty/themes/themes/everforest_dark.toml"
-    "~/.config/alacritty/themes/kanagawa_wave.toml"
+    # "~/.config/alacritty/themes/kanagawa_wave.toml"
+    "~/.config/alacritty/themes/kanagawa_neutral.toml"
+    # "~/.config/alacritty/themes/jellybeans.toml"
     # "~/.config/alacritty/themes/dayfox.toml"
 ]
 
 [cursor.style]
-blinking = "On"
+blinking = "Off"
 shape = "Beam"
 
 [cursor.vi_mode_style]

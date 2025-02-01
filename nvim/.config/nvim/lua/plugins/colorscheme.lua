@@ -119,25 +119,30 @@ return {
   -- --   opts = {
   -- --     contrast = "hard",
   -- --   },
-  -- -- },
   {
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
-    priority = 1000,
+    "wtfox/jellybeans.nvim",
     opts = {
-      transparent = true,
-
-      -- Enable italics comments
-      italic_comments = true,
+      -- transparent = false,
     },
   },
-  {
-    "gbprod/nord.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-
-      transparent = true,
-    },
-  },
+  -- {
+  --   "scottmckendry/cyberdream.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     transparent = false,
+  --
+  --     -- Enable italics comments
+  --     italic_comments = true,
+  --   },
+  -- },
+  -- {
+  --   "gbprod/nord.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --
+  --     transparent = true,
+  --   },
+  -- },
 }

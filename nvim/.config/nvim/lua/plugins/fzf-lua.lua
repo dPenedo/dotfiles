@@ -58,9 +58,6 @@ return {
     { "<leader>/", false },
     { "<leader>fg", false },
     -- { "<leader>/", "<CMD>FzfLua blines fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
-    { "<leader>fg", "<CMD>FzfLua live_grep fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
-    { "<leader>ff", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf files on project" } },
-    { "<C-p>", "<CMD>FzfLua files fzf_colors=true<CR>", { desc = "Fzf lua files" } },
     {
       "<leader><space>",
       "<CMD>FzfLua buffers previewer=hidden<CR>",

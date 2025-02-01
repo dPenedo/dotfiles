@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     compile = true,
-    transparent = true,
+    transparent = false,
     functionStyle = { bold = true },
     dimInactive = true,
     typeStyle = { bold = false },
@@ -49,14 +49,14 @@ return {
         -- sumiInk5 = "#433E37",
         -- sumiInk6 = "#5A5349",
 
-        --Neutral:
-        -- sumiInk0 = "#121212",
-        -- sumiInk1 = "#181818",
-        -- sumiInk2 = "#1a1a1a",
-        -- sumiInk3 = "#121212",
-        -- sumiInk4 = "#2A2A2A",
-        -- sumiInk5 = "#363636",
-        -- sumiInk6 = "#545454",
+        -- Neutral:
+        sumiInk0 = "#121212",
+        sumiInk1 = "#181818",
+        sumiInk2 = "#1a1a1a",
+        sumiInk3 = "#121212",
+        sumiInk4 = "#2A2A2A",
+        sumiInk5 = "#363636",
+        sumiInk6 = "#545454",
         -- -- Popup and Floats
         waveBlue1 = "#3A3D5F",
         waveBlue2 = "#464C8B",
