@@ -16,6 +16,7 @@ local map = LazyVim.safe_keymap_set
 map("n", "<leader>w", "<cmd>update<cr>", { desc = "Windows", remap = true })
 map("i", "jj", "<ESC>", { desc = "Salir del modo de inserción" })
 map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar un espacio" })
+map("i", "kj", "<ESC>i", { desc = "Salir del modo de inserción y quitar un espacio" })
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "'", "`", { desc = "backtick asignado a '" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })

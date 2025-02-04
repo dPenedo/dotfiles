@@ -119,12 +119,12 @@ return {
   -- --   opts = {
   -- --     contrast = "hard",
   -- --   },
-  {
-    "wtfox/jellybeans.nvim",
-    opts = {
-      -- transparent = false,
-    },
-  },
+  -- {
+  --   "wtfox/jellybeans.nvim",
+  --   opts = {
+  --     -- transparent = false,
+  --   },
+  -- },
   -- {
   --   "scottmckendry/cyberdream.nvim",
   --   lazy = false,
