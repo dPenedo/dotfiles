@@ -42,7 +42,7 @@ return {
     bullet = {
       -- Turn on / off list bullet rendering
       enabled = true,
-      icons = { "→", "‣", "→", "⇾" },
+      icons = { "●", "→", "‣", "›" },
       -- icons = { '◉', '○', '✸', '✿' },
       -- Padding to add to the left of bullet point
       left_pad = 2,

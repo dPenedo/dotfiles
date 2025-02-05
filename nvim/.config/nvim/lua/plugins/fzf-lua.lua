@@ -63,5 +63,7 @@ return {
       "<CMD>FzfLua buffers previewer=hidden<CR>",
       { desc = "FzfLua buffers" },
     },
+    { "<leader>sp", "<CMD>FzfLua registers<cr>", { desc = "Buscar registros en FzfLua" } },
+    { "<leader>sp", "<CMD>FzfLua registers<cr>", { desc = "Buscar registros en FzfLua" } },
   },
 }

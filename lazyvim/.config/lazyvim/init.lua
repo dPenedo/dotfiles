@@ -1,2 +1,2 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+require("simplevim.lua.config.lazy")

@@ -11,16 +11,16 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
+require("simplevim.lua.config.lazy").setup({
   "tpope/vim-surround",
 })
-
 
 vim.g.clipboard = vim.g.vscode_clipboard
 vim.o.hlsearch = true
 vim.wo.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 vim.o.ignorecase = true
 vim.o.smartcase = true
+

@@ -39,8 +39,3 @@ map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
-map("n", "<leader>sp", "<CMD>FzfLua registers<cr>", { desc = "Buscar registros en FzfLua" })
-map("v", "<leader>sp", "<CMD>FzfLua registers<cr>", { desc = "Buscar registros en FzfLua" })
-
-
-

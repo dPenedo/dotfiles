@@ -9,3 +9,5 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.opt.laststatus = 2
 vim.g.snacks_animate = false
+vim.opt.tabstop = 4 -- Tamaño de tabulación en espacios
+vim.opt.shiftwidth = 4 -- Indentación con 4 espacios
