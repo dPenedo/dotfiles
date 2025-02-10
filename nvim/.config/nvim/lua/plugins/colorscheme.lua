@@ -46,26 +46,26 @@ return {
       },
     },
   },
-  -- {
-  --   "dpenedo/melange-nvim",
-  -- },
-  -- {
-  --   "ramojus/mellifluous.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     colorset = "tender",
-  --     -- dim_inactive = true,
-  --     transparent_background = {
-  --       enabled = true,
-  --       floating_windows = true,
-  --       telescope = true,
-  --       file_tree = true,
-  --       cursor_line = false,
-  --       status_line = false,
-  --     },
-  --   },
-  -- },
+  {
+    "dpenedo/melange-nvim",
+  },
+  {
+    "ramojus/mellifluous.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      colorset = "tender",
+      -- dim_inactive = true,
+      transparent_background = {
+        enabled = true,
+        floating_windows = true,
+        telescope = true,
+        file_tree = true,
+        cursor_line = false,
+        status_line = false,
+      },
+    },
+  },
   {
     "steguiosaur/fullerene.nvim",
     lazy = false,
@@ -136,13 +136,13 @@ return {
   --     italic_comments = true,
   --   },
   -- },
-  -- {
-  --   "gbprod/nord.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --
-  --     transparent = true,
-  --   },
-  -- },
+  {
+    "gbprod/nord.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+
+      transparent = true,
+    },
+  },
 }

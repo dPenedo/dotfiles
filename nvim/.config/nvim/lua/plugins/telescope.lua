@@ -62,6 +62,7 @@ return {
     { "<leader>fi", "<CMD>Tele find_files<CR>", { desc = "Fzf files on project" } },
     { "<leader>fu", "<CMD>Tele undo<CR>", { desc = "Fzf undo" } },
     { "<leader>fz", "<CMD>Tele zoxide list<CR>", { desc = "Telescope zoxide list" } },
+    { "<leader>fj", "<CMD>Tele frecency workspace=CWD<CR>", { desc = "Telescope frecency workspace=CWD" } },
     -- { "<c-p>", ":Telescope find_files <CR>", { desc = "Fzf lua files" } },
     -- {
     --   "<leader><space>",

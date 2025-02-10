@@ -58,11 +58,11 @@ return {
     { "<leader>/", false },
     { "<leader>fg", false },
     -- { "<leader>/", "<CMD>FzfLua blines fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
-    {
-      "<leader><space>",
-      "<CMD>FzfLua buffers previewer=hidden<CR>",
-      { desc = "FzfLua buffers" },
-    },
+    -- {
+    --   "<leader><space>",
+    --   "<CMD>FzfLua buffers previewer=hidden<CR>",
+    --   { desc = "FzfLua buffers" },
+    -- },
     { "<leader>sp", "<CMD>FzfLua registers<cr>", { desc = "Buscar registros en FzfLua" } },
     { "<leader>sp", "<CMD>FzfLua registers<cr>", { desc = "Buscar registros en FzfLua" } },
   },

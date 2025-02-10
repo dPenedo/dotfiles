@@ -50,13 +50,13 @@ return {
         -- sumiInk6 = "#5A5349",
 
         -- Neutral:
-        sumiInk0 = "#121212",
-        sumiInk1 = "#181818",
-        sumiInk2 = "#1a1a1a",
-        sumiInk3 = "#121212",
-        sumiInk4 = "#2A2A2A",
-        sumiInk5 = "#363636",
-        sumiInk6 = "#545454",
+        -- sumiInk0 = "#121212",
+        -- sumiInk1 = "#181818",
+        -- sumiInk2 = "#1a1a1a",
+        -- sumiInk3 = "#121212",
+        -- sumiInk4 = "#2A2A2A",
+        -- sumiInk5 = "#363636",
+        -- sumiInk6 = "#545454",
         -- -- Popup and Floats
         waveBlue1 = "#3A3D5F",
         waveBlue2 = "#464C8B",
