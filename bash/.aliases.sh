@@ -25,6 +25,7 @@ alias fire='firefox-developer-edition'
 alias tt='kitty --title "📔 Notas" -e tmux attach-session -t "📔 Notas" & sleep 1 && wmctrl -r "📔 Notas" -t 6 &'
 
 alias ts='tmux new-session -A -D -s'
+alias t='tmux'
 alias python='python3'
 alias py='python3'
 alias bp='bpython'
@@ -34,18 +35,18 @@ alias senv='source ./env/bin/activate'
 alias senvv='tmux list-panes -F "#{pane_id}" | xargs -I {} tmux send-keys -t {} "senv" C-m'
 # alias bat='batcat'
 if command -v eza &>/dev/null; then
-  alias ls='eza --group-directories-first --icons'
-  alias l='eza -s type --icons -lah'
-  alias t1="eza --icons --tree --level=1"
-  alias t2="eza --icons --tree --level=2"
-  alias t3="eza --icons --tree --level=3"
-  alias t4="eza --icons --tree --level=4"
+    alias ls='eza --group-directories-first --icons'
+    alias l='eza -s type --icons -lah'
+    alias t1="eza --icons --tree --level=1"
+    alias t2="eza --icons --tree --level=2"
+    alias t3="eza --icons --tree --level=3"
+    alias t4="eza --icons --tree --level=4"
 else
-  alias ls='ls --color=auto'
-  alias l="ls -la"
-  alias t2="tree -l -L 2 --dirsfirst"
-  alias t3="tree -l -L 3 --dirsfirst"
-  alias t4="tree -l -L 4 --dirsfirst"
+    alias ls='ls --color=auto'
+    alias l="ls -la"
+    alias t2="tree -l -L 2 --dirsfirst"
+    alias t3="tree -l -L 3 --dirsfirst"
+    alias t4="tree -l -L 4 --dirsfirst"
 fi
 alias pdf="nohup zathura"
 alias history='history 0'
