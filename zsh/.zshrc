@@ -98,9 +98,14 @@ fi
 
 # Añadir ~/.local/bin a PATH
 
+# FZF
+export FZF_DEFAULT_OPTS="--bind 'ctrl-n:down,ctrl-p:up,ctrl-l:accept'"
+
+
+
 # Zoxide
 export PATH="$PATH:$HOME/.local/bin"
-eval "$(zoxide init zsh)"
+eval "$()"
 
 
 export NVM_DIR="$HOME/.nvm"

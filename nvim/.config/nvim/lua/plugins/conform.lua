@@ -1,5 +1,5 @@
 return {
-  "stevearc/conform.nvim", -- Asegúrate de que este plugin está instalado
+  "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
       -- markdown = {}, -- Deshabilitar formateadores para Markdown
@@ -7,6 +7,7 @@ return {
       markdown = { "markdownlint" },
       ["html"] = { "prettierd" },
       ["javascript"] = { "prettierd" },
+      ["javascriptreact"] = { "prettierd" },
     },
   },
 }

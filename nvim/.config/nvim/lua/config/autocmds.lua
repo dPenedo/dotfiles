@@ -94,6 +94,26 @@ function M.setup_markdown_keymaps()
     end
   end, { desc = "[n]ew [a]tom", buffer = true })
 
+  -- Insertar plantilla de nota
+  vim.keymap.set("n", "<A-n>", function()
+    local filename = vim.fn.expand("%:t:r") -- Obtiene el nombre del archivo sin extensión
+    local title = "# " .. filename:gsub("-", " ") -- Reemplaza los guiones por espacios
+
+    -- Define el cuerpo del snippet
+    local snippet = {
+      title,
+      "",
+      "",
+      "",
+      "",
+      "------------------",
+      "Etiquetas: #",
+    }
+
+    -- Inserta el snippet en el buffer
+    vim.api.nvim_put(snippet, "", false, true)
+  end, { desc = "Insertar plantilla de nota", buffer = true })
+
   -- Insertar enlaces a notas existentes usando fzf-lua
   vim.keymap.set("i", "<A-=>", function()
     local fzf = require("fzf-lua")

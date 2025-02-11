@@ -10,6 +10,7 @@ vim.keymap.del("n", "<A-k>")
 vim.keymap.del("i", "<A-k>")
 vim.keymap.del("v", "<A-k>")
 vim.keymap.del("n", "<leader>n")
+vim.keymap.del("n", "<leader>-")
 -- vim.keymap.del("n", "<leader>l")
 local map = LazyVim.safe_keymap_set
 
@@ -29,7 +30,7 @@ map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2025
 -- Terminal
 map("t", "<Esc>", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
 map("t", "jj", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
-map("n", "<leader>kk", "<CMD>terminal<CR>", { desc = "Terminal" })
+map("n", "<leader>tk", "<CMD>terminal<CR>", { desc = "Terminal" })
 
 -- Copiar/pegar Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })

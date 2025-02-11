@@ -24,6 +24,7 @@ sleep 2
 # sleep
 # thunderbird &
 # flatpak run md.obsidian.Obsidian &
+syncthing &
 
 sleep 8
 wmctrl -r "Brave" -t 1 &

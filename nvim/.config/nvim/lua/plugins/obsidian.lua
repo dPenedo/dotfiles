@@ -76,5 +76,6 @@ return {
     { "<leader>nr", "<CMD>ObsidianRename<cr> ", { desc = "Obsidian Rename" } },
     { "<leader>nb", "<CMD>ObsidianBacklinks<cr> ", { desc = "Obsidian backlinks" } },
     { "<leader>nl", "<CMD>ObsidianLinks<cr> ", { desc = "Obsidian Links" } },
+    { "<leader>nu", "<CMD>ObsidianTemplate<cr> ", { desc = "Obsidian Links" } },
   },
 }
