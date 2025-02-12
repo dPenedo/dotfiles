@@ -71,11 +71,13 @@ return {
     },
   },
   keys = {
-    { "<leader>ns", "<CMD>ObsidianQuickSwitch<cr> ", { desc = "Obsidian Quick Switch" } },
     { "<leader>nT", "<CMD>ObsidianTags<cr> ", { desc = "Obsidian Template" } },
     { "<leader>nr", "<CMD>ObsidianRename<cr> ", { desc = "Obsidian Rename" } },
     { "<leader>nb", "<CMD>ObsidianBacklinks<cr> ", { desc = "Obsidian backlinks" } },
     { "<leader>nl", "<CMD>ObsidianLinks<cr> ", { desc = "Obsidian Links" } },
     { "<leader>nu", "<CMD>ObsidianTemplate<cr> ", { desc = "Obsidian Links" } },
+    { "<leader>nf", "<CMD>ObsidianQuickSwitch<cr> ", { desc = "Obsidian [F]ind" } },
+    { "<leader>no", "<CMD>ObsidianOpen<cr> ", { desc = "Obsidian Open" } },
+    { "<M-n>", "<CMD>ObsidianLink<cr> ", { desc = "Obsidian Link" }, mode = { "v" } },
   },
 }

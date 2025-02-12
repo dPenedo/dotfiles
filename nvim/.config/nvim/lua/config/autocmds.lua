@@ -1,6 +1,8 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
+
+-- Configuración de spell para archivos markdown y text
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown", "text" },
   callback = function()
@@ -8,7 +10,37 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- Format
+-- Crear nuevas notas (global)
+vim.keymap.set("n", "<leader>nn", function()
+  local filename = vim.fn.input("Enter file name: ", "", "file")
+  if filename ~= "" then
+    local filepath = "~/Documentos/Dropbox/Notas/" .. filename .. ".md"
+    vim.fn.writefile({}, vim.fn.expand(filepath))
+    vim.cmd("edit " .. vim.fn.expand(filepath))
+  end
+end, { desc = "[n]ew [n]otes" })
+
+-- Crear notas temporales (global)
+vim.keymap.set("n", "<leader>nt", function()
+  local filename = vim.fn.input("Enter Temp file name: ", "", "file")
+  if filename ~= "" then
+    local filepath = "~/Documentos/Dropbox/Notas/Temp/" .. filename .. ".md"
+    vim.fn.writefile({}, vim.fn.expand(filepath))
+    vim.cmd("edit " .. vim.fn.expand(filepath))
+  end
+end, { desc = "[n]ew [t]emp" })
+
+-- Crear notas atómicas (global)
+vim.keymap.set("n", "<leader>na", function()
+  local filename = vim.fn.input("Enter Atom file name: ", "", "file")
+  if filename ~= "" then
+    local filepath = "~/Documentos/Dropbox/Notas/Atomoak/" .. filename .. ".md"
+    vim.fn.writefile({}, vim.fn.expand(filepath))
+    vim.cmd("edit " .. vim.fn.expand(filepath))
+  end
+end, { desc = "[n]ew [a]tom" })
+
+-- Formatear archivo
 vim.api.nvim_create_user_command("Format", function(args)
   local range = nil
   if args.count ~= -1 then
@@ -23,6 +55,7 @@ end, { range = true })
 
 local M = {}
 
+-- Configuración de keymaps específicos para Markdown
 function M.setup_markdown_keymaps()
   -- Alternar '- ' al inicio de la línea
   vim.keymap.set("n", "<leader>-", function()
@@ -63,36 +96,6 @@ function M.setup_markdown_keymaps()
     end
     vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + 1 })
   end, { desc = "Poner # al principio para headings con espacio si es necesario", buffer = true })
-
-  -- Crear nuevas notas
-  vim.keymap.set("n", "<leader>nn", function()
-    local filename = vim.fn.input("Enter file name: ", "", "file")
-    if filename ~= "" then
-      local filepath = "~/Documentos/Dropbox/Notas/" .. filename .. ".md"
-      vim.fn.writefile({}, vim.fn.expand(filepath))
-      vim.cmd("edit " .. vim.fn.expand(filepath))
-    end
-  end, { desc = "[n]ew [n]otes", buffer = true })
-
-  -- Crear notas temporales
-  vim.keymap.set("n", "<leader>nt", function()
-    local filename = vim.fn.input("Enter Temp file name: ", "", "file")
-    if filename ~= "" then
-      local filepath = "~/Documentos/Dropbox/Notas/Temp/" .. filename .. ".md"
-      vim.fn.writefile({}, vim.fn.expand(filepath))
-      vim.cmd("edit " .. vim.fn.expand(filepath))
-    end
-  end, { desc = "[n]ew [t]emp", buffer = true })
-
-  -- Crear notas atómicas
-  vim.keymap.set("n", "<leader>na", function()
-    local filename = vim.fn.input("Enter Atom file name: ", "", "file")
-    if filename ~= "" then
-      local filepath = "~/Documentos/Dropbox/Notas/Atomoak/" .. filename .. ".md"
-      vim.fn.writefile({}, vim.fn.expand(filepath))
-      vim.cmd("edit " .. vim.fn.expand(filepath))
-    end
-  end, { desc = "[n]ew [a]tom", buffer = true })
 
   -- Insertar plantilla de nota
   vim.keymap.set("n", "<A-n>", function()
@@ -145,6 +148,12 @@ function M.setup_markdown_keymaps()
   end, { desc = "new link", buffer = true })
 end
 
+-- Configura el autocomando para los archivos Markdown
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = M.setup_markdown_keymaps,
+})
+
 -- Entrar al terminal en modo insert
 vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*",
@@ -153,12 +162,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.opt_local.relativenumber = false
     vim.cmd("startinsert")
   end,
-})
-
--- Configura el autocomando para los archivos Markdown
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "markdown",
-  callback = M.setup_markdown_keymaps,
 })
 
 return M
