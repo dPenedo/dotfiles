@@ -13,78 +13,6 @@
         ],
         "description": "Insertar un elemento de lista en negrita"
     },
-    "Bloque de código Python": {
-        "prefix": "python",
-        "body": [
-            "```python",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en Python"
-    },
-    "Bloque de código Bash": {
-        "prefix": "bash",
-        "body": [
-            "```bash",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en Bash"
-    },
-    "Bloque de código Java": {
-        "prefix": "java",
-        "body": [
-            "```java",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en Java"
-    },
-    "Bloque de código JavaScript": {
-        "prefix": "javascript",
-        "body": [
-            "```javascript",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en JavaScript"
-    },
-    "Bloque de código HTML": {
-        "prefix": "html",
-        "body": [
-            "```html",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en HTML"
-    },
-    "Bloque de código CSS": {
-        "prefix": "css",
-        "body": [
-            "```css",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en CSS"
-    },
-    "Bloque de código TypeScript": {
-        "prefix": "typescript",
-        "body": [
-            "```typescript",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en TypeScript"
-    },
-    "Bloque de código Lua": {
-        "prefix": "lua",
-        "body": [
-            "```lua",
-            "${0}",
-            "```"
-        ],
-        "description": "Bloque de código en Lua"
-    },
     "Output Python": {
         "prefix": "outputpython",
         "body": [
@@ -127,5 +55,106 @@
             "[${1:titulo}](${2:enlace})"
         ],
         "description": "Nuevo enlace"
+    },
+    "TIP": {
+        "prefix": "tip",
+        "body": [
+            "> [!TIP]",
+            "> ${1:Consejo útil}"
+        ],
+        "description": "Admonition de tipo TIP"
+    },
+    "TODO": {
+        "prefix": "todo",
+        "body": [
+            "> [!TODO]",
+            "> ${1:TODO}"
+        ],
+        "description": "Admonition de tipo TODO"
+    },
+    "WARNING": {
+        "prefix": "warning",
+        "body": [
+            "> [!WARNING]",
+            "> ${1:Advertencia}"
+        ],
+        "description": "Admonition de tipo WARNING"
+    },
+    "IMPORTANT": {
+        "prefix": "important",
+        "body": [
+            "> [!IMPORTANT]",
+            "> ${1:Importante}"
+        ],
+        "description": "Admonition de tipo IMPORTANT"
+    },
+    "EXAMPLE": {
+        "prefix": "example",
+        "body": [
+            "> [!EXAMPLE]",
+            "> ${1:Cita relevante}"
+        ],
+        "description": "Admonition de tipo EXAMPLE"
+    },
+    "QUOTE": {
+        "prefix": "quote",
+        "body": [
+            "> [!QUOTE]",
+            "> ${1:Cita relevante}"
+        ],
+        "description": "Admonition de tipo QUOTE"
+    },
+    "Comparación": {
+        "prefix": "comparacion",
+        "body": [
+            "Pros:",
+            "> [!Success]",
+            "",
+            "- ${1:Primer pro}",
+            "",
+            "Contras:",
+            "> [!Fail]",
+            "",
+            "- ${2:Primer contra}",
+            ""
+        ],
+        "description": "Comparación de pros y contras usando bloques de admonition."
+    },
+    "Proyecto": {
+        "prefix": "proyecto",
+        "body": [
+            "Hecho con:",
+            "- ${1:Tecnología}",
+            "",
+            "## Por hacer",
+            "",
+            "- [ ] ${2:Por hacer}",
+            "",
+            "## Dudas",
+            "",
+            "- ${3:duda}",
+            "",
+            "## Problema",
+            "",
+            "- [ ] ${4:Problema}",
+            ""
+        ],
+        "description": "Plantilla para proyecto."
+    },
+    "Error": {
+        "prefix": "error",
+        "body": [
+            "[!ERROR]",
+            "> ${1:Snippet Error}",
+            "",
+            "## Causa",
+            "",
+            "Se produce porque ${2:Explicación de la causa}.",
+            "",
+            "## Solución",
+            "",
+            "Para resolverlo, ${3:Explicación de la solución}"
+        ],
+        "description": "Documentar un error."
     }
 }

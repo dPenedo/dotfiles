@@ -39,3 +39,25 @@ map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
+map("n", "<tab>", function()
+    local line = vim.fn.line(".")
+    local current_foldlevel = vim.fn.foldlevel(line)
+    if current_foldlevel == 1 then
+        vim.cmd("set foldlevel=1")
+        vim.g.fold_toggle_state = 1 -- Inicializar el estado
+    end
+    if vim.g.fold_toggle_state == nil then
+        vim.g.fold_toggle_state = 1 -- Inicializar el estado
+    end
+
+    if vim.g.fold_toggle_state == 1 then
+        -- Estado 1: Solo foldlevel=1
+        vim.cmd("set foldlevel=1")
+        vim.g.fold_toggle_state = 2 -- Cambiar al siguiente estado
+    else
+        -- Estado 2: foldlevel=1 y alternar fold actual con zA
+        vim.cmd("set foldlevel=1")
+        vim.cmd("normal! zA")
+        vim.g.fold_toggle_state = 1 -- Cambiar al siguiente estado
+    end
+end, {desc = "Alternar entre foldlevel=1 y foldlevel=1 + zA"})
