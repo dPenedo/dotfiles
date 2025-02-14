@@ -125,17 +125,17 @@ return {
   --     -- transparent = false,
   --   },
   -- },
-  -- {
-  --   "scottmckendry/cyberdream.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = false,
-  --
-  --     -- Enable italics comments
-  --     italic_comments = true,
-  --   },
-  -- },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = false,
+
+      -- Enable italics comments
+      italic_comments = true,
+    },
+  },
   {
     "gbprod/nord.nvim",
     lazy = false,

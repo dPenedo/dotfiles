@@ -124,19 +124,19 @@
         "prefix": "proyecto",
         "body": [
             "Hecho con:",
-            "- ${1:Tecnología}",
+            "- ${1}",
             "",
             "## Por hacer",
-            "",
-            "- [ ] ${2:Por hacer}",
+            "> [!TODO]",
+            "- [ ] ${2}",
             "",
             "## Dudas",
             "",
-            "- ${3:duda}",
+            "- ${3}",
             "",
-            "## Problema",
+            "## Problemas",
             "",
-            "- [ ] ${4:Problema}",
+            "- [ ] ${4}",
             ""
         ],
         "description": "Plantilla para proyecto."
@@ -149,11 +149,11 @@
             "",
             "## Causa",
             "",
-            "Se produce porque ${2:Explicación de la causa}.",
+            "Se produce porque ${2}.",
             "",
             "## Solución",
             "",
-            "Para resolverlo, ${3:Explicación de la solución}"
+            "Para resolverlo, ${3}"
         ],
         "description": "Documentar un error."
     }

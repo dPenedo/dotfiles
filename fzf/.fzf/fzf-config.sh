@@ -3,6 +3,7 @@
 # #  Kanagawa Wave
 export FZF_DEFAULT_OPTS="
   --bind='ctrl-p:toggle-preview'
+  --bind='ctrl-n:down,ctrl-p:up,ctrl-l:accept'
   --layout=reverse
   --info=inline
   --multi
