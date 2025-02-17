@@ -29,7 +29,6 @@ return {
       mappings = {
         ["/"] = "none",
         ["?"] = "none",
-        ["<C-f>"] = "fuzzy_finder",
         ["l"] = "open_with_window_picker",
         ["s"] = "none",
         ["g?"] = "show_help",

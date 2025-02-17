@@ -57,6 +57,7 @@ return {
     { "<leader><space>", false },
     { "<leader>/", false },
     { "<leader>fg", false },
+    { "<leader>fb", false },
     -- { "<leader>/", "<CMD>FzfLua blines fzf_colors=true<CR>", { desc = "Fzf current buffer" } },
     -- {
     --   "<leader><space>",
