@@ -80,6 +80,37 @@ return {
       },
     },
   },
+  { "iagorrr/noctishc.nvim" },
+
+  {
+    "miikanissi/modus-themes.nvim",
+    priority = 1000,
+    opts = {
+      variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+      transparent = false, -- Transparent background (as supported by the terminal)
+      dim_inactive = true, --
+    },
+  },
+
+  -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
+  {
+    "0xstepit/flow.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      -- Your configuration options here.
+    },
+  },
+  {
+    "pauchiner/pastelnight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+
+      transparent = true,
+    },
+  },
+
   -- {
   --   "yorik1984/newpaper.nvim",
   --   priority = 1000,
@@ -125,12 +156,13 @@ return {
   --     -- transparent = false,
   --   },
   -- },
+
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = false,
+      transparent = true,
 
       -- Enable italics comments
       italic_comments = true,

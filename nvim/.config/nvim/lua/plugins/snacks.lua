@@ -29,6 +29,9 @@ return {
       ]],
       },
     },
+    words = {
+      enabled = false,
+    },
   },
   keys = {
     { "<leader><space>", false },

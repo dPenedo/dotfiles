@@ -6,10 +6,7 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   opts = {
-    modified = {
-      enable = true,
-    },
-
+    hijack_cursor = true,
     view = {
       centralize_selection = true,
       cursorline = true,
@@ -38,6 +35,12 @@ return {
           chars = "jklhABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
         },
       },
+    },
+    modified = {
+      enable = true,
+    },
+    diagnostics = {
+      enable = true,
     },
   },
   keys = {

@@ -13,7 +13,7 @@ return {
         wave = {
           ui = {
             -- bg_gutter = "#1a1a22",
-            bg_gutter = "none",
+            -- bg_gutter = "none",
             nontext = "#B1A9A0",
           },
         },
@@ -26,8 +26,8 @@ return {
         },
         lotus = {
           ui = {
-            bg_gutter = "none",
-            -- bg_gutter = '#161617',
+            -- bg_gutter = "none",
+            bg_gutter = "#161617",
             -- bg = '#f6f9e1',
           },
         },
