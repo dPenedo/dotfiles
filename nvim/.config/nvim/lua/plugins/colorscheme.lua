@@ -80,7 +80,6 @@ return {
       },
     },
   },
-  { "iagorrr/noctishc.nvim" },
 
   {
     "miikanissi/modus-themes.nvim",

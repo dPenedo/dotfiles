@@ -15,7 +15,6 @@ return {
       number = false,
       relativenumber = false,
       signcolumn = "yes",
-      width = 40,
     },
     renderer = {
       indent_markers = {

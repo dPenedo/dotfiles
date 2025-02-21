@@ -50,12 +50,28 @@ return {
             },
           },
           { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
-          { LazyVim.lualine.pretty_path() },
-        },
-        lualine_x = {
-          -- stylua: ignore
           {
-            'grapple',
+            "filename",
+            newfile_status = false, -- Display new file status (new file means no write after created)
+            path = 1, -- 0: Just the filename
+            shorting_target = 60, -- Shortens path to leave 40 spaces in the window
+            symbols = {
+              modified = "󰈸",
+            },
+          },
+          {
+            function()
+              local index = require("grapple").name_or_index() -- Obtiene el índice o nombre
+              -- Si es un número, lo mapeamos a las teclas j, k, l, ;
+              if type(index) == "number" then
+                local keys = { "jj", "jk", "jl", "j;" }
+                index = keys[index] or index -- Si el índice está fuera del rango, se mantiene el número
+              end
+              return "󰛢 " .. index -- Añade el icono y devuelve el índice mapeado o el nombre
+            end,
+            cond = function()
+              return package.loaded["grapple"] and require("grapple").exists()
+            end,
           },
           {
             function()
@@ -76,6 +92,7 @@ return {
             cond = function() return package.loaded["dap"] and require("dap").status() ~= "" end,
           },
         },
+        lualine_x = {},
         lualine_y = {
           -- { lineas },
         },

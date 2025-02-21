@@ -4,7 +4,7 @@ return {
     -- labels = "jklqsfghwertyuiopzcvbnm",
     search = {
       -- search/jump in all windows
-      multi_window = false,
+      multi_window = true,
     },
     multi_line = false,
     modes = {
