@@ -14,7 +14,7 @@ return {
           ui = {
             -- bg_gutter = "#1a1a22",
             -- bg_gutter = "none",
-            nontext = "#545454",
+            nontext = "#B1A9A0",
           },
         },
         dragon = {
@@ -85,7 +85,7 @@ return {
       return {
         -- Ejemplo de sobrescritura para el grupo de highlight "String"
         String = { fg = colors.palette.springGreen, italic = true },
-        Comment = { fg = "#6D7A5C", italic = true },
+        Comment = { fg = "#898E6B", italic = true },
 
         -- Ejemplo de sobrescritura para un grupo de highlight de un plugin
         ["@markup.strong.markdown_inline"] = { fg = colors.palette.oniViolet2, bold = true },
@@ -93,7 +93,7 @@ return {
         PmenuSel = { bg = colors.palette.waveBlue, fg = colors.palette.fujiWhite, bold = true },
         PmenuSbar = { bg = colors.palette.sumiInk2 },
         PmenuThumb = { bg = colors.palette.sumiInk4 },
-        WinSeparator = { fg = colors.palette.boatYellow1 },
+        -- WinSeparator = { fg = colors.palette.boatYellow1 },
         RenderMarkdownLink = { fg = colors.palette.springBlue },
         RainbowDelimiterOrange = { fg = colors.palette.springBlue },
         RainbowDelimiterRed = { fg = colors.palette.carpYellow },
@@ -104,8 +104,8 @@ return {
           fg = colors.palette.boatYellow1,
         },
         FlashLabel = {
-          fg = colors.palette.roninYellow,
-          bg = colors.palette.oniViolet,
+          fg = colors.palette.winterBlue,
+          bg = colors.palette.roninYellow,
           bold = true,
         },
         -- FzfLuaHeaderText = { fg = colors.palette.springViolet1, bg = colors.palette.sumiInk1 },

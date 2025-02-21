@@ -25,19 +25,19 @@ local function lsp()
   local info = ""
 
   if count["errors"] ~= 0 then
-    errors = " %#DiagnosticError# " .. count["errors"]
+    errors = " %#DiagnosticError#  " .. count["errors"]
   end
   if count["warnings"] ~= 0 then
-    warnings = " %#DiagnosticWarn# " .. count["warnings"]
+    warnings = " %#DiagnosticWarn#  " .. count["warnings"]
   end
   if count["hints"] ~= 0 then
-    hints = " %#DiagnosticHint# " .. count["hints"]
+    hints = " %#DiagnosticHint#  " .. count["hints"]
   end
   if count["info"] ~= 0 then
-    info = " %#DiagnosticInfo# " .. count["info"]
+    info = " %#DiagnosticInfo#  " .. count["info"]
   end
 
-  return errors .. warnings .. hints .. info .. "%#Normal#"
+  return errors .. warnings .. hints .. info
 end
 
 local function grapple()
@@ -59,26 +59,31 @@ local function grapple()
   return " 󰛢 " .. index .. " "
 end
 
+local function spaced(text)
+  return " " .. text .. " "
+end
+
 local function statusline_focused()
-  local color_column = "%#ColorColumn#"
+  -- Styles
+  local color_column = "%#Operator#"
   local file_name_color = "%#StatusLine#"
   local modified_color = "%#WarningMsg#"
   local accent_color = "%#Title#"
   local align_right = "%="
-  local lsp_info = lsp() .. " "
-  local branch = "  " .. git_branch() .. " "
-  local file_name = " %f "
+  -- Content
+  local lsp_info = spaced(lsp())
+  local branch = spaced(" " .. git_branch())
+  local file_name = spaced(vim.fn.expand("%:."))
   local modified = "%m"
   local grapple_info = grapple()
-  local linecol = "Col %c | Ln %l/%L"
+  local linecol = spaced("Col %c | Ln %l/%L")
   return string.format(
-    "%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "%s%s%s%s%s%s%s%s%s%s%s%s%s",
     color_column,
     branch,
     file_name_color,
-    lsp_info,
-    file_name_color,
     file_name,
+    lsp_info,
     modified_color,
     modified,
     accent_color,
@@ -92,7 +97,7 @@ end
 
 local function statusline_not_focused()
   local file_name_color = "%#StatusLine#"
-  local file_name = " %f "
+  local file_name = vim.fn.expand("%:.")
   local modified = "%m"
 
   return string.format("%s%s%s", file_name_color, file_name, modified)
