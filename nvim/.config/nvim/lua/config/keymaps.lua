@@ -6,6 +6,7 @@ vim.keymap.del("n", "<leader>wm")
 vim.keymap.del("n", "<A-j>")
 vim.keymap.del("n", "<C-j>")
 vim.keymap.del("n", "<C-k>")
+vim.keymap.del("n", "<leader>l")
 vim.keymap.del("n", "<C-l>")
 vim.keymap.del("i", "<A-j>")
 vim.keymap.del("v", "<A-j>")
@@ -41,6 +42,53 @@ map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })
 map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
+
+
+
+map("n", "<leader>ll", function()
+    local word = vim.fn.expand("<cword>") -- Obtener la palabra bajo el cursor
+    local filetype = vim.bo.filetype
+    local debug_command
+
+    -- Determinar qué comando de depuración usar según el tipo de archivo
+    if filetype == "javascript" or filetype == "typescript" or filetype == "javascriptreact" or filetype == "typescriptreact" then
+        debug_command = string.format('console.log("%s => ", %s);', word, word)
+    elseif filetype == "python" then
+        debug_command = string.format('print("%s => ", %s)', word, word)
+    else
+        print("Unsupported filetype for debug statement")
+        return
+    end
+
+    -- Obtener la línea actual del cursor
+    local current_line = vim.api.nvim_win_get_cursor(0)[1]
+
+    -- Insertar la línea de depuración debajo de la actual
+    vim.api.nvim_buf_set_lines(0, current_line, current_line, false, {debug_command})
+end, { desc = "Insert debug statement for word under cursor", silent = true })
+
+map("n", "<leader>lt", function()
+    local word = vim.fn.expand("<cword>") -- Obtener la palabra bajo el cursor
+    local filetype = vim.bo.filetype
+    local debug_command
+
+    -- Determinar qué comando de depuración usar según el tipo de archivo
+    if filetype == "javascript" or filetype == "typescript" or filetype == "javascriptreact" or filetype == "typescriptreact" then
+        debug_command = string.format('console.log("typeof %s => ",typeof %s);', word, word)
+    elseif filetype == "python" then
+        debug_command = string.format('print("type of %s => ", type(%s))', word, word)
+    else
+        print("Unsupported filetype for debug statement")
+        return
+    end
+
+    -- Obtener la línea actual del cursor
+    local current_line = vim.api.nvim_win_get_cursor(0)[1]
+
+    -- Insertar la línea de depuración debajo de la actual
+    vim.api.nvim_buf_set_lines(0, current_line, current_line, false, {debug_command})
+end, { desc = "Insert typeof debug statement for word under cursor", silent = true })
+
 
 map("n", "<tab>", function()
     local line = vim.fn.line(".")

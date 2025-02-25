@@ -117,35 +117,51 @@ function M.setup_markdown_keymaps()
     vim.api.nvim_put(snippet, "", false, true)
   end, { desc = "Insertar plantilla de nota", buffer = true })
 
-  -- Insertar enlaces a notas existentes usando fzf-lua
+  -- Insertar enlaces a notas existentes usando Telescope
   vim.keymap.set("i", "<A-=>", function()
-    local fzf = require("fzf-lua")
+    local telescope = require("telescope.builtin")
 
-    fzf.files({
-      prompt = "Selecciona una nota",
-      cwd = "~/Documentos/Dropbox/Notas",
-      actions = {
-        ["default"] = function(selected)
-          if selected and #selected > 0 then
-            local path = selected[1] -- La ruta del archivo seleccionado
-            local filename = vim.fn.fnamemodify(path, ":t:r")
-            local description = filename:gsub("[_-]", " ")
-            local link = string.format("[[%s|%s]]", filename, description)
+    -- Función para insertar el enlace markdown
+    local insert_markdown_link = function(selected)
+      if selected and #selected > 0 then
+        local path = selected[1] -- Ruta del archivo seleccionado
+        local filename = vim.fn.fnamemodify(path, ":t:r") -- Nombre del archivo sin extensión
+        local description = filename:gsub("[_-]", " ") -- Reemplazar guiones y guiones bajos por espacios
+        local link = string.format("[[%s|%s]]", filename, description) -- Crear el enlace en formato markdown
 
-            -- Obtiene la posición actual del cursor en modo de inserción
-            local cursor_pos = vim.api.nvim_win_get_cursor(0)
-            local line = vim.fn.getline(".")
+        -- Obtener la posición actual del cursor en modo de inserción
+        local cursor_pos = vim.api.nvim_win_get_cursor(0)
+        local line = vim.fn.getline(".")
 
-            -- Inserta el enlace en la posición actual, sin mover el cursor extra
-            vim.fn.setline(".", line:sub(1, cursor_pos[2]) .. link .. line:sub(cursor_pos[2] + 1))
+        -- Insertar el enlace una posición después del cursor
+        local new_line = line:sub(1, cursor_pos[2]) .. link .. line:sub(cursor_pos[2] + 1)
+        vim.fn.setline(".", new_line)
 
-            -- Ajusta el cursor para colocarlo después del enlace insertado
-            vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + #link })
-          end
-        end,
-      },
+        -- Mover el cursor después del enlace insertado
+        vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + #link + 1 })
+      end
+    end
+
+    -- Abrir el selector de Telescope para buscar archivos en la carpeta de notas
+    telescope.find_files({
+      prompt_title = "Selecciona una nota",
+      cwd = "~/Documentos/Dropbox/Notas", -- Ruta de la carpeta de notas
+      attach_mappings = function(_, map)
+        -- Mapear la tecla <CR> (Enter) para ejecutar la acción personalizada
+        map("i", "<CR>", function(prompt_bufnr)
+          local selected = require("telescope.actions.state").get_selected_entry(prompt_bufnr)
+          require("telescope.actions").close(prompt_bufnr) -- Cerrar Telescope
+          insert_markdown_link({ selected.value }) -- Pasar la ruta seleccionada a la función
+        end)
+        map("n", "<CR>", function(prompt_bufnr)
+          local selected = require("telescope.actions.state").get_selected_entry(prompt_bufnr)
+          require("telescope.actions").close(prompt_bufnr) -- Cerrar Telescope
+          insert_markdown_link({ selected.value }) -- Pasar la ruta seleccionada a la función
+        end)
+        return true
+      end,
     })
-  end, { desc = "new link", buffer = true })
+  end, { desc = "Insertar enlace a nota existente", buffer = true })
 end
 
 -- Configura el autocomando para los archivos Markdown

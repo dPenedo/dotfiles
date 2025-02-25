@@ -57,15 +57,18 @@ fi
 if [[ ! -e ~/.zsh/fzf-tab ]]; then
   git clone https://github.com/Aloxaf/fzf-tab ~/.zsh/fzf-tab
 fi
-if [[ ! -e ~/.zsh/zsh-vim-mode ]]; then
-  git clone https://github.com/softmoth/zsh-vim-mode.git ~/.zsh/zsh-vim-mode
+# if [[ ! -e ~/.zsh/zsh-vim-mode ]]; then
+#   git clone https://github.com/softmoth/zsh-vim-mode.git ~/.zsh/zsh-vim-mode
+# fi
+if [[ ! -e ~/.zsh/zsh-vi-mode ]]; then
+  git clone https://github.com/jeffreytse/zsh-vi-mode.git ~/.zsh/zsh-vi-mode
 fi
 zstyle ':fzf-tab:*' default-color ""
 zstyle ':fzf-tab:*' use-fzf-default-opts yes
 source ~/.zsh/fzf-tab/fzf-tab.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source ~/.zsh/zsh-vim-mode/zsh-vim-mode.plugin.zsh
+# source ~/.zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source ~/.zsh/cursor-color
 
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --group-directories-first --icons --color=always $realpath'

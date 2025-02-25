@@ -50,9 +50,9 @@ return {
         -- sumiInk6 = "#5A5349",
 
         -- Neutral:
-        -- sumiInk0 = "#121212",
-        -- sumiInk1 = "#181818",
-        -- sumiInk2 = "#1a1a1a",
+        sumiInk0 = "#121212",
+        sumiInk1 = "#181818",
+        sumiInk2 = "#1a1a1a",
         -- sumiInk3 = "#121212",
         -- sumiInk4 = "#2A2A2A",
         -- sumiInk5 = "#363636",
@@ -105,7 +105,7 @@ return {
         },
         FlashLabel = {
           fg = colors.palette.winterBlue,
-          bg = colors.palette.roninYellow,
+          bg = "#A5FF47",
           bold = true,
         },
         -- FzfLuaHeaderText = { fg = colors.palette.springViolet1, bg = colors.palette.sumiInk1 },

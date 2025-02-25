@@ -1,9 +1,8 @@
 {
   "LazyVim": { "branch": "main", "commit": "3f034d0a7f58031123300309f2efd3bb0356ee21" },
   "SchemaStore.nvim": { "branch": "main", "commit": "6c40d8a0874201d7f91599102864573bdd191859" },
-  "americano.nvim": { "branch": "main", "commit": "1d49c4930503bf80189b68ccda0e7e68a2213344" },
-  "better-escape.nvim": { "branch": "master", "commit": "199dcc2643dec5d8dbdab4ec672cf405224dcb3b" },
   "blink.cmp": { "branch": "main", "commit": "18b352d12b35bca148427b607098df14b75a218f" },
+  "blue-moon": { "branch": "master", "commit": "85547247f2212843bdfd81c897c749526303fbe5" },
   "catppuccin": { "branch": "main", "commit": "d72341852556e2dfe19f779cc682c16dd58548fc" },
   "conform.nvim": { "branch": "master", "commit": "a6f5bdb78caa305496357d17e962bbc4c0b392e2" },
   "cyberdream.nvim": { "branch": "main", "commit": "487da80bcdf4812983ae465840428f58c130767f" },
@@ -25,7 +24,6 @@
   "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },
   "melange-nvim": { "branch": "master", "commit": "de083830e7a29a44e8c0cb57300844b010d8a69c" },
   "mellifluous.nvim": { "branch": "main", "commit": "9add9975a067e448da077dab92b70473aab41a76" },
-  "midnight.nvim": { "branch": "main", "commit": "fe062a6f2e5bd77cd8a260f61e6e12789eaf4f13" },
   "mini.ai": { "branch": "main", "commit": "6e01c0e5a15554852546fac9853960780ac52ed4" },
   "mini.hipatterns": { "branch": "main", "commit": "fbf1e2195fdd65cf1bc970316c28098257728868" },
   "mini.icons": { "branch": "main", "commit": "ec61af6e606fc89ee3b1d8f2f20166a3ca917a36" },
@@ -36,7 +34,6 @@
   "neotest-jest": { "branch": "main", "commit": "514fd4eae7da15fd409133086bb8e029b65ac43f" },
   "neotest-vitest": { "branch": "main", "commit": "9f8f05bee6e5b980a4d1e84adab119a8f9756a77" },
   "nightfox.nvim": { "branch": "main", "commit": "ba47d4b4c5ec308718641ba7402c143836f35aa9" },
-  "noctishc.nvim": { "branch": "main", "commit": "f7c24adb2cd0eca9cf5e9d0fa6595512f82cf450" },
   "noice.nvim": { "branch": "main", "commit": "eaed6cc9c06aa2013b5255349e4f26a6b17ab70f" },
   "nord.nvim": { "branch": "main", "commit": "57fb474a1d628bdf9d1e7964719464ed5675d7c7" },
   "nui.nvim": { "branch": "main", "commit": "53e907ffe5eedebdca1cd503b00aa8692068ca46" },
@@ -55,10 +52,10 @@
   "nvim-web-devicons": { "branch": "master", "commit": "1020869742ecb191f260818234517f4a1515cfe8" },
   "obsidian.nvim": { "branch": "main", "commit": "ae1f76a75c7ce36866e1d9342a8f6f5b9c2caf9b" },
   "oil.nvim": { "branch": "master", "commit": "975a77cce3c8cb742bc1b3629f4328f5ca977dad" },
-  "orgmode": { "branch": "master", "commit": "f3f888af34ac02eb2488bbf068d11d8a4b822642" },
   "pastelnight.nvim": { "branch": "main", "commit": "a3c37bdc9eab7102d78b840c069317da65f8fffb" },
   "persistence.nvim": { "branch": "main", "commit": "f6aad7dde7fcf54148ccfc5f622c6d5badd0cc3d" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "rasmus.nvim": { "branch": "main", "commit": "49f7ee7bf3eb00db52c77f84b15bc69f318bafc1" },
   "render-markdown.nvim": { "branch": "main", "commit": "4a28c135bc3548e398ba38178fec3f705cb26fe6" },
   "snacks.nvim": { "branch": "main", "commit": "cfddd88376f7cf8626c5686ab5690b80010d667f" },
   "tailwind-tools": { "branch": "master", "commit": "abe7368392345c53174979c2cf033e832de80ef8" },
@@ -69,5 +66,8 @@
   "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" },
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
   "ts-comments.nvim": { "branch": "main", "commit": "872dcfa0418f4a33b7437fb4d9f4e89f2f000d74" },
-  "which-key.nvim": { "branch": "main", "commit": "5bf7a73fe851896d5ac26d313db849bf00f45b78" }
+  "vim-moonfly-colors": { "branch": "master", "commit": "9b3d08ccd2152a9a6694ce64bd57b1e19662f3c9" },
+  "vim-nightfly-colors": { "branch": "master", "commit": "c27e76b1adc562b60415ec3688f610206020d64e" },
+  "which-key.nvim": { "branch": "main", "commit": "5bf7a73fe851896d5ac26d313db849bf00f45b78" },
+  "zephyr-nvim": { "branch": "main", "commit": "7fd86b7164442d3b5ec2c81b2694d040e716b5cf" }
 }

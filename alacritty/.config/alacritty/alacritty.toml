@@ -13,7 +13,8 @@ blinking = "Off"
 shape = "Beam"
 
 [cursor.vi_mode_style]
-shape = "Block"
+blinking = "Off"
+shape = "Underline"
 
 [env]
 TERM = "xterm-256color"

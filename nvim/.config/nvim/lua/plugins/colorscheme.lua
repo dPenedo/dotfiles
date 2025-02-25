@@ -176,4 +176,9 @@ return {
       transparent = true,
     },
   },
+  { "bluz71/vim-moonfly-colors" },
+  { "bluz71/vim-nightfly-colors" },
+  { "kvrohit/rasmus.nvim" },
+  { "nvimdev/zephyr-nvim" },
+  { "kyazdani42/blue-moon" },
 }
