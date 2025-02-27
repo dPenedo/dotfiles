@@ -49,6 +49,8 @@ return {
   {
     "dpenedo/melange-nvim",
   },
+  { "Mofiqul/dracula.nvim" },
+  { "loctvl842/monokai-pro.nvim" },
   {
     "ramojus/mellifluous.nvim",
     lazy = false,
@@ -66,6 +68,58 @@ return {
       },
     },
   },
+  { "Domeee/mosel.nvim" },
+  { "clennys/orca.nvim" },
+  {
+    "NTBBloodbath/doom-one.nvim",
+  },
+  { "iagorrr/noctishc.nvim" },
+  {
+    "polirritmico/monokai-nightasty.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  { "sainnhe/sonokai" },
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      style = "dark",
+      colors = {
+        bg0 = "#0D0E1C",
+        bg1 = "#282A33",
+        purple = "#B093E6",
+        fg = "#f0f0f0",
+        grey = "#838674",
+      }, -- Override default colors
+      highlights = {
+        ["@lsp.type.parameter"] = { fg = "#D0958b" },
+        ["@variable.parameter"] = { fg = "#D0958b" },
+        ["@variable.builtin"] = { fg = "#D0958b" },
+        ["@lsp.typemod.variable.defaultLibrary"] = { fg = "#D0958b" },
+        ["Special"] = { fg = "#D0958b" },
+        ["@punctuation.special"] = { fg = "#D0958b" },
+      },
+    },
+  },
+  -- {
+  --   "rmehri01/onenord.nvim",
+  --   opts = {
+  --     styles = {
+  --       comments = "italic",
+  --     },
+  --     disable = {
+  --       float_background = true,
+  --     },
+  --     custom_colors = {
+  --       bg = "#0D0E1C",
+  --       -- bg0 = "#0D0E1C",
+  --       -- bg1 = "#282A33",
+  --       -- purple = "#B093E6",
+  --       -- fg = "#f0f0f0",
+  --       -- grey = "#838674",
+  --     }, -- Override default colors
+  --   },
+  -- },
   {
     "steguiosaur/fullerene.nvim",
     lazy = false,
@@ -154,7 +208,9 @@ return {
   --   opts = {
   --     -- transparent = false,
   --   },
-  -- },
+  {
+    "Skardyy/makurai-nvim",
+  },
 
   {
     "scottmckendry/cyberdream.nvim",

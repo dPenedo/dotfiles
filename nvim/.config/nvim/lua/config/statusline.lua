@@ -73,7 +73,10 @@ local function statusline_focused()
   -- Content
   local lsp_info = spaced(lsp())
   local branch = spaced(" " .. git_branch())
-  local file_name = spaced(vim.fn.expand("%:."))
+  -- local file_name = spaced(vim.fn.expand("%:."))
+  local buf = "%:." .. vim.api.nvim_win_get_buf(vim.g.statusline_winid)
+  local file_name = (vim.fn.expand(buf) == "" and "Empty") or spaced(vim.fn.expand(buf .. ":t"))
+
   local modified = "%m"
   local grapple_info = grapple()
   local linecol = spaced("Col %c | Ln %l/%L")
@@ -96,15 +99,13 @@ local function statusline_focused()
 end
 
 local function statusline_not_focused()
-  local file_name_color = "%#StatusLine#"
-  local file_name = vim.fn.expand("%:.")
+  local file_name_color = "%#StatusLineNC#"
+  local buf = "#" .. vim.api.nvim_win_get_buf(vim.g.statusline_winid)
+  local file_name = (vim.fn.expand(buf) == "" and "Empty") or vim.fn.expand(buf .. ":t")
   local modified = "%m"
 
   return string.format("%s%s%s", file_name_color, file_name, modified)
 end
-
--- Exponer la función statusline en el ámbito global
-_G.statusline = statusline
 
 -- Hacer que la statusline sea reactiva
 function gen_statusline()

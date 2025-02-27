@@ -2,7 +2,7 @@
 # save_to_clipboard = true
 general.import = [
     # "~/.config/alacritty/themes/kanagawa_wave.toml"
-    "~/.config/alacritty/themes/modus_vivendi_tinted.toml"
+    "~/.config/alacritty/themes/one_dark.toml"
     # "~/.config/alacritty/themes/kanagawa_neutral.toml"
     # "~/.config/alacritty/themes/jellybeans.toml"
     # "~/.config/alacritty/themes/dayfox.toml"

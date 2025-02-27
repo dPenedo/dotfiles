@@ -4,7 +4,7 @@ return {
   opts = {
     compile = true,
     transparent = false,
-    functionStyle = { bold = true },
+    -- functionStyle = { bold = true },
     dimInactive = true,
     typeStyle = { bold = false },
     keywordStyle = { bold = false },
