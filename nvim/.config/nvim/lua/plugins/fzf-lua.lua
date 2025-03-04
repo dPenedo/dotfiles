@@ -3,6 +3,7 @@ return {
   dependencies = {
     "junegunn/fzf",
   },
+
   config = function()
     local fzf = require("fzf-lua")
     fzf.setup({

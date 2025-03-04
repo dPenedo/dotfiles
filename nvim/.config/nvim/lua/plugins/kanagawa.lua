@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     compile = true,
-    transparent = false,
+    transparent = true,
     -- functionStyle = { bold = true },
     dimInactive = true,
     typeStyle = { bold = false },
@@ -50,7 +50,7 @@ return {
         -- sumiInk6 = "#5A5349",
 
         -- Neutral:
-        sumiInk0 = "#121212",
+        sumiInk0 = "#282A33",
         sumiInk1 = "#181818",
         sumiInk2 = "#1a1a1a",
         -- sumiInk3 = "#121212",
@@ -75,6 +75,44 @@ return {
         lotusWhite4 = "#DEE4F8",
         lotusWhite5 = "#CDD6F4",
         lotusGreen3 = "#9DBF91",
+        -- mas brillo
+        -- autumnGreen = "#9FBF92",
+        autumnRed = "#E36A6D",
+        autumnYellow = "#F6C58A",
+
+        -- Diag
+        samuraiRed = "#FF4444",
+        roninYellow = "#FFBE6A",
+        waveAqua1 = "#8AB5AA",
+        dragonBlue = "#85A5B4",
+
+        -- Fg and Comments
+        fujiGray = "#929189",
+
+        oniViolet = "#AB92D3",
+        oniViolet2 = "#C8C3EA",
+        crystalBlue = "#9EBCFF",
+        springViolet1 = "#B3AAC9",
+        springViolet2 = "#BCCBEA",
+        springBlue = "#7DC5E3",
+        lightBlue = "#C3F4F5", -- unused yet
+        waveAqua2 = "#9AC8BF", -- improve lightness: desaturated greenish Aqua
+
+        -- waveAqua2  = "#88CDA9",
+        -- waveAqua4  = "#9AC8A0",
+        -- waveAqua5  = "#8CCFA5",
+        -- waveAqua3  = "#88CDA9",
+
+        springGreen = "#B8DB8C",
+        boatYellow1 = "#B3A076",
+        boatYellow2 = "#E0C38E",
+        carpYellow = "#FFE3A4",
+
+        sakuraPink = "#F29EB9",
+        waveRed = "#FF8896",
+        peachRed = "#FF7D82",
+        -- surimiOrange = "#FFC086",
+        katanaGray = "#919C9C",
       },
     },
     styles = {
@@ -98,14 +136,14 @@ return {
         RainbowDelimiterOrange = { fg = colors.palette.springBlue },
         RainbowDelimiterRed = { fg = colors.palette.carpYellow },
         RenderMarkdownWikiLink = { fg = colors.palette.springBlue },
-        TabLine = { fg = colors.palette.dragonBlue, bg = colors.palette.sumiInk4 },
-        TabLineSel = { fg = colors.palette.oldWhite, bg = colors.palette.sumiInk5 },
+        TabLine = { fg = colors.palette.dragonViolet, bg = colors.palette.sumiInk2 },
+        TabLineSel = { fg = colors.palette.boatYellow2, bg = colors.palette.sumiInk5 },
         FlashBackdrop = {
           fg = colors.palette.boatYellow1,
         },
         FlashLabel = {
           fg = colors.palette.winterBlue,
-          bg = "#A5FF47",
+          bg = "#4CFF7D",
           bold = true,
         },
         -- FzfLuaHeaderText = { fg = colors.palette.springViolet1, bg = colors.palette.sumiInk1 },

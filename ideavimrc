@@ -1,0 +1,197 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+
+" .ideavimrc is a configuration file for the IdeaVim plugin. It uses
+" the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+set scrolloff=5
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set relativenumber number
+set wrap
+
+" Plugin configurations
+set commentary
+set surround
+set multiple-cursors
+set ReplaceWithRegister
+set exchange
+set which-key
+set timeoutlen=5000
+
+" Set <leader> to <space>
+let mapleader = " "
+
+" --- Enable IdeaVim plugins ---
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+Plug 'unblevable/quick-scope'
+Plug 'tpope/vim-surround'
+
+" WhichKey plugin configuration
+let g:WhichKey_ShowVimActions = "true"
+
+" --- General key mappings ---
+" Clear search highlights
+nmap <Esc> :noh <Cr>
+
+" Format
+
+nmap <leader>w :action ReformatCode <CR>
+
+
+" System clipboard
+vmap <leader>y :action EditorCopy <CR>
+nmap <leader>y :action EditorCopy <CR>
+nmap <leader>p "+p
+nmap <leader>P :registers <CR>
+vmap <leader>p "+p
+vmap <leader>P :registers<CR>
+nmap <leader>v :action $SelectAll <CR>
+
+" Reformat code
+nnoremap == :action ReformatCode <CR>
+vnoremap == :action ReformatCode <CR>
+
+imap jk <Esc>la
+imap jj <Esc>
+
+
+nmap <leader>; m`A;<Esc>``
+
+" --- Window management ---
+nnoremap <leader>qq :action CloseEditor<cr>
+nnoremap <C-w>q :action CloseAllEditors<cr>
+nmap <C-w>= <Action>(Unsplit)
+nmap <C-S-j> <Action>(StretchSplitToBottom)
+nmap <C-S-h> <Action>(StretchSplitToLeft)
+nmap <C-S-l> <Action>(StretchSplitToRight)
+nmap <C-S-k> <Action>(StretchSplitToTop)
+
+" --- TODOs ---
+nnoremap <leader>tt :action ActivateTODOToolWindow<CR>
+
+" --- Font size ---
+nnoremap <leader>+ :action EditorIncreaseFontSize<cr>
+nnoremap <leader>_ :action EditorDecreaseFontSize<cr>
+
+" --- Commenting ---
+noremap gcc :action CommentByLineComment<CR>
+noremap Gcc :action CommentByBlockComment<CR>
+
+" --- Searching and navigation ---
+noremap <leader>/ :action Find<CR>
+nmap <leader><space> <Action>(RecentFiles)
+
+nnoremap <c-p> :action GotoFile <CR>
+nmap <leader>df :action FindInPath<CR>
+vmap <leader>G :action FindInPath<CR>
+nmap <leader>fg <Action>(FindInPath)
+
+nnoremap '' :action Switcher <CR><CR>
+noremap ,b :action RecentFiles<CR>
+nnoremap ,c :action GotoClass <CR>
+nnoremap U :action FindUsages <CR>
+vnoremap U :action FindUsages <CR>
+
+
+" --- File tree ---
+nmap <leader>e <Action>(SelectInProjectView)
+
+
+
+" --- Error navigation ---
+" Next Diagnostic
+nmap ]d <Action>(GotoNextError)
+" Prev Diagnostic
+nmap [d <Action>(GotoPreviousError)
+" Next Error
+nmap ]e <Action>(GotoNextError)
+" Prev Error
+nmap [e <Action>(GotoPreviousError)
+" Next Warning
+nmap ]w <Action>(GotoNextError)
+" Prev Warning
+nmap [w <Action>(GotoPreviousError)
+nmap <leader>xx :action ActivateProblemsViewToolWindow<CR>
+
+" --- LSP actions ---
+nnoremap gj :action MethodDown <CR>
+nnoremap gk :action MethodUp <CR>
+nnoremap gs :action GotoSuperMethod <CR>
+nnoremap gi :action GotoImplementation <CR>
+nnoremap g, :action JumpToLastChange <CR>
+nnoremap g. :action JumpToNextChange <CR>
+nnoremap gd :action GotoDeclaration <CR>
+nnoremap gr :action RecentFiles <CR>
+vnoremap <leader>gc :action GotoClass <CR>
+nmap K :action ShowHoverInfo<CR>
+" Goto Definition
+nmap gd <Action>(GotoDeclaration)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" References
+nmap gr <Action>(FindUsages)
+" Goto Implementation
+nmap gI <Action>(GotoImplementation)
+" Goto Type Definition
+nmap gy <Action>(GotoTypeDeclaration)
+" Goto Declaration
+nmap gD <Action>(GotoDeclaration)
+
+
+" --- Intellij Actions ---
+nnoremap <leader>cr :action RenameElement <CR>
+nnoremap <leader>aa :action GotoAction <CR>
+nnoremap <leader>ds :action GotoSymbol <CR>
+nmap <A-S> :action Run <CR>
+
+
+" --- Harpoon mappings ---
+nmap <leader>jf :action ShowHarpoon<cr>
+nmap <leader>ja :action AddToHarpoon<cr>
+
+nmap <leader>jj :action GotoHarpoon1<cr>
+nmap <leader>jk :action GotoHarpoon2<cr>
+nmap <leader>jl :action GotoHarpoon3<cr>
+nmap <leader>j; :action GotoHarpoon4<cr>
+
