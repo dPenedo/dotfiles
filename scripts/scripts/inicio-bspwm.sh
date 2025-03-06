@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
-pkill alacritty &
+pkill kitty &
 
 sleep 5
 brave-browser &
@@ -12,9 +12,9 @@ brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
 sleep 4
-alacritty &
+# alacritty &
 # sleep 4
-# kitty -e bash -c 'sleep 4; tmux' &
+kitty -e bash -c 'sleep 4; tmux' &
 
 # obsidian &
 setxkbmap -layout us -variant altgr-intl &

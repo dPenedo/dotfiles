@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Google Drive
+Comment=Access Google Drive via Brave Browser
+Exec=brave-browser --app=https://drive.google.com
+Icon=~/.local/share/applications/icons/google-drive.png
+Terminal=false
+Type=Application
+Categories=Internet;Email;

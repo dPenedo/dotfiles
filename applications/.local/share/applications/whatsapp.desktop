@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=WhatsApp
+Comment=Access WhatsApp Web via Brave Browser
+Exec=brave-browser --app=https://web.whatsapp.com
+Icon=~/.local/share/applications/icons/whatsapp.png
+Terminal=false
+Type=Application
+Categories=Internet;WebBrowser;

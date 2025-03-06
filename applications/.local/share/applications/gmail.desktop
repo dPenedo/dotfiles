@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Gmail
+Comment=Access Gmail via Brave Browser
+Exec=brave-browser --app=https://mail.google.com
+Icon=~/.local/share/applications/icons/gmail.png
+Terminal=false
+Type=Application
+Categories=Internet;Email;

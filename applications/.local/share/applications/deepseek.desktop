@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DeepSeek
+Comment=Access DeepSeek via Brave Browser
+Exec=brave-browser --app=https://chat.deepseek.com
+Icon=~/.local/share/applications/icons/deep.png
+Terminal=false
+Type=Application
+Categories=Internet;WebBrowser;

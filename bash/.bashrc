@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
+    . /etc/bashrc
 fi
 
 export HISTFILE="$HOME/.bash_history"
@@ -14,7 +14,7 @@ export BROWSER="brave-browser"
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
@@ -33,17 +33,17 @@ GRAY="\[\033[37m\]"
 RESET="\[\033[0m\]"
 
 rama_git() {
-  local branch
-  branch=$(git branch 2>/dev/null | sed -n '/^\*/s/^\* //p')
-  if [ -n "$branch" ]; then
-    if [[ $(git status -s) ]]; then
-      # echo "($branch*)"
-      echo -e "(\033[32m$branch*\033[0m)"
+    local branch
+    branch=$(git branch 2>/dev/null | sed -n '/^\*/s/^\* //p')
+    if [ -n "$branch" ]; then
+        if [[ $(git status -s) ]]; then
+            # echo "($branch*)"
+            echo -e "(\033[32m$branch*\033[0m)"
 
-    else
-      echo "($branch)"
+        else
+            echo "($branch)"
+        fi
     fi
-  fi
 }
 
 PS1="\n${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
@@ -58,9 +58,9 @@ bind '"\e[A": fzf-history-widget'
 
 # FZF
 if [ -x "$(command -v fzf)" ]; then
-  source ~/.fzf/shell/key-bindings.bash
-  source ~/.fzf/shell/completion.bash
-  source ~/.fzf/fzf-config.sh
+    source ~/.fzf/shell/key-bindings.bash
+    source ~/.fzf/shell/completion.bash
+    source ~/.fzf/fzf-config.sh
 fi
 
 #Aliases
@@ -73,11 +73,11 @@ eval "$(zoxide init bash)"
 export JAVA_HOME=~/Descargas/Programas/jdk-11.0.0.1/
 export PATH=$JAVA_HOME/bin:$PATH
 
-source ~/.tmc-autocomplete.sh || true
+# source ~/.tmc-autocomplete.sh || true
 # Solo para el curso de MOOC, borrar al finalizar!
-alias tt="tmc test && notify-send '✅ Tests completados' "
-alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
-alias te="tmc exercises mooc-java-programming-ii"
+# alias tt="tmc test && notify-send '✅ Tests completados' "
+# alias tss="echo -e 'n\n' | tmc submit && notify-send '  Test Submit'"
+# alias te="tmc exercises mooc-java-programming-ii"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-source /home/daniel/.tmc-autocomplete.sh || true
+# source /home/daniel/.tmc-autocomplete.sh || true

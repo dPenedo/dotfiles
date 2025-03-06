@@ -358,7 +358,7 @@ map ctrl+space send_text all \x00
 
 
 # BEGIN_KITTY_THEME
-# OneDark-Pro
+# Kaolin Dark
 include current-theme.conf
 # END_KITTY_THEME
 

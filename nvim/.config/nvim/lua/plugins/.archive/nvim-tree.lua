@@ -8,12 +8,31 @@ return {
   opts = {
     hijack_cursor = true,
     view = {
-      side = "left",
+      centralize_selection = true,
+      cursorline = true,
+      debounce_delay = 15,
+      preserve_window_proportions = false,
+      number = false,
+      relativenumber = false,
+      signcolumn = "yes",
     },
-
     renderer = {
       indent_markers = {
         enable = true,
+      },
+      icons = {
+        glyphs = {
+
+          modified = "󰈸",
+        },
+      },
+    },
+    actions = {
+
+      open_file = {
+        window_picker = {
+          chars = "jklhABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+        },
       },
     },
     modified = {
@@ -22,16 +41,12 @@ return {
     diagnostics = {
       enable = true,
     },
-    actions = {
-      open_file = {
-        -- quit_on_open = true,
-        window_picker = {
-          chars = "jkl;uiop",
-        },
-      },
-    },
   },
   keys = {
-    { "<leader>e", "<CMD>NvimTreeFindFileToggle<CR>", { desc = "NvimTree" } },
+    {
+      "<leader>e",
+      "<CMD>NvimTreeFindFile<CR>",
+      desc = "Explorer Nvimtree (Root Dir)",
+    },
   },
 }

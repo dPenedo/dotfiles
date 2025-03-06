@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ChatGPT
+Comment=Access ChatGPT via Brave Browser
+Exec=brave-browser --app=https://chat.openai.com
+Icon=~/.local/share/applications/icons/chatgpt.png
+Terminal=false
+Type=Application
+Categories=Internet;WebBrowser;

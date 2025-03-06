@@ -57,6 +57,7 @@ return {
     -- { "<leader><space>", false },
     -- { "<leader>/", false },
     -- { "<leader>fg", false },
+    { "<leader>fd", "<CMD>Telescope fd find_command=fd,-t=d <CR>", { desc = "Telescope to find dir" } },
     { "<leader>/", "<CMD>Tele current_buffer_fuzzy_find<CR>", { desc = "Fzf current buffer" } },
     -- { "<leader>fg", "<CMD>Tele live_grep<CR>", { desc = "Fzf current buffer" } },
     { "<leader>fi", "<CMD>Tele find_files<CR>", { desc = "Fzf files on project" } },
