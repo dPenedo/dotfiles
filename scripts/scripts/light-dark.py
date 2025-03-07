@@ -7,10 +7,10 @@ import sys
 SCRIPT_PATH = os.path.expanduser("~/scripts/light-dark.py")
 
 CONFIGURATIONS = {
-    "polybar": {
-        "directory": os.path.expanduser("~/.config/polybar/"),
-        "file": "colors.ini",
-    },
+    # "polybar": {
+    #     "directory": os.path.expanduser("~/.config/polybar/"),
+    #     "file": "colors.ini",
+    # },
     "nvim": {
         "directory": os.path.expanduser("~/.config/nvim/lua/plugins/"),
         "file": "color-mode.lua",

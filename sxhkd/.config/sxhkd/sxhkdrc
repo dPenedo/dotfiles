@@ -171,8 +171,8 @@ super + {Left,Down,Up,Right}
 
 # terminal emulator
 super + Return
-  # alacritty
-  kitty
+  alacritty
+  # kitty
 
 
 # super + shift + Return

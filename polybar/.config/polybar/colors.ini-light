@@ -1,20 +1,39 @@
 [color]
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-# Desert
-background = #e2e0d8
-foreground = #2a2a37
-foreground-alt = #5294E2
+# Kanagawa
+; ; background = #1F1F28
+; background = #1f1f28
+; ; foreground = #E8DBCF
+; foreground = #e5e9f0
+; foreground-alt = #5294E2
+; ;; shades
+; shade1 = #2a2a37
+; shade2 = #2a2a37
+; shade3 = #363646
+; shade4 = #7E9CD8
+; shade5 = #7E9CD8
+; shade6 = #5B65AB
+; shade7 = #8fbcbb
+; shade8 = #b48ead
+; shade9 = #3b4252
+; shade10 = #E6C384
+; shade11 = #AEA69D
+; shade12 = #bf616a
 
+# Jellybeans
+background = #1c1c1c
+foreground = #e5e9f0
+foreground-alt = #5294E2
 ;; shades
-shade1 = #e2e0d8
-shade2 = #e2e0d8
-shade3 = #e2e0d8
-shade4 = #5B65AB
-shade5 = #5B65AB
+shade1 = #2a2a37
+shade2 = #2a2a37
+shade3 = #363646
+shade4 = #7E9CD8
+shade5 = #7E9CD8
 shade6 = #5B65AB
 shade7 = #8fbcbb
 shade8 = #b48ead
 shade9 = #3b4252
-shade10 = #AC5402
+shade10 = #E6C384
 shade11 = #AEA69D
 shade12 = #bf616a
