@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     compile = true,
-    transparent = true,
+    transparent = false,
     -- functionStyle = { bold = true },
     dimInactive = true,
     typeStyle = { bold = false },

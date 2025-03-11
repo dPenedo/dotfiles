@@ -38,7 +38,7 @@ rama_git() {
     if [ -n "$branch" ]; then
         if [[ $(git status -s) ]]; then
             # echo "($branch*)"
-            echo -e "(\033[32m$branch*\033[0m)"
+            echo -e "  \033[32m$branch+\033[0m"
 
         else
             echo "($branch)"
@@ -46,7 +46,24 @@ rama_git() {
     fi
 }
 
-PS1="\n${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW} ▶ ${RESET}"
+# transcient prompt
+function lastcommand {
+    history | tail -1 | cut -c 8-
+}
+function deleteprompt {
+    n=${PS1@P}
+    n=${n//[^$'\n']/}
+    n=${#n}
+    tput cuu $((n + 1))
+    tput ed
+}
+
+DIR_PROMPT="\[$(tput setaf 6)\]\w"
+GIT_PROMPT="\[$(tput setaf 5)\]$(git --version &>/dev/null && echo -n '$(__git_ps1)')"
+
+PS1="\n${MID_BLUE}\w${GRAY}\$(rama_git)${YELLOW}\n ${RESET}"
+PS0='\[$(deleteprompt)\]\$ $(lastcommand)\n\[${PS1:0:$((EXPS0=1,0))}\]'
+PROMPT_COMMAND='[ "$EXPS0" = 0 ] && deleteprompt && echo -e "\$" || EXPS0=0'
 
 # Abrir programas
 bind '"\et":"thunar . &\n"'
@@ -58,10 +75,13 @@ bind '"\e[A": fzf-history-widget'
 
 # FZF
 if [ -x "$(command -v fzf)" ]; then
-    source ~/.fzf/shell/key-bindings.bash
-    source ~/.fzf/shell/completion.bash
     source ~/.fzf/fzf-config.sh
+    source /usr/share/fzf/shell/key-bindings.bash
 fi
+
+# # FZF completion
+# source ~/.fzf/fzf-tab-completion/bash/fzf-bash-completion.sh
+# bind -x '"\t": fzf_bash_completion'
 
 #Aliases
 source ~/.aliases.sh
