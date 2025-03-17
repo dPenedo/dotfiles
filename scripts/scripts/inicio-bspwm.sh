@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
+pkill kitty &
 
 sleep 5
 brave-browser &
@@ -30,6 +31,7 @@ sleep 8
 wmctrl -r "Brave" -t 1 &
 wmctrl -r "alacritty" -t 0 &
 wmctrl -r "~" -t 0 &
+wmctrl -r "kitty" -t 0 &
 # wmctrl -r "Firefox" -t 0 &
 wmctrl -r "tmux" -t 1 &
 wmctrl -r "Chat" -t 7 &

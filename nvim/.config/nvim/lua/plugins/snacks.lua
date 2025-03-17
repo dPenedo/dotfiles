@@ -144,5 +144,13 @@ return {
       end,
       desc = "Diagnostics",
     },
+    -- explorer
+    {
+      "<leader>e",
+      function()
+        Snacks.picker.explorer()
+      end,
+      desc = "Diagnostics",
+    },
   },
 }

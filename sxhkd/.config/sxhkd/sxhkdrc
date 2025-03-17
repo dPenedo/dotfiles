@@ -101,7 +101,7 @@ ctrl + semicolon
 super + Tab
 	bspc desktop -f last
 alt +  Tab
-  bspc node --focus next.local
+  bspc node --focus next
 
 # Alternar al escritorio 7 o al último escritorio activo
 super + n
@@ -227,6 +227,11 @@ XF86AudioPrev
 XF86AudioNext
   playertctl next
 
+ctrl + super {-, =}
+    amixer -q set Master {5%+,5%-}
+ctrl + super + m
+    amixer -q set Master toggle 
+    
 
 
 ###################

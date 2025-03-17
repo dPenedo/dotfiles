@@ -18,6 +18,8 @@ vim.keymap.del("n", "<leader>-")
 -- vim.keymap.del("n", "<leader>l")
 local map = LazyVim.safe_keymap_set
 
+
+
 map("n", "<leader>w", "<cmd>update<cr>", { desc = "Windows", remap = true })
 map("i", "jj", "<ESC>", { desc = "Salir del modo de inserción" })
 map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar un espacio" })
@@ -26,7 +28,7 @@ map("n", "'", "`", { desc = "backtick asignado a '" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
-map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
+-- map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
 map("n", "<leader>ng", ":!python ~/Documentos/Dropbox/Notas/.gaur/gaur.py<CR>", { desc = "Generar una sección diaria en notas, eguneroka_" })
 map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
 map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2025.md<CR>", { desc = "Ir a Egunerokoa" })
