@@ -96,12 +96,17 @@ super + alt + {Up,Down}
 
 
 # focus the last node/desktop
+ctrl + comma
+	bspc desktop -f last
 ctrl + semicolon
 	bspc desktop -f last
 super + Tab
 	bspc desktop -f last
 alt +  Tab
-  bspc node --focus next
+  bspc node --focus next.local
+#  Rotar en sentido inverso con Alt + Shift + Tab
+alt + Shift + Tab
+    bspc node -f prev.local
 
 # Alternar al escritorio 7 o al último escritorio activo
 super + n
@@ -227,10 +232,13 @@ XF86AudioPrev
 XF86AudioNext
   playertctl next
 
-ctrl + super {-, =}
+# Ajustar volumen (aumentar/disminuir)
+ctrl + super + {equal, minus}
     amixer -q set Master {5%+,5%-}
-ctrl + super + m
-    amixer -q set Master toggle 
+
+# Silenciar/desilenciar volumen
+ctrl + super + 0
+    amixer -q set Master toggle
     
 
 

@@ -79,28 +79,28 @@ return {
   --   lazy = false,
   --   priority = 1000,
   -- },
-  -- { "sainnhe/sonokai" },
-  {
-    "navarasu/onedark.nvim",
-    opts = {
-      style = "dark",
-      colors = {
-        bg0 = "#0D0E1C",
-        bg1 = "#282A33",
-        purple = "#B093E6",
-        fg = "#f0f0f0",
-        grey = "#838674",
-      }, -- Override default colors
-      highlights = {
-        ["@lsp.type.parameter"] = { fg = "#D0958b" },
-        ["@variable.parameter"] = { fg = "#D0958b" },
-        ["@variable.builtin"] = { fg = "#D0958b" },
-        ["@lsp.typemod.variable.defaultLibrary"] = { fg = "#D0958b" },
-        ["Special"] = { fg = "#D0958b" },
-        ["@punctuation.special"] = { fg = "#D0958b" },
-      },
-    },
-  },
+  { "sainnhe/sonokai" },
+  -- {
+  --   "navarasu/onedark.nvim",
+  --   opts = {
+  --     style = "dark",
+  --     colors = {
+  --       bg0 = "#0D0E1C",
+  --       bg1 = "#282A33",
+  --       purple = "#B093E6",
+  --       fg = "#f0f0f0",
+  --       grey = "#838674",
+  --     }, -- Override default colors
+  --     highlights = {
+  --       ["@lsp.type.parameter"] = { fg = "#D0958b" },
+  --       ["@variable.parameter"] = { fg = "#D0958b" },
+  --       ["@variable.builtin"] = { fg = "#D0958b" },
+  --       ["@lsp.typemod.variable.defaultLibrary"] = { fg = "#D0958b" },
+  --       ["Special"] = { fg = "#D0958b" },
+  --       ["@punctuation.special"] = { fg = "#D0958b" },
+  --     },
+  --   },
+  -- },
   -- {
   --   "rmehri01/onenord.nvim",
   --   opts = {
@@ -154,15 +154,15 @@ return {
   --     -- Your configuration options here.
   --   },
   -- },
-  {
-    "pauchiner/pastelnight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-
-      transparent = true,
-    },
-  },
+  -- {
+  --   "pauchiner/pastelnight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --
+  --     transparent = true,
+  --   },
+  -- },
 
   -- {
   --   "yorik1984/newpaper.nvim",
@@ -208,10 +208,8 @@ return {
   --   opts = {
   --     -- transparent = false,
   --   },
-  -- {
-  --   "Skardyy/makurai-nvim",
   -- },
-  --
+
   -- {
   --   "scottmckendry/cyberdream.nvim",
   --   lazy = false,
