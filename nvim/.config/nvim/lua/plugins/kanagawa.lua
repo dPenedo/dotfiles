@@ -123,7 +123,7 @@ return {
       return {
         -- Ejemplo de sobrescritura para el grupo de highlight "String"
         String = { fg = colors.palette.springGreen, italic = true },
-        Comment = { fg = "#898E6B", italic = true },
+        Comment = { fg = "#A29581", italic = true },
 
         -- Ejemplo de sobrescritura para un grupo de highlight de un plugin
         ["@markup.strong.markdown_inline"] = { fg = colors.palette.oniViolet2, bold = true },

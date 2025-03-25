@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
-pkill kitty &
 
-sleep 5
 brave-browser &
 # firefox-developer-edition &
 sleep 7
@@ -11,11 +9,11 @@ bash ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
+# kitty &
+
 sleep 4
 # alacritty &
 # sleep 4
-# kitty -e bash -c 'sleep 4; tmux' &
-kitty &
 
 # obsidian &
 setxkbmap -layout us -variant altgr-intl &
@@ -26,6 +24,7 @@ sleep 2
 # thunderbird &
 # flatpak run md.obsidian.Obsidian &
 syncthing &
+kitty &
 
 sleep 8
 wmctrl -r "Brave" -t 1 &

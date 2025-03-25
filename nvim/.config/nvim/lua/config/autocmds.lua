@@ -124,21 +124,22 @@ function M.setup_markdown_keymaps()
     -- Función para insertar el enlace markdown
     local insert_markdown_link = function(selected)
       if selected and #selected > 0 then
-        local path = selected[1] -- Ruta del archivo seleccionado
-        local filename = vim.fn.fnamemodify(path, ":t:r") -- Nombre del archivo sin extensión
-        local description = filename:gsub("[_-]", " ") -- Reemplazar guiones y guiones bajos por espacios
-        local link = string.format("[[%s|%s]]", filename, description) -- Crear el enlace en formato markdown
+        local path = selected[1]
+        local filename = vim.fn.fnamemodify(path, ":t:r")
+        local description = filename:gsub("[_-]", " ")
+        local link = string.format("[[%s|%s]]", filename, description)
 
-        -- Obtener la posición actual del cursor en modo de inserción
         local cursor_pos = vim.api.nvim_win_get_cursor(0)
-        local line = vim.fn.getline(".")
+        local row = cursor_pos[1] - 1 -- Lua es 0-based para las filas
+        local col = cursor_pos[2]
+        local line = vim.api.nvim_buf_get_lines(0, row, row + 1, false)[1]
 
-        -- Insertar el enlace una posición después del cursor
-        local new_line = line:sub(1, cursor_pos[2]) .. link .. line:sub(cursor_pos[2] + 1)
-        vim.fn.setline(".", new_line)
+        -- Insertar preservando el espacio después del cursor
+        local new_line = line:sub(1, col) .. link .. line:sub(col + 1)
+        vim.api.nvim_buf_set_lines(0, row, row + 1, false, { new_line })
 
         -- Mover el cursor después del enlace insertado
-        vim.api.nvim_win_set_cursor(0, { cursor_pos[1], cursor_pos[2] + #link + 1 })
+        vim.api.nvim_win_set_cursor(0, { cursor_pos[1], col + #link })
       end
     end
 

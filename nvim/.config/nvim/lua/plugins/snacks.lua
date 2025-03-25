@@ -35,6 +35,7 @@ return {
   },
   keys = {
     { "<leader><space>", false },
+    { "<space><space>", false },
     { "<leader>/", false },
     { "<leader>fg", false },
     {

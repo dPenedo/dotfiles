@@ -73,7 +73,7 @@ return {
   -- {
   --   "NTBBloodbath/doom-one.nvim",
   -- },
-  -- { "iagorrr/noctishc.nvim" },
+  { "iagorrr/noctishc.nvim" },
   -- {
   --   "polirritmico/monokai-nightasty.nvim",
   --   lazy = false,
@@ -135,15 +135,15 @@ return {
   --   },
   -- },
 
-  -- {
-  --   "miikanissi/modus-themes.nvim",
-  --   priority = 1000,
-  --   opts = {
-  --     variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
-  --     transparent = false, -- Transparent background (as supported by the terminal)
-  --     dim_inactive = true, --
-  --   },
-  -- },
+  {
+    "miikanissi/modus-themes.nvim",
+    priority = 1000,
+    opts = {
+      -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+      transparent = false, -- Transparent background (as supported by the terminal)
+      dim_inactive = true, --
+    },
+  },
   --
   -- -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
   -- {
@@ -235,4 +235,15 @@ return {
   -- { "kvrohit/rasmus.nvim" },
   -- { "nvimdev/zephyr-nvim" },
   -- { "kyazdani42/blue-moon" },
+  -- {
+  --   "armannikoyan/rusty",
+  --   bien, agradable, pero no va en ssnack picker y un poco bajo de contraste
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     transparent = true,
+  --     italic_comments = true,
+  --     underline_current_line = true,
+  --   },
+  -- },
 }

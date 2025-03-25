@@ -45,6 +45,9 @@ map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
+map("n", "<C-u>", "10k", { desc = "10 up" })
+map("n", "<C-d>", "10j", { desc = "10 down" })
+
 
 
 map("n", "<leader>ll", function()

@@ -2,9 +2,12 @@ return {
   "folke/flash.nvim",
   opts = {
     -- labels = "jklqsfghwertyuiopzcvbnm",
+    labels = "jklwdsasdfjklqwertyuiopzxcvbnm",
+
     search = {
       -- search/jump in all windows
       multi_window = true,
+      mode = "search",
     },
     multi_line = false,
     modes = {
@@ -14,12 +17,12 @@ return {
         jump_labels = false,
         multi_line = false,
         highlight = {
-          backdrop = false, -- Desactiva el fondo en el modo char
+          backdrop = true, -- Desactiva el fondo en el modo char
         },
       },
     },
     highlight = {
-      backdrop = false, -- Desactiva el fondo globalmente
+      backdrop = true, -- Desactiva el fondo globalmente
     },
   },
   keys = {
