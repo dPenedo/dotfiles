@@ -4,6 +4,21 @@ return {
   lazy = false,
   ---@type snacks.Config
   opts = {
+    styles = {
+      snacks_image = {
+        relative = "editor",
+        col = -1,
+      },
+    },
+    image = {
+      enabled = true,
+      doc = {
+        inline = false,
+        float = true,
+        max_width = 60,
+        max_height = 30,
+      },
+    },
     dashboard = {
       preset = {
         keys = {
@@ -146,12 +161,12 @@ return {
       desc = "Diagnostics",
     },
     -- explorer
-    {
-      "<leader>e",
-      function()
-        Snacks.picker.explorer()
-      end,
-      desc = "Diagnostics",
-    },
+    -- {
+    --   "<leader>e",
+    --   function()
+    --     Snacks.picker.explorer()
+    --   end,
+    --   desc = "Diagnostics",
+    -- },
   },
 }

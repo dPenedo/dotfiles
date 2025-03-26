@@ -43,6 +43,7 @@ map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })
 map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })
 map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
+
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
 map("n", "<C-u>", "10k", { desc = "10 up" })
