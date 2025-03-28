@@ -50,6 +50,8 @@ map("n", "<C-u>", "10k", { desc = "10 up" })
 map("n", "<C-d>", "10j", { desc = "10 down" })
 
 
+-- Recargar
+map("n", "<leader>r", "<cmd>checktime<cr>", { desc = "Reload" })
 
 map("n", "<leader>ll", function()
     local word = vim.fn.expand("<cword>") -- Obtener la palabra bajo el cursor

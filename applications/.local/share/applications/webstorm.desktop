@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WebStorm
+Icon=/home/daniel/Descargas/Programas/WebStorm-243.26053.12/bin/webstorm.svg
+Exec=/home/daniel/Descargas/Programas/WebStorm-243.26053.12/bin/webstorm.sh
+Comment=The Jet Brains JavaScript IDE
+Categories=Development;IDE;WebDevelopment;
+Terminal=false
+StartupWMClass=jetbrains-webstorm

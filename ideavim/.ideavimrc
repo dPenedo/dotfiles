@@ -31,6 +31,7 @@ Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
 Plug 'unblevable/quick-scope'
 Plug 'tpope/vim-surround'
+Plug 'justinmk/vim-sneak'
 
 " WhichKey plugin configuration
 let g:WhichKey_ShowVimActions = "true"
@@ -64,8 +65,6 @@ nmap <leader>; m`A;<Esc>``
 
 " --- Window management ---
 nnoremap <leader>ww :action HideAllWindows <CR>
-nnoremap <leader><cr> :action SplitVertically<CR>
-nnoremap <leader>- :action SplitHorizontally<CR>
 nnoremap <c-h> <c-w>h
 nnoremap <Tab> <c-w>w
 nnoremap <leader>j <c-w>j
@@ -73,6 +72,7 @@ nnoremap <leader>k <c-w>k
 nnoremap <c-l> <c-w>l
 nnoremap <leader>qq :action CloseEditor<cr>
 nmap <C-w>= <Action>(Unsplit)
+nmap <C-w>q :q<cr>
 nmap <C-S-j> <Action>(StretchSplitToBottom)
 nmap <C-S-h> <Action>(StretchSplitToLeft)
 nmap <C-S-l> <Action>(StretchSplitToRight)
@@ -131,11 +131,11 @@ nmap <A-S> :action Run <CR>
 
 
 " --- Harpoon mappings ---
-nmap <leader>ss :action ShowHarpoon<cr>
-nmap <leader>sa :action AddToHarpoon<cr>
+nmap <leader>jf :action ShowHarpoon<cr>
+nmap <leader>ja :action AddToHarpoon<cr>
 
-nmap <leader>sj :action GotoHarpoon1<cr>
-nmap <leader>sk :action GotoHarpoon2<cr>
-nmap <leader>sl :action GotoHarpoon3<cr>
-nmap <leader>s; :action GotoHarpoon4<cr>
+nmap <leader>jj :action GotoHarpoon1<cr>
+nmap <leader>jk :action GotoHarpoon2<cr>
+nmap <leader>jl :action GotoHarpoon3<cr>
+nmap <leader>j; :action GotoHarpoon4<cr>
 

@@ -1,0 +1,10 @@
+{
+    "Seccion comentada por flechas": {
+        "prefix": "seccion entre flechas",
+        "body": [
+            "<!-- ↓ ${1} -->",
+            "<!-- ↑ ${1} -->"
+        ],
+        "description": "Insert an up and down arrow comment in HTML"
+    }
+}
