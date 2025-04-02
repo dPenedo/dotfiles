@@ -34,7 +34,7 @@ end, { desc = "[n]ew [t]emp" })
 vim.keymap.set("n", "<leader>na", function()
   local filename = vim.fn.input("Enter Atom file name: ", "", "file")
   if filename ~= "" then
-    local filepath = "~/Documentos/Dropbox/Notas/00_Atomoak/" .. filename .. ".md"
+    local filepath = "~/Documentos/Dropbox/Notas/0_Atomoak/" .. filename .. ".md"
     vim.fn.writefile({}, vim.fn.expand(filepath))
     vim.cmd("edit " .. vim.fn.expand(filepath))
   end

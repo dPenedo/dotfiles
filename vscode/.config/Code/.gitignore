@@ -25,3 +25,13 @@ TransportSecurity
 Trust Tokens'
 Trust Tokens-journal'
 User
+# En ~/.dotfiles/vscode/.gitignore
+CachedData/
+Code Cache/
+Local Storage/
+Service Worker/
+Session Storage/
+Shared Dictionary/
+Trust Tokens*
+Network Persistent State
+WebStorage/

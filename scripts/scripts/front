@@ -1,31 +1,41 @@
 #!/bin/bash
 
-# Puerto y navegador por defecto
+# Configuración predeterminada
 DEFAULT_PORT=3000
 DEFAULT_BROWSER="brave-browser"
-DEFAULT_DESKTOPS=3
+DEFAULT_DESKTOPS=(0 2 10)  # Cámbialos según tu configuración
 
 # Si se pasan argumentos, se utilizan. Si no, se usan los valores por defecto.
 PORT=${1:-$DEFAULT_PORT}
 BROWSER=${2:-$DEFAULT_BROWSER}
-DESKTOPS=${3:-$DEFAULT_DESKTOPS}
+DESKTOPS=("${@:3}")
 
-# Seleccionar la URL con el puerto dado
+# Si no se pasan escritorios, usa los valores predeterminados
+if [ ${#DESKTOPS[@]} -eq 0 ]; then
+    DESKTOPS=("${DEFAULT_DESKTOPS[@]}")
+fi
+
 URL="http://localhost:$PORT"
 
-# Seleccionar los escritorios
-# DESKTOPS=(1 2 10)
-
-# Abrir el navegador especificado en nuevas ventanas
-for ((i = 1; i <= ${DESKTOPS}; i++)); do
-    $BROWSER --new-window "$URL" &
-    sleep 1
-done
-
-# Mover las ventanas del navegador a los escritorios definidos
+# Abrir el navegador en nuevas ventanas
 for i in "${!DESKTOPS[@]}"; do
-    wmctrl -r "${BROWSER:0:6}" -t "${DESKTOPS[i]}"
-    sleep 1
+    $BROWSER --new-window "$URL" &
+    sleep 2  # Esperar a que se abra la ventana
 done
+
+# Capturar todas las ventanas abiertas del navegador
+sleep 2  # Dar tiempo a que wmctrl detecte las ventanas
+WINDOWS=($(wmctrl -l | grep -i "Brave" | awk '{print $1}'))
+
+# Mover cada ventana al escritorio correspondiente
+for i in "${!DESKTOPS[@]}"; do
+    if [ -n "${WINDOWS[$i]}" ]; then
+        wmctrl -i -a "${WINDOWS[$i]}"  # Enfocar ventana
+        sleep 1
+        wmctrl -i -r "${WINDOWS[$i]}" -t "${DESKTOPS[$i]}"  # Mover al escritorio
+    fi
+done
+
+# Mostrar IP local
 echo 'IP local:'
 hostname -I
