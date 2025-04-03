@@ -67,11 +67,11 @@ return {
     },
   },
   keys = {
-    -- {
-    --   "<leader>e",
-    --   "<CMD>Neotree position=left<CR>",
-    --   desc = "Explorer NeoTree (Root Dir)",
-    -- },
+    {
+      "<leader>e",
+      "<CMD>Neotree position=left<CR>",
+      desc = "Explorer NeoTree (Root Dir)",
+    },
     -- {
     --   "<C-h>",
     --   "<CMD>Neotree position=float reveal <CR>",

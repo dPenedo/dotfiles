@@ -37,5 +37,10 @@
         "key": "alt+f",
         "command": "workbench.action.maximizeEditorHideSidebar",
         "when": "auxiliaryBarVisible || sideBarVisible || editorPartMultipleEditorGroups && !editorPartMaximizedEditorGroup"
+    },
+    {
+        "key": "alt+c alt+p",
+        "command": "github.copilot.completions.toggle",
+        "when": "github.copilot.activated"
     }
 ]

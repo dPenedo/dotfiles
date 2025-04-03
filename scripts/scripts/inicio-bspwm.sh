@@ -15,7 +15,7 @@ sleep 4
 # alacritty &
 # sleep 4
 
-# obsidian &
+obsidian &
 setxkbmap -layout us -variant altgr-intl &
 # kitty -e bash ~/scripts/load_sessions.sh &
 sleep 2
@@ -24,9 +24,10 @@ sleep 2
 # thunderbird &
 # flatpak run md.obsidian.Obsidian &
 syncthing &
-kitty &
 
 sleep 8
+kitty &
+sleep 4
 wmctrl -r "Brave" -t 1 &
 wmctrl -r "alacritty" -t 0 &
 wmctrl -r "~" -t 0 &

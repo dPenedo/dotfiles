@@ -13,6 +13,7 @@ if vim.g.neovide then
   vim.g.neovide_scroll_animation_length = 0.00
 end
 
+
 if vim.g.vscode then
   require("vscodium/vscodium-keymaps")
   require("vscodium/vscodium-settings")
