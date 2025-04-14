@@ -3,12 +3,18 @@
 # Remapear Caps Lock a Control
 setxkbmap -option ctrl:nocaps
 setxkbmap -layout us -variant altgr-intl &
+# setxkbmap -layout us -variant intl &
 
 # Hacer que un toque corto de Control_L actúe como Escape
 xcape -e 'Control_L=Escape'
 
+
+
 # Reasignar la tecla con keycode 51 para que haga ` y ~
 xmodmap -e "keycode 51 = grave asciitilde grave asciitilde"
+
+xmodmap -e "keycode 46 = l L U00B7 U00B7"
+
 
 
 

@@ -49,8 +49,18 @@ return {
   -- {
   --   "dpenedo/melange-nvim",
   -- },
-  -- { "Mofiqul/dracula.nvim" },
+  -- No va bien con snack picker
+  -- {
+  --   "Mofiqul/dracula.nvim",
+  --   opts = {
+  --     colors = {
+  --       bg = "#000000", -- negro puro
+  --     },
+  --   },
+  -- },
+  -- No va bien con snack picker
   -- { "loctvl842/monokai-pro.nvim" },
+  -- No va bien con snack picker
   -- {
   --   "ramojus/mellifluous.nvim",
   --   lazy = false,
@@ -69,9 +79,12 @@ return {
   --   },
   -- },
   -- { "Domeee/mosel.nvim" },
+  -- -- No va bien con snack picker
   -- { "clennys/orca.nvim" },
+  -- poco contraste
   -- {
   --   "NTBBloodbath/doom-one.nvim",
+  --   -- poco contraste y los relative numbers no se ven bien
   -- },
   { "iagorrr/noctishc.nvim" },
   -- {
@@ -80,6 +93,7 @@ return {
   --   priority = 1000,
   -- },
   { "sainnhe/sonokai" },
+  -- el fondo es demasiado claro, modificado podría estar bien
   -- {
   --   "navarasu/onedark.nvim",
   --   opts = {
@@ -135,15 +149,15 @@ return {
   --   },
   -- },
 
-  {
-    "miikanissi/modus-themes.nvim",
-    priority = 1000,
-    opts = {
-      -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
-      transparent = false, -- Transparent background (as supported by the terminal)
-      dim_inactive = true, --
-    },
-  },
+  -- {
+  --   "miikanissi/modus-themes.nvim",
+  --   priority = 1000,
+  --   opts = {
+  --     -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+  --     transparent = false, -- Transparent background (as supported by the terminal)
+  --     dim_inactive = true, --
+  --   },
+  -- },
   --
   -- -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
   -- {
@@ -169,6 +183,8 @@ return {
   --   priority = 1000,
   --   config = {
   --     style = "dark",
+  --     saturation = 0.7,
+  --     disable_background = true,
   --   },
   -- },
   -- {
@@ -209,13 +225,14 @@ return {
   --     -- transparent = false,
   --   },
   -- },
+  -- Sobreescribe el color que esté como determinado
 
   -- {
   --   "scottmckendry/cyberdream.nvim",
   --   lazy = false,
   --   priority = 1000,
   --   opts = {
-  --     transparent = true,
+  --     transparent = false,
   --
   --     -- Enable italics comments
   --     italic_comments = true,

@@ -14,7 +14,7 @@ HILABETEAK = {
     "January": "Urtarrila",
     "February": "Otsaila",
     "March": "Martxoa",
-    "April": "Apririla",
+    "April": "Apirila",
     "May": "Maiatza",
     "June": "Ekaina",
     "Jule": "Uztaila",
@@ -34,7 +34,7 @@ def get_date_in_euskera():
     year = now.strftime("%Y")
 
     # return f"{year}ko {month_name}rean {day_number}a, {day_name} "
-    return f"   {month_name}rean {day_number}a, {day_name} "
+    return f" {month_name}rean {day_number}a, {day_name} "
 
 
 if __name__ == "__main__":

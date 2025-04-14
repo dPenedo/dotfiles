@@ -53,6 +53,7 @@ return {
     { "<space><space>", false },
     { "<leader>/", false },
     { "<leader>fg", false },
+    { "<leader>ff", false },
     {
       "<leader>Z",
       function()

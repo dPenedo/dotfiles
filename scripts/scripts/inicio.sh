@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # xdg-open https://www.tutanota.com &
-pkill kitty &
+# pkill kitty &
 
 sleep 5
 brave-browser &
@@ -11,7 +11,7 @@ sleep 7
 # kitty -e tmux new-session -A -D -s "📔  Notas" &
 # evolution &
 # thunderbird &
-~/scripts/xmodmap.sh &
+bash ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://www.meteored.com.ar/tiempo-en_Mar+del+Plata-America+Sur-Argentina-Provincia+de+Buenos+Aires-SAZM-1-16931.html &
 sleep 4

@@ -6,6 +6,16 @@
         ],
         "description": "Inserta la fecha en formato día/mes/año"
     },
+    "frontmatter": {
+        "prefix": "frontmatter",
+        "body": [
+            "---",
+            "aliases: [${1}]",
+            "tags: [${2}]",
+            "---"
+        ],
+        "description": "Inserta la fecha en formato día/mes/año"
+    },
     "Lista": {
         "prefix": "lista",
         "body": [

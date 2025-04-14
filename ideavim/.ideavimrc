@@ -39,6 +39,7 @@ let g:WhichKey_ShowVimActions = "true"
 " --- General key mappings ---
 " Clear search highlights
 nmap <Esc> :noh <Cr>
+nmap <C-l> :noh <Cr>
 
 nmap <CR> :
 
@@ -67,9 +68,6 @@ nmap <leader>; m`A;<Esc>``
 nnoremap <leader>ww :action HideAllWindows <CR>
 nnoremap <c-h> <c-w>h
 nnoremap <Tab> <c-w>w
-nnoremap <leader>j <c-w>j
-nnoremap <leader>k <c-w>k
-nnoremap <c-l> <c-w>l
 nnoremap <leader>qq :action CloseEditor<cr>
 nmap <C-w>= <Action>(Unsplit)
 nmap <C-w>q :q<cr>
@@ -77,6 +75,18 @@ nmap <C-S-j> <Action>(StretchSplitToBottom)
 nmap <C-S-h> <Action>(StretchSplitToLeft)
 nmap <C-S-l> <Action>(StretchSplitToRight)
 nmap <C-S-k> <Action>(StretchSplitToTop)
+
+
+nmap <leader>1 :action GoToTab1<CR>
+nmap <leader>2 :action GoToTab2<CR>
+nmap <leader>3 :action GoToTab3<CR>
+nmap <leader>4 :action GoToTab4<CR>
+nmap <leader>5 :action GoToTab5<CR>
+nmap <leader>6 :action GoToTab6<CR>
+nmap <leader>7 :action GoToTab7<CR>
+nmap <leader>8 :action GoToTab8<CR>
+nmap <leader>9 :action GoToTab9<CR>
+
 
 " --- TODOs ---
 nnoremap <leader>tt :action ActivateTODOToolWindow<CR>
@@ -124,7 +134,7 @@ nmap K :action ShowHoverInfo<CR>
 
 
 " --- Intellij Actions ---
-nnoremap <leader>R :action RenameElement <CR>
+nnoremap <leader>cr :action RenameElement <CR>
 nnoremap <leader>aa :action GotoAction <CR>
 nnoremap <leader>ds :action GotoSymbol <CR>
 nmap <A-S> :action Run <CR>

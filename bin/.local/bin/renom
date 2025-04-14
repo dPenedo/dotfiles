@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Verifica que se pase al menos un archivo como argumento
+if [[ $# -eq 0 ]]; then
+  echo "Uso: renombrar archivo1 [archivo2 ...]"
+  exit 1
+fi
+
+# Recorre todos los archivos pasados como argumentos
+for file in "$@"; do
+  # Verifica que el archivo exista
+  if [[ ! -e "$file" ]]; then
+    echo "El archivo '$file' no existe, omitiendo..."
+    continue
+  fi
+
+  # Renombrar sustituyendo espacios por guiones
+  new_name="${file// /-}"
+
+  # Evitar sobreescribir un archivo existente
+  if [[ -e "$new_name" ]]; then
+    echo "El archivo '$new_name' ya existe, omitiendo..."
+    continue
+  fi
+
+  mv "$file" "$new_name"
+  echo "Renombrado: '$file' -> '$new_name'"
+done

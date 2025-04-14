@@ -24,7 +24,7 @@ end, { desc = "[n]ew [n]otes" })
 vim.keymap.set("n", "<leader>nt", function()
   local filename = vim.fn.input("Enter Temp file name: ", "", "file")
   if filename ~= "" then
-    local filepath = "~/Documentos/Dropbox/Notas/06_Temp/" .. filename .. ".md"
+    local filepath = "~/Documentos/Dropbox/Notas/Temp/" .. filename .. ".md"
     vim.fn.writefile({}, vim.fn.expand(filepath))
     vim.cmd("edit " .. vim.fn.expand(filepath))
   end
@@ -34,7 +34,7 @@ end, { desc = "[n]ew [t]emp" })
 vim.keymap.set("n", "<leader>na", function()
   local filename = vim.fn.input("Enter Atom file name: ", "", "file")
   if filename ~= "" then
-    local filepath = "~/Documentos/Dropbox/Notas/0_Atomoak/" .. filename .. ".md"
+    local filepath = "~/Documentos/Dropbox/Notas/Atomoak/" .. filename .. ".md"
     vim.fn.writefile({}, vim.fn.expand(filepath))
     vim.cmd("edit " .. vim.fn.expand(filepath))
   end
@@ -104,13 +104,13 @@ function M.setup_markdown_keymaps()
 
     -- Define el cuerpo del snippet
     local snippet = {
+      "---",
+      "aliases: []",
+      "tags: []",
+      "---",
       title,
       "",
       "",
-      "",
-      "",
-      "------------------",
-      "#",
     }
 
     -- Inserta el snippet en el buffer

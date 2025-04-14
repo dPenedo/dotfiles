@@ -1,5 +1,5 @@
 return {
-  "epwalsh/obsidian.nvim",
+  "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
   lazy = true,
   event = "VeryLazy",
@@ -15,7 +15,48 @@ return {
         path = "~/Documentos/Dropbox/Notas/",
       },
     },
-    disable_frontmatter = true,
+    completion = {
+      -- Enables completion using nvim_cmp
+      nvim_cmp = false,
+      -- Enables completion using blink.cmp
+      blink = true,
+      -- Trigger completion at 2 chars.
+      min_chars = 2,
+    },
+    picker = {
+      -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', 'mini.pick' or 'snacks.pick'.
+      name = "snacks.pick",
+      -- Optional, configure key mappings for the picker. These are the defaults.
+      -- Not all pickers support all mappings.
+      note_mappings = {
+        -- Create a new note from your query.
+        new = "<C-x>",
+        -- Insert a link to the selected note.
+        insert_link = "<C-l>",
+      },
+      tag_mappings = {
+        -- Add tag(s) to current note.
+        tag_note = "<C-x>",
+        -- Insert a tag at the current location.
+        insert_tag = "<C-l>",
+      },
+    },
+    disable_frontmatter = false,
+
+    ---@return table
+    note_frontmatter_func = function(note)
+      local out = { id = note.id, aliases = note.aliases, tags = note.tags }
+
+      -- `note.metadata` contains any manually added fields in the frontmatter.
+      -- So here we just make sure those fields are kept in the frontmatter.
+      if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+        for k, v in pairs(note.metadata) do
+          out[k] = v
+        end
+      end
+
+      return out
+    end,
     mappings = {
       -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
       ["gf"] = {
@@ -41,7 +82,7 @@ return {
       },
     },
     ui = {
-      { enable = false },
+      enable = false,
       checkboxes = {
         -- NOTE: the 'char' value has to be a single character, and the highlight groups are defined below.
         [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
@@ -67,7 +108,7 @@ return {
     },
 
     templates = {
-      subdir = "4_Recursos/Templates",
+      subdir = "Recursos/Templates",
       -- A map for custom variables, the key should be the variable and the value a function
       substitutions = {},
       date_format = "%d/%m/%Y",

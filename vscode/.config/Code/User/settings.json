@@ -29,7 +29,7 @@
     "editor.scrollbar.vertical": "visible",
     "editor.hideCursorInOverviewRuler": true,
     "workbench.activityBar.location": "hidden",
-    // "workbench.editor.showTabs": "single",
+    "workbench.editor.showTabs": "single",
     "keyboard.dispatch": "keyCode",
     "editor.unicodeHighlight.allowedCharacters": {
         "а": true,
@@ -52,8 +52,10 @@
         "[Kanagawa]": {
             "editorBracketMatch.background": "#363646",
             "editorBracketMatch.border": "#7e9cd8",
-            "editor.background": "#202027",
-            "terminal.background": "#191922",
+            // "editor.background": "#202027",
+            "editor.background": "#101014",
+            // "terminal.background": "#191922",
+            "terminal.background": "#121216",
             "editorLineNumber.foreground": "#5E6982",
             "editorLineNumber.activeForeground": "#ED9338",
             "activityBar.foreground": "#e0DEF4",
@@ -242,5 +244,12 @@
     "window.titleBarStyle": "native",
     "workbench.colorTheme": "Kanagawa",
     "window.menuBarVisibility": "toggle",
-    "window.customTitleBarVisibility": "never"
+    "window.customTitleBarVisibility": "never",
+    "editor.fontSize": 13.4,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
 }

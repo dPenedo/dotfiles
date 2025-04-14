@@ -5,11 +5,12 @@
 brave-browser &
 # firefox-developer-edition &
 sleep 7
+webstorm &
 bash ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
-# kitty &
+kitty &
 
 sleep 4
 # alacritty &
@@ -27,6 +28,8 @@ syncthing &
 
 sleep 8
 kitty &
+sleep 4
+obsidian &
 sleep 4
 wmctrl -r "Brave" -t 1 &
 wmctrl -r "alacritty" -t 0 &

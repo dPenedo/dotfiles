@@ -11,12 +11,12 @@ return {
       signs = { "󰫎 " },
       width = "full",
       backgrounds = {
-        -- 'RenderMarkdownH1Bg',
-        -- 'RenderMarkdownH2Bg',
-        -- 'RenderMarkdownH2Bg',
-        -- 'RenderMarkdownH2Bg',
-        -- 'RenderMarkdownH2Bg',
-        -- 'RenderMarkdownH2Bg',
+        "RenderMarkdownH1Bg",
+        "RenderMarkdownH2Bg",
+        "RenderMarkdownH2Bg",
+        "RenderMarkdownH2Bg",
+        "RenderMarkdownH2Bg",
+        "RenderMarkdownH2Bg",
       },
       -- The 'level' is used to index into the list using a clamp
       -- Highlight for the heading and sign icons
@@ -42,14 +42,14 @@ return {
     bullet = {
       -- Turn on / off list bullet rendering
       enabled = true,
-      icons = { "●", "→", "‣", "›" },
+      icons = { "", "→", "‣", "›", "●" },
       -- icons = { '◉', '○', '✸', '✿' },
       -- Padding to add to the left of bullet point
-      left_pad = 2,
+      -- left_pad = 2,
       -- Padding to add to the right of bullet point
-      right_pad = 1,
+      -- right_pad = 2,
       -- Highlight for the bullet icon
-      highlight = "RenderMarkdownH1",
+      -- highlight = "RenderMarkdownH1",
     },
     code = {
       style = "full",

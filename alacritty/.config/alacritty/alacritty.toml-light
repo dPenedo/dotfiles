@@ -21,7 +21,8 @@ TERM = "xterm-256color"
 size = 11.8
 
 [font.normal]
-family = "terminal-font"
+# family = "terminal-font"
+family = "Hack Nerd Font"
 style = "Regular"
 
 

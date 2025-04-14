@@ -22,6 +22,7 @@ local map = LazyVim.safe_keymap_set
 
 map("n", "<leader>w", "<cmd>update<cr>", { desc = "Windows", remap = true })
 map("i", "jj", "<ESC>", { desc = "Salir del modo de inserción" })
+map("n", "<c-l>", "<CMD>noh<CR>", { desc = "Salir del modo de inserción" })
 map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar un espacio" })
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "'", "`", { desc = "backtick asignado a '" })
@@ -29,9 +30,25 @@ map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo siti
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 -- map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
-map("n", "<leader>ng", ":!python ~/Documentos/Dropbox/Notas/.gaur/gaur.py<CR>", { desc = "Generar una sección diaria en notas, eguneroka_" })
+map("n", "<leader>ng", ":!python ~/Documentos/Dropbox/Notas/.gaur/aste_berria.py<CR>", { desc = "Generar una sección semanal en notas, Astekaria" })
 map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
-map("n", "<leader>ne", ":e /home/daniel/Documentos/Dropbox/Notas/egunerokoa_2025.md<CR>", { desc = "Ir a Egunerokoa" })
+map("n", "<leader>ne", function()
+    local astekaria_files = vim.fn.glob("~/Documentos/Dropbox/Notas/Astekaria-*.md", true, true)
+    if #astekaria_files == 0 then
+        vim.notify("No se encontró ningún archivo Astekaria", vim.log.levels.WARN)
+        return
+    end
+
+    table.sort(astekaria_files, function(a, b)
+        return vim.fn.getftime(a) > vim.fn.getftime(b)
+    end)
+    local target_file = astekaria_files[1]
+    local day_names = {"Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala"}
+    local current_day = day_names[tonumber(os.date("%w"))] or ""
+    vim.cmd("e " .. vim.fn.fnameescape(target_file))
+    vim.fn.search("## " .. current_day .. " - \\d")
+    vim.cmd("norm! 4j$zt6k6j")
+end, { desc = "Ir al Egunerokoa semanal (día actual)" })
 
 -- Terminal
 map("t", "<Esc>", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })

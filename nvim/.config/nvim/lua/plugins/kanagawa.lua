@@ -12,7 +12,7 @@ return {
       theme = {
         wave = {
           ui = {
-            -- bg_gutter = "#1a1a22",
+            bg_gutter = "#1C1C21",
             -- bg_gutter = "none",
             nontext = "#B1A9A0",
           },
@@ -49,11 +49,12 @@ return {
         -- sumiInk5 = "#433E37",
         -- sumiInk6 = "#5A5349",
 
+        sumiInk4 = "#1c1c21",
         -- Neutral:
-        sumiInk0 = "#282A33",
+        -- sumiInk0 = "#282A33",
         sumiInk1 = "#181818",
         sumiInk2 = "#1a1a1a",
-        -- sumiInk3 = "#121212",
+        sumiInk3 = "#121212",
         -- sumiInk4 = "#2A2A2A",
         -- sumiInk5 = "#363636",
         -- sumiInk6 = "#545454",
@@ -78,7 +79,7 @@ return {
         -- mas brillo
         -- autumnGreen = "#9FBF92",
         autumnRed = "#E36A6D",
-        autumnYellow = "#F6C58A",
+        -- autumnYellow = "#F6C58A",
 
         -- Diag
         samuraiRed = "#FF4444",
