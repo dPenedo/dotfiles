@@ -10,7 +10,7 @@ bash ~/scripts/xmodmap.sh &
 brave-browser -app=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
-kitty &
+~/.local/kitty.app/bin/kitty &
 
 sleep 4
 # alacritty &

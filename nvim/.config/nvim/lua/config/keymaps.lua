@@ -52,7 +52,6 @@ end, { desc = "Ir al Egunerokoa semanal (día actual)" })
 
 -- Terminal
 map("t", "<Esc>", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
-map("t", "jj", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
 map("n", "<leader>tk", "<CMD>terminal<CR>", { desc = "Terminal" })
 
 -- Copiar/pegar Clipboard

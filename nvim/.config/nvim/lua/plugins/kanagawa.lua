@@ -54,7 +54,7 @@ return {
         -- sumiInk0 = "#282A33",
         sumiInk1 = "#181818",
         sumiInk2 = "#1a1a1a",
-        sumiInk3 = "#121212",
+        sumiInk3 = "#121218",
         -- sumiInk4 = "#2A2A2A",
         -- sumiInk5 = "#363636",
         -- sumiInk6 = "#545454",
