@@ -3,7 +3,7 @@ return {
   lazy = false,
   opts = {
     compile = true,
-    transparent = false,
+    transparent = true,
     -- functionStyle = { bold = true },
     dimInactive = true,
     typeStyle = { bold = false },
@@ -12,7 +12,7 @@ return {
       theme = {
         wave = {
           ui = {
-            bg_gutter = "#1C1C21",
+            bg_gutter = "#002029",
             -- bg_gutter = "none",
             nontext = "#B1A9A0",
           },
@@ -52,9 +52,9 @@ return {
         sumiInk4 = "#1c1c21",
         -- Neutral:
         -- sumiInk0 = "#282A33",
-        sumiInk1 = "#181818",
-        sumiInk2 = "#1a1a1a",
-        sumiInk3 = "#121218",
+        sumiInk1 = "#002029",
+        -- sumiInk2 = "#1a1a1a",
+        -- sumiInk3 = "#121218",
         -- sumiInk4 = "#2A2A2A",
         -- sumiInk5 = "#363636",
         -- sumiInk6 = "#545454",
