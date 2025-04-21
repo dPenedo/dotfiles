@@ -30,8 +30,8 @@ map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo siti
 map("n", "''", "<CMD>b#<CR>", { desc = "Ir al último búfer" })
 map("n", "==", "<CMD>Format<CR>", { desc = "Formato al archivo" })
 -- map("n", "<a-w>", ":set wrap!<CR>", { desc = "Alternar ajuste de línea" })
-map("n", "<leader>ng", ":!python ~/Documentos/Dropbox/Notas/.gaur/aste_berria.py<CR>", { desc = "Generar una sección semanal en notas, Astekaria" })
-map("n", "<leader>nc", ":!python comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
+map("n", "<leader>ng", ":!python3 ~/Documentos/Dropbox/Notas/.gaur/aste_berria.py<CR>", { desc = "Generar una sección semanal en notas, Astekaria" })
+map("n", "<leader>nc", ":!python3 comidas.py<CR>", { desc = "Generar una sección diaria en comidas" })
 map("n", "<leader>ne", function()
     local astekaria_files = vim.fn.glob("~/Documentos/Dropbox/Notas/Astekaria-*.md", true, true)
     if #astekaria_files == 0 then

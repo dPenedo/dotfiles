@@ -93,7 +93,8 @@ local editor = os.getenv("EDITOR") or "nvim"
 local browser = "brave-browser"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }
+-- awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }
+awful.util.tagnames = { " ", " ", " ", " ", " ", " ", " ", " ", " ", " " }
 -- awful.util.tagnames = { "☰", "☷", "☵", "☲", "_", "_", "☳", "☴", "☶", "☱" }
 -- awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
 -- awful.util.tagnames = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
@@ -923,7 +924,7 @@ tag.connect_signal("property::selected", backham)
 -- Ocultar el wibar en el tag 2
 tag.connect_signal("property::selected", function(t)
 	local s = t.screen
-	if t.index == 2 then
+	if t.index == 1 then
 		s.mywibox.visible = not s.mywibox.visible
 	else
 		s.mywibox.visible = true
@@ -938,6 +939,7 @@ awful.spawn.with_shell("$HOME/scripts/xpantallas.sh &")
 awful.spawn.with_shell("sleep 3; nm-applet &")
 awful.spawn.with_shell("sleep 1; pkill volumeicon &")
 awful.spawn.with_shell("sleep 1; pkill cbatticon &")
+-- WARN: quitado para pruebas
 awful.spawn.with_shell("$HOME/scripts/inicio.sh &")
 -- awful.spawn.with_shell("pkill copyq &")
 

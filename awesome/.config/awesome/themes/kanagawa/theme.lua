@@ -9,21 +9,21 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme = {}
 theme.dir = os.getenv("HOME") .. "/.config/awesome/themes/kanagawa"
-theme.wallpaper = theme.dir .. "/moon.jpg"
-theme.font = "JetBrains Nerd Font Mono 10"
-theme.fg_normal = "#E8DBCF"
-theme.fg_focus = "#7e9cd8"
-theme.fg_accent = "#E6C384"
-theme.fg_inactive = "#3F3F3F"
+theme.wallpaper = theme.dir .. "/espacio.jpg"
+theme.font = "Hack Nerd Font 9"
+theme.fg_normal = "#D0D9E2"
+theme.fg_focus = "#A2B9F2"
+theme.fg_accent = "#E1D29F"
+theme.fg_inactive = "#5A5A5A"
 theme.fg_urgent = "#CC9393"
-theme.bg_normal = "#101010"
-theme.bg_focus = "#121212"
-theme.bg_urgent = "#1A1A1A"
+theme.bg_normal = "#0A0E14"
+theme.bg_focus = "#061A22"
+theme.bg_urgent = "#1C1C1C"
 theme.border_width = dpi(3)
-theme.border_normal = "#3F3F3F"
+theme.border_normal = "#1A1D23"
 theme.border_focus = theme.fg_focus
 theme.border_marked = "#CC9393"
-theme.tasklist_bg_focus = "#1A1A1A"
+
 theme.titlebar_bg_focus = theme.bg_focus
 theme.titlebar_bg_normal = theme.bg_normal
 theme.titlebar_fg_focus = theme.fg_focus
@@ -97,6 +97,7 @@ local clockicon = wibox.widget.imagebox(theme.widget_clock)
 local days = {
 	["lunes"] = "astelehena",
 	["martes"] = "asteartea",
+	-- WARN: está raro
 	["rcoles"] = "asteazkena",
 	["jueves"] = "osteguna",
 	["viernes"] = "ostirala",
@@ -125,16 +126,16 @@ local function capitalize(str)
 end
 
 local function translate_to_euskera(date_str)
-	local day, month, day_num, time = date_str:match("(%a+), (%a+) (%d+) ⌚<b> (%d+:%d+)</b> ")
+	local day, month, day_num, time = date_str:match("(%a+) | (%a+) (%d+) ⌚<b> (%d+:%d+)</b> ")
 	if day and month then
 		day = capitalize(days[day:lower()] or day)
 		month = capitalize(months[month:lower()] or month)
-		return string.format("%s, %sren %da ⌚<b> %s</b> ", day, month, day_num, time)
+		return string.format("%s | %sren %da ⌚<b> %s</b> ", day, month, day_num, time)
 	end
 	return date_str
 end
 
-local clock = awful.widget.watch("date +'%A, %B %d ⌚<b> %R</b> '", 60, function(widget, stdout)
+local clock = awful.widget.watch("date +'%A | %B %d ⌚<b> %R</b> '", 60, function(widget, stdout)
 	-- Translate to Euskera
 	local translated = translate_to_euskera(stdout)
 
@@ -156,7 +157,7 @@ theme.cal = lain.widget.cal({
 local memicon = wibox.widget.imagebox(theme.widget_mem)
 local mem = lain.widget.mem({
 	settings = function()
-		widget:set_markup(markup.font(theme.font, " " .. mem_now.used .. "MB "))
+		widget:set_markup(markup.font(theme.font, "" .. mem_now.used .. "MB "))
 	end,
 })
 
@@ -164,7 +165,7 @@ local mem = lain.widget.mem({
 local cpuicon = wibox.widget.imagebox(theme.widget_cpu)
 local cpu = lain.widget.cpu({
 	settings = function()
-		widget:set_markup(markup.font(theme.font, " " .. cpu_now.usage .. "% "))
+		widget:set_markup(markup.font(theme.font, "" .. cpu_now.usage .. "% "))
 	end,
 })
 
@@ -283,8 +284,8 @@ function theme.at_screen_connect(s)
 					},
 					layout = wibox.layout.fixed.horizontal,
 				},
-				left = 5,
-				right = 5,
+				left = 2,
+				right = 2,
 				widget = wibox.container.margin,
 			},
 			id = "background_role",
@@ -299,7 +300,7 @@ function theme.at_screen_connect(s)
 	theme.taglist_fg_volatile = "#100110"
 	theme.taglist_fg_urgent = theme.fg_urgent
 	theme.taglist_spacing = 2
-	theme.taglist_font = "Hack 12"
+	theme.taglist_font = "Hack Nerd Font 10"
 
 	-- Create a tasklist widget
 	s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
@@ -314,7 +315,7 @@ function theme.at_screen_connect(s)
 
 	-- Create the wibox
 	s.mywibox = awful.wibar({
-		position = "bottom",
+		position = "top",
 		screen = s,
 		height = dpi(18),
 		bg = theme.bg_normal,
@@ -324,54 +325,28 @@ function theme.at_screen_connect(s)
 	-- Add widgets to the wibox
 	s.mywibox:setup({
 		layout = wibox.layout.align.horizontal,
+		-- Izquierda
 		{
-			-- Left widgets
 			layout = wibox.layout.fixed.horizontal,
-			--spr,
 			s.mytaglist,
 			s.mypromptbox,
 			spr,
 		},
-		s.mytasklist, -- Middle widget
+		-- Centro (centrado real)
+		wibox.container.place(s.mytasklist, { halign = "center" }),
+		-- Derecha
 		{
-			-- Right widgets
 			layout = wibox.layout.fixed.horizontal,
 			wibox.widget.systray(),
-
-			-- keyboardlayout,
-			-- spr,
-			-- arrl_ld,
-			-- wibox.container.background(mpdicon, theme.bg_focus),
-			-- wibox.container.background(theme.mpd.widget, theme.bg_focus),
-			-- arrl_dl,
-			-- volicon,
-			-- theme.volume.widget,
-			-- weather,
-			-- arrl_ld,
-			-- wibox.container.background(mailicon, theme.bg_focus),
-			--wibox.container.background(theme.mail.widget, theme.bg_focus),
-			-- arrl_dl,
-			-- tempicon,
-			-- temp.widget,
 			arrl_ld,
 			wibox.container.background(cpuicon, theme.bg_focus),
 			wibox.container.background(cpu.widget, theme.bg_focus),
 			arrl_dl,
 			memicon,
 			mem.widget,
-			-- arrl_dl,
 			arrl_ld,
-			-- wibox.container.background(fsicon, theme.bg_focus),
-			--wibox.container.background(theme.fs.widget, theme.bg_focus),
-			-- arrl_dl,
-			-- wibox.container.background(baticon, theme.bg_focus),
-			-- wibox.container.background(bat.widget, theme.bg_focus),
 			wibox.container.background(tempicon, theme.bg_focus),
 			wibox.container.background(temp.widget, theme.bg_focus),
-			-- baticon,
-			-- bat.widget,
-			-- arrl_ld,
-			-- wibox.container.background(net.widget, theme.bg_focus),
 			arrl_dl,
 			clock,
 			spr,

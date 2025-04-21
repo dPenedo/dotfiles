@@ -10,8 +10,6 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
-# Aceptar el autocompletado
-bindkey '^ ' autosuggest-accept
 
 
 
@@ -89,6 +87,8 @@ bindkey '^[[3~' delete-char
 # Borrar una palabra hacia adelante con Ctrl + Supr (Delete)
 bindkey '^[[3;5~' delete-word
 
+# Aceptar el autocompletado
+bindkey '\es' autosuggest-accept
 
 # File managers
 bindkey -s '\ee' 'lfcd^m'
