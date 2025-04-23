@@ -61,23 +61,23 @@ return {
   -- No va bien con snack picker
   -- { "loctvl842/monokai-pro.nvim" },
   -- No va bien con snack picker
-  -- {
-  --   "ramojus/mellifluous.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     colorset = "tender",
-  --     -- dim_inactive = true,
-  --     transparent_background = {
-  --       enabled = true,
-  --       floating_windows = true,
-  --       telescope = true,
-  --       file_tree = true,
-  --       cursor_line = false,
-  --       status_line = false,
-  --     },
-  --   },
-  -- },
+  {
+    "ramojus/mellifluous.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      colorset = "tender",
+      -- dim_inactive = true,
+      transparent_background = {
+        enabled = true,
+        floating_windows = true,
+        telescope = true,
+        file_tree = true,
+        cursor_line = false,
+        status_line = false,
+      },
+    },
+  },
   -- { "Domeee/mosel.nvim" },
   -- -- No va bien con snack picker
   -- { "clennys/orca.nvim" },
@@ -86,12 +86,8 @@ return {
   --   "NTBBloodbath/doom-one.nvim",
   --   -- poco contraste y los relative numbers no se ven bien
   -- },
-  { "iagorrr/noctishc.nvim" },
-  -- {
-  --   "polirritmico/monokai-nightasty.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  -- },
+  -- { "iagorrr/noctishc.nvim", opts = {
+  -- } },
   { "sainnhe/sonokai" },
   -- el fondo es demasiado claro, modificado podría estar bien
   -- {
@@ -187,14 +183,14 @@ return {
   --     disable_background = true,
   --   },
   -- },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = true,
-  --   },
-  -- },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+  },
   -- {
   --   "catppuccin/nvim",
   --   lazy = false,
@@ -227,17 +223,17 @@ return {
   -- },
   -- Sobreescribe el color que esté como determinado
 
-  -- {
-  --   "scottmckendry/cyberdream.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = false,
-  --
-  --     -- Enable italics comments
-  --     italic_comments = true,
-  --   },
-  -- },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+
+      -- Enable italics comments
+      italic_comments = true,
+    },
+  },
   -- {
   --   "gbprod/nord.nvim",
   --   lazy = false,
