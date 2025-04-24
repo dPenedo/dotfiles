@@ -104,10 +104,6 @@ function M.setup_markdown_keymaps()
 
     -- Define el cuerpo del snippet
     local snippet = {
-      "---",
-      "aliases: []",
-      "tags: []",
-      "---",
       title,
       "",
       "",
