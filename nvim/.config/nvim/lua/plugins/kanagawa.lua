@@ -99,10 +99,10 @@ return {
         lightBlue = "#C3F4F5", -- unused yet
         waveAqua2 = "#9AC8BF", -- improve lightness: desaturated greenish Aqua
 
-        -- waveAqua2  = "#88CDA9",
-        -- waveAqua4  = "#9AC8A0",
-        -- waveAqua5  = "#8CCFA5",
-        -- waveAqua3  = "#88CDA9",
+        waveAqua2 = "#88CDA9",
+        waveAqua4 = "#9AC8A0",
+        waveAqua5 = "#8CCFA5",
+        waveAqua3 = "#88CDA9",
 
         springGreen = "#B8DB8C",
         boatYellow1 = "#B3A076",
@@ -124,7 +124,7 @@ return {
       return {
         -- Ejemplo de sobrescritura para el grupo de highlight "String"
         String = { fg = colors.palette.springGreen, italic = true },
-        Comment = { fg = "#A29581", italic = true },
+        -- Comment = { fg = "#A29581", italic = true },
 
         -- Ejemplo de sobrescritura para un grupo de highlight de un plugin
         ["@markup.strong.markdown_inline"] = { fg = colors.palette.oniViolet2, bold = true },

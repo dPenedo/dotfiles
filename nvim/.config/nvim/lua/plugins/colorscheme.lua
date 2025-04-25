@@ -61,23 +61,23 @@ return {
   -- No va bien con snack picker
   -- { "loctvl842/monokai-pro.nvim" },
   -- No va bien con snack picker
-  {
-    "ramojus/mellifluous.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      colorset = "tender",
-      -- dim_inactive = true,
-      transparent_background = {
-        enabled = true,
-        floating_windows = true,
-        telescope = true,
-        file_tree = true,
-        cursor_line = false,
-        status_line = false,
-      },
-    },
-  },
+  -- {
+  --   "ramojus/mellifluous.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     colorset = "tender",
+  --     -- dim_inactive = true,
+  --     transparent_background = {
+  --       enabled = true,
+  --       floating_windows = true,
+  --       telescope = true,
+  --       file_tree = true,
+  --       cursor_line = false,
+  --       status_line = false,
+  --     },
+  --   },
+  -- },
   -- { "Domeee/mosel.nvim" },
   -- -- No va bien con snack picker
   -- { "clennys/orca.nvim" },
@@ -88,7 +88,7 @@ return {
   -- },
   -- { "iagorrr/noctishc.nvim", opts = {
   -- } },
-  { "sainnhe/sonokai" },
+  -- { "sainnhe/sonokai" },
   -- el fondo es demasiado claro, modificado podría estar bien
   -- {
   --   "navarasu/onedark.nvim",
@@ -223,17 +223,17 @@ return {
   -- },
   -- Sobreescribe el color que esté como determinado
 
-  {
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      transparent = true,
-
-      -- Enable italics comments
-      italic_comments = true,
-    },
-  },
+  -- {
+  --   "scottmckendry/cyberdream.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     transparent = true,
+  --
+  --     -- Enable italics comments
+  --     italic_comments = true,
+  --   },
+  -- },
   -- {
   --   "gbprod/nord.nvim",
   --   lazy = false,
@@ -258,5 +258,4 @@ return {
   --     italic_comments = true,
   --     underline_current_line = true,
   --   },
-  -- },
 }
