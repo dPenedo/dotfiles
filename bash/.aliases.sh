@@ -57,7 +57,6 @@ alias ..="cd .."
 alias ....="cd ../.."
 alias ......="cd ../../.."
 alias lg="lazygit"
-alias nrd="npm run dev"
 alias ta="tmux a"
 alias fu="fu | head -c 4 | xclip -selection clipboard"
 alias ccd="zi"
@@ -67,6 +66,9 @@ alias za='zathura --fork'
 alias intellij='/home/daniel/Descargas/Programas/idea-IU-241.14494.240/bin/idea.sh'
 alias intellij='/home/daniyari/Descargas/Programas/idea-IU-241.17890.1/bin/idea.sh'
 
+# NPM
+alias nd="npm run dev"
+alias nt="npm test"
 # Programas flatpak
 
 alias obsidian="flatpak run md.obsidian.Obsidian"

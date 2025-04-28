@@ -97,8 +97,8 @@ super + alt + {Up,Down}
 # focus the last node/desktop
 # ctrl + comma
 # 	bspc desktop -f last
-ctrl + semicolon
-	bspc desktop -f last
+# ctrl + semicolon
+# 	bspc desktop -f last
 super + Tab
 	bspc desktop -f last
 alt +  Tab
@@ -133,6 +133,11 @@ super + a
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} focused:'^{1-9,10}'
+
+
+# Cambiar de workspace con ctrl + alt + {j, k, l, semicolon}
+ctrl + alt + {j,k,l,semicolon,n,m,comma,period}
+    bspc desktop -f ^{1,2,3,4,7,8,9,10}
 
 
 
