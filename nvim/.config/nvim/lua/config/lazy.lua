@@ -15,6 +15,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("config.statusline")
 require("lazy").setup({
+  {
+    "tpope/vim-surround",
+    cond = vim.g.vscode,
+  },
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },

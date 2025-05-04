@@ -12,5 +12,6 @@ return {
     { "<leader>fk", "<cmd>Grapple select index=2<cr>", desc = "Select second tag" },
     { "<leader>fl", "<cmd>Grapple select index=3<cr>", desc = "Select third tag" },
     { "<leader>f;", "<cmd>Grapple select index=4<cr>", desc = "Select fourth tag" },
+    { "<leader>te", "<cmd>Grapple select name=term<cr>", desc = "Select fourth tag" },
   },
 }

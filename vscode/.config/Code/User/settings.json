@@ -5,7 +5,7 @@
     //Editor
     "hide-tabs.toggleTabs": true,
     "editor.tabSize": 4,
-    "editor.lineHeight": 17,
+    "editor.lineHeight": 16,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Hack Nerd Font','Iosevka Term','Liberation Mono','DejaVu Sans Mono Book','SauceCodePro NF','BlexMono Nerd Font Mono','JetBrainsMono Nerd Font',   'monospace', monospace",
     "editor.wordWrap": "bounded",
@@ -69,6 +69,10 @@
             "list.hoverForeground": "#e0DEF4",
             "list.inactiveSelectionForeground": "#e0DEF4",
             "menu.foreground": "#e0DEF4",
+            "menu.background": "#16161d",
+            "statusBar.foreground": "#e5e9f0",
+            "editorSuggestWidget.background": "#191921",
+            "editorSuggestWidget.selectedBackground": "#464C8B",
             "settings.headerForeground": "#e0DEF4",
             "sideBar.foreground": "#e0DEF4",
             "sideBarSectionHeader.foreground": "#e0DEF4",
@@ -103,11 +107,15 @@
     "editor.tokenColorCustomizations": {
         "[Kanagawa]": {
             "comments": "#8A8980",
+            "functions": "#9EBCFF",
+            "strings": "#AFD185",
+            "keywords": "#AB92D3"
         },
         "textMateRules": [
             {
                 "scope": [
                     "comment",
+                    "string",
                     "comment.block",
                     "comment.block.documentation",
                     "comment.line",
@@ -116,6 +124,15 @@
                 ],
                 "settings": {
                     "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "constant",
+                    "keyword"
+                ],
+                "settings": {
+                    "fontStyle": "bold"
                 }
             }
         ]
@@ -210,22 +227,9 @@
         "l"
     ],
     "vscode-neovim.compositeKeys": {
-        "jj": {
-            "command": "vscode-neovim.escape",
-        },
         "jk": {
-            // Use lua to execute any logic
-            "command": "vscode-neovim.lua",
-            "args": [
-                [
-                    "local api = vim.api",
-                    "local mode = api.nvim_get_mode().mode",
-                    "if mode == 'i' then",
-                    "  api.nvim_input('<Esc>la')",
-                    "end",
-                ],
-            ],
-        },
+            "command": "vscode-neovim.escape"
+        }
     },
     "editor.showFoldingControls": "never",
     "workbench.editor.enablePreview": false,

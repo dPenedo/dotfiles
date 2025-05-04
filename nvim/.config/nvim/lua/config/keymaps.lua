@@ -51,6 +51,14 @@ end, { desc = "Ir al Egunerokoa semanal (día actual)" })
 
 -- Terminal
 map("t", "<Esc>", "<C-\\><C-n>", { desc = "Normal mode desde el terminal" })
+map('t', '<C-w>h', "<C-\\><C-n><C-w>h",{silent = true})
+map('t', '<C-w>j', "<C-\\><C-n><C-w>j",{silent = true})
+map('t', '<C-w>k', "<C-\\><C-n><C-w>k",{silent = true})
+map('t', '<C-w>l', "<C-\\><C-n><C-w>l",{silent = true})
+map('t', '<C-w>v', "<C-\\><C-n><C-w>v",{silent = true})
+map('t', '<C-w><space>', "<C-\\><C-n><cmd>b#<CR>",{silent = true})
+map('t', '<C-w>s', "<C-\\><C-n><C-w>s",{silent = true})
+map('t', '<C-w>q', "<C-\\><C-n><C-w>q",{silent = true})
 map("n", "<leader>tk", "<CMD>terminal<CR>", { desc = "Terminal" })
 
 -- Copiar/pegar Clipboard

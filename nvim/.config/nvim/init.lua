@@ -14,11 +14,11 @@ if vim.g.neovide then
 end
 
 
+require("config.lazy")
 if vim.g.vscode then
   require("vscodium/vscodium-keymaps")
   require("vscodium/vscodium-settings")
 else
-  require("config.lazy")
 end
 
 vim.api.nvim_create_autocmd("ExitPre", {

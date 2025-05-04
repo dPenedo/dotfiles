@@ -25,15 +25,15 @@ return {
       backdrop = true, -- Desactiva el fondo globalmente
     },
   },
-  keys = {
-    { "S", mode = { "n", "o", "x" }, false },
-    {
-      "<c-s>",
-      mode = { "n", "x", "o" },
-      function()
-        require("flash").treesitter()
-      end,
-      desc = "Flash Treesitter",
-    },
-  },
+  -- keys = {
+  -- { "S", mode = { "n", "o", "x" }, false },
+  --   {
+  --     "<c-s>",
+  --     mode = { "n", "x", "o" },
+  --     function()
+  --       require("flash").treesitter()
+  --     end,
+  --     desc = "Flash Treesitter",
+  --   },
+  -- },
 }

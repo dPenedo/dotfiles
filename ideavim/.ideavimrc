@@ -58,7 +58,7 @@ vnoremap == :action ReformatCode <CR>
 
 " Exit insert mode
 imap jj <Esc>
-imap jk <Esc>la
+imap jk <Esc>
 
 nmap <leader>o o<Esc>
 nmap <leader>O O<Esc>
@@ -102,7 +102,7 @@ noremap Gcc :action CommentByBlockComment<CR>
 " --- Searching and navigation ---
 noremap <leader>l :action Find<CR>
 noremap <leader><leader> :action RecentFiles<CR>
-nnoremap <leader>f :action GotoFile <CR>
+nnoremap <leader>ff :action GotoFile <CR>
 nmap <leader>G :action FindInPath<CR>
 vmap <leader>G :action FindInPath<CR>
 nnoremap '' :action Switcher <CR><CR>
@@ -141,11 +141,11 @@ nmap <A-S> :action Run <CR>
 
 
 " --- Harpoon mappings ---
-nmap <leader>jf :action ShowHarpoon<cr>
-nmap <leader>ja :action AddToHarpoon<cr>
+nmap <leader>f<space> :action ShowHarpoon<cr>
+nmap <leader>fa :action AddToHarpoon<cr>
 
-nmap <leader>jj :action GotoHarpoon1<cr>
-nmap <leader>jk :action GotoHarpoon2<cr>
-nmap <leader>jl :action GotoHarpoon3<cr>
-nmap <leader>j; :action GotoHarpoon4<cr>
+nmap <leader>fj :action GotoHarpoon1<cr>
+nmap <leader>fk :action GotoHarpoon2<cr>
+nmap <leader>fl :action GotoHarpoon3<cr>
+nmap <leader>f; :action GotoHarpoon4<cr>
 

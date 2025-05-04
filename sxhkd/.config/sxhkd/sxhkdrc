@@ -135,10 +135,22 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} focused:'^{1-9,10}'
 
 
-# Cambiar de workspace con ctrl + alt + {j, k, l, semicolon}
-ctrl + alt + {j,k,l,semicolon,n,m,comma,period}
-    bspc desktop -f ^{1,2,3,4,7,8,9,10}
-
+alt + d ; j
+    bspc desktop -f ^1
+alt + d ; k
+    bspc desktop -f ^2
+alt + d ; l
+    bspc desktop -f ^3
+alt + d ; semicolon
+    bspc desktop -f ^4
+alt + d ; n
+    bspc desktop -f ^7
+alt + d ; m
+    bspc desktop -f ^8
+alt + d ; comma
+    bspc desktop -f ^9
+alt + d ; period
+    bspc desktop -f ^10
 
 
 # PRESELECT
