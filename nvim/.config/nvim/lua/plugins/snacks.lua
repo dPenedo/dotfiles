@@ -169,12 +169,12 @@ return {
       desc = "Diagnostics",
     },
     -- explorer
-    -- {
-    --   "<leader>e",
-    --   function()
-    --     Snacks.picker.explorer()
-    --   end,
-    --   desc = "Diagnostics",
-    -- },
+    {
+      "<leader>e",
+      function()
+        Snacks.picker.explorer()
+      end,
+      desc = "Explorer",
+    },
   },
 }
