@@ -284,4 +284,7 @@
     },
     "workbench.colorTheme": "Gora Kanagawa",
     "telemetry.feedback.enabled": false,
+    "python.analysis.extraPaths": [
+        "./src"
+    ]
 }

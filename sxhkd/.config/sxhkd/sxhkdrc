@@ -16,7 +16,7 @@ alt + F4
 	bspc node -c
 
 # alternate between the tiled and monocle layout
-super + z
+super + m
 	bspc desktop -l next
 # super + shift
 # 	bspc desktop -l next
@@ -48,7 +48,7 @@ super + shift + {i,o,p}
 
 
 # floating toggle
-super + space
+super + z
   bspc node focused -t \~floating
 
 # set the node flags
@@ -107,15 +107,6 @@ alt +  Tab
 alt + Shift + Tab
     bspc node -f prev.local
 
-# Alternar al escritorio 7 o al último escritorio activo
-super + n
-    ~/.config/bspwm/toggle_workspace.sh 7
-super + m
-    ~/.config/bspwm/toggle_workspace.sh 8
-super + comma
-    ~/.config/bspwm/toggle_workspace.sh 9
-super + dot
-    ~/.config/bspwm/toggle_workspace.sh 10
 
 # Alternar al escritorio 5 o al último escritorio activo
 super + a
@@ -216,6 +207,8 @@ super + g
 # No funciona
 
 super + d
+ rofi -combi-modi -show-icons -show drun 
+super + space
  rofi -combi-modi -show-icons -show drun 
 super + Escape
  rofi -show powermenu -modi powermenu:~/scripts/rofi-power-menu  

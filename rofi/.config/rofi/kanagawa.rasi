@@ -3,12 +3,12 @@
     bg-col-light: #2A2A37;
     border-col: #16161d;
     selected-col: #2A2A37;
-    blue: #7E9CD8;
-    fg-col: #e9e4dd;
-    fg-col2: #DCA561;
+    blue: #9EBCFF;
+    fg-col: #e5e9f0;
+    fg-col2: #E6C384;
     grey: #6c7086;
-
-    font: "Hack 12";
+    font: "Hack Nerd Font 12";
+    font: "Atkinson Hyperlegible 13";
 }
 
 element-text, element-icon , mode-switcher {
