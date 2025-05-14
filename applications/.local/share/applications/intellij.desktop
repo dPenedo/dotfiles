@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Intellij Idea
+Icon=/home/daniel/Descargas/Programas/idea-IU-251.25410.129/bin/idea.svg
+Exec=/home/daniel/Descargas/Programas/idea-IU-251.25410.129/bin/idea.sh
+Comment=The Jet Brains JAVA IDE
+Categories=Development;IDE;WebDevelopment;
+Terminal=false
+StartupWMClass=jetbrains-intellij

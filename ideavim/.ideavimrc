@@ -1,4 +1,3 @@
-" .ideavimrc is a configuration file for the IdeaVim plugin. It uses
 " the same commands as the original .vimrc configuration.
 " You can find a list of commands here: https://jb.gg/h38q75
 " Find more examples here: https://jb.gg/share-ideavimrc
@@ -65,12 +64,14 @@ nmap <leader>O O<Esc>
 nmap <leader>; m`A;<Esc>``
 
 " --- Window management ---
-nnoremap <leader>ww :action HideAllWindows <CR>
+" nnoremap <leader>ww :action HideAllWindows <CR>
 nnoremap <c-h> <c-w>h
 nnoremap <Tab> <c-w>w
 nnoremap <leader>qq :action CloseEditor<cr>
 nmap <C-w>= <Action>(Unsplit)
-nmap <C-w>q :q<cr>
+nmap <C-w>q <Action>(CloseAllEditors)
+nmap <C-w>L <Action>(MoveEditorToOppositeTabGroup)
+nmap <C-w>H <Action>(MoveEditorToOppositeTabGroup)
 nmap <C-S-j> <Action>(StretchSplitToBottom)
 nmap <C-S-h> <Action>(StretchSplitToLeft)
 nmap <C-S-l> <Action>(StretchSplitToRight)
@@ -102,17 +103,19 @@ noremap Gcc :action CommentByBlockComment<CR>
 " --- Searching and navigation ---
 noremap <leader>l :action Find<CR>
 noremap <leader><leader> :action RecentFiles<CR>
-nnoremap <leader>ff :action GotoFile <CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fg :action FindInPath<CR>
 nmap <leader>G :action FindInPath<CR>
 vmap <leader>G :action FindInPath<CR>
 nnoremap '' :action Switcher <CR><CR>
 noremap ,b :action RecentFiles<CR>
 nnoremap ,c :action GotoClass <CR>
+nnoremap <leader>fc :action GotoClass <CR>
 nnoremap U :action FindUsages <CR>
 vnoremap U :action FindUsages <CR>
 
 
-" --- File tre---
+" --- File tree---
 map <leader>e :NERDTree<CR>
 
 " --- Error navigation ---
@@ -128,6 +131,7 @@ nnoremap gi :action GotoImplementation <CR>
 nnoremap g, :action JumpToLastChange <CR>
 nnoremap g. :action JumpToNextChange <CR>
 nnoremap gd :action GotoDeclaration <CR>
+nnoremap gy :action GotoTypeDeclaration <CR>
 nnoremap gr :action RecentFiles <CR>
 vnoremap <leader>gc :action GotoClass <CR>
 nmap K :action ShowHoverInfo<CR>
@@ -135,17 +139,23 @@ nmap K :action ShowHoverInfo<CR>
 
 " --- Intellij Actions ---
 nnoremap <leader>cr :action RenameElement <CR>
+nnoremap <leader>cR :action RenameFile <CR>
+nnoremap <leader>em :action ExtractMethod <CR>
+nnoremap <leader>iv :action IntroduceVariable <CR>
+nnoremap <leader>if :action IntroduceField <CR>
+nnoremap <leader>cs :action ChangeSignarure <CR>
+nnoremap <leader>rr :action Refactorings.QuickListPopupAction <CR>
 nnoremap <leader>aa :action GotoAction <CR>
 nnoremap <leader>ds :action GotoSymbol <CR>
+
 nmap <A-S> :action Run <CR>
+
 
 
 " --- Harpoon mappings ---
 nmap <leader>f<space> :action ShowHarpoon<cr>
 nmap <leader>fa :action AddToHarpoon<cr>
-
 nmap <leader>fj :action GotoHarpoon1<cr>
 nmap <leader>fk :action GotoHarpoon2<cr>
 nmap <leader>fl :action GotoHarpoon3<cr>
 nmap <leader>f; :action GotoHarpoon4<cr>
-

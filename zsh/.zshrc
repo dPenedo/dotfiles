@@ -85,7 +85,7 @@ bindkey '^[[3;5~' delete-word
 
 # Aceptar el autocompletado
 bindkey '\es' autosuggest-accept
-bindkey '^ ' autosuggest-accept
+# bindkey '^ ' autosuggest-accept
 
 # File managers
 bindkey -s '\ee' 'lfcd^m'
@@ -111,7 +111,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Created by `pipx` on 2024-02-10 16:28:16
 export PATH="$PATH:$HOME/.local/bin"
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-21
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
 export GOBIN=$GOPATH/bin   # opcional, define la ubicación de los binarios

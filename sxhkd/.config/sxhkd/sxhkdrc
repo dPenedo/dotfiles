@@ -125,22 +125,29 @@ super + a
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} focused:'^{1-9,10}'
 
+super + i
+    bspc desktop -f ^5
 
-alt + d ; j
+
+ctrl + space ; j
     bspc desktop -f ^1
-alt + d ; k
+ctrl + space ; k
     bspc desktop -f ^2
-alt + d ; l
+ctrl + space ; l
     bspc desktop -f ^3
-alt + d ; semicolon
+ctrl + space ; semicolon
     bspc desktop -f ^4
-alt + d ; n
+ctrl + space ; i
+    bspc desktop -f ^5
+ctrl + space ; Return
+    bspc desktop -f ^5
+ctrl + space ; n
     bspc desktop -f ^7
-alt + d ; m
+ctrl + space ; m
     bspc desktop -f ^8
-alt + d ; comma
+ctrl + space ; comma
     bspc desktop -f ^9
-alt + d ; period
+ctrl + space ; period
     bspc desktop -f ^10
 
 
@@ -279,7 +286,7 @@ super + v
   copyq toggle
 
 # Abrir Neovim con texto seleccionado
-super + i
+super + alt + i
     ~/.local/bin/nvim_selection.sh
 
   # Toggle Polybar
