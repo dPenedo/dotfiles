@@ -1,9 +1,11 @@
 # #kanagawa - wave
-# color1="#7E9CD8"
-# color2="#e9e4dd"
-# color3="#161616"
-# color4="#363646"
-
+color1="#938aa9"
+color2="#e5e9f0"
+color3="#1c1c21"
+color4="#363646"
+color5="#9EBCFF"
+color6="#2A2A3A"
+color7="#9DBF91"
 # #kanagawa - lotus
 # color1="#464c8b"
 # color2="#16161d"
@@ -11,13 +13,10 @@
 # color4="#B5B1BE"
 
 #Desert
-color1="#464c8b"
-color2="#282828"
-color3="#e2e0d8"
-color4="#CFCBC5"
-color5="#416190"
-color6="#CFCBC5"
-color7="#385C49"
+# color1="#464c8b"
+# color2="#282828"
+# color3="#e2e0d8"
+# color4="#B5B1BE"
 
 
 

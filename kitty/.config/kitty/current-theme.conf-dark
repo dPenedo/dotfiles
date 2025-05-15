@@ -1,0 +1,57 @@
+# vim:ft=kitty
+## name: Custom Theme
+## license: MIT
+## author: Your Name
+
+#background #121212
+background #002b36
+background #121218
+foreground #e5e9f0
+selection_background #9EBCFF
+selection_foreground #282A33
+url_color #72A7BC
+cursor #e5e9f0
+
+
+# Tabs
+active_tab_background #1F1F28
+active_tab_foreground #e5e9f0
+inactive_tab_background #1F1F28
+inactive_tab_foreground #727169
+
+# Border colors
+active_border_color #7e9cd8
+inactive_border_color #363646
+bell_border_color #e5e9f0
+
+# Normal colors
+color0 #333333
+color1 #FF4444
+color2 #9DBF91
+color3 #F6C58A
+color4 #9EBCFF
+color5 #AB92D3
+color6 #8AB5AA
+color7 #c9cbd1
+
+# Bright colors
+color8 #A29581
+color9 #FF7D82
+color10 #B8DB8C
+color11 #E0C38E
+color12 #9DA2D2
+color13 #C8C3EA
+color14 #9AC8BF
+color15 #DEE4F8
+
+# Extended colors
+color16 #B3BDFD
+color17 #FFBE6A
+
+# Colors for marks (marked text in the terminal)
+mark1_foreground #1E1E2E
+mark1_background #B4BEFE
+mark2_foreground #1E1E2E
+mark2_background #CBA6F7
+mark3_foreground #1E1E2E
+mark3_background #74C7EC
