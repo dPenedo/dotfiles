@@ -85,7 +85,7 @@ bindkey '^[[3;5~' delete-word
 
 # Aceptar el autocompletado
 bindkey '\es' autosuggest-accept
-# bindkey '^ ' autosuggest-accept
+bindkey '^ ' autosuggest-accept
 
 # File managers
 bindkey -s '\ee' 'lfcd^m'

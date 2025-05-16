@@ -129,26 +129,26 @@ super + i
     bspc desktop -f ^5
 
 
-ctrl + space ; j
-    bspc desktop -f ^1
-ctrl + space ; k
-    bspc desktop -f ^2
-ctrl + space ; l
-    bspc desktop -f ^3
-ctrl + space ; semicolon
-    bspc desktop -f ^4
-ctrl + space ; i
-    bspc desktop -f ^5
-ctrl + space ; Return
-    bspc desktop -f ^5
-ctrl + space ; n
-    bspc desktop -f ^7
-ctrl + space ; m
-    bspc desktop -f ^8
-ctrl + space ; comma
-    bspc desktop -f ^9
-ctrl + space ; period
-    bspc desktop -f ^10
+# ctrl + space ; j
+#     bspc desktop -f ^1
+# ctrl + space ; k
+#     bspc desktop -f ^2
+# ctrl + space ; l
+#     bspc desktop -f ^3
+# ctrl + space ; semicolon
+#     bspc desktop -f ^4
+# ctrl + space ; i
+#     bspc desktop -f ^5
+# ctrl + space ; Return
+#     bspc desktop -f ^5
+# ctrl + space ; n
+#     bspc desktop -f ^7
+# ctrl + space ; m
+#     bspc desktop -f ^8
+# ctrl + space ; comma
+#     bspc desktop -f ^9
+# ctrl + space ; period
+#     bspc desktop -f ^10
 
 
 # PRESELECT
