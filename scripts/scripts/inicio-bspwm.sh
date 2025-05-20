@@ -2,12 +2,14 @@
 
 # xdg-open https://www.tutanota.com &
 
-brave-browser &
+# brave-browser &
+firefox &
 # firefox-developer-edition &
 sleep 7
 webstorm &
 bash ~/scripts/xmodmap.sh &
-brave-browser -app=https://chat.openai.com &
+# brave-browser -app=https://chat.openai.com &
+firefox --kiosk=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
 ~/.local/kitty.app/bin/kitty &
@@ -36,7 +38,7 @@ wmctrl -r "alacritty" -t 0 &
 wmctrl -r "~" -t 0 &
 wmctrl -r "kitty" -t 0 &
 wmctrl -r "zsh" -t 0 &
-# wmctrl -r "Firefox" -t 0 &
+wmctrl -r "Firefox" -t 1 &
 wmctrl -r "tmux" -t 1 &
 wmctrl -r "Chat" -t 7 &
 wmctrl -r "TickTick" -t 9 &
