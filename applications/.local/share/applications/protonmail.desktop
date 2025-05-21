@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ProtonMail
 Comment=Access ProtonMail via Brave Browser
-Exec=brave-browser --app=https://mail.protonmail.com
+Exec=/opt/firefox/firefox --new-window=https://mail.protonmail.com
 Icon=~/.local/share/applications/icons/proton.png
 Terminal=false
 Type=Application

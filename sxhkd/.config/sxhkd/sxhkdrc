@@ -205,7 +205,7 @@ super + c
 
 
 super + b
-	brave-browser
+	/opt/firefox/firefox
 	# firefox
 
 super + g 

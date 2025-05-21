@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Google Docs
 Comment=Access google docs via Brave Browser
-Exec=brave-browser --app=https://docs.google.com
+Exec=/opt/firefox/firefox --new-window=https://docs.google.com
 Icon=~/.local/share/applications/icons/google-docs.png
 Terminal=false
 Type=Application

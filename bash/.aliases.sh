@@ -19,7 +19,7 @@ alias nk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
 
 alias fd='fdfind'
 
-alias fire='firefox-developer-edition'
+alias fire='/opt/firefox/firefox'
 
 # alias n='nvim -c Lf'
 alias tt='kitty --title "📔 Notas" -e tmux attach-session -t "📔 Notas" & sleep 1 && wmctrl -r "📔 Notas" -t 6 &'
