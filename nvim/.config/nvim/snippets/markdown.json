@@ -40,7 +40,7 @@
     "Bloque de relacionados": {
         "prefix": "relacionados",
         "body": [
-            "### Relacionados",
+            "## Relacionados",
             "- [[${1}]]"
         ],
         "description": "Bloque de relacionados"
