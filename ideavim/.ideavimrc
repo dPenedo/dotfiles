@@ -30,7 +30,7 @@ Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
 Plug 'unblevable/quick-scope'
 Plug 'tpope/vim-surround'
-Plug 'justinmk/vim-sneak'
+" Plug 'justinmk/vim-sneak'
 
 " WhichKey plugin configuration
 let g:WhichKey_ShowVimActions = "true"
@@ -39,6 +39,9 @@ let g:WhichKey_ShowVimActions = "true"
 " Clear search highlights
 nmap <Esc> :noh <Cr>
 nmap <C-l> :noh <Cr>
+
+nmap s <action>(flash.search)
+xmap s <action>(flash.search)
 
 nmap <CR> :
 

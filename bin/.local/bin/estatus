@@ -1,38 +1,38 @@
 #!/bin/bash
 
-# Define las carpetas a analizar
+# Defines directories that are going to be used
 base_dir="/home/daniel/Documentos/repos"
 dotfiles="/home/daniel/.dotfiles/"
-notas="/home/daniel/Documentos/Dropbox/Notas/"
-melange="/home/daniel/.local/share/nvim/lazy/melange-nvim/"
+notas="/home/daniel/Documentos/Notas/"
+kanagawa="/home/daniel/.local/share/nvim/lazy/kanagawa.nvim"
 
-# Función que chequea el status
+# Font Styles
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+
 check_git_status() {
   local dir="$1"
-  local git_location="$2"
+  local label="$2"
 
-  cd "$dir" || {
-    echo "No se ha podido acceder a: $dir"
-    exit 1
-  }
-  # Check git status
-  status=$(git status)
-  shortstatus=$(git status --short)
-  # Spanish
-  # if [[ $status =~ "nada para hacer commit, el árbol de trabajo está limpio" ]]; then
+  if ! git -C "$dir" rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    printf "%-40s %-30s\n" "${bold}$label:${normal}" "${bold}❌ That's not a Git repository${normal}"
+    return
+  fi
+
+  local status=$(git -C "$dir" status)
+  local shortstatus=$(git -C "$dir" status --short)
+
   if [[ $status =~ "nothing to commit, working tree clean" ]]; then
-    printf "%-40s %-30s\n" "${bold}$git_location:${normal}" "${bold}✅ Actualizado${normal}"
+    printf "%-40s %-30s\n" "${bold}$label:${normal}" "${bold}✅ Updated${normal}"
   else
-    printf "%-40s %-30s\n" "${bold}$git_location:${normal}" "${bold}⚠️  Algo falta para tenerlo actualizado ${normal}"
+    printf "%-40s %-30s\n" "${bold}$label:${normal}" "${bold}⚠️  Pending changes${normal}"
     echo "$shortstatus"
   fi
 }
 
-# Pone en negrita
-bold=$(tput bold)
-normal=$(tput sgr0)
 
-# Iteración en el base_dir
+# Iteration in the base_dir
 for dir in "$base_dir"/*; do
   dir_name=$(basename "$dir")
   if [ -d "$dir" ]; then
@@ -43,7 +43,7 @@ done
 echo "--------------------------------------------------------------------------"
 
 if [ -d "$dotfiles" ]; then
-  check_git_status "$dotfiles" "Archivos de configuración"
+  check_git_status "$dotfiles" "Configuration files"
 fi
 
 echo "--------------------------------------------------------------------------"
@@ -54,6 +54,6 @@ fi
 
 echo "--------------------------------------------------------------------------"
 
-if [ -d "$melange" ]; then
-  check_git_status "$melange" "melange"
+if [ -d "$kanagawa" ]; then
+  check_git_status "$kanagawa" "kanagawa"
 fi

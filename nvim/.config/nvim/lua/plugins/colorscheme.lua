@@ -243,6 +243,17 @@ return {
   --     transparent = true,
   --   },
   -- },
+  {
+    "neanias/everforest-nvim",
+    config = function()
+      require("everforest").setup({
+        background = "hard",
+        transparent_background_level = 1,
+        ui_contrast = "high",
+        dim_inactive_windows = true,
+      })
+    end,
+  },
   -- { "bluz71/vim-moonfly-colors" },
   -- { "bluz71/vim-nightfly-colors" },
   -- { "kvrohit/rasmus.nvim" },
@@ -250,7 +261,7 @@ return {
   -- { "kyazdani42/blue-moon" },
   -- {
   --   "armannikoyan/rusty",
-  --   bien, agradable, pero no va en ssnack picker y un poco bajo de contraste
+  --   -- bien, agradable, pero no va en ssnack picker y en JAva se ve mas o menos
   --   lazy = false,
   --   priority = 1000,
   --   opts = {
@@ -258,6 +269,7 @@ return {
   --     italic_comments = true,
   --     underline_current_line = true,
   --   },
+  -- },
   --{
   --
 }
