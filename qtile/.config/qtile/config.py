@@ -28,6 +28,7 @@ from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
 from libqtile.lazy import lazy
 from color import colors
+from tabbed import Tabbed
 import os
 import subprocess
 from libqtile import hook
@@ -35,8 +36,8 @@ from os.path import expanduser
 
 
 mod = "mod4"
-terminal = "alacritty"
-browser = "brave-browser"
+terminal = "/home/daniel/.local/kitty.app/bin/kitty"
+browser = "/opt/firefox/firefox"
 volumen = expanduser("~/.config/qtile/scripts/volume-dunst.sh")
 
 
@@ -139,13 +140,11 @@ keys = [
     ),
     Key(
         [mod],
-        "s",
+        "w",
         lazy.spawn("rofi -show window -show-icons"),
         desc="Ventanas/programas abiertos",
     ),
-    Key(
-        [mod, "shift"], "e", lazy.spawn("rofimoji"), desc="Toma un emoji mediante rofi"
-    ),
+    Key([mod, "shift"], "e", lazy.spawn("rofimoji"), desc="Toma un emoji mediante ofi"),
     Key(
         [mod],
         "Escape",
@@ -154,14 +153,28 @@ keys = [
     ),
     # Programas
     Key([mod], "b", lazy.spawn(browser), desc="Navegador predeterminado"),
-    Key([mod], "w", lazy.spawn("firefox"), desc="Navegador firefox"),
-    Key([mod], "t", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
+    Key([mod], "e", lazy.spawn("thunar"), desc="Thunar explorador de archivos"),
+    Key([], "Print", lazy.spawn("xfce4-screenshooter"), desc="Captura de pantalla"),
     Key([mod], "g", lazy.spawn("gpick"), desc="Toma y almacena colores de la pantalla"),
+    Key([mod], "i", lazy.group["5"].toscreen(), desc="Ir al grupo 5"),
     Key(
         ["control", "mod1"],
         "Delete",
         lazy.spawn("xkill"),
         desc="Selecciona una ventana con el raton para cerrarla",
+    ),
+    Key(["control", "mod1"], "x", lazy.spawn("xkill"), desc="xkill"),
+    Key(
+        [mod, "mod1"],
+        "i",
+        lazy.spawn("/home/daniel/.local/bin/nvim_selection.sh"),
+        desc="Seleccionar con nvim",
+    ),
+    Key(
+        [mod, "mod1"],
+        "p",
+        lazy.spawn("/home/daniel/scripts/rofi-prompts.sh"),
+        desc="Rofi prompts",
     ),
     Key(
         [mod, "control"],
@@ -172,8 +185,8 @@ keys = [
 ]
 
 groups = [
-    Group(name="1", label=""),
-    Group(name="2", label=""),
+    Group(name="1", label=""),
+    Group(name="2", label=""),
     Group(name="3", label=""),
     Group(name="4", label=""),
     Group(name="5", label=""),
@@ -183,30 +196,6 @@ groups = [
     Group(name="9", label=""),
     Group(name="0", label=""),
 ]
-#
-# for i in groups:
-#     keys.extend(
-#         [
-#             # mod1 + letter of group = switch to group
-#             Key(
-#                 [mod],
-#                 i.name,
-#                 lazy.group[i.name].toscreen(),
-#                 desc="Switch to group {}".format(i.name),
-#             ),
-#             # mod1 + shift + letter of group = switch to & move focused window to group
-#             # Key(
-#             #     [mod, "shift"],
-#             #     i.name,
-#             #     lazy.window.togroup(i.name, switch_group=True),
-#             #     desc="Switch to & move focused window to group {}".format(i.name),
-#             # ),
-#             # Or, use below if you prefer not to switch to that group.
-#             # # mod1 + shift + letter of group = move focused window to group
-#             Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-#                 desc="move focused window to group {}".format(i.name)),
-#         ]
-#     )
 
 for i in groups:
     keys.extend(
@@ -227,7 +216,6 @@ for i in groups:
             ),
         ]
     )
-
 
 groups.append(
     ScratchPad(
@@ -260,7 +248,6 @@ keys.extend(
         Key(
             [mod, "control"], "Return", lazy.group["scratchpad"].dropdown_toggle("term")
         ),
-        Key([mod], "e", lazy.spwawn("thunar"), desc="thunar"),
         Key(
             [mod, "control"],
             "a",
@@ -276,7 +263,16 @@ layouts = [
     layout.MonadTall(
         border_focus=colors["blue"], border_normal=colors["bg2"], margin=4
     ),
-    layout.Max(),
+    # layout.Max(),
+    Tabbed(
+        active_bg=colors["blue"],
+        active_fg=colors["bg"],
+        inactive_bg=colors["bg2"],
+        inactive_fg=colors["brown"],
+        fontsize=13,
+        bar_height=20,
+        show_single_tab=False,
+    ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -298,7 +294,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        wallpaper="~/Imagenes/fondos-de-pantalla/moon.jpg",
+        wallpaper="./wallpapers/yazi.webp",
         wallpaper_mode="fill",
         top=bar.Bar(
             [
@@ -364,7 +360,7 @@ screens = [
                 widget.Systray(),
                 widget.Clock(format="    %A, %d de %B", foreground=colors["blue"]),
                 widget.Clock(
-                    format="   %H:%M ",
+                    format="  %H:%M ",
                     background=colors["blue"],
                     foreground=colors["bg"],
                 ),
@@ -374,7 +370,7 @@ screens = [
         ),
     ),
     Screen(
-        wallpaper="~/Imagenes/Fondos-de-pantalla/moon.jpg",
+        wallpaper="./wallpapers/yazi.webp",
         wallpaper_mode="fill",
         top=bar.Bar(
             [
@@ -458,13 +454,15 @@ floating_layout = layout.Floating(
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk
         Match(wm_class="ssh-askpass"),  # ssh-askpass
-        Match(title="branchdialog"),  # gitk
+        Match(title="branchdialog"),  # git
         Match(title="pinentry"),  # GPG key password entry
+        Match(wm_class="gpick"),
+        Match(wm_class="copyq"),
     ]
 )
 auto_fullscreen = True
 focus_on_window_activation = "smart"
-reconfigure_screens = True
+reconfigure_screens = False
 
 # If things like steam games want to auto-minimize themselves when losing
 # focus, should we respect this or not?

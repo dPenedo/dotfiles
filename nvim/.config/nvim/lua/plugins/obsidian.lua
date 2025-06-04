@@ -115,6 +115,7 @@ return {
     },
   },
   keys = {
+    { "<cr>", mode = { "n", "o", "x" }, false },
     { "<leader>nT", "<CMD>ObsidianTags<cr> ", { desc = "Obsidian Template" } },
     { "<leader>nr", "<CMD>ObsidianRename<cr> ", { desc = "Obsidian Rename" } },
     { "<leader>nb", "<CMD>ObsidianBacklinks<cr> ", { desc = "Obsidian backlinks" } },

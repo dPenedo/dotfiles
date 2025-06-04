@@ -25,15 +25,23 @@ return {
       backdrop = true, -- Desactiva el fondo globalmente
     },
   },
-  -- keys = {
-  -- { "S", mode = { "n", "o", "x" }, false },
-  --   {
-  --     "<c-s>",
-  --     mode = { "n", "x", "o" },
-  --     function()
-  --       require("flash").treesitter()
-  --     end,
-  --     desc = "Flash Treesitter",
-  --   },
-  -- },
+  keys = {
+    { "s", mode = { "n", "o", "x" }, false },
+    {
+      "<cr>",
+      mode = { "n", "x", "o" },
+      function()
+        require("flash").jump()
+      end,
+      desc = "Flash",
+    },
+    {
+      "<c-s>",
+      mode = { "n", "x", "o" },
+      function()
+        require("flash").treesitter()
+      end,
+      desc = "Flash Treesitter",
+    },
+  },
 }

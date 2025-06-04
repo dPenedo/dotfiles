@@ -65,9 +65,9 @@ super + {_,shift + }{h,j,k,l}
 super + r
   bspc node @/ -R 90
 
-# focus the node for the given path jump
-super + alt + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+# # focus the node for the given path jump
+# super + alt + {p,b,comma,period}
+# 	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous node in the current desktop
 super + {_,shift + }u
@@ -112,6 +112,8 @@ alt + Shift + Tab
 super + a
     ~/.config/bspwm/toggle_workspace.sh 5
 
+super + alt +  p
+    ~/scripts/rofi-prompts.sh
 
 
 

@@ -3,7 +3,7 @@
 # Defines directories that are going to be used
 base_dir="/home/daniel/Documentos/repos"
 dotfiles="/home/daniel/.dotfiles/"
-notas="/home/daniel/Documentos/Notas/"
+notas="/home/daniel/Documentos/Dropbox/Notas/"
 kanagawa="/home/daniel/.local/share/nvim/lazy/kanagawa.nvim"
 
 # Font Styles

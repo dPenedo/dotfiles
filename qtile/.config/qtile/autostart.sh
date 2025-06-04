@@ -7,4 +7,5 @@ copyq &
 nm-applet &
 sleep 8
 picom &
+volumeicon &
 dunst &
