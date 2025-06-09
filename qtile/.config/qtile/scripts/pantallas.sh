@@ -1,7 +1,7 @@
 #!/bin/sh
-monitor_externo=$(xrandr --query | grep 'HDMI-0 connected')
+monitor_externo=$(xrandr --query | grep 'HDMI-A-0 connected')
 if [[ $monitor_externo = *connected* ]]; then
-	xrandr --output HDMI-0 --auto --primary --above eDP
+    xrandr --output eDP --off --output HDMI-A-0 --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-0 --off
 else
 	xrandr --output eDP --auto --primary
 fi

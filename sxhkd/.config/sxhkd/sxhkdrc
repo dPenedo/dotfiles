@@ -109,11 +109,26 @@ alt + Shift + Tab
 
 
 # Alternar al escritorio 5 o al último escritorio activo
-super + a
-    ~/.config/bspwm/toggle_workspace.sh 5
+# super + a
+#     ~/.config/bspwm/toggle_workspace.sh 5
 
 super + alt +  p
     ~/scripts/rofi-prompts.sh
+
+super + alt + y
+    ~/.local/bin/scratch yazi
+
+super + alt + h
+    ~/.local/bin/scratch htop
+
+super + alt + c
+    ~/.local/bin/scratch calcurse
+
+super + alt + t
+    ~/.local/bin/scratch terminal
+
+super + n
+    ~/.local/bin/scratch nvim
 
 
 

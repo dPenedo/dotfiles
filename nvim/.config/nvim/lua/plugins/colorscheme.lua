@@ -234,26 +234,27 @@ return {
   --     italic_comments = true,
   --   },
   -- },
-  -- {
-  --   "gbprod/nord.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --
-  --     transparent = true,
-  --   },
-  -- },
+  {
+    "gbprod/nord.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      --
+      -- transparent = true,
+    },
+  },
   {
     "neanias/everforest-nvim",
     config = function()
       require("everforest").setup({
         background = "hard",
-        transparent_background_level = 1,
+        -- transparent_background_level = 1,
         ui_contrast = "high",
         dim_inactive_windows = true,
       })
     end,
   },
+
   -- { "bluz71/vim-moonfly-colors" },
   -- { "bluz71/vim-nightfly-colors" },
   -- { "kvrohit/rasmus.nvim" },
