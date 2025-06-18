@@ -1,5 +1,6 @@
 current_mode = "dark"
 
+
 import os
 import sys
 
@@ -27,10 +28,10 @@ CONFIGURATIONS = {
         "directory": os.path.expanduser("~/.config/kitty/"),
         "file": "current-theme.conf",
     },
-    "alacritty": {
-        "directory": os.path.expanduser("~/.config/alacritty/"),
-        "file": "alacritty.toml",
-    },
+    # "alacritty": {
+    #     "directory": os.path.expanduser("~/.config/alacritty/"),
+    #     "file": "alacritty.toml",
+    # },
 }
 
 
@@ -39,6 +40,7 @@ def change_configuration(mode):
         change_files(app, mode, config["directory"], config["file"])
     try:
         with open(SCRIPT_PATH, "r+") as archivo:
+            print(f"current mode changed to {mode}")
             archivo.write(f'current_mode = "{mode}"\n')
     except FileNotFoundError as e:
         print(f"Error: {e}. Archivo no encontrado")

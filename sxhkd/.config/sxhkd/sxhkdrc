@@ -116,20 +116,22 @@ super + alt +  p
     ~/scripts/rofi-prompts.sh
 
 super + alt + y
-    ~/.local/bin/scratch yazi
+    tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchyazi kitty --class=scratchyazi -e yazi
 
 super + alt + h
-    ~/.local/bin/scratch htop
+    tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchhtop kitty --class=scratchhtop -e htop
 
 super + alt + c
-    ~/.local/bin/scratch calcurse
+    tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchcalcurse kitty --class=scratchcalcurse -e calcurse
 
 super + alt + t
-    ~/.local/bin/scratch terminal
+    tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchterm kitty --class=scratchterm
 
 super + n
-    ~/.local/bin/scratch nvim
+    tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchnvim kitty --class=scratchnvim -e nvim
 
+super + c
+    tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchcalendar gnome-calendar
 
 
 # focus the older or newer node in the focus history
@@ -217,8 +219,6 @@ super + shift + Return
 super + e
 	thunar
 
-super + c
-  gnome-calendar
 
 
 super + b

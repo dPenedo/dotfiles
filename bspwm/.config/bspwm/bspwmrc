@@ -31,3 +31,10 @@ bspc rule -a xfce4-popup-whiskermenu state=floating border=off
 bspc rule -a Whisker\ Menu state=floating border=off
 bspc rule -a Wrapper-2.0 state=floating border=off focus=on
 bspc rule -a Zathura state=tiled
+# Reglas para scratchpads
+bspc rule -a scratchyazi sticky=on state=floating 
+bspc rule -a scratchhtop sticky=on state=floating 
+bspc rule -a scratchcalcurse sticky=on state=floating 
+bspc rule -a scratchterm sticky=on state=floating 
+bspc rule -a scratchnvim sticky=on state=floating 
+bspc rule -a scratchcalendar sticky=on state=floating 

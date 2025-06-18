@@ -1,10 +1,10 @@
 # Diccionario de colores
 
 kanagawa = {
-    "bg": "#062833",
-    "bg2": "#12333A",
+    "bg": "#26262c",
+    "bg2": "#1F1F28",
     "fg": "#E2E0DB",
-    "blue": "#99BAE0",
+    "blue": "#9EBCFF",
     "cyan": "#7fb4ca",
     "brown": "#AEA69D",
     "purple": "#b48ead",

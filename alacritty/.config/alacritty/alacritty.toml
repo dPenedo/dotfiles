@@ -3,7 +3,8 @@
 general.import = [
     # "~/.config/alacritty/themes/kanagawa_wave.toml"
     # "~/.config/alacritty/themes/one_dark.toml"
-    "~/.config/alacritty/themes/kanagawa_contrast.toml"
+    # "~/.config/alacritty/themes/kanagawa_contrast.toml"
+    "~/.config/alacritty/themes/modus_operandi.toml"
     # "~/.config/alacritty/themes/jellybeans.toml"
     # "~/.config/alacritty/themes/dayfox.toml"
 ]
@@ -20,10 +21,11 @@ shape = "Underline"
 TERM = "xterm-256color"
 
 [font]
-size = 12.5
+# size = 12.5
+size = 11.3
 [font.normal]
-# family = "Hack Nerd Font"
-family = "Iosevka Nerd Font"
+family = "Hack Nerd Font"
+# family = "Iosevka Nerd Font"
 # family = "JetbrainsMono Nerd Font"
 style = "Regular"
 

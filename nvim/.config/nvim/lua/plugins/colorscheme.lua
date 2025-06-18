@@ -3,7 +3,7 @@ return {
     "EdenEast/nightfox.nvim",
     opts = {
       options = {
-        transparent = true,
+        transparent = false,
         dim_inactive = true,
         styles = { -- Style to be applied to different syntax groups
           comments = "italic", -- Value is any valid attr-list value `:help attr-list`
@@ -145,15 +145,20 @@ return {
   --   },
   -- },
 
-  -- {
-  --   "miikanissi/modus-themes.nvim",
-  --   priority = 1000,
-  --   opts = {
-  --     -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
-  --     transparent = false, -- Transparent background (as supported by the terminal)
-  --     dim_inactive = true, --
-  --   },
-  -- },
+  {
+    "miikanissi/modus-themes.nvim",
+    priority = 1000,
+    opts = {
+      -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+      transparent = false, -- Transparent background (as supported by the terminal)
+      dim_inactive = true, --
+    },
+  },
+  {
+    "webhooked/kanso.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   --
   -- -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
   -- {
@@ -188,7 +193,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = true,
+      transparent = false,
     },
   },
   -- {
