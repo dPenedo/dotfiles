@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROMPTS_DIR="$HOME/Documentos/Dropbox/Notas/Prompts"
+PROMPTS_DIR="$HOME/Documentos/Dropbox/Notas/Recursos/Prompts"
 ICON=""
 
 PROMPT_FILE=$(ls "$PROMPTS_DIR" | while read -r file; do
