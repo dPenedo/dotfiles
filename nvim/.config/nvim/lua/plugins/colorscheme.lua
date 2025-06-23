@@ -144,7 +144,21 @@ return {
   --     },
   --   },
   -- },
-
+  {
+    "kimjbaran/voyager.nvim",
+    lazy = false,
+  },
+  {
+    "romanaverin/charleston.nvim",
+    name = "charleston",
+    priority = 1000,
+  },
+  -- {
+  --   "cpplain/flexoki.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
   {
     "miikanissi/modus-themes.nvim",
     priority = 1000,
@@ -154,11 +168,7 @@ return {
       dim_inactive = true, --
     },
   },
-  {
-    "webhooked/kanso.nvim",
-    lazy = false,
-    priority = 1000,
-  },
+  { "vague2k/vague.nvim" },
   --
   -- -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
   -- {
