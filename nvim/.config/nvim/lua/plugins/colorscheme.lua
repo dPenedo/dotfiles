@@ -46,6 +46,13 @@ return {
       },
     },
   },
+  { "datsfilipe/vesper.nvim" },
+  {
+    "killitar/obscure.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   -- {
   --   "dpenedo/melange-nvim",
   -- },
@@ -79,7 +86,7 @@ return {
   --   },
   -- },
   -- { "Domeee/mosel.nvim" },
-  -- -- No va bien con snack picker
+  -- -- No va bien con snack picker, un poco briloso
   -- { "clennys/orca.nvim" },
   -- poco contraste
   -- {
@@ -132,6 +139,7 @@ return {
   -- },
   -- {
   --   "steguiosaur/fullerene.nvim",
+  --   -- Demasiado brilloso
   --   lazy = false,
   --   priority = 1000,
   --   opts = {
@@ -144,10 +152,20 @@ return {
   --     },
   --   },
   -- },
-  {
-    "kimjbaran/voyager.nvim",
-    lazy = false,
-  },
+  -- {
+  --   "kimjbaran/voyager.nvim",
+  --   -- Mucho contraste
+  --   lazy = false,
+  -- },
+  -- {
+  --   "rjshkhr/shadow.nvim",
+  --   -- Agradable, minimalista, me gusta el tono verdoso, le faltan un par de implementaciones de plugins y opciones para configurar
+  --   priority = 1000,
+  --   config = function()
+  --     vim.opt.termguicolors = true
+  --     vim.cmd.colorscheme("shadow")
+  --   end,
+  -- },
   {
     "romanaverin/charleston.nvim",
     name = "charleston",
@@ -159,6 +177,7 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
+
   {
     "miikanissi/modus-themes.nvim",
     priority = 1000,
@@ -168,9 +187,39 @@ return {
       dim_inactive = true, --
     },
   },
-  { "vague2k/vague.nvim" },
+  {
+    "vague2k/vague.nvim",
+    opts = {
+      transparent = false, -- don't set background
+      colors = {
+        bg = "#1E2325",
+        fg = "#cdcdcd",
+        floatBorder = "#878787",
+        line = "#252530",
+        comment = "#606079",
+        builtin = "#b4d4cf",
+        func = "#c48282",
+        string = "#e8b589",
+        number = "#e0a363",
+        property = "#c3c3d5",
+        constant = "#aeaed1",
+        parameter = "#bb9dbd",
+        visual = "#4C3D52",
+        error = "#d8647e",
+        warning = "#f3be7c",
+        hint = "#7e98e8",
+        operator = "#90a0b5",
+        keyword = "#6e94b2",
+        type = "#9bb4bc",
+        search = "#516176",
+        plus = "#7fa563",
+        delta = "#f3be7c",
+      },
+    },
+  },
   --
-  -- -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
+  -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
+  -- Tiene un par de colores que se ven poco, como el marrón
   -- {
   --   "0xstepit/flow.nvim",
   --   lazy = false,
@@ -251,41 +300,32 @@ return {
   -- },
   {
     "gbprod/nord.nvim",
+    -- Bien, pero le falta contraste, se le puede dar cambiando el fondo
     lazy = false,
     priority = 1000,
     opts = {
-      --
-      -- transparent = true,
+      transparent = true,
     },
   },
-  {
-    "neanias/everforest-nvim",
-    config = function()
-      require("everforest").setup({
-        background = "hard",
-        -- transparent_background_level = 1,
-        ui_contrast = "high",
-        dim_inactive_windows = true,
-      })
-    end,
-  },
+  -- {
+  --   "neanias/everforest-nvim",
+  --   config = function()
+  --     require("everforest").setup({
+  --       background = "hard",
+  --       -- transparent_background_level = 1,
+  --       ui_contrast = "high",
+  --       dim_inactive_windows = true,
+  --     })
+  --   end,
+  -- },
 
   -- { "bluz71/vim-moonfly-colors" },
+  -- Usa rojo
   -- { "bluz71/vim-nightfly-colors" },
-  -- { "kvrohit/rasmus.nvim" },
+  -- Usa rojo
+  { "kvrohit/rasmus.nvim" },
   -- { "nvimdev/zephyr-nvim" },
   -- { "kyazdani42/blue-moon" },
-  -- {
-  --   "armannikoyan/rusty",
-  --   -- bien, agradable, pero no va en ssnack picker y en JAva se ve mas o menos
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = true,
-  --     italic_comments = true,
-  --     underline_current_line = true,
-  --   },
-  -- },
   --{
   --
 }

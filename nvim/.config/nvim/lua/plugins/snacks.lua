@@ -184,12 +184,12 @@ return {
       desc = "Diagnostics",
     },
     -- explorer
-    {
-      "<leader>e",
-      function()
-        Snacks.picker.explorer()
-      end,
-      desc = "Explorer",
-    },
+    -- {
+    --   "<leader>e",
+    --   function()
+    --     Snacks.picker.explorer()
+    --   end,
+    --   desc = "Explorer",
+    -- },
   },
 }

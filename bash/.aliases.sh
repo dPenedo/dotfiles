@@ -35,12 +35,13 @@ alias senv='source ./env/bin/activate'
 alias senvv='tmux list-panes -F "#{pane_id}" | xargs -I {} tmux send-keys -t {} "senv" C-m'
 # alias bat='batcat'
 if command -v eza &>/dev/null; then
-    alias ls='eza --group-directories-first --icons'
-    alias l='eza -s type --icons -lah'
-    alias t1="eza --icons --tree --level=1"
-    alias t2="eza --icons --tree --level=2"
-    alias t3="eza --icons --tree --level=3"
-    alias t4="eza --icons --tree --level=4"
+    alias ls='eza  --icons=always --group-directories-first'
+    alias lsa='eza  --icons=always -a --group-directories-first'
+    alias l='eza --icons=always -lah --group-directories-first'
+    alias t1="eza --icons=always --tree --level=1  --group-directories-first"
+    alias t2="eza --icons=always --tree --level=2 --group-directories-first"
+    alias t3="eza --icons=always --tree --level=3 --group-directories-first"
+    alias t4="eza --icons=always --tree --level=4 --group-directories-first"
 else
     alias ls='ls --color=auto'
     alias l="ls -la"
