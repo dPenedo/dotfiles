@@ -115,6 +115,10 @@ alt + Shift + Tab
 super + alt +  p
     ~/scripts/rofi-prompts.sh
 
+super + alt +  m
+    ~/.local/bin/rofi-mpc
+
+
 super + alt + y
     tdrop -a -w 70% -h 50% -x 15% -y 5% --class=scratchyazi kitty --class=scratchyazi -e yazi
 

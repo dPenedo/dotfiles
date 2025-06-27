@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+import subprocess
+import sys
+
+# Map display strings with icons to internal commands
+icon_map = {
+    "󰐎  Play/Pause": "Play/Pause",
+    "󰒭  Next": "Next",
+    "󰒮  Prev": "Prev",
+    "  Random": "Random",
+    "  Sources": "Sources",
+}
+
+
+def run(cmd, capture_output=False):
+    try:
+        if capture_output:
+            return subprocess.check_output(cmd, text=True).strip()
+        else:
+            subprocess.check_call(cmd)
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def rofi_menu(prompt, message="", options=[], selected_row=0):
+    try:
+        rofi = subprocess.Popen(
+            [
+                "rofi",
+                "-i",
+                "-dmenu",
+                "-p",
+                prompt,
+                "-selected-row",
+                str(selected_row),
+                "-mesg",
+                message,
+            ],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+        )
+        input_data = "\n".join(options).encode()
+        out, _ = rofi.communicate(input=input_data)
+        return out.decode().strip()
+    except Exception as e:
+        print(f"Rofi error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def get_current_song():
+    return (
+        run(["mpc", "current"], capture_output=True) or "Nothing is currently playing"
+    )
+
+
+def handle_command(cmd_with_icon):
+    cmd = icon_map.get(cmd_with_icon)
+    if not cmd:
+        return
+
+    actions = {
+        "Play/Pause": ["mpc", "toggle"],
+        "Next": ["mpc", "next"],
+        "Prev": ["mpc", "prev"],
+        "Random": ["mpc", "random"],
+    }
+
+    if cmd in actions:
+        run(actions[cmd])
+    elif cmd == "Sources":
+        show_playlist_or_sources()
+
+
+def show_playlist_or_sources():
+    playlist = run(["mpc", "playlist"], capture_output=True)
+    lines = playlist.splitlines()
+
+    if len(lines) < 2:
+        select_source()
+        return
+
+    options = ["󰲸  [Playlists]"] + [f"[{i+1}] {line}" for i, line in enumerate(lines)]
+    selection = rofi_menu("Play:", "Select track or source", options, selected_row=1)
+
+    if not selection:
+        return
+
+    if selection.startswith("󰲸"):
+        select_source()
+    elif selection.startswith("[") and "]" in selection:
+        track = selection[1 : selection.find("]")]
+        if track.isdigit():
+            run(["mpc", "play", track])
+
+
+def select_source():
+    playlists = run(["mpc", "lsplaylists"], capture_output=True).splitlines()
+    options = [f"󰐑  {p}" for p in playlists]
+    selection = rofi_menu("Select Source:", get_current_song(), options)
+
+    if not selection:
+        return
+
+    # Extraer nombre limpio (después del ícono y espacio)
+    name = selection.split(maxsplit=1)[-1]
+
+    run(["mpc", "clear"])
+
+    run(["mpc", "load", name])
+
+    run(["mpc", "play"])
+
+
+def main():
+    options = list(icon_map.keys())
+    current = get_current_song()
+    selection = rofi_menu("MPC", f"🎜  {current}", options, selected_row=1)
+
+    if selection:
+        handle_command(selection)
+
+
+if __name__ == "__main__":
+    main()

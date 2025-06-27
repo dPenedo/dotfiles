@@ -47,12 +47,13 @@ return {
     },
   },
   { "datsfilipe/vesper.nvim" },
-  {
-    "killitar/obscure.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  -- {
+  --   "killitar/obscure.nvim",
+  --   -- Falta contraste
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
   -- {
   --   "dpenedo/melange-nvim",
   -- },
@@ -157,15 +158,14 @@ return {
   --   -- Mucho contraste
   --   lazy = false,
   -- },
-  -- {
-  --   "rjshkhr/shadow.nvim",
-  --   -- Agradable, minimalista, me gusta el tono verdoso, le faltan un par de implementaciones de plugins y opciones para configurar
-  --   priority = 1000,
-  --   config = function()
-  --     vim.opt.termguicolors = true
-  --     vim.cmd.colorscheme("shadow")
-  --   end,
-  -- },
+  {
+    "rjshkhr/shadow.nvim",
+    -- Agradable, minimalista, me gusta el tono verdoso, le faltan un par de implementaciones de plugins, los comentarios casi no se ven y los numeros de linea tampooc y opciones para configurar
+    priority = 1000,
+    config = function()
+      vim.opt.termguicolors = true
+    end,
+  },
   {
     "romanaverin/charleston.nvim",
     name = "charleston",
@@ -187,6 +187,7 @@ return {
       dim_inactive = true, --
     },
   },
+  { "aliqyan-21/darkvoid.nvim" },
   {
     "vague2k/vague.nvim",
     opts = {
@@ -222,6 +223,7 @@ return {
   -- Tiene un par de colores que se ven poco, como el marrón
   -- {
   --   "0xstepit/flow.nvim",
+  --   -- Brilloso
   --   lazy = false,
   --   priority = 1000,
   --   opts = {
@@ -271,14 +273,14 @@ return {
   --     -- configurations
   --   },
   -- },
-  -- -- {
-  -- --   "f4z3r/gruvbox-material.nvim",
-  -- --   name = "gruvbox-material",
-  -- --   lazy = false,
-  -- --   priority = 1000,
-  -- --   opts = {
-  -- --     contrast = "hard",
-  -- --   },
+  -- {
+  --   "f4z3r/gruvbox-material.nvim",
+  --   name = "gruvbox-material",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     contrast = "hard",
+  --   },
   -- {
   --   "wtfox/jellybeans.nvim",
   --   opts = {
@@ -300,7 +302,7 @@ return {
   -- },
   {
     "gbprod/nord.nvim",
-    -- Bien, pero le falta contraste, se le puede dar cambiando el fondo
+    -- Bien, pero le falta contraste con el bg, se le puede dar cambiando el fondo
     lazy = false,
     priority = 1000,
     opts = {
@@ -323,8 +325,15 @@ return {
   -- Usa rojo
   -- { "bluz71/vim-nightfly-colors" },
   -- Usa rojo
-  { "kvrohit/rasmus.nvim" },
-  -- { "nvimdev/zephyr-nvim" },
+  {
+    "kvrohit/rasmus.nvim",
+    lazy = false,
+
+    config = function()
+      vim.g.rasmus_transparent = true
+    end,
+  },
+  { "nvimdev/zephyr-nvim" },
   -- { "kyazdani42/blue-moon" },
   --{
   --
