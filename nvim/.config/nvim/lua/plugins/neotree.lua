@@ -24,6 +24,14 @@ return {
     },
   },
   opts = {
+    event_handlers = {
+      {
+        event = "neo_tree_buffer_enter",
+        handler = function()
+          vim.opt_local.relativenumber = true
+        end,
+      },
+    },
     window = {
       position = "current",
       mappings = {
@@ -69,7 +77,7 @@ return {
   keys = {
     {
       "<leader>e",
-      "<CMD>Neotree position=left<CR>",
+      "<CMD>Neotree position=right<CR>",
       desc = "Explorer NeoTree (Root Dir)",
     },
     -- {

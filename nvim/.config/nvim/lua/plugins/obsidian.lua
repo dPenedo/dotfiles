@@ -11,8 +11,8 @@ return {
   opts = {
     workspaces = {
       {
-        name = "Notas",
-        path = "~/Documentos/Dropbox/Notas/",
+        name = "personal",
+        path = "~/vaults/personal",
       },
     },
     completion = {

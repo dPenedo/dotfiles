@@ -65,7 +65,7 @@ end
 
 local function statusline_focused()
   -- Styles
-  local color_column = "%#Operator#"
+  local color_column = "%#DiagnosticFloatingInfo#"
   local file_name_color = "%#StatusLine#"
   local modified_color = "%#WarningMsg#"
   local accent_color = "%#Title#"

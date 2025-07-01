@@ -10,14 +10,6 @@ return {
       icons = { "# ", "## ", "### ", "#### ", "##### ", "###### " },
       signs = { "󰫎 " },
       width = "full",
-      backgrounds = {
-        "RenderMarkdownH1Bg",
-        "RenderMarkdownH2Bg",
-        "RenderMarkdownH2Bg",
-        "RenderMarkdownH2Bg",
-        "RenderMarkdownH2Bg",
-        "RenderMarkdownH2Bg",
-      },
       -- The 'level' is used to index into the list using a clamp
       -- Highlight for the heading and sign icons
       foregrounds = {

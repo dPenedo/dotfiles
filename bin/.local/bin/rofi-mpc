@@ -8,6 +8,7 @@ icon_map = {
     "󰒭  Next": "Next",
     "󰒮  Prev": "Prev",
     "  Random": "Random",
+    "󰕾  Volume": "Volume",
     "  Sources": "Sources",
 }
 
@@ -54,7 +55,46 @@ def get_current_song():
     )
 
 
-def handle_command(cmd_with_icon):
+def get_current_volume():
+    try:
+        vol = run(["mpc", "volume"], capture_output=True)
+        return int(vol.split(":")[1].strip().replace("%", ""))
+    except:
+        return 50  # Valor por defecto si no se puede obtener
+
+
+def set_volume():
+    current_vol = get_current_volume()
+    options = [
+        "󰝚  0%",
+        "󰖀  25%",
+        "󰕾  50%",
+        "󰕾  75%",
+        "󰕿  100%",
+        f"󰎈  Custom ({current_vol}%)",
+    ]
+
+    selection = rofi_menu("Volume:", "Set volume level", options, selected_row=2)
+
+    if not selection:
+        return
+
+    if selection.startswith("󰎈"):
+        # Custom volume
+        custom_vol = rofi_menu(
+            "Volume %:", f"Current: {current_vol}%", [str(i) for i in range(0, 101, 5)]
+        )
+        if custom_vol and custom_vol.isdigit():
+            vol = int(custom_vol)
+            run(["mpc", "volume", str(vol)])
+    else:
+        # Predefined volumes
+        vol_map = {"󰝚  0%": 0, "󰖀  25%": 25, "󰕾  50%": 50, "󰕾  75%": 75, "󰕿  100%": 100}
+        vol = vol_map.get(selection, current_vol)
+        run(["mpc", "volume", str(vol)])
+
+
+def handle_command(cmd_with_icon: str):
     cmd = icon_map.get(cmd_with_icon)
     if not cmd:
         return
@@ -68,6 +108,8 @@ def handle_command(cmd_with_icon):
 
     if cmd in actions:
         run(actions[cmd])
+    elif cmd == "Volume":
+        set_volume()
     elif cmd == "Sources":
         show_playlist_or_sources()
 
@@ -106,16 +148,17 @@ def select_source():
     name = selection.split(maxsplit=1)[-1]
 
     run(["mpc", "clear"])
-
     run(["mpc", "load", name])
-
     run(["mpc", "play"])
 
 
 def main():
     options = list(icon_map.keys())
     current = get_current_song()
-    selection = rofi_menu("MPC", f"🎜  {current}", options, selected_row=1)
+    current_vol = get_current_volume()
+    selection = rofi_menu(
+        "MPC", f"🎜  {current}\n󰕾  Volume: {current_vol}%", options, selected_row=1
+    )
 
     if selection:
         handle_command(selection)

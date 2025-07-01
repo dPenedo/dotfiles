@@ -12,8 +12,10 @@ return {
       cursorline = true,
       debounce_delay = 15,
       preserve_window_proportions = false,
-      number = false,
-      relativenumber = false,
+      number = true,
+      side = "right",
+      width = 45,
+      relativenumber = true,
       signcolumn = "yes",
     },
     renderer = {

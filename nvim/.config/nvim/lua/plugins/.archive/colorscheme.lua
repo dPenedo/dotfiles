@@ -54,9 +54,9 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
-  -- {
-  --   "dpenedo/melange-nvim",
-  -- },
+  {
+    "dpenedo/melange-nvim",
+  },
   -- No va bien con snack picker
   -- {
   --   "Mofiqul/dracula.nvim",
@@ -281,12 +281,13 @@ return {
   --   opts = {
   --     contrast = "hard",
   --   },
-  -- {
-  --   "wtfox/jellybeans.nvim",
-  --   opts = {
-  --     -- transparent = false,
-  --   },
   -- },
+  {
+    "wtfox/jellybeans.nvim",
+    opts = {
+      -- transparent = false,
+    },
+  },
   -- Sobreescribe el color que esté como determinado
 
   -- {
@@ -332,6 +333,9 @@ return {
     config = function()
       vim.g.rasmus_transparent = true
     end,
+  },
+  {
+    "rose-pine/neovim",
   },
   { "nvimdev/zephyr-nvim" },
   -- { "kyazdani42/blue-moon" },

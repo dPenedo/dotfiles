@@ -3,20 +3,25 @@
 # Archivo temporal para Neovim
 TEMP_FILE=$(mktemp --suffix=.txt)
 
-# Obtener el texto seleccionado (si lo hay)
+# Obtener el texto del portapapeles
 SELECTION=$(xclip -o -selection clipboard)
 
-# Si hay selección, escribirla en el archivo temporal
+# Si hay selección, guardarla
 if [ -n "$SELECTION" ]; then
-  echo "$SELECTION" >"$TEMP_FILE"
+  echo "$SELECTION" > "$TEMP_FILE"
 fi
 
-# Ejecutar Alacritty con Neovim en una ventana flotante
-bspc rule -a Alacritty state=floating sticky=on layer=above rectangle=1000x600+100+50
-alacritty -t "FloatingNvim" -e nvim "$TEMP_FILE"
+# # Reglas opcionales (aquí no se requiere geometría si no es flotante)
+# bspc rule -a "tempNvim"
 
-# Después de salir de Neovim, copiar el contenido al portapapeles
+# Lanzar kitty con clase personalizada
+kitty --class tempNvim -T "tempNvim" -e nvim "$TEMP_FILE"
+
+# Después de cerrar Neovim
 cat "$TEMP_FILE" | xclip -selection clipboard
 
-# Eliminar el archivo temporal
+# Opcional: emular Ctrl+Shift+V
+xdotool key Ctrl+v
+
+# Eliminar archivo temporal
 rm "$TEMP_FILE"
