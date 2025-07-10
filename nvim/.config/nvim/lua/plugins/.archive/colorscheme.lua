@@ -218,6 +218,7 @@ return {
       },
     },
   },
+  { "adisen99/apprentice.nvim", dependencies = { "rktjmp/lush.nvim" } },
   --
   -- { "tobi-wan-kenobi/zengarden", dependencies = "rktjmp/lush.nvim" },
   -- Tiene un par de colores que se ven poco, como el marrón
