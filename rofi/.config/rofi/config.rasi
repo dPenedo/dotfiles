@@ -18,4 +18,4 @@ configuration {
 	kb-row-right: "Control+Page_Down,Control+l";
 }
 
-@theme "kanagawa"
+@theme "eibar"

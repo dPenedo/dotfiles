@@ -1,6 +1,6 @@
 function ColorizeScrollback()
-	-- vim.wo.number = false
-	-- vim.wo.relativenumber = false
+	vim.wo.number = false
+	vim.wo.relativenumber = false
 	vim.wo.statuscolumn = ""
 	vim.wo.signcolumn = "no"
 	local orig_buf = vim.api.nvim_get_current_buf()
