@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=DeepSeek
 Comment=Access DeepSeek via Brave Browser
-Exec=/opt/firefox/firefox --new-window=https://chat.deepseek.com
+Exec=brave-browser --app=https://chat.deepseek.com
 Icon=~/.local/share/applications/icons/deep.png
 Terminal=false
 Type=Application

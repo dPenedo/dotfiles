@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=WhatsApp
 Comment=Access WhatsApp Web via Brave Browser
-Exec=/opt/firefox/firefox --new-window=https://web.whatsapp.com
+Exec=brave-browser --app=https://web.whatsapp.com
+#Exec=/opt/firefox/firefox --new-window=https://web.whatsapp.com
 Icon=~/.local/share/applications/icons/whatsapp.png
 Terminal=false
 Type=Application

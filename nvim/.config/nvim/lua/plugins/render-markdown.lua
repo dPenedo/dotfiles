@@ -4,21 +4,7 @@ return {
   dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" }, -- if you prefer nvim-web-devicons
   opts = {
     heading = {
-      enabled = true,
-      sign = true,
-      position = "overlay",
-      icons = { "# ", "## ", "### ", "#### ", "##### ", "###### " },
-      signs = { "󰫎 " },
-      width = "full",
-      -- The 'level' is used to index into the list using a clamp
-      -- Highlight for the heading and sign icons
-      foregrounds = {
-        "Constant",
-        "Operator",
-        "Type",
-        "Function",
-        "RenderMarkdownH1",
-      },
+      enabled = false,
     },
     link = {
       enabled = true,

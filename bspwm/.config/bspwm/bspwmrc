@@ -25,6 +25,7 @@ bspc config urgent_border_color "#dd2727"
 # Rules
 bspc rule -a Gpick state=floating
 bspc rule -a copyq state=floating
+bspc rule -a galculator state=floating
 bspc rule -a Xfce4-panel state=floating border=off
 bspc rule -a xfce4-popup-whiskermenu state=floating border=off
 bspc rule -a Whisker\ Menu state=floating border=off

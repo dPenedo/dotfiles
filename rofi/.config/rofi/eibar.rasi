@@ -1,7 +1,7 @@
 * {
-    bg:  #212121;
+    bg:  #222222;
     bg-alt: #303030;
-    border: #2E323D;
+    border: #404040;
     bg-selected: #4A5AA8;
     accent: #A99BC5;
     accent2: #95B987;
@@ -50,16 +50,17 @@ textbox-prompt-colon {
 }
 
 entry {
-    padding: 6px;
+    padding: 8px;
     margin: 20px 0px 0px 10px;
-    text-color: @fg;
-    background-color: @bg;
+    text-color: @accent2;
+    border-radius: 3px;
+    background-color: @bg-alt;
 }
 
 listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
-    margin: 10px 0px 0px 20px;
+    margin: 20px 0px 0px 20px;
     columns: 2;
     lines: 5;
     background-color: @bg;
@@ -106,8 +107,7 @@ message {
 }
 
 textbox {
-    padding: 6px;
-    margin: 20px 0px 0px 20px;
+    padding: 8px;
     text-color: @accent2;
     background-color: @bg-alt;
 }
