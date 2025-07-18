@@ -4,6 +4,10 @@ return {
   opts = {
     skip_confirm_for_simple_edits = true,
     default_file_explorer = true,
+    view_options = {
+      -- Show files and directories that start with "."
+      show_hidden = true,
+    },
     keymaps = {
 
       ["<C-p>"] = false,
@@ -13,10 +17,6 @@ return {
       ["<C-l>"] = "actions.select",
       ["<leader>."] = "actions.toggle_hidden",
       ["<leader>q"] = "actions.close",
-    },
-    view_options = {
-      -- Show files and directories that start with "."
-      show_hidden = true,
     },
   },
   -- optional dependencies

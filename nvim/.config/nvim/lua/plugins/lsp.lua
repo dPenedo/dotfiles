@@ -15,7 +15,7 @@ return {
 
     inlay_hints = { enabled = false },
   },
-  keys = {
-    { "<c-k>", false },
-  },
+  -- keys = {
+  --   { "<c-k>", false },
+  -- },
 }
