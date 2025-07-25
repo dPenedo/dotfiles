@@ -2,18 +2,17 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      -- marksman = {},
       pyright = {
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "off", -- Desactiva la comprobación de tipos estricta
+              typeCheckingMode = "off",
             },
           },
         },
       },
     },
-
-    inlay_hints = { enabled = false },
   },
   -- keys = {
   --   { "<c-k>", false },

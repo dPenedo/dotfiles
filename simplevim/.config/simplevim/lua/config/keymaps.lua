@@ -14,9 +14,9 @@ map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window W
 
 map("n", "<leader>w", "<cmd>update<cr>", { desc = "Windows", remap = true })
 map("i", "jj", "<ESC>", { desc = "Salir del modo de inserción" })
+map("i", "jk", "<ESC>", { desc = "Salir del modo de inserción" })
 map("n", "<ESC>", "<CMD>noh<CR>", { desc = "Salir del modo de inserción" })
 map("v", "<ESC>", "<CMD>noh<CR>", { desc = "Salir del modo de inserción" })
-map("i", "jk", "<ESC>la", { desc = "Salir del modo de inserción y agregar un espacio" })
 map("i", "kj", "<ESC>i", { desc = "Salir del modo de inserción y quitar un espacio" })
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "'", "`", { desc = "backtick asignado a '" })

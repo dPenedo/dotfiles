@@ -96,33 +96,36 @@ if [ -f "$lfcd" ]; then
   source "$lfcd"
 fi
 
-# Añadir ~/.local/bin a PATH
-#
-# FZF
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH"
 
-# Zoxide
-export PATH="$PATH:$HOME/.local/bin"
+# Zoxide (navegación por terminal mejorada)
 eval "$(zoxide init zsh)"
 
-
+# NVM (Node Version Manager)
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 
-# Created by `pipx` on 2024-02-10 16:28:16
-export PATH="$PATH:$HOME/.local/bin"
-# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# Python (pipx)
+# Ya se agregó $HOME/.local/bin arriba
+
+# Java (elige una sola versión activa)
 export JAVA_HOME=/usr/lib/jvm/java-21
+
+# Go
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
-export GOBIN=$GOPATH/bin   # opcional, define la ubicación de los binarios
-export PATH=$PATH:$GOBIN   # añade los binarios de Go al PATH
-# . "/home/daniel/.deno/env"
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
+# Rust
 . "$HOME/.cargo/env"
 export CARGO_TARGET_DIR=$HOME/.cargo/target
-export PATH="$HOME/.npm-global/bin:$PATH"
+
+# PyCharm
 export PATH=$PATH:/home/daniel/Descargas/Programas/pycharm-2024.3.1/bin
 
+# Iniciar tmux automáticamente si estás en kitty y no dentro de tmux
 if [ -z "$TMUX" ] && [ "$TERM" = "xterm-kitty" ]; then
-  tmux attach || exec tmux new-session && exit;
+  tmux attach || exec tmux new-session
 fi

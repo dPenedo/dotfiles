@@ -5,7 +5,6 @@ return {
       ghost_text = {
         enabled = false,
       },
-      list = { selection = { preselect = false } },
     },
   },
 }

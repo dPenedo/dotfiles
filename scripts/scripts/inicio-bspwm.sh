@@ -3,13 +3,13 @@
 # xdg-open https://www.tutanota.com &
 
 # brave-browser &
-/opt/firefox/firefox &
+brave-browser &
 # firefox-developer-edition &
 sleep 7
 webstorm &
 bash ~/scripts/xmodmap.sh &
 # brave-browser -app=https://chat.openai.com &
-/opt/firefox/firefox --new-window=https://chat.openai.com &
+brave-browser --app=https://chat.openai.com &
 # brave-browser -app=https://discord.com/app &
 # brave-browser -app=https://ticktick.com &
 ~/.local/kitty.app/bin/kitty &

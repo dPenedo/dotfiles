@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Calendar
 Comment=Access Gmail via Brave Browser
-Exec=/opt/firefox/firefox --new-window=https://calendar.google.com
+Exec=brave-browser --app=https://calendar.google.com
 #Exec=/opt/firefox/firefox --new-window=https://calendar.google.com
 Icon=~/.local/share/applications/icons/calendar.png
 Terminal=false

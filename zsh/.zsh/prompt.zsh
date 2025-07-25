@@ -35,7 +35,7 @@ get_virtualenv_name() {
 # Configurar el prompt
 PROMPT=' 
 $(get_virtualenv_name)%F{blue}%~%f  ${vcs_info_msg_0_} 
-%F{blue}  %f'
+%F{yellow}  %f'
 
 # Configurar el prompt para comandos continuados
 RPROMPT='%F{yellow}⏎ %?%f'

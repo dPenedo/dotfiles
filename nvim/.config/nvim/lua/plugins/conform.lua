@@ -5,9 +5,10 @@ return {
       -- markdown = {}, -- Deshabilitar formateadores para Markdown
       -- Opcional: usa otro formateador como "markdownlint" si lo prefieres
       markdown = { "prettierd" },
-      ["html"] = { "prettierd" },
+      -- ["html"] = { "prettierd" },
       ["sh"] = {},
       ["javascript"] = { "prettierd" },
+      ["html"] = { "prettierd" },
       ["javascriptreact"] = { "prettierd" },
       ["python"] = { "black" },
     },

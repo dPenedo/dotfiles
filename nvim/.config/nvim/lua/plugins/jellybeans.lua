@@ -1,51 +1,51 @@
 return {
-  {
-    "EdenEast/nightfox.nvim",
-    opts = {
-      options = {
-        transparent = false,
-        dim_inactive = true,
-        styles = { -- Style to be applied to different syntax groups
-          comments = "italic", -- Value is any valid attr-list value `:help attr-list`
-          conditionals = "italic",
-          constants = "bold",
-          functions = "NONE",
-          keywords = "NONE",
-          numbers = "NONE",
-          operators = "NONE",
-          strings = "italic",
-          types = "italic",
-          variables = "NONE",
-        },
-      },
-      palettes = {
-        dayfox = {
-          -- Defining multiple shades is done by passing a table
-          blue = { base = "#5E69AF" },
-          red = { base = "#7E586B", bright = "#907265", dim = "#907265" },
-          bg0 = "#E2E0DB", -- Lighter bg (colorcolm folds)
-          bg2 = "#D6D3CD", -- Lighter bg (colorcolm folds)
-        },
-        nordfox = {
-          -- bg0 = "#232831", -- Dark bg (status line and float)
-          bg1 = "#242424", -- Default bg
-        },
-      },
-      groups = {
-        dayfox = {
-          RenderMarkdownLink = { fg = "#5E69AF" },
-          RenderMarkdownH1 = { fg = "#AC5402" },
-          RenderMarkdownH2 = { fg = "#6E33CE" },
-          RenderMarkdownH3 = { fg = "#709244" },
-          RenderMarkdownH4 = { fg = "#464C8B" },
-          RenderMarkdownH5 = { fg = "#464C8B" },
-          RenderMarkdownH6 = { fg = "#464C8B" },
-          ["@markup.heading"] = { fg = "#464C8B", style = "bold" },
-          ["@markup.link.label"] = { fg = "#709244" },
-        },
-      },
-    },
-  },
+  -- {
+  --   "EdenEast/nightfox.nvim",
+  --   opts = {
+  --     options = {
+  --       transparent = false,
+  --       dim_inactive = true,
+  --       styles = { -- Style to be applied to different syntax groups
+  --         comments = "italic", -- Value is any valid attr-list value `:help attr-list`
+  --         conditionals = "italic",
+  --         constants = "bold",
+  --         functions = "NONE",
+  --         keywords = "NONE",
+  --         numbers = "NONE",
+  --         operators = "NONE",
+  --         strings = "italic",
+  --         types = "italic",
+  --         variables = "NONE",
+  --       },
+  --     },
+  --     palettes = {
+  --       dayfox = {
+  --         -- Defining multiple shades is done by passing a table
+  --         blue = { base = "#5E69AF" },
+  --         red = { base = "#7E586B", bright = "#907265", dim = "#907265" },
+  --         bg0 = "#E2E0DB", -- Lighter bg (colorcolm folds)
+  --         bg2 = "#D6D3CD", -- Lighter bg (colorcolm folds)
+  --       },
+  --       nordfox = {
+  --         -- bg0 = "#232831", -- Dark bg (status line and float)
+  --         bg1 = "#242424", -- Default bg
+  --       },
+  --     },
+  --     groups = {
+  --       dayfox = {
+  --         RenderMarkdownLink = { fg = "#5E69AF" },
+  --         RenderMarkdownH1 = { fg = "#AC5402" },
+  --         RenderMarkdownH2 = { fg = "#6E33CE" },
+  --         RenderMarkdownH3 = { fg = "#709244" },
+  --         RenderMarkdownH4 = { fg = "#464C8B" },
+  --         RenderMarkdownH5 = { fg = "#464C8B" },
+  --         RenderMarkdownH6 = { fg = "#464C8B" },
+  --         ["@markup.heading"] = { fg = "#464C8B", style = "bold" },
+  --         ["@markup.link.label"] = { fg = "#709244" },
+  --       },
+  --     },
+  --   },
+  -- },
   { "datsfilipe/vesper.nvim" },
   -- {
   --   "killitar/obscure.nvim",
@@ -338,7 +338,7 @@ return {
   {
     "rose-pine/neovim",
   },
-  { "nvimdev/zephyr-nvim" },
+  -- { "nvimdev/zephyr-nvim" },
   -- { "kyazdani42/blue-moon" },
   --{
   --

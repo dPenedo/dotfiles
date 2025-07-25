@@ -13,8 +13,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
-require("config.statusline")
 require("lazy").setup({
+  -- Surround on vs code
   {
     "tpope/vim-surround",
     cond = vim.g.vscode,
