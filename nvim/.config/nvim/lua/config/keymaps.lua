@@ -7,6 +7,7 @@ vim.keymap.del("n", "<A-j>")
 vim.keymap.del("n", "<C-j>")
 vim.keymap.del("n", "<C-k>")
 vim.keymap.del("n", "<leader>l")
+-- vim.keymap.del("n", "<leader>fn")
 vim.keymap.del("n", "<C-l>")
 vim.keymap.del("i", "<A-j>")
 vim.keymap.del("v", "<A-j>")
@@ -48,17 +49,60 @@ map("n", "<A-n>", function()
   })
 end, { desc = "Insertar plantilla de nota" })
 
+-- map("n", "<tab>", function()
+--   local line = vim.fn.line(".")
+--   local current_foldlevel = vim.fn.foldlevel(line)
+--   if current_foldlevel == 1 then
+--     vim.cmd("set foldlevel=1")
+--     vim.g.fold_toggle_state = 1 -- Inicializar el estado
+--   end
+--   if vim.g.fold_toggle_state == nil then
+--     vim.g.fold_toggle_state = 1 -- Inicializar el estado
+--   end
+--
+--   if vim.g.fold_toggle_state == 1 then
+--     -- Estado 1: Solo foldlevel=1
+--     vim.cmd("set foldlevel=1")
+--     vim.g.fold_toggle_state = 2 -- Cambiar al siguiente estado
+--   else
+--     -- Estado 2: foldlevel=1 y alternar fold actual con zA
+--     vim.cmd("set foldlevel=1")
+--     vim.cmd("normal! zA")
+--     vim.g.fold_toggle_state = 1 -- Cambiar al siguiente estado
+--   end
+-- end, { desc = "Alternar entre foldlevel=1 y foldlevel=1 + zA" })
+--
 map("n", "<leader>np", function()
   local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
-  local note_path = "~/Documentos/Dropbox/Notas/Proyectos/" .. project_name .. "/" .. project_name .. ".md"
-  vim.cmd("e " .. note_path)
+  local base_path = vim.fn.expand("~/Documentos/Dropbox/Notas/Proyectos/")
+  local project_dir = base_path .. project_name
+  local note_path = project_dir .. "/" .. project_name .. ".md"
+
+  -- Crear carpeta si no existe
+  if vim.fn.isdirectory(project_dir) == 0 then
+    vim.fn.mkdir(project_dir, "p")
+  end
+
+  -- Abrir el archivo
+  vim.cmd("edit " .. note_path)
+
+  -- Si el archivo está vacío, escribir plantilla mínima
+  if vim.fn.line("$") == 1 and vim.fn.getline(1) == "" then
+    local lines = {
+      "# " .. project_name,
+      "",
+      "Fecha: " .. os.date("%d-%m-%Y"),
+      "#Proyectos",
+    }
+    vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
+  end
 end, { desc = "Abrir nota del proyecto" })
 
 map("n", "<leader>no", function()
   local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
-  local note_path = "~/Documentos/Dropbox/Notas/Proyectos/" .. project_name .. "/" .. project_name .. ".norg"
+  local note_path = "~/Documentos/Dropbox/Notas/Proyectos/" .. project_name .. "/" .. project_name .. ".org"
   vim.cmd("e " .. note_path)
-end, { desc = "Abrir neorg del proyecto" })
+end, { desc = "Abrir org del proyecto" })
 
 map(
   "n",

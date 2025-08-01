@@ -28,7 +28,6 @@
     "editor.scrollbar.horizontal": "visible",
     "editor.scrollbar.vertical": "visible",
     "editor.hideCursorInOverviewRuler": true,
-    "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
     "keyboard.dispatch": "keyCode",
     "editor.unicodeHighlight.allowedCharacters": {
@@ -273,8 +272,6 @@
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.folders.theme": "specific",
     "window.titleBarStyle": "native",
-    "window.menuBarVisibility": "toggle",
-    "window.customTitleBarVisibility": "never",
     "editor.fontSize": 13.2,
     "github.copilot.enable": {
         "*": false,
@@ -287,5 +284,6 @@
     "python.analysis.extraPaths": [
         "./src"
     ],
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "window.customTitleBarVisibility": "never"
 }

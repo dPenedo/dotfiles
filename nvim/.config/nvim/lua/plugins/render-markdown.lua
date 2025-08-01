@@ -3,19 +3,22 @@ return {
   event = "VeryLazy",
   dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" }, -- if you prefer nvim-web-devicons
   opts = {
+    file_types = { "markdown" },
     heading = {
-      enabled = false,
+      enabled = true,
+      render_modes = false,
+      atx = true,
+      setext = true,
+      sign = true,
+      icons = { "# ", "## ", "### ", "##### ", "###### ", "####### " },
+      position = "overlay",
+      width = "full",
+      -- left_margin = { 0.5, 0, 0, 0, 0 },
+      border = true,
+      virual_border = true,
     },
     link = {
       enabled = true,
-      image = "󰥶 ",
-      email = "󰀓 ",
-      hyperlink = "󰌹 ",
-      highlight = "RenderMarkdownLink",
-      wiki = { icon = "󱗖 ", highlight = "RenderMarkdownWikiLink" },
-      custom = {
-        web = { pattern = "^http[s]?://", icon = "󰖟 ", highlight = "RenderMarkdownLink" },
-      },
     },
     bullet = {
       -- Turn on / off list bullet rendering
@@ -30,9 +33,10 @@ return {
       -- highlight = "RenderMarkdownH1",
     },
     code = {
+      enabled = true,
       style = "full",
-      sign = "false",
-      position = "right",
+      sign = false,
+      position = "left",
       width = "block",
       right_pad = 10,
       -- left_pad = 2,

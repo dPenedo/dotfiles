@@ -18,7 +18,7 @@ HILABETEAK = {
     "May": "Maiatza",
     "June": "Ekaina",
     "July": "Uztaila",
-    "Agost": "Abuztua",
+    "August": "Abuztua",
     "September": "Iraila",
     "October": "Urria",
     "November": "Azaroa",

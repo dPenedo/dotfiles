@@ -1,7 +1,7 @@
 return {
   "nvim-orgmode/orgmode",
   dependencies = {
-    "nvim-orgmode/org-bullets.nvim",
+    -- "nvim-orgmode/org-bullets.nvim",
     "Saghen/blink.cmp",
   },
   event = "VeryLazy",
@@ -13,18 +13,19 @@ return {
       org_default_notes_file = "~/Documentos/Dropbox/Notas/refile.org",
       mappings = {
         org = {
-          org_toggle_checkbox = "<leader>oT",
+          org_toggle_checkbox = "<leader>od",
           org_toggle_heading = "<leader>oh",
         },
       },
     })
-    require("org-bullets").setup()
-
-    -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
-    -- add ~org~ to ignore_install
-    -- require('nvim-treesitter.configs').setup({
-    --   ensure_installed = 'all',
-    --   ignore_install = { 'org' },
-    -- })
+    -- require("org-bullets").setup()
   end,
+
+  -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
+  -- add ~org~ to ignore_install
+  -- require('nvim-treesitter.configs').setup({
+  --   ensure_installed = 'all',
+  --   ignore_install = { 'org' },
+  -- })
+  -- end
 }

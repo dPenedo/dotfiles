@@ -39,6 +39,26 @@ return {
     words = {
       enabled = false,
     },
+    picker = {
+      layout = {
+
+        preview = false,
+        layout = {
+          box = "horizontal",
+          width = 0.8,
+          min_width = 120,
+          height = 0.8,
+          {
+            box = "vertical",
+            border = "top",
+            title = "{title} {live} {flags}",
+            { win = "input", height = 1, border = "bottom" },
+            { win = "list", border = "none" },
+          },
+          { win = "preview", title = "{preview}", border = "rounded", width = 0.5 },
+        },
+      },
+    },
   },
   keys = {
     {
@@ -48,6 +68,13 @@ return {
       end,
       desc = "Find files",
     },
+    -- {
+    --   "<leader>e",
+    --   function()
+    --     Snacks.picker.explorer()
+    --   end,
+    --   desc = "Find files",
+    -- },
     {
       "<leader>fz",
       function()
@@ -61,6 +88,20 @@ return {
         Snacks.picker.undo()
       end,
       desc = "undo",
+    },
+    {
+      "<leader>fn",
+      function()
+        Snacks.picker.files({ cwd = "~/Documentos/Dropbox/Notas", title = "Notas" })
+      end,
+      desc = "Find note",
+    },
+    {
+      "<leader>nh",
+      function()
+        Snacks.notifier.show_history()
+      end,
+      desc = "Find note",
     },
     {
       "<leader>fd",

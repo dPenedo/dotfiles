@@ -5,6 +5,7 @@ base_dir="/home/daniel/Documentos/repos"
 dotfiles="/home/daniel/.dotfiles/"
 notas="/home/daniel/Documentos/Dropbox/Notas/"
 kanagawa="/home/daniel/.local/share/nvim/lazy/kanagawa.nvim"
+eibar="/home/daniel/.local/share/nvim/lazy/eibar.nvim"
 
 # Font Styles
 bold=$(tput bold)
@@ -56,4 +57,7 @@ echo "--------------------------------------------------------------------------
 
 if [ -d "$kanagawa" ]; then
   check_git_status "$kanagawa" "kanagawa"
+fi
+if [ -d "$eibar" ]; then
+  check_git_status "$eibar" "eibar"
 fi

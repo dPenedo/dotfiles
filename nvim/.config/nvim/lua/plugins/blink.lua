@@ -1,5 +1,5 @@
 return {
-  "saghen/blink.cmp",
+  "Saghen/blink.cmp",
   opts = {
     completion = {
       ghost_text = {

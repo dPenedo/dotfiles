@@ -9,7 +9,7 @@
 --
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown", "text", "norg" },
+  pattern = { "markdown", "text", "org" },
   callback = function()
     vim.opt_local.spell = false
   end,
@@ -47,7 +47,36 @@ vim.keymap.set("n", "<leader>na", function()
 end, { desc = "[n]ew [a]tom" })
 
 local M = {}
+
 function M.setup_markdown_keymaps()
+  vim.keymap.set("i", "<A-=>", function()
+    Snacks.picker.files({
+      cwd = "~/Documentos/Dropbox/Notas",
+      format = "file",
+      confirm = function(picker, item)
+        if not item then
+          vim.notify("No se pudo obtener la ruta del archivo", vim.log.levels.ERROR)
+          return
+        end
+
+        picker:close()
+        -- Obtener el nombre del archivo sin extensión
+        local filename = vim.fn.fnamemodify(item.file, ":t:r")
+        local description = filename:gsub("[-_]", " ")
+        local link = string.format("[[%s|%s]]", filename, description)
+
+        -- Insertar en la posición actual del cursor
+        local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+        local line = vim.api.nvim_get_current_line()
+        local new_line = line:sub(1, col) .. link .. line:sub(col + 1)
+        vim.api.nvim_set_current_line(new_line)
+
+        -- Mover cursor al final del enlace
+        vim.api.nvim_win_set_cursor(0, { row, col + #link })
+      end,
+    })
+  end, { desc = "Insertar enlace a nota existente" })
+
   -- Alternar '- ' al inicio de la línea
   vim.keymap.set("n", "<leader>-", function()
     local cursor_pos = vim.api.nvim_win_get_cursor(0)

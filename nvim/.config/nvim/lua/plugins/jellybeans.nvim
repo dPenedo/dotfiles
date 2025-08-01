@@ -1,6 +1,0 @@
-return {
-    "wtfox/jellybeans.nvim",
-    opts = {
-      -- transparent = false,
-    },
-  },

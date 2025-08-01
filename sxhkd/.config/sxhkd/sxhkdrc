@@ -228,7 +228,8 @@ super + e
 
 
 super + b
-	/opt/firefox/firefox
+	# /opt/firefox/firefox
+  brave-browser
 	# firefox
 
 super + g 

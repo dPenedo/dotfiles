@@ -1,4 +1,6 @@
 return {
   "dPenedo/eibar.nvim",
-  opts = {},
+  opts = {
+    transparent = false, -- Boolean: Sets the background to transparent
+  },
 }
