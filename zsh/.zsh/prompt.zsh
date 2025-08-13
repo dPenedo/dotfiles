@@ -26,7 +26,7 @@ get_virtualenv_name() {
     # Obtener el nombre del directorio padre de la carpeta del virtual environment
     local project_name
     project_name=$(basename "$(dirname "$VIRTUAL_ENV")")
-    echo "%F{yellow}($project_name)%f "
+echo "%F{yellow}($project_name)%f "
   else
     echo ""
   fi

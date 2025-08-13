@@ -1,6 +1,7 @@
 return {
 
   "folke/snacks.nvim",
+  vscode = false,
   opts = {
     image = {
       enabled = true,
@@ -90,7 +91,7 @@ return {
       desc = "undo",
     },
     {
-      "<leader>fn",
+      "<leader>nf",
       function()
         Snacks.picker.files({ cwd = "~/Documentos/Dropbox/Notas", title = "Notas" })
       end,
@@ -101,7 +102,7 @@ return {
       function()
         Snacks.notifier.show_history()
       end,
-      desc = "Find note",
+      desc = "Show notification history",
     },
     {
       "<leader>fd",

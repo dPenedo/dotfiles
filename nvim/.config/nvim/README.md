@@ -14,3 +14,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ##### lalal
 
 ###### lalal
+
+```py
+lll = "999"
+print(lll)
+```

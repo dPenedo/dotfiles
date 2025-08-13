@@ -1,0 +1,130 @@
+{
+  "fecha": {
+    "prefix": "fecha",
+    "body": ["${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}"],
+    "description": "Inserta la fecha en formato día/mes/año"
+  },
+  "frontmatter": {
+    "prefix": "frontmatter",
+    "body": ["---", "aliases: [${1}]", "tags: [${2}]", "---"],
+    "description": "Inserta la fecha en formato día/mes/año"
+  },
+  "Lista": {
+    "prefix": "lista",
+    "body": ["- **${1}**: ${0}"],
+    "description": "Insertar un elemento de lista en negrita"
+  },
+  "Output Python": {
+    "prefix": "outputpython",
+    "body": ["# Output: ${1}"],
+    "description": "Comentario de output en Python"
+  },
+  "Output JavaScript": {
+    "prefix": "outputjavascript",
+    "body": ["// Output: ${1}"],
+    "description": "Comentario de output en JavaScript"
+  },
+  "Bloque de relacionados": {
+    "prefix": "relacionados",
+    "body": ["## Relacionados", "- [[${1}]]"],
+    "description": "Bloque de relacionados"
+  },
+  "Checkbox": {
+    "prefix": "-",
+    "body": ["- [ ] ${0}"],
+    "description": "Nuevo checkbox"
+  },
+  "Imagen": {
+    "prefix": "imagen",
+    "body": ["![${1:descripcion}](${2:url} \"${3:título}\")"],
+    "description": "Nuevo enlace de imagen"
+  },
+  "Enlace": {
+    "prefix": "enlace",
+    "body": ["[${1:titulo}](${2:enlace})"],
+    "description": "Nuevo enlace"
+  },
+  "TIP": {
+    "prefix": "tip",
+    "body": ["> [!TIP]", "> ${1:Consejo útil}"],
+    "description": "Admonition de tipo TIP"
+  },
+  "TODO": {
+    "prefix": "todo",
+    "body": ["> [!TODO]", "> ${1:TODO}"],
+    "description": "Admonition de tipo TODO"
+  },
+  "WARNING": {
+    "prefix": "warning",
+    "body": ["> [!WARNING]", "> ${1:Advertencia}"],
+    "description": "Admonition de tipo WARNING"
+  },
+  "IMPORTANT": {
+    "prefix": "important",
+    "body": ["> [!IMPORTANT]", "> ${1:Importante}"],
+    "description": "Admonition de tipo IMPORTANT"
+  },
+  "EXAMPLE": {
+    "prefix": "example",
+    "body": ["> [!EXAMPLE]", "> ${1:Cita relevante}"],
+    "description": "Admonition de tipo EXAMPLE"
+  },
+  "QUOTE": {
+    "prefix": "quote",
+    "body": ["> [!QUOTE]", "> ${1:Cita relevante}"],
+    "description": "Admonition de tipo QUOTE"
+  },
+  "Comparación": {
+    "prefix": "comparacion",
+    "body": [
+      "Pros:",
+      "> [!Success]",
+      "",
+      "- ${1:Primer pro}",
+      "",
+      "Contras:",
+      "> [!Fail]",
+      "",
+      "- ${2:Primer contra}",
+      ""
+    ],
+    "description": "Comparación de pros y contras usando bloques de admonition."
+  },
+  "Proyecto": {
+    "prefix": "proyecto",
+    "body": [
+      "Hecho con:",
+      "- ${1}",
+      "",
+      "## Por hacer",
+      "> [!TODO]",
+      "- [ ] ${2}",
+      "",
+      "## Dudas",
+      "",
+      "- ${3}",
+      "",
+      "## Problemas",
+      "",
+      "- [ ] ${4}",
+      ""
+    ],
+    "description": "Plantilla para proyecto."
+  },
+  "Error": {
+    "prefix": "error",
+    "body": [
+      "[!ERROR]",
+      "> ${1:Snippet Error}",
+      "",
+      "## Causa",
+      "",
+      "Se produce porque ${2}.",
+      "",
+      "## Solución",
+      "",
+      "Para resolverlo, ${3}"
+    ],
+    "description": "Documentar un error."
+  }
+}

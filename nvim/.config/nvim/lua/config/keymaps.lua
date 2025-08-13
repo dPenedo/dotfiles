@@ -24,6 +24,9 @@ map("i", "jk", "<ESC>", { desc = "Salir del modo de inserción" })
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
 
+vim.api.nvim_set_keymap("v", "<leader>r", "<Plug>SnipRun", { silent = true })
+vim.api.nvim_set_keymap("n", "<leader>r", "<Plug>SnipRun", { silent = true })
+
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 map("v", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
@@ -203,3 +206,15 @@ map("n", "<leader>lt", function()
   -- Insertar la línea de depuración debajo de la actual
   vim.api.nvim_buf_set_lines(0, current_line, current_line, false, { debug_command })
 end, { desc = "Insert typeof debug statement for word under cursor", silent = true })
+
+-- Iron
+-- Seleccionar bloque # %% o #%%
+map("n", "<leader><cr>", function()
+  -- Buscar hacia atrás el inicio del bloque
+  vim.fn.search("# *%%", "bW")
+  -- Entrar a modo visual línea
+  vim.cmd("normal! jV")
+  -- Buscar hacia adelante el próximo delimitador y moverse una línea arriba
+  vim.fn.search("# *%%", "W")
+  vim.cmd("normal! k")
+end, { desc = "Seleccionar bloque #%%", remap = false })

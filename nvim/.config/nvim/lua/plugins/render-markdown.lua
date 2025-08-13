@@ -10,7 +10,7 @@ return {
       atx = true,
       setext = true,
       sign = true,
-      icons = { "# ", "## ", "### ", "##### ", "###### ", "####### " },
+      icons = { "# ", " ## ", "   ### ", "      ##### ", "        ###### ", "         ####### " },
       position = "overlay",
       width = "full",
       -- left_margin = { 0.5, 0, 0, 0, 0 },

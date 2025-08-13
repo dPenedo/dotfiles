@@ -1,6 +1,7 @@
 return {
   "Eutrius/Otree.nvim",
   lazy = false,
+  vscode = false,
   dependencies = {
     "stevearc/oil.nvim",
   },
@@ -13,6 +14,9 @@ return {
     git_signs = true,
     lsp_signs = true,
     oil = "",
+    keymaps = {
+      ["q"] = "actions.close_win",
+    },
   },
   keys = {
     { "<leader>e", "<CMD>Otree<CR>", desc = "Explorer" },

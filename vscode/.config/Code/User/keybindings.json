@@ -42,5 +42,58 @@
         "key": "alt+c alt+p",
         "command": "github.copilot.completions.toggle",
         "when": "github.copilot.activated"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "notebook.execute",
+        "when": "config.notebook.globalToolbar && !notebookHasSomethingRunning || config.notebook.globalToolbar && notebookInterruptibleKernel && !notebookHasSomethingRunning || config.notebook.globalToolbar && !notebookHasSomethingRunning && !notebookInterruptibleKernel"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+alt+space",
+        "command": "workbench.action.terminal.sendSequence",
+        "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+    },
+    {
+        "key": "alt+space",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "workbench.action.increaseViewHeight",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.decreaseViewHeight",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "!isAuxiliaryWindowFocusedContext"
     }
 ]
