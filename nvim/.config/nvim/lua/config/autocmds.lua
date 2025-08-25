@@ -8,6 +8,23 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 --
 
+-- Enviar líneas seleccionadas al pane de tmux de la derecha
+function _G.send_to_tmux()
+  -- obtener el rango de la selección visual
+  local start_line = vim.fn.line("'<")
+  local end_line = vim.fn.line("'>")
+  local lines = vim.fn.getline(start_line, end_line)
+
+  -- concatenar las líneas con saltos
+  local cmd = table.concat(lines, "\n")
+
+  -- escapar comillas para que tmux no se queje
+  cmd = cmd:gsub("'", "'\\''")
+
+  -- mandar el bloque al pane derecho
+  os.execute("tmux send-keys -t 2 '" .. cmd .. "' Enter")
+end
+
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown", "text", "org" },
   callback = function()

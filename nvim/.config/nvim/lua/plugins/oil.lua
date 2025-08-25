@@ -4,6 +4,7 @@ return {
   opts = {
     skip_confirm_for_simple_edits = true,
     default_file_explorer = true,
+    columns = {},
     view_options = {
       -- Show files and directories that start with "."
       show_hidden = true,
@@ -23,6 +24,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
     { "<leader>h", "<CMD>Oil <CR>", { desc = "Abrir Oil" } },
+    { "<C-h>", "<CMD>Oil <CR>", { desc = "Abrir Oil" } },
     { "<leader>-", "<CMD>Oil .<CR>", { desc = "Abrir Oil en root" } },
   },
 }

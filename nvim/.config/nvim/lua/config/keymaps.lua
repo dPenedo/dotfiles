@@ -30,6 +30,9 @@ vim.api.nvim_set_keymap("n", "<leader>r", "<Plug>SnipRun", { silent = true })
 map("n", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 map("v", "<leader>v", "ggVG", { desc = "Seleccionar todo" })
 
+map("t", "<Esc>", "<C-\\><C-n>", { silent = true })
+map("v", "<leader><cr>", ":lua send_to_tmux()<CR>", { noremap = true, silent = true })
+
 -- Clipboard
 map("v", "<leader>y", '"+y', { desc = "Copiar seleccion portapapeles" })
 map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })
@@ -51,6 +54,18 @@ map("n", "<A-n>", function()
     "",
   })
 end, { desc = "Insertar plantilla de nota" })
+
+-- Tabs
+
+map("n", "<leader>1", "<CMD>tabn 1<CR>", { desc = "Ir a la pestaña 1" })
+map("n", "<leader>2", "<CMD>tabn 2<CR>", { desc = "Ir a la pestaña 2" })
+map("n", "<leader>3", "<CMD>tabn 3<CR>", { desc = "Ir a la pestaña 3" })
+map("n", "<leader>4", "<CMD>tabn 4<CR>", { desc = "Ir a la pestaña 4" })
+map("n", "<leader>5", "<CMD>tabn 5<CR>", { desc = "Ir a la pestaña 5" })
+map("n", "<leader>6", "<CMD>tabn 6<CR>", { desc = "Ir a la pestaña 6" })
+map("n", "<leader>7", "<CMD>tabn 7<CR>", { desc = "Ir a la pestaña 7" })
+map("n", "<leader>8", "<CMD>tabn 8<CR>", { desc = "Ir a la pestaña 8" })
+map("n", "<leader>9", "<CMD>tabn 9<CR>", { desc = "Ir a la pestaña 9" })
 
 -- map("n", "<tab>", function()
 --   local line = vim.fn.line(".")

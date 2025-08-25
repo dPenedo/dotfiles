@@ -51,3 +51,5 @@ wmctrl -r "obsidian" -t 6 &
 #
 
 tmux source-file ~/.tmux.conf &
+alacritty -e bash -c "~/scripts/comprobar-matrimonio/comprobar-matrimonio.sh; exec bash" &
+

@@ -2,15 +2,14 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      basedpyright = {
-        settings = {
-          basedpyright = {
-            analysis = {
-              typeCheckingMode = "standard",
-            },
+      ruff_lsp = {
+        init_options = {
+          settings = {
+            args = {},
           },
         },
       },
+      jedi_language_server = {},
     },
   },
 }

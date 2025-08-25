@@ -178,15 +178,15 @@ return {
   --   opts = {},
   -- },
 
-  {
-    "miikanissi/modus-themes.nvim",
-    priority = 1000,
-    opts = {
-      -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
-      transparent = false, -- Transparent background (as supported by the terminal)
-      dim_inactive = true, --
-    },
-  },
+  -- {
+  --   "miikanissi/modus-themes.nvim",
+  --   priority = 1000,
+  --   opts = {
+  --     -- variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+  --     transparent = false, -- Transparent background (as supported by the terminal)
+  --     dim_inactive = true, --
+  --   },
+  -- },
   { "aliqyan-21/darkvoid.nvim" },
   {
     "vague2k/vague.nvim",
@@ -308,7 +308,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = true,
+      transparent = false,
     },
   },
   -- {
@@ -332,12 +332,19 @@ return {
     lazy = false,
 
     config = function()
-      vim.g.rasmus_transparent = true
+      vim.g.rasmus_transparent = false
     end,
   },
   {
     "rose-pine/neovim",
   },
+
+  -- Le falta contraste, casi no se ve
+  -- {
+  --   "webhooked/kanso.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  -- },
   -- { "nvimdev/zephyr-nvim" },
   -- { "kyazdani42/blue-moon" },
   --{

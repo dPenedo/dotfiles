@@ -7,6 +7,11 @@ local function git_branch()
   end
 end
 
+local ok, hl = pcall(vim.api.nvim_get_hl, 0, { name = "lualine_a_normal" })
+if ok and hl.bg then
+  vim.api.nvim_set_hl(0, "StatusColumn", hl)
+end
+
 local function lsp()
   local count = {}
   local levels = {
@@ -53,7 +58,7 @@ local function grapple()
   end
   local index = grapple_api.name_or_index()
   if type(index) == "number" then
-    local keys = { "jj", "jk", "jl", "j;" }
+    local keys = { "fj", "fk", "fl", "f;" }
     index = keys[index] or index
   end
   return " 󰛢 " .. index .. " "
@@ -63,11 +68,19 @@ local function spaced(text)
   return " " .. text .. " "
 end
 
+local function modified_icon()
+  if vim.bo.modified then
+    return "   " -- o el icono que quieras
+  else
+    return ""
+  end
+end
+
 local function statusline_focused()
   -- Styles
-  local color_column = "%#DiagnosticFloatingInfo#"
-  local file_name_color = "%#StatusLine#"
-  local modified_color = "%#WarningMsg#"
+  local color_column = "%#StatusLine#"
+  local file_name_color = "%#Normal#"
+  local modified_color = "%#MatchParen#"
   local accent_color = "%#Title#"
   local align_right = "%="
   -- Content
@@ -77,7 +90,7 @@ local function statusline_focused()
   local buf = "%:." .. vim.api.nvim_win_get_buf(vim.g.statusline_winid)
   local file_name = (vim.fn.expand(buf) == "" and "Empty") or spaced(vim.fn.expand(buf .. ":t"))
 
-  local modified = "%m"
+  local modified = modified_icon()
   local grapple_info = grapple()
   local linecol = spaced("Col %c | Ln %l/%L")
   return string.format(

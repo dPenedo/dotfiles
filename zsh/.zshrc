@@ -93,7 +93,9 @@ bindkey -s '\et' 'thunar . &^m'
 bindkey -s '\ey' 'ya .^m'
 lfcd="~/.config/lf/lfcd.sh"
 if [ -f "$lfcd" ]; then
-  source "$lfcd"
+  sourcete_all_parties_stacked_chart(df)
+
+  "$lfcd"
 fi
 
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH"

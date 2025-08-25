@@ -1,0 +1,7 @@
+{
+  "Code blocks": {
+    "prefix": "bb",
+    "body": ["# %%", "# ${0}"],
+    "description": "Insertar un code block"
+  }
+}

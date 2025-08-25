@@ -308,5 +308,6 @@
   "window.customTitleBarVisibility": "never",
   "aws.telemetry": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "jupyter.askForKernelRestart": false
 }
