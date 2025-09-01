@@ -113,8 +113,9 @@ end
 
 local function statusline_not_focused()
   local file_name_color = "%#StatusLineNC#"
-  local buf = "#" .. vim.api.nvim_win_get_buf(vim.g.statusline_winid)
-  local file_name = (vim.fn.expand(buf) == "" and "Empty") or vim.fn.expand(buf .. ":t")
+  local bufnr = vim.api.nvim_win_get_buf(vim.g.statusline_winid)
+  local full_path = vim.api.nvim_buf_get_name(bufnr)
+  local file_name = full_path ~= "" and spaced(vim.fn.fnamemodify(full_path, ":.")) or "Empty"
   local modified = "%m"
 
   return string.format("%s%s%s", file_name_color, file_name, modified)

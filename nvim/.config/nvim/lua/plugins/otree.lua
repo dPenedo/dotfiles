@@ -39,6 +39,6 @@ return {
     },
   },
   keys = {
-    { "<leader>e", "<CMD>Otree<CR>", desc = "Explorer" },
+    -- { "<leader>e", "<CMD>Otree<CR>", desc = "Explorer" },
   },
 }

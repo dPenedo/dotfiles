@@ -9,6 +9,8 @@ setxkbmap -layout us -variant altgr-intl &
 xcape -e 'Control_L=Escape'
 
 
+# Intercambiar ; y :
+xmodmap -e "keycode 47 = colon semicolon colon semicolon"
 
 # Reasignar la tecla con keycode 51 para que haga ` y ~
 xmodmap -e "keycode 51 = grave asciitilde grave asciitilde"

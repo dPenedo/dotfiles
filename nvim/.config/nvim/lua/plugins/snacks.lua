@@ -69,6 +69,13 @@ return {
       end,
       desc = "Find files",
     },
+    {
+      "<leader>fo",
+      function()
+        Snacks.picker.buffers({ current = false })
+      end,
+      desc = "[F]ind [o]pened buffers",
+    },
     -- {
     --   "<leader>e",
     --   function()

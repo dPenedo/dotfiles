@@ -5,7 +5,7 @@ return {
   opts = {
 
     show_icon = true, -- show file extension icon
-    modify_indicator = "󰈸",
+    modify_indicator = " ",
     brackets = { " ", " " }, -- file name brackets surrounding
   },
   keys = {
