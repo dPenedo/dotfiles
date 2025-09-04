@@ -9,6 +9,21 @@ return {
         format = { enable = true },
       },
       jedi_language_server = {},
+      -- basedpyright = {
+      -- Va demasiado lentoo
+      --   settings = {
+      --     basedpyright = {
+      --       analysis = {
+      --         typeCheckingMode = "off",
+      --         autoSearchPaths = true,
+      --         useLibraryCodeForTypes = true,
+      --         diagnosticMode = "openFilesOnly",
+      --         reportUnknownMemberType = false,
+      --         reportGeneralTypeIssues = false,
+      --       },
+      --     },
+      --   },
+      -- },
     },
   },
 }

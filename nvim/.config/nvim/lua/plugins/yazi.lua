@@ -8,12 +8,12 @@ return {
   },
   keys = {
     {
-      "<leader>e",
+      "<leader>Y",
       "<CMD>Yazi<CR>",
       desc = "Explorer yazi (Current Dir)",
     },
     {
-      "<leader>E",
+      "<leader>Y-",
       "<CMD>Yazi cwd<CR>",
       desc = "Explorer yazi (Root Dir)",
     },

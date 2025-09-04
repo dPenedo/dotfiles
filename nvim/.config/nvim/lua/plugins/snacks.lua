@@ -3,6 +3,11 @@ return {
   "folke/snacks.nvim",
   vscode = false,
   opts = {
+    styles = {
+      terminal = {
+        position = "right",
+      },
+    },
     image = {
       enabled = true,
       doc = {
@@ -45,18 +50,31 @@ return {
 
         preview = false,
         layout = {
-          box = "horizontal",
-          width = 0.8,
-          min_width = 120,
-          height = 0.8,
+          box = "vertical",
+          backdrop = false,
+          row = -1,
+          width = 0,
+          height = 0.4,
+          border = "top",
+          title = " {title} {live} {flags}",
+          title_pos = "left",
+          { win = "input", height = 1, border = "bottom" },
           {
-            box = "vertical",
-            border = "top",
-            title = "{title} {live} {flags}",
-            { win = "input", height = 1, border = "bottom" },
+            box = "horizontal",
             { win = "list", border = "none" },
+            { win = "preview", title = "{preview}", width = 0.6, border = "left" },
           },
-          { win = "preview", title = "{preview}", border = "rounded", width = 0.5 },
+        },
+      },
+      sources = {
+        explorer = {
+          layout = {
+            layout = {
+              width = 0.2,
+              preset = "sidebar",
+              position = "left",
+            },
+          },
         },
       },
     },
@@ -76,13 +94,13 @@ return {
       end,
       desc = "[F]ind [o]pened buffers",
     },
-    -- {
-    --   "<leader>e",
-    --   function()
-    --     Snacks.picker.explorer()
-    --   end,
-    --   desc = "Find files",
-    -- },
+    {
+      "<leader>e",
+      function()
+        Snacks.picker.explorer({})
+      end,
+      desc = "Explorer",
+    },
     {
       "<leader>fz",
       function()

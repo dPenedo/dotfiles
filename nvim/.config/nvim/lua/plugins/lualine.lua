@@ -20,6 +20,7 @@ return {
     },
     sections = {
       lualine_a = {},
+      lualine_b = { "branch", "diff" },
       lualine_c = {
         {
           "filetype",
@@ -32,6 +33,7 @@ return {
           path = 1,
           color = get_file_status_color,
         },
+        "diagnostics",
       },
       lualine_x = {
         -- "grapple",

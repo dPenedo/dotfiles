@@ -6,5 +6,5 @@ vim.opt.clipboard = ""
 vim.g.snacks_animate = false
 vim.g.maplocalleader = " o"
 vim.opt.laststatus = 2
-vim.opt.winborder = "single"
+vim.opt.winborder = "rounded"
 vim.opt.showtabline = 2

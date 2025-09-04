@@ -338,7 +338,21 @@ return {
   {
     "rose-pine/neovim",
   },
-
+  {
+    -- tomar ideas, minimiza mucho el ruido, snacks y blink no vean muy bien
+    "mcauley-penney/techbase.nvim",
+    config = function(_, opts) end,
+    priority = 1000,
+  },
+  {
+    -- Simple pero se entiende bien, el fondo es un poco claro
+    "github-main-user/lytmode.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("lytmode").setup()
+    end,
+  },
   -- Le falta contraste, casi no se ve
   -- {
   --   "webhooked/kanso.nvim",

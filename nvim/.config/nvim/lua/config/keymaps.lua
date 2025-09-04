@@ -16,12 +16,12 @@ vim.keymap.del("i", "<A-k>")
 vim.keymap.del("v", "<A-k>")
 vim.keymap.del("n", "<leader>n")
 vim.keymap.del("n", "<leader>-")
-vim.keymap.del("n", "<leader>e")
 
 local map = LazyVim.safe_keymap_set
 
 -- map("n", "<leader>w", "<cmd>update<cr>", { desc = "Windows", remap = true })
 map("i", "jk", "<ESC>", { desc = "Salir del modo de inserción" })
+map("t", "jk", "<C-\\><C-N>", { desc = "Salir del modo de inserción en terminal" })
 map("n", "<leader>;", "m`A;<Esc>``", { desc = "Poner punto y coma al final" })
 map("n", "zx", "zt6k6j", { desc = "Scrollear teniendo el cursor en el mismo sitio" })
 
@@ -45,7 +45,7 @@ map("n", "<leader>y", 'm`V"+y``', { desc = "Copiar linea al portapapeles" })
 map("n", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 map("v", "<leader>p", '"+p', { desc = "Pegar del portapapeles" })
 
-map("n", "<leader>lp", "<cmd>w !python3<cr>", { desc = "Pegar del portapapeles" })
+map("n", "<leader>rp", "<cmd>w !python3 %<cr>", { desc = "Run python code" })
 
 -- Notas
 
@@ -239,3 +239,13 @@ map("n", "<leader><cr>", function()
   vim.fn.search("# *%%", "W")
   vim.cmd("normal! k")
 end, { desc = "Seleccionar bloque #%%", remap = false })
+
+local letters = "abcdefghijklmnopqrstuvwxyz"
+
+for i = 1, #letters do
+  local l = letters:sub(i, i) -- letra minúscula
+  local g = l:upper() -- letra mayúscula (global mark)
+  vim.keymap.set("n", "s" .. l, "`" .. g, {
+    desc = "Jump to global mark " .. g,
+  })
+end
